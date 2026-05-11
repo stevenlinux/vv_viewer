@@ -1,11 +1,10 @@
 # VV Viewer
 
-VV Viewer 是一个 Flutter 应用，用于打开 .vv (virt-viewer) 文件并连接到 PVE (Proxmox VE) 的 SPICE 控制台。应用内直接集成 bVNC/remoteClientLib 模块实现嵌入式 SPICE 连接。
+VV Viewer 是一个 Android 应用，用于打开 .vv (virt-viewer) 文件并连接到 PVE (Proxmox VE) 的 SPICE 控制台。应用内直接集成 bVNC/remoteClientLib 模块实现嵌入式 SPICE 连接，无需购买外部 aSPICE Pro。
 
 ## 功能
 
 - 打开和解析 .vv (virt-viewer) 文件
-- 支持 SPICE 和 VNC 协议
 - 嵌入式 SPICE 连接（内置 bVNC，无需外部依赖）
 - 连接历史记录管理
 - 文件关联支持（直接从文件管理器打开）
@@ -13,45 +12,29 @@ VV Viewer 是一个 Flutter 应用，用于打开 .vv (virt-viewer) 文件并连
 - 生成 SPICE/VNC 连接 URI
 - 一键复制连接信息
 
-## 开始
-
-### 环境要求
+## 环境要求
 
 - Flutter 3.x
 - Android SDK 35+
 - Java 17
 
-### 安装依赖
+## 构建
 
 ```bash
 cd /Users/steve/ClaudeProjects/vv_viewer
+
+# 安装依赖
 flutter pub get
-```
 
-### 运行
-
-```bash
-# Android
-flutter run
-
-# iOS
-flutter run -d ios
-```
-
-### 构建
-
-```bash
 # Android APK (Debug)
+export JAVA_HOME="/Users/steve/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home"
 flutter build apk --debug
 
 # Android APK (Release)
 flutter build apk --release
-
-# iOS
-flutter build ios
 ```
 
-### 安装 APK
+## 安装 APK
 
 ```bash
 adb install -r android/app/build/outputs/apk/debug/app-debug.apk
@@ -108,15 +91,14 @@ lib/
 │   ├── home_screen.dart               # 首页
 │   ├── connection_list_screen.dart    # 连接历史列表
 │   ├── viewer_screen.dart             # 连接详情查看器
-│   ├── embedded_spice_screen.dart    # 嵌入式 SPICE 连接
-│   ├── console_screen.dart            # Web Console (废弃)
-│   └── pve_console_screen.dart       # PVE Web Console
+│   ├── embedded_spice_screen.dart     # 嵌入式 SPICE 连接
+│   └── pve_console_screen.dart        # PVE Web Console
 ├── services/                          # 服务
 │   ├── app_logger.dart                # 日志模块
 │   ├── file_opened_observer.dart      # 文件打开监听
-│   ├── spice_launcher_service.dart   # SPICE 启动服务
+│   ├── spice_launcher_service.dart    # SPICE 启动服务
 │   └── storage_service.dart           # 存储服务
-└── utils/                            # 工具类
+└── utils/                             # 工具类
     └── constants.dart                 # 常量定义
 ```
 
@@ -128,16 +110,7 @@ flutter test
 
 # 运行特定测试文件
 flutter test test/parsers/vv_parser_test.dart
-
-# 运行特定测试组
-flutter test --name "VVParser"
 ```
-
-当前测试覆盖：
-- `lib/models/` - VVConnection, ConnectionType, SpiceLaunchResult
-- `lib/parsers/` - VVParser
-- `lib/services/` - AppLogger, StorageService, SpiceLauncherService, FileOpenedObserver
-- `lib/screens/` - Widget 测试
 
 ## 架构
 
@@ -200,3 +173,7 @@ cp android/common/aars/android-database-sqlcipher-4.5.4.aar ~/.m2/repository/com
 - `docs/SETUP.md` - 环境配置
 - `docs/TEST_PLAN.md` - 测试计划
 - `docs/VV_FILE_FORMAT.md` - .vv 文件格式说明
+
+## 许可
+
+GPL-3.0

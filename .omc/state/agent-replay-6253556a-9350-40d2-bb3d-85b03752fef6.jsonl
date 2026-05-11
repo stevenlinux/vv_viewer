@@ -1,1 +1,6 @@
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"caveman"}
+{"t":0,"agent":"a1e521b","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a801c70","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"adbbfb8","agent_type":"Explore","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"adbbfb8","agent_type":"Explore","event":"agent_stop","success":true,"duration_ms":115039}
+{"t":0,"agent":"abcfe15","agent_type":"unknown","event":"agent_stop","success":true}

@@ -225,21 +225,51 @@
   },
   "hotPaths": [
     {
+      "path": "macos/Runner/AppDelegate.swift",
+      "accessCount": 10,
+      "lastAccessed": 1778499466194,
+      "type": "file"
+    },
+    {
+      "path": "lib/main.dart",
+      "accessCount": 5,
+      "lastAccessed": 1778490240749,
+      "type": "file"
+    },
+    {
+      "path": "LICENSE",
+      "accessCount": 4,
+      "lastAccessed": 1778488540135,
+      "type": "file"
+    },
+    {
       "path": "example.vv",
       "accessCount": 2,
       "lastAccessed": 1778480126194,
       "type": "file"
     },
     {
-      "path": "analysis_options.yaml",
-      "accessCount": 1,
-      "lastAccessed": 1778480024442,
+      "path": "lib/services/file_opened_observer.dart",
+      "accessCount": 2,
+      "lastAccessed": 1778490220967,
       "type": "file"
     },
     {
-      "path": "lib/main.dart",
+      "path": "android/remoteClientLib/jni/android/android-service.c",
+      "accessCount": 2,
+      "lastAccessed": 1778499472633,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 2,
+      "lastAccessed": 1778502798202,
+      "type": "file"
+    },
+    {
+      "path": "analysis_options.yaml",
       "accessCount": 1,
-      "lastAccessed": 1778480030399,
+      "lastAccessed": 1778480024442,
       "type": "file"
     },
     {
@@ -255,9 +285,39 @@
       "type": "file"
     },
     {
-      "path": "LICENSE",
+      "path": "macos/Runner/Info.plist",
       "accessCount": 1,
-      "lastAccessed": 1778482397923,
+      "lastAccessed": 1778490064813,
+      "type": "file"
+    },
+    {
+      "path": "android/remoteClientLib/jni/android/android-service.h",
+      "accessCount": 1,
+      "lastAccessed": 1778499436789,
+      "type": "file"
+    },
+    {
+      "path": "android/remoteClientLib/jni/android/android-spice-widget.h",
+      "accessCount": 1,
+      "lastAccessed": 1778499442137,
+      "type": "file"
+    },
+    {
+      "path": "android/remoteClientLib/src/main/java/com/undatech/opaque/SpiceCommunicator.java",
+      "accessCount": 1,
+      "lastAccessed": 1778499447034,
+      "type": "file"
+    },
+    {
+      "path": "android/remoteClientLib/jni/Android.mk",
+      "accessCount": 1,
+      "lastAccessed": 1778499453624,
+      "type": "file"
+    },
+    {
+      "path": "macos/Podfile",
+      "accessCount": 1,
+      "lastAccessed": 1778499466259,
       "type": "file"
     }
   ],

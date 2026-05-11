@@ -2,3 +2,5 @@
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:team"}
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:dispatching-parallel-agents"}
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:subagent-driven-development"}
+{"t":0,"agent":"afe4a96","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"aeeb556","agent_type":"unknown","event":"agent_stop","success":true}
