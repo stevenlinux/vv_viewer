@@ -1,6 +1,6 @@
 # VV Viewer
 
-VV Viewer 是一个 Android 应用，用于打开 .vv (virt-viewer) 文件并连接到 PVE (Proxmox VE) 的 SPICE 控制台。应用内直接集成 bVNC/remoteClientLib 模块实现嵌入式 SPICE 连接，无需购买外部 aSPICE Pro。
+VV Viewer 是一个 Android 应用，用于打开 .vv (virt-viewer) 文件并连接到 PVE (Proxmox VE) 的 SPICE 控制台。
 
 ## 功能
 
