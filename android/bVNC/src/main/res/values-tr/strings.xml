@@ -1,0 +1,1179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="rdp_adv_desktop_background">
+Masaüstü arka planını göster</string>
+    <string name="scroll_wheel">
+Kaydırma Tekerleği</string>
+    <string name="master_password_error_password_not_set">
+Ana Parolanın ayarlanması iptal edildi.</string>
+    <string name="error_pick_correct_item">
+Lütfen Bağlantı Türü\'nde doğru öğeyi seçtiğinizden emin olun.</string>
+    <string name="rdp_adv_redirect_sdcard">
+SD Kartı Yönlendir</string>
+    <string name="port_caption">
+VNC Bağlantı Noktası</string>
+    <string name="spice_connection_settings">
+SPICE Bağlantı Ayarları</string>
+    <string name="ca_spice_use_ovirt">
+SPICE için RHEV/oVirt CA\'yı kullanın</string>
+    <string name="select_vm_title">
+Sanal Makineyi Seçin</string>
+    <string name="nickname_caption_hint">
+Başlık (isteğe bağlı)</string>
+    <string name="off">
+Kapalı</string>
+    <string name="ca_ovirt_manage">
+RHEV/oVirt CA\'yı yönetin</string>
+    <string name="vnc_server_empty_no_save">
+VNC Sunucusu veya bağlantı noktası boş. Bağlantı kaydedilemiyor!</string>
+    <string name="connection_setup_vm_name">
+Sanal makine adı (isteğe bağlı)</string>
+    <string name="shortcut_label_rdp">
+RDP Bağlantısı</string>
+    <string name="connection_delete">
+Silmek</string>
+    <string name="repeater_caption_hint">
+UltraVNC Tekrarlayıcı</string>
+    <string name="rdp_domain_hint">
+RDP Alanı</string>
+    <string name="error_ssh_port_forwarding_failure">
+VNC trafiğini SSH üzerinden tünellemek için bağlantı noktası yönlendirme ayarlanamadı. Lütfen SSH sunucunuzun bağlantı noktası yönlendirmeye izin verecek şekilde yapılandırıldığından emin olun ve tekrar deneyin.</string>
+    <string name="info_encoding">
+kodlama,</string>
+    <string name="keep_password_button">
+Kale</string>
+    <string name="input_method_touchpad_description">
+Simüle Edilmiş Dokunmatik Yüzey: İşaretçiyi hareket ettirmek için kaydırın. Sol tıklamak için bir parmağınızla, sağ tıklamak için iki parmağınızla ve orta tıklamak için üç parmağınızla herhangi bir yere dokunun. Kaydırmak için iki parmağınızla kaydırın. Sürükleyip bırakmak için uzun dokunun.</string>
+    <string name="master_password_set_error">
+Şifreler eşleşmiyor, lütfen dikkatli olun!</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">
+Metin/Numaralar Öneri Yok (VISIBLE_PASSWORD)</string>
+    <string name="auto_x_find">
+Yalnızca Bul, Oluşturma</string>
+    <string name="error_no_vm_found_for_user">
+Belirtilen kullanıcı için kullanılabilir Sanal Makine yok.</string>
+    <string name="error_anon_dh_unsupported">
+VNC Sunucusu, Android cihazınızda desteklenmeyen Anonim Diffie Hellman şifrelerini kullanmaya çalışıyor. GNOME\'un Vino VNC sunucusunu kullanıyorsanız, bir terminalde aşağıdaki komutu çalıştırıp yeniden başlatarak AnonTLS\'yi devre dışı bırakabilirsiniz: \gsettings set org.gnome.Vino require-encryption false\.x11vnc çalıştırıyorsanız aşağıdaki seçenekleri ekleyebilirsiniz: \-vencrypt nodh:only -ssl\.</string>
+    <string name="delete_key_list">
+Anahtar Listesini Sil</string>
+    <string name="repeater_button">
+UltraVNC Tekrarlayıcı</string>
+    <string name="connection_type_caption">
+Bağlantı Türü</string>
+    <string name="scaling">
+Ölçeklendirme</string>
+    <string name="auto_x_confirm">
+Onaylamak</string>
+    <string name="input_method_direct_drag_pan_description">
+Doğrudan, Kaydırmayı Tut: Sürükleyip bırakmak için kaydırın. Sol tıklamak istediğiniz yere tek parmağınızla, sağ tıklamak için iki parmağınızla ve orta tıklamak için üç parmağınızla dokunun. Kaydırmak için iki parmağınızla kaydırın. Kaydırmayı başlatmak için uzun dokunun.</string>
+    <string name="center_mouse">
+Fare @</string>
+    <string name="error_ovirt_unable_to_connect">
+Bağlanamıyor veya kimlik doğrulanamıyor. Lütfen sunucu adresini, kullanıcıyı, şifreyi, sertifika yetkilisini ve konuyu kontrol edin.</string>
+    <string name="error_ssh_could_not_exec_command">
+Uzaktan komut yürütülemedi.</string>
+    <string name="master_password_verify_message">
+Devam etmek için lütfen doğru Ana Şifreyi girin.</string>
+    <string name="error_x509_could_not_generate_encoding">
+Sertifika kodlaması oluşturulamadı.</string>
+    <string name="action_new_connection">
+✚ Yeni Bağlantı</string>
+    <string name="share_app_toast">
+Uygulamanın bağlantısını sosyal medyadaki tüm arkadaşlarınızla paylaşın!</string>
+    <string name="arrow_left">
+Sol Ok</string>
+    <string name="error_ssh_unable_to_connect">
+SSH Sunucusuna bağlanılamadı. Lütfen ağ bağlantısını, SSH Sunucu adresini ve bağlantı noktasını kontrol edin.</string>
+    <string name="auto_x_unixpw">
+Yerleşik güvenlik mekanizması yerine UNIX kimlik bilgilerini kullanın. Kullanıcı /bin/su komutunu çalıştırabilmelidir.</string>
+    <string name="delete_key">
+Seçilen Anahtarı Sil</string>
+    <string name="arrow_right">
+Sağ Ok</string>
+    <string name="info_progress_dialog_establishing">
+El sıkışma oluşturuluyor.\nLütfen bekleyin…</string>
+    <string name="send_key_again">
+Anahtarı Tekrar Gönder</string>
+    <string name="ca_file_error_reading">
+CA dosyası okunurken hata oluştu. Lütfen okunabilir olduğundan emin olun.</string>
+    <string name="error_pve_null_data">
+Proxmox Sanal Ortamı boş veri döndürdü.</string>
+    <string name="error_vnc_authentication">
+VNC kimlik doğrulaması başarısız oldu! VNC şifresini (ve varsa kullanıcıyı) kontrol edin.</string>
+    <string name="landscape_force">
+Yatay Yönlendirmeyi Zorla</string>
+    <string name="input_method_direct_swipe_pan_description">
+Doğrudan, Kaydırarak Kaydırma: Etrafı kaydırmak için kaydırın. Sol tıklamak istediğiniz yere tek parmağınızla, sağ tıklamak için iki parmağınızla ve orta tıklamak için üç parmağınızla dokunun. Kaydırmak için iki parmağınızla kaydırın. Sürükleyip bırakmak için uzun dokunun.</string>
+    <string name="arrow_up">
+Yukarı Ok</string>
+    <string name="info_continue_connecting">
+Şuraya bağlanmaya devam edin:</string>
+    <string name="input_mode_fit_to_screen">
+Tava yok;İztopu Faresi</string>
+    <string name="show_advanced_settings">
+Gelişmiş Ayarları Göster</string>
+    <string name="ssh_key_generated">"Yeni anahtar başarıyla oluşturuldu veya içe aktarıldı. Artık ortak anahtarı paylaşmak, panoya kopyalamak veya dışa aktarmak için \'Anahtar Oluştur/Dışa Aktar\' düğmesine dokunabilirsiniz."</string>
+    <string name="show_keyboard">
+Klavyeyi Göster</string>
+    <string name="auto_x_cancel">
+İptal etmek</string>
+    <string name="disable_pointer_offset_correction">
+İşaretçi ofset düzeltmesini devre dışı bırak</string>
+    <string name="main_screen_help">
+Bağlantı Yardımı</string>
+    <string name="error_failed_to_obtain_content">
+Dosya alınamadı. Lütfen tekrar indirin, ancak bu sefer Dosya Yöneticisindeki İndirme klasöründen hızlıca açın.</string>
+    <string name="address_caption_ssh">
+SSH Sunucusu</string>
+    <string name="button_send_without_saving">
+Metin Gönder/Kaydetme</string>
+    <string name="support_forum">
+Destek Forumu ❓</string>
+    <string name="intro_close">
+Kapalı</string>
+    <string name="cursor_force_disable">
+Devre dışı bırakmak</string>
+    <string name="error_pve_api_io_error">
+Proxmox Sanal Ortamına bağlantı başarısız oldu:</string>
+    <string name="spice_button_import_ca">
+CA\'yı içe aktar</string>
+    <string name="spice_connection_screen_help_text">
+Bir bağlantı eklediğinizde veya düzenlediğinizde bir bağlantı yapılandırma sayfası göreceksiniz. Burada yeni bir SPICE bağlantısı kurabilir veya önceden var olan bir bağlantıyı seçebilirsiniz. Üstte bağlantıyı kaydetmenizi sağlayan bir düğme bulunur. Bağlantınızı yapılandıracağınız yer burasıdır.
+
+- Bağlantı Türü: Burada SPICE bağlantı türünü seçersiniz. Mevcut bağlantı türleri şunlardır:
+(a) SPICE protokolü üzerinden doğrudan bir bilgisayara bağlanan SPICE.
+(b) Bağlantınızı ilk önce SSH sunucusu çalıştıran bir bilgisayar üzerinden tünelleyen SSH üzerinden SPICE.
+
+- Başlık: Oluşturduğunuz her bağlantının, onu listede kolayca tanımlayabilmeniz için bir takma adı olabilir.
+
+- SSH Tüneli Ayarları: SSH üzerinden SPICE modunda kullanılabilir.
+(a) SSH Sunucusu/Bağlantı Noktası: Bağlantının tünelleneceği SSH sunucusunun adresi ve bağlantı noktası. Varsayılan olarak SSH 22 numaralı bağlantı noktasını dinler.
+(b) Kullanıcı Adı/Şifre: SSH sunucusundaki hesabın kullanıcı adı ve şifresi. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+(c) Anahtarı Yönet/Anahtarı Kullan: Genel/özel anahtarları yönetmek için bir düğme ve kimlik doğrulama için parola yerine anahtar kullanılıp kullanılmayacağını gösteren bir onay kutusu. Bir anahtar çifti oluşturduktan sonra Panoya Kopyala düğmesini kullanırsanız, SPICE sunucusuna bağlandığınızda genel anahtarı yapıştırabilmeniz gerekir (pano sunucuyla senkronize edilir).
+
+- SPICE Bağlantı Ayarları:
+(a) SPICE Sunucusu/Bağlantı Noktası: Burası iletişim kurmak istediğiniz SPICE sunucusunu çalıştıran bilgisayarın ana bilgisayar adını veya IP adresini ve bağlantı noktasını gireceğiniz yerdir. SPICE over SSH modunda bu adres SSH Sunucusundan görüldüğü gibidir. SSH Sunucusu ve SPICE sunucusu aynı fiziksel bilgisayar ise localhost\'u kullanabilirsiniz. SPICE sunucuları genellikle 5900 ve üzeri bağlantı noktalarını dinler.
+(b) SPICE Şifresi: SPICE oturumunuzu korumak için ayarladığınız şifreyi gireceğiniz yerdir. Parolalar için güvenli depolama kullanılmaz (bunlar bir veritabanında bulunur) ve parola yalnızca Sakla kutusunu işaretlerseniz saklanır. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+
+- Gelişmiş ayarlar: Bu bölümde herhangi bir yerel cihazı veya SPICE performans ayarını bulacaksınız
+- Yerel Cihaz Ayarları: Bunlar, uygulamanın cihazınızdaki davranışını ayarlar.
+(a) Oklar için D-Pad\'i kullanın: İsterseniz, SPICE sunucusuna ok göndermek için Bluetooth klavyenizin D-Pad\'ini veya ekran klavyenizdeki okları kullanabilirsiniz.
+(b) D-Pad\'i Döndür: Bluetooth klavyeyle eşleştirilmiş telefonların, sunucuya doğru talimatları gönderebilmesi için klavyenin D-pad\'inin saat yönünün tersine döndürülmesi gerekebilir.
+(c) Yerel fare işaretçisi: İşaretçi görünmezse uygulama tarafından çizilmeye zorlamak için bunu seçin.</string>
+    <string name="input_method_single_handed_description">
+Tek Elle: Etrafı kaydırmak için kaydırın. Sol tıklamak istediğiniz yere tek parmağınızla dokunun. Sol/sağ/orta sürükleme/kaydırma/yakınlaştırma modunu seçmek için uzun dokunun. Her zamanki çoklu dokunmatik kontroller de çalışır.</string>
+    <string name="rdp_connection_settings">
+RDP Bağlantı Ayarları</string>
+    <string name="error_pve_api_unexpected_code">
+Proxmox Sanal Ortamından beklenmeyen yanıt:</string>
+    <string name="pro_feature_rdp">
+Pro özelliği olan bir .rdp dosyasını açmaya çalıştığınız anlaşılıyor. Lütfen .rdp dosyalarını destekleyen aRDP Pro\'yu satın alarak projeye destek olun. Başlat iletişim kutusunda aRDP Pro sürümüne bir bağlantı mevcuttur.</string>
+    <string name="vnc_connection_settings">
+VNC Bağlantı Ayarları</string>
+    <string name="spice_address_caption_hint">
+BAHARAT Sunucusu</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">
+Parola sağlandı ancak anahtar çifti şifrelenmedi. Lütfen parolayı silin.</string>
+    <string name="info_ssh_initializing_hostkey">
+SSH HostKey başlatılmaya çalışılıyor.</string>
+    <string name="custom_ca_subject">
+İsteğe Bağlı Sertifika Konusu. Sertifika CN\'si ana makine adıyla eşleşiyorsa gerekli değildir</string>
+    <string name="rdp_adv_desktop_composition">
+Masaüstü Kompozisyonunu Etkinleştir</string>
+    <string name="input_method_direct_drag_pan">
+Yönlendir, Tavayı Tut</string>
+    <string name="connection_type_vnc">
+Temel VNC</string>
+    <string name="share_app">
+Paylaş 🔗</string>
+    <string name="auto_x_disabled_selection">
+AutoX Devre Dışı</string>
+    <string name="error_security_type">
+Sunucu desteklenen güvenlik türünü sunmuyordu.</string>
+    <string name="left_handed_mode">
+Solak Mod</string>
+    <string name="info">
+Bilgi</string>
+    <string name="rate_app">
+Değerlendir ⭐⭐⭐⭐⭐</string>
+    <string name="auto_x_find_login">
+X Girişini Bul (sudo gerektirir)</string>
+    <string name="hide_toolbar">
+Araç çubuğunu gizle</string>
+    <string name="auto_x_xvfb">
+Xvfb ile Bul veya Oluştur</string>
+    <string name="show_only_connection_nicknames">
+Yalnızca Bağlantı Takma Adlarını Göster</string>
+    <string name="enter_rdp_credentials">
+Lütfen RDP kimlik bilgilerini girin</string>
+    <string name="spice_password_hint">
+BAHARAT Şifresi</string>
+    <string name="hide">
+Saklamak</string>
+    <string name="info_cert_tunnel">
+Aşağıdaki sertifikayla tanımlanan ana bilgisayara bağlanmak istiyor musunuz?\n\nParmak izi: %1$s\n\nVerilen:\n%2$s\n\nVeren:\n%3$s\n\nGeçerlilik tarihi:\n%4$s\n\nGeçerlilik tarihi:\n%5$s\n\nNot: Uygulama, sertifika yetkililerini doğrulamaz veya sertifika iptalini kontrol etmez.</string>
+    <string name="copy_of">
+Kopyası</string>
+    <string name="connection_setup_host_name">
+Sunucu Adresi</string>
+    <string name="disconnect">
+Bağlantıyı kes</string>
+    <string name="email_us">
+Bize E-posta Gönderin 📧</string>
+    <string name="spice_username_hint">
+SPICE Kullanıcı Adı</string>
+    <string name="error_vm_lookup_failed">
+Kullanıcınıza atanmış belirtilen adı taşıyan bir sanal makine bulunamadı. Kullanıcıya atanan VM\'lerin listesini görmek için lütfen belirtilen VM adını silin.</string>
+    <string name="info_cert_signatures">
+Sertifika bilgileri şöyledir:</string>
+    <string name="username_caption">
+VNC Kullanıcısı</string>
+    <string name="ad_donate_text2">
+Pro sürümü bu iletişim kutusunu devre dışı bırakmanıza olanak tanır ve ek özelliklere erişmenizi sağlar.</string>
+    <string name="use_no_compression_for_local_connections">
+Sıkıştırma yok (yerel bağlantılar, Hextile kodlama)</string>
+    <string name="error_rdp_authentication_failed">
+RDP Kimlik Doğrulaması başarısız oldu! Lütfen RDP kullanıcı adını ve şifresini kontrol edip tekrar deneyin.</string>
+    <string name="error_dialog_title">
+Hata</string>
+    <string name="keep_screen_awake_enable">
+Ekranı Uyanık Tut</string>
+    <string name="pro_feature_spice">
+Bir .vv dosyasını açmaya çalıştığınız anlaşılıyor. Bağlantıları doğrudan uygulamanın içinde Proxmox veya oVirt\'e kaydetmek ve aynı zamanda .vv dosyalarını açmak istiyorsanız Opaque satın almayı düşünün. Yalnızca .vv dosya desteğine ihtiyacınız varsa aSPICE Pro\'yu alabilirsiniz. Başlat iletişim kutusunda her iki uygulamanın bağlantılarını bulun.</string>
+    <string name="spice_ca_file_error_reading">
+CA dosyası okunurken hata oluştu. Lütfen okunabilir olduğundan emin olun.</string>
+    <string name="intro_dont_show">
+Bir daha gösterme</string>
+    <string name="rdp_adv_gfxh264">
+RDP Gfx H264</string>
+    <string name="right_alt_as_iso_l3_shift">
+ISO L3 Geçişi olarak R-Alt (yalnızca VNC)</string>
+    <string name="audio_will_be_initialized">
+Ses yaklaşık 15 saniye içinde başlatılacaktır. Lütfen bu tarihten önce çalışan tüm video veya ses oynatmayı durdurun.</string>
+    <string name="connection_edit_delete_prompt">
+Bağlantıyı düzenlemek mi yoksa silmek mi istiyorsunuz?</string>
+    <string name="more_apps">
+Daha Fazla Uygulama 📱</string>
+    <string name="master_password_set_message">
+Lütfen bir Ana Şifre girin ve ezberleyin. Şifreniz ne kadar uzun olursa kırılması da o kadar zor olur.Şifrenizi yanlış ayarlarsanız veya unutursanız tüm ayarlarınızı kaybedersiniz! Ayarlarınızı yedeklemek için şimdi dışarı aktarmak isteyebilirsiniz (Menüden). Dışa aktarılan ayarlar şifrelenmediğinden bunları güvenli bir şekilde saklayın.</string>
+    <string name="connection_type_rdp_over_ssh">
+SSH üzerinden RDP</string>
+    <string name="ad_donate_text3">
+Projeyi daha fazla desteklemek istiyorsanız aşağıdaki istemci uygulamalarına bağlantılar için aşağıdaki bağlantıları izleyin:</string>
+    <string name="pro_feature_generic">
+Görünüşe göre bir Pro özelliği kullanıyorsunuz. Lütfen bu özelliği destekleyen Pro sürümünü satın alarak projeye destek olun. Başlat iletişim kutusunda Pro sürümüne bir bağlantı mevcuttur.</string>
+    <string name="pro_feature_mfa">
+Sunucunuzda çok faktörlü kimlik doğrulamanın etkin olduğu anlaşılıyor. Lütfen bu özelliği destekleyen Pro sürümünü satın alarak projeye destek olun. Başlat iletişim kutusunda Pro sürümüne bir bağlantı mevcuttur.</string>
+    <string name="back_button">
+Geri gitmek</string>
+    <string name="password_hint_ssh">
+SSH Şifresi</string>
+    <string name="shortcut_label_spice">
+BAHARAT Bağlantısı</string>
+    <string name="password_caption_hint">
+VNC Şifresi</string>
+    <string name="error_x509_could_not_generate_signature">
+Sertifikanın SHA1 veya MD5 imzası oluşturulamadı. SHA1/MD5 algoritması bulunamadı.</string>
+    <string name="auto_request_new_res">
+Uzaktan kumandayı ekran çözünürlüğüne senkronize edin</string>
+    <string name="rdp_address_caption_hint">
+RDP Sunucusu</string>
+    <string name="vnc_connection_screen_help_text">"Bir bağlantı eklediğinizde veya düzenlediğinizde bir bağlantı yapılandırma sayfası göreceksiniz. Burada yeni bir VNC bağlantısı kurabilir veya önceden var olan bir bağlantıyı seçebilirsiniz. Üstte bağlantıyı kaydetmenizi sağlayan bir düğme bulunur. Bağlantınızı yapılandıracağınız yer burasıdır.
+
+Hızlı bir performans artışı arıyorsanız Renk modunu daha düşük bir değere ayarlamayı deneyin. Ayrıca VNC sunucusundaki herhangi bir masaüstü arka plan resmini kaldırmayı deneyin. Son olarak, cihazınızın iyi bir ağ bağlantısına sahip olduğundan emin olun ve antenini kapatarak sinyal gücünü azaltmaktan kaçının.
+
+- Bağlantı Türü: Burada VNC bağlantı türünü seçersiniz. Mevcut bağlantı türleri şunlardır:
+(a) Tüm VNC sunucuları tarafından desteklenen ancak şifrelemesi olmayan ve 8 karakterlik parola sınırlaması nedeniyle kaba kuvvet saldırılarına karşı savunmasız olan Düz VNC.
+(b) Şifreli bir SSH tüneli üzerinden bağlanan SSH üzerinden güvenli VNC. Bir VNC sunucusunun yanı sıra çalışan bir SSHD hizmetine de ihtiyacınız var. VNC sunucusu doğrudan İnternet\'ten gelen bağlantıları kabul etmediği sürece, ilk bağlandığınızda sunucu sertifikası imzasını doğruladığınız sürece bu bağlantı türü bilinen hiçbir güvenlik açığına maruz kalmaz.
+(c) Windows Oturum Açma ve UltraVNC Tekrarlayıcı seçenekleri sunan UltraVNC. Windows Oturum Açma kullanımında 8 karakterlik parola sınırlaması yoktur, ancak bu mod şifreleme sunmaz, dolayısıyla oturumunuz koklamaya karşı savunmasızdır.
+(d) Stunnel eşdeğeri bir bağlantı üzerinden normal VNC olan AnonTLS üzerinden VNC\'yi güvenli hale getirin. Stunnel\'ı çalıştırmanız veya AnonTLS\'yi kutudan çıktığı gibi destekleyen Vino gibi bir VNC sunucusu kullanmanız gerekir. Bu mod size oturum şifrelemesi sağlar, ancak 8 karakterlik şifre sınırlamasından muzdariptir ve ortadaki adam saldırılarını engellemez.
+(e) X509 sertifikalarının yanı sıra oturum şifrelemesini kullanan ve sunucu yapılandırmasına bağlı olarak kullanıcı/parola kimlik bilgilerini 8 karakter sınırlaması olmadan kullanabilen VeNCrypt üzerinden güvenli VNC. Bu mod ortadaki adam saldırılarını önler.oturum gizliliği sağlamanın yanı sıra.x11vnc ve TigerVNC gibi sunucular bu modu destekler ve SSH üzerinden VNC kadar güvenlidir.
+
+- Başlık: Oluşturduğunuz her bağlantının, onu listede kolayca tanımlayabilmeniz için bir takma adı olabilir.
+
+- SSH Tüneli Ayarları: SSH üzerinden VNC modunda kullanılabilir.
+(a) SSH Sunucusu/Bağlantı Noktası: Bağlantının tünelleneceği SSH sunucusunun adresi ve bağlantı noktası. Varsayılan olarak SSH 22 numaralı bağlantı noktasını dinler.
+(b) Kullanıcı Adı/Şifre: SSH sunucusundaki hesabın kullanıcı adı ve şifresi. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+(c) Anahtarı Yönet/Anahtarı Kullan: Genel/özel anahtarları yönetmek için bir düğme ve kimlik doğrulama için parola yerine anahtar kullanılıp kullanılmayacağını gösteren bir onay kutusu. Bir anahtar çifti oluşturduktan sonra Panoya Kopyala düğmesini kullanırsanız, VNC sunucusuna bağlandıktan sonra genel anahtarı yapıştırabilmeniz gerekir (pano sunucuyla senkronize edilir).
+
+- AutoX\'i Yapılandır: Yalnızca SSH üzerinden VNC modunda kullanılabilir. Uygulama, UNIX sistemlerinde (NX istemcisi gibi) mevcut olanı otomatik olarak keşfedebilir ve isteğe bağlı olarak yeni X oturumları oluşturabilir. Oturum oluşturmak için x11vnc\'nin bulunması ve uzaktaki sistemde Xvfb, Xvnc veya Xdummy\'nin yüklü olması gerekir. Masaüstünüz düzgün görünmüyorsa veya yalnızca bir xterm penceresi görüyorsanız, .dmrc dosyanızı taşımanız ve ana dizininize bir .xinit dosyası eklemeniz gerekebilir.
+
+- VNC Bağlantı Ayarları:
+(a) VNC Sunucusu/Bağlantı Noktası: Burası, iletişim kurmak istediğiniz VNC sunucusunu çalıştıran bilgisayarın ana bilgisayar adını veya IP adresini ve bağlantı noktasını gireceğiniz yerdir. VNC over SSH modunda bu adres SSH Sunucusundan görüldüğü gibidir. SSH Sunucusu ve VNC sunucusu aynı bilgisayar ise localhost kullanabilirsiniz. VNC sunucuları genellikle 5900 numaralı bağlantı noktasından (ilk VNC ekranı, ekran:0) başlayarak dinleme yapar.
+(b) VNC Kullanıcısı: Windows Oturum Açma modunda UltraVNC\'de veya VeNCrypt üzerinden Güvenli VNC\'de mevcuttur; Windows/UNIX hesabı kullanıcı adınızı gireceğiniz yer burasıdır.
+(c) VNC Parolası: VNC sunucu yapılandırmanız bir parola gerektiriyorsa parolayı buraya girin. Windows Oturum Açma/VeNCrypt modlarına sahip UltraVNC\'de, Windows/UNIX hesabınızın parolasını buraya girin. Şifreler için güvenli depolama kullanılmaz ve şifre yalnızca Sakla kutusunu işaretlerseniz saklanır. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+- Renk Modu: İstemci çeşitli renk modlarını destekler. Daha fazla renk içeren modlar, cihazınızda daha fazla bant genişliği ve daha fazla CPU hesaplaması pahasına daha iyi bir görsel deneyim sağlar. Bazı VNC sunucuları tüm renk derinliklerini desteklemez (örneğin, OS/X Uzak Masaüstü 24 bit renk gerektirir). Bağlanmada sorun yaşıyorsanız başka bir renk derinliği deneyin.
+
+- Oklar için D-Pad\'i kullanın: İsterseniz VNC sunucusuna ok göndermek için Bluetooth klavyenizin D-Pad\'ini veya ekran klavyenizdeki okları kullanabilirsiniz.
+
+- D-Pad\'i Döndür: Bluetooth klavyeyle eşleştirilmiş telefonların, sunucuya doğru yönlendirmeleri gönderebilmesi için klavyenin D-pad\'inin saat yönünün tersine döndürülmesi gerekebilir.
+
+- Yerel fare işaretçisi: Bazı VNC sunucuları (örn. OS/X Uzak Masaüstü), istemci üzerinde fare işaretçisini çizmez. Bu seçeneğin işaretlenmesi, uygulamanın fare konumunda bir fare işaretçisi çizmesine neden olur.
+
+- Otomatik/Tam Ekran Bitmap: VNC istemcisi uzak ekranı temsil etmek için bir bitmap kullanır. Çok büyük uzak ekranlar için, özellikle ekrana sığdır modunda, işlem başına bellek sınırlamaları nedeniyle ekrana sığdır modunda garip görsel bozulmalarla karşılaşabilirsiniz. Böyle bir durumda bu seçeneği işaretlemeyi deneyin. Seçeneğin işaretlenmesinin uygulamanın bağlantının kesilmesine neden olabileceğini unutmayın.
+
+- Tekrarlayıcı: Yalnızca UltraVNC modunda kullanılabilir. ÖNEMLİ: Bir UltraVNC tekrarlayıcınız varsa, adresini ve bağlantı noktasını \'UltraVNC Tekrarlayıcı\' iletişim kutusunun dışına girin ve gerçek VNC sunucusunun adresini ve bağlantı noktasını \'UltraVNC Tekrarlayıcı\' İletişim Kutusunun içine girin. VNC sunucusunun adresini ve bağlantı noktasını iki nokta üst üste ile ayırın;192.168.0.100:5900."</string>
+    <string name="auto_x_unix_auth">
+Sağlanan SSH Kullanıcı Adını/Parolasını kullanarak otomatik olarak kimlik doğrulaması yapın (siyah oturum açma ekranına).</string>
+    <string name="position_toolbar_last_used">
+Araç Çubuğu Konumunu Geri Yükle</string>
+    <string name="default_input_mode">
+Varsayılan Giriş Modu</string>
+    <string name="custom_ca_paste">
+CA\'yı buraya yapıştırın (içe aktarmıyorsanız)</string>
+    <string name="spice_ca_file_not_found">
+Dosya bulunamadı. Lütfen metin alanına geçerli bir dosya adı girin (ör. /sdcard/ca-cert.pem).</string>
+    <string name="ssh_use_pubkey">
+Anahtarı Kullan</string>
+    <string name="error_ssh_x11vnc_no_port_failure">
+x11vnc\'den uzak VNC bağlantı noktası alınamadı. Lütfen x11vnc\'nin kurulu olduğundan emin olun. Emin olmak için x11vnc\'yi komut satırında elle çalıştırmayı deneyin.</string>
+    <string name="connect_button">
+Bağlamak</string>
+    <string name="portrait_mode">
+Bağlandığınızda portre moduna geçin</string>
+    <string name="username_hint_optional">
+VNC Kullanıcı Adı (isteğe bağlı)</string>
+    <string name="error_pve_timeout_communicating">
+Proxmox Sanal Ortamı ile iletişimde zaman aşımı.</string>
+    <string name="rdp_geom_native_landscape">
+Yerli Manzara</string>
+    <string name="single_scroll">
+Kaydırma modu - kaydırmak için yukarı/aşağı kaydırın, durdurmak için parmağınızı kaldırın</string>
+    <string name="scaling_zoomable">
+Yakınlaştırılabilir</string>
+    <string name="log_copied">
+Logcat panoya kopyalandı. Artık bunu bir e-postaya veya destek forumuna yapıştırabilirsiniz. Lütfen göndermeden önce kişisel verilerinizi inceleyin.</string>
+    <string name="auto_x_caption">
+Uygulama, Linux/UNIX sistemlerinde (NX\'e benzer) mevcut X oturumlarını otomatik olarak keşfedebilir ve yeni X oturumları oluşturabilir. Bulmak için x11vnc\'ye ve oturum oluşturmak için Xvfb, Xvnc veya Xdummy\'ye ihtiyacınız var. Bağlanmada sorun yaşıyorsanız AutoX Gelişmiş Ayarlarında belirli bir Uzak Oturum Türü seçmeyi deneyin.</string>
+    <string name="import_export_settings">
+📦 İçe/Dışa Aktarma Ayarları</string>
+    <string name="send_button">
+Göndermek</string>
+    <string name="meta_key_title">
+Özel Anahtarlar Gönder</string>
+    <string name="fit_to_screen">
+Ekrana Sığdır</string>
+    <string name="connection_type_text">
+Sanallaştırma Ortamı (RHEV/oVirt veya Proxmox)</string>
+    <string name="show_menu">
+Menüyü Göster</string>
+    <string name="info_set_touchpad_input_mode">
+Sunucu, İstemci Modu Fare Girişini desteklemediğini ve geçerli fare giriş modunun düzgün çalışmayacağını bildiriyor. Bu durum devam ederse, sanal makinede baharat araçlarının kurulu olduğundan emin olun veya Menüden Simüle Edilmiş Dokunmatik Yüzey Giriş Moduna geçin.</string>
+    <string name="enter_passphrase_title">
+Anahtar Parolasını Girin</string>
+    <string name="pro_feature_intro">
+Görünüşe göre bir Pro özelliği kullanıyorsunuz. Lütfen bu özelliği destekleyen Pro sürümünü satın alarak projeye destek olun. Doğru uygulamaya bağlantılar için lütfen giriş iletişim kutusunu kontrol edin.</string>
+    <string name="rdp_adv_console_mode">
+Konsol Modu</string>
+    <string name="error_pve_vmid_not_numeric">
+VM kimliği sayısal değil. Lütfen sayısal bir VM kimliği girin veya listeden VM\'yi seçmek için boş bırakın.</string>
+    <string name="repeater_dialog_title">
+Tekrarlayıcının Arkasındaki VNC Sunucusu</string>
+    <string name="rdp_username_hint">
+RDP Kullanıcı Adı</string>
+    <string name="ca_spice_manage">
+SPICE CA\'yı yönet</string>
+    <string name="rotate_dpad">
+Bluetooth veya yazılım D-Pad\'ini döndürün</string>
+    <string name="single_reposition">
+Fare işaretçisi tek el modu için yeniden konumlandırıldı</string>
+    <string name="ssh_use_x11vnc">
+Otomatik Masaüstü</string>
+    <string name="message_please_install_bvnc">
+Bu sanal makinenin VNC konsoluna bağlanmak için lütfen Google Play\'den &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt;\'yi yükleyin.</string>
+    <string name="error_ssh_key_auth_fail">
+Anahtar çiftiyle SSH sunucusunda kimlik doğrulaması yapılamadı. Lütfen SSH kullanıcı adınızı kontrol edin ve genel anahtarınızın uzak taraftaki yetkili_anahtarlar dosyasında olduğundan emin olun.</string>
+    <string name="info_vm_launched_on_stand_by">
+VM\'niz kapalı bulundu ve başlatıldı. Lütfen birkaç dakika sonra tekrar deneyin. Çok erken deneyip bağlantı hatası alırsanız daha sonra tekrar deneyin.</string>
+    <string name="pan_follow_mouse">
+Pan fareyi takip ediyor</string>
+    <string name="enter_text_title">
+Gönderilecek Metni Girin</string>
+    <string name="verification_code">
+Doğrulama Kodu</string>
+    <string name="rendering_mode">
+Oluşturma Modu:</string>
+    <string name="need_help">
+Yardıma mı ihtiyacınız var?</string>
+    <string name="master_password_verify">
+Ana Şifreyi Doğrulayın</string>
+    <string name="address_caption_ssh_hint">
+SSH Sunucusu</string>
+    <string name="error_failed_to_obtain_file">
+Dosya bulunamadı. Lütfen tekrar indirin, ancak bu sefer Bildirim alanından veya mümkünse doğrudan Tarayıcıdan açmayı deneyin.</string>
+    <string name="input_methods">
+Giriş Yöntemi</string>
+    <string name="color_black_and_white">
+Siyah Beyaz (1 bpp)</string>
+    <string name="info_cert">
+Bu yeni veya değiştirilmiş ana makine sertifikasını kabul ediyor musunuz?\n\nParmak izleri:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nVerilen: %4$s\nVerilen: %5$s\n\nGeçerlilik tarihi: %6$s\nGeçerlilik tarihi: %7$s\n</string>
+    <string name="vv_file_not_found">
+.vv dosyası bulunamadı!</string>
+    <string name="enter_passphrase">
+Lütfen Anahtar Parolayı girin</string>
+    <string name="auto_x_enabled">
+Etkinleştirilmiş</string>
+    <string name="get_help">
+Yardım Alın</string>
+    <string name="enable_gateway">RDP Gateway Etkinleştir</string>
+    <string name="shift_check">
+Vardiya</string>
+    <string name="previous_versions">
+Önceki Sürümler ⍼</string>
+    <string name="vnc_server_empty">
+VNC Sunucusu veya bağlantı noktası boş. Bağlantı kurulamıyor!</string>
+    <string name="love_our_work">
+İşimizi seviyor musunuz?</string>
+    <string name="more_debug_logging">
+Daha Fazla Hata Ayıklama Günlüğü</string>
+    <string name="copy_list_button">
+Listeyi Kopyala</string>
+    <string name="rdp_adv_visual_styles">
+Görsel Stilleri Etkinleştir</string>
+    <string name="remote_sound_disabled">
+Ses Devre Dışı</string>
+    <string name="connection_type_spice_over_ssh">
+SSH üzerinden SPICE</string>
+    <string name="remote_sound_on_server">
+Sunucudaki Ses</string>
+    <string name="super_check">
+Süper</string>
+    <string name="error_not_connected_to_network">
+İnternete bağlı görünmüyorsunuz. Bağlanmadan devam edilemez!</string>
+    <string name="action_export_settings">
+Ayarları Dışa Aktarma</string>
+    <string name="save_as_copy">
+Kopya Olarak Kaydet</string>
+    <string name="rdp_intro_text">
+Genel olarak aRDP\'yi ve açık kaynaklı yazılımı desteklediğiniz için teşekkür ederiz!aRDP\'yi kullanma konusunda yardım için Menüdeki Yardım öğelerine ve uygulamanın pazardaki açıklamasına bakın.
+&lt;br&gt;
+&lt;br&gt;
+aRDP özelliklerinin mevcut listesi şunları içerir:
+&lt;br&gt;
+- Düz RDP, SSH üzerinden tünellenen RDP.
+&lt;br&gt;
+- Serbest dönüş desteği. Gerekirse dönüşü sınırlamak için İşletim Sistemini kullanın.
+&lt;br&gt;
+- Uzaktan çözünürlük ayarı, manzara ve portre modlarında yerel çözünürlük.
+&lt;br&gt;
+- SSH Genel/Özel anahtar çifti oluşturma ve dışa aktarma.
+&lt;br&gt;
+- Otomatik Oturum kaydetme.
+&lt;br&gt;
+- Yakınlaştırılabilir, Ekrana Sığdır ve Bire Bir ölçeklendirme modları.
+&lt;br&gt;
+- Doğrudan ve Simüle Edilmiş Dokunmatik Yüzey giriş modlarında uzak fare üzerinden çoklu dokunmatik kontrol.
+&lt;br&gt;
+- Tek Elle giriş modunda uzak fare üzerinde tek elle tam kontrol.
+&lt;br&gt;
+- Çoklu dokunmatik fare tıklamaları: Sol tıklama için dokunun, sağ tıklama için iki parmakla dokunun, orta tıklama için üç parmakla dokunun.
+&lt;br&gt;
+- Çoklu dokunmatik kaydırma: kaydırmak için iki parmakla Yukarı/Aşağı ve Sola/Sağa sürükleyin.
+&lt;br&gt;
+- Menüden tamamen devre dışı bırakılabilen veya ekran düğmesiyle saklanabilen ekran meta ve ok tuşları.
+&lt;br&gt;
+- Bağlandığında Metin ve isteğe bağlı Tuş kombinasyonlarını gönderme.
+&lt;br&gt;
+- Bağlantı ekranında bağlantı oluşturma konusunda yardım (\Menü-&gt;Bağlantı Yardımı\).
+&lt;br&gt;
+- Bağlandığında giriş modlarıyla ilgili yardım (\Menü-&gt;Daha Fazla-&gt;Giriş Modu Yardımı\).
+&lt;br&gt;
+- BT klavyeleri için fareyi hareket ettirmek yerine mevcut izleme dörtgenini Oklar olarak kullanmak ve izleme dörtgenini Ctrl olarak tıklatarak D-pad\'i/izleme dörtgenini döndürmek.
+&lt;br&gt;
+- RDP sunucusunda gerekli dil düzeni etkin olduğu sürece çoklu dil desteği.
+&lt;br&gt;
+- Kesintisiz uzak makine çözünürlüğü değişiklikleri
+&lt;br&gt;
+- Sağ ve orta tıklama ve kaydırma tekerleği de dahil olmak üzere Android 4.0+ cihazlarda tam fare desteği.
+&lt;br&gt;
+- Çeşitli renk modları
+&lt;br&gt;
+- Kopyala/Yapıştır entegrasyonu
+&lt;br&gt;
+- Ayarları dışa aktarma
+&lt;br&gt;
+- Ses
+&lt;br&gt;
+&lt;br&gt;
+Bilinen sorunlar:</string>
+    <string name="ca_subject">
+Sertifika konusu adını buraya girin. Sertifika ortak adı (CN) sunucu ana bilgisayar adıyla eşleşiyorsa gerekli olmayabilir.</string>
+    <string name="report_bug">
+Hata Bildir 🐛</string>
+    <string name="input_method_touchpad">
+Simüle Edilmiş Dokunmatik Yüzey</string>
+    <string name="force">
+Tam Ekran Bitmap</string>
+    <string name="keyboard_type">
+Yazılım Klavye Türü</string>
+    <string name="main_screen_help_text">
+Uygulama başlatıldığında, üzerinde kayıtlı bağlantıların bulunduğu bir ekran görüntülenir.
+
+Kaydedilmiş bağlantı yoksa ekranın alt kısmı boştur ve yeni bir bağlantı oluşturmak için artı düğmesine basmanız gerekir.
+Ayrıca, üstteki diğer araç çubuğuna veya menü seçeneklerine dokunarak bu ekrandan konfigürasyonun diğer yönlerini de kontrol edebilirsiniz.
+Varsayılan ayarları düzenlemek veya ayarları içe ve dışa aktarmak için örnek.
+
+Bir bağlantı kaydedildikten sonra uzak sunucuya bir kez dokunarak bağlanabilirsiniz. Ayrıca uzun dokunarak silme veya düzenleme seçeneğiniz de olacaktır.
+
+Son olarak, gösterilen bağlantıları filtreleyerek bağlantıları hızla bulmak için Bağlantıları Ara alanını kullanabilirsiniz.</string>
+    <string name="info_progress_dialog_aborted">
+Bağlantı iptal edildi!</string>
+    <string name="auto_x_session_auto">
+Otomatik</string>
+    <string name="tap_disable">
+Devre dışı bırakmak</string>
+    <string name="warning_cert_does_not_match">
+UYARI: Kaydedilen x509 sertifikası veya imzayla aktarılan, mevcut sunucu sertifikasıyla eşleşmiyor! Bu bir ortadaki adam saldırısı olabilir. Önemli değişikliğin farkındaysanız devam edebilirsiniz.</string>
+    <string name="arrow_down">
+Aşağı Ok</string>
+    <string name="ssh_passphrase_hint">
+SSH Parolası</string>
+    <string name="error_uri_noinfo_nosave">
+Bağlantıya özel yetersiz bilgi.</string>
+    <string name="cursor_force_local">
+Yerel</string>
+    <string name="color_24_bit">
+24 bit renk (24 bpp)</string>
+    <string name="action_import_settings">
+Ayarları İçe Aktarma</string>
+    <string name="username_hint_vencrypt">
+VNC Kullanıcı Adı</string>
+    <string name="master_password_error_intents_not_supported">
+Ana Parola etkinleştirildiğinde bağlantı amaçları henüz desteklenmemektedir.</string>
+    <string name="ssl_strict">
+Sertifikayla eşleşmesi için ortak adı zorunlu kıl (önerilir)</string>
+    <string name="close">
+Kapalı</string>
+    <string name="spice_intro_text">
+aSPICE\'ı ve genel olarak açık kaynaklı yazılımı desteklediğiniz için teşekkür ederiz!aSPICE kullanımıyla ilgili yardım için Menüdeki Yardım öğelerine ve uygulamanın pazardaki açıklamasına bakın.
+&lt;br&gt;
+&lt;br&gt;
+aSPICE özelliklerinin mevcut listesi şunları içerir:
+&lt;br&gt;
+- Düz SPICE, SSH üzerinden tünellenen SPICE.
+&lt;br&gt;
+- Serbest dönüş desteği. Gerekirse dönüşü sınırlamak için İşletim Sistemini kullanın.
+&lt;br&gt;
+- SSH Genel/Özel anahtar çifti oluşturma ve dışa aktarma.
+&lt;br&gt;
+- Otomatik Oturum kaydetme.
+&lt;br&gt;
+- Yakınlaştırılabilir, Ekrana Sığdır ve Bire Bir ölçeklendirme modları.
+&lt;br&gt;
+- Doğrudan ve Simüle Edilmiş Dokunmatik Yüzey giriş modlarında uzak fare üzerinden çoklu dokunmatik kontrol.
+&lt;br&gt;
+- Tek Elle giriş modunda uzak fare üzerinde tek elle tam kontrol.
+&lt;br&gt;
+- Çoklu dokunmatik fare tıklamaları: Sol tıklama için dokunun, sağ tıklama için iki parmakla dokunun, orta tıklama için üç parmakla dokunun.
+&lt;br&gt;
+- Çoklu dokunmatik kaydırma: kaydırmak için iki parmakla Yukarı/Aşağı ve Sola/Sağa sürükleyin.
+&lt;br&gt;
+- Menüden tamamen devre dışı bırakılabilen veya ekran düğmesiyle saklanabilen ekran meta ve ok tuşları.
+&lt;br&gt;
+- Bağlandığında Metin ve isteğe bağlı Tuş kombinasyonlarını gönderme.
+&lt;br&gt;
+- Bağlantı ekranında bağlantı oluşturma konusunda yardım (\Menü-&gt;Bağlantı Yardımı\).
+&lt;br&gt;
+- Bağlandığında giriş modlarıyla ilgili yardım (\Menü-&gt;Daha Fazla-&gt;Giriş Modu Yardımı\).
+&lt;br&gt;
+- BT klavyeleri için fareyi hareket ettirmek yerine mevcut izleme dörtgenini Oklar olarak kullanmak ve izleme dörtgenini Ctrl olarak tıklatarak D-pad\'i/izleme dörtgenini döndürmek.
+&lt;br&gt;
+- SPICE sunucusunda gerekli dil düzeni etkin olduğu sürece çoklu dil desteği.
+&lt;br&gt;
+- Kesintisiz uzak makine çözünürlüğü değişiklikleri
+&lt;br&gt;
+- Sağ ve orta tıklama ve kaydırma tekerleği de dahil olmak üzere Android 4.0+ cihazlarda tam fare desteği.
+&lt;br&gt;
+&lt;br&gt;
+Planlanan özellikler:
+&lt;br&gt;
+- Kopyala/Yapıştır entegrasyonu
+&lt;br&gt;
+- Ses
+&lt;br&gt;
+- Performans iyileştirmeleri
+&lt;br&gt;
+Bilinen sorunlar:
+&lt;br&gt;
+- Metin gönder bazı sembolleri göndermez.
+&lt;br&gt;</string>
+    <string name="save_button">
+Kaydetmek</string>
+    <string name="rdp_geom_description_hint">
+Sunucunun ExtendedDesktopSize desteğine ihtiyacı var</string>
+    <string name="error">
+Hata</string>
+    <string name="rdp_adv_menu_animation">
+Menü Animasyonlarını Göster</string>
+    <string name="spice_tls_port_hint">
+TLS Bağlantı Noktası</string>
+    <string name="repeater_clear">
+Kullanmayın</string>
+    <string name="connection_setup_user">
+Kullanıcı@Etki Alanı</string>
+    <string name="delete_connection">
+Bağlantıyı Sil</string>
+    <string name="rdp_adv_remotefx">
+RemoteFX\'i Etkinleştir</string>
+    <string name="spice_server_empty">
+SPICE Sunucusu veya bağlantı noktası boş. Bağlantı kurulamıyor!</string>
+    <string name="error_pve_failed_to_authenticate">
+Proxmox Sanal Ortamında kimlik doğrulaması başarısız oldu. Lütfen kullanıcı adınızı user@realm formatında girdiğinizden ve şifrenizin doğru olduğundan emin olun.</string>
+    <string name="import_from_file">
+Dosyadan İçe Aktar</string>
+    <string name="master_password_hint_once">
+Şifreyi Girin</string>
+    <string name="color_greyscale">
+Gri tonlamalı (1 bpp)</string>
+    <string name="master_password_error_wrong_password">
+Sağlanan Ana Parolayla kimlik doğrulaması yapılamadı.</string>
+    <string name="rdp_server_empty">
+RDP Sunucusu veya bağlantı noktası boş. Bağlantı kurulamıyor!</string>
+    <string name="showkbd_label">
+Klavye</string>
+    <string name="prefer_sending_unicode">
+Unicode girişi (yalnızca Windows)</string>
+    <string name="error_vv_download_timeout">
+Vv dosyasını indirirken zaman aşımı.</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">
+Sunucunuzun anahtar kimlik doğrulamasına ek olarak şifre kimlik doğrulamasına ihtiyacı var.</string>
+    <string name="error_failed_to_download_http">
+Dosya HTTP üzerinden indirilemedi. Sunucunuza ulaşılamıyor olabilir.</string>
+    <string name="audio_initialized">
+Ses başlatıldı</string>
+    <string name="error_connection_interrupted">
+Bağlantı kesildi.</string>
+    <string name="message_please_wait">
+Lütfen bekleyin</string>
+    <string name="rdp_geom_automatic">
+Otomatik</string>
+    <string name="rdp_geom_custom">
+Gelenek</string>
+    <string name="cert_subject">
+Sertifika Konusu</string>
+    <string name="enter_vnc_password">
+Lütfen VNC şifresini girin</string>
+    <string name="immersive_mode_disable">
+Sürükleyici Modu Devre Dışı Bırak</string>
+    <string name="password_caption_ssh">
+SSH Yetkilendirmesi</string>
+    <string name="error_ssh_kbd_auth_method_unavail">
+SSH sunucusu ne \password\ ne de \keyboard-interactive\ kimlik doğrulama yöntemlerini desteklemez veya öncelikle \publickey\ yöntemini gerektirir. Lütfen iki yöntemden en az birine izin verecek şekilde yapılandırın veya uygulamayı yeniden yapılandırın. Mevcut kimlik doğrulama yöntemleri:</string>
+    <string name="button_send_text">
+Metin Gönder</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">
+SSH sunucusu \publickey\ kimlik doğrulama yöntemini desteklemiyor ve kimlik doğrulamak için bir anahtar çifti kullanmaya çalışıyoruz. Lütfen genel anahtar kimlik doğrulamasına izin verecek şekilde yapılandırın ve tekrar deneyin. Mevcut kimlik doğrulama yöntemleri:</string>
+    <string name="connection_type_vnc_over_vencrypt">
+VeNCrypt üzerinden VNC\'yi güvenli hale getirin</string>
+    <string name="vnc_viewer_started">
+VNC Görüntüleyici başlatıldı</string>
+    <string name="panning">
+Ekranı Kaydırma</string>
+    <string name="alt_check">
+Alternatif</string>
+    <string name="action_rate_or_share_app">
+⭐ Yardım Alın, Değerlendirin, Paylaşın</string>
+    <string name="rdp_geom_disabled">
+Engelli</string>
+    <string name="port_ssh_hint">
+Liman</string>
+    <string name="color_8">
+8 renk (2 bpp)</string>
+    <string name="color_64">
+64 renk (4 bpp)</string>
+    <string name="ad_donate_text1">
+Pro sürümünü satın alarak projeye küçük bir bağışla destek olmak için buraya dokunun.</string>
+    <string name="error_ssh_keypair_missing">
+SSH anahtar çifti henüz oluşturulmadı! Lütfen bir tane oluşturun ve (genel kısmını) SSH sunucusundaki yetkili_anahtarlara koyun.</string>
+    <string name="master_password_set">
+Ana Parolayı Ayarla</string>
+    <string name="color_256">
+256 renk (8 bpp)</string>
+    <string name="ca_new_or_changed">
+Yeni veya değiştirilmiş sunucu sertifikası</string>
+    <string name="repeater_save">
+Kullanmak</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">
+Öneri İçeren Metin (TYPE_CLASS_TEXT)</string>
+    <string name="mouse_follow_pan">
+Fare tavayı takip ediyor</string>
+    <string name="input_method_direct_swipe_pan">
+Doğrudan, Kaydırarak Kaydırma</string>
+    <string name="input_mode_help">
+Giriş Modu Yardımı</string>
+    <string name="input_method_single_handed">
+Tek El</string>
+    <string name="rdp_intro_title">
+aRDP: Sezgisel, güvenli RDP istemcisi</string>
+    <string name="rdp_connection_screen_help_text">
+Bir bağlantı eklediğinizde veya düzenlediğinizde bir bağlantı yapılandırma sayfası göreceksiniz. Burada yeni bir RDP bağlantısı kurabilir veya önceden var olan bir bağlantıyı seçebilirsiniz. Üstte bağlantıyı kaydetmenizi sağlayan bir düğme bulunur. Bağlantınızı yapılandıracağınız yer burasıdır.
+
+- Bağlantı Türü: Burada RDP bağlantı türünü seçersiniz. Mevcut bağlantı türleri şunlardır:
+(a) RDP protokolü üzerinden doğrudan bir bilgisayara bağlanan RDP.
+(b) Bağlantınızı ilk olarak SSH sunucusu çalıştıran bir bilgisayar üzerinden tünelleyen SSH üzerinden RDP.
+
+- Başlık: Oluşturduğunuz her bağlantının, onu listede kolayca tanımlayabilmeniz için bir takma adı olabilir.
+
+- SSH Tüneli Ayarları: SSH üzerinden RDP modunda kullanılabilir.
+(a) SSH Sunucusu/Bağlantı Noktası: Bağlantının tünelleneceği SSH sunucusunun adresi ve bağlantı noktası. Varsayılan olarak SSH 22 numaralı bağlantı noktasını dinler.
+(b) Kullanıcı Adı/Şifre: SSH sunucusundaki hesabın kullanıcı adı ve şifresi. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+(c) Anahtarı Yönet/Anahtarı Kullan: Genel/özel anahtarları yönetmek için bir düğme ve kimlik doğrulama için parola yerine anahtar kullanılıp kullanılmayacağını gösteren bir onay kutusu. Bir anahtar çifti oluşturduktan sonra Panoya Kopyala düğmesini kullanırsanız, RDP sunucusuna bağlandıktan sonra genel anahtarı yapıştırabilmeniz gerekir (pano sunucuyla senkronize edilir).
+
+- RDP Bağlantı Ayarları:
+(a) RDP Sunucusu/Bağlantı Noktası: Burası, iletişim kurmak istediğiniz RDP sunucusunu çalıştıran bilgisayarın ana bilgisayar adını veya IP adresini ve bağlantı noktasını gireceğiniz yerdir. SSH üzerinden RDP modunda bu adres SSH Sunucusundan görüldüğü gibidir. SSH Sunucusu ve RDP sunucusu aynı fiziksel bilgisayarsa localhost\'u kullanabilirsiniz. RDP sunucuları genellikle 3389 numaralı bağlantı noktasını dinler.
+(b) RDP Kullanıcısı: Windows/UNIX hesabınızın kullanıcı adını gireceğiniz yerdir.
+(c) RDP Alan Adı: Hesabınızın ait olduğu alan adını girin.
+(d) RDP Şifresi: Bu, Windows/UNIX hesabınızın şifresini gireceğiniz yerdir. Parolalar için güvenli depolama kullanılmaz (bunlar bir veritabanında bulunur) ve parola yalnızca Sakla kutusunu işaretlerseniz saklanır. Uygulamayı son girdiğinizden bu yana uygulamadan çıkmadıysanız, şifre bu sayfada doldurulacaktır.
+
+- Gelişmiş ayarlar: Bu bölümde masaüstünün çözünürlüğünü özelleştirmenin bir yolunu ve çeşitli RDP performansı ayarlarını bulacaksınız.
+
+- Yerel Cihaz Ayarları: Bunlar, uygulamanın cihazınızdaki davranışını ayarlar.
+(a) Oklar için D-Pad\'i kullanın: İsterseniz, RDP sunucusuna ok göndermek için Bluetooth klavyenizin D-Pad\'ini veya ekran klavyenizdeki okları kullanabilirsiniz.
+(b) D-Pad\'i Döndür: Bluetooth klavyeyle eşleştirilmiş telefonların, sunucuya doğru talimatları gönderebilmesi için klavyenin D-pad\'inin saat yönünün tersine döndürülmesi gerekebilir.
+(c) Yerel fare işaretçisi: İşaretçi görünmezse uygulama tarafından çizilmeye zorlamak için bunu seçin.</string>
+    <string name="special_keys">
+Anahtarları Gönder</string>
+    <string name="rdp_security_rdp">
+RDP Güvenliği</string>
+    <string name="error_vnc_unable_to_connect">
+VNC sunucusuna bağlantı şu nedenle başarısız oldu:</string>
+    <string name="opaque_connection_screen_help_text">
+Bir bağlantı eklediğinizde veya düzenlediğinizde bir bağlantı yapılandırma sayfası göreceksiniz.
+Burada yeni bir Opak bağlantı kurabilir veya önceden var olan bir bağlantıyı seçebilirsiniz.
+Üstte bağlantıyı kaydetmenizi sağlayan bir düğme bulunur.
+Bağlantınızı yapılandıracağınız yer burasıdır.
+
+- Bağlantı Türü: Burada hangi Sanallaştırma Ortamına bağlanacağınızı seçersiniz.
+
+- Sunucu Adresi: Sunucunun ana bilgisayar adı veya IP\'si. Standart olmayan bir bağlantı noktasını dinliyorsa iki nokta üst üste işaretiyle ayrılmış bir bağlantı noktası ekleyebilirsiniz.
+
+- Sanal makine adı: VM\'nin adını Sanallaştırma platformunuzda göründüğü şekliyle belirtebilir veya aralarından seçim yapabileceğiniz VM\'lerin veya kapsayıcıların bir listesini almak için bu alanı boş bırakabilirsiniz.
+
+- Kullanıcı: Sanallaştırma çerçevenizde kimlik doğrulaması yapmak için kullanıcı adını girin.
+
+- Şifre: Şifreyi kaydetmek istiyorsanız buraya girin veya her defasında sorgulanması için alanı boş bırakın.
+
+- Gelişmiş ayarlar: Bu bölümde tüm yerel cihaz, protokol ve performans ayarlarını bulacaksınız.</string>
+    <string name="connection_edit">
+Düzenlemek</string>
+    <string name="connection_type_vnc_over_ssh">
+SSH üzerinden VNC\'yi güvenli hale getirin</string>
+    <string name="rdp_geom_native_portrait">
+Yerli Portre</string>
+    <string name="error_spice_unable_to_connect">
+Bağlanamıyor veya kimlik doğrulanamıyor. Lütfen sunucu adresini ve bağlantı noktasını kontrol edin.</string>
+    <string name="local_device_tweaks">
+Yerel Cihaz Düzenlemeleri</string>
+    <string name="enable_recording">
+Kaydı Etkinleştir</string>
+    <string name="user_not_specified">
+Kullanıcı belirtilmedi</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">
+Varsayılan (TYPE_NULL)</string>
+    <string name="dpad_as_arrows">
+Oklar için D-Pad\'i kullanın ve Ctrl için D-Pad tıklamasını kullanın.</string>
+    <string name="enter_otp_code">
+Lütfen OTP kodunu girin</string>
+    <string name="import_settings">
+İçe aktarmak</string>
+    <string name="update_button">
+Güncelleme</string>
+    <string name="enter_gateway_credentials">
+Lütfen Ağ Geçidi kimlik bilgilerini girin</string>
+    <string name="cert_fingerprint">
+Sertifika Parmak İzi</string>
+    <string name="intro_text">
+bVNC özelliklerinin güncel listesi:
+&lt;br&gt;
+- Düz VNC, SSH üzerinden Güvenli VNC, AnonTLS ve VeNCrypt ve isteğe bağlı Tekrarlayıcıyla UltraVNC Windows Oturum Açma.
+&lt;br&gt;
+- AutoX modu: SSH üzerinden VNC modunda, x11vnc\'yi kullanarak otomatik olarak mevcut olanı keşfedin ve/veya yeni X oturumları oluşturun! NX istemcisi gibi çalışır.
+&lt;br&gt;
+- Serbest dönüş desteği. Gerekirse dönüşü sınırlamak için İşletim Sistemini kullanın.
+&lt;br&gt;
+- SSH Genel/Özel anahtar çifti oluşturma ve dışa aktarma.
+&lt;br&gt;
+- Tight, ZRLE ve CopyRect dahil tüm standart VNC kodlamaları.
+&lt;br&gt;
+- Otomatik Oturum kaydetme.
+&lt;br&gt;
+- Yakınlaştırılabilir, Ekrana Sığdır ve Bire Bir ölçeklendirme modları.
+&lt;br&gt;
+- Doğrudan ve Simüle Edilmiş Dokunmatik Yüzey giriş modlarında uzak fare üzerinden çoklu dokunmatik kontrol.
+&lt;br&gt;
+- Tek Elle giriş modunda uzak fare üzerinde tek elle tam kontrol.
+&lt;br&gt;
+- Çoklu dokunmatik fare tıklamaları: Sol tıklama için dokunun, sağ tıklama için iki parmakla dokunun, orta tıklama için üç parmakla dokunun.
+&lt;br&gt;
+- Çoklu dokunmatik kaydırma: kaydırmak için iki parmakla Yukarı/Aşağı ve Sola/Sağa sürükleyin.
+&lt;br&gt;
+- Menüden tamamen devre dışı bırakılabilen veya ekran düğmesiyle saklanabilen ekran meta ve ok tuşları.
+&lt;br&gt;
+- Bağlandığında Metin ve isteğe bağlı Tuş kombinasyonlarını gönderme.
+&lt;br&gt;
+- Bağlantı ekranında bağlantı oluşturma konusunda yardım (\Menü-&gt;Bağlantı Yardımı\).
+&lt;br&gt;
+- Bağlandığında giriş modlarıyla ilgili yardım (\Menü-&gt;Daha Fazla-&gt;Giriş Modu Yardımı\).
+&lt;br&gt;
+- Fareyi hareket ettirmek yerine mevcut izleme dörtgenini Oklar olarak kullanmak ve izleme dörtgenini Ctrl olarak tıklatmak.
+&lt;br&gt;
+- Bağlantılar sırasında portre moduna geçiş, BT klavyeler için D-pad/trackpad\'in döndürülmesi.
+&lt;br&gt;
+- VNC sunucusunda gerekli dil düzeni etkin olduğu sürece çoklu dil desteği.
+&lt;br&gt;
+- Kopyala/Yapıştır entegrasyonu
+&lt;br&gt;
+- Uzak makine çözünürlüğü değişiklikleri
+&lt;br&gt;
+- Sağ ve orta tıklama ve kaydırma tekerleği de dahil olmak üzere Android 4.0+ cihazlarda tam fare desteği.
+&lt;br&gt;
+&lt;br&gt;
+Bilinen sorunlar:
+&lt;br&gt;</string>
+    <string name="applies_to_new_connections_only">
+Yalnızca Yeni Bağlantılar için Geçerlidir</string>
+    <string name="ad_donate_text_vnc">
+Açık Kaynak projesinin desteğinize ihtiyacı var!bVNC Pro\'yu satın alarak bize bağış yapın.bVNC Pro ve diğer uygulamalarımıza bağlantılar için aşağıya bakın.</string>
+    <string name="list_caption">
+Liste</string>
+    <string name="password_caption">
+VNC Yetkilendirmesi</string>
+    <string name="new_connection">
+Yeni Bağlantı</string>
+    <string name="error_ssh_pwd_auth_fail">
+SSH sunucusunda parolayla kimlik doğrulaması yapılamadı. Lütfen SSH kullanıcı adınızı ve SSH şifrenizi kontrol edin.</string>
+    <string name="rdp_security_auto">
+Otomatik Anlaşma Güvenliği</string>
+    <string name="input_mode_panning">
+Masaüstü Kaydırma Modu</string>
+    <string name="rdp_security_mode">
+Güvenlik Modu</string>
+    <string name="snap_one_to_one">
+1:1 yakınlaştırmaya çekildi</string>
+    <string name="username_hint">
+UltraVNC MS Oturum Açma Kullanıcı Adı</string>
+    <string name="info_ssh_key_fingerprint">
+Ana bilgisayar anahtarı parmak izi:</string>
+    <string name="ad_donate_text0">
+Pro sürümü ayrıca çok faktörlü SSH kimlik doğrulamasını da destekler. Ayrıca, yetkisiz kullanımı önleyen ve hırsızlığa karşı koruma sağlamak için parolalar ve SSH anahtarları dahil tüm bağlantı ayarlarını şifreleyen, çok talep edilen Ana Parola özelliğini destekler. Ana Menüden etkinleştirin.</string>
+    <string name="input_mode">
+Giriş Modu</string>
+    <string name="error_rdp_connection_failed">
+RDP Bağlantısı başarısız oldu! Ağ bağlantısı kesildi, RDP sunucusu kapatıldı veya devre dışı bırakıldı ya da oturumunuz devralındı.</string>
+    <string name="info_dialog_title">
+Bilgi</string>
+    <string name="error_ovirt_auth_failure">
+Kimlik doğrulama hatası. Lütfen sağlanan kullanıcıyı ve şifreyi kontrol edin.</string>
+    <string name="auto_x_descript_session">
+Uzak Oturum Türü</string>
+    <string name="ad_donate_text_spice">
+Proxmox ve oVirt bağlantıları için lütfen Opaque veya aSPICE Pro satın alarak projeye bağış yapın.aSPICE\'ın Ücretsiz sürümü yalnızca KVM sanal makinelerine doğrudan bağlantıları destekler. Opaque ve aSPICE Pro\'nun yanı sıra diğer uygulamalarımıza bağlantılar için aşağıya bakın.</string>
+    <string name="control_check">
+Ctrl</string>
+    <string name="connection_caption">
+Bağlantı</string>
+    <string name="cert_issuer">
+Sertifika Veren</string>
+    <string name="copy_logcat">
+📋 Logcat\'i kopyala</string>
+    <string name="usb">
+USB (önce OTG kablosunu takın)</string>
+    <string name="single_choose">
+Tek el modunu seçin veya iptal edin</string>
+    <string name="info_update_color_model_to">
+Renk Modelini Güncelleme</string>
+    <string name="path_to_ca">
+Bir dosya yolu girin (örneğin /sdcard/ca-cert.pem) ve Sertifika Yetkilinizi yüklemek için İçe Aktar\'a dokunun.</string>
+    <string name="view_only">
+Salt görüntüleme modu</string>
+    <string name="connection_type_vnc_over_stunnel">
+SSL Tüneli Üzerinden Güvenli VNC</string>
+    <string name="enter_ssh_credentials">
+Lütfen SSH kimlik bilgilerini girin</string>
+    <string name="ad_donate_spice_text1b">
+Pro sürümünü satın almak ve .vv dosyalarını açmak için buraya dokunun.</string>
+    <string name="master_password_error_password_necessary">
+Devam etmek için Ana Şifre gereklidir.</string>
+    <string name="address_caption_hint_tunneled">
+VNC Sunucusu</string>
+    <string name="help">
+Yardım ⓘ</string>
+    <string name="connection_setup_password">
+Şifre</string>
+    <string name="info_progress_dialog_downloading">
+İlk kareyi indirin.\Lütfen bekleyin…</string>
+    <string name="verification_code_message">
+Lütfen çok faktörlü kimlik doğrulama Doğrulama Kodunu girin</string>
+    <string name="local_clipboard_integration">
+Yerelden Uzak Panoya Entegrasyonu Etkinleştir</string>
+    <string name="info_progress_dialog_connecting">
+Bağlanıyor…</string>
+    <string name="error_ssh_keypair_decryption_failure">
+Anahtar çiftinin şifresi çözülemedi. Lütfen ana ekrandaki \'SSH Parolası\' alanına parolanızı doğru girdiğinizden emin olun.</string>
+    <string name="remote_clipboard_integration">
+Uzaktan Yerel Panoya Entegrasyonunu Etkinleştir</string>
+    <string name="master_password_error_shortcuts_not_supported">
+Ana Parola etkinleştirildiğinde kısayollar henüz desteklenmemektedir.</string>
+    <string name="repeater_caption">
+ÖNEMLİ: UltraVNC yineleyici kullanıyorsanız adresini ve bağlantı noktasını bu iletişim kutusunun dışına girin. Buraya gerçek VNC sunucusunun adresini ve bağlantı noktasını girin. VNC sunucusunun adresini ve bağlantı noktasını iki nokta üst üste ile ayırın;192.168.0.100:5900.</string>
+    <string name="single_zoom">
+Yakınlaştırma modu - yakınlaştırmak/uzaklaştırmak için yukarı/aşağı kaydırın, durdurmak için parmağınızı kaldırın</string>
+    <string name="address_caption_hint">
+VNC Sunucusu</string>
+    <string name="master_password_error_failed_to_enable">
+Ana şifre etkinleştirilemedi. Cihazınızdaki boş alanı kontrol edip tekrar deneyin.</string>
+    <string name="connection_type_vnc_over_ssl">
+AnonTLS üzerinden VNC\'yi güvenli hale getirin</string>
+    <string name="input_method_mouse">
+Fare İşaretçisi Kontrolü</string>
+    <string name="error_uri_parse_error">
+Amaç URI\'si ayrıştırılamıyor. Lütfen URI biçimini kontrol edin. Daha fazla ayrıntı için cihaz logcat\'ini de görebilirsiniz.</string>
+    <string name="keys_caption">
+Anahtarlar</string>
+    <string name="port_hint">
+Liman</string>
+    <string name="custom_ca_import">
+Alternatif olarak, CA\'nızın tam yolunu girin ve İçe Aktar\'a dokunun.</string>
+    <string name="enter_text">
+Metin Gönder</string>
+    <string name="auto_x_geom_custom">
+Gelenek</string>
+    <string name="error_no_such_vm_found_for_user">
+Belirtilen kullanıcı için sağlanan kimliğe sahip Sanal Makine bulunamadı. VM\'lerin listesini almak için kimliği silin.</string>
+    <string name="intro_title">
+bVNC: Sezgisel, güvenli VNC istemcisi</string>
+    <string name="advanced_settings">
+Gelişmiş Ayarlar</string>
+    <string name="tap_enable">
+Olanak vermek</string>
+    <string name="ssh_tunnel_settings">
+SSH Tüneli Ayarları</string>
+    <string name="paste_ca">
+Dosya olarak içe aktarmıyorsanız Sertifika Yetkilisini buraya girin.</string>
+    <string name="input_mode_help_text">
+Herhangi bir Giriş Modunda, ekran klavyesini almak için klavye simgesine dokunun. Ayrıca cihazınızın klavyeyi açan kendi hareketi olabilir.
+
+Daha sezgisel dokunmatik ekran kontrolü için Doğrudan giriş modlarını kullanın. Fare üzerinde daha hassas kontrol için Simüle Edilmiş Dokunmatik Yüzey Modunu kullanın.
+
+Doğrudan, Kaydırarak Kaydırma Modu:
+- Fareyi doğrudan dokunarak kontrol edin.
+- Etrafı kaydırmak için kaydırın.
+- Dokunmak, farenin dokunduğunuz yeri tıklatmasını sağlar.
+- Kaydırma etkinlikleri, iki parmakla kaydırmanın başladığı iki parmak arasında gönderilir.
+
+Doğrudan, Tutma Kaydırma Modu:
+- Fareyi doğrudan dokunarak kontrol edin.
+- Kaydırma modunu başlatmak için uzun dokunun.
+- Dokunmak, farenin dokunduğunuz yeri tıklatmasını sağlar.
+- Kaydırma etkinlikleri, iki parmakla kaydırmanın başladığı iki parmak arasında gönderilir.
+
+Simüle Edilmiş Dokunmatik Yüzey Modu:
+- Ekranınızı dokunmatik yüzey gibi kullanın.
+- Fare işaretçisini hareket ettirmek için kaydırın.
+- Kaydırmak için fareyi ekranın kenarının ötesine taşıyın.
+- Dokunmak, farenin işaretçinin bulunduğu yere tıklamasını sağlar.
+- Kaydırma olayları fare işaretçisinin bulunduğu yere gönderilir.
+
+Tek El Modu:
+- Doğrudan, Kaydırarak Kaydırma Moduyla aynıdır, ancak uzun dokunma mod seçenekleriyle menüyü açar.
+- Modu seçtikten sonra parmağınızı ekranda kaydırdığınızda seçilen hareket gerçekleştirilir.
+- Parmağınızın kaldırılması hareketi tamamlar.
+
+Tüm Giriş Modları:
+- Sol tıklama: Bir kez dokunun.
+- Çift tıklama: Çift dokunun.
+- Sağ tıklama: Dokunmayı basılı tutun ve ikinci parmağınızla (ekranın herhangi bir yerine) dokunun.
+- Alternatif Sağ Tıklama: Cihazınız için \Geri\ düğmesini veya hareketini kullanın.
+- Orta tıklama: Dokunmayı basılı tutun ve iki parmağınızla daha dokunun (ekranın başka herhangi bir yerine).
+- Fare sürükleme: Uzun dokunun ve kaydırın.
+- Kaydırma tekerleği: İki parmakla yukarı/aşağı ve sola/sağa sürükleyin. Hızlı sürükleme daha hızlı kaydırır.
+- Yakınlaştır/uzaklaştır: Yakınlaştırılabilir ölçeklendirmede, ölçeklendirmeyi kontrol etmek için sıkıştırarak yakınlaştırın.
+- Ctrl/Alt tuşu: Menü-&gt;Ctrl/Alt tuşları. İşiniz bittiğinde kapatmayı unutmayın!
+- Tuş kombinasyonları: Menü-&gt;Daha Fazla-&gt;Tuşları Gönder.
+- Metin gönder: Ekran klavyesini kullanarak yazın veya Menü-&gt;Diğer-&gt;Metin Gönder\'i kullanın.</string>
+    <string name="ctrl_alt_del">
+Ctrl-Alt-Del</string>
+    <string name="auto_x_geom_native">
+Yerli</string>
+    <string name="username_hint_ssh">
+SSH Kullanıcı Adı</string>
+    <string name="search_connections">
+Bağlantıları Ara</string>
+    <string name="ok">
+TAMAM</string>
+    <string name="auto_x_title">
+AutoX\'i yapılandırma</string>
+    <string name="cursor_mode">
+İmleç Modu:</string>
+    <string name="master_password_error_failed_to_disable">
+Ana şifre devre dışı bırakılamadı. Cihazınızdaki boş alanı kontrol edip tekrar deneyin.</string>
+    <string name="rdp_password_hint">
+RDP Şifresi</string>
+    <string name="auto_x_disabled">
+Engelli</string>
+    <string name="donate_app">
+Bağış yapın ❤</string>
+    <string name="auto_x_xvnc">
+Xvnc ile Bul veya Oluştur</string>
+    <string name="shortcut_label_vnc">
+VNC Bağlantısı</string>
+    <string name="download_from_server">
+Sunucudan İndir</string>
+    <string name="vv_file_error">
+.vv dosyası eksik veya bozuk!</string>
+    <string name="rdp_descript_geom">
+Uzak Masaüstü Boyutu (GxY)</string>
+    <string name="error_no_vnc_support_yet">
+VNC görüntüleme türü henüz desteklenmiyor ancak yakında sunulacak bir özelliktir. Anlayışınız için teşekkürler!</string>
+    <string name="error_out_of_memory">
+Uzak ekranı çizmek için yeterli bellek ayrılamıyor. Uygulamayı yeniden başlatmayı deneyin, ardından cihazınızı yeniden başlatın. Ayrıca uygulama ayarları aracılığıyla uzak masaüstünün boyutunu azaltmayı da deneyebilirsiniz.</string>
+    <string name="info_ssh_key_fingerprint_identical">
+\n\nOrtadaki adam saldırısını önlemek için bunun sunucu sertifikasının bilinen parmak iziyle aynı olmasını sağlayabilirsiniz.</string>
+    <string name="extra_keys_disable">
+Ekstra Tuşları Devre Dışı Bırak</string>
+    <string name="error_ovirt_timeout">
+VM\'nizle bağlantı zaman aşımına uğradı. Lütfen VM\'nizi çalıştıran düğümün adresinin doğru olduğunu, bu düğüme mevcut ağınızdan erişilebildiğini ve hiçbir güvenlik duvarının bağlantıyı engellemediğini kontrol edin.</string>
+    <string name="master_password_enable">
+🔒 Ana Şifreyi Etkinleştir</string>
+    <string name="auto_rotation">
+Bağlıyken ekran döndürme</string>
+    <string name="single_left">
+Sola sürükleme modu - sürüklemek/seçmek için kaydırın, durdurmak için parmağınızı kaldırın</string>
+    <string name="action_edit_default_settings">
+⚙ Varsayılan Ayarları Düzenle</string>
+    <string name="ssh_x11vnc_customize">
+AutoX\'i yapılandırma</string>
+    <string name="ad_donate_text_rdp">
+Açık Kaynak projesinin desteğinize ihtiyacı var! Ses yönlendirmeyi destekleyen aRDP Pro\'yu satın alarak bize bağış yapın.aRDP Pro ve diğer uygulamalarımıza bağlantılar için aşağıya bakın.</string>
+    <string name="show">
+Göstermek</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">
+Sudo şifresi gönderilemedi.</string>
+    <string name="rdp_geom_checkbox_enable">
+Özel çözünürlüğü etkinleştir</string>
+    <string name="enter_vnc_credentials">
+Lütfen VNC kimlik bilgilerini girin</string>
+    <string name="list_name_caption">
+Liste Adı</string>
+    <string name="ad_donate_spice_text1a">
+Opaque\'i satın almak ve Proxmox ile oVirt\'e doğrudan bağlantıları kaydetmek için buraya dokunun. Ayrıca .vv dosyalarını da destekler.</string>
+    <string name="manage_custom_ca_title">
+Özel CA\'yı yönet</string>
+    <string name="local_mouse_check">
+Yerel fare işaretçisi (işaretçi görünmezse seçin)</string>
+    <string name="one_to_one">
+Bire Bir</string>
+    <string name="error_ssh_hostkey_changed">
+HATA! Sunucu ana bilgisayar anahtarı değişti. Eğer bu kasıtlı ise devam edebilirsiniz. Aksi takdirde bu ortadaki bir adam saldırısı olabilir.</string>
+    <string name="audio">
+Ses</string>
+    <string name="master_password_hint_twice">
+Şifreyi tekrar girin</string>
+    <string name="new_list_button">
+Yeni Liste</string>
+    <string name="rdp_security_tls">
+TLS Güvenliği</string>
+    <string name="action_delete_connection">
+Bağlantıyı Sil</string>
+    <string name="input_method_help">
+Giriş Yöntemi Yardımı</string>
+    <string name="error_rdp_unable_to_connect">
+RDP sunucusuna bağlanılamadı! Lütfen RDP Sunucusu ayarının doğru olduğundan, sunucunun açık olduğundan, RDP\'nin etkin olduğundan ve sunucunun bu cihazla aynı ağda olduğundan emin olun.</string>
+    <string name="enter_password">
+Lütfen şifreyi girin</string>
+    <string name="rdp_adv_gfx">
+RDP Gfx</string>
+    <string name="auto">
+Otomatik</string>
+    <string name="error_no_user_hostname">
+Lütfen en az bir kullanıcı ve bir ana bilgisayar adı veya IP adresi girin.</string>
+    <string name="repeater_empty_text">
+Tekrarlayıcı yok</string>
+    <string name="toggle_keyboard">
+Klavyeyi Değiştir</string>
+    <string name="color_format_caption">
+Renk Modu</string>
+    <string name="enter_spice_password">
+Lütfen SPICE şifresini girin</string>
+    <string name="error_failed_to_download_https">
+Dosya HTTPS üzerinden indirilemedi. Belki de sunucu sertifikanız güvenilmezdir (süresi dolmuş veya otomatik olarak imzalanmıştır) veya sunucunuza erişilemiyordur.</string>
+    <string name="ssh_pubkey_button">
+Anahtarı Yönet</string>
+    <string name="hide_connection_thumbnails">
+Bağlantı Küçük Resimlerini Gizle</string>
+    <string name="auto_x_descript_geom">
+Uzak Masaüstü Boyutu (GxY)</string>
+    <string name="single_middle">
+Orta sürükleme modu - sürüklemek/seçmek için kaydırın, durdurmak için parmağınızı kaldırın</string>
+    <string name="single_right">
+Sağa sürükleme modu - sürüklemek/seçmek için kaydırın, durdurmak için parmağınızı kaldırın</string>
+    <string name="rdp_security_nla">
+Ağ Düzeyinde Kimlik Doğrulaması</string>
+    <string name="no_application_to_handle_vpn">
+Bu bağlantı, VPN\'yi harici bir uygulama aracılığıyla başlatacak şekilde ayarlandı. Başlatmak için Morpheusly gibi bir uygulamayı yüklemeniz gerekiyor.</string>
+    <string name="color_mode">
+Renk Modu</string>
+    <string name="ca_ovirt_use_custom">
+Özel RHEV/oVirt CA</string>
+    <string name="move_toolbar">
+Araç Çubuğunu Taşı</string>
+    <string name="single_cancel">
+Tek el modu iptal edildi</string>
+    <string name="error_connection_failed">
+Bağlantı başarısız oldu.</string>
+    <string name="error_ovirt_ssl_handshake_failure">
+SSL el sıkışma hatası. Sunucu SSL sertifikasında bir sorun var. Kendinden imzalı bir sertifika kullanıyorsanız sertifika yetkilinizi (yeniden) içe aktarmanız gerekir.</string>
+    <string name="open_doc">
+Kılavuz/Wiki</string>
+    <string name="address_caption">
+VNC Sunucusu</string>
+    <string name="spice_intro_title">
+aSPICE: Sezgisel, güvenli SPICE istemcisi</string>
+    <string name="ca_file_not_found">
+Dosya bulunamadı. Lütfen metin alanına geçerli bir dosya adı girin (ör. /sdcard/ca.crt).</string>
+    <string name="info_cert_signatures_identical">
+\n\nOrtadaki adam saldırısını önlemek için bilgilerin sunucu sertifikasıyla eşleştiğinden emin olabilirsiniz.</string>
+    <string name="rdp_adv_font_smoothing">
+Yazı tipi yumuşatma gerçekleştirin</string>
+    <string name="spice_ca_cert_path_hint">
+Sertifika yetkilisi dosyasının yolu</string>
+    <string name="error_pve_failed_to_parse_json">
+Proxmox Sanal Ortamından gelen yanıt ayrıştırılamadı.</string>
+    <string name="nickname_caption">
+Takma ad</string>
+    <string name="rdp_adv_window_contents">
+Sürüklerken pencere içeriğini göster</string>
+    <string name="enter_password_auth_failed">
+Kimlik doğrulama başarısız oldu. Lütfen kimlik bilgilerinizi tekrar girin.</string>
+    <string name="port_caption_ssh">
+SSH Bağlantı Noktası</string>
+    <string name="enable_sound">
+Sesi Etkinleştir</string>
+    <string name="please_grant_permission_from_prefs">
+Uygulamaya Ayarlar üzerinden izin vermeniz gerekebilir.</string>
+    <string name="auto_x_session_custom">
+Gelenek</string>
+    <string name="export_settings">
+İhracat</string>
+    <string name="auto_x_xdummy">
+Xdummy ile Bul veya Oluştur</string>
+    <string name="scroll_speed">
+Kaydırma Hızına dokunun</string>
+    <string name="remote_sound_on_device">
+Cihazdaki Ses</string>
+    <string name="desktop_scale_percentage">
+Özel Ölçeklendirme Yüzdesi</string>
+    <string name="extra_keys_enable">
+Ekstra Anahtarları Etkinleştir</string>
+    <string name="rdp_adv_glyph_cache">Glif Önbelleğini Etkinleştir</string>
+    <string name="disable_battery_optimizations_failed">
+Pil optimizasyonu ayarları açılamadı. Sistem ayarlarında pil optimizasyonunu manuel olarak devre dışı bırakın.</string>
+    <string name="disable_battery_optimizations">
+🔋Pil Optimizasyonlarını Devre Dışı Bırak</string>
+    <string name="disable_battery_optimizations_already_done">
+Uygulama zaten pil optimizasyonlarından muaf.</string>
+    <string name="no_connections_title">Henüz bağlantı yok</string>
+    <string name="no_connections_hint">İlk uzak bağlantınızı eklemek için + düğmesine dokunun</string>
+    <string name="no_connections_hint_tv">İlk uzak bağlantınızı eklemek için yukarıdaki + düğmesine basın</string>
+    <string name="keyboard_layout_map">Klavye Düzeni</string>
+</resources>

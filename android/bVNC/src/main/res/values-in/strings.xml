@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Audio akan diinisialisasi dalam sekitar 15 detik, harap hentikan semua pemutaran video atau audio sebelum itu</string>
+    <string name="audio_initialized">Audio telah diinisialisasi</string>
+    <string name="action_import_settings">Impor Pengaturan</string>
+    <string name="action_new_connection">✚ Koneksi Baru</string>
+    <string name="action_edit_default_settings">⚙ Edit Pengaturan Default</string>
+    <string name="action_export_settings">Ekspor Pengaturan</string>
+    <string name="action_delete_connection">Hapus Koneksi</string>
+    <string name="action_rate_or_share_app">⭐ Dapatkan Bantuan, Beri Nilai, Bagikan</string>
+    <string name="get_help">Dapatkan Bantuan</string>
+    <string name="advanced_settings">Pengaturan Lanjutan</string>
+    <string name="audio">Audio</string>
+    <string name="auto_rotation">Rotasi layar saat terhubung</string>
+    <string name="auto_request_new_res">Sinkronkan resolusi jarak jauh ke layar</string>
+    <string name="custom_ca_subject">Subjek Sertifikat Opsional. Tidak diperlukan jika CN sertifikat cocok dengan nama host</string>
+    <string name="custom_ca_import">Atau, masukkan jalur lengkap ke CA Anda dan ketuk Impor</string>
+    <string name="custom_ca_paste">Tempel (jika tidak mengimpor) CA di sini</string>
+    <string name="ca_ovirt_use_custom">CA RHEV/oVirt Kustom</string>
+    <string name="ca_spice_use_ovirt">Gunakan CA RHEV/oVirt untuk SPICE</string>
+    <string name="ca_ovirt_manage">Kelola CA RHEV/oVirt</string>
+    <string name="ca_spice_manage">Kelola CA SPICE</string>
+    <string name="ca_file_not_found">File tidak ditemukan. Harap masukkan nama file yang valid di kolom teks (mis. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Kesalahan membaca file CA. Pastikan file tersebut dapat dibaca.</string>
+    <string name="ca_new_or_changed">Sertifikat server baru atau berubah</string>
+    <string name="connection_type_text">Lingkungan Virtualisasi (RHEV/oVirt atau Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Nama mesin virtual (opsional)</string>
+    <string name="connection_setup_host_name">Alamat Server</string>
+    <string name="connection_setup_user">Pengguna@Domain</string>
+    <string name="connection_setup_password">Kata Sandi</string>
+    <string name="enter_password">Masukkan kata sandi</string>
+    <string name="enter_password_auth_failed">Autentikasi gagal. Harap masukkan kembali kredensial Anda.</string>
+    <string name="enter_otp_code">Masukkan kode OTP</string>
+    <string name="hide_toolbar">Sembunyikan bilah alat</string>
+    <string name="manage_custom_ca_title">Kelola CA kustom</string>
+    <string name="save_button">Simpan</string>
+    <string name="select_vm_title">Pilih Mesin Virtual</string>
+    <string name="vv_file_not_found">File .vv tidak ditemukan!</string>
+    <string name="vv_file_error">File .vv hilang atau rusak!</string>
+    <string name="info_cert">Apakah Anda menerima sertifikat host baru atau yang berubah ini?\n\nSidik Jari:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nDiterbitkan kepada: %4$s\nDiterbitkan oleh: %5$s\n\nBerlaku dari: %6$s\nBerlaku hingga: %7$s\n</string>
+
+    <string name="toggle_keyboard">Alihkan Keyboard</string>
+    <string name="show_keyboard">Tampilkan Keyboard</string>
+    <string name="scroll_wheel">Roda Gulir</string>
+
+    <string name="input_method_help">Bantuan Metode Input</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Metode Input</string>
+
+    <string name="error_failed_to_download_http">Gagal mengunduh file melalui HTTP. Mungkin server Anda tidak dapat dijangkau.</string>
+    <string name="error_failed_to_download_https">Gagal mengunduh file melalui HTTPS. Mungkin sertifikat server Anda tidak dipercaya (kedaluwarsa atau ditandatangani sendiri) atau server Anda tidak dapat dijangkau.</string>
+    <string name="error_failed_to_obtain_content">Gagal mendapatkan file. Harap unduh ulang, namun kali ini, segera buka dari folder Unduhan di Manajer File.</string>
+    <string name="error_failed_to_obtain_file">Gagal menemukan file. Harap unduh ulang, namun kali ini, coba buka dari area Notifikasi atau langsung dari Browser jika memungkinkan.</string>
+
+    <string name="error_dialog_title">Kesalahan</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_vm_launched_on_stand_by">VM Anda ditemukan dalam keadaan mati dan telah dinyalakan. Coba lagi dalam beberapa menit. Jika Anda mencoba terlalu cepat dan mendapatkan kegagalan koneksi, coba lagi nanti.</string>
+    <string name="error_no_vm_found_for_user">Tidak ada Mesin Virtual yang tersedia untuk pengguna yang diberikan.</string>
+    <string name="error_no_such_vm_found_for_user">Tidak ada Mesin Virtual dengan ID yang diberikan yang ditemukan untuk pengguna tersebut. Hapus ID untuk mendapatkan daftar VM.</string>
+    <string name="error_no_vnc_support_yet">Tipe tampilan VNC belum didukung, tetapi ini adalah fitur yang akan segera hadir. Terima kasih atas pengertian Anda!</string>
+    <string name="error_not_connected_to_network">Anda tampaknya tidak terhubung ke Internet. Tidak dapat melanjutkan tanpa koneksi!</string>
+    <string name="error_ovirt_timeout">Koneksi ke VM Anda habis waktu. Harap periksa bahwa alamat node yang menjalankan VM Anda benar, dapat diakses dari jaringan Anda saat ini, dan tidak ada firewall yang memblokir koneksi.</string>
+    <string name="error_ovirt_auth_failure">Kegagalan autentikasi. Harap periksa pengguna dan kata sandi yang diberikan.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Kegagalan handshake SSL. Ada masalah dengan sertifikat SSL server. Jika Anda menggunakan sertifikat yang ditandatangani sendiri, Anda perlu (kembali) mengimpor otoritas sertifikat Anda.</string>
+    <string name="error_pve_failed_to_authenticate">Gagal mengautentikasi ke Proxmox Virtual Environment. Pastikan Anda memasukkan nama pengguna dalam format pengguna@realm dan kata sandi Anda benar.</string>
+    <string name="error_pve_failed_to_parse_json">Gagal mengurai respons dari Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">ID VM bukan numerik. Harap masukkan ID VM numerik atau biarkan kosong untuk memilih VM dari daftar.</string>
+    <string name="error_pve_api_unexpected_code">Respons tidak terduga dari Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Koneksi ke Proxmox Virtual Environment gagal: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment mengembalikan data null.</string>
+    <string name="error_pve_timeout_communicating">Waktu habis saat berkomunikasi dengan Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Tidak dapat menemukan mesin virtual dengan nama yang ditentukan yang ditetapkan ke pengguna Anda. Harap hapus nama VM yang ditentukan untuk melihat daftar VM yang ditetapkan ke pengguna.</string>
+    <string name="error_vv_download_timeout">Waktu habis saat mengunduh file vv.</string>
+    <string name="message_please_wait">Harap tunggu</string>
+    <string name="message_please_install_bvnc">Harap instal &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> dari Google Play untuk terhubung ke konsol VNC VM ini.</string>
+    <string name="ssl_strict">Wajibkan nama umum cocok dengan sertifikat (direkomendasikan)</string>
+    <string name="usb">USB (colokkan kabel OTG terlebih dahulu)</string>
+
+    <string name="ad_donate_text0">Versi Pro juga memiliki dukungan untuk autentikasi SSH multi-faktor. Selain itu, ini mendukung fitur Master Password yang banyak diminta yang mencegah penggunaan tidak sah dan mengenkripsi semua pengaturan koneksi termasuk kata sandi dan kunci SSH untuk mencegah pencurian. Aktifkan dari Menu utama.</string>
+    <string name="ad_donate_spice_text1a">Ketuk di sini untuk membeli Opaque dan simpan koneksi langsung ke Proxmox dan oVirt. Ini juga mendukung file .vv.</string>
+    <string name="ad_donate_spice_text1b">Ketuk di sini untuk membeli versi Pro dan cukup buka file .vv.</string>
+    <string name="ad_donate_text1">Ketuk di sini untuk mendukung proyek dengan donasi kecil dengan membeli versi Pro.</string>
+    <string name="ad_donate_text2">Versi Pro memungkinkan Anda menonaktifkan dialog ini dan memberi Anda akses ke fitur tambahan.</string>
+    <string name="ad_donate_text3">Jika Anda ingin mendukung proyek lebih lanjut, ikuti tautan berikut untuk tautan ke aplikasi klien untuk: </string>
+    <string name="ad_donate_text_vnc">Proyek Open Source membutuhkan dukungan Anda! Donasikan kepada kami dengan membeli bVNC Pro. Lihat di bawah untuk tautan ke bVNC Pro dan aplikasi kami lainnya.</string>
+    <string name="ad_donate_text_rdp">Proyek Open Source membutuhkan dukungan Anda! Donasikan kepada kami dengan membeli aRDP Pro, yang mendukung pengalihan suara. Lihat di bawah untuk tautan ke aRDP Pro dan aplikasi kami lainnya.</string>
+    <string name="ad_donate_text_spice">Untuk koneksi Proxmox dan oVirt, harap donasikan ke proyek dengan membeli Opaque atau aSPICE Pro. Versi Gratis aSPICE hanya mendukung koneksi langsung ke mesin virtual KVM. Lihat di bawah untuk tautan ke Opaque dan aSPICE Pro, serta aplikasi kami lainnya.</string>
+
+    <string name="address_caption">Server VNC</string>
+    <string name="address_caption_hint">Server VNC</string>
+    <string name="address_caption_hint_tunneled">Server VNC</string>
+    <string name="address_caption_ssh">Server SSH</string>
+    <string name="address_caption_ssh_hint">Server SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Panah Bawah</string>
+    <string name="arrow_left">Panah Kiri</string>
+    <string name="arrow_right">Panah Kanan</string>
+    <string name="arrow_up">Panah Atas</string>
+
+    <string name="auto">Otomatis</string>
+    <string name="auto_x_cancel">Batal</string>
+    <string name="auto_x_caption">Aplikasi ini dapat secara otomatis menemukan sesi X yang sudah ada dan membuat sesi baru pada sistem Linux/UNIX (mirip dengan NX). Anda memerlukan x11vnc untuk menemukan, dan Xvfb, Xvnc, atau Xdummy untuk membuat sesi. Jika Anda mengalami masalah saat menghubungkan, coba pilih Tipe Sesi Jarak Jauh tertentu di Pengaturan Lanjutan AutoX.</string>
+    <string name="auto_x_confirm">Konfirmasi</string>
+    <string name="auto_x_descript_geom">Ukuran Desktop Jarak Jauh (LxT)</string>
+    <string name="auto_x_descript_session">Tipe Sesi Jarak Jauh</string>
+    <string name="auto_x_disabled">Dinonaktifkan</string>
+    <string name="auto_x_disabled_selection">AutoX Dinonaktifkan</string>
+    <string name="auto_x_enabled">Diaktifkan</string>
+    <string name="auto_x_find">Hanya Temukan, Jangan Buat</string>
+    <string name="auto_x_find_login">Temukan Login X (memerlukan sudo)</string>
+    <string name="auto_x_geom_custom">Kustom</string>
+    <string name="auto_x_geom_native">Asli</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Otomatis</string>
+    <string name="auto_x_session_custom">Kustom</string>
+    <string name="auto_x_title">Konfigurasi AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Autentikasi menggunakan Nama Pengguna/Kata Sandi SSH yang disediakan secara otomatis (ke layar login hitam).</string>
+    <string name="auto_x_unixpw">Gunakan kredensial UNIX sebagai pengganti mekanisme keamanan bawaan. Pengguna harus dapat menjalankan /bin/su.</string>
+    <string name="auto_x_xdummy">Temukan atau Buat dengan Xdummy</string>
+    <string name="auto_x_xvfb">Temukan atau Buat dengan Xvfb</string>
+    <string name="auto_x_xvnc">Temukan atau Buat dengan Xvnc</string>
+
+    <string name="button_send_text">Kirim Teks</string>
+    <string name="button_send_without_saving">Kirim Teks/Jangan Simpan</string>
+
+    <string name="center_mouse">Mouse @</string>
+
+    <string name="close">Tutup</string>
+
+    <string name="color_format_caption">Mode Warna</string>
+    <string name="color_mode">Mode Warna</string>
+
+    <string name="connect_button">Hubungkan</string>
+    <string name="back_button">Kembali</string>
+    <string name="update_button">Perbarui</string>
+
+    <string name="connection_caption">Koneksi</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Tipe Koneksi</string>
+    <string name="connection_type_rdp_over_ssh">RDP melalui SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE melalui SSH</string>
+    <string name="connection_type_vnc">VNC Dasar</string>
+    <string name="connection_type_vnc_over_ssh">VNC Aman melalui SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC Aman melalui AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC Aman melalui SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC Aman melalui VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Apakah Anda ingin mengedit atau menghapus koneksi</string>
+    <string name="connection_edit">Edit</string>
+    <string name="connection_delete">Hapus</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Salin Daftar</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Mode Input Default</string>
+    <string name="delete_connection">Hapus Koneksi</string>
+    <string name="delete_key">Hapus Tombol Terpilih</string>
+    <string name="delete_key_list">Hapus Daftar Tombol</string>
+
+    <string name="disconnect">Putuskan Koneksi</string>
+
+    <string name="dpad_as_arrows">Gunakan D-Pad untuk panah dan klik D-Pad untuk Ctrl.</string>
+
+    <string name="enable_recording">Aktifkan Perekaman</string>
+    <string name="enable_sound">Aktifkan Suara</string>
+
+    <string name="enter_text">Kirim Teks</string>
+    <string name="enter_text_title">Masukkan Teks untuk Dikirim</string>
+
+    <string name="error_anon_dh_unsupported">Server VNC mencoba menggunakan cipher Anonymous Diffie Hellman yang tidak didukung di perangkat Android Anda. Jika menggunakan server VNC Vino milik GNOME, Anda dapat menonaktifkan AnonTLS dengan menjalankan perintah berikut di terminal lalu memulai ulang: \"gsettings set org.gnome.Vino require-encryption false\". Jika menjalankan x11vnc, Anda dapat menambahkan opsi berikut: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Koneksi gagal.</string>
+    <string name="error_connection_interrupted">Koneksi terputus.</string>
+    <string name="error_no_user_hostname">Harap masukkan setidaknya nama pengguna dan nama host atau alamat IP.</string>
+    <string name="error_out_of_memory">Tidak dapat mengalokasikan memori yang cukup untuk menggambar layar jarak jauh. Coba mulai ulang aplikasi, lalu mulai ulang perangkat Anda. Anda juga dapat mencoba mengurangi ukuran desktop jarak jauh melalui pengaturan aplikasi.</string>
+    <string name="error_ovirt_unable_to_connect">Tidak dapat terhubung atau mengautentikasi, harap periksa alamat server, pengguna, kata sandi, dan otoritas serta subjek sertifikat.</string>
+    <string name="error_pick_correct_item">Pastikan Anda telah memilih item yang benar di Tipe Koneksi.</string>
+    <string name="error_rdp_authentication_failed">Autentikasi RDP gagal! Harap periksa nama pengguna dan kata sandi RDP dan coba lagi.</string>
+    <string name="error_rdp_connection_failed">Koneksi RDP gagal! Konektivitas jaringan terputus, server RDP dimatikan atau dinonaktifkan, atau sesi Anda diambil alih.</string>
+    <string name="error_rdp_unable_to_connect">Tidak dapat terhubung ke server RDP! Pastikan pengaturan Server RDP benar, server dinyalakan, RDP diaktifkan, dan server berada di jaringan yang sama dengan perangkat ini.</string>
+    <string name="error_security_type">Server tidak menawarkan tipe keamanan yang didukung.</string>
+    <string name="error_spice_unable_to_connect">Tidak dapat terhubung atau mengautentikasi, harap periksa alamat server dan port.</string>
+    <string name="error_ssh_could_not_exec_command">Tidak dapat mengeksekusi perintah jarak jauh.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Tidak dapat mengirim kata sandi sudo.</string>
+    <string name="error_ssh_hostkey_changed">KESALAHAN! Kunci host server telah berubah. Jika ini disengaja, Anda dapat melanjutkan. Jika tidak, ini mungkin serangan man-in-the-middle.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Server SSH tidak mendukung metode autentikasi \"password\" maupun \"keyboard-interactive\" atau mengharuskan metode \"publickey\" terlebih dahulu. Harap konfigurasikan agar mengizinkan setidaknya salah satu dari dua metode tersebut, atau konfigurasikan ulang aplikasi. Metode autentikasi yang tersedia: </string>
+    <string name="error_ssh_key_auth_fail">Gagal mengautentikasi ke server SSH dengan pasangan kunci. Harap periksa nama pengguna SSH Anda, dan pastikan kunci publik Anda ada di file authorized_keys di sisi jarak jauh.</string>
+    <string name="error_ssh_keypair_decryption_failure">Gagal mendekripsi pasangan kunci. Pastikan Anda telah memasukkan frasa sandi dengan benar di kolom \'Frasa Sandi SSH\' di layar utama.</string>
+    <string name="error_ssh_keypair_missing">Pasangan kunci SSH belum dibuat! Harap buat satu dan letakkan (bagian publiknya) di authorized_keys pada server SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Frasa sandi disediakan tetapi pasangan kunci tidak dienkripsi. Harap hapus frasa sandi.</string>
+    <string name="error_ssh_port_forwarding_failure">Tidak dapat mengatur penerusan port untuk mentelorkan lalu lintas VNC melalui SSH. Pastikan server SSH Anda dikonfigurasi untuk mengizinkan penerusan port dan coba lagi.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Server SSH tidak mendukung metode autentikasi \"publickey\", dan kami mencoba menggunakan pasangan kunci untuk mengautentikasi. Harap konfigurasikan agar mengizinkan autentikasi publickey dan coba lagi. Metode autentikasi yang tersedia: </string>
+    <string name="error_ssh_pwd_auth_fail">Gagal mengautentikasi ke server SSH dengan kata sandi. Harap periksa nama pengguna SSH dan kata sandi SSH Anda.</string>
+    <string name="error_ssh_unable_to_connect">Gagal terhubung ke Server SSH. Harap periksa konektivitas jaringan, alamat dan port Server SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Tidak dapat mendapatkan port VNC jarak jauh dari x11vnc. Pastikan x11vnc telah terinstal. Untuk memastikan, coba jalankan x11vnc secara manual di baris perintah.</string>
+    <string name="error_uri_noinfo_nosave">Informasi yang ditentukan tidak mencukupi untuk menghubungkan.</string>
+    <string name="error_uri_parse_error">Tidak dapat mengurai URI Intent. Harap periksa format URI. Anda juga dapat melihat logcat perangkat untuk detail lebih lanjut.</string>
+    <string name="error_vnc_authentication">Autentikasi VNC gagal! Periksa kata sandi VNC (dan pengguna jika berlaku).</string>
+    <string name="error_vnc_unable_to_connect">"Koneksi ke server VNC gagal dengan alasan: "</string>
+    <string name="error_x509_could_not_generate_encoding">Pengkodean sertifikat tidak dapat dibuat.</string>
+    <string name="error_x509_could_not_generate_signature">Tidak dapat membuat tanda tangan SHA1 atau MD5 dari sertifikat. Tidak ada algoritma SHA1/MD5 yang ditemukan.</string>
+
+    <string name="export_settings">Ekspor</string>
+
+
+    <string name="extra_keys_disable">Nonaktifkan Tombol Ekstra</string>
+    <string name="extra_keys_enable">Aktifkan Tombol Ekstra</string>
+
+    <string name="fit_to_screen">Sesuaikan ke Layar</string>
+
+    <string name="force">Bitmap Layar Penuh</string>
+
+    <string name="immersive_mode_disable">Nonaktifkan Mode Imersif</string>
+
+    <string name="import_export_settings">📦 Impor/Ekspor Pengaturan</string>
+    <string name="import_settings">Impor</string>
+
+
+    <string name="info">Info</string>
+    <string name="info_cert_signatures">"Informasi sertifikat adalah: "</string>
+    <string name="info_cert_signatures_identical">\n\nAnda dapat memastikan informasi ini cocok dengan sertifikat server untuk mencegah serangan man-in-the-middle.</string>
+    <string name="info_cert_tunnel">Apakah Anda ingin terhubung ke host yang diidentifikasi oleh sertifikat berikut?\n\nSidik Jari: %1$s\n\nDiterbitkan kepada:\n%2$s\n\nDiterbitkan oleh:\n%3$s\n\nBerlaku dari:\n%4$s\n\nBerlaku hingga:\n%5$s\n\nCatatan: Aplikasi tidak memverifikasi otoritas sertifikat atau memeriksa pencabutan sertifikat.</string>
+    <string name="info_continue_connecting">"Lanjutkan menghubungkan ke: "</string>
+    <string name="info_encoding">" enkoding, "</string>
+    <string name="info_progress_dialog_aborted">Koneksi dibatalkan!</string>
+    <string name="info_progress_dialog_connecting">Menghubungkan…</string>
+    <string name="info_progress_dialog_downloading">Mengunduh frame pertama.\nHarap tunggu…</string>
+    <string name="info_progress_dialog_establishing">Membuat handshake.\nHarap tunggu…</string>
+    <string name="info_ssh_initializing_hostkey">Mencoba menginisialisasi HostKey SSH.</string>
+    <string name="info_ssh_key_fingerprint">"Sidik jari kunci host adalah: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nAnda dapat memastikannya identik dengan sidik jari sertifikat server yang diketahui untuk mencegah serangan man-in-the-middle.</string>
+    <string name="info_update_color_model_to">"Memperbarui Model Warna ke "</string>
+
+    <string name="input_method_direct_drag_pan_description">Langsung, Tahan untuk Geser: Geser untuk seret dan lepas. Ketuk dengan satu jari untuk klik kiri, dua jari untuk klik kanan, dan tiga jari untuk klik tengah. Geser dengan dua jari untuk menggulir. Tekan lama untuk mulai menggeser.</string>
+    <string name="input_method_direct_swipe_pan_description">Langsung, Geser untuk Geser: Geser untuk menggeser tampilan. Ketuk dengan satu jari untuk klik kiri, dua jari untuk klik kanan, dan tiga jari untuk klik tengah. Geser dengan dua jari untuk menggulir. Tekan lama untuk seret dan lepas.</string>
+    <string name="input_method_single_handed_description">Satu Tangan: Geser untuk menggeser tampilan. Ketuk dengan satu jari untuk klik kiri. Tekan lama untuk memilih mode kiri/kanan/tengah seret/gulir/zoom. Kontrol multi-sentuh biasa juga berfungsi.</string>
+    <string name="input_method_touchpad_description">Touchpad Simulasi: Geser untuk menggerakkan pointer. Ketuk di mana saja dengan satu jari untuk klik kiri, dua jari untuk klik kanan, dan tiga jari untuk klik tengah. Geser dengan dua jari untuk menggulir. Tekan lama untuk seret dan lepas.</string>
+    <string name="input_mode">Mode Input</string>
+
+    <string name="input_mode_fit_to_screen">Tanpa Geser; Mouse Trackball</string>
+    <string name="input_mode_panning">Mode Geser Desktop</string>
+    <string name="input_method_mouse">Kontrol Pointer Mouse</string>
+
+    <string name="input_method_direct_swipe_pan">Langsung, Geser untuk Geser</string>
+    <string name="input_method_direct_drag_pan">Langsung, Tahan untuk Geser</string>
+    <string name="input_method_single_handed">Satu Tangan</string>
+    <string name="input_method_touchpad">Touchpad Simulasi</string>
+
+    <string name="input_mode_help">Bantuan Mode Input</string>
+    <string name="input_mode_help_text">"
+Dalam Mode Input apa pun, ketuk ikon keyboard untuk mendapatkan keyboard di layar. Selain itu, perangkat Anda mungkin memiliki gestur sendiri yang memunculkan keyboard.
+
+Gunakan mode input Langsung untuk kontrol layar sentuh yang lebih intuitif. Gunakan Mode Touchpad Simulasi untuk kontrol mouse yang lebih halus.
+
+Mode Langsung, Geser untuk Geser:
+ - Kontrol mouse langsung melalui sentuhan.
+ - Geser untuk menggeser tampilan.
+ - Mengetuk membuat mouse mengklik tempat Anda mengetuk.
+ - Peristiwa gulir dikirim antara dua jari tempat geseran dua jari dimulai.
+
+Mode Langsung, Tahan untuk Geser:
+ - Kontrol mouse langsung melalui sentuhan.
+ - Tekan lama untuk memulai mode geser.
+ - Mengetuk membuat mouse mengklik tempat Anda mengetuk.
+ - Peristiwa gulir dikirim antara dua jari tempat geseran dua jari dimulai.
+
+Mode Touchpad Simulasi:
+ - Gunakan layar Anda seperti touchpad.
+ - Geser untuk menggerakkan pointer mouse.
+ - Gerakkan mouse melampaui tepi layar untuk menggeser tampilan.
+ - Mengetuk membuat mouse mengklik di mana pointer berada.
+ - Peristiwa gulir dikirim di mana pointer mouse berada.
+
+Mode Satu Tangan:
+ - Sama seperti Mode Langsung, Geser untuk Geser, kecuali tekan lama membuka menu dengan pilihan mode.
+ - Setelah memilih mode, geseran jari di layar melakukan gestur yang dipilih.
+ - Mengangkat jari menyelesaikan gestur.
+
+Semua Mode Input:
+ - Klik kiri: Ketuk sekali.
+ - Klik ganda: Ketuk dua kali.
+ - Klik kanan: Tahan ketuk dan ketuk dengan jari kedua (di mana saja di layar).
+ - Klik kanan alternatif: Gunakan tombol atau gestur \"Kembali\" untuk perangkat Anda.
+ - Klik tengah: Tahan ketuk dan ketuk dengan dua jari lagi (di mana saja di layar).
+ - Seret mouse: Tahan ketuk lama dan geser.
+ - Roda gulir: Seret dua jari atas/bawah dan kiri/kanan. Geseran cepat menggulir lebih cepat.
+ - Perbesar/perkecil: Dalam skala Zoomable, cubit-zoom untuk mengontrol skala.
+ - Tombol Ctrl/Alt: Menu-&gt;tombol Ctrl/Alt. Jangan lupa matikan kembali setelah selesai!
+ - Kombinasi tombol: Menu-&gt;Lainnya-&gt;Kirim Tombol.
+ - Kirim teks: Ketik pada keyboard di layar, atau gunakan Menu-&gt;Lainnya-&gt;Kirim Teks."</string>
+
+    <string name="intro_close">Tutup</string>
+    <string name="intro_dont_show">Jangan tampilkan lagi</string>
+
+    <string name="intro_text">
+Daftar fitur bVNC saat ini:
+&lt;br&gt;
+- VNC Biasa, VNC Aman melalui SSH, AnonTLS, dan VeNCrypt, serta Login Windows UltraVNC dengan Repeater opsional.
+&lt;br&gt;
+- Mode AutoX: Dalam mode VNC melalui SSH, secara otomatis menemukan dan/atau membuat sesi X baru menggunakan x11vnc! Berfungsi seperti klien NX.
+&lt;br&gt;
+- Dukungan rotasi bebas. Gunakan Sistem Operasi untuk membatasi rotasi jika diperlukan.
+&lt;br&gt;
+- Pembuatan dan ekspor pasangan kunci SSH Publik/Privat.
+&lt;br&gt;
+- Semua enkoding VNC standar, termasuk Tight, ZRLE, dan CopyRect.
+&lt;br&gt;
+- Penyimpanan Sesi otomatis.
+&lt;br&gt;
+- Mode skala Zoomable, Sesuaikan ke Layar, dan Satu ke Satu.
+&lt;br&gt;
+- Kontrol multi-sentuh atas mouse jarak jauh dalam mode input Langsung dan Touchpad Simulasi.
+&lt;br&gt;
+- Kontrol penuh satu tangan atas mouse jarak jauh dalam mode input Satu Tangan.
+&lt;br&gt;
+- Klik mouse multi-sentuh: ketuk untuk Klik Kiri, ketuk dua jari untuk klik kanan, ketuk tiga jari untuk klik tengah.
+&lt;br&gt;
+- Gulir multi-sentuh: seret dua jari Atas/Bawah, dan Kiri/Kanan untuk menggulir.
+&lt;br&gt;
+- Tombol meta dan panah di layar yang dapat sepenuhnya dinonaktifkan dari menu atau disimpan dengan tombol di layar.
+&lt;br&gt;
+- Mengirim Teks dan kombinasi Tombol sembarang saat terhubung.
+&lt;br&gt;
+- Bantuan membuat koneksi (\"Menu-&gt;Bantuan Koneksi\") di layar koneksi.
+&lt;br&gt;
+- Bantuan dengan mode input (\"Menu-&gt;Lainnya-&gt;Bantuan Mode Input\") saat terhubung.
+&lt;br&gt;
+- Menggunakan trackpad yang tersedia sebagai Panah alih-alih menggerakkan mouse, dan klik trackpad sebagai Ctrl.
+&lt;br&gt;
+- Beralih ke mode potret selama koneksi, memutar D-pad/trackpad untuk keyboard BT.
+&lt;br&gt;
+- Dukungan multi-bahasa, selama server VNC memiliki tata letak bahasa yang diperlukan diaktifkan.
+&lt;br&gt;
+- Integrasi Salin/Tempel
+&lt;br&gt;
+- Perubahan resolusi mesin jarak jauh
+&lt;br&gt;
+- Dukungan mouse penuh pada perangkat Android 4.0+, termasuk klik kanan dan tengah serta roda gulir.
+&lt;br&gt;
+&lt;br&gt;
+Masalah yang diketahui:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Klien VNC yang intuitif dan aman</string>
+
+
+    <string name="keep_password_button">Simpan</string>
+    <string name="keep_screen_awake_enable">Jaga Layar Tetap Menyala</string>
+
+    <string name="keys_caption">Tombol</string>
+
+    <string name="landscape_force">Paksa Orientasi Lanskap</string>
+
+    <string name="left_handed_mode">Mode Kidal</string>
+    <string name="disable_pointer_offset_correction">Nonaktifkan koreksi offset pointer</string>
+
+    <string name="list_caption">Daftar</string>
+    <string name="list_name_caption">Nama Daftar</string>
+
+    <string name="local_mouse_check">Pointer mouse lokal (pilih jika pointer tidak terlihat)</string>
+
+    <string name="main_screen_help">Bantuan Koneksi</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Saat Anda menambahkan atau mengedit koneksi, Anda akan melihat halaman konfigurasi koneksi. Di sini Anda dapat mengatur
+koneksi VNC baru, atau memilih yang sudah ada. Di bagian atas terdapat tombol yang memungkinkan Anda
+menyimpan koneksi. Di bawahnya adalah tempat Anda mengonfigurasi koneksi Anda.
+
+Jika Anda mencari peningkatan kinerja cepat, coba atur Mode Warna ke nilai yang lebih rendah. Juga, coba hapus gambar latar belakang desktop di server VNC. Terakhir, pastikan perangkat Anda memiliki konektivitas jaringan yang baik dan hindari menutupi antena serta mengurangi kekuatan sinyal.
+
+ - Tipe Koneksi: Di sini Anda memilih tipe koneksi VNC. Tipe koneksi yang tersedia adalah:
+   (a) VNC Biasa, yang didukung oleh semua server VNC tetapi tidak memiliki enkripsi dan rentan terhadap serangan brute-force karena keterbatasan kata sandi 8 karakter.
+   (b) VNC Aman melalui SSH, yang terhubung melalui terowongan SSH terenkripsi. Anda memerlukan layanan SSHD yang berjalan serta server VNC. Selama server VNC tidak menerima koneksi langsung dari Internet, tipe koneksi ini tidak memiliki kerentanan yang diketahui, selama Anda memverifikasi tanda tangan sertifikat server saat pertama kali terhubung.
+   (c) UltraVNC, yang memberi Anda opsi Login Windows dan UltraVNC Repeater. Menggunakan Login Windows tidak mengalami keterbatasan kata sandi 8 karakter, tetapi mode ini tidak menawarkan enkripsi, sehingga sesi Anda rentan terhadap penyadapan.
+   (d) VNC Aman melalui AnonTLS, yaitu VNC biasa melalui koneksi setara stunnel. Anda perlu menjalankan stunnel, atau menggunakan server VNC seperti Vino yang mendukung AnonTLS secara bawaan. Mode ini memberikan enkripsi sesi, tetapi mengalami keterbatasan kata sandi 8 karakter dan tidak mencegah serangan man-in-the-middle.
+   (e) VNC Aman melalui VeNCrypt, yang menggunakan sertifikat x509 serta enkripsi sesi, dan tergantung pada konfigurasi server dapat menggunakan kredensial pengguna/kata sandi tanpa keterbatasan 8 karakter. Mode ini mencegah serangan man-in-the-middle serta memberikan privasi sesi. Server seperti x11vnc dan TigerVNC mendukung mode ini dan seaman VNC melalui SSH.
+
+ - Judul: Setiap koneksi yang Anda buat dapat memiliki nama panggilan untuk mudah diidentifikasi dalam daftar.
+
+ - Pengaturan Terowongan SSH: Tersedia dalam mode VNC melalui SSH.
+   (a) Server SSH/Port: Alamat dan port server SSH tempat koneksi akan diterorongkan. Secara default SSH mendengarkan pada port 22.
+   (b) Nama Pengguna/Kata Sandi: Nama pengguna dan kata sandi akun pada server SSH. Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+   (c) Kelola Kunci/Gunakan Kunci: Tombol untuk mengelola kunci publik/privat, dan kotak centang yang menunjukkan apakah menggunakan kunci daripada kata sandi untuk mengautentikasi. Jika Anda menggunakan tombol Salin ke Clipboard setelah membuat pasangan kunci, Anda seharusnya dapat menempelkan kunci publik setelah terhubung ke server VNC (clipboard disinkronkan ke server).
+
+ - Konfigurasi AutoX: Hanya tersedia dalam mode VNC melalui SSH. Aplikasi ini dapat secara otomatis menemukan sesi X yang sudah ada dan secara opsional membuat sesi X baru pada sistem UNIX (seperti klien NX). Anda memerlukan x11vnc untuk menemukan, dan Xvfb, Xvnc, atau Xdummy yang terinstal pada sistem jarak jauh untuk membuat sesi. Anda mungkin harus memindahkan file .dmrc Anda dan menambahkan file .xinit di direktori home Anda jika desktop Anda tidak terlihat benar atau Anda hanya mendapatkan jendela xterm.
+
+ - Pengaturan Koneksi VNC:
+   (a) Server VNC/Port: Di sinilah Anda memasukkan nama host atau alamat IP dan port komputer yang menjalankan server VNC yang ingin Anda hubungi. Dalam mode VNC melalui SSH, alamat ini dilihat dari Server SSH. Jika Server SSH dan server VNC adalah komputer yang sama, Anda dapat menggunakan localhost. Server VNC biasanya mendengarkan mulai dari port 5900 (layar VNC pertama, layar :0).
+   (b) Pengguna VNC: Tersedia dalam mode UltraVNC dengan Login Windows, atau VNC Aman melalui VeNCrypt, di sinilah Anda memasukkan nama pengguna akun Windows/UNIX Anda.
+   (c) Kata Sandi VNC: Jika konfigurasi server VNC Anda memerlukan kata sandi, masukkan kata sandi tersebut di sini. Dalam mode UltraVNC dengan Login Windows/VeNCrypt, masukkan kata sandi akun Windows/UNIX Anda di sini. Penyimpanan aman tidak digunakan untuk kata sandi, dan kata sandi hanya akan disimpan jika Anda mencentang kotak "Simpan". Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+
+ - Mode Warna: Klien mendukung beberapa mode warna. Mode dengan lebih banyak warna memberikan pengalaman visual yang lebih baik dengan mengorbankan bandwidth yang lebih besar dan lebih banyak komputasi CPU pada perangkat Anda. Beberapa server VNC tidak mendukung semua kedalaman warna (mis. Remote Desktop OS/X memerlukan warna 24-bit). Jika Anda mengalami masalah saat menghubungkan, coba kedalaman warna lain.
+
+ - Gunakan D-Pad untuk panah: Jika Anda mau, Anda dapat menggunakan D-Pad keyboard Bluetooth Anda atau panah pada keyboard di layar untuk mengirim panah ke server VNC.
+
+ - Putar D-Pad: Ponsel yang dipasangkan dengan keyboard Bluetooth mungkin memerlukan D-pad keyboard untuk diputar berlawanan arah jarum jam agar mengirim arah yang benar ke server.
+
+ - Pointer mouse lokal: Beberapa server VNC (mis. Remote Desktop OS/X) tidak akan menggambar pointer mouse pada klien. Mencentang opsi ini akan menyebabkan aplikasi menggambar pointer mouse di posisi mouse.
+
+ - Auto/Bitmap Layar Penuh: Klien VNC menggunakan bitmap untuk merepresentasikan tampilan jarak jauh. Untuk tampilan jarak jauh yang sangat besar, terutama dalam mode sesuaikan ke layar, Anda mungkin mengalami artefak visual yang aneh dalam mode sesuaikan ke layar, karena keterbatasan memori per proses. Jika itu terjadi, coba centang opsi ini. Perlu diingat bahwa mencentang opsi dapat menyebabkan aplikasi keluar saat koneksi.
+
+ - Repeater: Hanya tersedia dalam mode UltraVNC. PENTING: Jika Anda memiliki repeater UltraVNC, masukkan alamat dan portnya di luar dialog \'UltraVNC Repeater\' dan masukkan alamat dan port server VNC yang sebenarnya di dalam Dialog \'UltraVNC Repeater\'. Pisahkan alamat dan port server VNC dengan titik dua, mis. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Aktifkan Kata Sandi Master</string>
+    <string name="master_password_error_failed_to_disable">Tidak dapat menonaktifkan kata sandi master. Periksa ruang kosong di perangkat Anda dan coba lagi.</string>
+    <string name="master_password_error_failed_to_enable">Tidak dapat mengaktifkan kata sandi master. Periksa ruang kosong di perangkat Anda dan coba lagi.</string>
+    <string name="master_password_error_intents_not_supported">Intent koneksi belum didukung saat Kata Sandi Master diaktifkan.</string>
+    <string name="master_password_error_password_necessary">Kata Sandi Master diperlukan untuk melanjutkan.</string>
+    <string name="master_password_error_password_not_set">Pengaturan Kata Sandi Master dibatalkan.</string>
+    <string name="master_password_error_shortcuts_not_supported">Pintasan belum didukung saat Kata Sandi Master diaktifkan.</string>
+    <string name="master_password_error_wrong_password">Tidak dapat mengautentikasi dengan Kata Sandi Master yang diberikan.</string>
+    <string name="master_password_hint_once">Masukkan Kata Sandi</string>
+    <string name="master_password_hint_twice">Ulangi Kata Sandi</string>
+    <string name="master_password_set">Tetapkan Kata Sandi Master</string>
+    <string name="master_password_set_error">Kata sandi tidak cocok, harap berhati-hati!</string>
+    <string name="master_password_set_message">Harap masukkan dan hafalkan Kata Sandi Master. Semakin panjang kata sandi Anda, semakin sulit untuk dipecahkan. Jika Anda menetapkan kata sandi yang salah atau melupakannya, Anda akan kehilangan semua pengaturan Anda! Anda mungkin ingin mengekspor pengaturan Anda sekarang untuk mencadangkannya (dari Menu). Simpan dengan aman karena pengaturan yang diekspor tidak dienkripsi.</string>
+    <string name="master_password_verify">Verifikasi Kata Sandi Master</string>
+    <string name="master_password_verify_message">Harap masukkan Kata Sandi Master yang benar untuk melanjutkan.</string>
+
+    <string name="meta_key_title">Kirim Tombol Khusus</string>
+
+    <string name="mouse_follow_pan">Mouse mengikuti geseran</string>
+
+    <string name="new_connection">Koneksi Baru</string>
+    <string name="new_list_button">Daftar Baru</string>
+
+    <string name="nickname_caption">Nama Panggilan</string>
+    <string name="nickname_caption_hint">Judul (opsional)</string>
+
+    <string name="off">Mati</string>
+
+    <string name="one_to_one">Satu ke Satu</string>
+
+    <string name="open_doc">Manual/Wiki</string>
+
+    <string name="pan_follow_mouse">Geseran mengikuti mouse</string>
+
+    <string name="password_caption">Autentikasi VNC</string>
+    <string name="password_caption_hint">Kata Sandi VNC</string>
+    <string name="password_caption_ssh">Autentikasi SSH</string>
+    <string name="password_hint_ssh">Kata Sandi SSH</string>
+
+    <string name="port_caption">Port VNC</string>
+    <string name="port_caption_ssh">Port SSH</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Beralih ke mode potret saat terhubung</string>
+    <string name="local_clipboard_integration">Aktifkan Integrasi Clipboard Lokal ke Jarak Jauh</string>
+    <string name="remote_clipboard_integration">Aktifkan Integrasi Clipboard Jarak Jauh ke Lokal</string>
+    <string name="position_toolbar_last_used">Pulihkan Posisi Bilah Alat</string>
+    <string name="applies_to_new_connections_only">Hanya Berlaku untuk Koneksi Baru</string>
+    <string name="pro_feature_mfa">Sepertinya server Anda mengaktifkan autentikasi multi-faktor. Harap dukung proyek dengan membeli versi Pro yang mendukung fitur ini. Tautan ke versi Pro tersedia di dialog awal.</string>
+    <string name="pro_feature_intro">Sepertinya Anda menggunakan fitur Pro. Harap dukung proyek dengan membeli versi Pro yang mendukung fitur ini. Harap periksa dialog intro untuk tautan ke aplikasi yang benar.</string>
+    <string name="pro_feature_generic">Sepertinya Anda menggunakan fitur Pro. Harap dukung proyek dengan membeli versi Pro yang mendukung fitur ini. Tautan ke versi Pro tersedia di dialog awal.</string>
+    <string name="pro_feature_rdp">Sepertinya Anda mencoba membuka file .rdp yang merupakan fitur Pro. Harap dukung proyek dengan membeli aRDP Pro, yang mendukung file .rdp. Tautan ke versi aRDP Pro tersedia di dialog awal.</string>
+    <string name="pro_feature_spice">Sepertinya Anda mencoba membuka file .vv. Jika Anda ingin menyimpan koneksi ke Proxmox atau oVirt langsung di dalam aplikasi dan juga ingin membuka file .vv, pertimbangkan untuk membeli Opaque. Jika Anda hanya memerlukan dukungan file .vv, Anda bisa mendapatkan aSPICE Pro. Temukan tautan ke kedua aplikasi di dialog awal.</string>
+
+    <string name="rdp_address_caption_hint">Server RDP</string>
+    <string name="rdp_adv_console_mode">Mode Konsol</string>
+    <string name="rdp_adv_desktop_background">Tampilkan latar belakang desktop</string>
+    <string name="rdp_adv_desktop_composition">Aktifkan Komposisi Desktop</string>
+    <string name="rdp_adv_font_smoothing">Lakukan penghalusan font</string>
+    <string name="rdp_adv_menu_animation">Tampilkan Animasi Menu</string>
+    <string name="rdp_adv_redirect_sdcard">Alihkan Kartu SD</string>
+    <string name="rdp_adv_remotefx">Aktifkan RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Aktifkan Gaya Visual</string>
+    <string name="rdp_adv_window_contents">Tampilkan isi jendela saat menyeret</string>
+    <string name="rdp_security_mode">Mode Keamanan</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Ukuran Desktop Jarak Jauh (LxT)</string>
+    <string name="rdp_domain_hint">Domain RDP</string>
+    <string name="rdp_geom_automatic">Otomatis</string>
+    <string name="rdp_geom_checkbox_enable">Aktifkan resolusi kustom</string>
+    <string name="rdp_geom_custom">Kustom</string>
+    <string name="rdp_geom_description_hint">Server memerlukan dukungan ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Dinonaktifkan</string>
+    <string name="rdp_geom_native_landscape">Lanskap Asli</string>
+    <string name="rdp_geom_native_portrait">Potret Asli</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Negosiasi Keamanan Otomatis</string>
+    <string name="rdp_security_rdp">Keamanan RDP</string>
+    <string name="rdp_security_tls">Keamanan TLS</string>
+    <string name="rdp_security_nla">Autentikasi Tingkat Jaringan</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Terima kasih telah mendukung aRDP dan perangkat lunak open-source secara umum! Untuk bantuan penggunaan aRDP, lihat item Bantuan di Menu, dan deskripsi aplikasi di market.
+&lt;br&gt;
+&lt;br&gt;
+Daftar fitur aRDP saat ini meliputi:
+&lt;br&gt;
+- RDP Biasa, RDP ditolong melalui SSH.
+&lt;br&gt;
+- Dukungan rotasi bebas. Gunakan Sistem Operasi untuk membatasi rotasi jika diperlukan.
+&lt;br&gt;
+- Pengaturan resolusi jarak jauh, resolusi asli dalam mode lanskap dan potret.
+&lt;br&gt;
+- Pembuatan dan ekspor pasangan kunci SSH Publik/Privat.
+&lt;br&gt;
+- Penyimpanan Sesi otomatis.
+&lt;br&gt;
+- Mode skala Zoomable, Sesuaikan ke Layar, dan Satu ke Satu.
+&lt;br&gt;
+- Kontrol multi-sentuh atas mouse jarak jauh dalam mode input Langsung dan Touchpad Simulasi.
+&lt;br&gt;
+- Kontrol penuh satu tangan atas mouse jarak jauh dalam mode input Satu Tangan.
+&lt;br&gt;
+- Klik mouse multi-sentuh: ketuk untuk Klik Kiri, ketuk dua jari untuk klik kanan, ketuk tiga jari untuk klik tengah.
+&lt;br&gt;
+- Gulir multi-sentuh: seret dua jari Atas/Bawah, dan Kiri/Kanan untuk menggulir.
+&lt;br&gt;
+- Tombol meta dan panah di layar yang dapat sepenuhnya dinonaktifkan dari menu atau disimpan dengan tombol di layar.
+&lt;br&gt;
+- Mengirim Teks dan kombinasi Tombol sembarang saat terhubung.
+&lt;br&gt;
+- Bantuan membuat koneksi (\"Menu-&gt;Bantuan Koneksi\") di layar koneksi.
+&lt;br&gt;
+- Bantuan dengan mode input (\"Menu-&gt;Lainnya-&gt;Bantuan Mode Input\") saat terhubung.
+&lt;br&gt;
+- Menggunakan trackpad yang tersedia sebagai Panah alih-alih menggerakkan mouse, dan klik trackpad sebagai Ctrl, memutar D-pad/trackpad untuk keyboard BT.
+&lt;br&gt;
+- Dukungan multi-bahasa, selama server RDP memiliki tata letak bahasa yang diperlukan diaktifkan.
+&lt;br&gt;
+- Perubahan resolusi mesin jarak jauh yang mulus
+&lt;br&gt;
+- Dukungan mouse penuh pada perangkat Android 4.0+, termasuk klik kanan dan tengah serta roda gulir.
+&lt;br&gt;
+- Pilihan mode warna
+&lt;br&gt;
+- Integrasi Salin/Tempel
+&lt;br&gt;
+- Mengekspor pengaturan
+&lt;br&gt;
+- Suara
+&lt;br&gt;
+&lt;br&gt;
+Masalah yang diketahui:</string>
+    <string name="rdp_intro_title">aRDP: Klien RDP yang intuitif dan aman</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Saat Anda menambahkan atau mengedit koneksi, Anda akan melihat halaman konfigurasi koneksi. Di sini Anda dapat mengatur koneksi RDP baru, atau memilih yang sudah ada. Di bagian atas terdapat tombol yang memungkinkan Anda menyimpan koneksi. Di bawahnya adalah tempat Anda mengonfigurasi koneksi Anda.
+
+ - Tipe Koneksi: Di sini Anda memilih tipe koneksi RDP. Tipe koneksi yang tersedia adalah:
+   (a) RDP, yang terhubung langsung ke komputer melalui protokol RDP.
+   (b) RDP melalui SSH, yang pertama kali menerowongkan koneksi Anda melalui komputer yang menjalankan server SSH.
+
+ - Judul: Setiap koneksi yang Anda buat dapat memiliki nama panggilan untuk mudah diidentifikasi dalam daftar.
+
+ - Pengaturan Terowongan SSH: Tersedia dalam mode RDP melalui SSH.
+   (a) Server SSH/Port: Alamat dan port server SSH tempat koneksi akan diterorongkan. Secara default SSH mendengarkan pada port 22.
+   (b) Nama Pengguna/Kata Sandi: Nama pengguna dan kata sandi akun pada server SSH. Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+   (c) Kelola Kunci/Gunakan Kunci: Tombol untuk mengelola kunci publik/privat, dan kotak centang yang menunjukkan apakah menggunakan kunci daripada kata sandi untuk mengautentikasi. Jika Anda menggunakan tombol Salin ke Clipboard setelah membuat pasangan kunci, Anda seharusnya dapat menempelkan kunci publik setelah terhubung ke server RDP (clipboard disinkronkan ke server).
+
+ - Pengaturan Koneksi RDP:
+   (a) Server RDP/Port: Di sinilah Anda memasukkan nama host atau alamat IP dan port komputer yang menjalankan server RDP yang ingin Anda hubungi. Dalam mode RDP melalui SSH, alamat ini dilihat dari Server SSH. Jika Server SSH dan server RDP adalah komputer fisik yang sama, Anda dapat menggunakan localhost. Server RDP biasanya mendengarkan pada port 3389.
+   (b) Pengguna RDP: Di sinilah Anda memasukkan nama pengguna akun Windows/UNIX Anda.
+   (c) Domain RDP: Masukkan domain tempat akun Anda berada.
+   (d) Kata Sandi RDP: Di sinilah Anda memasukkan kata sandi akun Windows/UNIX Anda. Penyimpanan aman tidak digunakan untuk kata sandi (ada di database), dan kata sandi hanya akan disimpan jika Anda mencentang kotak "Simpan". Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+
+ - Pengaturan lanjutan: Di bagian ini Anda akan menemukan cara menyesuaikan resolusi desktop, dan berbagai optimasi kinerja RDP
+
+ - Penyesuaian Perangkat Lokal: Ini menyesuaikan perilaku aplikasi di perangkat Anda.
+   (a) Gunakan D-Pad untuk panah: Jika Anda mau, Anda dapat menggunakan D-Pad keyboard Bluetooth Anda atau panah pada keyboard di layar untuk mengirim panah ke server RDP.
+   (b) Putar D-Pad: Ponsel yang dipasangkan dengan keyboard Bluetooth mungkin memerlukan D-pad keyboard untuk diputar berlawanan arah jarum jam agar mengirim arah yang benar ke server.
+   (c) Pointer mouse lokal: Jika pointer tidak terlihat, pilih ini untuk memaksanya digambar oleh aplikasi."</string>
+    <string name="rdp_password_hint">Kata Sandi RDP</string>
+    <string name="rdp_server_empty">Server RDP atau port kosong. Tidak dapat terhubung!</string>
+    <string name="rdp_username_hint">Nama Pengguna RDP</string>
+
+    <string name="remote_sound_disabled">Suara Dinonaktifkan</string>
+    <string name="remote_sound_on_device">Suara di Perangkat</string>
+    <string name="remote_sound_on_server">Suara di Server</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">PENTING: Jika menggunakan repeater UltraVNC, masukkan alamat dan portnya di luar dialog ini. Di sini, masukkan alamat dan port server VNC yang sebenarnya. Pisahkan alamat dan port server VNC dengan titik dua, mis. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Jangan Gunakan</string>
+    <string name="repeater_dialog_title">Server VNC di Belakang Repeater</string>
+    <string name="repeater_empty_text">Tidak ada repeater</string>
+    <string name="repeater_save">Gunakan</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt sebagai ISO L3 Shift (hanya VNC)</string>
+
+    <string name="rotate_dpad">Putar D-Pad Bluetooth atau perangkat lunak</string>
+
+    <string name="save_as_copy">Simpan sebagai Salinan</string>
+
+    <string name="scaling">Skala</string>
+    <string name="scaling_zoomable">Zoomable</string>
+
+    <string name="send_button">Kirim</string>
+    <string name="send_key_again">Kirim Tombol Lagi</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">Koneksi VNC</string>
+    <string name="shortcut_label_rdp">Koneksi RDP</string>
+    <string name="shortcut_label_spice">Koneksi SPICE</string>
+
+    <string name="showkbd_label">Keyboard</string>
+
+    <string name="single_cancel">Mode satu tangan dibatalkan</string>
+    <string name="single_choose">Pilih mode satu tangan atau batal</string>
+    <string name="single_left">Mode seret kiri - geser untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="single_middle">Mode seret tengah - geser untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="single_reposition">Pointer mouse diposisikan ulang untuk mode satu tangan</string>
+    <string name="single_right">Mode seret kanan - geser untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="single_scroll">Mode gulir - geser atas/bawah untuk menggulir, angkat jari untuk berhenti</string>
+    <string name="single_zoom">Mode zoom - geser atas/bawah untuk perbesar/perkecil, angkat jari untuk berhenti</string>
+
+    <string name="snap_one_to_one">Terkunci ke zoom 1:1</string>
+
+    <string name="special_keys">Kirim Tombol</string>
+
+    <string name="spice_address_caption_hint">Server SPICE</string>
+    <string name="spice_button_import_ca">Impor CA</string>
+    <string name="spice_ca_cert_path_hint">Jalur ke file otoritas sertifikat</string>
+    <string name="spice_ca_file_error_reading">Kesalahan membaca file CA. Pastikan file tersebut dapat dibaca.</string>
+    <string name="spice_ca_file_not_found">File tidak ditemukan. Harap masukkan nama file yang valid di kolom teks (mis. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Subjek Sertifikat</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Terima kasih telah mendukung aSPICE dan perangkat lunak open-source secara umum! Untuk bantuan penggunaan aSPICE, lihat item Bantuan di Menu, dan deskripsi aplikasi di market.
+&lt;br&gt;
+&lt;br&gt;
+Daftar fitur aSPICE saat ini meliputi:
+&lt;br&gt;
+- SPICE Biasa, SPICE ditolong melalui SSH.
+&lt;br&gt;
+- Dukungan rotasi bebas. Gunakan Sistem Operasi untuk membatasi rotasi jika diperlukan.
+&lt;br&gt;
+- Pembuatan dan ekspor pasangan kunci SSH Publik/Privat.
+&lt;br&gt;
+- Penyimpanan Sesi otomatis.
+&lt;br&gt;
+- Mode skala Zoomable, Sesuaikan ke Layar, dan Satu ke Satu.
+&lt;br&gt;
+- Kontrol multi-sentuh atas mouse jarak jauh dalam mode input Langsung dan Touchpad Simulasi.
+&lt;br&gt;
+- Kontrol penuh satu tangan atas mouse jarak jauh dalam mode input Satu Tangan.
+&lt;br&gt;
+- Klik mouse multi-sentuh: ketuk untuk Klik Kiri, ketuk dua jari untuk klik kanan, ketuk tiga jari untuk klik tengah.
+&lt;br&gt;
+- Gulir multi-sentuh: seret dua jari Atas/Bawah, dan Kiri/Kanan untuk menggulir.
+&lt;br&gt;
+- Tombol meta dan panah di layar yang dapat sepenuhnya dinonaktifkan dari menu atau disimpan dengan tombol di layar.
+&lt;br&gt;
+- Mengirim Teks dan kombinasi Tombol sembarang saat terhubung.
+&lt;br&gt;
+- Bantuan membuat koneksi (\"Menu-&gt;Bantuan Koneksi\") di layar koneksi.
+&lt;br&gt;
+- Bantuan dengan mode input (\"Menu-&gt;Lainnya-&gt;Bantuan Mode Input\") saat terhubung.
+&lt;br&gt;
+- Menggunakan trackpad yang tersedia sebagai Panah alih-alih menggerakkan mouse, dan klik trackpad sebagai Ctrl, memutar D-pad/trackpad untuk keyboard BT.
+&lt;br&gt;
+- Dukungan multi-bahasa, selama server SPICE memiliki tata letak bahasa yang diperlukan diaktifkan.
+&lt;br&gt;
+- Perubahan resolusi mesin jarak jauh yang mulus
+&lt;br&gt;
+- Dukungan mouse penuh pada perangkat Android 4.0+, termasuk klik kanan dan tengah serta roda gulir.
+&lt;br&gt;
+&lt;br&gt;
+Fitur yang direncanakan:
+&lt;br&gt;
+- Integrasi Salin/Tempel
+&lt;br&gt;
+- Suara
+&lt;br&gt;
+- Peningkatan kinerja
+&lt;br&gt;
+Masalah yang diketahui:
+&lt;br&gt;
+- Kirim teks tidak mengirim beberapa simbol.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Klien SPICE yang intuitif dan aman</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Saat Anda menambahkan atau mengedit koneksi, Anda akan melihat halaman konfigurasi koneksi. Di sini Anda dapat mengatur koneksi SPICE baru, atau memilih yang sudah ada. Di bagian atas terdapat tombol yang memungkinkan Anda menyimpan koneksi. Di bawahnya adalah tempat Anda mengonfigurasi koneksi Anda.
+
+ - Tipe Koneksi: Di sini Anda memilih tipe koneksi SPICE. Tipe koneksi yang tersedia adalah:
+   (a) SPICE, yang terhubung langsung ke komputer melalui protokol SPICE.
+   (b) SPICE melalui SSH, yang pertama kali menerowongkan koneksi Anda melalui komputer yang menjalankan server SSH.
+
+ - Judul: Setiap koneksi yang Anda buat dapat memiliki nama panggilan untuk mudah diidentifikasi dalam daftar.
+
+ - Pengaturan Terowongan SSH: Tersedia dalam mode SPICE melalui SSH.
+   (a) Server SSH/Port: Alamat dan port server SSH tempat koneksi akan diterorongkan. Secara default SSH mendengarkan pada port 22.
+   (b) Nama Pengguna/Kata Sandi: Nama pengguna dan kata sandi akun pada server SSH. Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+   (c) Kelola Kunci/Gunakan Kunci: Tombol untuk mengelola kunci publik/privat, dan kotak centang yang menunjukkan apakah menggunakan kunci daripada kata sandi untuk mengautentikasi. Jika Anda menggunakan tombol Salin ke Clipboard setelah membuat pasangan kunci, Anda seharusnya dapat menempelkan kunci publik setelah terhubung ke server SPICE (clipboard disinkronkan ke server).
+
+ - Pengaturan Koneksi SPICE:
+   (a) Server SPICE/Port: Di sinilah Anda memasukkan nama host atau alamat IP dan port komputer yang menjalankan server SPICE yang ingin Anda hubungi. Dalam mode SPICE melalui SSH, alamat ini dilihat dari Server SSH. Jika Server SSH dan server SPICE adalah komputer fisik yang sama, Anda dapat menggunakan localhost. Server SPICE biasanya mendengarkan pada port 5900 ke atas.
+   (b) Kata Sandi SPICE: Di sinilah Anda memasukkan kata sandi yang ditetapkan untuk melindungi sesi SPICE Anda. Penyimpanan aman tidak digunakan untuk kata sandi (ada di database), dan kata sandi hanya akan disimpan jika Anda mencentang kotak "Simpan". Kata sandi akan diisi pada halaman ini jika Anda belum keluar dari aplikasi sejak terakhir kali memasukkannya.
+
+ - Pengaturan lanjutan: Di bagian ini Anda akan menemukan optimasi perangkat lokal atau kinerja SPICE
+ - Penyesuaian Perangkat Lokal: Ini menyesuaikan perilaku aplikasi di perangkat Anda.
+   (a) Gunakan D-Pad untuk panah: Jika Anda mau, Anda dapat menggunakan D-Pad keyboard Bluetooth Anda atau panah pada keyboard di layar untuk mengirim panah ke server SPICE.
+   (b) Putar D-Pad: Ponsel yang dipasangkan dengan keyboard Bluetooth mungkin memerlukan D-pad keyboard untuk diputar berlawanan arah jarum jam agar mengirim arah yang benar ke server.
+   (c) Pointer mouse lokal: Jika pointer tidak terlihat, pilih ini untuk memaksanya digambar oleh aplikasi."</string>
+    <string name="spice_password_hint">Kata Sandi SPICE</string>
+    <string name="spice_server_empty">Server SPICE atau port kosong. Tidak dapat terhubung!</string>
+    <string name="spice_tls_port_hint">Port TLS</string>
+    <string name="spice_username_hint">Nama Pengguna SPICE</string>
+
+    <string name="ssh_passphrase_hint">Frasa Sandi SSH</string>
+    <string name="ssh_pubkey_button">Kelola Kunci</string>
+    <string name="ssh_use_pubkey">Gunakan Kunci</string>
+    <string name="ssh_use_x11vnc">Desktop Otomatis</string>
+    <string name="ssh_x11vnc_customize">Konfigurasi AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Nonaktifkan</string>
+    <string name="tap_enable">Aktifkan</string>
+
+    <string name="username_caption">Pengguna VNC</string>
+    <string name="username_hint">Nama Pengguna MS Logon UltraVNC</string>
+    <string name="username_hint_optional">Nama Pengguna VNC (opsional)</string>
+    <string name="username_hint_ssh">Nama Pengguna SSH</string>
+    <string name="username_hint_vencrypt">Nama Pengguna VNC</string>
+    <string name="verification_code">Kode Verifikasi</string>
+    <string name="verification_code_message">Harap masukkan Kode Verifikasi autentikasi multi-faktor</string>
+
+    <string name="view_only">Mode hanya-lihat</string>
+
+    <string name="vnc_server_empty">Server VNC atau port kosong. Tidak dapat terhubung!</string>
+    <string name="vnc_server_empty_no_save">Server VNC atau port kosong. Tidak dapat menyimpan koneksi!</string>
+
+    <string name="warning_cert_does_not_match">PERINGATAN: Sertifikat x509 yang tersimpan atau tanda tangan yang diteruskan tidak cocok dengan sertifikat server saat ini! Ini bisa jadi serangan man-in-the-middle. Jika Anda mengetahui perubahan kunci, Anda dapat melanjutkan. </string>
+    <string name="copy_logcat">📋 Salin Logcat</string>
+    <string name="log_copied">Logcat disalin ke clipboard. Anda sekarang dapat menempelkannya di email atau di forum dukungan. Harap periksa data pribadi sebelum memposting.</string>
+    <string name="info_set_touchpad_input_mode">Server melaporkan bahwa ia tidak mendukung Input Mouse Mode Klien, dan mode input mouse saat ini tidak akan berfungsi dengan benar. Jika ini berlanjut, pastikan spice tools terinstal di mesin virtual atau beralih ke Mode Input Touchpad Simulasi dari Menu.</string>
+    <string name="ssh_tunnel_settings">Pengaturan Terowongan SSH</string>
+    <string name="vnc_connection_settings">Pengaturan Koneksi VNC</string>
+    <string name="show_advanced_settings">Tampilkan Pengaturan Lanjutan</string>
+    <string name="use_no_compression_for_local_connections">Tanpa kompresi (koneksi lokal, enkoding Hextile)</string>
+    <string name="rdp_connection_settings">Pengaturan Koneksi RDP</string>
+    <string name="local_device_tweaks">Penyesuaian Perangkat Lokal</string>
+    <string name="spice_connection_settings">Pengaturan Koneksi SPICE</string>
+    <string name="ca_subject">Masukkan nama subjek sertifikat di sini. Mungkin tidak diperlukan jika nama umum sertifikat (CN) cocok dengan nama host server.</string>
+    <string name="path_to_ca">Masukkan jalur file (misalnya /sdcard/ca-cert.pem) dan ketuk Impor untuk memuat Otoritas Sertifikat Anda.</string>
+    <string name="paste_ca">Masukkan Otoritas Sertifikat di sini jika Anda tidak mengimpornya sebagai file.</string>
+    <string name="cert_issuer">Penerbit Sertifikat</string>
+    <string name="cert_fingerprint">Sidik Jari Sertifikat</string>
+    <string name="error">Kesalahan</string>
+    <string name="panning">Menggeser Layar</string>
+    <string name="copy_of">Salinan dari</string>
+    <string name="ssh_key_generated">Kunci baru berhasil dibuat atau diimpor. Anda sekarang dapat mengetuk tombol \'Buat/Ekspor Kunci\' untuk berbagi, menyalin ke clipboard, atau mengekspor kunci publik.</string>
+    <string name="cursor_force_local">"Lokal"</string>
+    <string name="cursor_force_disable">"Nonaktifkan"</string>
+    <string name="cursor_mode">"Mode Kursor:"</string>
+    <string name="rendering_mode">"Mode Rendering:"</string>
+    <string name="color_24_bit">"Warna 24-bit (24 bpp)"</string>
+    <string name="color_256">"256 warna (8 bpp)"</string>
+    <string name="color_64">"64 warna (4 bpp)"</string>
+    <string name="color_8">"8 warna (2 bpp)"</string>
+    <string name="color_greyscale">"Skala abu-abu (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Hitam & Putih (1 bpp)"]]></string>
+    <string name="show">"Tampilkan"</string>
+    <string name="hide">"Sembunyikan"</string>
+    <string name="search_connections">Cari Koneksi</string>
+    <string name="user_not_specified">Pengguna tidak ditentukan</string>
+    <string name="enter_ssh_credentials">Harap masukkan kredensial SSH</string>
+    <string name="enter_vnc_credentials">Harap masukkan kredensial VNC</string>
+    <string name="enter_vnc_password">Harap masukkan kata sandi VNC</string>
+    <string name="enter_rdp_credentials">Harap masukkan kredensial RDP</string>
+    <string name="enter_gateway_credentials">Harap masukkan kredensial Gateway</string>
+    <string name="enter_spice_password">Harap masukkan kata sandi SPICE</string>
+    <string name="enter_passphrase_title">Masukkan Frasa Sandi Kunci</string>
+    <string name="enter_passphrase">Harap masukkan Frasa Sandi Kunci</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Server Anda memerlukan autentikasi kata sandi selain autentikasi kunci.</string>
+    <string name="main_screen_help_text">"
+Saat aplikasi diluncurkan, ia menampilkan layar dengan koneksi yang tersimpan di dalamnya.
+
+Jika tidak ada koneksi yang tersimpan, bagian bawah layar kosong, dan Anda harus menekan tombol plus untuk membuat yang baru.
+Anda juga dapat mengontrol aspek lain konfigurasi dari layar ini dengan mengetuk opsi bilah alat atau menu lainnya di bagian atas, misalnya
+untuk mengedit pengaturan default, atau mengimpor dan mengekspor pengaturan.
+
+Setelah Anda memiliki koneksi yang tersimpan, Anda dapat terhubung ke server jarak jauh dengan mengetuknya sekali. Anda juga akan memiliki pilihan untuk menghapus atau mengeditnya dengan mengetuk panjang.
+
+Terakhir, Anda dapat menggunakan kolom Cari Koneksi untuk menemukan koneksi dengan cepat berdasarkan filter koneksi yang ditampilkan."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Saat Anda menambahkan atau mengedit koneksi, Anda akan melihat halaman konfigurasi koneksi.
+Di sini Anda dapat mengatur koneksi Opaque baru atau memilih yang sudah ada.
+Di bagian atas terdapat tombol yang memungkinkan Anda menyimpan koneksi.
+Di bawahnya adalah tempat Anda mengonfigurasi koneksi Anda.
+
+ - Tipe Koneksi: Di sini Anda memilih Lingkungan Virtualisasi mana yang Anda hubungkan.
+
+ - Alamat Server: Nama host atau IP server. Jika mendengarkan pada port non-standar, Anda dapat menambahkan port yang dipisahkan oleh titik dua.
+
+ - Nama mesin virtual: Anda dapat menentukan nama VM seperti yang muncul di platform Virtualisasi Anda atau biarkan kolom ini kosong untuk mendapatkan daftar VM atau kontainer yang dapat dipilih.
+
+ - Pengguna: Masukkan nama pengguna untuk mengautentikasi ke kerangka virtualisasi Anda.
+
+ - Kata Sandi: Jika Anda ingin menyimpan kata sandi, masukkan di sini atau biarkan kolom kosong untuk diminta setiap kali.
+
+ - Pengaturan lanjutan: Di bagian ini Anda akan menemukan optimasi perangkat lokal, protokol, dan kinerja."
+    </string>
+    <string name="help">Bantuan ⓘ</string>
+    <string name="need_help">Butuh bantuan?</string>
+    <string name="support_forum">Forum Dukungan ❓</string>
+    <string name="email_us">Email Kami 📧</string>
+    <string name="report_bug">Laporkan Bug 🐛</string>
+    <string name="download_from_server">Unduh dari Server</string>
+    <string name="import_from_file">Impor dari File</string>
+    <string name="please_grant_permission_from_prefs">Anda mungkin perlu memberikan izin ke aplikasi melalui Pengaturan.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Pencatatan Debug Lebih Banyak</string>
+    <string name="prefer_sending_unicode">Input Unicode (hanya Windows)</string>
+    <string name="hide_connection_thumbnails">Sembunyikan Thumbnail Koneksi</string>
+    <string name="show_only_connection_nicknames">Tampilkan Hanya Nama Panggilan Koneksi</string>
+    <string name="love_our_work">Suka pekerjaan kami?</string>
+    <string name="rate_app">Beri Nilai ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Bagikan 🔗</string>
+    <string name="share_app_toast">Bagikan tautan ke aplikasi dengan semua teman Anda di media sosial!</string>
+    <string name="donate_app">Donasi ❤</string>
+    <string name="more_apps">Lebih Banyak Aplikasi 📱</string>
+    <string name="previous_versions">Versi Sebelumnya ⍼</string>
+    <string name="keyboard_type">Tipe Keyboard Perangkat Lunak</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Default (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Teks/Angka Tanpa Saran (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Teks Dengan Saran (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Koneksi ini diatur untuk meluncurkan VPN melalui aplikasi eksternal. Anda perlu menginstal aplikasi seperti Morpheusly untuk meluncurkannya.</string>
+    <string name="vnc_viewer_started">Penampil VNC dimulai</string>
+    <string name="enable_gateway">Aktifkan RDP Gateway</string>
+    <string name="scroll_speed">Kecepatan Gulir Sentuh</string>
+    <string name="desktop_scale_percentage">Persentase Skala Kustom</string>
+    <string name="show_menu">Tampilkan Menu</string>
+    <string name="move_toolbar">Pindahkan Bilah Alat</string>
+    <string name="rdp_adv_glyph_cache">Aktifkan Cache Glyph</string>
+
+    <string name="disable_battery_optimizations_failed">
+Tidak dapat membuka pengaturan pengoptimalan baterai. Nonaktifkan pengoptimalan baterai secara manual di pengaturan sistem.</string>
+    <string name="disable_battery_optimizations">
+🔋Nonaktifkan Pengoptimalan Baterai</string>
+    <string name="disable_battery_optimizations_already_done">
+Aplikasi sudah dikecualikan dari pengoptimalan baterai.</string>
+    <string name="no_connections_title">Belum ada koneksi</string>
+    <string name="no_connections_hint">Ketuk tombol + untuk menambahkan koneksi jarak jauh pertama Anda</string>
+    <string name="no_connections_hint_tv">Tekan tombol + di atas untuk menambahkan koneksi jarak jauh pertama Anda</string>
+    <string name="keyboard_layout_map">Tata Letak Keyboard</string>
+</resources>

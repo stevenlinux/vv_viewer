@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">Farebný režim</string>
+    <string name="message_please_wait">Čakajte prosím</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Predvolené (TYPE_NULL)</string>
+    <string name="ad_donate_text2">Verzia Pro vám umožňuje zakázať toto dialógové okno a poskytuje vám prístup k ďalším funkciám.</string>
+    <string name="snap_one_to_one">Prichytené na priblíženie 1:1</string>
+    <string name="spice_intro_title">aSPICE: Intuitívny, bezpečný klient SPICE</string>
+    <string name="auto_x_title">Nakonfigurujte AutoX</string>
+    <string name="error_ovirt_auth_failure">Zlyhanie overenia. Skontrolujte poskytnutého používateľa a heslo.</string>
+    <string name="ad_donate_text1">Klepnutím sem podporíte projekt malým darom zakúpením verzie Pro.</string>
+    <string name="auto_x_geom_custom">Vlastné</string>
+    <string name="repeater_caption_hint">Opakovač UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">Nepodarilo sa dešifrovať pár kľúčov. Uistite sa, že ste správne zadali svoju prístupovú frázu do poľa \'SSH Passphrase\' na hlavnej obrazovke.</string>
+    <string name="master_password_hint_twice">Opakujte heslo</string>
+    <string name="connection_setup_password">heslo</string>
+    <string name="support_forum">Fórum podpory❓</string>
+    <string name="main_screen_help">Pomocník pre pripojenie</string>
+    <string name="spice_server_empty">SPICE Server alebo port je prázdny. Nedá sa pripojiť!</string>
+    <string name="arrow_up">Šípka hore</string>
+    <string name="error_vm_lookup_failed">Nepodarilo sa nájsť virtuálny počítač so zadaným názvom priradeným vášmu používateľovi. Ak chcete zobraziť zoznam virtuálnych počítačov priradených používateľovi, vymažte zadaný názov virtuálneho počítača.</string>
+    <string name="nickname_caption">prezývka</string>
+    <string name="auto_x_geom_native">Natívne</string>
+    <string name="new_connection">Nové pripojenie</string>
+    <string name="error_ssh_unable_to_connect">Nepodarilo sa pripojiť k serveru SSH. Skontrolujte sieťové pripojenie a adresu a port servera SSH.</string>
+    <string name="send_key_again">Znova odoslať kľúč</string>
+    <string name="input_mode_help">Pomocník režimu zadávania</string>
+    <string name="enable_gateway">Povoliť RDP Gateway</string>
+    <string name="message_please_install_bvnc">Ak sa chcete pripojiť ku konzole VNC tohto virtuálneho počítača, nainštalujte si &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; zo služby Google Play.</string>
+    <string name="spice_ca_cert_path_hint">Cesta k súboru s certifikátom</string>
+    <string name="enter_spice_password">Zadajte heslo SPICE</string>
+    <string name="rdp_adv_window_contents">Počas ťahania zobraziť obsah okna</string>
+    <string name="input_methods">Vstupná metóda</string>
+    <string name="info_ssh_key_fingerprint">Odtlačok hostiteľského kľúča je:</string>
+    <string name="paste_ca">Tu zadajte certifikačnú autoritu, ak ju neimportujete ako súbor.</string>
+    <string name="enter_otp_code">Zadajte kód OTP</string>
+    <string name="spice_connection_screen_help_text">Keď pridáte alebo upravíte pripojenie, zobrazí sa konfiguračná stránka pripojenia. Tu môžete nastaviť nové pripojenie SPICE alebo vybrať už existujúce. V hornej časti je tlačidlo, ktoré umožňuje uložiť pripojenie. Nižšie je miesto, kde konfigurujete svoje pripojenie.
+
+- Typ pripojenia: Tu si vyberiete typ pripojenia SPICE. Dostupné typy pripojenia sú:
+(a) SPICE, ktorý sa pripája priamo k počítaču cez protokol SPICE.
+(b) SPICE cez SSH, ktorý najprv vytuneluje vaše pripojenie cez počítač so serverom SSH.
+
+- Názov: Každé spojenie, ktoré vytvoríte, môže mať prezývku, aby ste ho ľahko identifikovali v zozname.
+
+- Nastavenia tunela SSH: Dostupné v režime SPICE cez SSH.
+(a) Server/Port SSH: Adresa a port servera SSH, cez ktorý bude pripojenie tunelované. SSH štandardne počúva na porte 22.
+(b) Používateľské meno/Heslo: Používateľské meno a heslo účtu na serveri SSH. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+(c) Spravovať kľúč/Použiť kľúč: Tlačidlo na správu verejných/súkromných kľúčov a začiarkavacie políčko označujúce, či sa má na overenie použiť kľúč namiesto hesla. Ak použijete tlačidlo Kopírovať do schránky po vygenerovaní páru kľúčov, mali by ste byť schopní vložiť verejný kľúč po pripojení k serveru SPICE (schránka je synchronizovaná so serverom).
+
+- Nastavenia pripojenia SPICE:
+(a) SPICE Server/Port: Tu zadáte názov hostiteľa alebo IP adresu a port počítača so serverom SPICE, ktorý chcete kontaktovať. V režime SPICE over SSH je táto adresa taká, ako je viditeľná zo servera SSH. Ak je server SSH a server SPICE ten istý fyzický počítač, môžete použiť localhost. Servery SPICE zvyčajne počúvajú na porte 5900 a vyššom.
+(b) SPICE Password: Tu zadáte heslo nastavené na ochranu vašej relácie SPICE. Pre heslá sa nepoužíva zabezpečené úložisko (sú v databáze) a heslo sa uloží, len ak začiarknete políčko Ponechať. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+
+- Pokročilé nastavenia: V tejto sekcii nájdete všetky vylepšenia výkonu miestneho zariadenia alebo SPICE
+- Lokálne vylepšenia zariadenia: Tieto upravujú správanie aplikácie na vašom zariadení.
+(a) Použite D-Pad pre šípky: Ak chcete, môžete použiť D-Pad vašej Bluetooth klávesnice alebo šípky na klávesnici na obrazovke na odoslanie šípok na SPICE server.
+(b) Otočte D-Pad: Telefóny spárované s klávesnicou Bluetooth môžu vyžadovať otočenie D-padu klávesnice proti smeru hodinových ručičiek, aby sa serveru odoslali správne pokyny.
+(c) Lokálny ukazovateľ myši: Ak je ukazovateľ neviditeľný, vyberte túto možnosť, ak chcete, aby ho aplikácia nakreslila.</string>
+    <string name="auto_x_disabled_selection">AutoX vypnuté</string>
+    <string name="button_send_text">Odoslať text</string>
+    <string name="shortcut_label_spice">SPICE pripojenie</string>
+    <string name="keep_screen_awake_enable">Udržujte obrazovku v bdelom stave</string>
+    <string name="open_doc">Manuál/Wiki</string>
+    <string name="remote_sound_disabled">Zvuk je vypnutý</string>
+    <string name="spice_ca_file_not_found">Súbor sa nenašiel. Do textového poľa zadajte platný názov súboru (napr. /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: Intuitívny, bezpečný RDP klient</string>
+    <string name="error_pve_api_unexpected_code">Neočakávaná odpoveď virtuálneho prostredia Proxmox:</string>
+    <string name="error_out_of_memory">Nedá sa vyhradiť dostatok pamäte na vykreslenie vzdialenej obrazovky. Skúste reštartovať aplikáciu a potom reštartujte zariadenie. Môžete tiež skúsiť zmenšiť veľkosť vzdialenej pracovnej plochy prostredníctvom nastavení aplikácie.</string>
+    <string name="enter_passphrase_title">Zadajte prístupovú frázu kľúča</string>
+    <string name="copy_of">Kópia z</string>
+    <string name="rdp_adv_remotefx">Povoliť RemoteFX</string>
+    <string name="ok">OK</string>
+    <string name="rdp_adv_desktop_background">Zobraziť pozadie pracovnej plochy</string>
+    <string name="desktop_scale_percentage">Percento vlastnej mierky</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="rdp_adv_font_smoothing">Vykonajte vyhladenie písma</string>
+    <string name="rdp_domain_hint">Doména RDP</string>
+    <string name="custom_ca_subject">Voliteľný predmet certifikácie. Nie je potrebné, ak sa certifikát CN zhoduje s názvom hostiteľa</string>
+    <string name="color_24_bit">24-bitové farby (24 bpp)</string>
+    <string name="ssh_passphrase_hint">Prístupová fráza SSH</string>
+    <string name="username_hint">Používateľské meno UltraVNC MS Logon</string>
+    <string name="error_failed_to_download_https">Nepodarilo sa stiahnuť súbor cez HTTPS. Možno je certifikát vášho servera nedôveryhodný (platnosť vypršala alebo má svoj vlastný podpis) alebo je váš server nedostupný.</string>
+    <string name="rdp_geom_checkbox_enable">Povoliť vlastné rozlíšenie</string>
+    <string name="enter_rdp_credentials">Zadajte poverenia RDP</string>
+    <string name="error_dialog_title">Chyba</string>
+    <string name="ssl_strict">Vyžadovať bežné meno, aby sa zhodovalo s certifikátom (odporúča sa)</string>
+    <string name="master_password_hint_once">Zadajte heslo</string>
+    <string name="one_to_one">Jeden k jednému</string>
+    <string name="action_rate_or_share_app">⭐ Získajte pomoc, ohodnoťte, zdieľajte</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH server nepodporuje ani \password\ ani \keyboard-interactive\ auth metódy alebo najprv vyžaduje \publickey\ metódu. Nakonfigurujte ho tak, aby umožňoval aspoň jednu z dvoch metód, alebo prekonfigurujte aplikáciu. Dostupné metódy autorizácie:</string>
+    <string name="import_settings">Importovať</string>
+    <string name="hide_toolbar">Skryť panel s nástrojmi</string>
+    <string name="verification_code_message">Zadajte overovací kód viacfaktorovej autentifikácie</string>
+    <string name="need_help">Potrebujete pomoc?</string>
+    <string name="rdp_security_auto">Automatické vyjednávanie zabezpečenia</string>
+    <string name="master_password_error_failed_to_enable">Nepodarilo sa povoliť hlavné heslo. Skontrolujte voľné miesto na zariadení a skúste to znova.</string>
+    <string name="cert_issuer">Vydavateľ certifikátu</string>
+    <string name="error">Chyba</string>
+    <string name="error_anon_dh_unsupported">Server VNC sa pokúša použiť šifry Anonymous Diffie Hellman, ktoré nie sú podporované na vašom zariadení so systémom Android. Ak používate server Vino VNC GNOME, môžete vypnúť AnonTLS spustením nasledujúceho príkazu v termináli a reštartovaním: \gsettings set org.gnome.Vino vyžaduje šifrovanie false\. Ak používate x11vnc, môžete pridať nasledujúce možnosti: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">Rolovacie koliesko</string>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="enter_gateway_credentials">Zadajte prihlasovacie údaje brány</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">Projekt Open Source potrebuje vašu podporu! Prispejte nám kúpou bVNC Pro. Nižšie nájdete odkazy na bVNC Pro a naše ďalšie aplikácie.</string>
+    <string name="input_method_mouse">Ovládanie ukazovateľa myši</string>
+    <string name="pro_feature_rdp">Zdá sa, že ste sa pokúsili otvoriť súbor .rdp, čo je funkcia Pro. Podporte projekt zakúpením aRDP Pro, ktorý podporuje súbory .rdp. V úvodnom dialógovom okne je k dispozícii odkaz na verziu aRDP Pro.</string>
+    <string name="opaque_connection_screen_help_text">Keď pridáte alebo upravíte pripojenie, zobrazí sa konfiguračná stránka pripojenia.
+Tu môžete nastaviť nové nepriehľadné pripojenie alebo vybrať už existujúce.
+V hornej časti je tlačidlo, ktoré umožňuje uložiť pripojenie.
+Nižšie je miesto, kde konfigurujete svoje pripojenie.
+
+- Typ pripojenia: Tu si vyberiete, ku ktorému virtualizačnému prostrediu sa pripájate.
+
+- Adresa servera: Názov hostiteľa alebo IP servera. Ak počúva na neštandardnom porte, môžete pridať port oddelený dvojbodkou.
+
+- Názov virtuálneho počítača: Môžete zadať názov virtuálneho počítača tak, ako sa zobrazuje na vašej virtualizačnej platforme, alebo ponechajte toto pole prázdne, aby ste získali zoznam virtuálnych počítačov alebo kontajnerov, z ktorých si môžete vybrať.
+
+- Používateľ: Zadajte meno používateľa na autentifikáciu do vášho virtualizačného rámca.
+
+- Heslo: Ak si chcete heslo uložiť, zadajte ho sem alebo nechajte pole prázdne, aby ste ho zakaždým mohli požiadať.
+
+- Rozšírené nastavenia: V tejto časti nájdete všetky vylepšenia lokálneho zariadenia, protokolu a výkonu.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text s návrhmi (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">Kopírovať zoznam</string>
+    <string name="master_password_error_failed_to_disable">Nepodarilo sa vypnúť hlavné heslo. Skontrolujte voľné miesto na zariadení a skúste to znova.</string>
+    <string name="use_no_compression_for_local_connections">Žiadna kompresia (miestne pripojenia, Hextile kódovanie)</string>
+    <string name="input_mode_help_text">V ktoromkoľvek režime zadávania klepnite na ikonu klávesnice, čím získate klávesnicu na obrazovke. Vaše zariadenie môže mať aj svoje vlastné gesto, ktoré vyvolá klávesnicu.
+
+Použite režimy priameho vstupu pre intuitívnejšie ovládanie dotykovej obrazovky. Použite režim simulovaného touchpadu na jemnejšie ovládanie myši.
+
+Priamy režim posúvania prstom:
+- Ovládajte myš priamo dotykom.
+- Prejdením prstom môžete posúvať.
+- Klepnutie spôsobí kliknutie myšou tam, kde ste klepli.
+- Udalosti posúvania sa odosielajú medzi dvoma prstami, kde sa začalo potiahnutie dvoma prstami.
+
+Priamy režim, režim podržania posúvania:
+- Ovládajte myš priamo dotykom.
+- Dlhým klepnutím spustíte režim posúvania.
+- Klepnutie spôsobí kliknutie myšou tam, kde ste klepli.
+- Udalosti posúvania sa odosielajú medzi dvoma prstami, kde sa začalo potiahnutie dvoma prstami.
+
+Režim simulovaného touchpadu:
+- Používajte obrazovku ako touchpad.
+- Potiahnutím posúvajte ukazovateľ myši.
+- Pohybujte myšou za okraj obrazovky a posúvajte sa.
+- Ťuknutie spôsobí kliknutie myši tam, kde je ukazovateľ.
+- Udalosti posúvania sa odosielajú tam, kde sa nachádza ukazovateľ myši.
+
+Režim jednej ruky:
+- Rovnaké ako Direct, režim posúvania prstom, s výnimkou toho, že dlhým klepnutím otvoríte ponuku s výberom režimov.
+- Po výbere režimu potiahnutím prstom po obrazovke vykonáte zvolené gesto.
+- Zdvihnutím prsta sa gesto dokončí.
+
+Všetky režimy vstupu:
+- Kliknutie ľavým tlačidlom: Klepnite raz.
+- Dvojité kliknutie: Dvakrát ťuknite.
+- Kliknutie pravým tlačidlom: Klepnite, podržte a klepnite druhým prstom (kdekoľvek inde na obrazovke).
+- Alternatívne kliknutie pravým tlačidlom: Použite tlačidlo \Späť\ alebo gesto pre vaše zariadenie.
+- Kliknutie stredným tlačidlom: Klepnite, podržte a klepnite ďalšími dvoma prstami (kdekoľvek inde na obrazovke).
+- Potiahnutie myšou: Klepnite, podržte, dlho a potiahnite.
+- Rolovacie koliesko: Potiahnite dvoma prstami nahor/nadol a doľava/doprava. Rýchle pretiahnutie sa posúva rýchlejšie.
+- Priblíženie/oddialenie: V režime Zoomable škálovanie ovládajte zväčšenie zoomom.
+- Kláves Ctrl/Alt: tlačidlá Menu-&gt;Ctrl/Alt. Po dokončení nezabudnite vypnúť!
+- Kombinácie kláves: Menu-&gt;Viac-&gt;Odoslať klávesy.
+- Odoslať text: Buď píšte na klávesnici na obrazovke, alebo použite Menu-&gt;Viac-&gt;Odoslať text.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt ako ISO L3 Shift (iba VNC)</string>
+    <string name="error_uri_noinfo_nosave">Nedostatočné informácie špecifické na pripojenie.</string>
+    <string name="single_reposition">Ukazovateľ myši bol premiestnený pre režim jednej ruky</string>
+    <string name="auto_x_cancel">Zrušiť</string>
+    <string name="vv_file_not_found">Súbor .vv sa nenašiel!</string>
+    <string name="error_pve_failed_to_authenticate">Nepodarilo sa overiť vo virtuálnom prostredí Proxmox. Uistite sa, že ste zadali svoje používateľské meno vo formáte user@realm a že vaše heslo je správne.</string>
+    <string name="save_as_copy">Uložiť ako kópiu</string>
+    <string name="info_cert">Prijímate tento nový alebo zmenený certifikát hostiteľa?\n\nOdtlačky prstov:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nVydal: %4$s\nVydal: %5$s\n\nPlatné od: %6$: %\nPlatné do</string>
+    <string name="more_debug_logging">Viac protokolovania ladenia</string>
+    <string name="error_ssh_key_auth_fail">Nepodarilo sa overiť na serveri SSH pomocou páru kľúčov. Skontrolujte svoje používateľské meno SSH a uistite sa, že váš verejný kľúč je v súbore author_keys na vzdialenej strane.</string>
+    <string name="error_vnc_authentication">Overenie VNC zlyhalo! Skontrolujte heslo VNC (a prípadne používateľa).</string>
+    <string name="toggle_keyboard">Prepnúť klávesnicu</string>
+    <string name="help">Pomoc ⓘ</string>
+    <string name="repeater_caption">DÔLEŽITÉ: Ak používate opakovač UltraVNC, zadajte jeho adresu a port mimo tohto dialógového okna. Tu zadajte adresu a port skutočného servera VNC. Adresu a port VNC servera oddeľte dvojbodkou, napr.192.168.0.100:5900.</string>
+    <string name="color_8">8 farieb (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">Nedá sa pripojiť alebo overiť, skontrolujte adresu servera, používateľa, heslo a certifikačnú autoritu a predmet.</string>
+    <string name="error_rdp_authentication_failed">Autentifikácia RDP zlyhala! Skontrolujte používateľské meno a heslo RDP a skúste to znova.</string>
+    <string name="delete_key_list">Odstrániť zoznam kľúčov</string>
+    <string name="input_method_direct_swipe_pan_description">Priame, posúvanie prstom: posúvanie posúvaním prstom. Ťuknite jedným prstom kdekoľvek chcete kliknúť ľavým tlačidlom, dvoma prstami kliknite pravým tlačidlom a tromi prstami kliknite stredným tlačidlom. Prejdením dvoma prstami sa posúvate. Dlhým klepnutím presuňte myšou.</string>
+    <string name="address_caption_hint">Server VNC</string>
+    <string name="auto_x_unixpw">Namiesto vstavaného bezpečnostného mechanizmu použite poverenia UNIX. Používateľ musí byť schopný spustiť /bin/su.</string>
+    <string name="input_method_touchpad">Simulovaný touchpad</string>
+    <string name="fit_to_screen">Prispôsobiť obrazovke</string>
+    <string name="list_name_caption">Názov zoznamu</string>
+    <string name="copy_logcat">📋 Skopírujte Logcat</string>
+    <string name="ca_ovirt_use_custom">Vlastná RHEV/oVirt CA</string>
+    <string name="info_progress_dialog_downloading">Stiahnite si prvú snímku.\Počkajte prosím...</string>
+    <string name="local_mouse_check">Lokálny ukazovateľ myši (vyberte, ak je ukazovateľ neviditeľný)</string>
+    <string name="rdp_server_empty">RDP Server alebo port sú prázdne. Nedá sa pripojiť!</string>
+    <string name="rendering_mode">Režim vykresľovania:</string>
+    <string name="rdp_adv_visual_styles">Povoliť vizuálne štýly</string>
+    <string name="error_ovirt_timeout">Časový limit pripojenia k vášmu VM vypršal. Skontrolujte, či je adresa uzla, na ktorom je spustený váš VM, správna, či je prístupný z vašej aktuálnej siete a či pripojenie neblokuje brána firewall.</string>
+    <string name="extra_keys_enable">Povoliť extra kľúče</string>
+    <string name="showkbd_label">Klávesnica</string>
+    <string name="audio">Zvuk</string>
+    <string name="ssh_x11vnc_customize">Nakonfigurujte AutoX</string>
+    <string name="address_caption_ssh_hint">Server SSH</string>
+    <string name="info_progress_dialog_connecting">Pripája sa…</string>
+    <string name="donate_app">Darujte ❤</string>
+    <string name="rdp_security_rdp">Zabezpečenie RDP</string>
+    <string name="applies_to_new_connections_only">Platí len pre nové pripojenia</string>
+    <string name="spice_button_import_ca">Importovať CA</string>
+    <string name="scaling_zoomable">Zoomovateľné</string>
+    <string name="error_ssh_port_forwarding_failure">Nepodarilo sa nastaviť presmerovanie portov na tunelovanie prevádzky VNC cez SSH. Uistite sa, že váš server SSH je nakonfigurovaný tak, aby umožňoval presmerovanie portov, a skúste to znova.</string>
+    <string name="rdp_adv_desktop_composition">Povoliť zloženie pracovnej plochy</string>
+    <string name="scroll_speed">Dotknite sa položky Rýchlosť posúvania</string>
+    <string name="rdp_address_caption_hint">Server RDP</string>
+    <string name="send_button">Odoslať</string>
+    <string name="love_our_work">Milujete našu prácu?</string>
+    <string name="download_from_server">Stiahnuť zo servera</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Váš server potrebuje okrem overenia kľúčom aj overenie heslom.</string>
+    <string name="input_method_single_handed">Jednoručné</string>
+    <string name="username_hint_ssh">Používateľské meno SSH</string>
+    <string name="auto_x_enabled">Povolené</string>
+    <string name="password_hint_ssh">Heslo SSH</string>
+    <string name="audio_will_be_initialized">Zvuk bude inicializovaný približne za 15 sekúnd, predtým prosím zastavte akékoľvek spustené prehrávanie videa alebo zvuku</string>
+    <string name="shortcut_label_vnc">Pripojenie VNC</string>
+    <string name="auto_request_new_res">Synchronizujte diaľkové ovládanie na rozlíšenie displeja</string>
+    <string name="color_256">256 farieb (8 bpp)</string>
+    <string name="intro_title">bVNC: Intuitívny a bezpečný klient VNC</string>
+    <string name="error_x509_could_not_generate_encoding">Kódovanie certifikátu sa nepodarilo vygenerovať.</string>
+    <string name="rdp_security_tls">Zabezpečenie TLS</string>
+    <string name="action_import_settings">Nastavenia importu</string>
+    <string name="single_cancel">Režim jednej ruky bol zrušený</string>
+    <string name="info_set_touchpad_input_mode">Server hlási, že nepodporuje vstup myšou v režime klienta a aktuálny režim vstupu myšou nebude fungovať správne. Ak to pretrváva, skontrolujte, či sú vo virtuálnom stroji nainštalované nástroje na korenie alebo prepnite z ponuky do režimu zadávania simulovaného touchpadu.</string>
+    <string name="email_us">Napíšte nám 📧</string>
+    <string name="color_64">64 farieb (4 bpp)</string>
+    <string name="ssh_key_generated">Nový kľúč bol úspešne vygenerovaný alebo importovaný. Teraz môžete klepnúť na tlačidlo \'Generovať/Exportovať kľúč\' a zdieľať, kopírovať do schránky alebo exportovať verejný kľúč.</string>
+    <string name="repeater_button">Opakovač UltraVNC</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="local_clipboard_integration">Povoliť integráciu lokálnej do vzdialenej schránky</string>
+    <string name="cursor_force_local">Miestne</string>
+    <string name="list_caption">Zoznam</string>
+    <string name="master_password_error_password_necessary">Na pokračovanie je potrebné hlavné heslo.</string>
+    <string name="ssh_use_pubkey">Použite kľúč</string>
+    <string name="super_check">Super</string>
+    <string name="enter_text">Odoslať text</string>
+    <string name="import_export_settings">📦 Nastavenia importu/exportu</string>
+    <string name="info_progress_dialog_aborted">Spojenie prerušené!</string>
+    <string name="input_method_single_handed_description">Jednoručné: Potiahnutím prstom môžete posúvať. Ťuknite jedným prstom kdekoľvek chcete kliknúť ľavým tlačidlom myši. Dlhým klepnutím vyberte režim vľavo/vpravo/stredné ťahanie/posúvanie/približovanie. Funguje aj bežné viacdotykové ovládanie.</string>
+    <string name="verification_code">Overovací kód</string>
+    <string name="extra_keys_disable">Zakázať extra klávesy</string>
+    <string name="rotate_dpad">Otočte Bluetooth alebo softvérový D-Pad</string>
+    <string name="intro_close">Zavrieť</string>
+    <string name="master_password_error_shortcuts_not_supported">Keď je zapnuté hlavné heslo, skratky zatiaľ nie sú podporované.</string>
+    <string name="enter_vnc_credentials">Zadajte prihlasovacie údaje VNC</string>
+    <string name="connection_edit">Upraviť</string>
+    <string name="error_spice_unable_to_connect">Nedá sa pripojiť alebo overiť, skontrolujte adresu servera a port.</string>
+    <string name="remote_sound_on_server">Zvuk na serveri</string>
+    <string name="left_handed_mode">Režim pre ľavákov</string>
+    <string name="info_ssh_initializing_hostkey">Prebieha pokus o inicializáciu SSH HostKey.</string>
+    <string name="connect_button">Pripojte sa</string>
+    <string name="ca_new_or_changed">Nový alebo zmenený certifikát servera</string>
+    <string name="close">Zavrieť</string>
+    <string name="master_password_verify">Overte hlavné heslo</string>
+    <string name="error_no_vnc_support_yet">Typ zobrazenia VNC zatiaľ nie je podporovaný, ale ide o nadchádzajúcu funkciu. Ďakujeme za pochopenie!</string>
+    <string name="rdp_connection_settings">Nastavenia pripojenia RDP</string>
+    <string name="immersive_mode_disable">Zakázať imerzný režim</string>
+    <string name="error_pve_null_data">Virtuálne prostredie Proxmox vrátilo nulové údaje.</string>
+    <string name="auto_x_descript_geom">Veľkosť vzdialenej pracovnej plochy (Š x V)</string>
+    <string name="enter_passphrase">Zadajte kľúčovú prístupovú frázu</string>
+    <string name="action_edit_default_settings">⚙ Upravte predvolené nastavenia</string>
+    <string name="ca_spice_manage">Spravujte SPICE CA</string>
+    <string name="color_mode">Farebný režim</string>
+    <string name="back_button">Choď späť</string>
+    <string name="rate_app">Hodnotiť ⭐⭐⭐⭐⭐</string>
+    <string name="off">Vypnuté</string>
+    <string name="ssh_tunnel_settings">Nastavenia tunela SSH</string>
+    <string name="error_pve_vmid_not_numeric">ID VM nie je číselné. Zadajte číselné ID VM alebo ponechajte pole prázdne, ak chcete vybrať VM zo zoznamu.</string>
+    <string name="cert_subject">Predmet certifikátu</string>
+    <string name="rdp_descript_geom">Veľkosť vzdialenej pracovnej plochy (Š x V)</string>
+    <string name="master_password_error_wrong_password">Nepodarilo sa overiť pomocou zadaného hlavného hesla.</string>
+    <string name="error_pick_correct_item">Uistite sa, že ste vybrali správnu položku v časti Typ pripojenia.</string>
+    <string name="input_method_direct_drag_pan">Direct, Hold Pan</string>
+    <string name="auto_rotation">Otáčanie obrazovky počas pripojenia</string>
+    <string name="master_password_verify_message">Ak chcete pokračovať, zadajte správne hlavné heslo.</string>
+    <string name="error_connection_interrupted">Spojenie prerušené.</string>
+    <string name="auto_x_descript_session">Typ vzdialenej relácie</string>
+    <string name="action_new_connection">✚ Nové pripojenie</string>
+    <string name="enter_text_title">Zadajte text na odoslanie</string>
+    <string name="shortcut_label_rdp">Pripojenie RDP</string>
+    <string name="spice_address_caption_hint">Server SPICE</string>
+    <string name="rdp_geom_description_hint">Server potrebuje podporu ExtendedDesktopSize</string>
+    <string name="audio_initialized">Zvuk inicializovaný</string>
+    <string name="intro_text">Aktuálny zoznam funkcií bVNC:
+&lt;br&gt;
+- Plain VNC, Secure VNC over SSH, AnonTLS a VeNCrypt a UltraVNC Windows Logon s voliteľným Repeaterom.
+&lt;br&gt;
+- Režim AutoX: V režime VNC cez SSH automaticky objavte existujúce a/alebo vytvorte nové X-sessions pomocou x11vnc! Funguje ako klient NX.
+&lt;br&gt;
+- Voľná podpora otáčania. V prípade potreby použite operačný systém na obmedzenie rotácie.
+&lt;br&gt;
+- Generovanie a export párov kľúčov SSH Public/Private.
+&lt;br&gt;
+- Všetky štandardné kódovania VNC vrátane Tight, ZRLE a CopyRect.
+&lt;br&gt;
+- Automatické ukladanie relácie.
+&lt;br&gt;
+- Zoomable, Fit to Screen a One to One režimy mierky.
+&lt;br&gt;
+- Viacdotykové ovládanie cez vzdialenú myš v režime priameho a simulovaného vstupu touchpadu.
+&lt;br&gt;
+- Plné ovládanie jednou rukou nad vzdialenou myšou v režime vstupu jednou rukou.
+&lt;br&gt;
+- Viacdotykové kliknutia myšou: klepnutie pre kliknutie ľavým tlačidlom, klepnutie dvoma prstami pre kliknutie pravým tlačidlom, klepnutie tromi prstami pre kliknutie stredným tlačidlom.
+&lt;br&gt;
+- Viacdotykové rolovanie: potiahnutím dvoma prstami nahor/nadol a doľava/doprava na rolovanie.
+&lt;br&gt;
+- Meta a šípky na obrazovke, ktoré možno úplne deaktivovať z ponuky alebo uložiť pomocou tlačidla na obrazovke.
+&lt;br&gt;
+- Odosielanie textu a ľubovoľných kombinácií kláves pri pripojení.
+&lt;br&gt;
+- Pomoc pri vytváraní pripojení (\Menu-&gt;Pomocník pre pripojenie\) na obrazovke pripojenia.
+&lt;br&gt;
+- Pomoc so vstupnými režimami (\Menu-&gt;Viac-&gt;Pomocník pre režim vstupu\) po pripojení.
+&lt;br&gt;
+- Používanie dostupného trackpadu ako šípok namiesto pohybu myšou a klikanie na trackpade ako Ctrl.
+&lt;br&gt;
+- Prepnutie do režimu na výšku počas pripojení, otočný D-pad/trackpad pre BT klávesnice.
+&lt;br&gt;
+- Podpora viacerých jazykov, pokiaľ má server VNC povolené rozloženie potrebného jazyka.
+&lt;br&gt;
+- Integrácia kopírovania a prilepenia
+&lt;br&gt;
+- Vzdialené zmeny rozlíšenia stroja
+&lt;br&gt;
+- Plná podpora myši na zariadeniach so systémom Android 4.0+ vrátane kliknutia pravým a stredným tlačidlom a rolovacieho kolieska.
+&lt;br&gt;
+&lt;br&gt;
+Známe problémy:
+&lt;br&gt;</string>
+    <string name="color_greyscale">Odtiene šedej (1 bpp)</string>
+    <string name="share_app_toast">Zdieľajte odkaz na aplikáciu so všetkými svojimi priateľmi na sociálnych sieťach!</string>
+    <string name="force">Bitová mapa na celú obrazovku</string>
+    <string name="input_method_touchpad_description">Simulovaný touchpad: Potiahnutím posúvajte kurzor. Klepnutím kdekoľvek jedným prstom kliknete ľavým tlačidlom, dvoma prstami pravým tlačidlom a tromi prstami stredným kliknutím. Prejdením dvoma prstami sa posúvate. Dlhým klepnutím presuňte myšou.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nMôžete sa uistiť, že je identický so známym odtlačkom certifikátu servera, aby ste zabránili útoku typu man-in-the-middle.</string>
+    <string name="error_no_vm_found_for_user">Pre daného používateľa nie sú k dispozícii žiadne virtuálne počítače.</string>
+    <string name="color_black_and_white">Čiernobiele (1 bpp)</string>
+    <string name="auto">Auto</string>
+    <string name="pro_feature_generic">Zdá sa, že používate funkciu Pro. Podporte projekt zakúpením verzie Pro, ktorá túto funkciu podporuje. V úvodnom dialógovom okne je k dispozícii odkaz na verziu Pro.</string>
+    <string name="rdp_geom_custom">Vlastné</string>
+    <string name="default_input_mode">Predvolený režim vstupu</string>
+    <string name="repeater_empty_text">Žiadny opakovač</string>
+    <string name="ad_donate_text_rdp">Projekt Open Source potrebuje vašu podporu! Prispejte nám kúpou aRDP Pro, ktorý podporuje presmerovanie zvuku. Nižšie nájdete odkazy na aRDP Pro a naše ďalšie aplikácie.</string>
+    <string name="spice_tls_port_hint">Port TLS</string>
+    <string name="scaling">Škálovanie</string>
+    <string name="spice_connection_settings">Nastavenia pripojenia SPICE</string>
+    <string name="error_pve_failed_to_parse_json">Nepodarilo sa analyzovať odpoveď z virtuálneho prostredia Proxmox.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Zlyhanie nadviazania spojenia SSL. Vyskytol sa problém s certifikátom SSL servera. Ak používate certifikát s vlastným podpisom, musíte (znovu) importovať svoju certifikačnú autoritu.</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="vnc_viewer_started">Spustil sa VNC Viewer</string>
+    <string name="ca_subject">Tu zadajte názov predmetu certifikátu. Nemusí byť potrebné, ak sa bežný názov certifikátu (CN) zhoduje s názvom hostiteľa servera.</string>
+    <string name="port_ssh_hint">Port</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Server SSH nepodporuje metódu \publickey\ auth a na autentifikáciu sa pokúšame použiť pár kľúčov. Nakonfigurujte ho tak, aby povolil autentifikáciu verejným kľúčom a skúste to znova. Dostupné metódy autorizácie:</string>
+    <string name="username_caption">Používateľ VNC</string>
+    <string name="error_ssh_could_not_exec_command">Nepodarilo sa vykonať vzdialený príkaz.</string>
+    <string name="rdp_intro_text">Ďakujeme, že podporujete aRDP a softvér s otvoreným zdrojovým kódom vo všeobecnosti! Ak potrebujete pomoc s používaním aRDP, pozrite si položky Pomocníka v ponuke a popis aplikácie na trhu.
+&lt;br&gt;
+&lt;br&gt;
+Aktuálny zoznam funkcií aRDP zahŕňa:
+&lt;br&gt;
+- Obyčajný RDP, RDP tunelovaný cez SSH.
+&lt;br&gt;
+- Voľná podpora otáčania. V prípade potreby použite operačný systém na obmedzenie rotácie.
+&lt;br&gt;
+- Nastavenie vzdialeného rozlíšenia, natívneho rozlíšenia v režime na šírku a na výšku.
+&lt;br&gt;
+- Generovanie a export párov kľúčov SSH Public/Private.
+&lt;br&gt;
+- Automatické ukladanie relácie.
+&lt;br&gt;
+- Zoomable, Fit to Screen a One to One režimy mierky.
+&lt;br&gt;
+- Viacdotykové ovládanie cez vzdialenú myš v režime priameho a simulovaného vstupu touchpadu.
+&lt;br&gt;
+- Plné ovládanie jednou rukou nad vzdialenou myšou v režime vstupu jednou rukou.
+&lt;br&gt;
+- Viacdotykové kliknutia myšou: klepnutie pre kliknutie ľavým tlačidlom, klepnutie dvoma prstami pre kliknutie pravým tlačidlom, klepnutie tromi prstami pre kliknutie stredným tlačidlom.
+&lt;br&gt;
+- Viacdotykové rolovanie: potiahnutím dvoma prstami nahor/nadol a doľava/doprava na rolovanie.
+&lt;br&gt;
+- Meta a šípky na obrazovke, ktoré možno úplne deaktivovať z ponuky alebo uložiť pomocou tlačidla na obrazovke.
+&lt;br&gt;
+- Odosielanie textu a ľubovoľných kombinácií kláves pri pripojení.
+&lt;br&gt;
+- Pomoc pri vytváraní pripojení (\Menu-&gt;Pomocník pre pripojenie\) na obrazovke pripojenia.
+&lt;br&gt;
+- Pomoc so vstupnými režimami (\Menu-&gt;Viac-&gt;Pomocník pre režim vstupu\) po pripojení.
+&lt;br&gt;
+- Používanie dostupného trackpadu ako šípok namiesto pohybu myšou a klikanie na trackpade ako Ctrl, otáčanie D-padu/trackpadu pre BT klávesnice.
+&lt;br&gt;
+- Podpora viacerých jazykov, pokiaľ má server RDP povolenú potrebnú jazykovú úpravu.
+&lt;br&gt;
+- Plynulé zmeny rozlíšenia vzdialeného stroja
+&lt;br&gt;
+- Plná podpora myši na zariadeniach so systémom Android 4.0+ vrátane kliknutia pravým a stredným tlačidlom a rolovacieho kolieska.
+&lt;br&gt;
+- Výber farebných režimov
+&lt;br&gt;
+- Integrácia kopírovania a prilepenia
+&lt;br&gt;
+- Exportovanie nastavení
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+&lt;br&gt;
+Známe problémy:</string>
+    <string name="tap_disable">Zakázať</string>
+    <string name="view_only">Režim iba na prezeranie</string>
+    <string name="save_button">Uložiť</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Nepodarilo sa odoslať sudo heslo.</string>
+    <string name="landscape_force">Vynútiť orientáciu na šírku</string>
+    <string name="export_settings">Exportovať</string>
+    <string name="keyboard_type">Typ softvérovej klávesnice</string>
+    <string name="hide_connection_thumbnails">Skryť miniatúry pripojenia</string>
+    <string name="input_method_direct_drag_pan_description">Priame, podržte posúvanie: potiahnutím prstom presuňte. Ťuknite jedným prstom kdekoľvek chcete kliknúť ľavým tlačidlom, dvoma prstami kliknite pravým tlačidlom a tromi prstami kliknite stredným tlačidlom. Prejdením dvoma prstami sa posúvate. Dlhým klepnutím spustíte posúvanie.</string>
+    <string name="panning">Posúvanie obrazovky</string>
+    <string name="remote_clipboard_integration">Povoliť integráciu vzdialenej do lokálnej schránky</string>
+    <string name="rdp_connection_screen_help_text">Keď pridáte alebo upravíte pripojenie, zobrazí sa konfiguračná stránka pripojenia. Tu môžete nastaviť nové pripojenie RDP alebo vybrať už existujúce. V hornej časti je tlačidlo, ktoré umožňuje uložiť pripojenie. Nižšie je miesto, kde konfigurujete svoje pripojenie.
+
+- Typ pripojenia: Tu si vyberiete typ pripojenia RDP. Dostupné typy pripojenia sú:
+a) RDP, ktorý sa pripája priamo k počítaču cez protokol RDP.
+(b) RDP cez SSH, ktoré najprv tuneluje vaše pripojenie cez počítač so serverom SSH.
+
+- Názov: Každé spojenie, ktoré vytvoríte, môže mať prezývku, aby ste ho ľahko identifikovali v zozname.
+
+- Nastavenia tunela SSH: Dostupné v režime RDP cez SSH.
+(a) Server/Port SSH: Adresa a port servera SSH, cez ktorý bude pripojenie tunelované. SSH štandardne počúva na porte 22.
+(b) Používateľské meno/Heslo: Používateľské meno a heslo účtu na serveri SSH. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+(c) Spravovať kľúč/Použiť kľúč: Tlačidlo na správu verejných/súkromných kľúčov a začiarkavacie políčko označujúce, či sa má na overenie použiť kľúč namiesto hesla. Ak po vygenerovaní páru kľúčov použijete tlačidlo Kopírovať do schránky, po pripojení k serveru RDP by ste mali byť schopní vložiť verejný kľúč (schránka je synchronizovaná so serverom).
+
+- Nastavenia pripojenia RDP:
+(a) Server/Port RDP: Tu zadáte názov hostiteľa alebo adresu IP a port počítača so serverom RDP, ktorý chcete kontaktovať. V režime RDP cez SSH je táto adresa taká, ako je viditeľná zo servera SSH. Ak je server SSH a server RDP ten istý fyzický počítač, môžete použiť localhost. Servery RDP zvyčajne počúvajú na porte 3389.
+(b) Používateľ RDP: Tu zadáte používateľské meno svojho účtu Windows/UNIX.
+(c) Doména RDP: Zadajte doménu, do ktorej patrí váš účet.
+(d) Heslo RDP: Tu zadáte heslo svojho účtu Windows/UNIX. Pre heslá sa nepoužíva zabezpečené úložisko (sú v databáze) a heslo sa uloží, len ak začiarknete políčko Ponechať. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+
+- Pokročilé nastavenia: V tejto časti nájdete spôsoby, ako prispôsobiť rozlíšenie pracovnej plochy a rôzne vylepšenia výkonu RDP
+
+- Lokálne vylepšenia zariadenia: Tieto upravujú správanie aplikácie na vašom zariadení.
+(a) Použite D-Pad pre šípky: Ak chcete, môžete použiť D-Pad na klávesnici Bluetooth alebo šípky na klávesnici na obrazovke na odoslanie šípok na server RDP.
+(b) Otočte D-Pad: Telefóny spárované s klávesnicou Bluetooth môžu vyžadovať otočenie D-padu klávesnice proti smeru hodinových ručičiek, aby sa serveru odoslali správne pokyny.
+(c) Lokálny ukazovateľ myši: Ak je ukazovateľ neviditeľný, vyberte túto možnosť, ak chcete, aby ho aplikácia nakreslila.</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">Režim rolovania – posúvaním nahor/nadol rolujete, zdvihnutím prsta zastavíte</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">Režim priblíženia – potiahnutím nahor/nadol priblížite/oddialite, zdvihnutím prsta zastavíte</string>
+    <string name="rdp_adv_console_mode">Režim konzoly</string>
+    <string name="address_caption_hint_tunneled">Server VNC</string>
+    <string name="arrow_right">Šípka doprava</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/čísla Žiadne návrhy (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">Používateľské meno SPICE</string>
+    <string name="error_rdp_connection_failed">Pripojenie RDP zlyhalo! Buď bolo prerušené sieťové pripojenie, server RDP bol vypnutý alebo zakázaný, alebo bola prevzatá vaša relácia.</string>
+    <string name="arrow_left">Šípka doľava</string>
+    <string name="connection_type_vnc_over_stunnel">Zabezpečte VNC cez SSL tunel</string>
+    <string name="report_bug">Nahlás chybu 🐛</string>
+    <string name="warning_cert_does_not_match">UPOZORNENIE: Uložený x509 certifikát alebo odovzdaný podpis sa nezhoduje s aktuálnym certifikátom servera! Môže ísť o útok typu man-in-the-middle. Ak viete o zmene kľúča, môžete pokračovať.</string>
+    <string name="more_apps">Viac aplikácií 📱</string>
+    <string name="auto_x_disabled">Zakázané</string>
+    <string name="pro_feature_mfa">Zdá sa, že váš server má povolenú viacfaktorovú autentifikáciu. Podporte projekt zakúpením verzie Pro, ktorá túto funkciu podporuje. V úvodnom dialógovom okne je k dispozícii odkaz na verziu Pro.</string>
+    <string name="no_application_to_handle_vpn">Toto pripojenie je nastavené na spustenie VPN cez externú aplikáciu. Na spustenie si musíte nainštalovať aplikáciu ako Morpheusly.</string>
+    <string name="port_caption_ssh">Port SSH</string>
+    <string name="arrow_down">Šípka dole</string>
+    <string name="pro_feature_spice">Zdá sa, že ste sa pokúsili otvoriť súbor .vv. Ak chcete uložiť pripojenia k Proxmox alebo oVirt priamo v aplikácii a tiež chcete otvárať súbory .vv, zvážte nákup Opaque. Ak potrebujete iba podporu pre súbory .vv, môžete získať aSPICE Pro. V úvodnom dialógovom okne nájdite odkazy na obe aplikácie.</string>
+    <string name="error_vnc_unable_to_connect">Pripojenie k serveru VNC zlyhalo z dôvodu:</string>
+    <string name="rdp_password_hint">Heslo RDP</string>
+    <string name="custom_ca_paste">Sem vložte (ak neimportujete) CA</string>
+    <string name="cursor_mode">Režim kurzora:</string>
+    <string name="local_device_tweaks">Lokálne vylepšenia zariadenia</string>
+    <string name="disconnect">Odpojiť</string>
+    <string name="ad_donate_text0">Verzia Pro má tiež podporu pre viacfaktorovú autentifikáciu SSH. Okrem toho podporuje veľmi žiadanú funkciu hlavného hesla, ktorá zabraňuje neoprávnenému použitiu a šifruje všetky nastavenia pripojenia vrátane hesiel a kľúčov SSH na ochranu pred krádežou. Povoľte ho z hlavnej ponuky.</string>
+    <string name="info_cert_signatures_identical">\n\nMôžete zabezpečiť, aby sa informácie zhodovali s certifikátom servera, aby ste zabránili útoku typu man-in-the-middle.</string>
+    <string name="button_send_without_saving">Odoslať SMS/Neukladať</string>
+    <string name="single_right">Režim potiahnutia doprava – potiahnutím potiahnete/vyberiete, zdvihnutím prsta zastavíte</string>
+    <string name="error_ssh_pwd_auth_fail">Overenie na serveri SSH pomocou hesla zlyhalo. Skontrolujte svoje používateľské meno SSH a heslo SSH.</string>
+    <string name="select_vm_title">Vyberte Virtuálny stroj</string>
+    <string name="ad_donate_text_spice">Pre pripojenia Proxmox a oVirt prispejte na projekt kúpou Opaque alebo aSPICE Pro. Bezplatná verzia aSPICE podporuje iba priame pripojenia k virtuálnym strojom KVM. Nižšie nájdete odkazy na Opaque a aSPICE Pro, ako aj na naše ďalšie aplikácie.</string>
+    <string name="enter_password">Zadajte heslo</string>
+    <string name="main_screen_help_text">Po spustení aplikácie sa zobrazí obrazovka s uloženými pripojeniami.
+
+Ak nie sú uložené žiadne pripojenia, spodná časť obrazovky je prázdna a budete musieť stlačiť tlačidlo plus, aby ste vytvorili nové.
+Z tejto obrazovky môžete tiež ovládať ďalšie aspekty konfigurácie klepnutím na iný panel s nástrojmi alebo možnosti ponuky v hornej časti, napr.
+napríklad upraviť predvolené nastavenia alebo importovať a exportovať nastavenia.
+
+Po uložení pripojenia sa môžete pripojiť k vzdialenému serveru jedným klepnutím. Budete mať tiež možnosť ho odstrániť alebo upraviť dlhým klepnutím.
+
+Nakoniec môžete použiť pole Hľadať spojenia na rýchle vyhľadanie spojení podľa filtra zobrazených spojení.</string>
+    <string name="intro_dont_show">Už viac nezobrazovať</string>
+    <string name="action_export_settings">Exportovať nastavenia</string>
+    <string name="error_ssh_hostkey_changed">CHYBA! Kľúč hostiteľa servera sa zmenil. Ak je to zámerné, môžete pokračovať. V opačnom prípade to môže byť muž v strednom útoku.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nepodarilo sa získať vzdialený port VNC z x11vnc. Uistite sa, že je nainštalovaný x11vnc. Pre istotu skúste spustiť x11vnc ručne na príkazovom riadku.</string>
+    <string name="error_failed_to_obtain_content">Nepodarilo sa získať súbor. Stiahnite si ho znova, ale tentoraz ho rýchlo otvorte z priečinka Download v Správcovi súborov.</string>
+    <string name="show_menu">Zobraziť menu</string>
+    <string name="auto_x_unix_auth">Automaticky sa overte pomocou dodaného používateľského mena/hesla SSH (na čiernu prihlasovaciu obrazovku).</string>
+    <string name="previous_versions">Predchádzajúce verzie ⍼</string>
+    <string name="auto_x_xvnc">Nájsť alebo vytvoriť pomocou Xvnc</string>
+    <string name="auto_x_find">Len nájsť, nevytvárať</string>
+    <string name="port_caption">Port VNC</string>
+    <string name="delete_key">Odstrániť vybraný kľúč</string>
+    <string name="cert_fingerprint">Certifikát odtlačok prsta</string>
+    <string name="enter_vnc_password">Zadajte heslo VNC</string>
+    <string name="port_hint">Port</string>
+    <string name="import_from_file">Importovať zo súboru</string>
+    <string name="error_rdp_unable_to_connect">Nepodarilo sa pripojiť k serveru RDP! Skontrolujte, či je nastavenie servera RDP správne, server je zapnutý, povolený protokol RDP a či je server v rovnakej sieti ako toto zariadenie.</string>
+    <string name="rdp_geom_disabled">Zakázané</string>
+    <string name="ad_donate_spice_text1b">Klepnutím sem si kúpite verziu Pro a otvoríte súbory .vv.</string>
+    <string name="spice_ca_file_error_reading">Chyba pri čítaní súboru CA. Uistite sa, že je čitateľný.</string>
+    <string name="info_vm_launched_on_stand_by">Zistilo sa, že váš VM je vypnutý a bol spustený. Skúste to znova o pár minút. Ak sa pokúsite príliš skoro a dôjde k zlyhaniu pripojenia, skúste to znova neskôr.</string>
+    <string name="special_keys">Odoslať kľúče</string>
+    <string name="error_failed_to_download_http">Sťahovanie súboru cez HTTP zlyhalo. Možno je váš server nedostupný.</string>
+    <string name="rdp_geom_automatic">Automaticky</string>
+    <string name="portrait_mode">Po pripojení prepnite do režimu na výšku</string>
+    <string name="master_password_set_error">Heslá sa nezhodujú, buďte opatrní!</string>
+    <string name="enter_ssh_credentials">Zadajte prihlasovacie údaje SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">VNC server za opakovačom</string>
+    <string name="prefer_sending_unicode">Vstup Unicode (iba Windows)</string>
+    <string name="auto_x_caption">Aplikácia dokáže automaticky objavovať existujúce a vytvárať nové X relácie na systémoch Linux/UNIX (podobne ako NX). Na nájdenie potrebujete x11vnc a na vytváranie relácií Xvfb, Xvnc alebo Xdummy. Ak máte problémy s pripojením, skúste vybrať konkrétny typ vzdialenej relácie v rozšírených nastaveniach AutoX.</string>
+    <string name="auto_x_confirm">Potvrďte</string>
+    <string name="position_toolbar_last_used">Obnoviť pozíciu panela s nástrojmi</string>
+    <string name="error_no_such_vm_found_for_user">Pre daného používateľa sa nenašiel žiadny virtuálny stroj s poskytnutým ID. Vymažte ID, aby ste získali zoznam VM.</string>
+    <string name="single_middle">Stredný režim potiahnutia – potiahnutím potiahnete/vyberiete, zdvihnutím prsta zastavíte</string>
+    <string name="info_encoding">kódovanie,</string>
+    <string name="rdp_geom_native_portrait">Natívny portrét</string>
+    <string name="input_mode">Vstupný režim</string>
+    <string name="action_delete_connection">Odstrániť pripojenie</string>
+    <string name="keys_caption">Keys</string>
+    <string name="single_left">Režim potiahnutia doľava – potiahnutím potiahnete/vyberiete, zdvihnutím prsta zastavíte</string>
+    <string name="vv_file_error">Súbor .vv chýba alebo je poškodený!</string>
+    <string name="connection_delete">Odstrániť</string>
+    <string name="info_progress_dialog_establishing">Nadväzuje sa podanie ruky.\nPočkajte, prosím…</string>
+    <string name="keep_password_button">Udržujte</string>
+    <string name="auto_x_find_login">Nájsť X Login (vyžaduje sudo)</string>
+    <string name="ssh_use_x11vnc">Auto Desktop</string>
+    <string name="address_caption_ssh">Server SSH</string>
+    <string name="spice_password_hint">Heslo SPICE</string>
+    <string name="cursor_force_disable">Zakázať</string>
+    <string name="master_password_error_password_not_set">Nastavenie hlavného hesla bolo zrušené.</string>
+    <string name="info_update_color_model_to">Aktualizácia farebného modelu na</string>
+    <string name="rdp_adv_menu_animation">Zobraziť animácie ponuky</string>
+    <string name="input_method_help">Pomocník metódy vstupu</string>
+    <string name="enable_recording">Povoliť nahrávanie</string>
+    <string name="path_to_ca">Zadajte cestu k súboru (napríklad /sdcard/ca-cert.pem) a klepnutím na Importovať načítajte certifikačnú autoritu.</string>
+    <string name="nickname_caption_hint">Názov (voliteľné)</string>
+    <string name="connection_caption">Pripojenie</string>
+    <string name="pan_follow_mouse">Pan sleduje myš</string>
+    <string name="rdp_geom_native_landscape">Rodná krajina</string>
+    <string name="meta_key_title">Odoslať špeciálne kľúče</string>
+    <string name="move_toolbar">Presunúť panel s nástrojmi</string>
+    <string name="input_mode_fit_to_screen">Žiadna panvica;Trackballová myš</string>
+    <string name="enable_sound">Povoliť zvuk</string>
+    <string name="error_security_type">Server neponúkal podporovaný typ zabezpečenia.</string>
+    <string name="connection_type_text">Virtualizačné prostredie (RHEV/oVirt alebo Proxmox)</string>
+    <string name="connection_setup_host_name">Adresa servera</string>
+    <string name="vnc_server_empty_no_save">VNC Server alebo port je prázdny. Nie je možné uložiť pripojenie!</string>
+    <string name="manage_custom_ca_title">Spravovať vlastnú CA</string>
+    <string name="ca_file_not_found">Súbor sa nenašiel. Do textového poľa zadajte platný názov súboru (napr. /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">Zadajte a zapamätajte si hlavné heslo. Čím je vaše heslo dlhšie, tým je ťažšie ho prelomiť. Ak si heslo nastavíte nesprávne alebo ho zabudnete, stratíte všetky svoje nastavenia! Možno budete chcieť exportovať svoje nastavenia a zálohovať ich teraz (z ponuky). Uložte ich bezpečne, pretože exportované nastavenia nie sú šifrované.</string>
+    <string name="repeater_clear">Nepoužívať</string>
+    <string name="ad_donate_text3">Ak by ste chceli projekt ďalej podporovať, kliknite na nasledujúce odkazy, kde nájdete odkazy na klientske aplikácie pre:</string>
+    <string name="vnc_connection_settings">Nastavenia pripojenia VNC</string>
+    <string name="master_password_enable">🔒 Povoľte hlavné heslo</string>
+    <string name="new_list_button">Nový zoznam</string>
+    <string name="spice_intro_text">Ďakujeme za podporu aSPICE a softvéru s otvoreným zdrojovým kódom všeobecne! Ak potrebujete pomoc s používaním aSPICE, pozrite si položky Pomocníka v ponuke a popis aplikácie na trhu.
+&lt;br&gt;
+&lt;br&gt;
+Aktuálny zoznam funkcií aSPICE zahŕňa:
+&lt;br&gt;
+- Obyčajné SPICE, SPICE tunelované cez SSH.
+&lt;br&gt;
+- Voľná podpora otáčania. V prípade potreby použite operačný systém na obmedzenie rotácie.
+&lt;br&gt;
+- Generovanie a export párov kľúčov SSH Public/Private.
+&lt;br&gt;
+- Automatické ukladanie relácie.
+&lt;br&gt;
+- Zoomable, Fit to Screen a One to One režimy mierky.
+&lt;br&gt;
+- Viacdotykové ovládanie cez vzdialenú myš v režime priameho a simulovaného vstupu touchpadu.
+&lt;br&gt;
+- Plné ovládanie jednou rukou nad vzdialenou myšou v režime vstupu jednou rukou.
+&lt;br&gt;
+- Viacdotykové kliknutia myšou: klepnutie pre kliknutie ľavým tlačidlom, klepnutie dvoma prstami pre kliknutie pravým tlačidlom, klepnutie tromi prstami pre kliknutie stredným tlačidlom.
+&lt;br&gt;
+- Viacdotykové rolovanie: potiahnutím dvoma prstami nahor/nadol a doľava/doprava na rolovanie.
+&lt;br&gt;
+- Meta a šípky na obrazovke, ktoré možno úplne deaktivovať z ponuky alebo uložiť pomocou tlačidla na obrazovke.
+&lt;br&gt;
+- Odosielanie textu a ľubovoľných kombinácií kláves pri pripojení.
+&lt;br&gt;
+- Pomoc pri vytváraní pripojení (\Menu-&gt;Pomocník pre pripojenie\) na obrazovke pripojenia.
+&lt;br&gt;
+- Pomoc so vstupnými režimami (\Menu-&gt;Viac-&gt;Pomocník pre režim vstupu\) po pripojení.
+&lt;br&gt;
+- Používanie dostupného trackpadu ako šípok namiesto pohybu myšou a klikanie na trackpade ako Ctrl, otáčanie D-padu/trackpadu pre BT klávesnice.
+&lt;br&gt;
+- Podpora viacerých jazykov, pokiaľ má server SPICE povolenú potrebnú jazykovú úpravu.
+&lt;br&gt;
+- Plynulé zmeny rozlíšenia vzdialeného stroja
+&lt;br&gt;
+- Plná podpora myši na zariadeniach so systémom Android 4.0+ vrátane kliknutia pravým a stredným tlačidlom a rolovacieho kolieska.
+&lt;br&gt;
+&lt;br&gt;
+Plánované funkcie:
+&lt;br&gt;
+- Integrácia kopírovania a prilepenia
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+- Vylepšenia výkonu
+&lt;br&gt;
+Známe problémy:
+&lt;br&gt;
+- Odoslať text neposiela niektoré symboly.
+&lt;br&gt;</string>
+    <string name="info">Info</string>
+    <string name="connection_edit_delete_prompt">Chcete upraviť alebo odstrániť pripojenie?</string>
+    <string name="connection_type_caption">Typ pripojenia</string>
+    <string name="usb">USB (najskôr zapojte kábel OTG)</string>
+    <string name="connection_type_vnc_over_vencrypt">Zabezpečte VNC cez VeNCrypt</string>
+    <string name="log_copied">Logcat bol skopírovaný do schránky. Teraz ho môžete vložiť do e-mailu alebo na fórum podpory. Pred odoslaním si prosím skontrolujte akékoľvek osobné údaje.</string>
+    <string name="disable_pointer_offset_correction">Zakázať korekciu posunu ukazovateľa</string>
+    <string name="password_caption_hint">Heslo VNC</string>
+    <string name="user_not_specified">Používateľ nebol zadaný</string>
+    <string name="connection_type_vnc_over_ssl">Zabezpečte VNC cez AnonTLS</string>
+    <string name="pro_feature_intro">Zdá sa, že používate funkciu Pro. Podporte projekt zakúpením verzie Pro, ktorá túto funkciu podporuje. V úvodnom dialógovom okne skontrolujte odkazy na správnu aplikáciu.</string>
+    <string name="shift_check">Shift</string>
+    <string name="error_ssh_keypair_missing">Pár kľúčov SSH ešte nebol vygenerovaný! Vygenerujte ho a vložte (jeho verejnú časť) do súboru author_keys na serveri SSH.</string>
+    <string name="error_connection_failed">Pripojenie zlyhalo.</string>
+    <string name="info_continue_connecting">Pokračujte v pripájaní k:</string>
+    <string name="connection_type_vnc_over_ssh">Zabezpečte VNC cez SSH</string>
+    <string name="advanced_settings">Rozšírené nastavenia</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Bola poskytnutá prístupová fráza, ale pár kľúčov nie je zašifrovaný. Odstráňte prístupovú frázu.</string>
+    <string name="vnc_server_empty">VNC Server alebo port je prázdny. Nedá sa pripojiť!</string>
+    <string name="error_uri_parse_error">Nedá sa analyzovať identifikátor URI zámeru. Skontrolujte formát URI. Ďalšie podrobnosti nájdete aj v protokole zariadenia.</string>
+    <string name="username_hint_vencrypt">Používateľské meno VNC</string>
+    <string name="error_vv_download_timeout">Časový limit sťahovania súboru vv.</string>
+    <string name="center_mouse">Myš @</string>
+    <string name="show_keyboard">Zobraziť klávesnicu</string>
+    <string name="info_cert_signatures">Informácie o certifikáte sú:</string>
+    <string name="rdp_username_hint">Používateľské meno RDP</string>
+    <string name="connection_type_vnc">Základné VNC</string>
+    <string name="rdp_security_nla">Overenie na úrovni siete</string>
+    <string name="ssh_pubkey_button">Spravovať kľúč</string>
+    <string name="ca_file_error_reading">Chyba pri čítaní súboru CA. Uistite sa, že je čitateľný.</string>
+    <string name="master_password_error_intents_not_supported">Keď je povolené hlavné heslo, zámery pripojenia ešte nie sú podporované.</string>
+    <string name="input_method_direct_swipe_pan">Priamo, potiahnite Pan</string>
+    <string name="update_button">Aktualizovať</string>
+    <string name="input_mode_panning">Režim posúvania pracovnej plochy</string>
+    <string name="search_connections">Hľadať spojenia</string>
+    <string name="error_x509_could_not_generate_signature">Nepodarilo sa vygenerovať podpis certifikátu SHA1 alebo MD5. Nebol nájdený žiadny algoritmus SHA1/MD5.</string>
+    <string name="auto_x_xdummy">Nájdite alebo vytvorte pomocou Xdummy</string>
+    <string name="error_not_connected_to_network">Zdá sa, že nie ste pripojení na internet. Bez pripojenia nie je možné pokračovať!</string>
+    <string name="show_advanced_settings">Zobraziť rozšírené nastavenia</string>
+    <string name="master_password_set">Nastavte hlavné heslo</string>
+    <string name="custom_ca_import">Prípadne zadajte úplnú cestu k vašej CA a klepnite na Importovať</string>
+    <string name="mouse_follow_pan">Myš nasleduje panvicu</string>
+    <string name="enter_password_auth_failed">Autentifikácia zlyhala. Znova zadajte svoje poverenia.</string>
+    <string name="show">Zobraziť</string>
+    <string name="dpad_as_arrows">Použite D-Pad pre šípky a kliknutie D-Pad pre Ctrl.</string>
+    <string name="tap_enable">Povoliť</string>
+    <string name="ad_donate_spice_text1a">Klepnutím sem si kúpite Opaque a uložíte si priame pripojenia k Proxmox a oVirt. Podporuje aj súbory .vv.</string>
+    <string name="please_grant_permission_from_prefs">Možno budete musieť aplikácii udeliť povolenia prostredníctvom Nastavenia.</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="share_app">Zdieľajte 🔗</string>
+    <string name="remote_sound_on_device">Zvuk na zariadení</string>
+    <string name="connection_setup_vm_name">Názov virtuálneho počítača (voliteľné)</string>
+    <string name="single_choose">Vyberte režim jednej ruky alebo zrušte</string>
+    <string name="error_no_user_hostname">Zadajte aspoň používateľa a názov hostiteľa alebo adresu IP.</string>
+    <string name="rdp_adv_redirect_sdcard">Presmerovanie SD karty</string>
+    <string name="error_pve_api_io_error">Pripojenie k virtuálnemu prostrediu Proxmox zlyhalo:</string>
+    <string name="username_hint_optional">Používateľské meno VNC (voliteľné)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">Vlastné</string>
+    <string name="delete_connection">Odstrániť pripojenie</string>
+    <string name="repeater_save">Použite</string>
+    <string name="get_help">Získajte pomoc</string>
+    <string name="hide">Skryť</string>
+    <string name="rdp_security_mode">Bezpečnostný režim</string>
+    <string name="connection_type_rdp_over_ssh">RDP cez SSH</string>
+    <string name="auto_x_xvfb">Nájsť alebo vytvoriť pomocou Xvfb</string>
+    <string name="address_caption">Server VNC</string>
+    <string name="show_only_connection_nicknames">Zobraziť iba prezývky pripojení</string>
+    <string name="ca_spice_use_ovirt">Na SPICE použite RHEV/oVirt CA</string>
+    <string name="info_cert_tunnel">Chcete sa pripojiť k hostiteľovi identifikovanému nasledujúcim certifikátom?\n\nOdtlačok: %1$s\n\nVydal:\n%2$s\n\nVydal:\n%3$s\n\nPlatné od:\n%4$s\n\nPlatné do:\n%5$s\n\nNeskontroluje aplikácia certifikačných autorít.</string>
+    <string name="error_failed_to_obtain_file">Súbor sa nepodarilo nájsť. Stiahnite si ho znova, ale tentoraz ho skúste otvoriť z oblasti oznámení alebo priamo z prehliadača, ak je to možné.</string>
+    <string name="error_pve_timeout_communicating">Časový limit komunikácie s virtuálnym prostredím Proxmox.</string>
+    <string name="connection_type_spice_over_ssh">SPICE cez SSH</string>
+    <string name="ca_ovirt_manage">Spravujte RHEV/oVirt CA</string>
+    <string name="vnc_connection_screen_help_text">
+Keď pridáte alebo upravíte pripojenie, zobrazí sa konfiguračná stránka pripojenia. Tu môžete nastaviť nové pripojenie VNC alebo vybrať už existujúce. V hornej časti je tlačidlo, ktoré umožňuje uložiť pripojenie. Nižšie je miesto, kde konfigurujete svoje pripojenie.
+
+Ak hľadáte rýchle zvýšenie výkonu, skúste nastaviť režim Farba na nižšiu hodnotu. Skúste tiež odstrániť akýkoľvek obrázok pozadia pracovnej plochy na serveri VNC. Nakoniec sa uistite, že má vaše zariadenie dobré sieťové pripojenie a nezakrývajte anténu a neznižujte silu signálu.
+
+- Typ pripojenia: Tu si vyberiete typ pripojenia VNC. Dostupné typy pripojenia sú:
+(a) Obyčajný VNC, ktorý podporujú všetky servery VNC, ale chýba mu šifrovanie a je náchylný na útoky hrubou silou v dôsledku obmedzenia hesla na 8 znakov.
+(b) Zabezpečenie VNC cez SSH, ktoré sa pripája cez šifrovaný tunel SSH. Potrebujete spustenú službu SSHD, ako aj server VNC. Pokiaľ server VNC neprijíma pripojenia priamo z internetu, tento typ pripojenia nemá žiadne známe zraniteľné miesta, pokiaľ pri prvom pripojení overíte podpis certifikátu servera.
+(c) UltraVNC, ktorý vám poskytuje možnosti prihlásenia do systému Windows a opakovača UltraVNC. Používanie prihlásenia do systému Windows netrpí obmedzením 8-znakového hesla, ale tento režim neponúka žiadne šifrovanie, takže vaša relácia je náchylná na sniffing.
+(d) Zabezpečte VNC cez AnonTLS, čo je bežné VNC cez pripojenie ekvivalentné stunnelu. Musíte buď spustiť stunnel, alebo použiť server VNC ako Vino, ktorý podporuje AnonTLS hneď po vybalení. Tento režim vám poskytuje šifrovanie relácie, ale trpí obmedzením na 8-znakové heslo a nezabráni útokom typu man-in-the-middle.
+(e) Secure VNC over VeNCrypt, ktorý používa x509 certifikáty, ako aj šifrovanie relácie a v závislosti od konfigurácie servera môže používať poverenia používateľa/hesla bez obmedzenia 8 znakov. Tento režim zabraňuje útokom typu man-in-the-middle.ako aj zabezpečenie súkromia relácie. Servery ako x11vnc a TigerVNC podporujú tento režim a sú rovnako bezpečné ako VNC cez SSH.
+
+- Názov: Každé spojenie, ktoré vytvoríte, môže mať prezývku, aby ste ho ľahko identifikovali v zozname.
+
+- Nastavenia tunela SSH: Dostupné v režime VNC cez SSH.
+(a) Server/Port SSH: Adresa a port servera SSH, cez ktorý bude pripojenie tunelované. SSH štandardne počúva na porte 22.
+(b) Používateľské meno/Heslo: Používateľské meno a heslo účtu na serveri SSH. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+(c) Spravovať kľúč/Použiť kľúč: Tlačidlo na správu verejných/súkromných kľúčov a začiarkavacie políčko označujúce, či sa má na overenie použiť kľúč namiesto hesla. Ak po vygenerovaní páru kľúčov použijete tlačidlo Kopírovať do schránky, po pripojení k serveru VNC by ste mali byť schopní vložiť verejný kľúč (schránka je synchronizovaná so serverom).
+
+- Konfigurácia AutoX: K dispozícii iba v režime VNC cez SSH. Aplikácia môže automaticky objaviť existujúce a voliteľne vytvoriť nové X relácie na systémoch UNIX (ako NX klient). Na nájdenie potrebujete x11vnc a na vytváranie relácií musíte nainštalovať Xvfb, Xvnc alebo Xdummy vo vzdialenom systéme. Možno budete musieť presunúť súbor .dmrc a pridať súbor .xinit do svojho domovského adresára, ak vaša pracovná plocha nevyzerá správne alebo sa vám zobrazuje iba okno xterm.
+
+- Nastavenia pripojenia VNC:
+(a) VNC Server/Port: Tu zadáte názov hostiteľa alebo IP adresu a port počítača so serverom VNC, ktorý chcete kontaktovať. V režime VNC cez SSH je táto adresa taká, ako je viditeľná zo servera SSH. Ak je server SSH a server VNC ten istý počítač, môžete použiť localhost. Servery VNC zvyčajne počúvajú od portu 5900 (prvá obrazovka VNC, obrazovka :0).
+(b) Používateľ VNC: K dispozícii v režime UltraVNC s režimom prihlásenia do systému Windows alebo Secure VNC over VeNCrypt, tu zadávate používateľské meno účtu Windows/UNIX.
+(c) Heslo VNC: Ak konfigurácia servera VNC vyžaduje heslo, zadajte ho sem. V UltraVNC s režimami Windows Logon/VeNCrypt zadajte svoje heslo účtu Windows/UNIX tu. Pre heslá sa nepoužíva zabezpečené úložisko a heslo sa uloží, iba ak začiarknete políčko Ponechať. Heslo bude vyplnené na tejto stránke, ak ste aplikáciu neukončili od posledného zadania.
+- Farebný režim: Klient podporuje niekoľko farebných režimov. Režimy s viacerými farbami poskytujú lepší vizuálny zážitok na úkor väčšej šírky pásma a väčšieho počtu CPU na vašom zariadení. Niektoré servery VNC nepodporujú všetky farebné hĺbky (napr. Vzdialená plocha OS/X vyžaduje 24-bitové farby). Ak máte problémy s pripojením, skúste inú farebnú hĺbku.
+
+- Použite D-Pad pre šípky: Ak chcete, môžete použiť D-Pad vašej Bluetooth klávesnice alebo šípky na klávesnici na obrazovke na odoslanie šípok na VNC server.
+
+- Otočte D-Pad: Telefóny spárované s klávesnicou Bluetooth môžu potrebovať otočenie D-padu klávesnice proti smeru hodinových ručičiek, aby sa serveru odoslali správne pokyny.
+
+- Lokálny ukazovateľ myši: Niektoré servery VNC (napr. OS/X Remote Desktop) nenakreslia ukazovateľ myši na klienta. Zaškrtnutie tejto možnosti spôsobí, že aplikácia nakreslí ukazovateľ myši na pozíciu myši.
+
+- Automatická/Celá obrazovka Bitmap: Klient VNC používa bitovú mapu na zobrazenie vzdialeného displeja. Pri veľmi veľkých vzdialených displejoch, najmä v režime prispôsobenia obrazovke, môžete v režime prispôsobenia obrazovke zaznamenať zvláštne vizuálne artefakty z dôvodu obmedzení pamäte na jednotlivé procesy. Ak sa tak stane, skúste zaškrtnúť túto možnosť. Majte na pamäti, že začiarknutie tejto možnosti môže spôsobiť ukončenie aplikácie pri pripojení.
+
+- Repeater: K dispozícii iba v režime UltraVNC. DÔLEŽITÉ: Ak máte opakovač UltraVNC, zadajte jeho adresu a port mimo dialógového okna \'UltraVNC Repeater\' a zadajte adresu a port skutočného servera VNC do dialógového okna \'UltraVNC Repeater\'. Adresu VNC servera a port oddeľte dvojbodkou, napr.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Povoliť vyrovnávaciu pamäť glyfov</string>
+    <string name="disable_battery_optimizations_failed">
+Nepodarilo sa otvoriť nastavenia optimalizácie batérie. Zakázať optimalizáciu batérie manuálne v systémových nastaveniach.</string>
+    <string name="disable_battery_optimizations">
+🔋Zakázať optimalizáciu batérie</string>
+    <string name="disable_battery_optimizations_already_done">
+Aplikácia je už oslobodená od optimalizácie batérie.</string>
+    <string name="no_connections_title">Zatiaľ žiadne pripojenia</string>
+    <string name="no_connections_hint">Klepnutím na tlačidlo + pridáte prvé vzdialené pripojenie</string>
+    <string name="no_connections_hint_tv">Stlačením tlačidla + vyššie pridáte prvé vzdialené pripojenie</string>
+    <string name="keyboard_layout_map">Rozloženie klávesnice</string>
+</resources>

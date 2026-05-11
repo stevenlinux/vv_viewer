@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(export JAVA_HOME=\"/Users/steve/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home\")",
+      "Bash(flutter build *)",
+      "Bash(./gradlew assembleDebug --no-daemon)",
+      "Bash(./gradlew :app:assembleDebug --info)",
+      "Bash(adb install *)",
+      "Bash(adb logcat *)",
+      "Bash(./gradlew :app:assembleDebug)",
+      "Bash(./gradlew :remoteClientLib:assembleDebug)",
+      "Bash(flutter install *)",
+      "Bash(flutter analyze *)",
+      "Bash(adb devices *)",
+      "Bash(./gradlew :remoteClientLib:assembleDebug --rerun-tasks)",
+      "Bash(unzip -l /Volumes/ext-data/ClaudeProjects/vv_viewer/android/remoteClientLib/build/outputs/aar/remoteClientLib-debug.aar)",
+      "Bash(grep -E \"\\\\.so$|\\\\.c$|\\\\.cpp$\")",
+      "Bash(./gradlew clean *)",
+      "Bash(unzip -p /Volumes/ext-data/ClaudeProjects/vv_viewer/android/remoteClientLib/build/outputs/aar/remoteClientLib-debug.aar jni/arm64-v8a/libspice.so)"
+    ]
+  }
+}

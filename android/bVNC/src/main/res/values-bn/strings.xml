@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="color_format_caption">কালার মোড</string>
+    <string name="message_please_wait">অনুগ্রহ করে অপেক্ষা করুন</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">ডিফল্ট (TYPE_NULL)</string>
+    <string name="ad_donate_text2">প্রো সংস্করণ আপনাকে এই ডায়ালগটি অক্ষম করতে দেয় এবং আপনাকে অতিরিক্ত বৈশিষ্ট্যগুলিতে অ্যাক্সেস দেয়।</string>
+    <string name="snap_one_to_one">1:1 জুমে স্ন্যাপ করা হয়েছে</string>
+    <string name="spice_intro_title">aSPICE: স্বজ্ঞাত, নিরাপদ SPICE ক্লায়েন্ট</string>
+    <string name="auto_x_title">AutoX কনফিগার করুন</string>
+    <string name="error_ovirt_auth_failure">প্রমাণীকরণ ব্যর্থতা।প্রদত্ত ব্যবহারকারী এবং পাসওয়ার্ড চেক করুন.</string>
+    <string name="ad_donate_text1">প্রো সংস্করণ কিনে একটি ছোট অনুদান দিয়ে প্রকল্পটিকে সমর্থন করতে এখানে আলতো চাপুন।</string>
+    <string name="auto_x_geom_custom">কাস্টম</string>
+    <string name="repeater_caption_hint">আল্ট্রাভিএনসি রিপিটার</string>
+    <string name="error_ssh_keypair_decryption_failure">কী-জোড়া ডিক্রিপ্ট করতে ব্যর্থ হয়েছে৷দয়া করে নিশ্চিত করুন যে আপনি মূল স্ক্রিনে \'SSH পাসফ্রেজ\' ক্ষেত্রে আপনার পাসফ্রেজ সঠিকভাবে প্রবেশ করেছেন।</string>
+    <string name="master_password_hint_twice">পাসওয়ার্ড পুনরাবৃত্তি করুন</string>
+    <string name="connection_setup_password">পাসওয়ার্ড</string>
+    <string name="support_forum">সমর্থন ফোরাম ❓</string>
+    <string name="main_screen_help">সংযোগ সাহায্য</string>
+    <string name="spice_server_empty">SPICE সার্ভার বা পোর্ট খালি।সংযোগ করা যাবে না!</string>
+    <string name="arrow_up">উপরে তীর</string>
+    <string name="error_vm_lookup_failed">আপনার ব্যবহারকারীকে নির্দিষ্ট করা নাম সহ একটি ভার্চুয়াল মেশিন খুঁজে পাওয়া যায়নি।ব্যবহারকারীকে নির্ধারিত VM-এর একটি তালিকা দেখতে অনুগ্রহ করে নির্দিষ্ট করা VM নামটি মুছুন।</string>
+    <string name="nickname_caption">ডাকনাম</string>
+    <string name="auto_x_geom_native">নেটিভ</string>
+    <string name="new_connection">নতুন সংযোগ</string>
+    <string name="error_ssh_unable_to_connect">SSH সার্ভারের সাথে সংযোগ করতে ব্যর্থ হয়েছে৷অনুগ্রহ করে নেটওয়ার্ক সংযোগ, এবং SSH সার্ভার ঠিকানা এবং পোর্ট পরীক্ষা করুন৷</string>
+    <string name="send_key_again">আবার কী পাঠান</string>
+    <string name="input_mode_help">ইনপুট মোড সহায়তা</string>
+    <string name="enable_gateway">RDP গেটওয়ে সক্রিয় করুন</string>
+    <string name="message_please_install_bvnc">এই VM-এর VNC কনসোলে সংযোগ করতে অনুগ্রহ করে Google Play থেকে &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; ইনস্টল করুন।</string>
+    <string name="spice_ca_cert_path_hint">শংসাপত্র কর্তৃপক্ষ ফাইলের পথ</string>
+    <string name="enter_spice_password">অনুগ্রহ করে SPICE পাসওয়ার্ড লিখুন</string>
+    <string name="rdp_adv_window_contents">টেনে আনার সময় উইন্ডো বিষয়বস্তু দেখান</string>
+    <string name="input_methods">ইনপুট পদ্ধতি</string>
+    <string name="info_ssh_key_fingerprint">হোস্ট কী ফিঙ্গারপ্রিন্ট হল:</string>
+    <string name="paste_ca">আপনি যদি এটি একটি ফাইল হিসাবে আমদানি না করেন তবে এখানে সার্টিফিকেট অথরিটি লিখুন৷</string>
+    <string name="enter_otp_code">OTP কোড লিখুন</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">আপনি একটি সংযোগ যোগ বা সম্পাদনা করার সময়, আপনি একটি সংযোগ কনফিগারেশন পৃষ্ঠা দেখতে পাবেন।এখানে আপনি একটি নতুন SPICE সংযোগ সেট আপ করতে পারেন, অথবা একটি আগে থেকে বিদ্যমান একটি চয়ন করতে পারেন৷শীর্ষে একটি বোতাম রয়েছে যা আপনাকে সংযোগটি সংরক্ষণ করতে দেয়।যে নীচে আপনি আপনার সংযোগ কনফিগার করুন.
+
+- সংযোগের ধরন: এখানে আপনি SPICE সংযোগের ধরনটি বেছে নিন।উপলব্ধ সংযোগ প্রকারগুলি হল:
+(a) SPICE, যা SPICE প্রোটোকলের মাধ্যমে একটি কম্পিউটারের সাথে সরাসরি সংযোগ করে।
+(খ) SSH এর উপর SPICE, যা প্রথমে একটি SSH সার্ভার চালিত কম্পিউটারের মাধ্যমে আপনার সংযোগ টানেল করে।
+
+- শিরোনাম: আপনার তৈরি করা প্রতিটি সংযোগের একটি ডাকনাম থাকতে পারে যাতে এটি তালিকায় সহজেই সনাক্ত করা যায়।
+
+- SSH টানেল সেটিংস: SSH মোডে SPICE এ উপলব্ধ।
+(a) SSH সার্ভার/পোর্ট: SSH সার্ভারের ঠিকানা এবং পোর্ট যার মাধ্যমে সংযোগ টানেল করা হবে।ডিফল্টরূপে SSH পোর্ট 22 এ শোনে।
+(b) ব্যবহারকারীর নাম/পাসওয়ার্ড: SSH সার্ভারে অ্যাকাউন্টের ব্যবহারকারীর নাম এবং পাসওয়ার্ড।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপটি ছেড়ে না থাকেন।
+(c) কী/ব্যবহার কী পরিচালনা করুন: সর্বজনীন/ব্যক্তিগত কীগুলি পরিচালনা করার জন্য একটি বোতাম এবং প্রমাণীকরণের জন্য পাসওয়ার্ডের পরিবর্তে একটি কী ব্যবহার করতে হবে কিনা তা নির্দেশ করে একটি চেকবক্স।যদি আপনি একটি কী-জোড়া তৈরি করার পরে ক্লিপবোর্ডে অনুলিপি বোতামটি ব্যবহার করেন, তাহলে আপনি একবার SPICE সার্ভারের সাথে সংযুক্ত হলে সর্বজনীন কী পেস্ট করতে সক্ষম হবেন (ক্লিপবোর্ডটি সার্ভারের সাথে সিঙ্ক্রোনাইজ করা হয়েছে)।
+
+- SPICE সংযোগ সেটিংস:
+(a) SPICE সার্ভার/পোর্ট: এখানে আপনি হোস্টের নাম বা আইপি ঠিকানা লিখবেন এবং যে কম্পিউটারের সাথে যোগাযোগ করতে চান সেই SPICE সার্ভারটি চালাচ্ছেন।SPICE ওভার SSH মোডে, এই ঠিকানাটি SSH সার্ভার থেকে দেখা যায়।SSH সার্ভার এবং SPICE সার্ভার একই শারীরিক কম্পিউটার হলে, আপনি লোকালহোস্ট ব্যবহার করতে পারেন।SPICE সার্ভারগুলি সাধারণত পোর্ট 5900 এবং তার উপরে শোনে।
+(b) SPICE Password: এখানে আপনি আপনার SPICE সেশনকে সুরক্ষিত রাখতে পাসওয়ার্ড সেটটি প্রবেশ করান।পাসওয়ার্ডের জন্য নিরাপদ সঞ্চয়স্থান ব্যবহার করা হয় না (সেগুলি একটি ডাটাবেসে থাকে), এবং পাসওয়ার্ডটি সংরক্ষণ করা হবে শুধুমাত্র যদি আপনি Keep বক্সটি চেক করেন।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপটি ছেড়ে না থাকেন।
+
+- উন্নত সেটিংস: এই বিভাগে আপনি যেকোনো স্থানীয় ডিভাইস বা SPICE পারফরম্যান্সের পরিবর্তনগুলি পাবেন
+- স্থানীয় ডিভাইস টুইকস: এগুলি আপনার ডিভাইসে অ্যাপের আচরণ সামঞ্জস্য করে।
+(a) তীর চিহ্নের জন্য D-Pad ব্যবহার করুন: আপনি যদি পছন্দ করেন, আপনি SPICE সার্ভারে তীর পাঠানোর জন্য আপনার ব্লুটুথ কীবোর্ডের ডি-প্যাড বা আপনার অন-স্ক্রীন কীবোর্ডের তীরগুলি ব্যবহার করতে পারেন।
+(খ) ডি-প্যাড ঘোরান: ব্লুটুথ কীবোর্ডের সাথে যুক্ত ফোনগুলি সার্ভারে সঠিক দিকনির্দেশ পাঠাতে ঘড়ির কাঁটার বিপরীত দিকে ঘোরানোর জন্য কীবোর্ডের ডি-প্যাডের প্রয়োজন হতে পারে।
+(c) স্থানীয় মাউস পয়েন্টার: যদি পয়েন্টারটি অদৃশ্য হয়, তাহলে এটিকে অ্যাপ দ্বারা আঁকতে বাধ্য করতে এটি নির্বাচন করুন।</string>
+    <string name="auto_x_disabled_selection">অটোএক্স নিষ্ক্রিয়</string>
+    <string name="button_send_text">পাঠ্য পাঠান</string>
+    <string name="shortcut_label_spice">স্পাইস সংযোগ</string>
+    <string name="keep_screen_awake_enable">স্ক্রীন জাগ্রত রাখুন</string>
+    <string name="open_doc">ম্যানুয়াল/উইকি</string>
+    <string name="remote_sound_disabled">শব্দ নিষ্ক্রিয়</string>
+    <string name="spice_ca_file_not_found">ফাইল পাওয়া যায়নি.অনুগ্রহ করে টেক্সট ফিল্ডে একটি বৈধ ফাইলের নাম লিখুন (যেমন /sdcard/ca-cert.pem)।</string>
+    <string name="rdp_intro_title">aRDP: স্বজ্ঞাত, সুরক্ষিত RDP ক্লায়েন্ট</string>
+    <string name="error_pve_api_unexpected_code">Proxmox ভার্চুয়াল পরিবেশ থেকে অপ্রত্যাশিত প্রতিক্রিয়া:</string>
+    <string name="error_out_of_memory">দূরবর্তী স্ক্রীন আঁকতে পর্যাপ্ত মেমরি বরাদ্দ করতে অক্ষম৷অ্যাপ্লিকেশনটি পুনরায় চালু করার চেষ্টা করুন, তারপরে আপনার ডিভাইসটি পুনরায় চালু করুন।আপনি অ্যাপ সেটিংসের মাধ্যমে দূরবর্তী ডেস্কটপের আকার হ্রাস করার চেষ্টা করতে পারেন।</string>
+    <string name="enter_passphrase_title">কী পাসফ্রেজ লিখুন</string>
+    <string name="copy_of">এর অনুলিপি</string>
+    <string name="rdp_adv_remotefx">RemoteFX সক্ষম করুন</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="rdp_adv_desktop_background">ডেস্কটপ ব্যাকগ্রাউন্ড দেখান</string>
+    <string name="desktop_scale_percentage">কাস্টম স্কেলিং শতাংশ</string>
+    <string name="password_caption_ssh">এসএসএইচ প্রমাণ</string>
+    <string name="rdp_adv_font_smoothing">ফন্ট মসৃণ করা সঞ্চালন</string>
+    <string name="rdp_domain_hint">RDP ডোমেইন</string>
+    <string name="custom_ca_subject">ঐচ্ছিক শংসাপত্র বিষয়.শংসাপত্র CN হোস্টনামের সাথে মিলে গেলে প্রয়োজন নেই</string>
+    <string name="color_24_bit">24-বিট রঙ (24 bpp)</string>
+    <string name="ssh_passphrase_hint">SSH পাসফ্রেজ</string>
+    <string name="username_hint">UltraVNC MS লগঅন ব্যবহারকারীর নাম</string>
+    <string name="error_failed_to_download_https">HTTPS এর মাধ্যমে ফাইল ডাউনলোড করতে ব্যর্থ হয়েছে৷সম্ভবত আপনার সার্ভার শংসাপত্র অবিশ্বস্ত (মেয়াদ শেষ বা স্ব-স্বাক্ষরিত) বা আপনার সার্ভার পৌঁছানো যায় না।</string>
+    <string name="rdp_geom_checkbox_enable">কাস্টম রেজোলিউশন সক্ষম করুন</string>
+    <string name="enter_rdp_credentials">অনুগ্রহ করে RDP শংসাপত্র লিখুন</string>
+    <string name="error_dialog_title">ত্রুটি</string>
+    <string name="ssl_strict">শংসাপত্রের সাথে মিলের জন্য সাধারণ নাম প্রয়োজন (প্রস্তাবিত)</string>
+    <string name="master_password_hint_once">পাসওয়ার্ড লিখুন</string>
+    <string name="one_to_one">ওয়ান টু ওয়ান</string>
+    <string name="action_rate_or_share_app">⭐ সাহায্য, রেট, শেয়ার পান</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH সার্ভারটি \password\ বা \keyboard-interactive\ auth পদ্ধতি সমর্থন করে না বা প্রথমে \publickey\ পদ্ধতির প্রয়োজন হয়।অনুগ্রহ করে এটি কনফিগার করুন যাতে অন্তত দুটি পদ্ধতির একটির অনুমতি দেওয়া যায়, অথবা অ্যাপ্লিকেশনটি পুনরায় কনফিগার করুন৷উপলব্ধ প্রমাণীকরণ পদ্ধতি:</string>
+    <string name="import_settings">আমদানি</string>
+    <string name="hide_toolbar">টুলবার লুকান</string>
+    <string name="verification_code_message">অনুগ্রহ করে মাল্টি-ফ্যাক্টর প্রমাণীকরণ যাচাইকরণ কোড লিখুন</string>
+    <string name="need_help">কিছু সাহায্য প্রয়োজন?</string>
+    <string name="rdp_security_auto">অটো-আলোচনা নিরাপত্তা</string>
+    <string name="master_password_error_failed_to_enable">মাস্টার পাসওয়ার্ড সক্রিয় করা যায়নি.আপনার ডিভাইসে ফাঁকা স্থান পরীক্ষা করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="cert_issuer">সার্টিফিকেট প্রদানকারী</string>
+    <string name="error">ত্রুটি</string>
+    <string name="error_anon_dh_unsupported">VNC সার্ভার বেনামী ডিফি হেলম্যান সাইফার ব্যবহার করার চেষ্টা করছে যা আপনার Android ডিভাইসে সমর্থিত নয়।GNOME এর Vino VNC সার্ভার ব্যবহার করলে, আপনি একটি টার্মিনালে নিম্নলিখিত কমান্ডটি চালিয়ে এবং তারপর পুনরায় চালু করে AnonTLS নিষ্ক্রিয় করতে পারেন: \gsettings set org.gnome.Vino require-encryption false\.x11vnc চলমান থাকলে, আপনি নিম্নলিখিত বিকল্পগুলি যোগ করতে পারেন: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">স্ক্রোল হুইল</string>
+    <string name="auto_x_session_auto">অটো</string>
+    <string name="enter_gateway_credentials">অনুগ্রহ করে গেটওয়ে শংসাপত্র লিখুন৷</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">ওপেন সোর্স প্রকল্প আপনার সমর্থন প্রয়োজন!bVNC প্রো কিনে আমাদের দান করুন।bVNC প্রো এবং আমাদের অন্যান্য অ্যাপের লিঙ্কগুলির জন্য নীচে দেখুন।</string>
+    <string name="input_method_mouse">মাউস পয়েন্টার নিয়ন্ত্রণ</string>
+    <string name="pro_feature_rdp">দেখে মনে হচ্ছে আপনি একটি .rdp ফাইল খোলার চেষ্টা করেছেন যা একটি প্রো বৈশিষ্ট্য৷অনুগ্রহ করে aRDP প্রো কিনে প্রকল্পটিকে সমর্থন করুন, যা .rdp ফাইল সমর্থন করে৷aRDP প্রো সংস্করণের একটি লিঙ্ক স্টার্ট ডায়ালগে উপলব্ধ।</string>
+    <string name="opaque_connection_screen_help_text">আপনি একটি সংযোগ যোগ বা সম্পাদনা করার সময়, আপনি একটি সংযোগ কনফিগারেশন পৃষ্ঠা দেখতে পাবেন।
+এখানে আপনি একটি নতুন অস্বচ্ছ সংযোগ সেট আপ করতে পারেন বা আগে থেকে বিদ্যমান একটি চয়ন করতে পারেন৷
+শীর্ষে একটি বোতাম রয়েছে যা আপনাকে সংযোগটি সংরক্ষণ করতে দেয়।
+যে নীচে আপনি আপনার সংযোগ কনফিগার করুন.
+
+- সংযোগের ধরন: এখানে আপনি কোন ভার্চুয়ালাইজেশন পরিবেশের সাথে সংযোগ করছেন তা চয়ন করুন৷
+
+- সার্ভারের ঠিকানা: সার্ভারের হোস্টনাম বা আইপি।যদি এটি একটি অ-মানক পোর্টে শোনা হয়, আপনি কোলন দ্বারা পৃথক একটি পোর্ট যোগ করতে পারেন।
+
+- ভার্চুয়াল মেশিনের নাম: আপনি আপনার ভার্চুয়ালাইজেশন প্ল্যাটফর্মে প্রদর্শিত VM-এর নামটি নির্দিষ্ট করতে পারেন বা VM বা কন্টেইনারগুলির একটি তালিকা পেতে এই ক্ষেত্রটি খালি রাখতে পারেন।
+
+- ব্যবহারকারী: আপনার ভার্চুয়ালাইজেশন কাঠামোতে প্রমাণীকরণ করতে ব্যবহারকারীর নাম লিখুন।
+
+- পাসওয়ার্ড: আপনি যদি পাসওয়ার্ড সংরক্ষণ করতে চান তবে এটি এখানে লিখুন বা প্রতিবার জিজ্ঞাসা করার জন্য ক্ষেত্রটি খালি রাখুন।
+
+- উন্নত সেটিংস: এই বিভাগে আপনি যেকোনো স্থানীয় ডিভাইস, প্রোটোকল এবং পারফরম্যান্সের পরিবর্তন পাবেন।</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">পরামর্শ সহ পাঠ্য (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">অনুলিপি তালিকা</string>
+    <string name="master_password_error_failed_to_disable">মাস্টার পাসওয়ার্ড নিষ্ক্রিয় করা যায়নি.আপনার ডিভাইসে ফাঁকা স্থান পরীক্ষা করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="use_no_compression_for_local_connections">কোন কম্প্রেশন নেই (স্থানীয় সংযোগ, হেক্সটাইল এনকোডিং)</string>
+    <string name="input_mode_help_text">যেকোনো ইনপুট মোডে, অন-স্ক্রীন কীবোর্ড পেতে কীবোর্ড আইকনে আলতো চাপুন।এছাড়াও, আপনার ডিভাইসের নিজস্ব অঙ্গভঙ্গি থাকতে পারে যা কীবোর্ড নিয়ে আসে।
+
+আরও স্বজ্ঞাত টাচ-স্ক্রিন নিয়ন্ত্রণের জন্য সরাসরি ইনপুট মোড ব্যবহার করুন।মাউসের উপর সূক্ষ্ম নিয়ন্ত্রণের জন্য সিমুলেটেড টাচপ্যাড মোড ব্যবহার করুন।
+
+সরাসরি, সোয়াইপ প্যান মোড:
+- স্পর্শের মাধ্যমে সরাসরি মাউস নিয়ন্ত্রণ করুন।
+- চারপাশে প্যান করতে সোয়াইপ করুন।
+- আলতো চাপলে আপনি যেখানে ট্যাপ করেছেন সেখানে মাউস ক্লিক করে।
+- স্ক্রোল ইভেন্টগুলি দুটি আঙুলের মধ্যে পাঠানো হয় যেখানে একটি দুই আঙুলের সোয়াইপ শুরু হয়েছিল৷
+
+সরাসরি, প্যান মোড ধরে রাখুন:
+- স্পর্শের মাধ্যমে সরাসরি মাউস নিয়ন্ত্রণ করুন।
+- প্যান মোড শুরু করতে লম্বা-ট্যাপ করুন।
+- আলতো চাপলে আপনি যেখানে ট্যাপ করেছেন সেখানে মাউস ক্লিক করে।
+- স্ক্রোল ইভেন্টগুলি দুটি আঙুলের মধ্যে পাঠানো হয় যেখানে একটি দুই আঙুলের সোয়াইপ শুরু হয়েছিল৷
+
+সিমুলেটেড টাচপ্যাড মোড:
+- একটি টাচপ্যাড মত আপনার স্ক্রীন ব্যবহার করুন.
+- মাউস পয়েন্টার চারপাশে সরাতে সোয়াইপ করুন।
+- মাউসকে পর্দার প্রান্তের বাইরে প্যানে নিয়ে যান।
+- আলতো চাপলে পয়েন্টার যেখানে আছে সেখানে মাউস ক্লিক করে।
+- মাউস পয়েন্টার যেখানে অবস্থিত সেখানে স্ক্রোল ইভেন্ট পাঠানো হয়।
+
+একক হাতে মোড:
+- ডাইরেক্ট, সোয়াইপ প্যান মোডের মতোই, লম্বা-ট্যাপ ছাড়া মোডের পছন্দের সাথে মেনু খোলে।
+- মোড নির্বাচন করার পরে, স্ক্রিনে আঙুল সোয়াইপ করা নির্বাচিত অঙ্গভঙ্গি সম্পাদন করে।
+- আঙুল উত্তোলন অঙ্গভঙ্গি সম্পূর্ণ করে।
+
+সমস্ত ইনপুট মোড:
+- বাম-ক্লিক করুন: একবার আলতো চাপুন।
+- ডাবল-ক্লিক করুন: ডবল-ট্যাপ করুন।
+- ডান-ক্লিক করুন: ট্যাপ-হোল্ড এবং দ্বিতীয় আঙুল দিয়ে আলতো চাপুন (স্ক্রীনের অন্য কোথাও)।
+- বিকল্প ডান-ক্লিক করুন: আপনার ডিভাইসের জন্য \Back\ বোতাম বা অঙ্গভঙ্গি ব্যবহার করুন।
+- মিডল-ক্লিক: ট্যাপ-হোল্ড এবং আরও দুটি আঙ্গুল দিয়ে আলতো চাপুন (স্ক্রীনের অন্য কোথাও)।
+- মাউস-ড্র্যাগ: ট্যাপ-হোল্ড-লং এবং সোয়াইপ করুন।
+- স্ক্রোল-হুইল: দুই আঙুলে উপরে/নিচে এবং বাম/ডানে টেনে আনুন।দ্রুত ড্র্যাগ স্ক্রোল দ্রুত।
+- জুম ইন/আউট: জুমযোগ্য স্কেলিং-এ, স্কেলিং নিয়ন্ত্রণ করতে চিমটি-জুম।
+- Ctrl/Alt কী: মেনু-&gt;Ctrl/Alt বোতাম।হয়ে গেলে টগল অফ করতে ভুলবেন না!
+- কী কম্বোস: মেনু-&gt;আরো-&gt;কী পাঠান।
+- পাঠ্য পাঠান: হয় অন-স্ক্রীন কীবোর্ডে টাইপ করুন, অথবা মেনু-&gt;আরো-&gt;পাঠ্য পাঠান ব্যবহার করুন।</string>
+    <string name="right_alt_as_iso_l3_shift">ISO L3 শিফট হিসেবে R-Alt (শুধুমাত্র VNC)</string>
+    <string name="error_uri_noinfo_nosave">সংযোগ করার জন্য নির্দিষ্ট তথ্য অপর্যাপ্ত।</string>
+    <string name="single_reposition">একক-হ্যান্ডেড মোডের জন্য মাউস পয়েন্টার রিপজিশন করা হয়েছে</string>
+    <string name="auto_x_cancel">বাতিল করুন</string>
+    <string name="vv_file_not_found">.vv ফাইলটি পাওয়া যায়নি!</string>
+    <string name="error_pve_failed_to_authenticate">Proxmox ভার্চুয়াল এনভায়রনমেন্টে প্রমাণীকরণ করতে ব্যর্থ হয়েছে৷অনুগ্রহ করে নিশ্চিত করুন যে আপনি user@realm ফরম্যাটে আপনার ব্যবহারকারীর নাম লিখছেন এবং আপনার পাসওয়ার্ড সঠিক।</string>
+    <string name="save_as_copy">কপি হিসাবে সংরক্ষণ করুন</string>
+    <string name="info_cert">আপনি কি এই নতুন বা পরিবর্তিত হোস্ট সার্টিফিকেট গ্রহণ করেন?\n\nআঙ্গুলের ছাপ:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nএতে ইস্যু করা হয়েছে: %4$s\nইস্যু করেছে: %5$s\n\nএর থেকে বৈধ: %6$al$s\n পর্যন্ত বৈধ</string>
+    <string name="more_debug_logging">আরো ডিবাগ লগিং</string>
+    <string name="error_ssh_key_auth_fail">একটি কী-জোড়া সহ SSH সার্ভারে প্রমাণীকরণ করতে ব্যর্থ হয়েছে৷অনুগ্রহ করে আপনার SSH ব্যবহারকারীর নাম চেক করুন, এবং নিশ্চিত করুন যে আপনার সর্বজনীন কীটি দূরবর্তী পাশে অনুমোদিত_কী ফাইলে রয়েছে।</string>
+    <string name="error_vnc_authentication">VNC প্রমাণীকরণ ব্যর্থ হয়েছে! VNC পাসওয়ার্ড চেক করুন (এবং ব্যবহারকারী যদি প্রযোজ্য হয়)।</string>
+    <string name="toggle_keyboard">কীবোর্ড টগল করুন</string>
+    <string name="help">সাহায্য ⓘ</string>
+    <string name="repeater_caption">গুরুত্বপূর্ণ: একটি UltraVNC রিপিটার ব্যবহার করলে, এই ডায়ালগের বাইরে এর ঠিকানা এবং পোর্ট লিখুন।এখানে, প্রকৃত VNC সার্ভারের ঠিকানা এবং পোর্ট লিখুন।একটি কোলন দিয়ে VNC সার্ভারের ঠিকানা এবং পোর্ট আলাদা করুন, যেমন192.168.0.100:5900।</string>
+    <string name="color_8">8 রঙ (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">সংযোগ বা প্রমাণীকরণ করতে অক্ষম, সার্ভার ঠিকানা, ব্যবহারকারী, পাসওয়ার্ড, এবং শংসাপত্র কর্তৃপক্ষ এবং বিষয় চেক করুন।</string>
+    <string name="error_rdp_authentication_failed">RDP প্রমাণীকরণ ব্যর্থ হয়েছে!অনুগ্রহ করে RDP ব্যবহারকারীর নাম এবং পাসওয়ার্ড চেক করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="delete_key_list">কী তালিকা মুছুন</string>
+    <string name="input_method_direct_swipe_pan_description">সরাসরি, সোয়াইপ প্যান: চারপাশে প্যান করতে সোয়াইপ করুন।যেখানে আপনি বাম-ক্লিক করতে চান সেখানে একটি আঙুল দিয়ে আলতো চাপুন, ডান-ক্লিক করতে দুই আঙুল এবং মধ্য-ক্লিক করতে তিন আঙুল দিয়ে ট্যাপ করুন।স্ক্রোল করতে দুই আঙ্গুল দিয়ে সোয়াইপ করুন।টেনে আনতে লম্বা ট্যাপ করুন।</string>
+    <string name="address_caption_hint">ভিএনসি সার্ভার</string>
+    <string name="auto_x_unixpw">বিল্ট ইন সিকিউরিটি মেকানিজমের পরিবর্তে UNIX শংসাপত্র ব্যবহার করুন।ব্যবহারকারীকে /bin/su চালাতে সক্ষম হতে হবে।</string>
+    <string name="input_method_touchpad">সিমুলেটেড টাচপ্যাড</string>
+    <string name="fit_to_screen">পর্দায় ফিট করুন</string>
+    <string name="list_name_caption">তালিকার নাম</string>
+    <string name="copy_logcat">📋 Logcat কপি করুন</string>
+    <string name="ca_ovirt_use_custom">কাস্টম RHEV/oVirt CA</string>
+    <string name="info_progress_dialog_downloading">প্রথম ফ্রেম ডাউনলোড করুন৷ দয়া করে অপেক্ষা করুন…</string>
+    <string name="local_mouse_check">স্থানীয় মাউস পয়েন্টার (পয়েন্টার অদৃশ্য হলে নির্বাচন করুন)</string>
+    <string name="rdp_server_empty">RDP সার্ভার বা পোর্ট খালি।সংযোগ করা যাবে না!</string>
+    <string name="rendering_mode">রেন্ডারিং মোড:</string>
+    <string name="rdp_adv_visual_styles">ভিজ্যুয়াল শৈলী সক্ষম করুন</string>
+    <string name="error_ovirt_timeout">আপনার VM-এর সাথে সংযোগের সময় শেষ হয়েছে।অনুগ্রহ করে পরীক্ষা করুন যে আপনার VM চলমান নোডের ঠিকানাটি সঠিক, এটি আপনার বর্তমান নেটওয়ার্ক থেকে অ্যাক্সেসযোগ্য এবং কোনো ফায়ারওয়াল সংযোগটি ব্লক করছে না।</string>
+    <string name="extra_keys_enable">অতিরিক্ত কীগুলি সক্ষম করুন৷</string>
+    <string name="showkbd_label">কীবোর্ড</string>
+    <string name="audio">অডিও</string>
+    <string name="ssh_x11vnc_customize">AutoX কনফিগার করুন</string>
+    <string name="address_caption_ssh_hint">SSH সার্ভার</string>
+    <string name="info_progress_dialog_connecting">সংযোগ করা হচ্ছে…</string>
+    <string name="donate_app">দান করুন ❤</string>
+    <string name="rdp_security_rdp">আরডিপি নিরাপত্তা</string>
+    <string name="applies_to_new_connections_only">শুধুমাত্র নতুন সংযোগে প্রযোজ্য</string>
+    <string name="spice_button_import_ca">CA আমদানি করুন</string>
+    <string name="scaling_zoomable">জুমযোগ্য</string>
+    <string name="error_ssh_port_forwarding_failure">SSH এর উপর VNC ট্রাফিক টানেল করার জন্য পোর্ট ফরওয়ার্ডিং সেট আপ করা যায়নি।অনুগ্রহ করে নিশ্চিত করুন যে আপনার SSH সার্ভারটি পোর্ট ফরওয়ার্ড করার অনুমতি দেওয়ার জন্য কনফিগার করা হয়েছে এবং আবার চেষ্টা করুন।</string>
+    <string name="rdp_adv_desktop_composition">ডেস্কটপ রচনা সক্ষম করুন</string>
+    <string name="scroll_speed">স্পর্শ স্ক্রোল গতি</string>
+    <string name="rdp_address_caption_hint">আরডিপি সার্ভার</string>
+    <string name="send_button">পাঠান</string>
+    <string name="love_our_work">আমাদের কাজ ভালোবাসেন?</string>
+    <string name="download_from_server">সার্ভার থেকে ডাউনলোড করুন</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">আপনার সার্ভারের কী প্রমাণীকরণ ছাড়াও পাসওয়ার্ড প্রমাণীকরণ প্রয়োজন।</string>
+    <string name="input_method_single_handed">একক হাতে</string>
+    <string name="username_hint_ssh">SSH ব্যবহারকারীর নাম</string>
+    <string name="auto_x_enabled">সক্রিয়</string>
+    <string name="password_hint_ssh">SSH পাসওয়ার্ড</string>
+    <string name="audio_will_be_initialized">প্রায় 15 সেকেন্ডের মধ্যে অডিও শুরু হবে, অনুগ্রহ করে তার আগে চলমান কোনো ভিডিও বা অডিও প্লেব্যাক বন্ধ করুন</string>
+    <string name="shortcut_label_vnc">VNC সংযোগ</string>
+    <string name="auto_request_new_res">ডিসপ্লে রেজোলিউশনে রিমোট সিঙ্ক করুন</string>
+    <string name="color_256">256 রং (8 bpp)</string>
+    <string name="intro_title">bVNC: স্বজ্ঞাত, সুরক্ষিত VNC ক্লায়েন্ট</string>
+    <string name="error_x509_could_not_generate_encoding">শংসাপত্র এনকোডিং তৈরি করা যায়নি৷</string>
+    <string name="rdp_security_tls">TLS নিরাপত্তা</string>
+    <string name="action_import_settings">আমদানি সেটিংস</string>
+    <string name="single_cancel">একক হাতে মোড বাতিল করা হয়েছে৷</string>
+    <string name="info_set_touchpad_input_mode">সার্ভার রিপোর্ট করে যে এটি ক্লায়েন্ট মোড মাউস ইনপুট সমর্থন করে না, এবং বর্তমান মাউস ইনপুট মোড সঠিকভাবে কাজ করবে না।যদি এটি অব্যাহত থাকে, ভার্চুয়াল মেশিনে মশলা সরঞ্জাম ইনস্টল করা আছে কিনা তা নিশ্চিত করুন বা মেনু থেকে সিমুলেটেড টাচপ্যাড ইনপুট মোডে স্যুইচ করুন।</string>
+    <string name="email_us">আমাদের ইমেইল করুন 📧</string>
+    <string name="color_64">64 রং (4 bpp)</string>
+    <string name="ssh_key_generated">নতুন কী সফলভাবে তৈরি বা আমদানি করা হয়েছে।আপনি এখন শেয়ার করতে, ক্লিপবোর্ডে অনুলিপি করতে বা সর্বজনীন কী রপ্তানি করতে \'জেনারেট/এক্সপোর্ট কী\' বোতামে ট্যাপ করতে পারেন।</string>
+    <string name="repeater_button">আল্ট্রাভিএনসি রিপিটার</string>
+    <string name="info_dialog_title">তথ্য</string>
+    <string name="local_clipboard_integration">স্থানীয় থেকে দূরবর্তী ক্লিপবোর্ড ইন্টিগ্রেশন সক্ষম করুন৷</string>
+    <string name="cursor_force_local">স্থানীয়</string>
+    <string name="list_caption">তালিকা</string>
+    <string name="master_password_error_password_necessary">চালিয়ে যাওয়ার জন্য মাস্টার পাসওয়ার্ড প্রয়োজন।</string>
+    <string name="ssh_use_pubkey">কী ব্যবহার করুন</string>
+    <string name="super_check">সুপার</string>
+    <string name="enter_text">পাঠ্য পাঠান</string>
+    <string name="import_export_settings">📦 আমদানি/রপ্তানি সেটিংস</string>
+    <string name="info_progress_dialog_aborted">সংযোগ বিচ্ছিন্ন!</string>
+    <string name="input_method_single_handed_description">একক হাতে: চারপাশে প্যান করতে সোয়াইপ করুন।আপনি যেখানে বাম-ক্লিক করতে চান সেখানে একটি আঙুল দিয়ে আলতো চাপুন।বাম/ডান/মিডল ড্র্যাগ/স্ক্রোল/জুম মোড বেছে নিতে লম্বা ট্যাপ করুন।সাধারণ মাল্টি-টাচ কন্ট্রোলও কাজ করে।</string>
+    <string name="verification_code">যাচাইকরণ কোড</string>
+    <string name="extra_keys_disable">অতিরিক্ত কী অক্ষম করুন</string>
+    <string name="rotate_dpad">ব্লুটুথ বা সফ্টওয়্যার ডি-প্যাড ঘোরান</string>
+    <string name="intro_close">বন্ধ</string>
+    <string name="master_password_error_shortcuts_not_supported">যখন মাস্টার পাসওয়ার্ড সক্রিয় থাকে তখন শর্ট-কাটগুলি এখনও সমর্থিত নয়৷</string>
+    <string name="enter_vnc_credentials">VNC শংসাপত্র লিখুন</string>
+    <string name="connection_edit">সম্পাদনা করুন</string>
+    <string name="error_spice_unable_to_connect">সংযোগ বা প্রমাণীকরণ করতে অক্ষম, সার্ভার ঠিকানা এবং পোর্ট চেক করুন.</string>
+    <string name="remote_sound_on_server">সার্ভারে সাউন্ড</string>
+    <string name="left_handed_mode">বাম-হাতে মোড</string>
+    <string name="info_ssh_initializing_hostkey">SSH HostKey শুরু করার চেষ্টা করা হচ্ছে।</string>
+    <string name="connect_button">সংযোগ করুন</string>
+    <string name="ca_new_or_changed">নতুন বা পরিবর্তিত সার্ভার সার্টিফিকেট</string>
+    <string name="close">বন্ধ</string>
+    <string name="master_password_verify">মাস্টার পাসওয়ার্ড যাচাই করুন</string>
+    <string name="error_no_vnc_support_yet">VNC প্রদর্শনের ধরন এখনও সমর্থিত নয়, তবে এটি একটি আসন্ন বৈশিষ্ট্য।আপনার বোঝার জন্য ধন্যবাদ!</string>
+    <string name="rdp_connection_settings">RDP সংযোগ সেটিংস</string>
+    <string name="immersive_mode_disable">ইমারসিভ মোড অক্ষম করুন</string>
+    <string name="error_pve_null_data">Proxmox ভার্চুয়াল এনভায়রনমেন্ট শূন্য ডেটা প্রদান করেছে।</string>
+    <string name="auto_x_descript_geom">দূরবর্তী ডেস্কটপ আকার (WxH)</string>
+    <string name="enter_passphrase">অনুগ্রহ করে কী পাসফ্রেজ লিখুন</string>
+    <string name="action_edit_default_settings">⚙ ডিফল্ট সেটিংস সম্পাদনা করুন</string>
+    <string name="ca_spice_manage">SPICE CA পরিচালনা করুন</string>
+    <string name="color_mode">কালার মোড</string>
+    <string name="back_button">ফিরে যান</string>
+    <string name="rate_app">হার ⭐⭐⭐⭐⭐</string>
+    <string name="off">বন্ধ</string>
+    <string name="ssh_tunnel_settings">SSH টানেল সেটিংস</string>
+    <string name="error_pve_vmid_not_numeric">VM আইডি সংখ্যাসূচক নয়।অনুগ্রহ করে একটি সাংখ্যিক VM ID লিখুন বা একটি তালিকা থেকে VM বেছে নিতে খালি ছেড়ে দিন।</string>
+    <string name="cert_subject">সার্টিফিকেট বিষয়</string>
+    <string name="rdp_descript_geom">দূরবর্তী ডেস্কটপ আকার (WxH)</string>
+    <string name="master_password_error_wrong_password">প্রদত্ত মাস্টার পাসওয়ার্ড দিয়ে প্রমাণীকরণ করা যায়নি।</string>
+    <string name="error_pick_correct_item">অনুগ্রহ করে নিশ্চিত করুন যে আপনি সংযোগের ধরনে সঠিক আইটেমটি বেছে নিয়েছেন।</string>
+    <string name="input_method_direct_drag_pan">সরাসরি, প্যান ধরুন</string>
+    <string name="auto_rotation">সংযুক্ত থাকাকালীন স্ক্রীন ঘূর্ণন</string>
+    <string name="master_password_verify_message">চালিয়ে যেতে দয়া করে সঠিক মাস্টার পাসওয়ার্ড লিখুন।</string>
+    <string name="error_connection_interrupted">সংযোগ বিঘ্নিত.</string>
+    <string name="auto_x_descript_session">রিমোট সেশনের ধরন</string>
+    <string name="action_new_connection">✚ নতুন সংযোগ</string>
+    <string name="enter_text_title">পাঠানোর জন্য পাঠ্য লিখুন</string>
+    <string name="shortcut_label_rdp">আরডিপি সংযোগ</string>
+    <string name="spice_address_caption_hint">SPICE সার্ভার</string>
+    <string name="rdp_geom_description_hint">সার্ভারের এক্সটেন্ডেডডেস্কটপ সাইজ সমর্থন প্রয়োজন</string>
+    <string name="audio_initialized">অডিও আরম্ভ করা হয়েছে</string>
+    <string name="intro_text">bVNC বৈশিষ্ট্যের বর্তমান তালিকা:
+&lt;br&gt;
+- প্লেইন VNC, SSH, AnonTLS, এবং VeNCrypt-এর উপর সুরক্ষিত VNC, এবং ঐচ্ছিক রিপিটার সহ UltraVNC উইন্ডোজ লগন।
+&lt;br&gt;
+- অটোএক্স মোড: VNC ওভার SSH মোডে, স্বয়ংক্রিয়ভাবে বিদ্যমান আবিষ্কার করুন এবং/অথবা x11vnc ব্যবহার করে নতুন X-সেশন তৈরি করুন! NX ক্লায়েন্টের মতো কাজ করে।
+&lt;br&gt;
+- বিনামূল্যে ঘূর্ণন সমর্থন.প্রয়োজনে ঘূর্ণন সীমিত করতে অপারেটিং সিস্টেম ব্যবহার করুন।
+&lt;br&gt;
+- SSH পাবলিক/প্রাইভেট কী-পেয়ার জেনারেশন এবং এক্সপোর্ট।
+&lt;br&gt;
+- Tight, ZRLE, এবং CopyRect সহ সমস্ত স্ট্যান্ডার্ড VNC এনকোডিং।
+&lt;br&gt;
+- স্বয়ংক্রিয় সেশন সংরক্ষণ।
+&lt;br&gt;
+- জুমযোগ্য, স্ক্রিনে ফিট এবং এক থেকে এক স্কেলিং মোড।
+&lt;br&gt;
+- সরাসরি এবং সিমুলেটেড টাচপ্যাড ইনপুট মোডে দূরবর্তী মাউসের উপর মাল্টি-টাচ নিয়ন্ত্রণ।
+&lt;br&gt;
+- একক-হ্যান্ডেড ইনপুট মোডে রিমোট মাউসের উপর সম্পূর্ণ একক-হাতে নিয়ন্ত্রণ।
+&lt;br&gt;
+- মাল্টি-টাচ মাউস ক্লিক: বাম-ক্লিক করতে আলতো চাপুন, ডান-ক্লিক করতে দুই-আঙ্গুলের আলতো চাপুন, মাঝখানে ক্লিক করতে তিন-আঙুল-ট্যাপ করুন।
+&lt;br&gt;
+- মাল্টি-টাচ স্ক্রোলিং: দুটি আঙুল উপরে/নিচে টেনে আনুন এবং স্ক্রোল করতে বাম/ডানে।
+&lt;br&gt;
+- অন-স্ক্রীন মেটা এবং তীর কী যা মেনু থেকে সম্পূর্ণরূপে অক্ষম করা যেতে পারে বা অন-স্ক্রীন বোতাম দিয়ে আটকে রাখা যেতে পারে।
+&lt;br&gt;
+- সংযুক্ত থাকাকালীন পাঠ্য এবং নির্বিচারে কী সমন্বয় পাঠানো হচ্ছে।
+&lt;br&gt;
+- সংযোগ স্ক্রিনে সংযোগ তৈরিতে সহায়তা (\Menu-&gt;সংযোগ সহায়তা\)।
+&lt;br&gt;
+- সংযুক্ত হলে ইনপুট মোড (\Menu-&gt;আরো-&gt;ইনপুট মোড সহায়তা\) সাহায্য করুন।
+&lt;br&gt;
+- মাউস সরানোর পরিবর্তে তীর হিসাবে একটি উপলব্ধ ট্র্যাকপ্যাড ব্যবহার করা, এবং Ctrl হিসাবে ট্র্যাকপ্যাড ক্লিক করুন।
+&lt;br&gt;
+- সংযোগের সময় পোর্ট্রেট মোডে স্যুইচ করা, বিটি কীবোর্ডের জন্য ডি-প্যাড/ট্র্যাকপ্যাড ঘোরানো।
+&lt;br&gt;
+- মাল্টি-ভাষা সমর্থন, যতক্ষণ না VNC সার্ভারে প্রয়োজনীয় ভাষা বিন্যাস সক্রিয় থাকে।
+&lt;br&gt;
+- কপি/পেস্ট ইন্টিগ্রেশন
+&lt;br&gt;
+- দূরবর্তী মেশিন রেজোলিউশন পরিবর্তন
+&lt;br&gt;
+- ডান এবং মিডল ক্লিক এবং স্ক্রোল হুইল সহ Android 4.0+ ডিভাইসে সম্পূর্ণ মাউস সমর্থন।
+&lt;br&gt;
+&lt;br&gt;
+পরিচিত সমস্যা:
+&lt;br&gt;</string>
+    <string name="color_greyscale">গ্রেস্কেল (1 bpp)</string>
+    <string name="share_app_toast">সোশ্যাল মিডিয়াতে আপনার সমস্ত বন্ধুদের সাথে অ্যাপটির একটি লিঙ্ক শেয়ার করুন!</string>
+    <string name="force">ফুলস্ক্রিন বিটম্যাপ</string>
+    <string name="input_method_touchpad_description">সিমুলেটেড টাচপ্যাড: পয়েন্টার সরাতে সোয়াইপ করুন।বাম-ক্লিক করতে এক আঙুল দিয়ে, ডান-ক্লিক করতে দুই আঙুল এবং মধ্য-ক্লিক করতে তিন আঙুল দিয়ে যে কোনও জায়গায় ট্যাপ করুন।স্ক্রোল করতে দুই আঙ্গুল দিয়ে সোয়াইপ করুন।টেনে আনতে লম্বা ট্যাপ করুন।</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nমানুষ-ইন-দ্য-মিডল আক্রমণ প্রতিরোধ করতে আপনি নিশ্চিত করতে পারেন যে এটি সার্ভার শংসাপত্রের পরিচিত আঙ্গুলের ছাপের সাথে অভিন্ন।</string>
+    <string name="error_no_vm_found_for_user">প্রদত্ত ব্যবহারকারীর জন্য কোন উপলব্ধ ভার্চুয়াল মেশিন নেই৷</string>
+    <string name="color_black_and_white">কালো এবং সাদা (1 bpp)</string>
+    <string name="auto">অটো</string>
+    <string name="pro_feature_generic">মনে হচ্ছে আপনি একটি প্রো বৈশিষ্ট্য ব্যবহার করছেন।অনুগ্রহ করে এই বৈশিষ্ট্যটির জন্য সমর্থন রয়েছে এমন প্রো সংস্করণটি কিনে প্রকল্পটিকে সমর্থন করুন৷প্রো সংস্করণের একটি লিঙ্ক স্টার্ট ডায়ালগে উপলব্ধ।</string>
+    <string name="rdp_geom_custom">কাস্টম</string>
+    <string name="default_input_mode">ডিফল্ট ইনপুট মোড</string>
+    <string name="repeater_empty_text">রিপিটার নেই</string>
+    <string name="ad_donate_text_rdp">ওপেন সোর্স প্রকল্প আপনার সমর্থন প্রয়োজন!aRDP প্রো কিনে আমাদের দান করুন, যা শব্দ পুনর্নির্দেশ সমর্থন করে।aRDP প্রো এবং আমাদের অন্যান্য অ্যাপের লিঙ্কগুলির জন্য নীচে দেখুন।</string>
+    <string name="spice_tls_port_hint">TLS পোর্ট</string>
+    <string name="scaling">স্কেলিং</string>
+    <string name="spice_connection_settings">SPICE সংযোগ সেটিংস</string>
+    <string name="error_pve_failed_to_parse_json">Proxmox ভার্চুয়াল এনভায়রনমেন্ট থেকে প্রতিক্রিয়া পার্স করতে ব্যর্থ হয়েছে৷</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL হ্যান্ডশেক ব্যর্থতা।সার্ভার SSL শংসাপত্রের সাথে একটি সমস্যা আছে৷আপনি যদি একটি স্ব-স্বাক্ষরিত শংসাপত্র ব্যবহার করেন, তাহলে আপনাকে আপনার শংসাপত্র কর্তৃপক্ষ (পুনরায়) আমদানি করতে হবে৷</string>
+    <string name="connection_setup_user">ব্যবহারকারী @ ডোমেন</string>
+    <string name="vnc_viewer_started">VNC ভিউয়ার শুরু হয়েছে</string>
+    <string name="ca_subject">এখানে সার্টিফিকেট বিষয়ের নাম লিখুন।সার্টি সাধারণ নাম (CN) সার্ভার হোস্টনামের সাথে মিলে গেলে প্রয়োজন নাও হতে পারে।</string>
+    <string name="port_ssh_hint">বন্দর</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH সার্ভার \publickey\ auth পদ্ধতি সমর্থন করে না, এবং আমরা প্রমাণীকরণের জন্য একটি কী-পেয়ার ব্যবহার করার চেষ্টা করছি।অনুগ্রহ করে পাবলিক কী প্রমাণীকরণের অনুমতি দিতে এটি কনফিগার করুন এবং আবার চেষ্টা করুন।উপলব্ধ প্রমাণীকরণ পদ্ধতি:</string>
+    <string name="username_caption">VNC ব্যবহারকারী</string>
+    <string name="error_ssh_could_not_exec_command">দূরবর্তী কমান্ড কার্যকর করা যায়নি.</string>
+    <string name="rdp_intro_text">সাধারণভাবে aRDP এবং ওপেন সোর্স সফ্টওয়্যার সমর্থন করার জন্য আপনাকে ধন্যবাদ!aRDP ব্যবহারে সহায়তার জন্য, মেনুতে সহায়তা আইটেম এবং বাজারে অ্যাপের বিবরণ দেখুন।
+&lt;br&gt;
+&lt;br&gt;
+aRDP বৈশিষ্ট্যের বর্তমান তালিকায় রয়েছে:
+&lt;br&gt;
+- প্লেইন RDP, RDP টানেল SSH এর উপর দিয়ে।
+&lt;br&gt;
+- বিনামূল্যে ঘূর্ণন সমর্থন.প্রয়োজনে ঘূর্ণন সীমিত করতে অপারেটিং সিস্টেম ব্যবহার করুন।
+&lt;br&gt;
+- দূরবর্তী রেজোলিউশনের সেটিং, ল্যান্ডস্কেপ এবং প্রতিকৃতি মোডে নেটিভ রেজোলিউশন।
+&lt;br&gt;
+- SSH পাবলিক/প্রাইভেট কী-পেয়ার জেনারেশন এবং এক্সপোর্ট।
+&lt;br&gt;
+- স্বয়ংক্রিয় সেশন সংরক্ষণ।
+&lt;br&gt;
+- জুমযোগ্য, স্ক্রিনে ফিট এবং এক থেকে এক স্কেলিং মোড।
+&lt;br&gt;
+- সরাসরি এবং সিমুলেটেড টাচপ্যাড ইনপুট মোডে দূরবর্তী মাউসের উপর মাল্টি-টাচ নিয়ন্ত্রণ।
+&lt;br&gt;
+- একক-হ্যান্ডেড ইনপুট মোডে রিমোট মাউসের উপর সম্পূর্ণ একক-হাতে নিয়ন্ত্রণ।
+&lt;br&gt;
+- মাল্টি-টাচ মাউস ক্লিক: বাম-ক্লিক করতে আলতো চাপুন, ডান-ক্লিক করতে দুই-আঙ্গুলের আলতো চাপুন, মাঝখানে ক্লিক করতে তিন-আঙুল-ট্যাপ করুন।
+&lt;br&gt;
+- মাল্টি-টাচ স্ক্রোলিং: দুটি আঙুল উপরে/নিচে টেনে আনুন এবং স্ক্রোল করতে বাম/ডানে।
+&lt;br&gt;
+- অন-স্ক্রীন মেটা এবং তীর কী যা মেনু থেকে সম্পূর্ণরূপে অক্ষম করা যেতে পারে বা অন-স্ক্রীন বোতাম দিয়ে আটকে রাখা যেতে পারে।
+&lt;br&gt;
+- সংযুক্ত থাকাকালীন পাঠ্য এবং নির্বিচারে কী সমন্বয় পাঠানো হচ্ছে।
+&lt;br&gt;
+- সংযোগ স্ক্রিনে সংযোগ তৈরিতে সহায়তা (\Menu-&gt;সংযোগ সহায়তা\)।
+&lt;br&gt;
+- সংযুক্ত হলে ইনপুট মোড (\Menu-&gt;আরো-&gt;ইনপুট মোড সহায়তা\) সাহায্য করুন।
+&lt;br&gt;
+- মাউস সরানোর পরিবর্তে তীর হিসাবে একটি উপলব্ধ ট্র্যাকপ্যাড ব্যবহার করা, এবং ট্র্যাকপ্যাড Ctrl হিসাবে ক্লিক করুন, BT কীবোর্ডের জন্য D-প্যাড/ট্র্যাকপ্যাড ঘোরান৷
+&lt;br&gt;
+- বহু-ভাষা সমর্থন, যতক্ষণ পর্যন্ত RDP সার্ভারে প্রয়োজনীয় ভাষা বিন্যাস সক্রিয় থাকে।
+&lt;br&gt;
+- বিজোড় দূরবর্তী মেশিন রেজোলিউশন পরিবর্তন
+&lt;br&gt;
+- ডান এবং মিডল ক্লিক এবং স্ক্রোল হুইল সহ Android 4.0+ ডিভাইসে সম্পূর্ণ মাউস সমর্থন।
+&lt;br&gt;
+- রঙ মোড একটি পছন্দ
+&lt;br&gt;
+- কপি/পেস্ট ইন্টিগ্রেশন
+&lt;br&gt;
+- রপ্তানি সেটিংস
+&lt;br&gt;
+- শব্দ
+&lt;br&gt;
+&lt;br&gt;
+পরিচিত সমস্যা:</string>
+    <string name="tap_disable">নিষ্ক্রিয় করুন</string>
+    <string name="view_only">শুধুমাত্র দেখার মোড</string>
+    <string name="save_button">সংরক্ষণ করুন</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">sudo পাসওয়ার্ড পাঠানো যায়নি.</string>
+    <string name="landscape_force">জোর করে ল্যান্ডস্কেপ ওরিয়েন্টেশন</string>
+    <string name="export_settings">রপ্তানি</string>
+    <string name="keyboard_type">সফটওয়্যার কীবোর্ডের ধরন</string>
+    <string name="hide_connection_thumbnails">সংযোগ থাম্বনেল লুকান</string>
+    <string name="input_method_direct_drag_pan_description">ডাইরেক্ট, হোল্ড প্যান: টেনে আনতে সোয়াইপ করুন।যেখানে আপনি বাম-ক্লিক করতে চান সেখানে একটি আঙুল দিয়ে আলতো চাপুন, ডান-ক্লিক করতে দুই আঙুল এবং মধ্য-ক্লিক করতে তিন আঙুল দিয়ে ট্যাপ করুন।স্ক্রোল করতে দুই আঙ্গুল দিয়ে সোয়াইপ করুন।প্যানিং শুরু করতে লম্বা ট্যাপ করুন।</string>
+    <string name="panning">প্যানিং স্ক্রিন</string>
+    <string name="remote_clipboard_integration">রিমোট থেকে স্থানীয় ক্লিপবোর্ড ইন্টিগ্রেশন সক্ষম করুন</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">আপনি একটি সংযোগ যোগ বা সম্পাদনা করার সময়, আপনি একটি সংযোগ কনফিগারেশন পৃষ্ঠা দেখতে পাবেন।এখানে আপনি একটি নতুন RDP সংযোগ সেট আপ করতে পারেন, অথবা একটি আগে থেকে বিদ্যমান একটি চয়ন করতে পারেন৷শীর্ষে একটি বোতাম রয়েছে যা আপনাকে সংযোগটি সংরক্ষণ করতে দেয়।যে নীচে আপনি আপনার সংযোগ কনফিগার করুন.
+
+- সংযোগের ধরন: এখানে আপনি RDP সংযোগের ধরনটি বেছে নিন।উপলব্ধ সংযোগ প্রকারগুলি হল:
+(a) RDP, যা RDP প্রোটোকলের মাধ্যমে একটি কম্পিউটারের সাথে সরাসরি সংযোগ করে।
+(b) SSH এর উপর RDP, যা প্রথমে একটি SSH সার্ভার চালিত কম্পিউটারের মাধ্যমে আপনার সংযোগ টানেল করে।
+
+- শিরোনাম: আপনার তৈরি করা প্রতিটি সংযোগের একটি ডাকনাম থাকতে পারে যাতে এটি তালিকায় সহজেই সনাক্ত করা যায়।
+
+- SSH টানেল সেটিংস: SSH মোডে RDP-তে উপলব্ধ।
+(a) SSH সার্ভার/পোর্ট: SSH সার্ভারের ঠিকানা এবং পোর্ট যার মাধ্যমে সংযোগ টানেল করা হবে।ডিফল্টরূপে SSH পোর্ট 22 এ শোনে।
+(b) ব্যবহারকারীর নাম/পাসওয়ার্ড: SSH সার্ভারে অ্যাকাউন্টের ব্যবহারকারীর নাম এবং পাসওয়ার্ড।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপটি ছেড়ে না থাকেন।
+(c) কী/ব্যবহার কী পরিচালনা করুন: সর্বজনীন/ব্যক্তিগত কীগুলি পরিচালনা করার জন্য একটি বোতাম এবং প্রমাণীকরণের জন্য পাসওয়ার্ডের পরিবর্তে একটি কী ব্যবহার করতে হবে কিনা তা নির্দেশ করে একটি চেকবক্স।যদি আপনি একটি কী-জোড়া তৈরি করার পরে ক্লিপবোর্ডে অনুলিপি বোতামটি ব্যবহার করেন, তাহলে RDP সার্ভারের সাথে সংযুক্ত হয়ে গেলে আপনি সর্বজনীন কী পেস্ট করতে সক্ষম হবেন (ক্লিপবোর্ডটি সার্ভারের সাথে সিঙ্ক্রোনাইজ করা হয়েছে)।
+
+- RDP সংযোগ সেটিংস:
+(a) RDP সার্ভার/পোর্ট: এখানে আপনি হোস্টের নাম বা IP ঠিকানা এবং RDP সার্ভারে যে কম্পিউটারের সাথে যোগাযোগ করতে চান তার পোর্ট লিখবেন।SSH মোডে RDP-তে, এই ঠিকানাটি SSH সার্ভার থেকে দেখা যায়।যদি SSH সার্ভার এবং RDP সার্ভার একই শারীরিক কম্পিউটার হয়, আপনি লোকালহোস্ট ব্যবহার করতে পারেন।RDP সার্ভারগুলি সাধারণত পোর্ট 3389 এ শোনে।
+(b) RDP ব্যবহারকারী: এখানে আপনি আপনার Windows/UNIX অ্যাকাউন্ট ব্যবহারকারীর নাম লিখুন।
+(c) RDP ডোমেইন: আপনার অ্যাকাউন্ট যে ডোমেনটির অন্তর্গত সেটি লিখুন।
+(d) RDP পাসওয়ার্ড: এখানে আপনি আপনার Windows/UNIX অ্যাকাউন্টের পাসওয়ার্ড লিখবেন।পাসওয়ার্ডের জন্য নিরাপদ সঞ্চয়স্থান ব্যবহার করা হয় না (সেগুলি একটি ডাটাবেসে থাকে), এবং পাসওয়ার্ডটি সংরক্ষণ করা হবে শুধুমাত্র যদি আপনি Keep বক্সটি চেক করেন।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপটি ছেড়ে না থাকেন।
+
+- উন্নত সেটিংস: এই বিভাগে আপনি ডেস্কটপের রেজোলিউশন কাস্টমাইজ করার উপায় এবং বিভিন্ন RDP পারফরম্যান্স টুইক পাবেন
+
+- স্থানীয় ডিভাইস টুইকস: এগুলি আপনার ডিভাইসে অ্যাপের আচরণ সামঞ্জস্য করে।
+(ক) তীর চিহ্নের জন্য ডি-প্যাড ব্যবহার করুন: আপনি যদি পছন্দ করেন, আপনি আপনার ব্লুটুথ কীবোর্ডের ডি-প্যাড বা আপনার অন-স্ক্রীন কীবোর্ডের তীরগুলি RDP সার্ভারে তীর পাঠানোর জন্য ব্যবহার করতে পারেন।
+(খ) ডি-প্যাড ঘোরান: ব্লুটুথ কীবোর্ডের সাথে যুক্ত ফোনগুলি সার্ভারে সঠিক দিকনির্দেশ পাঠাতে ঘড়ির কাঁটার বিপরীত দিকে ঘোরানোর জন্য কীবোর্ডের ডি-প্যাডের প্রয়োজন হতে পারে।
+(c) স্থানীয় মাউস পয়েন্টার: যদি পয়েন্টারটি অদৃশ্য হয়, তাহলে এটিকে অ্যাপ দ্বারা আঁকতে বাধ্য করতে এটি নির্বাচন করুন।</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">স্ক্রোল মোড - স্ক্রোল করতে উপরে/নীচে সোয়াইপ করুন, থামাতে আঙুল তুলুন</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">জুম মোড - জুম ইন/আউট করতে উপরে/নীচে সোয়াইপ করুন, থামাতে আঙুল তুলুন</string>
+    <string name="rdp_adv_console_mode">কনসোল মোড</string>
+    <string name="address_caption_hint_tunneled">ভিএনসি সার্ভার</string>
+    <string name="arrow_right">ডান তীর</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">টেক্সট/সংখ্যা কোন সাজেশন নেই (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">SPICE ব্যবহারকারীর নাম</string>
+    <string name="error_rdp_connection_failed">RDP সংযোগ ব্যর্থ হয়েছে!হয় নেটওয়ার্ক সংযোগ বিঘ্নিত হয়েছে, RDP সার্ভার বন্ধ বা অক্ষম করা হয়েছে, অথবা আপনার সেশন নেওয়া হয়েছে।</string>
+    <string name="arrow_left">বাম তীর</string>
+    <string name="connection_type_vnc_over_stunnel">SSL টানেলের উপর VNC সুরক্ষিত করুন</string>
+    <string name="report_bug">একটি বাগ রিপোর্ট করুন 🐛</string>
+    <string name="warning_cert_does_not_match">সতর্কতা: সংরক্ষিত x509 শংসাপত্র বা স্বাক্ষরে পাস করা বর্তমান সার্ভার শংসাপত্রের সাথে মেলে না!এটি একটি ম্যান-ইন-দ্য-মিডল আক্রমণ হতে পারে।আপনি যদি মূল পরিবর্তন সম্পর্কে সচেতন হন তবে আপনি এগিয়ে যেতে পারেন।</string>
+    <string name="more_apps">আরও অ্যাপ 📱</string>
+    <string name="auto_x_disabled">অক্ষম</string>
+    <string name="pro_feature_mfa">মনে হচ্ছে আপনার সার্ভারে মাল্টি-ফ্যাক্টর প্রমাণীকরণ সক্ষম হয়েছে।অনুগ্রহ করে এই বৈশিষ্ট্যটির জন্য সমর্থন রয়েছে এমন প্রো সংস্করণটি কিনে প্রকল্পটিকে সমর্থন করুন৷প্রো সংস্করণের একটি লিঙ্ক স্টার্ট ডায়ালগে উপলব্ধ।</string>
+    <string name="no_application_to_handle_vpn">এই সংযোগটি একটি বহিরাগত অ্যাপের মাধ্যমে VPN চালু করতে সেট করা হয়েছে৷এটি চালু করতে আপনাকে Morpheusly এর মতো একটি অ্যাপ ইনস্টল করতে হবে।</string>
+    <string name="port_caption_ssh">এসএসএইচ পোর্ট</string>
+    <string name="arrow_down">নিচের তীর</string>
+    <string name="pro_feature_spice">মনে হচ্ছে আপনি একটি .vv ফাইল খোলার চেষ্টা করেছেন৷আপনি যদি অ্যাপের মধ্যেই Proxmox বা oVirt-এর সাথে সংযোগগুলি সংরক্ষণ করতে চান এবং .vv ফাইলগুলিও খুলতে চান, তাহলে অস্বচ্ছ কেনার কথা বিবেচনা করুন৷আপনার যদি শুধুমাত্র .vv ফাইল সমর্থনের প্রয়োজন হয়, আপনি aSPICE Pro পেতে পারেন।স্টার্ট ডায়ালগে উভয় অ্যাপের লিঙ্ক খুঁজুন।</string>
+    <string name="error_vnc_unable_to_connect">ভিএনসি সার্ভারের সাথে সংযোগ কারণ সহ ব্যর্থ হয়েছে:</string>
+    <string name="rdp_password_hint">আরডিপি পাসওয়ার্ড</string>
+    <string name="custom_ca_paste">এখানে CA আটকান (আমদানি না করলে)</string>
+    <string name="cursor_mode">কার্সার মোড:</string>
+    <string name="local_device_tweaks">স্থানীয় ডিভাইস Tweaks</string>
+    <string name="disconnect">সংযোগ বিচ্ছিন্ন করুন</string>
+    <string name="ad_donate_text0">প্রো সংস্করণে মাল্টি-ফ্যাক্টর এসএসএইচ প্রমাণীকরণের জন্য সমর্থন রয়েছে।উপরন্তু, এটি অনেক অনুরোধ করা মাস্টার পাসওয়ার্ড বৈশিষ্ট্য সমর্থন করে যা অননুমোদিত ব্যবহার প্রতিরোধ করে এবং চুরি থেকে রক্ষা করার জন্য পাসওয়ার্ড এবং SSH কী সহ সমস্ত সংযোগ সেটিংস এনক্রিপ্ট করে।প্রধান মেনু থেকে এটি সক্রিয় করুন.</string>
+    <string name="info_cert_signatures_identical">\n\nমানুষ-ইন-দ্য-মিডল অ্যাটাক প্রতিরোধ করতে সার্ভার সার্টিফিকেটের সাথে তথ্য মেলে তা নিশ্চিত করতে পারেন।</string>
+    <string name="button_send_without_saving">টেক্সট পাঠান/সেভ করবেন না</string>
+    <string name="single_right">রাইট-ড্র্যাগ মোড - টেনে/নির্বাচন করতে সোয়াইপ করুন, থামাতে আঙুল তুলুন</string>
+    <string name="error_ssh_pwd_auth_fail">পাসওয়ার্ড সহ SSH সার্ভারে প্রমাণীকরণ করতে ব্যর্থ হয়েছে৷অনুগ্রহ করে আপনার SSH ব্যবহারকারীর নাম এবং SSH পাসওয়ার্ড চেক করুন।</string>
+    <string name="select_vm_title">ভার্চুয়াল মেশিন নির্বাচন করুন</string>
+    <string name="ad_donate_text_spice">Proxmox এবং oVirt সংযোগের জন্য, অনুগ্রহ করে অপাক বা aSPICE প্রো কিনে প্রকল্পে দান করুন।ASPICE-এর বিনামূল্যের সংস্করণ শুধুমাত্র KVM ভার্চুয়াল মেশিনে সরাসরি সংযোগ সমর্থন করে।Opaque এবং aSPICE Pro, সেইসাথে আমাদের অন্যান্য অ্যাপের লিঙ্কগুলির জন্য নীচে দেখুন।</string>
+    <string name="enter_password">পাসওয়ার্ড লিখুন</string>
+    <string name="main_screen_help_text">অ্যাপ্লিকেশনটি চালু হলে এটি সংরক্ষিত সংযোগ সহ একটি স্ক্রিন প্রদর্শন করে।
+
+যদি কোনও সংরক্ষিত সংযোগ না থাকে তবে স্ক্রিনের নীচের অংশটি খালি থাকে এবং একটি নতুন তৈরি করতে আপনাকে প্লাস বোতামটি চাপতে হবে৷
+আপনি এই স্ক্রীন থেকে কনফিগারেশনের অন্যান্য দিকগুলিও নিয়ন্ত্রণ করতে পারেন উপরের অন্যান্য টুল-বার বা মেনু বিকল্পগুলিতে ট্যাপ করে, এর জন্য
+উদাহরণ ডিফল্ট সেটিংস সম্পাদনা করতে, বা আমদানি এবং রপ্তানি সেটিংস।
+
+একবার আপনার একটি সংযোগ সংরক্ষিত হয়ে গেলে, আপনি একবার ট্যাপ করে দূরবর্তী সার্ভারের সাথে সংযোগ করতে পারেন।আপনার কাছে এটিকে দীর্ঘক্ষণ ট্যাপ করে মুছে ফেলা বা সম্পাদনা করারও একটি পছন্দ থাকবে।
+
+পরিশেষে, দেখানো সংযোগ ফিল্টার দ্বারা দ্রুত সংযোগ খুঁজে পেতে আপনি অনুসন্ধান সংযোগ ক্ষেত্র ব্যবহার করতে পারেন।</string>
+    <string name="intro_dont_show">আবার দেখাবেন না</string>
+    <string name="action_export_settings">রপ্তানি সেটিংস</string>
+    <string name="error_ssh_hostkey_changed">ত্রুটি!সার্ভার হোস্ট কী পরিবর্তিত হয়েছে।যদি এটি ইচ্ছাকৃত হয়, আপনি চালিয়ে যেতে পারেন।অন্যথায়, এই মাঝামাঝি আক্রমণ একটি মানুষ হতে পারে.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">x11vnc থেকে দূরবর্তী VNC পোর্ট প্রাপ্ত করা যায়নি।অনুগ্রহ করে নিশ্চিত করুন যে x11vnc ইনস্টল করা আছে।নিশ্চিত হতে, কমান্ড-লাইনে হাত দিয়ে x11vnc চালানোর চেষ্টা করুন।</string>
+    <string name="error_failed_to_obtain_content">ফাইল পেতে ব্যর্থ হয়েছে.অনুগ্রহ করে এটি আবার ডাউনলোড করুন কিন্তু এবার, ফাইল ম্যানেজারের ডাউনলোড ফোল্ডার থেকে দ্রুত এটি খুলুন।</string>
+    <string name="show_menu">মেনু দেখান</string>
+    <string name="auto_x_unix_auth">স্বয়ংক্রিয়ভাবে সরবরাহকৃত SSH ব্যবহারকারীর নাম/পাসওয়ার্ড ব্যবহার করে প্রমাণীকরণ করুন (কালো লগইন স্ক্রিনে)।</string>
+    <string name="previous_versions">পূর্ববর্তী সংস্করণ ⍼</string>
+    <string name="auto_x_xvnc">Xvnc দিয়ে খুঁজুন বা তৈরি করুন</string>
+    <string name="auto_x_find">শুধুমাত্র খুঁজুন, তৈরি করবেন না</string>
+    <string name="port_caption">ভিএনসি পোর্ট</string>
+    <string name="delete_key">নির্বাচিত কী মুছুন</string>
+    <string name="cert_fingerprint">শংসাপত্র আঙুলের ছাপ</string>
+    <string name="enter_vnc_password">VNC পাসওয়ার্ড লিখুন</string>
+    <string name="port_hint">বন্দর</string>
+    <string name="import_from_file">ফাইল থেকে আমদানি করুন</string>
+    <string name="error_rdp_unable_to_connect">RDP সার্ভারের সাথে সংযোগ করা যায়নি!অনুগ্রহ করে নিশ্চিত করুন যে RDP সার্ভার সেটিং সঠিক, সার্ভার চালু আছে, RDP সক্ষম করা আছে এবং সার্ভারটি এই ডিভাইসের মতো একই নেটওয়ার্কে রয়েছে।</string>
+    <string name="rdp_geom_disabled">অক্ষম</string>
+    <string name="ad_donate_spice_text1b">প্রো সংস্করণ কিনতে এখানে আলতো চাপুন এবং শুধু .vv ফাইলগুলি খুলুন৷</string>
+    <string name="spice_ca_file_error_reading">CA ফাইল পড়ার সময় ত্রুটি।এটা পঠনযোগ্য নিশ্চিত করুন.</string>
+    <string name="info_vm_launched_on_stand_by">আপনার VM পাওয়ার বন্ধ পাওয়া গেছে এবং চালু করা হয়েছে।কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন.আপনি যদি খুব শীঘ্রই চেষ্টা করেন এবং সংযোগ ব্যর্থ হন, পরে আবার চেষ্টা করুন৷</string>
+    <string name="special_keys">কী পাঠান</string>
+    <string name="error_failed_to_download_http">HTTP এর মাধ্যমে ফাইল ডাউনলোড করতে ব্যর্থ হয়েছে৷সম্ভবত আপনার সার্ভার পৌঁছানো যায় না।</string>
+    <string name="rdp_geom_automatic">স্বয়ংক্রিয়</string>
+    <string name="portrait_mode">সংযুক্ত হলে প্রতিকৃতি মোডে স্যুইচ করুন</string>
+    <string name="master_password_set_error">পাসওয়ার্ড মিলছে না, সাবধান!</string>
+    <string name="enter_ssh_credentials">অনুগ্রহ করে SSH শংসাপত্র লিখুন৷</string>
+    <string name="rdp_adv_gfx">আরডিপি জিএফএক্স</string>
+    <string name="repeater_dialog_title">রিপিটারের পিছনে VNC সার্ভার</string>
+    <string name="prefer_sending_unicode">ইউনিকোড ইনপুট (শুধুমাত্র উইন্ডোজ)</string>
+    <string name="auto_x_caption">অ্যাপ্লিকেশনটি স্বয়ংক্রিয়ভাবে বিদ্যমান আবিষ্কার করতে পারে এবং Linux/UNIX সিস্টেমে (NX-এর মতো) নতুন X সেশন তৈরি করতে পারে।খুঁজে পেতে আপনার x11vnc এবং সেশন তৈরি করতে Xvfb, Xvnc বা Xdummy প্রয়োজন।আপনার সংযোগ করতে সমস্যা হলে, AutoX অ্যাডভান্সড সেটিংসে একটি নির্দিষ্ট রিমোট সেশন টাইপ নির্বাচন করার চেষ্টা করুন।</string>
+    <string name="auto_x_confirm">নিশ্চিত করুন</string>
+    <string name="position_toolbar_last_used">টুলবার অবস্থান পুনরুদ্ধার করুন</string>
+    <string name="error_no_such_vm_found_for_user">প্রদত্ত ব্যবহারকারীর জন্য প্রদত্ত আইডি সহ কোনো ভার্চুয়াল মেশিন পাওয়া যায়নি।VM-এর তালিকা পেতে আইডি মুছে ফেলুন।</string>
+    <string name="single_middle">মিডল-ড্র্যাগ মোড - টেনে আনতে/সিলেক্ট করতে সোয়াইপ করুন, থামাতে আঙুল তুলুন</string>
+    <string name="info_encoding">এনকোডিং,</string>
+    <string name="rdp_geom_native_portrait">নেটিভ পোর্ট্রেট</string>
+    <string name="input_mode">ইনপুট মোড</string>
+    <string name="action_delete_connection">সংযোগ মুছুন</string>
+    <string name="keys_caption">চাবি</string>
+    <string name="single_left">বাম-টেনে আনা মোড - টেনে আনতে/নির্বাচন করতে সোয়াইপ করুন, থামাতে আঙুল তুলুন</string>
+    <string name="vv_file_error">.vv ফাইলটি হয় অনুপস্থিত বা দূষিত!</string>
+    <string name="connection_delete">মুছুন</string>
+    <string name="info_progress_dialog_establishing">হ্যান্ডশেক স্থাপন করা হচ্ছে।\nঅনুগ্রহ করে অপেক্ষা করুন…</string>
+    <string name="keep_password_button">রাখা</string>
+    <string name="auto_x_find_login">এক্স লগইন খুঁজুন (সুডো প্রয়োজন)</string>
+    <string name="ssh_use_x11vnc">অটো ডেস্কটপ</string>
+    <string name="address_caption_ssh">SSH সার্ভার</string>
+    <string name="spice_password_hint">SPICE পাসওয়ার্ড</string>
+    <string name="cursor_force_disable">নিষ্ক্রিয় করুন</string>
+    <string name="master_password_error_password_not_set">সেটিং মাস্টার পাসওয়ার্ড বাতিল করা হয়েছে.</string>
+    <string name="info_update_color_model_to">কালার মডেল এতে আপডেট করা হচ্ছে</string>
+    <string name="rdp_adv_menu_animation">মেনু অ্যানিমেশন দেখান</string>
+    <string name="input_method_help">ইনপুট পদ্ধতি সাহায্য</string>
+    <string name="enable_recording">রেকর্ডিং সক্ষম করুন</string>
+    <string name="path_to_ca">একটি ফাইল পাথ লিখুন (উদাহরণস্বরূপ /sdcard/ca-cert.pem) এবং আপনার শংসাপত্র কর্তৃপক্ষ লোড করতে আমদানিতে আলতো চাপুন।</string>
+    <string name="nickname_caption_hint">শিরোনাম (ঐচ্ছিক)</string>
+    <string name="connection_caption">সংযোগ</string>
+    <string name="pan_follow_mouse">প্যান মাউস অনুসরণ করে</string>
+    <string name="rdp_geom_native_landscape">নেটিভ ল্যান্ডস্কেপ</string>
+    <string name="meta_key_title">বিশেষ কী পাঠান</string>
+    <string name="move_toolbar">টুলবার সরান</string>
+    <string name="input_mode_fit_to_screen">প্যান নেই;ট্র্যাকবল মাউস</string>
+    <string name="enable_sound">সাউন্ড সক্ষম করুন</string>
+    <string name="error_security_type">সার্ভার সমর্থিত নিরাপত্তা প্রকার অফার করেনি।</string>
+    <string name="connection_type_text">ভার্চুয়ালাইজেশন এনভায়রনমেন্ট (RHEV/oVirt বা Proxmox)</string>
+    <string name="connection_setup_host_name">সার্ভার ঠিকানা</string>
+    <string name="vnc_server_empty_no_save">VNC সার্ভার বা পোর্ট খালি।সংযোগ সংরক্ষণ করতে পারবেন না!</string>
+    <string name="ca_ovirt_manage">RHEV/oVirt CA পরিচালনা করুন</string>
+    <string name="manage_custom_ca_title">কাস্টম CA পরিচালনা করুন</string>
+    <string name="ca_file_not_found">ফাইল পাওয়া যায়নি.অনুগ্রহ করে পাঠ্য ক্ষেত্রে একটি বৈধ ফাইলের নাম লিখুন (যেমন /sdcard/ca.crt)।</string>
+    <string name="master_password_set_message">একটি মাস্টার পাসওয়ার্ড লিখুন এবং মুখস্থ করুন.আপনার পাসওয়ার্ড যত দীর্ঘ হবে, ক্র্যাক করা তত কঠিন।আপনি যদি আপনার পাসওয়ার্ড ভুল সেট করেন বা এটি ভুলে যান, আপনি আপনার সমস্ত সেটিংস হারাবেন!আপনি সেগুলিকে ব্যাক আপ করতে (মেনু থেকে) আপনার সেটিংস এখন রপ্তানি করতে চাইতে পারেন।রপ্তানি করা সেটিংস এনক্রিপ্ট করা না হওয়ায় সেগুলিকে নিরাপদে সংরক্ষণ করুন৷</string>
+    <string name="repeater_clear">ব্যবহার করবেন না</string>
+    <string name="ad_donate_text3">আপনি যদি প্রকল্পটিকে আরও সমর্থন করতে চান তবে ক্লায়েন্ট অ্যাপের লিঙ্কগুলির জন্য নিম্নলিখিত লিঙ্কগুলি অনুসরণ করুন:</string>
+    <string name="vnc_connection_settings">VNC সংযোগ সেটিংস</string>
+    <string name="master_password_enable">🔒 মাস্টার পাসওয়ার্ড সক্রিয় করুন</string>
+    <string name="new_list_button">নতুন তালিকা</string>
+    <string name="spice_intro_text">সাধারণভাবে asPICE এবং ওপেন সোর্স সফ্টওয়্যার সমর্থন করার জন্য আপনাকে ধন্যবাদ! ASPICE ব্যবহারে সহায়তার জন্য, মেনুতে সহায়তা আইটেম এবং বাজারে অ্যাপের বিবরণ দেখুন।
+&lt;br&gt;
+&lt;br&gt;
+ASPICE বৈশিষ্ট্যগুলির বর্তমান তালিকায় রয়েছে:
+&lt;br&gt;
+- প্লেইন স্পাইস, স্পাইস SSH এর উপর টানেল করা হয়েছে।
+&lt;br&gt;
+- বিনামূল্যে ঘূর্ণন সমর্থন.প্রয়োজনে ঘূর্ণন সীমিত করতে অপারেটিং সিস্টেম ব্যবহার করুন।
+&lt;br&gt;
+- SSH পাবলিক/প্রাইভেট কী-পেয়ার জেনারেশন এবং এক্সপোর্ট।
+&lt;br&gt;
+- স্বয়ংক্রিয় সেশন সংরক্ষণ।
+&lt;br&gt;
+- জুমযোগ্য, স্ক্রিনে ফিট এবং এক থেকে এক স্কেলিং মোড।
+&lt;br&gt;
+- সরাসরি এবং সিমুলেটেড টাচপ্যাড ইনপুট মোডে দূরবর্তী মাউসের উপর মাল্টি-টাচ নিয়ন্ত্রণ।
+&lt;br&gt;
+- একক-হ্যান্ডেড ইনপুট মোডে রিমোট মাউসের উপর সম্পূর্ণ একক-হাতে নিয়ন্ত্রণ।
+&lt;br&gt;
+- মাল্টি-টাচ মাউস ক্লিক: বাম-ক্লিক করতে আলতো চাপুন, ডান-ক্লিক করতে দুই-আঙ্গুলের আলতো চাপুন, মাঝখানে ক্লিক করতে তিন-আঙুল-ট্যাপ করুন।
+&lt;br&gt;
+- মাল্টি-টাচ স্ক্রোলিং: দুটি আঙুল উপরে/নিচে টেনে আনুন এবং স্ক্রোল করতে বাম/ডানে।
+&lt;br&gt;
+- অন-স্ক্রীন মেটা এবং তীর কী যা মেনু থেকে সম্পূর্ণরূপে অক্ষম করা যেতে পারে বা অন-স্ক্রীন বোতাম দিয়ে আটকে রাখা যেতে পারে।
+&lt;br&gt;
+- সংযুক্ত থাকাকালীন পাঠ্য এবং নির্বিচারে কী সমন্বয় পাঠানো হচ্ছে।
+&lt;br&gt;
+- সংযোগ স্ক্রিনে সংযোগ তৈরিতে সহায়তা (\Menu-&gt;সংযোগ সহায়তা\)।
+&lt;br&gt;
+- সংযুক্ত হলে ইনপুট মোড (\Menu-&gt;আরো-&gt;ইনপুট মোড সহায়তা\) সাহায্য করুন।
+&lt;br&gt;
+- মাউস সরানোর পরিবর্তে তীর হিসাবে একটি উপলব্ধ ট্র্যাকপ্যাড ব্যবহার করা, এবং ট্র্যাকপ্যাড Ctrl হিসাবে ক্লিক করুন, BT কীবোর্ডের জন্য D-প্যাড/ট্র্যাকপ্যাড ঘোরান৷
+&lt;br&gt;
+- মাল্টি-ভাষা সমর্থন, যতক্ষণ না SPICE সার্ভারে প্রয়োজনীয় ভাষা বিন্যাস সক্রিয় থাকে।
+&lt;br&gt;
+- বিজোড় দূরবর্তী মেশিন রেজোলিউশন পরিবর্তন
+&lt;br&gt;
+- ডান এবং মিডল ক্লিক এবং স্ক্রোল হুইল সহ Android 4.0+ ডিভাইসে সম্পূর্ণ মাউস সমর্থন।
+&lt;br&gt;
+&lt;br&gt;
+পরিকল্পিত বৈশিষ্ট্য:
+&lt;br&gt;
+- কপি/পেস্ট ইন্টিগ্রেশন
+&lt;br&gt;
+- শব্দ
+&lt;br&gt;
+- কর্মক্ষমতা উন্নতি
+&lt;br&gt;
+পরিচিত সমস্যা:
+&lt;br&gt;
+- পাঠ্য পাঠান কিছু চিহ্ন পাঠায় না।
+&lt;br&gt;</string>
+    <string name="info">তথ্য</string>
+    <string name="connection_edit_delete_prompt">আপনি কি সংযোগটি সম্পাদনা করতে বা মুছতে চান৷</string>
+    <string name="connection_type_caption">সংযোগের ধরন</string>
+    <string name="usb">ইউএসবি (প্রথমে ওটিজি কেবল প্লাগ করুন)</string>
+    <string name="connection_type_vnc_over_vencrypt">VeNCrypt এর উপর VNC সুরক্ষিত করুন</string>
+    <string name="log_copied">Logcat ক্লিপবোর্ডে অনুলিপি করা হয়েছে৷আপনি এখন এটি একটি ইমেল বা সমর্থন ফোরামে পেস্ট করতে পারেন৷পোস্ট করার আগে কোনো ব্যক্তিগত তথ্য জন্য দেখুন.</string>
+    <string name="disable_pointer_offset_correction">পয়েন্টার অফসেট সংশোধন অক্ষম করুন</string>
+    <string name="password_caption_hint">VNC পাসওয়ার্ড</string>
+    <string name="user_not_specified">ব্যবহারকারী নির্দিষ্ট করা নেই</string>
+    <string name="connection_type_vnc_over_ssl">AnonTLS এর উপর VNC সুরক্ষিত করুন</string>
+    <string name="pro_feature_intro">মনে হচ্ছে আপনি একটি প্রো বৈশিষ্ট্য ব্যবহার করছেন।অনুগ্রহ করে এই বৈশিষ্ট্যটির জন্য সমর্থন রয়েছে এমন প্রো সংস্করণটি কিনে প্রকল্পটিকে সমর্থন করুন৷সঠিক অ্যাপের লিঙ্কের জন্য অনুগ্রহ করে ইন্ট্রো ডায়ালগ চেক করুন।</string>
+    <string name="shift_check">শিফট</string>
+    <string name="error_ssh_keypair_missing">SSH কী-জোড়া এখনও তৈরি হয়নি!অনুগ্রহ করে একটি তৈরি করুন এবং SSH সার্ভারে অনুমোদিত_কীতে (এর সর্বজনীন অংশ) রাখুন।</string>
+    <string name="error_connection_failed">সংযোগ ব্যর্থ হয়েছে৷</string>
+    <string name="info_continue_connecting">এর সাথে সংযোগ করা চালিয়ে যান:</string>
+    <string name="connection_type_vnc_over_ssh">SSH এর উপর VNC সুরক্ষিত করুন</string>
+    <string name="advanced_settings">উন্নত সেটিংস</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">পাসফ্রেজ দেওয়া হয়েছে কিন্তু কী-জোড়া এনক্রিপ্ট করা হয়নি।অনুগ্রহ করে পাসফ্রেজ মুছুন।</string>
+    <string name="vnc_server_empty">VNC সার্ভার বা পোর্ট খালি।সংযোগ করা যাবে না!</string>
+    <string name="error_uri_parse_error">ইন্টেন্ট ইউআরআই পার্স করতে অক্ষম।অনুগ্রহ করে URI ফরম্যাট চেক করুন।আপনি আরও বিশদ বিবরণের জন্য ডিভাইস লগক্যাট দেখতে পারেন।</string>
+    <string name="username_hint_vencrypt">VNC ব্যবহারকারীর নাম</string>
+    <string name="error_vv_download_timeout">vv ফাইল ডাউনলোড করার সময় শেষ।</string>
+    <string name="center_mouse">মাউস @</string>
+    <string name="show_keyboard">কীবোর্ড দেখান</string>
+    <string name="info_cert_signatures">শংসাপত্রের তথ্য হল:</string>
+    <string name="rdp_username_hint">RDP ব্যবহারকারীর নাম</string>
+    <string name="connection_type_vnc">বেসিক ভিএনসি</string>
+    <string name="rdp_security_nla">নেটওয়ার্ক স্তরের প্রমাণীকরণ</string>
+    <string name="ssh_pubkey_button">কী পরিচালনা করুন</string>
+    <string name="ca_file_error_reading">CA ফাইল পড়ার সময় ত্রুটি।এটা পঠনযোগ্য নিশ্চিত করুন.</string>
+    <string name="master_password_error_intents_not_supported">যখন মাস্টার পাসওয়ার্ড সক্রিয় থাকে তখন সংযোগের উদ্দেশ্যগুলি এখনও সমর্থিত নয়৷</string>
+    <string name="input_method_direct_swipe_pan">সরাসরি, সোয়াইপ প্যান</string>
+    <string name="update_button">আপডেট</string>
+    <string name="input_mode_panning">ডেস্কটপ প্যানিং মোড</string>
+    <string name="search_connections">সংযোগ অনুসন্ধান করুন</string>
+    <string name="error_x509_could_not_generate_signature">শংসাপত্রের SHA1 বা MD5 স্বাক্ষর তৈরি করা যায়নি৷কোনো SHA1/MD5 অ্যালগরিদম পাওয়া যায়নি।</string>
+    <string name="auto_x_xdummy">Xdummy দিয়ে খুঁজুন বা তৈরি করুন</string>
+    <string name="error_not_connected_to_network">আপনি ইন্টারনেটের সাথে সংযুক্ত বলে মনে হচ্ছে না৷সংযুক্ত না করে চালিয়ে যাওয়া যাবে না!</string>
+    <string name="show_advanced_settings">উন্নত সেটিংস দেখান</string>
+    <string name="master_password_set">মাস্টার পাসওয়ার্ড সেট করুন</string>
+    <string name="custom_ca_import">বিকল্পভাবে, আপনার CA-এর সম্পূর্ণ পথ প্রবেশ করান এবং আমদানিতে আলতো চাপুন</string>
+    <string name="mouse_follow_pan">মাউস প্যান অনুসরণ করে</string>
+    <string name="enter_password_auth_failed">প্রমাণীকরণ ব্যর্থ হয়েছে৷অনুগ্রহ করে আপনার শংসাপত্রগুলি পুনরায় লিখুন৷</string>
+    <string name="show">দেখান</string>
+    <string name="dpad_as_arrows">তীরচিহ্নের জন্য ডি-প্যাড এবং Ctrl-এর জন্য ডি-প্যাড ক্লিক করুন।</string>
+    <string name="tap_enable">সক্ষম করুন</string>
+    <string name="ad_donate_spice_text1a">অস্বচ্ছ কিনতে এবং Proxmox এবং oVirt-এ সরাসরি সংযোগ সংরক্ষণ করতে এখানে আলতো চাপুন।এটি .vv ফাইলগুলিকেও সমর্থন করে৷</string>
+    <string name="please_grant_permission_from_prefs">আপনাকে সেটিংসের মাধ্যমে অ্যাপ্লিকেশনটির অনুমতি দিতে হতে পারে।</string>
+    <string name="password_caption">VNC প্রমাণ</string>
+    <string name="share_app">শেয়ার করুন 🔗</string>
+    <string name="remote_sound_on_device">ডিভাইস অন শব্দ</string>
+    <string name="connection_setup_vm_name">ভার্চুয়াল মেশিনের নাম (ঐচ্ছিক)</string>
+    <string name="single_choose">একক-হ্যান্ডেড মোড বেছে নিন বা বাতিল করুন</string>
+    <string name="error_no_user_hostname">অন্তত একটি ব্যবহারকারী এবং একটি হোস্টনাম বা IP ঠিকানা লিখুন দয়া করে.</string>
+    <string name="rdp_adv_redirect_sdcard">SD কার্ড রিডাইরেক্ট করুন</string>
+    <string name="error_pve_api_io_error">Proxmox ভার্চুয়াল পরিবেশের সাথে সংযোগ ব্যর্থ হয়েছে:</string>
+    <string name="username_hint_optional">VNC ব্যবহারকারীর নাম (ঐচ্ছিক)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">কাস্টম</string>
+    <string name="delete_connection">সংযোগ মুছুন</string>
+    <string name="repeater_save">ব্যবহার করুন</string>
+    <string name="get_help">সাহায্য পান</string>
+    <string name="hide">লুকান</string>
+    <string name="rdp_security_mode">নিরাপত্তা মোড</string>
+    <string name="connection_type_rdp_over_ssh">SSH এর উপর RDP</string>
+    <string name="auto_x_xvfb">Xvfb দিয়ে খুঁজুন বা তৈরি করুন</string>
+    <string name="address_caption">ভিএনসি সার্ভার</string>
+    <string name="show_only_connection_nicknames">শুধুমাত্র সংযোগের ডাকনাম দেখান</string>
+    <string name="ca_spice_use_ovirt">SPICE এর জন্য RHEV/oVirt CA ব্যবহার করুন</string>
+    <string name="info_cert_tunnel">আপনি কি নিম্নলিখিত শংসাপত্র দ্বারা চিহ্নিত হোস্টের সাথে সংযোগ করতে চান?\n\nআঙ্গুলের ছাপ: %1$s\n\nএতে ইস্যু করা হয়েছে:\n%2$s\n\nএর দ্বারা ইস্যু করা হয়েছে:\n%3$s\n\nএর থেকে বৈধ:\n%4$s\n\nএই পর্যন্ত বৈধ:\n%5$s\n\nঅথরিটি সার্টিফিকেট যাচাই করে না৷</string>
+    <string name="error_failed_to_obtain_file">ফাইল খুঁজে পেতে ব্যর্থ হয়েছে.অনুগ্রহ করে এটি আবার ডাউনলোড করুন, কিন্তু এইবার, সম্ভব হলে বিজ্ঞপ্তি এলাকা বা সরাসরি ব্রাউজার থেকে এটি খোলার চেষ্টা করুন।</string>
+    <string name="error_pve_timeout_communicating">প্রক্সমক্স ভার্চুয়াল এনভায়রনমেন্টের সাথে যোগাযোগের সময়সীমা।</string>
+    <string name="connection_type_spice_over_ssh">SSH উপর SPICE</string>
+    <string name="vnc_connection_screen_help_text">
+আপনি একটি সংযোগ যোগ বা সম্পাদনা করার সময়, আপনি একটি সংযোগ কনফিগারেশন পৃষ্ঠা দেখতে পাবেন।এখানে আপনি একটি নতুন VNC সংযোগ স্থাপন করতে পারেন, অথবা আগে থেকে বিদ্যমান একটি চয়ন করতে পারেন।শীর্ষে একটি বোতাম রয়েছে যা আপনাকে সংযোগটি সংরক্ষণ করতে দেয়।যে নীচে আপনি আপনার সংযোগ কনফিগার করুন.
+
+আপনি যদি দ্রুত পারফরম্যান্স বুস্টের জন্য খুঁজছেন, তাহলে কালার মোডকে কম মানতে সেট করার চেষ্টা করুন।এছাড়াও, VNC সার্ভারে যেকোনো ডেস্কটপ পটভূমি চিত্র মুছে ফেলার চেষ্টা করুন।অবশেষে, নিশ্চিত করুন যে আপনার ডিভাইসে ভালো নেটওয়ার্ক কানেক্টিভিটি আছে এবং এর অ্যান্টেনা ঢেকে রাখা এবং সিগন্যালের শক্তি কমানো এড়িয়ে চলুন।
+
+- সংযোগের ধরন: এখানে আপনি VNC সংযোগের ধরন নির্বাচন করুন।উপলব্ধ সংযোগ প্রকারগুলি হল:
+(a) প্লেইন VNC, যা সমস্ত VNC সার্ভার দ্বারা সমর্থিত কিন্তু এনক্রিপশনের অভাব রয়েছে এবং 8-অক্ষরের পাসওয়ার্ড সীমাবদ্ধতার কারণে ব্রুট-ফোর্স আক্রমণের জন্য ঝুঁকিপূর্ণ।
+(b) SSH এর উপর VNC সুরক্ষিত করুন, যা একটি এনক্রিপ্ট করা SSH টানেলের উপর সংযোগ করে।আপনার চলমান একটি SSHD পরিষেবার পাশাপাশি একটি VNC সার্ভার প্রয়োজন৷যতক্ষণ পর্যন্ত VNC সার্ভার সরাসরি ইন্টারনেট থেকে সংযোগ গ্রহণ না করে, ততক্ষণ এই সংযোগের ধরণটি কোন পরিচিত দুর্বলতার শিকার হয় না, যতক্ষণ না আপনি প্রথম সংযোগ করার সময় সার্ভারের শংসাপত্র স্বাক্ষর যাচাই করেন।
+(c) UltraVNC, যা আপনাকে Windows Logon এবং UltraVNC রিপিটার বিকল্প দেয়।Windows Logon ব্যবহার করলে 8-অক্ষরের পাসওয়ার্ড সীমাবদ্ধতা ভোগ করে না, কিন্তু এই মোডটি কোনো এনক্রিপশন অফার করে না, তাই আপনার সেশনটি স্নিফিংয়ের জন্য ঝুঁকিপূর্ণ।
+(d) AnonTLS এর উপর VNC সুরক্ষিত করুন, যা একটি স্টানেল-সমতুল্য সংযোগের মাধ্যমে নিয়মিত VNC।আপনাকে হয় স্টানেল চালাতে হবে, অথবা ভিনোর মতো একটি VNC সার্ভার ব্যবহার করতে হবে যা বাক্সের বাইরে AnonTLS সমর্থন করে।এই মোডটি আপনাকে সেশন এনক্রিপশন দেয়, কিন্তু 8-অক্ষরের পাসওয়ার্ডের সীমাবদ্ধতায় ভুগছে এবং ম্যান-ইন-দ্য-মিডল আক্রমণ প্রতিরোধ করে না।
+(e) VeNCrypt এর উপর VNC সুরক্ষিত করুন, যা x509 শংসাপত্রের পাশাপাশি সেশন এনক্রিপশন ব্যবহার করে এবং সার্ভার কনফিগারেশনের উপর নির্ভর করে ব্যবহারকারী/পাসওয়ার্ড শংসাপত্রগুলি 8-অক্ষরের সীমাবদ্ধতা ছাড়াই ব্যবহার করতে পারে।এই মোড ম্যান-ইন-দ্য-মিডল আক্রমণ প্রতিরোধ করে।সেইসাথে সেশন গোপনীয়তা প্রদান.x11vnc এবং TigerVNC-এর মতো সার্ভারগুলি এই মোডটিকে সমর্থন করে এবং SSH-এর উপর VNC-এর মতোই সুরক্ষিত৷
+
+- শিরোনাম: আপনার তৈরি করা প্রতিটি সংযোগের একটি ডাকনাম থাকতে পারে যাতে এটি তালিকায় সহজেই সনাক্ত করা যায়।
+
+- SSH টানেল সেটিংস: SSH মোডে VNC-তে উপলব্ধ৷
+(a) SSH সার্ভার/পোর্ট: SSH সার্ভারের ঠিকানা এবং পোর্ট যার মাধ্যমে সংযোগ টানেল করা হবে।ডিফল্টরূপে SSH পোর্ট 22 এ শোনে।
+(b) ব্যবহারকারীর নাম/পাসওয়ার্ড: SSH সার্ভারে অ্যাকাউন্টের ব্যবহারকারীর নাম এবং পাসওয়ার্ড।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপ্লিকেশনটি ছেড়ে না থাকেন।
+(c) কী/ব্যবহার কী পরিচালনা করুন: সর্বজনীন/ব্যক্তিগত কীগুলি পরিচালনা করার জন্য একটি বোতাম এবং প্রমাণীকরণের জন্য পাসওয়ার্ডের পরিবর্তে একটি কী ব্যবহার করতে হবে কিনা তা নির্দেশ করে একটি চেকবক্স।যদি আপনি একটি কী-জোড়া তৈরি করার পরে ক্লিপবোর্ডে অনুলিপি বোতামটি ব্যবহার করেন, তাহলে VNC সার্ভারের সাথে সংযুক্ত হলে আপনি সর্বজনীন কী পেস্ট করতে সক্ষম হবেন (ক্লিপবোর্ড সার্ভারের সাথে সিঙ্ক্রোনাইজ করা হয়েছে)।
+
+- AutoX কনফিগার করুন: শুধুমাত্র VNC-তে SSH মোডে উপলব্ধ।অ্যাপ্লিকেশন স্বয়ংক্রিয়ভাবে বিদ্যমান আবিষ্কার করতে পারে এবং ঐচ্ছিকভাবে UNIX সিস্টেমে নতুন X সেশন তৈরি করতে পারে (যেমন NX ক্লায়েন্ট)।সেশন তৈরি করতে আপনার প্রয়োজন x11vnc, এবং Xvfb, Xvnc, বা Xdummy রিমোট সিস্টেমে ইনস্টল করা।আপনার .dmrc ফাইলটি সরাতে হতে পারে এবং আপনার হোম ডিরেক্টরিতে একটি .xinit ফাইল যোগ করতে হতে পারে যদি আপনার ডেস্কটপ সঠিক দেখায় না বা আপনি শুধুমাত্র একটি xterm উইন্ডো পাচ্ছেন।
+
+- VNC সংযোগ সেটিংস:
+(a) VNC সার্ভার/পোর্ট: আপনি যেখানে যোগাযোগ করতে চান সেই VNC সার্ভারে চলমান কম্পিউটারের হোস্টের নাম বা IP ঠিকানা এবং পোর্ট লিখুন।VNC ওভার SSH মোডে, এই ঠিকানাটি SSH সার্ভার থেকে দেখা যায়।SSH সার্ভার এবং VNC সার্ভার একই কম্পিউটার হলে, আপনি লোকালহোস্ট ব্যবহার করতে পারেন।VNC সার্ভারগুলি সাধারণত পোর্ট 5900 থেকে শুরু করে (প্রথম VNC স্ক্রীন, স্ক্রীন :0) শোনে।
+(b) VNC ব্যবহারকারী: Windows Logon মোড সহ UltraVNC-তে উপলব্ধ, অথবা VeNCrypt-এ সুরক্ষিত VNC, এখানেই আপনি আপনার Windows/UNIX অ্যাকাউন্টের ব্যবহারকারীর নাম লিখুন।
+(c) VNC পাসওয়ার্ড: যদি আপনার VNC সার্ভার কনফিগারেশনের জন্য একটি পাসওয়ার্ডের প্রয়োজন হয়, তাহলে সেই পাসওয়ার্ডটি এখানে লিখুন।Windows Logon/VeNCrypt মোড সহ UltraVNC-তে, আপনার Windows/UNIX অ্যাকাউন্টের পাসওয়ার্ড এখানে রাখুন।পাসওয়ার্ডের জন্য সুরক্ষিত সঞ্চয়স্থান ব্যবহার করা হয় না, এবং পাসওয়ার্ডটি সংরক্ষণ করা হবে শুধুমাত্র যদি আপনি Keep বক্সটি চেক করেন।পাসওয়ার্ডটি এই পৃষ্ঠায় পূরণ করা হবে যদি আপনি শেষবার প্রবেশ করার পর থেকে অ্যাপ্লিকেশনটি ছেড়ে না থাকেন।
+- রঙের মোড: ক্লায়েন্ট বিভিন্ন রঙের মোড সমর্থন করে।আরও রঙের মোডগুলি আপনার ডিভাইসে আরও বেশি ব্যান্ডউইথ এবং আরও CPU কম্পিউটেশনের খরচে একটি ভাল ভিজ্যুয়াল অভিজ্ঞতা প্রদান করে৷কিছু VNC সার্ভার সমস্ত রঙের গভীরতা সমর্থন করে না (যেমন OS/X রিমোট ডেস্কটপের জন্য 24-বিট রঙ প্রয়োজন)।আপনার সংযোগ করতে সমস্যা হলে, অন্য রঙের গভীরতা চেষ্টা করুন।
+
+- তীরগুলির জন্য ডি-প্যাড ব্যবহার করুন: আপনি যদি পছন্দ করেন, আপনি VNC সার্ভারে তীর পাঠাতে আপনার ব্লুটুথ কীবোর্ডের ডি-প্যাড বা আপনার অন-স্ক্রীন কীবোর্ডের তীরগুলি ব্যবহার করতে পারেন৷
+
+- ডি-প্যাড ঘোরান: একটি ব্লুটুথ কীবোর্ডের সাথে যুক্ত ফোনগুলি সার্ভারে সঠিক দিকনির্দেশ পাঠাতে ঘড়ির কাঁটার বিপরীতে ঘোরানোর জন্য কীবোর্ডের ডি-প্যাডের প্রয়োজন হতে পারে।
+
+- স্থানীয় মাউস পয়েন্টার: কিছু VNC সার্ভার (যেমন OS/X রিমোট ডেস্কটপ) ক্লায়েন্টে মাউস পয়েন্টার আঁকবে না।এই বিকল্পটি চেক করলে অ্যাপ্লিকেশনটি মাউসের অবস্থানে একটি মাউস পয়েন্টার আঁকতে পারে।
+
+- অটো/ফুলস্ক্রিন বিটম্যাপ: VNC ক্লায়েন্ট রিমোট ডিসপ্লে উপস্থাপন করতে একটি বিটম্যাপ ব্যবহার করে।খুব বড় রিমোট ডিসপ্লেগুলির জন্য, বিশেষত ফিট-টু-স্ক্রিন মোডে, আপনি ফিট-টু-স্ক্রিন মোডে থাকাকালীন প্রতি-প্রক্রিয়া মেমরির সীমাবদ্ধতার কারণে অদ্ভুত ভিজ্যুয়াল আর্টিফ্যাক্টগুলি অনুভব করতে পারেন।যদি তা হয়, এই বিকল্পটি চেক করার চেষ্টা করুন।মনে রাখবেন যে বিকল্পটি চেক করার ফলে অ্যাপ্লিকেশনটি সংযোগ থেকে বেরিয়ে যেতে পারে।
+
+- রিপিটার: শুধুমাত্র UltraVNC মোডে উপলব্ধ।গুরুত্বপূর্ণ: আপনার কাছে একটি UltraVNC রিপিটার থাকলে, \'UltraVNC রিপিটার\' ডায়ালগের বাইরে এর ঠিকানা এবং পোর্ট লিখুন এবং \'UltraVNC রিপিটার\' ডায়ালগের ভিতরে প্রকৃত VNC সার্ভারের ঠিকানা এবং পোর্ট লিখুন।একটি কোলন সহ VNC সার্ভারের ঠিকানা এবং পোর্ট আলাদা করুন, যেমন192.168.0.100:5900।</string>
+    <string name="rdp_adv_glyph_cache">গ্লিফ ক্যাশে সক্রিয় করুন</string>
+    <string name="disable_battery_optimizations_failed">
+ব্যাটারি অপ্টিমাইজেশান সেটিংস খুলতে পারেনি৷সিস্টেম সেটিংসে ম্যানুয়ালি ব্যাটারি অপ্টিমাইজেশন অক্ষম করুন।</string>
+    <string name="disable_battery_optimizations">
+🔋 ব্যাটারি অপ্টিমাইজেশন অক্ষম করুন</string>
+    <string name="disable_battery_optimizations_already_done">
+অ্যাপটি ইতিমধ্যেই ব্যাটারি অপ্টিমাইজেশন থেকে মুক্ত।</string>
+    <string name="no_connections_title">এখনো কোনো সংযোগ নেই</string>
+    <string name="no_connections_hint">আপনার প্রথম রিমোট সংযোগ যোগ করতে + বোতামে ট্যাপ করুন</string>
+    <string name="no_connections_hint_tv">আপনার প্রথম রিমোট সংযোগ যোগ করতে উপরের + বোতাম টিপুন</string>
+    <string name="keyboard_layout_map">কীবোর্ড লেআউট</string>
+</resources>

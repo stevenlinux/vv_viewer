@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Audio va fi initializat in aproximativ 15 secunde, va rugam opriti orice redare video sau audio inainte de aceasta</string>
+    <string name="audio_initialized">Audio initializat</string>
+    <string name="action_import_settings">Importa Setari</string>
+    <string name="action_new_connection">✚ Conexiune Noua</string>
+    <string name="action_edit_default_settings">⚙ Editeaza Setarile Implicite</string>
+    <string name="action_export_settings">Exporta Setari</string>
+    <string name="action_delete_connection">Sterge Conexiunea</string>
+    <string name="action_rate_or_share_app">⭐ Ajutor, Evalueaza, Distribuie</string>
+    <string name="get_help">Obtine Ajutor</string>
+    <string name="advanced_settings">Setari Avansate</string>
+    <string name="audio">Audio</string>
+    <string name="auto_rotation">Rotirea ecranului in timpul conexiunii</string>
+    <string name="auto_request_new_res">Sincronizeaza rezolutia la distanta cu afisajul</string>
+    <string name="custom_ca_subject">Subiect Certificat Optional. Nu este necesar daca CN-ul certificatului corespunde numelui de gazda</string>
+    <string name="custom_ca_import">Alternativ, introduceti calea completa catre CA si apasati Import</string>
+    <string name="custom_ca_paste">Lipiti (daca nu importati) CA aici</string>
+    <string name="ca_ovirt_use_custom">CA RHEV/oVirt personalizat</string>
+    <string name="ca_spice_use_ovirt">Foloseste CA RHEV/oVirt pentru SPICE</string>
+    <string name="ca_ovirt_manage">Gestioneaza CA RHEV/oVirt</string>
+    <string name="ca_spice_manage">Gestioneaza CA SPICE</string>
+    <string name="ca_file_not_found">Fisier negasit. Va rugam introduceti un nume de fisier valid in campul de text (de ex. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Eroare la citirea fisierului CA. Va rugam asigurati-va ca este lizibil.</string>
+    <string name="ca_new_or_changed">Certificat de server nou sau modificat</string>
+    <string name="connection_type_text">Mediu de Virtualizare (RHEV/oVirt sau Proxmox)</string>
+    <string name="connection_setup_vm_name">Numele masinii virtuale (optional)</string>
+    <string name="connection_setup_host_name">Adresa Serverului</string>
+    <string name="connection_setup_user">Utilizator@Domeniu</string>
+    <string name="connection_setup_password">Parola</string>
+    <string name="enter_password">Va rugam introduceti parola</string>
+    <string name="enter_password_auth_failed">Autentificarea a esuat. Va rugam reintroduceti datele de autentificare.</string>
+    <string name="enter_otp_code">Va rugam introduceti codul OTP</string>
+    <string name="hide_toolbar">Ascunde bara de instrumente</string>
+    <string name="manage_custom_ca_title">Gestioneaza CA personalizat</string>
+    <string name="save_button">Salveaza</string>
+    <string name="select_vm_title">Selecteaza Masina Virtuala</string>
+    <string name="vv_file_not_found">Fisierul .vv nu a fost gasit!</string>
+    <string name="vv_file_error">Fisierul .vv lipseste sau este corupt!</string>
+    <string name="info_cert">Acceptati acest certificat de gazda nou sau modificat?\n\nAmprente:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nEmis pentru: %4$s\nEmis de: %5$s\n\nValid de la: %6$s\nValid pana la: %7$s\n</string>
+
+    <string name="toggle_keyboard">Comuta Tastatura</string>
+    <string name="show_keyboard">Afiseaza Tastatura</string>
+    <string name="scroll_wheel">Rotita de Derulare</string>
+
+    <string name="input_method_help">Ajutor Metoda de Introducere</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Metoda de Introducere</string>
+
+    <string name="error_failed_to_download_http">Descarcarea fisierului prin HTTP a esuat. Este posibil ca serverul dvs. sa fie inaccesibil.</string>
+    <string name="error_failed_to_download_https">Descarcarea fisierului prin HTTPS a esuat. Este posibil ca certificatul serverului sa nu fie de incredere (expirat sau autosemnat) sau serverul sa fie inaccesibil.</string>
+    <string name="error_failed_to_obtain_content">Obtinerea fisierului a esuat. Va rugam descarcati-l din nou, dar de aceasta data deschideti-l rapid din folderul Descarcari intr-un Manager de Fisiere.</string>
+    <string name="error_failed_to_obtain_file">Fisierul nu a fost gasit. Va rugam descarcati-l din nou, dar de aceasta data incercati sa-l deschideti din zona de Notificari sau direct din Browser daca este posibil.</string>
+
+    <string name="error_dialog_title">Eroare</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_vm_launched_on_stand_by">Masina virtuala a fost gasita oprita si a fost pornita. Va rugam incercati din nou in cateva minute. Daca incercati prea devreme si primiti o eroare de conexiune, incercati mai tarziu.</string>
+    <string name="error_no_vm_found_for_user">Nu exista Masini Virtuale disponibile pentru utilizatorul dat.</string>
+    <string name="error_no_such_vm_found_for_user">Nu a fost gasita nicio Masina Virtuala cu ID-ul furnizat pentru utilizatorul dat. Stergeti ID-ul pentru a obtine o lista de VM-uri.</string>
+    <string name="error_no_vnc_support_yet">Tipul de afisaj VNC nu este inca suportat, dar este o functionalitate viitoare. Multumim pentru intelegere!</string>
+    <string name="error_not_connected_to_network">Nu pareti a fi conectat la Internet. Nu se poate continua fara conexiune!</string>
+    <string name="error_ovirt_timeout">Conexiunea la VM a expirat. Va rugam verificati ca adresa nodului care ruleaza VM-ul este corecta, ca este accesibil din reteaua curenta si ca niciun firewall nu blocheaza conexiunea.</string>
+    <string name="error_ovirt_auth_failure">Autentificare esuata. Va rugam verificati utilizatorul si parola furnizate.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Negocierea SSL a esuat. Exista o problema cu certificatul SSL al serverului. Daca folositi un certificat autosemnat, trebuie sa (re)importati autoritatea de certificare.</string>
+    <string name="error_pve_failed_to_authenticate">Autentificarea la Proxmox Virtual Environment a esuat. Va rugam asigurati-va ca introduceti numele de utilizator in formatul utilizator@realm si ca parola este corecta.</string>
+    <string name="error_pve_failed_to_parse_json">Parsarea raspunsului de la Proxmox Virtual Environment a esuat.</string>
+    <string name="error_pve_vmid_not_numeric">ID-ul VM nu este numeric. Va rugam introduceti un ID numeric pentru VM sau lasati campul gol pentru a alege VM-ul dintr-o lista.</string>
+    <string name="error_pve_api_unexpected_code">Raspuns neasteptat de la Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Conexiunea la Proxmox Virtual Environment a esuat: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment a returnat date nule.</string>
+    <string name="error_pve_timeout_communicating">Timeout in comunicarea cu Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Nu s-a putut gasi o masina virtuala cu numele specificat atribuita utilizatorului dvs. Va rugam stergeti numele VM-ului specificat pentru a vedea o lista de VM-uri atribuite utilizatorului.</string>
+    <string name="error_vv_download_timeout">Timeout la descarcarea fisierului vv.</string>
+    <string name="message_please_wait">Va rugam asteptati</string>
+    <string name="message_please_install_bvnc">Va rugam instalati &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> din Google Play pentru a va conecta la consola VNC a acestui VM.</string>
+    <string name="ssl_strict">Cereti ca numele comun sa corespunda certificatului (recomandat)</string>
+    <string name="usb">USB (conectati mai intai cablul OTG)</string>
+
+    <string name="ad_donate_text0">Versiunea Pro are de asemenea suport pentru autentificarea SSH cu mai multi factori. In plus, suporta funcția mult solicitata de Parola Principala care previne utilizarea neautorizata si cripteaza toate setarile de conexiune, inclusiv parolele si cheile SSH, pentru a proteja impotriva furtului. Activati-o din Meniul principal.</string>
+    <string name="ad_donate_spice_text1a">Apasati aici pentru a cumpara Opaque si a salva conexiuni directe la Proxmox si oVirt. Suporta si fisiere .vv.</string>
+    <string name="ad_donate_spice_text1b">Apasati aici pentru a cumpara versiunea Pro si a deschide pur si simplu fisiere .vv.</string>
+    <string name="ad_donate_text1">Apasati aici pentru a sustine proiectul cu o mica donatie cumparand versiunea Pro.</string>
+    <string name="ad_donate_text2">Versiunea Pro va permite sa dezactivati acest dialog si va ofera acces la functionalitati suplimentare.</string>
+    <string name="ad_donate_text3">Daca doriti sa sustineti proiectul in continuare, urmati linkurile de mai jos pentru aplicatii client pentru: </string>
+    <string name="ad_donate_text_vnc">Proiectul Open Source are nevoie de sprijinul dvs.! Faceti o donatie cumparand bVNC Pro. Mai jos gasiti linkuri catre bVNC Pro si celelalte aplicatii ale noastre.</string>
+    <string name="ad_donate_text_rdp">Proiectul Open Source are nevoie de sprijinul dvs.! Faceti o donatie cumparand aRDP Pro, care suporta redirectionarea sunetului. Mai jos gasiti linkuri catre aRDP Pro si celelalte aplicatii ale noastre.</string>
+    <string name="ad_donate_text_spice">Pentru conexiuni Proxmox si oVirt, va rugam faceti o donatie proiectului cumparand Opaque sau aSPICE Pro. Versiunea gratuita a aSPICE suporta doar conexiuni directe la masinile virtuale KVM. Mai jos gasiti linkuri catre Opaque si aSPICE Pro, precum si celelalte aplicatii ale noastre.</string>
+
+    <string name="address_caption">Server VNC</string>
+    <string name="address_caption_hint">Server VNC</string>
+    <string name="address_caption_hint_tunneled">Server VNC</string>
+    <string name="address_caption_ssh">Server SSH</string>
+    <string name="address_caption_ssh_hint">Server SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Sageata Jos</string>
+    <string name="arrow_left">Sageata Stanga</string>
+    <string name="arrow_right">Sageata Dreapta</string>
+    <string name="arrow_up">Sageata Sus</string>
+
+    <string name="auto">Auto</string>
+    <string name="auto_x_cancel">Anuleaza</string>
+    <string name="auto_x_caption">Aplicatia poate descoperi automat sesiunile X existente si crea altele noi pe sistemele Linux/UNIX (similar cu NX). Aveti nevoie de x11vnc pentru a gasi, si Xvfb, Xvnc sau Xdummy pentru a crea sesiuni. Daca aveti probleme la conectare, incercati sa selectati un Tip de Sesiune la Distanta specific in Setarile Avansate AutoX.</string>
+    <string name="auto_x_confirm">Confirma</string>
+    <string name="auto_x_descript_geom">Dimensiunea Desktopului la Distanta (LxH)</string>
+    <string name="auto_x_descript_session">Tipul Sesiunii la Distanta</string>
+    <string name="auto_x_disabled">Dezactivat</string>
+    <string name="auto_x_disabled_selection">AutoX Dezactivat</string>
+    <string name="auto_x_enabled">Activat</string>
+    <string name="auto_x_find">Doar Gaseste, Nu Crea</string>
+    <string name="auto_x_find_login">Gaseste X Login (necesita sudo)</string>
+    <string name="auto_x_geom_custom">Personalizat</string>
+    <string name="auto_x_geom_native">Nativ</string>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Personalizat</string>
+    <string name="auto_x_title">Configureaza AutoX</string>
+    <string name="auto_x_unix_auth">Autentifica-te automat folosind Numele de Utilizator/Parola SSH furnizate (la ecranul negru de autentificare).</string>
+    <string name="auto_x_unixpw">Foloseste credentialele UNIX in locul mecanismului de securitate incorporat. Utilizatorul trebuie sa poata rula /bin/su.</string>
+    <string name="auto_x_xdummy">Gaseste sau Creeaza cu Xdummy</string>
+    <string name="auto_x_xvfb">Gaseste sau Creeaza cu Xvfb</string>
+    <string name="auto_x_xvnc">Gaseste sau Creeaza cu Xvnc</string>
+
+    <string name="button_send_text">Trimite Text</string>
+    <string name="button_send_without_saving">Trimite Text/Nu-l Salva</string>
+
+    <string name="center_mouse">Mouse @</string>
+
+    <string name="close">Inchide</string>
+
+    <string name="color_format_caption">Mod Culoare</string>
+    <string name="color_mode">Mod Culoare</string>
+
+    <string name="connect_button">Conecteaza</string>
+    <string name="back_button">Inapoi</string>
+    <string name="update_button">Actualizeaza</string>
+
+    <string name="connection_caption">Conexiune</string>
+    <string name="connection_type_caption">Tip Conexiune</string>
+    <string name="connection_type_rdp_over_ssh">RDP prin SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE prin SSH</string>
+    <string name="connection_type_vnc">VNC de Baza</string>
+    <string name="connection_type_vnc_over_ssh">VNC Securizat prin SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC Securizat prin AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC Securizat prin Tunel SSL</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC Securizat prin VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Doriti sa editati sau sa stergeti conexiunea</string>
+    <string name="connection_edit">Editeaza</string>
+    <string name="connection_delete">Sterge</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Copiaza Lista</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Modul de Introducere Implicit</string>
+    <string name="delete_connection">Sterge Conexiunea</string>
+    <string name="delete_key">Sterge Cheia Selectata</string>
+    <string name="delete_key_list">Sterge Lista de Chei</string>
+
+    <string name="disconnect">Deconecteaza</string>
+
+    <string name="dpad_as_arrows">Foloseste D-Pad pentru sageti si click D-Pad pentru Ctrl.</string>
+
+    <string name="enable_recording">Activeaza Inregistrarea</string>
+    <string name="enable_sound">Activeaza Sunetul</string>
+
+    <string name="enter_text">Trimite Text</string>
+    <string name="enter_text_title">Introduceti Textul de Trimis</string>
+
+    <string name="error_anon_dh_unsupported">Serverul VNC incearca sa foloseasca cifruri Anonymous Diffie Hellman care nu sunt suportate pe dispozitivul dvs. Android. Daca folositi serverul VNC Vino al GNOME, puteti dezactiva AnonTLS executand urmatoarea comanda intr-un terminal si apoi repornind: \"gsettings set org.gnome.Vino require-encryption false\". Daca rulati x11vnc, puteti adauga urmatoarele optiuni: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Conexiunea a esuat.</string>
+    <string name="error_connection_interrupted">Conexiunea a fost intrerupta.</string>
+    <string name="error_no_user_hostname">Va rugam introduceti cel putin un utilizator si un nume de gazda sau adresa IP.</string>
+    <string name="error_out_of_memory">Nu s-a putut aloca suficienta memorie pentru a desena ecranul la distanta. Incercati sa reporniti aplicatia, apoi reporniti dispozitivul. De asemenea, puteti incerca sa reduceti dimensiunea desktopului la distanta prin setarile aplicatiei.</string>
+    <string name="error_ovirt_unable_to_connect">Nu s-a putut conecta sau autentifica, va rugam verificati adresa serverului, utilizatorul, parola si autoritatea de certificare si subiectul.</string>
+    <string name="error_pick_correct_item">Va rugam asigurati-va ca ati ales elementul corect in Tipul Conexiunii.</string>
+    <string name="error_rdp_authentication_failed">Autentificarea RDP a esuat! Va rugam verificati numele de utilizator si parola RDP si incercati din nou.</string>
+    <string name="error_rdp_connection_failed">Conexiunea RDP a esuat! Fie conectivitatea retelei a fost intrerupta, serverul RDP a fost oprit sau dezactivat, fie sesiunea dvs. a fost preluata.</string>
+    <string name="error_rdp_unable_to_connect">Nu s-a putut conecta la serverul RDP! Va rugam asigurati-va ca setarea Serverului RDP este corecta, serverul este pornit, RDP este activat si ca serverul se afla in aceeasi retea cu acest dispozitiv.</string>
+    <string name="error_security_type">Serverul nu a oferit un tip de securitate suportat.</string>
+    <string name="error_spice_unable_to_connect">Nu s-a putut conecta sau autentifica, va rugam verificati adresa si portul serverului.</string>
+    <string name="error_ssh_could_not_exec_command">Nu s-a putut executa comanda la distanta.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Nu s-a putut trimite parola sudo.</string>
+    <string name="error_ssh_hostkey_changed">EROARE! Cheia de gazda a serverului s-a schimbat. Daca aceasta schimbare este intentionata, puteti continua. In caz contrar, aceasta poate fi un atac de tip man-in-the-middle.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Serverul SSH nu suporta nici metoda de autentificare \"password\" nici \"keyboard-interactive\" sau necesita mai intai metoda \"publickey\". Va rugam configurati-l sa permita cel putin una din cele doua metode, sau reconfigurati aplicatia. Metode de autentificare disponibile: </string>
+    <string name="error_ssh_key_auth_fail">Autentificarea la serverul SSH cu o pereche de chei a esuat. Va rugam verificati numele de utilizator SSH si asigurati-va ca cheia publica este in fisierul authorized_keys pe serverul la distanta.</string>
+    <string name="error_ssh_keypair_decryption_failure">Decriptarea perechii de chei a esuat. Va rugam asigurati-va ca ati introdus corect fraza de acces in campul \'Fraza de Acces SSH\' de pe ecranul principal.</string>
+    <string name="error_ssh_keypair_missing">Perechea de chei SSH nu a fost inca generata! Va rugam generati una si puneti (partea ei publica) in authorized_keys pe serverul SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Fraza de acces furnizata dar perechea de chei nu este criptata. Va rugam stergeti fraza de acces.</string>
+    <string name="error_ssh_port_forwarding_failure">Nu s-a putut configura redirectionarea porturilor pentru tunelarea traficului VNC prin SSH. Va rugam asigurati-va ca serverul SSH este configurat sa permita redirectionarea porturilor si incercati din nou.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Serverul SSH nu suporta metoda de autentificare \"publickey\", iar noi incercam sa folosim o pereche de chei pentru autentificare. Va rugam configurati-l sa permita autentificarea cu cheie publica si incercati din nou. Metode de autentificare disponibile: </string>
+    <string name="error_ssh_pwd_auth_fail">Autentificarea la serverul SSH cu parola a esuat. Va rugam verificati numele de utilizator SSH si parola SSH.</string>
+    <string name="error_ssh_unable_to_connect">Conectarea la Serverul SSH a esuat. Va rugam verificati conectivitatea retelei si adresa si portul Serverului SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nu s-a putut obtine portul VNC la distanta de la x11vnc. Va rugam asigurati-va ca x11vnc este instalat. Pentru siguranta, incercati sa rulati x11vnc manual din linia de comanda.</string>
+    <string name="error_uri_noinfo_nosave">Informatii insuficiente specificate pentru conectare.</string>
+    <string name="error_uri_parse_error">Nu s-a putut analiza URI-ul Intent. Va rugam verificati formatul URI. De asemenea, puteti consulta logcat-ul dispozitivului pentru mai multe detalii.</string>
+    <string name="error_vnc_authentication">Autentificarea VNC a esuat! Verificati parola VNC (si utilizatorul daca este cazul).</string>
+    <string name="error_vnc_unable_to_connect">"Conexiunea la serverul VNC a esuat cu motivul: "</string>
+    <string name="error_x509_could_not_generate_encoding">Codificarea certificatului nu a putut fi generata.</string>
+    <string name="error_x509_could_not_generate_signature">Nu s-a putut genera semnatura SHA1 sau MD5 a certificatului. Nu s-a gasit algoritmul SHA1/MD5.</string>
+
+    <string name="export_settings">Exporta</string>
+
+
+    <string name="extra_keys_disable">Dezactiveaza Tastele Suplimentare</string>
+    <string name="extra_keys_enable">Activeaza Tastele Suplimentare</string>
+
+    <string name="fit_to_screen">Potrivire la Ecran</string>
+
+    <string name="force">Bitmap pe Tot Ecranul</string>
+
+    <string name="immersive_mode_disable">Dezactiveaza Modul Imersiv</string>
+
+    <string name="import_export_settings">📦 Import/Export Setari</string>
+    <string name="import_settings">Importa</string>
+
+
+    <string name="info">Info</string>
+    <string name="info_cert_signatures">"Informatiile certificatului sunt: "</string>
+    <string name="info_cert_signatures_identical">\n\nPuteti verifica daca informatiile corespund certificatului serverului pentru a preveni un atac de tip man-in-the-middle.</string>
+    <string name="info_cert_tunnel">Doriti sa va conectati la gazda identificata de urmatorul certificat?\n\nAmprenta: %1$s\n\nEmis pentru:\n%2$s\n\nEmis de:\n%3$s\n\nValid de la:\n%4$s\n\nValid pana la:\n%5$s\n\nNota: Aplicatia nu verifica autoritatile de certificare si nu verifica revocarea certificatelor.</string>
+    <string name="info_continue_connecting">"Continuati conectarea la: "</string>
+    <string name="info_encoding">" codificare, "</string>
+    <string name="info_progress_dialog_aborted">Conexiune anulata!</string>
+    <string name="info_progress_dialog_connecting">Se conecteaza…</string>
+    <string name="info_progress_dialog_downloading">Se descarca primul cadru.\nVa rugam asteptati…</string>
+    <string name="info_progress_dialog_establishing">Se stabileste negocierea.\nVa rugam asteptati…</string>
+    <string name="info_ssh_initializing_hostkey">Se incearca initializarea Cheii de Gazda SSH.</string>
+    <string name="info_ssh_key_fingerprint">"Amprenta cheii de gazda este: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nPuteti verifica daca este identica cu amprenta cunoscuta a certificatului serverului pentru a preveni un atac de tip man-in-the-middle.</string>
+    <string name="info_update_color_model_to">"Se actualizeaza Modelul de Culoare la "</string>
+
+    <string name="input_method_direct_drag_pan_description">Direct, Mentine pentru Panoramare: Glisati pentru a trage si plasa. Atingeti cu un deget oriunde doriti sa faceti click stanga, doua degete pentru click dreapta si trei degete pentru click mijloc. Glisati cu doua degete pentru a derula. Atingere lunga pentru a incepe panoramarea.</string>
+    <string name="input_method_direct_swipe_pan_description">Direct, Glisare pentru Panoramare: Glisati pentru a panorama. Atingeti cu un deget oriunde doriti sa faceti click stanga, doua degete pentru click dreapta si trei degete pentru click mijloc. Glisati cu doua degete pentru a derula. Atingere lunga pentru a trage si plasa.</string>
+    <string name="input_method_single_handed_description">O Singura Mana: Glisati pentru a panorama. Atingeti cu un deget oriunde doriti sa faceti click stanga. Atingere lunga pentru a alege modul stanga/dreapta/mijloc tragere/derulare/zoom. Controalele multi-touch obisnuite functioneaza de asemenea.</string>
+    <string name="input_method_touchpad_description">Touchpad Simulat: Glisati pentru a muta cursorul. Atingeti oriunde cu un deget pentru click stanga, doua degete pentru click dreapta si trei degete pentru click mijloc. Glisati cu doua degete pentru a derula. Atingere lunga pentru a trage si plasa.</string>
+    <string name="input_mode">Mod Introducere</string>
+
+    <string name="input_mode_fit_to_screen">Fara Panoramare; Mouse Trackball</string>
+    <string name="input_mode_panning">Mod Panoramare Desktop</string>
+    <string name="input_method_mouse">Controlul Cursorului Mouse</string>
+
+    <string name="input_method_direct_swipe_pan">Direct, Glisare pentru Panoramare</string>
+    <string name="input_method_direct_drag_pan">Direct, Mentine pentru Panoramare</string>
+    <string name="input_method_single_handed">O Singura Mana</string>
+    <string name="input_method_touchpad">Touchpad Simulat</string>
+
+    <string name="input_mode_help">Ajutor Mod Introducere</string>
+    <string name="input_mode_help_text">"
+In orice Mod de Introducere, atingeti pictograma tastaturii pentru a afisa tastatura pe ecran. De asemenea, dispozitivul dvs. poate avea propriul gest care afiseaza tastatura.
+
+Folositi modurile de introducere Directa pentru un control mai intuitiv al ecranului tactil. Folositi Modul Touchpad Simulat pentru un control mai fin al mouse-ului.
+
+Mod Direct, Glisare pentru Panoramare:
+ - Controlati mouse-ul direct prin atingere.
+ - Glisati pentru a panorama.
+ - Atingerea face mouse-ul sa dea click unde ati atins.
+ - Evenimentele de derulare sunt trimise intre cele doua degete de unde a inceput glisarea cu doua degete.
+
+Mod Direct, Mentine pentru Panoramare:
+ - Controlati mouse-ul direct prin atingere.
+ - Atingere lunga pentru a incepe modul panoramare.
+ - Atingerea face mouse-ul sa dea click unde ati atins.
+ - Evenimentele de derulare sunt trimise intre cele doua degete de unde a inceput glisarea cu doua degete.
+
+Mod Touchpad Simulat:
+ - Folositi ecranul ca un touchpad.
+ - Glisati pentru a muta cursorul mouse-ului.
+ - Miscati mouse-ul dincolo de marginea ecranului pentru a panorama.
+ - Atingerea face mouse-ul sa dea click unde se afla cursorul.
+ - Evenimentele de derulare sunt trimise unde se afla cursorul mouse-ului.
+
+Mod O Singura Mana:
+ - La fel ca Modul Direct, Glisare pentru Panoramare, cu exceptia ca atingerea lunga deschide un meniu cu alegerea modurilor.
+ - Dupa alegerea modului, glisarea degetului pe ecran efectueaza gestul selectat.
+ - Ridicarea degetului finalizeaza gestul.
+
+Toate Modurile de Introducere:
+ - Click stanga: Atingeti o data.
+ - Dublu-click: Dubla atingere.
+ - Click dreapta: Tineti apasat si atingeti cu un al doilea deget (oriunde altundeva pe ecran).
+ - Click dreapta alternativ: Folositi butonul sau gestul \"Inapoi\" al dispozitivului dvs.
+ - Click mijloc: Tineti apasat si atingeti cu inca doua degete (oriunde altundeva pe ecran).
+ - Tragere mouse: Tineti apasat lung si glisati.
+ - Rotita de derulare: Trageti cu doua degete sus/jos si stanga/dreapta. Tragerea rapida deruleaza mai repede.
+ - Zoom inainte/inapoi: In scalarea Zoomabila, apropiati/departati degetele pentru a controla scalarea.
+ - Tasta Ctrl/Alt: Meniu-&gt;Butoane Ctrl/Alt. Nu uitati sa le dezactivati cand terminati!
+ - Combinatii de taste: Meniu-&gt;Mai Mult-&gt;Trimite Taste.
+ - Trimite text: Fie tastati pe tastatura de pe ecran, fie folositi Meniu-&gt;Mai Mult-&gt;Trimite Text."</string>
+
+    <string name="intro_close">Inchide</string>
+    <string name="intro_dont_show">Nu mai afisa</string>
+
+    <string name="intro_text">
+Lista curenta de functionalitati bVNC:
+&lt;br&gt;
+- VNC simplu, VNC securizat prin SSH, AnonTLS si VeNCrypt, si UltraVNC Windows Logon cu Repeater optional.
+&lt;br&gt;
+- Mod AutoX: In modul VNC prin SSH, descopera automat sesiunile X existente si/sau creeaza altele noi folosind x11vnc! Functioneaza ca un client NX.
+&lt;br&gt;
+- Suport pentru rotire libera. Folositi Sistemul de Operare pentru a limita rotatia daca este necesar.
+&lt;br&gt;
+- Generarea si exportul perechilor de chei publice/private SSH.
+&lt;br&gt;
+- Toate codificarile VNC standard, inclusiv Tight, ZRLE si CopyRect.
+&lt;br&gt;
+- Salvarea automata a sesiunii.
+&lt;br&gt;
+- Moduri de scalare Zoomabil, Potrivire la Ecran si Unu la Unu.
+&lt;br&gt;
+- Control multi-touch al mouse-ului la distanta in modurile de introducere Directa si Touchpad Simulat.
+&lt;br&gt;
+- Control complet cu o singura mana al mouse-ului la distanta in modul de introducere O Singura Mana.
+&lt;br&gt;
+- Clickuri de mouse multi-touch: atingere pentru Click Stanga, atingere cu doua degete pentru click dreapta, atingere cu trei degete pentru click mijloc.
+&lt;br&gt;
+- Derulare multi-touch: tragere cu doua degete Sus/Jos si Stanga/Dreapta pentru a derula.
+&lt;br&gt;
+- Taste meta si sageti pe ecran care pot fi complet dezactivate din meniu sau ascunse cu butonul de pe ecran.
+&lt;br&gt;
+- Trimitere Text si combinatii arbitrare de taste cand sunteti conectat.
+&lt;br&gt;
+- Ajutor la crearea conexiunilor (\"Meniu-&gt;Ajutor Conexiune\") in ecranul de conexiune.
+&lt;br&gt;
+- Ajutor cu modurile de introducere (\"Meniu-&gt;Mai Mult-&gt;Ajutor Mod Introducere\") cand sunteti conectat.
+&lt;br&gt;
+- Folosirea unui trackpad disponibil ca Sageti in loc de miscarea mouse-ului, si click pe trackpad ca Ctrl.
+&lt;br&gt;
+- Trecerea in mod portret in timpul conexiunilor, rotirea D-pad/trackpad pentru tastaturi BT.
+&lt;br&gt;
+- Suport multilingv, atat timp cat serverul VNC are activata configuratia de limba necesara.
+&lt;br&gt;
+- Integrare Copiere/Lipire
+&lt;br&gt;
+- Schimbari ale rezolutiei masinii la distanta
+&lt;br&gt;
+- Suport complet pentru mouse pe dispozitive Android 4.0+, inclusiv click dreapta si mijloc si rotita de derulare.
+&lt;br&gt;
+&lt;br&gt;
+Probleme cunoscute:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Client VNC intuitiv si securizat</string>
+
+
+    <string name="keep_password_button">Pastreaza</string>
+    <string name="keep_screen_awake_enable">Mentine Ecranul Pornit</string>
+
+    <string name="keys_caption">Chei</string>
+
+    <string name="landscape_force">Forteaza Orientarea Peisaj</string>
+
+    <string name="left_handed_mode">Mod Stangaci</string>
+    <string name="disable_pointer_offset_correction">Dezactiveaza corectia decalajului cursorului</string>
+
+    <string name="list_caption">Lista</string>
+    <string name="list_name_caption">Numele Listei</string>
+
+    <string name="local_mouse_check">Cursor mouse local (selectati daca cursorul este invizibil)</string>
+
+    <string name="main_screen_help">Ajutor Conexiune</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Cand adaugati sau editati o conexiune, veti vedea o pagina de configurare a conexiunii. Aici puteti configura o noua conexiune VNC, sau alege una preexistenta. In partea de sus este un buton care va permite sa salvati conexiunea. Mai jos este locul unde va configurati conexiunea.
+
+Daca cautati o imbunatatire rapida a performantei, incercati sa setati Modul de Culoare la o valoare mai mica. De asemenea, incercati sa eliminati orice imagine de fundal de pe serverul VNC. In cele din urma, asigurati-va ca dispozitivul dvs. are o buna conectivitate de retea si evitati sa acoperiti antena si sa reduceti puterea semnalului.
+
+ - Tip Conexiune: Aici alegeti tipul conexiunii VNC. Tipurile de conexiune disponibile sunt:
+   (a) VNC Simplu, care este suportat de toate serverele VNC dar nu are criptare si este vulnerabil la atacuri brute din cauza limitarii parolei la 8 caractere.
+   (b) VNC Securizat prin SSH, care se conecteaza printr-un tunel SSH criptat. Aveti nevoie de un serviciu SSHD in functiune si de un server VNC. Atat timp cat serverul VNC nu accepta conexiuni direct din Internet, acest tip de conexiune nu are vulnerabilitati cunoscute, atat timp cat verificati semnatura certificatului serverului la prima conectare.
+   (c) UltraVNC, care va ofera optiunile Windows Logon si UltraVNC Repeater. Folosirea Windows Logon nu sufera de limitarea parolei la 8 caractere, dar acest mod nu ofera criptare, asa ca sesiunea dvs. este vulnerabila la interceptare.
+   (d) VNC Securizat prin AnonTLS, care este VNC obisnuit printr-o conexiune echivalenta cu stunnel. Trebuie fie sa rulati stunnel, fie sa folositi un server VNC precum Vino care suporta AnonTLS nativ. Acest mod va ofera criptarea sesiunii, dar sufera de limitarea parolei la 8 caractere si nu previne atacurile man-in-the-middle.
+   (e) VNC Securizat prin VeNCrypt, care foloseste certificate x509 si criptarea sesiunii, si in functie de configuratia serverului poate folosi credentiale utilizator/parola fara limitarea de 8 caractere. Acest mod previne atacurile man-in-the-middle si asigura confidentialitatea sesiunii. Servere precum x11vnc si TigerVNC suporta acest mod si sunt la fel de sigure ca VNC prin SSH.
+
+ - Titlu: Fiecare conexiune creata poate avea o porecla pentru a o identifica usor in lista.
+
+ - Setari Tunel SSH: Disponibile in modul VNC prin SSH.
+   (a) Server/Port SSH: Adresa si portul serverului SSH prin care conexiunea va fi tunelata. Implicit SSH asculta pe portul 22.
+   (b) Utilizator/Parola: Numele de utilizator si parola contului de pe serverul SSH. Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+   (c) Gestioneaza Cheia/Foloseste Cheia: Un buton pentru gestionarea cheilor publice/private si o caseta care indica daca se foloseste o cheie in loc de parola pentru autentificare. Daca folositi butonul Copiaza in Clipboard dupa generarea unei perechi de chei, ar trebui sa puteti lipi cheia publica odata conectat la serverul VNC (clipboard-ul este sincronizat cu serverul).
+
+ - Configureaza AutoX: Disponibil doar in modul VNC prin SSH. Aplicatia poate descoperi automat sesiunile X existente si optional poate crea altele noi pe sistemele UNIX (precum clientul NX). Aveti nevoie de x11vnc pentru a gasi, si Xvfb, Xvnc sau Xdummy instalat pe sistemul la distanta pentru a crea sesiuni. Este posibil sa trebuiasca sa mutati fisierul .dmrc si sa adaugati un fisier .xinit in directorul dvs. principal daca desktopul nu arata corect sau primiti doar o fereastra xterm.
+
+ - Setari Conexiune VNC:
+   (a) Server/Port VNC: Aici introduceti numele de gazda sau adresa IP si portul computerului care ruleaza serverul VNC la care doriti sa va conectati. In modul VNC prin SSH, aceasta adresa este asa cum se vede de pe Serverul SSH. Daca Serverul SSH si serverul VNC sunt acelasi computer, puteti folosi localhost. Serverele VNC asculta de obicei incepand cu portul 5900 (primul ecran VNC, ecranul :0).
+   (b) Utilizator VNC: Disponibil in modul UltraVNC cu Windows Logon sau VNC Securizat prin VeNCrypt, aici introduceti numele de utilizator al contului dvs. Windows/UNIX.
+   (c) Parola VNC: Daca configuratia serverului VNC necesita o parola, introduceti-o aici. In modurile UltraVNC cu Windows Logon/VeNCrypt, puneti parola contului dvs. Windows/UNIX aici. Nu se foloseste stocare securizata pentru parole, iar parola va fi salvata doar daca bifati caseta \"Pastreaza\". Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+
+ - Mod Culoare: Clientul suporta mai multe moduri de culoare. Modurile cu mai multe culori ofera o experienta vizuala mai buna in detrimentul unei largi de banda mai mari si a mai multor calcule CPU pe dispozitivul dvs. Unele servere VNC nu suporta toate adancimile de culoare (de ex. OS/X Remote Desktop necesita culoare pe 24 de biti). Daca aveti probleme la conectare, incercati o alta adancime de culoare.
+
+ - Foloseste D-Pad pentru sageti: Daca preferati, puteti folosi D-Pad-ul tastaturii Bluetooth sau sagetile de pe tastatura de pe ecran pentru a trimite sageti la serverul VNC.
+
+ - Roteste D-Pad: Telefoanele asociate cu o tastatura Bluetooth pot avea nevoie ca D-pad-ul tastaturii sa fie rotit in sens invers acelor de ceasornic pentru a trimite directiile corecte la server.
+
+ - Cursor mouse local: Unele servere VNC (de ex. OS/X Remote Desktop) nu vor desena cursorul mouse-ului pe client. Bifarea acestei optiuni va face aplicatia sa deseneze un cursor mouse la pozitia mouse-ului.
+
+ - Auto/Bitmap pe Tot Ecranul: Clientul VNC foloseste un bitmap pentru a reprezenta afisajul la distanta. Pentru afisaje foarte mari la distanta, mai ales in modul potrivire la ecran, este posibil sa experimentati artefacte vizuale ciudate in modul potrivire la ecran, din cauza limitarilor de memorie per proces. Daca se intampla aceasta, incercati sa bifati aceasta optiune. Retineti ca bifarea optiunii poate cauza inchiderea aplicatiei la conectare.
+
+ - Repeater: Disponibil doar in modul UltraVNC. IMPORTANT: Daca aveti un repeater UltraVNC, introduceti adresa si portul acestuia in afara dialogului \'UltraVNC Repeater\' si introduceti adresa si portul serverului VNC real in interiorul dialogului \'UltraVNC Repeater\'. Separati adresa si portul serverului VNC cu doua puncte, de ex. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Activeaza Parola Principala</string>
+    <string name="master_password_error_failed_to_disable">Nu s-a putut dezactiva parola principala. Verificati spatiul liber pe dispozitiv si incercati din nou.</string>
+    <string name="master_password_error_failed_to_enable">Nu s-a putut activa parola principala. Verificati spatiul liber pe dispozitiv si incercati din nou.</string>
+    <string name="master_password_error_intents_not_supported">Intent-urile de conexiune nu sunt inca suportate cand Parola Principala este activata.</string>
+    <string name="master_password_error_password_necessary">Parola Principala este necesara pentru a continua.</string>
+    <string name="master_password_error_password_not_set">Setarea Parolei Principale a fost anulata.</string>
+    <string name="master_password_error_shortcuts_not_supported">Scurtaturile nu sunt inca suportate cand Parola Principala este activata.</string>
+    <string name="master_password_error_wrong_password">Nu s-a putut autentifica cu Parola Principala furnizata.</string>
+    <string name="master_password_hint_once">Introduceti Parola</string>
+    <string name="master_password_hint_twice">Repetati Parola</string>
+    <string name="master_password_set">Seteaza Parola Principala</string>
+    <string name="master_password_set_error">Parolele nu se potrivesc, va rugam fiti atenti!</string>
+    <string name="master_password_set_message">Va rugam introduceti si memorati o Parola Principala. Cu cat parola este mai lunga, cu atat este mai greu de spart. Daca setati parola gresit sau o uitati, veti pierde toate setarile! Este posibil sa doriti sa exportati setarile acum pentru a le salva (din Meniu). Pastrati-le in siguranta deoarece setarile exportate nu sunt criptate.</string>
+    <string name="master_password_verify">Verifica Parola Principala</string>
+    <string name="master_password_verify_message">Va rugam introduceti Parola Principala corecta pentru a continua.</string>
+
+    <string name="meta_key_title">Trimite Taste Speciale</string>
+
+    <string name="mouse_follow_pan">Mouse-ul urmeaza panoramarea</string>
+
+    <string name="new_connection">Conexiune Noua</string>
+    <string name="new_list_button">Lista Noua</string>
+
+    <string name="nickname_caption">Porecla</string>
+    <string name="nickname_caption_hint">Titlu (optional)</string>
+
+    <string name="off">Oprit</string>
+
+    <string name="one_to_one">Unu la Unu</string>
+
+    <string name="open_doc">Manual/Wiki</string>
+
+    <string name="pan_follow_mouse">Panoramarea urmeaza mouse-ul</string>
+
+    <string name="password_caption">Autent. VNC</string>
+    <string name="password_caption_hint">Parola VNC</string>
+    <string name="password_caption_ssh">Autent. SSH</string>
+    <string name="password_hint_ssh">Parola SSH</string>
+
+    <string name="port_caption">Port VNC</string>
+    <string name="port_caption_ssh">Port SSH</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Treci in modul portret cand este conectat</string>
+    <string name="local_clipboard_integration">Activeaza Integrarea Clipboard Local catre Distant</string>
+    <string name="remote_clipboard_integration">Activeaza Integrarea Clipboard Distant catre Local</string>
+    <string name="position_toolbar_last_used">Restaureaza Pozitia Barei de Instrumente</string>
+    <string name="applies_to_new_connections_only">Se Aplica Doar Conexiunilor Noi</string>
+    <string name="pro_feature_mfa">Se pare ca serverul dvs. are activata autentificarea cu mai multi factori. Va rugam sustineti proiectul cumparand versiunea Pro care are suport pentru aceasta functionalitate. Un link catre versiunea Pro este disponibil in dialogul de start.</string>
+    <string name="pro_feature_intro">Se pare ca folositi o functionalitate Pro. Va rugam sustineti proiectul cumparand versiunea Pro care are suport pentru aceasta functionalitate. Va rugam verificati dialogul introductiv pentru linkuri catre aplicatia corecta.</string>
+    <string name="pro_feature_generic">Se pare ca folositi o functionalitate Pro. Va rugam sustineti proiectul cumparand versiunea Pro care are suport pentru aceasta functionalitate. Un link catre versiunea Pro este disponibil in dialogul de start.</string>
+    <string name="pro_feature_rdp">Se pare ca ati incercat sa deschideti un fisier .rdp care este o functionalitate Pro. Va rugam sustineti proiectul cumparand aRDP Pro, care suporta fisiere .rdp. Un link catre versiunea aRDP Pro este disponibil in dialogul de start.</string>
+    <string name="pro_feature_spice">Se pare ca ati incercat sa deschideti un fisier .vv. Daca doriti sa salvati conexiuni la Proxmox sau oVirt direct in aplicatie si sa deschideti si fisiere .vv, luati in considerare achizitionarea Opaque. Daca aveti nevoie doar de suport pentru fisiere .vv, puteti obtine aSPICE Pro. Gasiti linkuri catre ambele aplicatii in dialogul de start.</string>
+
+    <string name="rdp_address_caption_hint">Server RDP</string>
+    <string name="rdp_adv_console_mode">Mod Consola</string>
+    <string name="rdp_adv_desktop_background">Afiseaza fundalul desktopului</string>
+    <string name="rdp_adv_desktop_composition">Activeaza Compunerea Desktopului</string>
+    <string name="rdp_adv_font_smoothing">Efectueaza netezirea fonturilor</string>
+    <string name="rdp_adv_menu_animation">Afiseaza Animatiile Meniului</string>
+    <string name="rdp_adv_redirect_sdcard">Redirectioneaza Cardul SD</string>
+    <string name="rdp_adv_remotefx">Activeaza RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Activeaza Stilurile Vizuale</string>
+    <string name="rdp_adv_window_contents">Afiseaza continutul ferestrei in timpul tragerii</string>
+    <string name="rdp_security_mode">Mod Securitate</string>
+    <string name="rdp_descript_geom">Dimensiunea Desktopului la Distanta (LxH)</string>
+    <string name="rdp_domain_hint">Domeniu RDP</string>
+    <string name="rdp_geom_automatic">Automat</string>
+    <string name="rdp_geom_checkbox_enable">Activeaza rezolutia personalizata</string>
+    <string name="rdp_geom_custom">Personalizat</string>
+    <string name="rdp_geom_description_hint">Serverul necesita suport ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Dezactivat</string>
+    <string name="rdp_geom_native_landscape">Nativ Peisaj</string>
+    <string name="rdp_geom_native_portrait">Nativ Portret</string>
+    <string name="rdp_security_auto">Negociere Automata Securitate</string>
+    <string name="rdp_security_rdp">Securitate RDP</string>
+    <string name="rdp_security_tls">Securitate TLS</string>
+    <string name="rdp_security_nla">Autentificare la Nivel de Retea</string>
+    <string name="rdp_intro_text">
+Multumim ca sustineti aRDP si software-ul open-source in general! Pentru ajutor cu utilizarea aRDP, vedeti elementele de Ajutor din Meniu si descrierea aplicatiei din magazin.
+&lt;br&gt;
+&lt;br&gt;
+Lista curenta de functionalitati aRDP include:
+&lt;br&gt;
+- RDP simplu, RDP tunelat prin SSH.
+&lt;br&gt;
+- Suport pentru rotire libera. Folositi Sistemul de Operare pentru a limita rotatia daca este necesar.
+&lt;br&gt;
+- Setarea rezolutiei la distanta, rezolutie nativa in modurile peisaj si portret.
+&lt;br&gt;
+- Generarea si exportul perechilor de chei publice/private SSH.
+&lt;br&gt;
+- Salvarea automata a sesiunii.
+&lt;br&gt;
+- Moduri de scalare Zoomabil, Potrivire la Ecran si Unu la Unu.
+&lt;br&gt;
+- Control multi-touch al mouse-ului la distanta in modurile de introducere Directa si Touchpad Simulat.
+&lt;br&gt;
+- Control complet cu o singura mana al mouse-ului la distanta in modul de introducere O Singura Mana.
+&lt;br&gt;
+- Clickuri de mouse multi-touch: atingere pentru Click Stanga, atingere cu doua degete pentru click dreapta, atingere cu trei degete pentru click mijloc.
+&lt;br&gt;
+- Derulare multi-touch: tragere cu doua degete Sus/Jos si Stanga/Dreapta pentru a derula.
+&lt;br&gt;
+- Taste meta si sageti pe ecran care pot fi complet dezactivate din meniu sau ascunse cu butonul de pe ecran.
+&lt;br&gt;
+- Trimitere Text si combinatii arbitrare de taste cand sunteti conectat.
+&lt;br&gt;
+- Ajutor la crearea conexiunilor (\"Meniu-&gt;Ajutor Conexiune\") in ecranul de conexiune.
+&lt;br&gt;
+- Ajutor cu modurile de introducere (\"Meniu-&gt;Mai Mult-&gt;Ajutor Mod Introducere\") cand sunteti conectat.
+&lt;br&gt;
+- Folosirea unui trackpad disponibil ca Sageti in loc de miscarea mouse-ului, si click pe trackpad ca Ctrl, rotirea D-pad/trackpad pentru tastaturi BT.
+&lt;br&gt;
+- Suport multilingv, atat timp cat serverul RDP are activata configuratia de limba necesara.
+&lt;br&gt;
+- Schimbari fara intreruperi ale rezolutiei masinii la distanta
+&lt;br&gt;
+- Suport complet pentru mouse pe dispozitive Android 4.0+, inclusiv click dreapta si mijloc si rotita de derulare.
+&lt;br&gt;
+- Alegerea modurilor de culoare
+&lt;br&gt;
+- Integrare Copiere/Lipire
+&lt;br&gt;
+- Exportarea setarilor
+&lt;br&gt;
+- Sunet
+&lt;br&gt;
+&lt;br&gt;
+Probleme cunoscute:</string>
+    <string name="rdp_intro_title">aRDP: Client RDP intuitiv si securizat</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Cand adaugati sau editati o conexiune, veti vedea o pagina de configurare a conexiunii. Aici puteti configura o noua conexiune RDP, sau alege una preexistenta. In partea de sus este un buton care va permite sa salvati conexiunea. Mai jos este locul unde va configurati conexiunea.
+
+ - Tip Conexiune: Aici alegeti tipul conexiunii RDP. Tipurile de conexiune disponibile sunt:
+   (a) RDP, care se conecteaza direct la un computer prin protocolul RDP.
+   (b) RDP prin SSH, care mai intai tuneleaza conexiunea dvs. printr-un computer care ruleaza un server SSH.
+
+ - Titlu: Fiecare conexiune creata poate avea o porecla pentru a o identifica usor in lista.
+
+ - Setari Tunel SSH: Disponibile in modul RDP prin SSH.
+   (a) Server/Port SSH: Adresa si portul serverului SSH prin care conexiunea va fi tunelata. Implicit SSH asculta pe portul 22.
+   (b) Utilizator/Parola: Numele de utilizator si parola contului de pe serverul SSH. Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+   (c) Gestioneaza Cheia/Foloseste Cheia: Un buton pentru gestionarea cheilor publice/private si o caseta care indica daca se foloseste o cheie in loc de parola pentru autentificare. Daca folositi butonul Copiaza in Clipboard dupa generarea unei perechi de chei, ar trebui sa puteti lipi cheia publica odata conectat la serverul RDP (clipboard-ul este sincronizat cu serverul).
+
+ - Setari Conexiune RDP:
+   (a) Server/Port RDP: Aici introduceti numele de gazda sau adresa IP si portul computerului care ruleaza serverul RDP la care doriti sa va conectati. In modul RDP prin SSH, aceasta adresa este asa cum se vede de pe Serverul SSH. Daca Serverul SSH si serverul RDP sunt acelasi computer fizic, puteti folosi localhost. Serverele RDP asculta de obicei pe portul 3389.
+   (b) Utilizator RDP: Aici introduceti numele de utilizator al contului dvs. Windows/UNIX.
+   (c) Domeniu RDP: Introduceti domeniul caruia ii apartine contul dvs.
+   (d) Parola RDP: Aici introduceti parola contului dvs. Windows/UNIX. Nu se foloseste stocare securizata pentru parole (sunt intr-o baza de date), iar parola va fi salvata doar daca bifati caseta \"Pastreaza\". Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+
+ - Setari avansate: In aceasta sectiune veti gasi modalitati de a personaliza rezolutia desktopului si diverse ajustari de performanta RDP.
+
+ - Ajustari Dispozitiv Local: Acestea ajusteaza comportamentul aplicatiei pe dispozitivul dvs.
+   (a) Foloseste D-Pad pentru sageti: Daca preferati, puteti folosi D-Pad-ul tastaturii Bluetooth sau sagetile de pe tastatura de pe ecran pentru a trimite sageti la serverul RDP.
+   (b) Roteste D-Pad: Telefoanele asociate cu o tastatura Bluetooth pot avea nevoie ca D-pad-ul tastaturii sa fie rotit in sens invers acelor de ceasornic pentru a trimite directiile corecte la server.
+   (c) Cursor mouse local: Daca cursorul este invizibil, selectati aceasta optiune pentru a forta desenarea lui de catre aplicatie."</string>
+    <string name="rdp_password_hint">Parola RDP</string>
+    <string name="rdp_server_empty">Serverul sau portul RDP este gol. Nu se poate conecta!</string>
+    <string name="rdp_username_hint">Utilizator RDP</string>
+
+    <string name="remote_sound_disabled">Sunet Dezactivat</string>
+    <string name="remote_sound_on_device">Sunet pe Dispozitiv</string>
+    <string name="remote_sound_on_server">Sunet pe Server</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">IMPORTANT: Daca folositi un repeater UltraVNC, introduceti adresa si portul acestuia in afara acestui dialog. Aici, introduceti adresa si portul serverului VNC real. Separati adresa si portul serverului VNC cu doua puncte, de ex. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Nu Folosi</string>
+    <string name="repeater_dialog_title">Server VNC in Spatele Repeater-ului</string>
+    <string name="repeater_empty_text">Fara repeater</string>
+    <string name="repeater_save">Foloseste</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt ca ISO L3 Shift (doar VNC)</string>
+
+    <string name="rotate_dpad">Roteste D-Pad Bluetooth sau software</string>
+
+    <string name="save_as_copy">Salveaza ca si Copie</string>
+
+    <string name="scaling">Scalare</string>
+    <string name="scaling_zoomable">Zoomabil</string>
+
+    <string name="send_button">Trimite</string>
+    <string name="send_key_again">Trimite Tasta Din Nou</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">Conexiune VNC</string>
+    <string name="shortcut_label_rdp">Conexiune RDP</string>
+    <string name="shortcut_label_spice">Conexiune SPICE</string>
+
+    <string name="showkbd_label">Tastatura</string>
+
+    <string name="single_cancel">Modul cu o singura mana anulat</string>
+    <string name="single_choose">Alegeti modul cu o singura mana sau anulati</string>
+    <string name="single_left">Mod tragere stanga - glisati pentru a trage/selecta, ridicati degetul pentru a opri</string>
+    <string name="single_middle">Mod tragere mijloc - glisati pentru a trage/selecta, ridicati degetul pentru a opri</string>
+    <string name="single_reposition">Cursorul mouse-ului a fost repozitionat pentru modul cu o singura mana</string>
+    <string name="single_right">Mod tragere dreapta - glisati pentru a trage/selecta, ridicati degetul pentru a opri</string>
+    <string name="single_scroll">Mod derulare - glisati sus/jos pentru a derula, ridicati degetul pentru a opri</string>
+    <string name="single_zoom">Mod zoom - glisati sus/jos pentru a mari/micsora, ridicati degetul pentru a opri</string>
+
+    <string name="snap_one_to_one">Fixat la zoom 1:1</string>
+
+    <string name="special_keys">Trimite Taste</string>
+
+    <string name="spice_address_caption_hint">Server SPICE</string>
+    <string name="spice_button_import_ca">Importa CA</string>
+    <string name="spice_ca_cert_path_hint">Calea catre fisierul autoritatii de certificare</string>
+    <string name="spice_ca_file_error_reading">Eroare la citirea fisierului CA. Va rugam asigurati-va ca este lizibil.</string>
+    <string name="spice_ca_file_not_found">Fisier negasit. Va rugam introduceti un nume de fisier valid in campul de text (de ex. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Subiect Certificat</string>
+    <string name="spice_intro_text">
+Multumim ca sustineti aSPICE si software-ul open-source in general! Pentru ajutor cu utilizarea aSPICE, vedeti elementele de Ajutor din Meniu si descrierea aplicatiei din magazin.
+&lt;br&gt;
+&lt;br&gt;
+Lista curenta de functionalitati aSPICE include:
+&lt;br&gt;
+- SPICE simplu, SPICE tunelat prin SSH.
+&lt;br&gt;
+- Suport pentru rotire libera. Folositi Sistemul de Operare pentru a limita rotatia daca este necesar.
+&lt;br&gt;
+- Generarea si exportul perechilor de chei publice/private SSH.
+&lt;br&gt;
+- Salvarea automata a sesiunii.
+&lt;br&gt;
+- Moduri de scalare Zoomabil, Potrivire la Ecran si Unu la Unu.
+&lt;br&gt;
+- Control multi-touch al mouse-ului la distanta in modurile de introducere Directa si Touchpad Simulat.
+&lt;br&gt;
+- Control complet cu o singura mana al mouse-ului la distanta in modul de introducere O Singura Mana.
+&lt;br&gt;
+- Clickuri de mouse multi-touch: atingere pentru Click Stanga, atingere cu doua degete pentru click dreapta, atingere cu trei degete pentru click mijloc.
+&lt;br&gt;
+- Derulare multi-touch: tragere cu doua degete Sus/Jos si Stanga/Dreapta pentru a derula.
+&lt;br&gt;
+- Taste meta si sageti pe ecran care pot fi complet dezactivate din meniu sau ascunse cu butonul de pe ecran.
+&lt;br&gt;
+- Trimitere Text si combinatii arbitrare de taste cand sunteti conectat.
+&lt;br&gt;
+- Ajutor la crearea conexiunilor (\"Meniu-&gt;Ajutor Conexiune\") in ecranul de conexiune.
+&lt;br&gt;
+- Ajutor cu modurile de introducere (\"Meniu-&gt;Mai Mult-&gt;Ajutor Mod Introducere\") cand sunteti conectat.
+&lt;br&gt;
+- Folosirea unui trackpad disponibil ca Sageti in loc de miscarea mouse-ului, si click pe trackpad ca Ctrl, rotirea D-pad/trackpad pentru tastaturi BT.
+&lt;br&gt;
+- Suport multilingv, atat timp cat serverul SPICE are activata configuratia de limba necesara.
+&lt;br&gt;
+- Schimbari fara intreruperi ale rezolutiei masinii la distanta
+&lt;br&gt;
+- Suport complet pentru mouse pe dispozitive Android 4.0+, inclusiv click dreapta si mijloc si rotita de derulare.
+&lt;br&gt;
+&lt;br&gt;
+Functionalitati planificate:
+&lt;br&gt;
+- Integrare Copiere/Lipire
+&lt;br&gt;
+- Sunet
+&lt;br&gt;
+- Imbunatatiri de performanta
+&lt;br&gt;
+Probleme cunoscute:
+&lt;br&gt;
+- Trimiterea textului nu trimite unele simboluri.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Client SPICE intuitiv si securizat</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Cand adaugati sau editati o conexiune, veti vedea o pagina de configurare a conexiunii. Aici puteti configura o noua conexiune SPICE, sau alege una preexistenta. In partea de sus este un buton care va permite sa salvati conexiunea. Mai jos este locul unde va configurati conexiunea.
+
+ - Tip Conexiune: Aici alegeti tipul conexiunii SPICE. Tipurile de conexiune disponibile sunt:
+   (a) SPICE, care se conecteaza direct la un computer prin protocolul SPICE.
+   (b) SPICE prin SSH, care mai intai tuneleaza conexiunea dvs. printr-un computer care ruleaza un server SSH.
+
+ - Titlu: Fiecare conexiune creata poate avea o porecla pentru a o identifica usor in lista.
+
+ - Setari Tunel SSH: Disponibile in modul SPICE prin SSH.
+   (a) Server/Port SSH: Adresa si portul serverului SSH prin care conexiunea va fi tunelata. Implicit SSH asculta pe portul 22.
+   (b) Utilizator/Parola: Numele de utilizator si parola contului de pe serverul SSH. Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+   (c) Gestioneaza Cheia/Foloseste Cheia: Un buton pentru gestionarea cheilor publice/private si o caseta care indica daca se foloseste o cheie in loc de parola pentru autentificare. Daca folositi butonul Copiaza in Clipboard dupa generarea unei perechi de chei, ar trebui sa puteti lipi cheia publica odata conectat la serverul SPICE (clipboard-ul este sincronizat cu serverul).
+
+ - Setari Conexiune SPICE:
+   (a) Server/Port SPICE: Aici introduceti numele de gazda sau adresa IP si portul computerului care ruleaza serverul SPICE la care doriti sa va conectati. In modul SPICE prin SSH, aceasta adresa este asa cum se vede de pe Serverul SSH. Daca Serverul SSH si serverul SPICE sunt acelasi computer fizic, puteti folosi localhost. Serverele SPICE asculta de obicei pe portul 5900 si mai sus.
+   (b) Parola SPICE: Aici introduceti parola setata pentru a proteja sesiunea SPICE. Nu se foloseste stocare securizata pentru parole (sunt intr-o baza de date), iar parola va fi salvata doar daca bifati caseta \"Pastreaza\". Parola va fi completata pe aceasta pagina daca nu ati iesit din aplicatie de cand ati introdus-o ultima data.
+
+ - Setari avansate: In aceasta sectiune veti gasi ajustari pentru dispozitivul local sau performanta SPICE.
+ - Ajustari Dispozitiv Local: Acestea ajusteaza comportamentul aplicatiei pe dispozitivul dvs.
+   (a) Foloseste D-Pad pentru sageti: Daca preferati, puteti folosi D-Pad-ul tastaturii Bluetooth sau sagetile de pe tastatura de pe ecran pentru a trimite sageti la serverul SPICE.
+   (b) Roteste D-Pad: Telefoanele asociate cu o tastatura Bluetooth pot avea nevoie ca D-pad-ul tastaturii sa fie rotit in sens invers acelor de ceasornic pentru a trimite directiile corecte la server.
+   (c) Cursor mouse local: Daca cursorul este invizibil, selectati aceasta optiune pentru a forta desenarea lui de catre aplicatie."</string>
+    <string name="spice_password_hint">Parola SPICE</string>
+    <string name="spice_server_empty">Serverul sau portul SPICE este gol. Nu se poate conecta!</string>
+    <string name="spice_tls_port_hint">Port TLS</string>
+    <string name="spice_username_hint">Utilizator SPICE</string>
+
+    <string name="ssh_passphrase_hint">Fraza de Acces SSH</string>
+    <string name="ssh_pubkey_button">Gestioneaza Cheia</string>
+    <string name="ssh_use_pubkey">Foloseste Cheia</string>
+    <string name="ssh_use_x11vnc">Desktop Automat</string>
+    <string name="ssh_x11vnc_customize">Configureaza AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Dezactiveaza</string>
+    <string name="tap_enable">Activeaza</string>
+
+    <string name="username_caption">Utilizator VNC</string>
+    <string name="username_hint">Utilizator UltraVNC MS Logon</string>
+    <string name="username_hint_optional">Utilizator VNC (optional)</string>
+    <string name="username_hint_ssh">Utilizator SSH</string>
+    <string name="username_hint_vencrypt">Utilizator VNC</string>
+    <string name="verification_code">Cod de Verificare</string>
+    <string name="verification_code_message">Va rugam introduceti Codul de Verificare pentru autentificarea cu mai multi factori</string>
+
+    <string name="view_only">Mod doar vizualizare</string>
+
+    <string name="vnc_server_empty">Serverul sau portul VNC este gol. Nu se poate conecta!</string>
+    <string name="vnc_server_empty_no_save">Serverul sau portul VNC este gol. Nu se poate salva conexiunea!</string>
+
+    <string name="warning_cert_does_not_match">ATENTIE: Certificatul x509 salvat sau semnatura transmisa nu corespunde certificatului curent al serverului! Acesta ar putea fi un atac de tip man-in-the-middle. Daca sunteti la curent cu schimbarea cheii, puteti continua. </string>
+    <string name="copy_logcat">📋 Copiaza Logcat</string>
+    <string name="log_copied">Logcat-ul a fost copiat in clipboard. Acum il puteti lipi intr-un email sau pe forumul de suport. Va rugam verificati pentru date personale inainte de a posta.</string>
+    <string name="info_set_touchpad_input_mode">Serverul raporteaza ca nu suporta Introducerea Mouse-ului in Modul Client, iar modul curent de introducere al mouse-ului nu va functiona corect. Daca problema persista, asigurati-va ca spice tools este instalat in masina virtuala sau treceti la Modul de Introducere Touchpad Simulat din Meniu.</string>
+    <string name="ssh_tunnel_settings">Setari Tunel SSH</string>
+    <string name="vnc_connection_settings">Setari Conexiune VNC</string>
+    <string name="show_advanced_settings">Afiseaza Setarile Avansate</string>
+    <string name="use_no_compression_for_local_connections">Fara compresie (conexiuni locale, codificare Hextile)</string>
+    <string name="rdp_connection_settings">Setari Conexiune RDP</string>
+    <string name="local_device_tweaks">Ajustari Dispozitiv Local</string>
+    <string name="spice_connection_settings">Setari Conexiune SPICE</string>
+    <string name="ca_subject">Introduceti aici numele subiectului certificatului. Este posibil sa nu fie necesar daca numele comun (CN) al certificatului corespunde numelui de gazda al serverului.</string>
+    <string name="path_to_ca">Introduceti o cale de fisier (de exemplu /sdcard/ca-cert.pem) si apasati Import pentru a incarca Autoritatea de Certificare.</string>
+    <string name="paste_ca">Introduceti Autoritatea de Certificare aici daca nu o importati ca fisier.</string>
+    <string name="cert_issuer">Emitent Certificat</string>
+    <string name="cert_fingerprint">Amprenta Certificatului</string>
+    <string name="error">Eroare</string>
+    <string name="panning">Panoramare Ecran</string>
+    <string name="copy_of">Copie a</string>
+    <string name="ssh_key_generated">Cheie noua generata sau importata cu succes. Acum puteti apasa butonul \'Genereaza/Exporta Cheia\' pentru a distribui, copia in clipboard sau exporta cheia publica.</string>
+    <string name="cursor_force_local">"Local"</string>
+    <string name="cursor_force_disable">"Dezactiveaza"</string>
+    <string name="cursor_mode">"Mod Cursor:"</string>
+    <string name="rendering_mode">"Mod Randare:"</string>
+    <string name="color_24_bit">"Culoare 24-bit (24 bpp)"</string>
+    <string name="color_256">"256 culori (8 bpp)"</string>
+    <string name="color_64">"64 culori (4 bpp)"</string>
+    <string name="color_8">"8 culori (2 bpp)"</string>
+    <string name="color_greyscale">"Tonuri de gri (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Alb & Negru (1 bpp)"]]></string>
+    <string name="show">"Afiseaza"</string>
+    <string name="hide">"Ascunde"</string>
+    <string name="search_connections">Cauta Conexiuni</string>
+    <string name="user_not_specified">Utilizator nespecificat</string>
+    <string name="enter_ssh_credentials">Va rugam introduceti datele de autentificare SSH</string>
+    <string name="enter_vnc_credentials">Va rugam introduceti datele de autentificare VNC</string>
+    <string name="enter_vnc_password">Va rugam introduceti parola VNC</string>
+    <string name="enter_rdp_credentials">Va rugam introduceti datele de autentificare RDP</string>
+    <string name="enter_gateway_credentials">Va rugam introduceti datele de autentificare Gateway</string>
+    <string name="enter_spice_password">Va rugam introduceti parola SPICE</string>
+    <string name="enter_passphrase_title">Introduceti Fraza de Acces pentru Cheie</string>
+    <string name="enter_passphrase">Va rugam introduceti Fraza de Acces pentru Cheie</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Serverul dvs. necesita autentificare cu parola in plus fata de autentificarea cu cheie.</string>
+    <string name="main_screen_help_text">"
+Cand aplicatia este lansata, afiseaza un ecran cu conexiunile salvate.
+
+Daca nu exista conexiuni salvate, partea inferioara a ecranului este goala si va trebui sa apasati butonul plus pentru a crea una noua.
+De asemenea, puteti controla alte aspecte ale configuratiei din acest ecran apasand pe alte optiuni din bara de instrumente sau meniu din partea de sus, de
+exemplu pentru a edita setarile implicite, sau a importa si exporta setari.
+
+Odata ce aveti o conexiune salvata, va puteti conecta la serverul la distanta atingand-o o data. Veti avea de asemenea optiunea de a o sterge sau edita printr-o atingere lunga.
+
+In cele din urma, puteti folosi campul Cauta Conexiuni pentru a gasi rapid conexiuni filtrind conexiunile afisate."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Cand adaugati sau editati o conexiune, veti vedea o pagina de configurare a conexiunii.
+Aici puteti configura o noua conexiune Opaque sau alege una preexistenta.
+In partea de sus este un buton care va permite sa salvati conexiunea.
+Mai jos este locul unde va configurati conexiunea.
+
+ - Tip Conexiune: Aici alegeti la ce Mediu de Virtualizare va conectati.
+
+ - Adresa Server: Numele de gazda sau IP-ul serverului. Daca asculta pe un port non-standard, puteti adauga un port separat prin doua puncte.
+
+ - Numele masinii virtuale: Puteti specifica numele VM-ului asa cum apare pe platforma de virtualizare sau lasati acest camp gol pentru a obtine o lista de VM-uri sau containere din care sa selectati.
+
+ - Utilizator: Introduceti numele de utilizator pentru autentificarea la platforma de virtualizare.
+
+ - Parola: Daca doriti sa salvati parola, introduceti-o aici sau lasati campul gol pentru a fi intrebat de fiecare data.
+
+ - Setari avansate: In aceasta sectiune veti gasi ajustari pentru dispozitivul local, protocol si performanta."
+    </string>
+    <string name="help">Ajutor ⓘ</string>
+    <string name="need_help">Aveti nevoie de ajutor?</string>
+    <string name="support_forum">Forum de Suport ❓</string>
+    <string name="email_us">Trimite-ne un Email 📧</string>
+    <string name="report_bug">Raporteaza o Eroare 🐛</string>
+    <string name="download_from_server">Descarca de pe Server</string>
+    <string name="import_from_file">Importa din Fisier</string>
+    <string name="please_grant_permission_from_prefs">Este posibil sa fie necesar sa acordati permisiuni aplicatiei prin Setari.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Mai Multe Jurnale de Depanare</string>
+    <string name="prefer_sending_unicode">Introducere Unicode (doar Windows)</string>
+    <string name="hide_connection_thumbnails">Ascunde Miniaturile Conexiunilor</string>
+    <string name="show_only_connection_nicknames">Afiseaza Doar Poreclele Conexiunilor</string>
+    <string name="love_our_work">Va place munca noastra?</string>
+    <string name="rate_app">Evalueaza ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Distribuie 🔗</string>
+    <string name="share_app_toast">Distribuiti un link catre aplicatie cu toti prietenii dvs. pe retelele sociale!</string>
+    <string name="donate_app">Doneaza ❤</string>
+    <string name="more_apps">Mai Multe Aplicatii 📱</string>
+    <string name="previous_versions">Versiuni Anterioare ⍼</string>
+    <string name="keyboard_type">Tipul Tastaturii Software</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Implicit (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/Numere Fara Sugestii (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text Cu Sugestii (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Aceasta conexiune este setata sa lanseze VPN printr-o aplicatie externa. Trebuie sa instalati o aplicatie precum Morpheusly pentru a o lansa.</string>
+    <string name="vnc_viewer_started">VNC Viewer pornit</string>
+    <string name="enable_gateway">Activeaza RDP Gateway</string>
+    <string name="scroll_speed">Viteza de Derulare la Atingere</string>
+    <string name="desktop_scale_percentage">Procent de Scalare Personalizat</string>
+    <string name="show_menu">Afiseaza Meniul</string>
+    <string name="move_toolbar">Muta Bara de Instrumente</string>
+    <string name="rdp_adv_glyph_cache">Activare cache glife</string>
+
+    <string name="disable_battery_optimizations_failed">
+Nu s-au putut deschide setările de optimizare a bateriei. Dezactivați manual optimizarea bateriei în setările sistemului.</string>
+    <string name="disable_battery_optimizations">
+🔋Dezactivați optimizările bateriei</string>
+    <string name="disable_battery_optimizations_already_done">
+Aplicația este deja scutită de optimizările bateriei.</string>
+    <string name="no_connections_title">Nicio conexiune încă</string>
+    <string name="no_connections_hint">Atingeți butonul + pentru a adăuga prima conexiune la distanță</string>
+    <string name="no_connections_hint_tv">Apăsați butonul + de mai sus pentru a adăuga prima conexiune la distanță</string>
+    <string name="keyboard_layout_map">Aspect tastatură</string>
+</resources>

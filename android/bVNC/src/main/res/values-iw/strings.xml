@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">מצב צבע</string>
+    <string name="message_please_wait">אנא המתן</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">ברירת מחדל (TYPE_NULL)</string>
+    <string name="ad_donate_text2">גרסת ה-Pro מאפשרת לך להשבית את הדו-שיח הזה ונותנת לך גישה לתכונות נוספות.</string>
+    <string name="snap_one_to_one">צולם לזום 1:1</string>
+    <string name="spice_intro_title">aSPICE: לקוח SPICE אינטואיטיבי ומאובטח</string>
+    <string name="auto_x_title">הגדר את AutoX</string>
+    <string name="error_ovirt_auth_failure">כשל באימות.אנא בדוק את המשתמש והסיסמה שסופקו.</string>
+    <string name="ad_donate_text1">הקש כאן כדי לתמוך בפרויקט בתרומה קטנה על ידי קניית גרסת ה-Pro.</string>
+    <string name="auto_x_geom_custom">מִנְהָג</string>
+    <string name="repeater_caption_hint">משחזר UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">פענוח צמד המפתחות נכשל.אנא ודא שהזנת נכון את ביטוי הסיסמה שלך בשדה \'ביטוי סיסמה SSH\' במסך הראשי.</string>
+    <string name="master_password_hint_twice">חזור על סיסמה</string>
+    <string name="connection_setup_password">סִיסמָה</string>
+    <string name="support_forum">פורום תמיכה ❓</string>
+    <string name="main_screen_help">עזרה בחיבור</string>
+    <string name="spice_server_empty">SPICE שרת או יציאה ריקים.לא מצליח להתחבר!</string>
+    <string name="arrow_up">חץ למעלה</string>
+    <string name="error_vm_lookup_failed">לא ניתן היה למצוא מכונה וירטואלית עם השם שצוין שהוקצה למשתמש שלך.אנא מחק את שם ה-VM שצוין כדי לראות רשימה של מכשירי VM שהוקצו למשתמש.</string>
+    <string name="nickname_caption">כינוי</string>
+    <string name="auto_x_geom_native">יָלִיד</string>
+    <string name="new_connection">חיבור חדש</string>
+    <string name="error_ssh_unable_to_connect">נכשל החיבור לשרת SSH.בדוק את קישוריות הרשת ואת הכתובת והיציאה של שרת SSH.</string>
+    <string name="send_key_again">שלח מפתח שוב</string>
+    <string name="input_mode_help">עזרה במצב קלט</string>
+    <string name="enable_gateway">הפעל RDP Gateway</string>
+    <string name="message_please_install_bvnc">אנא התקן את &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; מ-Google Play כדי להתחבר למסוף VNC של VM זה.</string>
+    <string name="spice_ca_cert_path_hint">נתיב לקובץ רשות האישורים</string>
+    <string name="enter_spice_password">נא להזין את סיסמת SPICE</string>
+    <string name="rdp_adv_window_contents">הצג את תוכן החלון תוך כדי גרירה</string>
+    <string name="input_methods">שיטת קלט</string>
+    <string name="info_ssh_key_fingerprint">טביעת האצבע של מפתח המארח היא:</string>
+    <string name="paste_ca">הזן כאן את רשות האישורים אם אינך מייבא אותה כקובץ.</string>
+    <string name="enter_otp_code">נא להזין קוד OTP</string>
+    <string name="spice_connection_screen_help_text">כאשר תוסיף או תערוך חיבור, תראה דף תצורת חיבור.כאן אתה יכול להגדיר חיבור SPICE חדש, או לבחור חיבור קיים.בחלק העליון יש כפתור המאפשר לשמור את החיבור.למטה זה המקום שבו אתה מגדיר את החיבור שלך.
+
+- סוג חיבור: כאן אתה בוחר את סוג החיבור SPICE.סוגי החיבור הזמינים הם:
+(א) SPICE, המתחבר ישירות למחשב באמצעות פרוטוקול SPICE.
+(ב) SPICE מעל SSH, אשר תחילה מעביר את החיבור שלך דרך מחשב המריץ שרת SSH.
+
+- כותרת: לכל חיבור שאתה יוצר יכול להיות כינוי כדי לזהות אותו בקלות ברשימה.
+
+- הגדרות מנהרת SSH: זמין במצב SPICE מעל SSH.
+(א) שרת/פורט SSH: הכתובת והיציאה של שרת ה-SSH שהחיבור יעבור דרכו.כברירת מחדל, SSH מאזין ביציאה 22.
+(ב) שם משתמש/סיסמה: שם המשתמש והסיסמה של החשבון בשרת SSH.הסיסמה תתמלא בעמוד זה אם לא יצאת מהאפליקציה מאז שהזנת אותה לאחרונה.
+(ג) ניהול מפתח/מפתח שימוש: כפתור לניהול מפתחות ציבוריים/פרטיים, ותיבה שמציינת אם להשתמש במפתח ולא בסיסמה לאימות.אם אתה משתמש בלחצן העתק ללוח לאחר יצירת צמד מפתחות, אתה אמור להיות מסוגל להדביק את המפתח הציבורי לאחר חיבור לשרת SPICE (הלוח מסונכרן עם השרת).
+
+- הגדרות חיבור SPICE:
+(א) שרת/יציאת SPICE: כאן אתה מזין את שם המארח או כתובת ה-IP והיציאה של המחשב המריץ את שרת SPICE שאליו ברצונך ליצור קשר.במצב SPICE over SSH, כתובת זו היא כפי שניתן לראות משרת SSH.אם שרת SSH ושרת SPICE הם אותו מחשב פיזי, אתה יכול להשתמש ב-localhost.שרתי SPICE מאזינים בדרך כלל ביציאה 5900 ומעלה.
+(ב) סיסמת SPICE: כאן אתה מזין את הסיסמה שהוגדרה כדי להגן על הפעלת SPICE שלך.אחסון מאובטח אינו משמש עבור סיסמאות (הן נמצאות במסד נתונים), והסיסמה תישמר רק אם תסמן את התיבה Keep.הסיסמה תתמלא בעמוד זה אם לא יצאת מהאפליקציה מאז שהזנת אותה לאחרונה.
+
+- הגדרות מתקדמות: בחלק זה תמצא כל מכשיר מקומי או ביצועים של SPICE
+- כוונון מכשירים מקומיים: אלה משנים את התנהגות האפליקציה במכשיר שלך.
+(א) השתמש ב-D-Pad לחצים: אם אתה מעדיף, תוכל להשתמש ב-D-Pad של מקלדת ה-Bluetooth שלך או בחצים במקלדת שעל המסך כדי לשלוח חיצים לשרת SPICE.
+(ב) סובב את ה-D-Pad: טלפונים המשודכים למקלדת Bluetooth עשויים להזדקק לסיבוב ה-D-Pad של המקלדת נגד כיוון השעון כדי לשלוח הנחיות נכונות לשרת.
+(ג) מצביע עכבר מקומי: אם המצביע אינו נראה, בחר באפשרות זו כדי לאלץ אותו לציור על ידי האפליקציה.</string>
+    <string name="auto_x_disabled_selection">AutoX מושבת</string>
+    <string name="button_send_text">שלח טקסט</string>
+    <string name="shortcut_label_spice">חיבור SPICE</string>
+    <string name="keep_screen_awake_enable">השאר את המסך ער</string>
+    <string name="open_doc">מדריך/ויקי</string>
+    <string name="remote_sound_disabled">סאונד מושבת</string>
+    <string name="spice_ca_file_not_found">הקובץ לא נמצא.אנא הזן שם קובץ חוקי בשדה הטקסט (למשל /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: לקוח RDP אינטואיטיבי ומאובטח</string>
+    <string name="error_pve_api_unexpected_code">תגובה לא צפויה מהסביבה הווירטואלית של Proxmox:</string>
+    <string name="error_out_of_memory">לא ניתן להקצות מספיק זיכרון לציור מסך מרוחק.נסה להפעיל מחדש את האפליקציה ולאחר מכן הפעל מחדש את המכשיר.אתה יכול גם לנסות להקטין את גודל שולחן העבודה המרוחק דרך הגדרות האפליקציה.</string>
+    <string name="enter_passphrase_title">הזן ביטוי סיסמה מפתח</string>
+    <string name="rdp_adv_remotefx">הפעל את RemoteFX</string>
+    <string name="ok">בְּסֵדֶר</string>
+    <string name="rdp_adv_desktop_background">הצג רקע לשולחן העבודה</string>
+    <string name="desktop_scale_percentage">אחוז קנה מידה מותאם אישית</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="rdp_adv_font_smoothing">בצע החלקת גופנים</string>
+    <string name="rdp_domain_hint">דומיין RDP</string>
+    <string name="custom_ca_subject">נושא תעודה אופציונלי.אין צורך אם אישור CN תואם לשם המארח</string>
+    <string name="color_24_bit">צבע 24 סיביות (24 bpp)</string>
+    <string name="ssh_passphrase_hint">ביטוי סיסמה של SSH</string>
+    <string name="username_hint">שם משתמש לכניסה ל-UltraVNC MS</string>
+    <string name="error_failed_to_download_https">הורדת הקובץ דרך HTTPS נכשלה.אולי אישור השרת שלך אינו מהימן (פג תוקפו או חתום בחתימה עצמית) או שלא ניתן להגיע לשרת שלך.</string>
+    <string name="rdp_geom_checkbox_enable">אפשר רזולוציה מותאמת אישית</string>
+    <string name="enter_rdp_credentials">אנא הזן אישורי RDP</string>
+    <string name="error_dialog_title">שְׁגִיאָה</string>
+    <string name="ssl_strict">דרוש שם נפוץ כדי להתאים לאישור (מומלץ)</string>
+    <string name="master_password_hint_once">הזן סיסמה</string>
+    <string name="one_to_one">אחד לאחד</string>
+    <string name="action_rate_or_share_app">⭐ קבל עזרה, דרג, שתף</string>
+    <string name="error_ssh_kbd_auth_method_unavail">שרת ה-SSH אינו תומך בשיטות אימות \password\ או \keyboard-interactive\ או דורש תחילה שיטת \publickey\.אנא הגדר אותו כך שיאפשר לפחות אחת משתי השיטות, או הגדר מחדש את היישום.שיטות אימות זמינות:</string>
+    <string name="import_settings">יְבוּא</string>
+    <string name="hide_toolbar">הסתר את סרגל הכלים</string>
+    <string name="verification_code_message">אנא הזן את קוד האימות מרובה גורמים</string>
+    <string name="need_help">צריך קצת עזרה?</string>
+    <string name="rdp_security_auto">משא ומתן אוטומטי על אבטחה</string>
+    <string name="master_password_error_failed_to_enable">לא ניתן להפעיל את סיסמת האב.בדוק מקום פנוי במכשיר שלך ונסה שוב.</string>
+    <string name="cert_issuer">מנפיק תעודה</string>
+    <string name="error">שְׁגִיאָה</string>
+    <string name="error_anon_dh_unsupported">שרת VNC מנסה להשתמש בצפנים אנונימיים Diffie Hellman שאינם נתמכים במכשיר האנדרואיד שלך.אם אתה משתמש בשרת Vino VNC של GNOME, אתה יכול להשבית את AnonTLS על ידי הפעלת הפקודה הבאה בטרמינל ולאחר מכן הפעלה מחדש: \gsettings set org.gnome.Vino require-encryption false\.אם מריצים x11vnc, אתה יכול להוסיף את האפשרויות הבאות: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">גלגל גלילה</string>
+    <string name="auto_x_session_auto">אוטומטי</string>
+    <string name="enter_gateway_credentials">אנא הזן את אישורי השער</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">פרויקט הקוד הפתוח זקוק לתמיכתך!תרמו לנו על ידי רכישת bVNC Pro.ראה למטה קישורים ל-bVNC Pro ולאפליקציות האחרות שלנו.</string>
+    <string name="input_method_mouse">בקרת מצביע עכבר</string>
+    <string name="pro_feature_rdp">נראה שניסית לפתוח קובץ .rdp שהוא תכונת Pro.נא לתמוך בפרויקט על ידי רכישת aRDP Pro, התומך בקבצי .rdp.קישור לגרסת aRDP Pro זמין בתיבת הדו-שיח \'התחל\'.</string>
+    <string name="opaque_connection_screen_help_text">כאשר תוסיף או תערוך חיבור, תראה דף תצורת חיבור.
+כאן אתה יכול להגדיר חיבור אטום חדש או לבחור חיבור קיים.
+בחלק העליון יש כפתור המאפשר לשמור את החיבור.
+למטה זה המקום שבו אתה מגדיר את החיבור שלך.
+
+- סוג חיבור: כאן אתה בוחר לאיזו סביבת וירטואליזציה אתה מתחבר.
+
+- כתובת שרת: שם המארח או ה-IP של השרת.אם הוא מאזין ביציאה לא סטנדרטית, אתה יכול להוסיף יציאה מופרדת באמצעות נקודתיים.
+
+- שם מכונה וירטואלית: אתה יכול לציין את שם ה-VM כפי שהוא מופיע בפלטפורמת הוירטואליזציה שלך או להשאיר שדה זה ריק כדי לקבל רשימה של מכשירי VM או קונטיינרים לבחירה.
+
+- משתמש: הזן את שם המשתמש כדי לבצע אימות למסגרת הוירטואליזציה שלך.
+
+- סיסמה: אם ברצונך לשמור את הסיסמה, הזן אותה כאן או השאר את השדה ריק כדי לשאול אותה בכל פעם.
+
+- הגדרות מתקדמות: בחלק זה תמצא כל מכשיר מקומי, פרוטוקול וביצועים.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">טקסט עם הצעות (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">העתק רשימה</string>
+    <string name="master_password_error_failed_to_disable">לא ניתן להשבית את סיסמת האב.בדוק מקום פנוי במכשיר שלך ונסה שוב.</string>
+    <string name="use_no_compression_for_local_connections">אין דחיסה (חיבורים מקומיים, קידוד הקסטילי)</string>
+    <string name="input_mode_help_text">בכל מצב קלט, הקש על סמל המקלדת כדי לקבל את המקלדת שעל המסך.כמו כן, ייתכן שלמכשיר שלך יש מחווה משלו שמעלה את המקלדת.
+
+השתמש במצבי קלט ישיר לשליטה אינטואיטיבית יותר במסך המגע.השתמש במצב משטח מגע מדומה לשליטה עדינה יותר על העכבר.
+
+מצב תנועה ישיר, החלקה:
+- שלטו בעכבר ישירות באמצעות מגע.
+- החלק כדי לסובב.
+- הקשה גורמת ללחוץ על העכבר היכן שהקשת.
+- אירועי גלילה נשלחים בין שתי האצבעות במקום שבו החלה החלקה עם שתי אצבעות.
+
+מצב ישיר, החזק פאן:
+- שלטו בעכבר ישירות באמצעות מגע.
+- הקש ארוכות כדי להתחיל במצב פאן.
+- הקשה גורמת ללחוץ על העכבר היכן שהקשת.
+- אירועי גלילה נשלחים בין שתי האצבעות במקום שבו החלה החלקה עם שתי אצבעות.
+
+מצב משטח מגע מדומה:
+- השתמש במסך שלך כמו משטח מגע.
+- החלק כדי להזיז את מצביע העכבר.
+- הזז את העכבר מעבר לקצה המסך כדי להזיז.
+- הקשה גורמת ללחיצת העכבר במקום שבו נמצא המצביע.
+- אירועי גלילה נשלחים למקום שבו ממוקם מצביע העכבר.
+
+מצב ביד אחת:
+- זהה למצב Direct, Swipe Pan, למעט הקשה ארוכה על פתיחת תפריט עם מבחר מצבים.
+- לאחר בחירת מצב, החלקת האצבע על המסך מבצעת את המחווה שנבחרה.
+- הרמת אצבע משלימה את המחווה.
+
+כל מצבי הקלט:
+- לחיצה שמאלית: הקש פעם אחת.
+- לחיצה כפולה: הקש פעמיים.
+- קליק ימני: הקש והחזק והקש באצבע שנייה (בכל מקום אחר במסך).
+- לחיצה ימנית חלופית: השתמש בלחצן \Back\ או במחווה עבור המכשיר שלך.
+- לחיצה אמצעית: הקש והחזק והקש עם שתי אצבעות נוספות (בכל מקום אחר במסך).
+- גרירת עכבר: הקש-החזק-ארוך והחלק.
+- גלגל גלילה: גרור בשתי אצבעות למעלה/מטה ושמאלה/ימינה.גרירה מהירה גוללת מהר יותר.
+- הגדלה/הקטנה: בשינוי קנה המידה הניתן להגדלה, צביטה זום כדי לשלוט בקנה המידה.
+- מקש Ctrl/Alt: כפתורי תפריט-&gt;Ctrl/Alt.אל תשכח לכבות בסיום!
+- שילובי מקשים: תפריט-&gt;עוד-&gt;שלח מקשים.
+- שלח טקסט: הקלד במקלדת שעל המסך, או השתמש בתפריט-&gt;עוד-&gt;שלח טקסט.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt כ-ISO L3 Shift (VNC בלבד)</string>
+    <string name="error_uri_noinfo_nosave">אין מספיק מידע ספציפי לחיבור.</string>
+    <string name="single_reposition">מצביע העכבר ממוקם מחדש למצב ביד אחת</string>
+    <string name="auto_x_cancel">לְבַטֵל</string>
+    <string name="vv_file_not_found">קובץ ה-.vv לא נמצא!</string>
+    <string name="error_pve_failed_to_authenticate">נכשל האימות לסביבה הוירטואלית של Proxmox.אנא ודא שאתה מזין את שם המשתמש שלך בפורמט user@realm ושהסיסמה שלך נכונה.</string>
+    <string name="save_as_copy">שמור כהעתק</string>
+    <string name="info_cert">האם אתה מקבל אישור מארח חדש או שונה זה?\n\nטביעות אצבע:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nהונפק ל: %4$s\nהונפק על ידי: %5$s\n\nתקף מ: %6$s\nתקף עד: %6$s\nתקף עד\n:</string>
+    <string name="more_debug_logging">רישום באגים נוסף</string>
+    <string name="error_ssh_key_auth_fail">נכשל האימות לשרת SSH עם צמד מפתחות.אנא בדוק את שם המשתמש שלך ב-SSH, וודא שהמפתח הציבורי שלך נמצא בקובץ authorized_keys בצד המרוחק.</string>
+    <string name="error_vnc_authentication">אימות VNC נכשל!בדוק את סיסמת VNC (ומשתמש אם רלוונטי).</string>
+    <string name="toggle_keyboard">החלף מקלדת</string>
+    <string name="help">עזרה ⓘ</string>
+    <string name="repeater_caption">חשוב: אם אתה משתמש ב-UltraVNC repeater, הזן את הכתובת והיציאה שלו מחוץ לשיח זה.כאן, הזן את הכתובת והיציאה של שרת VNC בפועל.הפרד את הכתובת והיציאה של שרת ה-VNC באמצעות נקודתיים, למשל.192.168.0.100:5900.</string>
+    <string name="color_8">8 צבעים (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">אין אפשרות להתחבר או לאמת, אנא בדוק את כתובת השרת, המשתמש, הסיסמה וסמכות האישור והנושא.</string>
+    <string name="error_rdp_authentication_failed">אימות RDP נכשל!אנא בדוק את שם המשתמש והסיסמה של RDP ונסה שוב.</string>
+    <string name="delete_key_list">מחק רשימת מפתחות</string>
+    <string name="input_method_direct_swipe_pan_description">תנועה ישירה, החלקה: החלק כדי להזיז מסביב.הקש באצבע אחת בכל מקום שבו תרצה ללחוץ שמאל, שתי אצבעות ללחיצה ימנית ושלוש אצבעות ללחיצה אמצעית.החלק בשתי אצבעות כדי לגלול.הקש ארוכות כדי לגרור ולשחרר.</string>
+    <string name="address_caption_hint">שרת VNC</string>
+    <string name="auto_x_unixpw">השתמש באישורי UNIX במקום במנגנון האבטחה המובנה.המשתמש חייב להיות מסוגל להריץ /bin/su.</string>
+    <string name="input_method_touchpad">משטח מגע מדומה</string>
+    <string name="fit_to_screen">התאמה למסך</string>
+    <string name="list_name_caption">שם רשימה</string>
+    <string name="copy_logcat">📋 העתק את Logcat</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA מותאם אישית</string>
+    <string name="info_progress_dialog_downloading">הורד את המסגרת הראשונה.\אנא המתן...</string>
+    <string name="local_mouse_check">מצביע עכבר מקומי (בחר אם המצביע אינו נראה)</string>
+    <string name="rdp_server_empty">שרת RDP או יציאה ריקים.לא מצליח להתחבר!</string>
+    <string name="rendering_mode">מצב עיבוד:</string>
+    <string name="rdp_adv_visual_styles">אפשר סגנונות חזותיים</string>
+    <string name="error_ovirt_timeout">תם הזמן הקצוב לחיבור ל-VM שלך.אנא בדוק שהכתובת של הצומת המריץ את ה-VM שלך נכונה, שהיא נגישה מהרשת הנוכחית שלך ושאין חומת אש חוסמת את החיבור.</string>
+    <string name="extra_keys_enable">אפשר מפתחות נוספים</string>
+    <string name="showkbd_label">מִקלֶדֶת</string>
+    <string name="audio">שֶׁמַע</string>
+    <string name="ssh_x11vnc_customize">הגדר את AutoX</string>
+    <string name="address_caption_ssh_hint">שרת SSH</string>
+    <string name="info_progress_dialog_connecting">מְקַשֵׁר…</string>
+    <string name="donate_app">לתרום ❤</string>
+    <string name="rdp_security_rdp">אבטחת RDP</string>
+    <string name="applies_to_new_connections_only">חל על חיבורים חדשים בלבד</string>
+    <string name="spice_button_import_ca">ייבוא ​​CA</string>
+    <string name="scaling_zoomable">ניתן להגדלה</string>
+    <string name="error_ssh_port_forwarding_failure">לא ניתן היה להגדיר את העברת הפורטים עבור מנהור תעבורת VNC דרך SSH.אנא ודא ששרת ה-SSH שלך מוגדר לאפשר העברת יציאות ונסה שוב.</string>
+    <string name="rdp_adv_desktop_composition">אפשר קומפוזיציה של שולחן העבודה</string>
+    <string name="scroll_speed">גע במהירות גלילה</string>
+    <string name="rdp_address_caption_hint">שרת RDP</string>
+    <string name="send_button">לִשְׁלוֹחַ</string>
+    <string name="love_our_work">אוהבים את העבודה שלנו?</string>
+    <string name="download_from_server">הורד מהשרת</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">השרת שלך זקוק לאימות סיסמה בנוסף לאימות מפתח.</string>
+    <string name="input_method_single_handed">ביד יחידה</string>
+    <string name="username_hint_ssh">שם משתמש SSH</string>
+    <string name="auto_x_enabled">מופעל</string>
+    <string name="password_hint_ssh">סיסמת SSH</string>
+    <string name="audio_will_be_initialized">האודיו יאתחל תוך כ-15 שניות, אנא הפסק כל השמעת וידאו או אודיו פועלים לפני כן</string>
+    <string name="shortcut_label_vnc">חיבור VNC</string>
+    <string name="auto_request_new_res">סנכרון שלט לרזולוציית תצוגה</string>
+    <string name="color_256">256 צבעים (8 bpp)</string>
+    <string name="intro_title">bVNC: לקוח VNC אינטואיטיבי ומאובטח</string>
+    <string name="error_x509_could_not_generate_encoding">לא ניתן היה ליצור קידוד אישור.</string>
+    <string name="rdp_security_tls">אבטחת TLS</string>
+    <string name="action_import_settings">הגדרות ייבוא</string>
+    <string name="single_cancel">מצב ביד אחת בוטל</string>
+    <string name="info_set_touchpad_input_mode">השרת מדווח שאינו תומך בקלט עכבר במצב לקוח, ומצב הקלט הנוכחי של העכבר לא יפעל כראוי.אם זה נמשך, ודא שכלי תבלינים מותקנים במכונה הוירטואלית או עבור למצב קלט משטח מגע מדומה מהתפריט.</string>
+    <string name="email_us">שלח לנו דוא"ל 📧</string>
+    <string name="color_64">64 צבעים (4 bpp)</string>
+    <string name="copy_of">עותק של</string>
+    <string name="ssh_key_generated">מפתח חדש נוצר או יובא בהצלחה.כעת תוכל להקיש על כפתור \'צור/ייצא מפתח\' כדי לשתף, להעתיק ללוח או לייצא את המפתח הציבורי.</string>
+    <string name="repeater_button">משחזר UltraVNC</string>
+    <string name="info_dialog_title">מידע</string>
+    <string name="local_clipboard_integration">אפשר שילוב של לוח מקומי למרוחק</string>
+    <string name="cursor_force_local">מְקוֹמִי</string>
+    <string name="list_caption">רְשִׁימָה</string>
+    <string name="master_password_error_password_necessary">נדרשת סיסמת מאסטר על מנת להמשיך.</string>
+    <string name="ssh_use_pubkey">השתמש במפתח</string>
+    <string name="super_check">סוּפֶּר</string>
+    <string name="enter_text">שלח טקסט</string>
+    <string name="import_export_settings">📦 הגדרות ייבוא/ייצוא</string>
+    <string name="info_progress_dialog_aborted">החיבור הופסק!</string>
+    <string name="input_method_single_handed_description">ביד אחת: החלק כדי לסובב.הקש באצבע אחת בכל מקום שתרצה ללחוץ על הלחצן השמאלי.הקש ארוכות כדי לבחור במצב גרירה/גלילה/זום שמאלה/ימינה/אמצעית.גם בקרות הרב-מגע הרגילות פועלות.</string>
+    <string name="verification_code">קוד אימות</string>
+    <string name="extra_keys_disable">השבת מפתחות נוספים</string>
+    <string name="rotate_dpad">סובב את Bluetooth או תוכנת D-Pad</string>
+    <string name="intro_close">לִסְגוֹר</string>
+    <string name="master_password_error_shortcuts_not_supported">קיצורי דרך אינם נתמכים עדיין כאשר סיסמת מאסטר מופעלת.</string>
+    <string name="enter_vnc_credentials">אנא הזן אישורי VNC</string>
+    <string name="connection_edit">לַעֲרוֹך</string>
+    <string name="error_spice_unable_to_connect">אין אפשרות להתחבר או לאמת, אנא בדוק את כתובת השרת והיציאה.</string>
+    <string name="remote_sound_on_server">סאונד בשרת</string>
+    <string name="left_handed_mode">מצב יד שמאל</string>
+    <string name="info_ssh_initializing_hostkey">ניסיון לאתחל את SSH HostKey.</string>
+    <string name="connect_button">לְחַבֵּר</string>
+    <string name="ca_new_or_changed">אישור שרת חדש או שונה</string>
+    <string name="close">לִסְגוֹר</string>
+    <string name="master_password_verify">אמת את סיסמת האב</string>
+    <string name="error_no_vnc_support_yet">סוג תצוגה VNC עדיין לא נתמך, אבל זו תכונה קרובה.תודה על ההבנה שלך!</string>
+    <string name="rdp_connection_settings">הגדרות חיבור RDP</string>
+    <string name="immersive_mode_disable">השבת את מצב ה-Immersive</string>
+    <string name="error_pve_null_data">הסביבה הווירטואלית של Proxmox החזירה נתונים null.</string>
+    <string name="auto_x_descript_geom">גודל שולחן עבודה מרוחק (WxH)</string>
+    <string name="enter_passphrase">אנא הזן ביטוי סיסמה מפתח</string>
+    <string name="action_edit_default_settings">⚙ ערוך הגדרות ברירת מחדל</string>
+    <string name="ca_spice_manage">נהל את SPICE CA</string>
+    <string name="color_mode">מצב צבע</string>
+    <string name="back_button">לַחֲזוֹר</string>
+    <string name="rate_app">דרג ⭐⭐⭐⭐⭐</string>
+    <string name="off">כבוי</string>
+    <string name="ssh_tunnel_settings">הגדרות מנהרת SSH</string>
+    <string name="error_pve_vmid_not_numeric">מזהה VM אינו מספרי.אנא הזן מזהה VM מספרי או השאר ריק כדי לבחור את ה-VM מתוך רשימה.</string>
+    <string name="cert_subject">נושא התעודה</string>
+    <string name="rdp_descript_geom">גודל שולחן עבודה מרוחק (WxH)</string>
+    <string name="master_password_error_wrong_password">לא ניתן היה לבצע אימות באמצעות סיסמת האב שסופקה.</string>
+    <string name="error_pick_correct_item">אנא ודא שבחרת את הפריט הנכון בסוג חיבור.</string>
+    <string name="input_method_direct_drag_pan">ישיר, החזק פאן</string>
+    <string name="auto_rotation">סיבוב מסך בזמן חיבור</string>
+    <string name="master_password_verify_message">אנא הזן את סיסמת האב הנכונה כדי להמשיך.</string>
+    <string name="error_connection_interrupted">החיבור נקטע.</string>
+    <string name="auto_x_descript_session">סוג הפעלה מרחוק</string>
+    <string name="action_new_connection">✚ חיבור חדש</string>
+    <string name="enter_text_title">הזן טקסט לשליחה</string>
+    <string name="shortcut_label_rdp">חיבור RDP</string>
+    <string name="spice_address_caption_hint">שרת SPICE</string>
+    <string name="rdp_geom_description_hint">השרת זקוק לתמיכה ב- ExtendedDesktopSize</string>
+    <string name="audio_initialized">אודיו אותחל</string>
+    <string name="intro_text">רשימה נוכחית של תכונות bVNC:
+&lt;br&gt;
+- VNC רגיל, VNC מאובטח על SSH, AnonTLS ו-VeNCrypt, וכניסה ל-Windows UltraVNC עם Repeater אופציונלי.
+&lt;br&gt;
+- מצב AutoX: במצב VNC over SSH, גלה אוטומטית קיימים ו/או צור הפעלות X חדשות באמצעות x11vnc!עובד כמו לקוח NX.
+&lt;br&gt;
+- תמיכה חופשית בסיבוב.השתמש במערכת ההפעלה כדי להגביל את הסיבוב במידת הצורך.
+&lt;br&gt;
+- יצירת צמד מפתחות SSH ציבורי/פרטי וייצוא.
+&lt;br&gt;
+- כל קידודי ה-VNC הסטנדרטיים, כולל Tight, ZRLE ו-CopyRect.
+&lt;br&gt;
+- שמירת הפעלה אוטומטית.
+&lt;br&gt;
+- ניתן להגדיל, התאמה למסך ומצבי קנה מידה אחד לאחד.
+&lt;br&gt;
+- שליטה מרובה מגע על עכבר מרוחק במצבי קלט ישיר וסימולציה של לוח מגע.
+&lt;br&gt;
+- שליטה מלאה ביד אחת על עכבר מרחוק במצב קלט ביד אחת.
+&lt;br&gt;
+- לחיצות עכבר רב-מגע: הקש ללחיצה שמאלית, הקשה בשתי אצבעות ללחיצה ימנית, הקשה בשלוש אצבעות ללחיצה אמצעית.
+&lt;br&gt;
+- גלילה מרובה מגע: גרור בשתי אצבעות למעלה/מטה, ושמאלה/ימינה כדי לגלול.
+&lt;br&gt;
+- מטא ומקשי חצים על המסך שניתן להשבית לחלוטין מהתפריט או לאחסן אותם עם כפתור על המסך.
+&lt;br&gt;
+- שליחת טקסט ושילובי מקשים שרירותיים בעת חיבור.
+&lt;br&gt;
+- עזרה ביצירת חיבורים (\תפריט-&gt;עזרה לחיבור\) במסך החיבור.
+&lt;br&gt;
+- עזרה במצבי קלט (\תפריט-&gt;עוד-&gt;עזרה במצב קלט\) בעת חיבור.
+&lt;br&gt;
+- שימוש במשטח עקיבה זמין כחצים במקום להזיז את העכבר, ולחצו על משטח עקיבה כ-Ctrl.
+&lt;br&gt;
+- מעבר למצב פורטרט במהלך חיבורים, סיבוב D-pad/משטח מגע למקלדות BT.
+&lt;br&gt;
+- תמיכה בריבוי שפות, כל עוד שרת VNC מופעלת בפריסת השפה הדרושה.
+&lt;br&gt;
+- שילוב העתק/הדבק
+&lt;br&gt;
+- שינויים ברזולוציית המכונה מרחוק
+&lt;br&gt;
+- תמיכה מלאה בעכבר במכשירי Android 4.0+, כולל קליק ימני ואמצעי וגלגל גלילה.
+&lt;br&gt;
+&lt;br&gt;
+בעיות ידועות:
+&lt;br&gt;</string>
+    <string name="color_greyscale">גווני אפור (1 bpp)</string>
+    <string name="share_app_toast">שתף קישור לאפליקציה עם כל החברים שלך ברשתות החברתיות!</string>
+    <string name="force">מפת סיביות במסך מלא</string>
+    <string name="input_method_touchpad_description">לוח מגע מדומה: החלק כדי להזיז את המצביע.הקש בכל מקום באצבע אחת ללחיצה שמאלית, שתי אצבעות ללחיצה ימנית ושלוש אצבעות ללחיצה אמצעית.החלק בשתי אצבעות כדי לגלול.הקש ארוכות כדי לגרור ולשחרר.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nאתה יכול לוודא שהוא זהה לטביעת האצבע הידועה של תעודת השרת כדי למנוע התקפת אדם באמצע.</string>
+    <string name="error_no_vm_found_for_user">אין מכונות וירטואליות זמינות עבור המשתמש הנתון.</string>
+    <string name="color_black_and_white">שחור ולבן (1 bpp)</string>
+    <string name="auto">אוטומטי</string>
+    <string name="pro_feature_generic">נראה שאתה משתמש בתכונת Pro.אנא תמכו בפרויקט על ידי רכישת גרסת ה-Pro שיש לה תמיכה בתכונה זו.קישור לגרסת ה-Pro זמין בתיבת הדו-שיח \'התחל\'.</string>
+    <string name="rdp_geom_custom">מִנְהָג</string>
+    <string name="default_input_mode">מצב קלט ברירת מחדל</string>
+    <string name="repeater_empty_text">אין משחזר</string>
+    <string name="ad_donate_text_rdp">פרויקט הקוד הפתוח זקוק לתמיכתך!תרמו לנו על ידי רכישת aRDP Pro, התומך בהפניית קול.ראה למטה קישורים ל- aRDP Pro ולאפליקציות האחרות שלנו.</string>
+    <string name="spice_tls_port_hint">יציאת TLS</string>
+    <string name="scaling">דֵרוּג</string>
+    <string name="spice_connection_settings">הגדרות חיבור SPICE</string>
+    <string name="error_pve_failed_to_parse_json">ניתוח התגובה מהסביבה הוירטואלית של Proxmox נכשל.</string>
+    <string name="error_ovirt_ssl_handshake_failure">כשל בלחיצת יד SSL.יש בעיה באישור SSL של השרת.אם אתה משתמש באישור בחתימה עצמית, עליך לייבא (מחדש) את רשות האישורים שלך.</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="vnc_viewer_started">VNC Viewer הופעל</string>
+    <string name="ca_subject">הזן כאן את שם נושא התעודה.ייתכן שלא יהיה צורך בכך אם שם האישור המשותף (CN) תואם לשם המארח של השרת.</string>
+    <string name="port_ssh_hint">נָמָל</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">שרת SSH אינו תומך בשיטת \publickey\ auth, ואנחנו מנסים להשתמש בזוג מפתחות לאימות.אנא הגדר אותו כך שיאפשר אימות מפתח ציבורי ונסה שוב.שיטות אימות זמינות:</string>
+    <string name="username_caption">משתמש VNC</string>
+    <string name="error_ssh_could_not_exec_command">לא ניתן לבצע פקודה מרחוק.</string>
+    <string name="rdp_intro_text">תודה על התמיכה ב-aRDP ובתוכנות קוד פתוח באופן כללי!לעזרה בשימוש ב- aRDP, עיין בפריטי העזרה בתפריט ובתיאור האפליקציה בשוק.
+&lt;br&gt;
+&lt;br&gt;
+רשימה נוכחית של תכונות aRDP כוללת:
+&lt;br&gt;
+- RDP רגיל, RDP במנהרה מעל SSH.
+&lt;br&gt;
+- תמיכה חופשית בסיבוב.השתמש במערכת ההפעלה כדי להגביל את הסיבוב במידת הצורך.
+&lt;br&gt;
+- הגדרת רזולוציה מרחוק, רזולוציה מקורית במצבי נוף ופורטרט.
+&lt;br&gt;
+- יצירת צמד מפתחות SSH ציבורי/פרטי וייצוא.
+&lt;br&gt;
+- שמירת הפעלה אוטומטית.
+&lt;br&gt;
+- ניתן להגדיל, התאמה למסך ומצבי קנה מידה אחד לאחד.
+&lt;br&gt;
+- שליטה מרובה מגע על עכבר מרוחק במצבי קלט ישיר וסימולציה של לוח מגע.
+&lt;br&gt;
+- שליטה מלאה ביד אחת על עכבר מרחוק במצב קלט ביד אחת.
+&lt;br&gt;
+- לחיצות עכבר רב-מגע: הקש ללחיצה שמאלית, הקשה בשתי אצבעות ללחיצה ימנית, הקשה בשלוש אצבעות ללחיצה אמצעית.
+&lt;br&gt;
+- גלילה מרובה מגע: גרור בשתי אצבעות למעלה/מטה, ושמאלה/ימינה כדי לגלול.
+&lt;br&gt;
+- מטא ומקשי חצים על המסך שניתן להשבית לחלוטין מהתפריט או לאחסן אותם עם כפתור על המסך.
+&lt;br&gt;
+- שליחת טקסט ושילובי מקשים שרירותיים בעת חיבור.
+&lt;br&gt;
+- עזרה ביצירת חיבורים (\תפריט-&gt;עזרה לחיבור\) במסך החיבור.
+&lt;br&gt;
+- עזרה במצבי קלט (\תפריט-&gt;עוד-&gt;עזרה במצב קלט\) בעת חיבור.
+&lt;br&gt;
+- שימוש במשטח עקיבה זמין כחצים במקום להזיז את העכבר, ולחיצה על משטח עקיבה כ-Ctrl, סיבוב D-pad/משטח מגע עבור מקלדות BT.
+&lt;br&gt;
+- תמיכה בריבוי שפות, כל עוד שרת RDP מופעלת בפריסת השפה הדרושה.
+&lt;br&gt;
+- שינויים חלקים ברזולוציית מכונה מרחוק
+&lt;br&gt;
+- תמיכה מלאה בעכבר במכשירי Android 4.0+, כולל קליק ימני ואמצעי וגלגל גלילה.
+&lt;br&gt;
+- מבחר מצבי צבע
+&lt;br&gt;
+- שילוב העתק/הדבק
+&lt;br&gt;
+- ייצוא הגדרות
+&lt;br&gt;
+- צליל
+&lt;br&gt;
+&lt;br&gt;
+בעיות ידועות:</string>
+    <string name="tap_disable">השבת</string>
+    <string name="view_only">מצב תצוגה בלבד</string>
+    <string name="save_button">לְהַצִיל</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">לא ניתן לשלוח סיסמת sudo.</string>
+    <string name="landscape_force">כוח כיוון נוף</string>
+    <string name="export_settings">יְצוּא</string>
+    <string name="keyboard_type">סוג מקלדת תוכנה</string>
+    <string name="hide_connection_thumbnails">הסתר תמונות ממוזערות של חיבור</string>
+    <string name="input_method_direct_drag_pan_description">ישיר, החזק פאן: החלק כדי לגרור ולשחרר.הקש באצבע אחת בכל מקום שבו תרצה ללחוץ שמאל, שתי אצבעות ללחיצה ימנית ושלוש אצבעות ללחיצה אמצעית.החלק בשתי אצבעות כדי לגלול.הקש ארוכות כדי להתחיל לזוז.</string>
+    <string name="panning">מסך פנורמי</string>
+    <string name="remote_clipboard_integration">אפשר שילוב מרחוק ללוח מקומי</string>
+    <string name="rdp_connection_screen_help_text">כאשר תוסיף או תערוך חיבור, תראה דף תצורת חיבור.כאן אתה יכול להגדיר חיבור RDP חדש, או לבחור חיבור קיים.בחלק העליון יש כפתור המאפשר לשמור את החיבור.למטה זה המקום שבו אתה מגדיר את החיבור שלך.
+
+- סוג חיבור: כאן תבחר את סוג החיבור RDP.סוגי החיבור הזמינים הם:
+(א) RDP, המתחבר ישירות למחשב באמצעות פרוטוקול RDP.
+(ב) RDP על SSH, אשר תחילה מעביר את החיבור שלך דרך מחשב המריץ שרת SSH.
+
+- כותרת: לכל חיבור שאתה יוצר יכול להיות כינוי כדי לזהות אותו בקלות ברשימה.
+
+- הגדרות מנהרת SSH: זמינות במצב RDP על פני SSH.
+(א) שרת/פורט SSH: הכתובת והיציאה של שרת ה-SSH שהחיבור יעבור דרכו.כברירת מחדל, SSH מאזין ביציאה 22.
+(ב) שם משתמש/סיסמה: שם המשתמש והסיסמה של החשבון בשרת SSH.הסיסמה תתמלא בעמוד זה אם לא יצאת מהאפליקציה מאז שהזנת אותה לאחרונה.
+(ג) ניהול מפתח/מפתח שימוש: כפתור לניהול מפתחות ציבוריים/פרטיים, ותיבה שמציינת אם להשתמש במפתח ולא בסיסמה לאימות.אם אתה משתמש בלחצן העתק ללוח לאחר יצירת צמד מפתחות, אתה אמור להיות מסוגל להדביק את המפתח הציבורי לאחר חיבור לשרת RDP (הלוח מסונכרן עם השרת).
+
+- הגדרות חיבור RDP:
+(א) שרת/יציאת RDP: כאן אתה מזין את שם המארח או כתובת ה-IP והיציאה של המחשב המריץ את שרת ה-RDP שאליו ברצונך ליצור קשר.במצב RDP על SSH, כתובת זו היא כפי שניתן לראות משרת SSH.אם שרת SSH ושרת RDP הם אותו מחשב פיזי, אתה יכול להשתמש ב-localhost.שרתי RDP בדרך כלל מאזינים ביציאה 3389.
+(ב) משתמש RDP: כאן אתה מזין את שם המשתמש של חשבון Windows/UNIX שלך.
+(ג) דומיין RDP: הזן את הדומיין שאליו שייך החשבון שלך.
+(ד) סיסמת RDP: כאן אתה מזין את סיסמת חשבון Windows/UNIX שלך.אחסון מאובטח אינו משמש עבור סיסמאות (הן נמצאות במסד נתונים), והסיסמה תישמר רק אם תסמן את התיבה Keep.הסיסמה תתמלא בעמוד זה אם לא יצאת מהאפליקציה מאז שהזנת אותה לאחרונה.
+
+- הגדרות מתקדמות: בחלק זה תמצא דרכים להתאים אישית את הרזולוציה של שולחן העבודה, וכן שינויים שונים בביצועי RDP
+
+- כוונון מכשירים מקומיים: אלה משנים את התנהגות האפליקציה במכשיר שלך.
+(א) השתמש ב-D-Pad עבור חיצים: אם אתה מעדיף, תוכל להשתמש ב-D-Pad של מקלדת ה-Bluetooth שלך או בחצים במקלדת על המסך כדי לשלוח חיצים לשרת RDP.
+(ב) סובב את ה-D-Pad: טלפונים המשודכים למקלדת Bluetooth עשויים להזדקק לסיבוב ה-D-Pad של המקלדת נגד כיוון השעון כדי לשלוח הנחיות נכונות לשרת.
+(ג) מצביע עכבר מקומי: אם המצביע אינו נראה, בחר באפשרות זו כדי לאלץ אותו לציור על ידי האפליקציה.</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">מצב גלילה - החלק למעלה/מטה כדי לגלול, הרם אצבע כדי לעצור</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">מצב זום - החלק למעלה/מטה כדי להגדיל/להתרחק, הרם אצבע כדי לעצור</string>
+    <string name="rdp_adv_console_mode">מצב קונסולה</string>
+    <string name="address_caption_hint_tunneled">שרת VNC</string>
+    <string name="arrow_right">חץ ימינה</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">טקסט/מספרים ללא הצעות (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">שם משתמש SPICE</string>
+    <string name="error_rdp_connection_failed">חיבור RDP נכשל!קישוריות הרשת נקטעה, שרת ה-RDP כבה או הושבת, או שההפעלה שלך השתלטה.</string>
+    <string name="arrow_left">חץ שמאלה</string>
+    <string name="connection_type_vnc_over_stunnel">מאובטח VNC על מנהרת SSL</string>
+    <string name="report_bug">דווח על באג 🐛</string>
+    <string name="warning_cert_does_not_match">אזהרה: אישור ה-x509 שנשמר או שהועבר בחתימה אינם תואמים לאישור השרת הנוכחי!זו יכולה להיות התקפת אדם באמצע.אם אתה מודע לשינוי המפתח אתה יכול להמשיך.</string>
+    <string name="more_apps">אפליקציות נוספות 📱</string>
+    <string name="auto_x_disabled">נָכֶה</string>
+    <string name="pro_feature_mfa">נראה שבשרת שלך מופעל אימות מרובה גורמים.אנא תמכו בפרויקט על ידי רכישת גרסת ה-Pro שיש לה תמיכה בתכונה זו.קישור לגרסת ה-Pro זמין בתיבת הדו-שיח \'התחל\'.</string>
+    <string name="no_application_to_handle_vpn">חיבור זה מוגדר להפעיל VPN דרך אפליקציה חיצונית.אתה צריך להתקין אפליקציה כמו Morpheusly כדי להפעיל אותה.</string>
+    <string name="port_caption_ssh">יציאת SSH</string>
+    <string name="arrow_down">חץ למטה</string>
+    <string name="pro_feature_spice">נראה שניסית לפתוח קובץ ‎.vv.אם תרצו לשמור חיבורים ל-Proxmox או oVirt ממש בתוך האפליקציה וברצונכם גם לפתוח קבצי .vv, שקול לרכוש את Opaque.אם אתה צריך רק תמיכה בקבצי ‎.vv, אתה יכול לקבל aSPICE Pro.מצא קישורים לשתי האפליקציות בתיבת הדו-שיח \'התחל\'.</string>
+    <string name="error_vnc_unable_to_connect">החיבור לשרת VNC נכשל מסיבה:</string>
+    <string name="rdp_password_hint">סיסמת RDP</string>
+    <string name="custom_ca_paste">הדבק (אם לא מייבא) את ה-CA כאן</string>
+    <string name="cursor_mode">מצב סמן:</string>
+    <string name="local_device_tweaks">תיקון מכשירים מקומיים</string>
+    <string name="disconnect">לְנַתֵק</string>
+    <string name="ad_donate_text0">לגרסת ה-Pro יש גם תמיכה באימות SSH מרובה גורמים.בנוסף, הוא תומך בתכונת סיסמת המאסטר המבוקשת המונעת שימוש לא מורשה ומצפינה את כל הגדרות החיבור כולל סיסמאות ומפתחות SSH כדי להגן מפני גניבה.הפעל אותו מהתפריט הראשי.</string>
+    <string name="info_cert_signatures_identical">\n\nתוכל לוודא שהמידע תואם לאישור השרת כדי למנוע התקפת אדם באמצע.</string>
+    <string name="button_send_without_saving">שלח טקסט/אל תשמור אותו</string>
+    <string name="single_right">מצב גרירה ימינה - החלק לגרירה/בחירה, הרם אצבע כדי לעצור</string>
+    <string name="error_ssh_pwd_auth_fail">נכשל אימות לשרת SSH עם סיסמה.אנא בדוק את שם המשתמש שלך ב-SSH וסיסמת ה-SSH.</string>
+    <string name="select_vm_title">בחר מכונה וירטואלית</string>
+    <string name="ad_donate_text_spice">עבור חיבורי Proxmox ו-oVirt, אנא תרמו לפרויקט על ידי קניית Opaque או aSPICE Pro.הגרסה החינמית של aSPICE תומכת רק בחיבורים ישירים למכונות וירטואליות KVM.ראה למטה קישורים ל-Opaque ו-aSPICE Pro, כמו גם לאפליקציות האחרות שלנו.</string>
+    <string name="enter_password">נא להזין סיסמה</string>
+    <string name="main_screen_help_text">כאשר האפליקציה מופעלת היא מציגה מסך עם חיבורים שמורים עליו.
+
+אם אין חיבורים שמורים, החלק התחתון של המסך ריק, ותצטרך ללחוץ על כפתור הפלוס כדי ליצור חיבור חדש.
+אתה יכול גם לשלוט בהיבטים אחרים של התצורה ממסך זה על ידי הקשה על סרגל הכלים או אפשרויות תפריט אחרות בחלק העליון, עבור
+מופע לעריכת הגדרות ברירת המחדל, או הגדרות ייבוא וייצוא.
+
+ברגע שיש לך חיבור שמור, תוכל להתחבר לשרת המרוחק על ידי הקשה עליו פעם אחת.תהיה לך גם אפשרות למחוק או לערוך אותו על ידי הקשה ארוכה עליו.
+
+לבסוף, אתה יכול להשתמש בשדה חיפוש חיבורים כדי למצוא במהירות חיבורים על ידי סינון חיבורים המוצגים.</string>
+    <string name="intro_dont_show">אל תראה שוב</string>
+    <string name="action_export_settings">ייצוא הגדרות</string>
+    <string name="error_ssh_hostkey_changed">שְׁגִיאָה!מפתח המארח של השרת השתנה.אם זה מכוון, אתה יכול להמשיך.אחרת, זה עשוי להיות אדם באמצע ההתקפה.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">לא ניתן היה להשיג יציאת VNC מרוחקת מ-x11vnc.אנא ודא כי x11vnc מותקן.כדי להיות בטוח, נסה להריץ את x11vnc ידנית בשורת הפקודה.</string>
+    <string name="error_failed_to_obtain_content">השגת הקובץ נכשלה.אנא הורד אותו שוב אך הפעם, פתח אותו במהירות מתיקיית ההורדות במנהל הקבצים.</string>
+    <string name="show_menu">הצג תפריט</string>
+    <string name="auto_x_unix_auth">אימות באמצעות שם משתמש/סיסמה SSH שסופק באופן אוטומטי (למסך הכניסה השחור).</string>
+    <string name="previous_versions">גרסאות קודמות ⍼</string>
+    <string name="auto_x_xvnc">מצא או צור עם Xvnc</string>
+    <string name="auto_x_find">רק מצא, אל תיצור</string>
+    <string name="port_caption">נמל VNC</string>
+    <string name="delete_key">מחק מפתח נבחר</string>
+    <string name="cert_fingerprint">טביעת אצבע של תעודה</string>
+    <string name="enter_vnc_password">נא להזין את סיסמת VNC</string>
+    <string name="port_hint">נָמָל</string>
+    <string name="import_from_file">ייבוא ​​מקובץ</string>
+    <string name="error_rdp_unable_to_connect">לא ניתן להתחבר לשרת RDP!אנא ודא שהגדרת שרת RDP נכונה, שהשרת מופעל, RDP מופעל ושהשרת נמצא באותה רשת כמו התקן זה.</string>
+    <string name="rdp_geom_disabled">נָכֶה</string>
+    <string name="ad_donate_spice_text1b">הקש כאן כדי לקנות את גרסת ה-Pro ופשוט לפתוח קבצי .vv.</string>
+    <string name="spice_ca_file_error_reading">שגיאה בקריאת קובץ CA.נא לוודא שהוא קריא.</string>
+    <string name="info_vm_launched_on_stand_by">ה-VM שלך נמצא כבוי והופעל.אנא נסה שוב בעוד מספר דקות.אם אתה מנסה מוקדם מדי ומקבל כשל בחיבור, נסה שוב מאוחר יותר.</string>
+    <string name="special_keys">שלח מפתחות</string>
+    <string name="error_failed_to_download_http">הורדת הקובץ דרך HTTP נכשלה.אולי השרת שלך לא ניתן לגישה.</string>
+    <string name="rdp_geom_automatic">אוֹטוֹמָטִי</string>
+    <string name="portrait_mode">עבור למצב דיוקן כאשר אתה מחובר</string>
+    <string name="master_password_set_error">הסיסמאות אינן תואמות, אנא היזהר!</string>
+    <string name="enter_ssh_credentials">אנא הזן אישורי SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">שרת VNC מאחורי Repeater</string>
+    <string name="prefer_sending_unicode">קלט Unicode (Windows בלבד)</string>
+    <string name="auto_x_caption">האפליקציה יכולה לגלות באופן אוטומטי מפגשי X קיימים וליצור חדשים במערכות Linux/UNIX (בדומה ל-NX).אתה צריך x11vnc כדי למצוא, ו-Xvfb, Xvnc או Xdummy כדי ליצור הפעלות.אם אתה מתקשה להתחבר, נסה לבחור סוג הפעלה מרחוק ספציפי בהגדרות המתקדמות של AutoX.</string>
+    <string name="auto_x_confirm">לְאַשֵׁר</string>
+    <string name="position_toolbar_last_used">שחזר את מיקום סרגל הכלים</string>
+    <string name="error_no_such_vm_found_for_user">לא נמצאה מכונה וירטואלית עם המזהה שסופק עבור המשתמש הנתון.מחק את המזהה כדי לקבל רשימה של VMs.</string>
+    <string name="single_middle">מצב גרירה אמצעית - החלק לגרירה/בחירה, הרם אצבע כדי לעצור</string>
+    <string name="info_encoding">הַצפָּנָה,</string>
+    <string name="rdp_geom_native_portrait">דיוקן יליד</string>
+    <string name="input_mode">מצב קלט</string>
+    <string name="action_delete_connection">מחק חיבור</string>
+    <string name="keys_caption">מפתחות</string>
+    <string name="single_left">מצב גרירה שמאלה - החלק לגרירה/בחירה, הרם אצבע כדי לעצור</string>
+    <string name="vv_file_error">קובץ ה-.vv חסר או פגום!</string>
+    <string name="connection_delete">לִמְחוֹק</string>
+    <string name="info_progress_dialog_establishing">יוצר לחיצת יד.\nנא המתן...</string>
+    <string name="keep_password_button">לִשְׁמוֹר</string>
+    <string name="auto_x_find_login">מצא את התחברות X (צריך sudo)</string>
+    <string name="ssh_use_x11vnc">שולחן עבודה אוטומטי</string>
+    <string name="address_caption_ssh">שרת SSH</string>
+    <string name="spice_password_hint">סיסמת SPICE</string>
+    <string name="cursor_force_disable">השבת</string>
+    <string name="master_password_error_password_not_set">הגדרת סיסמת אב בוטלה.</string>
+    <string name="info_update_color_model_to">עדכון מודל הצבע ל</string>
+    <string name="rdp_adv_menu_animation">הצג אנימציות בתפריט</string>
+    <string name="input_method_help">עזרה בשיטת קלט</string>
+    <string name="enable_recording">אפשר הקלטה</string>
+    <string name="path_to_ca">הזן נתיב קובץ (לדוגמה /sdcard/ca-cert.pem) והקש על ייבוא ​​כדי לטעון את רשות האישורים שלך.</string>
+    <string name="nickname_caption_hint">כותרת (אופציונלי)</string>
+    <string name="connection_caption">קֶשֶׁר</string>
+    <string name="pan_follow_mouse">פאן עוקב אחרי העכבר</string>
+    <string name="rdp_geom_native_landscape">נוף יליד</string>
+    <string name="meta_key_title">שלח מפתחות מיוחדים</string>
+    <string name="move_toolbar">העבר את סרגל הכלים</string>
+    <string name="input_mode_fit_to_screen">אין פאן;עכבר כדור עקב</string>
+    <string name="enable_sound">אפשר סאונד</string>
+    <string name="error_security_type">השרת לא הציע סוג אבטחה נתמך.</string>
+    <string name="connection_type_text">סביבת וירטואליזציה (RHEV/oVirt או Proxmox)</string>
+    <string name="connection_setup_host_name">כתובת שרת</string>
+    <string name="vnc_server_empty_no_save">שרת VNC או יציאה ריקים.לא ניתן לשמור את החיבור!</string>
+    <string name="ca_ovirt_manage">נהל את RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">נהל CA מותאם אישית</string>
+    <string name="ca_file_not_found">הקובץ לא נמצא.אנא הזן שם קובץ חוקי בשדה הטקסט (למשל /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">נא להזין ולשנן סיסמת מאסטר.ככל שהסיסמה שלך ארוכה יותר, כך קשה יותר לפצח אותה.אם תגדיר את הסיסמה שלך שגויה או תשכח אותה, תאבד את כל ההגדרות שלך!ייתכן שתרצה לייצא את ההגדרות שלך כעת כדי לגבות אותן (מהתפריט).אחסן אותם בבטחה מכיוון שההגדרות המיוצאות אינן מוצפנות.</string>
+    <string name="repeater_clear">אל תשתמש</string>
+    <string name="ad_donate_text3">אם תרצה לתמוך בפרויקט עוד יותר, עקוב אחר הקישורים הבאים לקישורים לאפליקציות לקוח עבור:</string>
+    <string name="vnc_connection_settings">הגדרות חיבור VNC</string>
+    <string name="vnc_connection_screen_help_text">כשאתה מוסיף או עורך חיבור, תראה דף תצורת חיבור. כאן תוכל להגדיר חיבור VNC חדש, או לבחור חיבור קיים. בחלק העליון יש כפתור המאפשר לך לשמור את החיבור. מתחתיו אתה מגדיר את החיבור שלך.  אם אתה מחפש שיפור ביצועים מהיר, נסה להגדיר את מצב הצבע לערך נמוך יותר. כמו כן, נסה להסיר כל תמונת רקע של שולחן העבודה בשרת VNC. לבסוף, ודא שלמכשיר שלך יש קישוריות רשת טובה והימנע מכיסוי האנטנה שלו והפחתת עוצמת האות.  - סוג חיבור: כאן תבחר את סוג חיבור ה-VNC. סוגי החיבור הזמינים הם: (א) VNC רגיל, הנתמך על ידי כל שרתי VNC אך חסר הצפנה והוא פגיע להתקפות Brute-Force עקב מגבלת סיסמה של 8 תווים. (ב) VNC מאובטח דרך SSH, המתחבר דרך מנהרת SSH מוצפנת. אתה זקוק לשירות SSHD שפועל בנוסף לשרת VNC. כל עוד שרת ה-VNC אינו מקבל חיבורים ישירות מהאינטרנט, סוג חיבור זה אינו סובל מפגיעויות ידועות, כל עוד אתה מאמת את חתימת אישור השרת בעת ההתחברות הראשונה. (ג) UltraVNC, המעניק לך אפשרויות של Windows Logon ו-UltraVNC Repeater. שימוש ב-Windows Logon אינו סובל ממגבלת סיסמה של 8 תווים, אך מצב זה אינו מציע הצפנה, כך שההפעלה שלך פגיעה ל-sniffing. (ד) Secure VNC over AnonTLS, שהוא VNC רגיל מעל חיבור שווה ערך ל-stunnel. עליך להפעיל stunnel, או להשתמש בשרת VNC כמו Vino התומך ב-AnonTLS ישירות מהקופסה. מצב זה מספק לך הצפנת הפעלה, אך סובל ממגבלת סיסמה של 8 תווים ואינו מונע התקפות man-in-the-middle. (ה) Secure VNC over VeNCrypt, המשתמש בתעודות x509 וכן בהצפנת הפעלה, ובהתאם לתצורת השרת יכול להשתמש באישורי משתמש/סיסמה ללא מגבלה של 8 תווים. מצב זה מונע התקפות man-in-the-middle. כמו גם לספק פרטיות הפעלה. שרתים כמו x11vnc ו-TigerVNC תומכים במצב זה והם מאובטחים כמו VNC מעל SSH.  - כותרת: לכל חיבור שתיצור יכול להיות כינוי כדי לזהות אותו בקלות ברשימה.  - הגדרות מנהרת SSH: זמין במצב VNC מעל SSH.  (א) שרת/יציאה SSH: הכתובת והיציאה של שרת ה-SSH שדרכו החיבור יעבור מנהרה. כברירת מחדל, SSH מאזין ליציאה 22. (ב) שם משתמש/סיסמה: שם המשתמש והסיסמה של החשבון בשרת ה-SSH. הסיסמה תמולא בדף זה אם לא סיימת את היישום מאז הפעם האחרונה שנכנסת אליו. (ג) ניהול מפתח/שימוש במפתח: כפתור לניהול מפתחות ציבוריים/פרטיים, ותיבת סימון המציינת האם להשתמש במפתח ולא בסיסמה לאימות. אם תשתמש בלחצן העתק ללוח לאחר יצירת זוג מפתחות, תוכל להדביק את המפתח הציבורי לאחר ההתחברות לשרת VNC (הלוח מסונכרן לשרת).  - הגדרת AutoX: זמין רק במצב VNC over SSH. היישום יכול לגלות באופן אוטומטי הפעלות X קיימות וליצור אופציונלי חדשות במערכות UNIX (כמו לקוח NX). אתה זקוק ל-x11vnc כדי למצוא, ו-Xvfb, Xvnc או Xdummy מותקנים במערכת המרוחקת כדי ליצור הפעלות. ייתכן שתצטרך להזיז את קובץ ה-.dmrc שלך ולהוסיף קובץ .xinit לתיקיית הבית שלך אם שולחן העבודה שלך אינו נראה תקין או שאתה מקבל רק חלון xterm.  - הגדרות חיבור VNC: (א) שרת/יציאה VNC: כאן אתה מזין את שם המארח או כתובת ה-IP והיציאה של המחשב שבו פועל שרת ה-VNC שברצונך ליצור איתו קשר. במצב VNC over SSH, כתובת זו היא כפי שנראית משרת ה-SSH. אם שרת ה-SSH ושרת ה-VNC הם אותו מחשב, אתה יכול להשתמש ב-localhost. שרתי VNC בדרך כלל מאזינים החל מפורט 5900 (מסך ה-VNC הראשון, מסך :0). (ב) משתמש VNC: זמין ב-UltraVNC עם מצב כניסה ל-Windows, או Secure VNC over VeNCrypt, כאן עליך להזין את שם המשתמש של חשבון Windows/UNIX שלך. (ג) סיסמת VNC: אם תצורת שרת ה-VNC שלך דורשת סיסמה, הזן את הסיסמה הזו כאן. ב-UltraVNC עם מצבי כניסה ל-Windows/VeNCrypt, הזן כאן את סיסמת חשבון Windows/UNIX שלך. אחסון מאובטח אינו משמש לסיסמאות, והסיסמה תישמר רק אם תסמן את התיבה שמור. הסיסמה תמולא בדף זה אם לא סיימת את היישום מאז הפעם האחרונה שהזנת אותו.  - מצב צבע: הלקוח תומך במספר מצבי צבע. מצבים עם יותר צבעים מספקים חוויה ויזואלית טובה יותר על חשבון רוחב פס גדול יותר וחישוב מעבד רב יותר במכשיר שלך. חלק משרתי VNC אינם תומכים בכל עומקי הצבעים (למשל, שולחן עבודה מרוחק של OS/X דורש צבע של 24 סיביות). אם אתה נתקל בבעיות התחברות, נסה עומק צבע אחר.  - השתמשו ב-D-Pad עבור חצים: אם אתם מעדיפים, תוכלו להשתמש ב-D-Pad של מקלדת ה-Bluetooth שלכם או בחצים במקלדת שעל המסך כדי לשלוח חצים לשרת ה-VNC.  - סובבו את D-Pad: טלפונים המשויכים למקלדת Bluetooth עשויים להזדקק לסובב את D-Pad של המקלדת נגד כיוון השעון כדי לשלוח כיוון נכון.</string>
+    <string name="master_password_enable">🔒 אפשר סיסמת מאסטר</string>
+    <string name="new_list_button">רשימה חדשה</string>
+    <string name="spice_intro_text">תודה על התמיכה ב-aSPICE ובתוכנות קוד פתוח באופן כללי!לעזרה בשימוש ב-aSPICE, עיין בפריטי העזרה בתפריט ובתיאור האפליקציה בשוק.
+&lt;br&gt;
+&lt;br&gt;
+רשימה נוכחית של תכונות aSPICE כוללת:
+&lt;br&gt;
+- SPICE רגיל, SPICE במנהרה מעל SSH.
+&lt;br&gt;
+- תמיכה חופשית בסיבוב.השתמש במערכת ההפעלה כדי להגביל את הסיבוב במידת הצורך.
+&lt;br&gt;
+- יצירת צמד מפתחות SSH ציבורי/פרטי וייצוא.
+&lt;br&gt;
+- שמירת הפעלה אוטומטית.
+&lt;br&gt;
+- ניתן להגדיל, התאמה למסך ומצבי קנה מידה אחד לאחד.
+&lt;br&gt;
+- שליטה מרובה מגע על עכבר מרוחק במצבי קלט ישיר וסימולציה של לוח מגע.
+&lt;br&gt;
+- שליטה מלאה ביד אחת על עכבר מרחוק במצב קלט ביד אחת.
+&lt;br&gt;
+- לחיצות עכבר רב-מגע: הקש ללחיצה שמאלית, הקשה בשתי אצבעות ללחיצה ימנית, הקשה בשלוש אצבעות ללחיצה אמצעית.
+&lt;br&gt;
+- גלילה מרובה מגע: גרור בשתי אצבעות למעלה/מטה, ושמאלה/ימינה כדי לגלול.
+&lt;br&gt;
+- מטא ומקשי חצים על המסך שניתן להשבית לחלוטין מהתפריט או לאחסן אותם עם כפתור על המסך.
+&lt;br&gt;
+- שליחת טקסט ושילובי מקשים שרירותיים בעת חיבור.
+&lt;br&gt;
+- עזרה ביצירת חיבורים (\תפריט-&gt;עזרה לחיבור\) במסך החיבור.
+&lt;br&gt;
+- עזרה במצבי קלט (\תפריט-&gt;עוד-&gt;עזרה במצב קלט\) בעת חיבור.
+&lt;br&gt;
+- שימוש במשטח עקיבה זמין כחצים במקום להזיז את העכבר, ולחיצה על משטח עקיבה כ-Ctrl, סיבוב D-pad/משטח מגע עבור מקלדות BT.
+&lt;br&gt;
+- תמיכה בריבוי שפות, כל עוד בשרת SPICE יש את פריסת השפה הדרושה מופעלת.
+&lt;br&gt;
+- שינויים חלקים ברזולוציית מכונה מרחוק
+&lt;br&gt;
+- תמיכה מלאה בעכבר במכשירי Android 4.0+, כולל קליק ימני ואמצעי וגלגל גלילה.
+&lt;br&gt;
+&lt;br&gt;
+תכונות מתוכננות:
+&lt;br&gt;
+- שילוב העתק/הדבק
+&lt;br&gt;
+- צליל
+&lt;br&gt;
+- שיפורי ביצועים
+&lt;br&gt;
+בעיות ידועות:
+&lt;br&gt;
+- שליחת טקסט לא שולחת סמלים מסוימים.
+&lt;br&gt;</string>
+    <string name="info">מידע</string>
+    <string name="connection_edit_delete_prompt">האם ברצונך לערוך או למחוק את החיבור</string>
+    <string name="connection_type_caption">סוג חיבור</string>
+    <string name="usb">USB (חבר תחילה כבל OTG)</string>
+    <string name="connection_type_vnc_over_vencrypt">מאובטח VNC על VeNCrypt</string>
+    <string name="log_copied">Logcat הועתק ללוח.כעת תוכל להדביק אותו באימייל או בפורום התמיכה.אנא עיין בכל מידע אישי לפני הפרסום.</string>
+    <string name="disable_pointer_offset_correction">השבת תיקון היסט מצביע</string>
+    <string name="password_caption_hint">סיסמת VNC</string>
+    <string name="user_not_specified">משתמש לא צוין</string>
+    <string name="connection_type_vnc_over_ssl">מאובטח VNC על AnonTLS</string>
+    <string name="pro_feature_intro">נראה שאתה משתמש בתכונת Pro.אנא תמכו בפרויקט על ידי רכישת גרסת ה-Pro שיש לה תמיכה בתכונה זו.אנא בדוק את תיבת הדו-שיח המבוא לקישורים לאפליקציה הנכונה.</string>
+    <string name="shift_check">מִשׁמֶרֶת</string>
+    <string name="error_ssh_keypair_missing">עדיין לא נוצר צמד מפתחות SSH!נא ליצור אחד ולשים (החלק הציבורי שלו) ב-autorized_keys בשרת SSH.</string>
+    <string name="error_connection_failed">החיבור נכשל.</string>
+    <string name="info_continue_connecting">המשך להתחבר אל:</string>
+    <string name="connection_type_vnc_over_ssh">מאובטח VNC על SSH</string>
+    <string name="advanced_settings">הגדרות מתקדמות</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">ביטוי סיסמה מסופק אך צמד מפתחות לא מוצפן.נא למחוק את ביטוי הסיסמה.</string>
+    <string name="vnc_server_empty">שרת VNC או יציאה ריקים.לא מצליח להתחבר!</string>
+    <string name="error_uri_parse_error">לא ניתן לנתח URI של כוונות.אנא בדוק את פורמט ה-URI.אתה יכול גם לראות את logcat המכשיר לפרטים נוספים.</string>
+    <string name="username_hint_vencrypt">שם משתמש VNC</string>
+    <string name="error_vv_download_timeout">פסק זמן להורדת קובץ vv.</string>
+    <string name="center_mouse">עכבר @</string>
+    <string name="show_keyboard">הצג מקלדת</string>
+    <string name="info_cert_signatures">פרטי התעודה הם:</string>
+    <string name="rdp_username_hint">שם משתמש RDP</string>
+    <string name="connection_type_vnc">VNC בסיסי</string>
+    <string name="rdp_security_nla">אימות ברמת רשת</string>
+    <string name="ssh_pubkey_button">ניהול מפתח</string>
+    <string name="ca_file_error_reading">שגיאה בקריאת קובץ CA.נא לוודא שהוא קריא.</string>
+    <string name="master_password_error_intents_not_supported">כוונות חיבור אינן נתמכות עדיין כאשר סיסמת מאסטר מופעלת.</string>
+    <string name="input_method_direct_swipe_pan">ישיר, מחליקה</string>
+    <string name="update_button">לְעַדְכֵּן</string>
+    <string name="input_mode_panning">מצב פנורמי של שולחן העבודה</string>
+    <string name="search_connections">חיפוש חיבורים</string>
+    <string name="error_x509_could_not_generate_signature">לא ניתן ליצור חתימת SHA1 או MD5 של אישור.לא נמצא אלגוריתם SHA1/MD5.</string>
+    <string name="auto_x_xdummy">מצא או צור עם Xdummy</string>
+    <string name="error_not_connected_to_network">נראה שאתה לא מחובר לאינטרנט.לא יכול להמשיך בלי להיות מחובר!</string>
+    <string name="show_advanced_settings">הצג הגדרות מתקדמות</string>
+    <string name="master_password_set">הגדר סיסמת מאסטר</string>
+    <string name="custom_ca_import">לחלופין, הזן את הנתיב המלא ל-CA שלך והקש על ייבוא</string>
+    <string name="mouse_follow_pan">עכבר עוקב אחר פאן</string>
+    <string name="enter_password_auth_failed">האימות נכשל.אנא הזן מחדש את האישורים שלך.</string>
+    <string name="show">לְהַצִיג</string>
+    <string name="dpad_as_arrows">השתמש ב-D-Pad עבור חיצים וב-D-Pad לחץ עבור Ctrl.</string>
+    <string name="tap_enable">לְאַפשֵׁר</string>
+    <string name="ad_donate_spice_text1a">הקש כאן כדי לקנות אטום ולשמור חיבורים ישירים ל-Proxmox ו-oVirt.הוא תומך גם בקבצי .vv.</string>
+    <string name="please_grant_permission_from_prefs">ייתכן שתצטרך להעניק הרשאות לאפליקציה דרך ההגדרות.</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="share_app">שתפו 🔗</string>
+    <string name="remote_sound_on_device">סאונד במכשיר</string>
+    <string name="connection_setup_vm_name">שם מכונה וירטואלית (אופציונלי)</string>
+    <string name="single_choose">בחר מצב ביד אחת או בטל</string>
+    <string name="error_no_user_hostname">אנא הזן לפחות משתמש ושם מארח או כתובת IP.</string>
+    <string name="rdp_adv_redirect_sdcard">הפניית כרטיס SD</string>
+    <string name="error_pve_api_io_error">החיבור לסביבה הוירטואלית של Proxmox נכשל:</string>
+    <string name="username_hint_optional">שם משתמש VNC (אופציונלי)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">מִנְהָג</string>
+    <string name="delete_connection">מחק חיבור</string>
+    <string name="repeater_save">לְהִשְׁתַמֵשׁ</string>
+    <string name="get_help">קבל עזרה</string>
+    <string name="hide">לְהַסתִיר</string>
+    <string name="rdp_security_mode">מצב אבטחה</string>
+    <string name="connection_type_rdp_over_ssh">RDP על SSH</string>
+    <string name="auto_x_xvfb">מצא או צור עם Xvfb</string>
+    <string name="address_caption">שרת VNC</string>
+    <string name="show_only_connection_nicknames">הצג רק כינויים לחיבור</string>
+    <string name="ca_spice_use_ovirt">השתמש ב-RHEV/oVirt CA עבור SPICE</string>
+    <string name="info_cert_tunnel">האם ברצונך להתחבר למארח המזוהה על ידי האישור הבא?\n\nטביעת אצבע: %1$s\n\nהונפקה ל:\n%2$s\n\nמונפקת על ידי:\n%3$s\n\nתקף מ:\n%4$s\n\nתקף עד:\n%5$s\n\nהאפליקציה לא מאמתת את האישור: הבקשה לאישור:</string>
+    <string name="error_failed_to_obtain_file">לא הצליח למצוא את הקובץ.אנא הורד אותו שוב, אך הפעם, נסה לפתוח אותו מאזור ההודעות או ישירות מהדפדפן במידת האפשר.</string>
+    <string name="error_pve_timeout_communicating">פסק זמן לתקשורת עם הסביבה הווירטואלית של Proxmox.</string>
+    <string name="connection_type_spice_over_ssh">SPICE מעל SSH</string>
+    <string name="rdp_adv_glyph_cache">הפעל מטמון גליפים</string>
+    <string name="disable_battery_optimizations_failed">
+לא ניתן היה לפתוח את הגדרות אופטימיזציית הסוללה.השבת את אופטימיזציית הסוללה באופן ידני בהגדרות המערכת.</string>
+    <string name="disable_battery_optimizations">
+🔋השבת את אופטימיזציית הסוללה</string>
+    <string name="disable_battery_optimizations_already_done">
+האפליקציה כבר פטורה מאופטימיזציות של סוללה.</string>
+    <string name="no_connections_title">אין חיבורים עדיין</string>
+    <string name="no_connections_hint">הקש על כפתור + כדי להוסיף את החיבור המרוחק הראשון שלך</string>
+    <string name="no_connections_hint_tv">לחץ על כפתור + למעלה כדי להוסיף את החיבור המרוחק הראשון שלך</string>
+    <string name="keyboard_layout_map">פריסת המקלדת</string>
+</resources>

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Audio će biti inicijaliziran za otprilike 15 sekundi, molimo zaustavite sve video ili audio reprodukcije prije toga</string>
+    <string name="audio_initialized">Audio inicijaliziran</string>
+    <string name="action_import_settings">Uvezi postavke</string>
+    <string name="action_new_connection">✚ Nova veza</string>
+    <string name="action_edit_default_settings">⚙ Uredi zadane postavke</string>
+    <string name="action_export_settings">Izvezi postavke</string>
+    <string name="action_delete_connection">Obriši vezu</string>
+    <string name="action_rate_or_share_app">⭐ Dobij pomoć, ocijeni, podijeli</string>
+    <string name="get_help">Dobij pomoć</string>
+    <string name="advanced_settings">Napredne postavke</string>
+    <string name="audio">Audio</string>
+    <string name="auto_rotation">Rotacija zaslona za vrijeme veze</string>
+    <string name="auto_request_new_res">Sinkroniziraj udaljeni zaslon s rezolucijom prikaza</string>
+    <string name="custom_ca_subject">Neobavezni predmet certifikata. Nije potrebno ako CN certifikata odgovara nazivu hosta</string>
+    <string name="custom_ca_import">Alternativno, unesite puni put do CA i dodirnite Uvezi</string>
+    <string name="custom_ca_paste">Zalijepite CA ovdje (ako ga ne uvozite)</string>
+    <string name="ca_ovirt_use_custom">Prilagođeni RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Koristi RHEV/oVirt CA za SPICE</string>
+    <string name="ca_ovirt_manage">Upravljaj RHEV/oVirt CA</string>
+    <string name="ca_spice_manage">Upravljaj SPICE CA</string>
+    <string name="ca_file_not_found">Datoteka nije pronađena. Unesite valjani naziv datoteke u tekstualno polje (npr. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Greška pri čitanju CA datoteke. Provjerite je li čitljiva.</string>
+    <string name="ca_new_or_changed">Novi ili promijenjeni certifikat poslužitelja</string>
+    <string name="connection_type_text">Virtualizacijsko okruženje (RHEV/oVirt ili Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Naziv virtualnog stroja (neobavezno)</string>
+    <string name="connection_setup_host_name">Adresa poslužitelja</string>
+    <string name="connection_setup_user">Korisnik@Domena</string>
+    <string name="connection_setup_password">Lozinka</string>
+    <string name="enter_password">Unesite lozinku</string>
+    <string name="enter_password_auth_failed">Autentifikacija nije uspjela. Unesite svoje vjerodajnice ponovo.</string>
+    <string name="enter_otp_code">Unesite OTP kod</string>
+    <string name="hide_toolbar">Sakrij alatnu traku</string>
+    <string name="manage_custom_ca_title">Upravljaj prilagođenim CA</string>
+    <string name="save_button">Spremi</string>
+    <string name="select_vm_title">Odaberite virtualni stroj</string>
+    <string name="vv_file_not_found">.vv datoteka nije pronađena!</string>
+    <string name="vv_file_error">.vv datoteka nedostaje ili je oštećena!</string>
+    <string name="info_cert">Prihvaćate li ovaj novi ili promijenjeni certifikat hosta?\n\nOtisci prsta:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nIzdano za: %4$s\nIzdano od: %5$s\n\nVaži od: %6$s\nVaži do: %7$s\n</string>
+
+    <string name="toggle_keyboard">Uključi/isključi tipkovnicu</string>
+    <string name="show_keyboard">Prikaži tipkovnicu</string>
+    <string name="scroll_wheel">Kotačić za pomicanje</string>
+
+    <string name="input_method_help">Pomoć za metodu unosa</string>
+
+    <string name="ok">U redu</string>
+
+    <string name="input_methods">Metoda unosa</string>
+
+    <string name="error_failed_to_download_http">Preuzimanje datoteke putem HTTP-a nije uspjelo. Možda je vaš poslužitelj nedostupan.</string>
+    <string name="error_failed_to_download_https">Preuzimanje datoteke putem HTTPS-a nije uspjelo. Možda certifikat poslužitelja nije pouzdan (istekao ili samopotpisan) ili je poslužitelj nedostupan.</string>
+    <string name="error_failed_to_obtain_content">Dohvaćanje datoteke nije uspjelo. Preuzmite je ponovo, ali ovaj put je brzo otvorite iz mape Preuzimanja u Upravitelju datotekama.</string>
+    <string name="error_failed_to_obtain_file">Pronalaženje datoteke nije uspjelo. Preuzmite je ponovo, ali ovaj put pokušajte je otvoriti iz područja obavijesti ili izravno iz preglednika ako je moguće.</string>
+
+    <string name="error_dialog_title">Greška</string>
+    <string name="info_dialog_title">Informacija</string>
+    <string name="info_vm_launched_on_stand_by">Vaš VM je pronađen isključen i pokrenut je. Pokušajte ponovo za nekoliko minuta. Ako pokušate prebrzo i dobijete grešku veze, pokušajte ponovo kasnije.</string>
+    <string name="error_no_vm_found_for_user">Nema dostupnih virtualnih strojeva za zadanog korisnika.</string>
+    <string name="error_no_such_vm_found_for_user">Nije pronađen virtualni stroj s navedenim ID-om za zadanog korisnika. Obrišite ID da biste dobili popis VM-ova.</string>
+    <string name="error_no_vnc_support_yet">VNC vrsta prikaza još nije podržana, ali to je nadolazeća značajka. Hvala na razumijevanju!</string>
+    <string name="error_not_connected_to_network">Čini se da niste spojeni na internet. Nastavak nije moguć bez internetske veze!</string>
+    <string name="error_ovirt_timeout">Veza s vašim VM-om je istekla. Provjerite da je adresa čvora koji pokreće vaš VM ispravna, da je dostupna s vaše trenutne mreže i da je nijedan vatrozid ne blokira.</string>
+    <string name="error_ovirt_auth_failure">Greška autentifikacije. Provjerite navedeno korisničko ime i lozinku.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Greška SSL rukovanja. Postoji problem s SSL certifikatom poslužitelja. Ako koristite samopotpisani certifikat, morate (po)novo uvesti certifikacijsko tijelo.</string>
+    <string name="error_pve_failed_to_authenticate">Autentifikacija na Proxmox Virtual Environment nije uspjela. Provjerite jeste li unijeli korisničko ime u formatu korisnik@domena i da je vaša lozinka ispravna.</string>
+    <string name="error_pve_failed_to_parse_json">Raščlanjivanje odgovora iz Proxmox Virtual Environment nije uspjelo.</string>
+    <string name="error_pve_vmid_not_numeric">VM ID nije broj. Unesite numerički VM ID ili ostavite prazno za odabir VM-a s popisa.</string>
+    <string name="error_pve_api_unexpected_code">Neočekivani odgovor iz Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Veza s Proxmox Virtual Environment nije uspjela: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment vratio je null podatke.</string>
+    <string name="error_pve_timeout_communicating">Vremensko ograničenje komunikacije s Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Nije moguće pronaći virtualni stroj s navedenim imenom dodjeljenim vašem korisniku. Obrišite navedeni naziv VM-a da biste vidjeli popis VM-ova dodijeljenih korisniku.</string>
+    <string name="error_vv_download_timeout">Vremensko ograničenje preuzimanja vv datoteke.</string>
+    <string name="message_please_wait">Molimo pričekajte</string>
+    <string name="message_please_install_bvnc">Molimo instalirajte &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> iz Google Playa za spajanje na VNC konzolu ovog VM-a.</string>
+    <string name="ssl_strict">Zahtijevaj podudaranje uobičajenog naziva s certifikatom (preporučeno)</string>
+    <string name="usb">USB (prvo priključite OTG kabel)</string>
+
+    <string name="ad_donate_text0">Pro verzija također podržava višefaktorsku SSH autentifikaciju. Uz to, podržava dugo traženu značajku glavne lozinke koja sprječava neovlaštenu upotrebu i šifrira sve postavke veze uključujući lozinke i SSH ključeve radi zaštite od krađe. Omogućite je iz glavnog izbornika.</string>
+    <string name="ad_donate_spice_text1a">Dodirnite ovdje za kupnju Opaque i spremanje izravnih veza na Proxmox i oVirt. Podržava i .vv datoteke.</string>
+    <string name="ad_donate_spice_text1b">Dodirnite ovdje za kupnju Pro verzije i samo otvaranje .vv datoteka.</string>
+    <string name="ad_donate_text1">Dodirnite ovdje za podršku projektu malim doniranjem kupnjom Pro verzije.</string>
+    <string name="ad_donate_text2">Pro verzija vam omogućuje onemogućavanje ovog dijaloga i pristup dodatnim značajkama.</string>
+    <string name="ad_donate_text3">Ako biste željeli dalje podržati projekt, slijedite sljedeće veze za klijentske aplikacije: </string>
+    <string name="ad_donate_text_vnc">Projekt otvorenog koda treba vašu podršku! Donirajte nam kupnjom bVNC Pro. Pogledajte dolje veze na bVNC Pro i naše ostale aplikacije.</string>
+    <string name="ad_donate_text_rdp">Projekt otvorenog koda treba vašu podršku! Donirajte nam kupnjom aRDP Pro koji podržava preusmjeravanje zvuka. Pogledajte dolje veze na aRDP Pro i naše ostale aplikacije.</string>
+    <string name="ad_donate_text_spice">Za Proxmox i oVirt veze, donirajte projektu kupnjom Opaque ili aSPICE Pro. Besplatna verzija aSPICE podržava samo izravne veze na KVM virtualne strojeve. Pogledajte dolje veze na Opaque i aSPICE Pro, kao i naše ostale aplikacije.</string>
+
+    <string name="address_caption">VNC poslužitelj</string>
+    <string name="address_caption_hint">VNC poslužitelj</string>
+    <string name="address_caption_hint_tunneled">VNC poslužitelj</string>
+    <string name="address_caption_ssh">SSH poslužitelj</string>
+    <string name="address_caption_ssh_hint">SSH poslužitelj</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Strelica dolje</string>
+    <string name="arrow_left">Strelica lijevo</string>
+    <string name="arrow_right">Strelica desno</string>
+    <string name="arrow_up">Strelica gore</string>
+
+    <string name="auto">Automatski</string>
+    <string name="auto_x_cancel">Odustani</string>
+    <string name="auto_x_caption">Aplikacija može automatski otkriti postojeće i stvoriti nove X sesije na Linux/UNIX sustavima (slično NX-u). Trebate x11vnc za pronalaženje, te Xvfb, Xvnc ili Xdummy za stvaranje sesija. Ako imate problema s povezivanjem, pokušajte odabrati određenu vrstu udaljene sesije u naprednim postavkama AutoX.</string>
+    <string name="auto_x_confirm">Potvrdi</string>
+    <string name="auto_x_descript_geom">Veličina udaljene radne površine (ŠxV)</string>
+    <string name="auto_x_descript_session">Vrsta udaljene sesije</string>
+    <string name="auto_x_disabled">Onemogućeno</string>
+    <string name="auto_x_disabled_selection">AutoX onemogućen</string>
+    <string name="auto_x_enabled">Omogućeno</string>
+    <string name="auto_x_find">Samo pronađi, ne stvaraj</string>
+    <string name="auto_x_find_login">Pronađi X prijavu (treba sudo)</string>
+    <string name="auto_x_geom_custom">Prilagođeno</string>
+    <string name="auto_x_geom_native">Izvorno</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Automatski</string>
+    <string name="auto_x_session_custom">Prilagođeno</string>
+    <string name="auto_x_title">Konfiguriraj AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Autentificiraj se automatski koristeći navedeno SSH korisničko ime/lozinku (na crni zaslon prijave).</string>
+    <string name="auto_x_unixpw">Koristi UNIX vjerodajnice umjesto ugrađenog sigurnosnog mehanizma. Korisnik mora moći pokrenuti /bin/su.</string>
+    <string name="auto_x_xdummy">Pronađi ili stvori s Xdummy</string>
+    <string name="auto_x_xvfb">Pronađi ili stvori s Xvfb</string>
+    <string name="auto_x_xvnc">Pronađi ili stvori s Xvnc</string>
+
+    <string name="button_send_text">Pošalji tekst</string>
+    <string name="button_send_without_saving">Pošalji tekst/ne spremi ga</string>
+
+    <string name="center_mouse">Miš @</string>
+
+    <string name="close">Zatvori</string>
+
+    <string name="color_format_caption">Način boja</string>
+    <string name="color_mode">Način boja</string>
+
+    <string name="connect_button">Spoji</string>
+    <string name="back_button">Nazad</string>
+    <string name="update_button">Ažuriraj</string>
+
+    <string name="connection_caption">Veza</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Vrsta veze</string>
+    <string name="connection_type_rdp_over_ssh">RDP preko SSH-a</string>
+    <string name="connection_type_spice_over_ssh">SPICE preko SSH-a</string>
+    <string name="connection_type_vnc">Osnovni VNC</string>
+    <string name="connection_type_vnc_over_ssh">Sigurni VNC preko SSH-a</string>
+    <string name="connection_type_vnc_over_ssl">Sigurni VNC preko AnonTLS-a</string>
+    <string name="connection_type_vnc_over_stunnel">Sigurni VNC preko SSL tunela</string>
+    <string name="connection_type_vnc_over_vencrypt">Sigurni VNC preko VeNCrypt-a</string>
+    <string name="connection_edit_delete_prompt">Želite li urediti ili obrisati vezu</string>
+    <string name="connection_edit">Uredi</string>
+    <string name="connection_delete">Obriši</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopiraj popis</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Zadani način unosa</string>
+    <string name="delete_connection">Obriši vezu</string>
+    <string name="delete_key">Obriši odabrani ključ</string>
+    <string name="delete_key_list">Obriši popis ključeva</string>
+
+    <string name="disconnect">Odspoji</string>
+
+    <string name="dpad_as_arrows">Koristi D-Pad za strelice, a klik D-Pada za Ctrl.</string>
+
+    <string name="enable_recording">Omogući snimanje</string>
+    <string name="enable_sound">Omogući zvuk</string>
+
+    <string name="enter_text">Pošalji tekst</string>
+    <string name="enter_text_title">Unesite tekst za slanje</string>
+
+    <string name="error_anon_dh_unsupported">VNC poslužitelj pokušava koristiti anonimne Diffie Hellman šifre koje nisu podržane na vašem Android uređaju. Ako koristite GNOME-ov Vino VNC poslužitelj, možete onemogućiti AnonTLS pokretanjem sljedeće naredbe u terminalu i ponovnim pokretanjem: \"gsettings set org.gnome.Vino require-encryption false\". Ako pokrećete x11vnc, možete dodati sljedeće opcije: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Veza nije uspjela.</string>
+    <string name="error_connection_interrupted">Veza je prekinuta.</string>
+    <string name="error_no_user_hostname">Unesite barem korisničko ime i naziv hosta ili IP adresu.</string>
+    <string name="error_out_of_memory">Nije moguće dodijeliti dovoljno memorije za crtanje udaljenog zaslona. Pokušajte ponovo pokrenuti aplikaciju, a zatim i uređaj. Možete i pokušati smanjiti veličinu udaljene radne površine u postavkama aplikacije.</string>
+    <string name="error_ovirt_unable_to_connect">Nije moguće spojiti se ili autentificirati, provjerite adresu poslužitelja, korisnika, lozinku, certifikacijsko tijelo i predmet.</string>
+    <string name="error_pick_correct_item">Provjerite jeste li odabrali pravu stavku u Vrsti veze.</string>
+    <string name="error_rdp_authentication_failed">RDP autentifikacija nije uspjela! Provjerite RDP korisničko ime i lozinku i pokušajte ponovo.</string>
+    <string name="error_rdp_connection_failed">RDP veza nije uspjela! Ili je mrežna veza prekinuta, RDP poslužitelj je isključen ili onemogućen, ili je vaša sesija preuzeta.</string>
+    <string name="error_rdp_unable_to_connect">Nije moguće spojiti se na RDP poslužitelj! Provjerite je li postavka RDP poslužitelja ispravna, je li poslužitelj uključen, je li RDP omogućen i je li poslužitelj na istoj mreži kao ovaj uređaj.</string>
+    <string name="error_security_type">Poslužitelj nije ponudio podržanu vrstu sigurnosti.</string>
+    <string name="error_spice_unable_to_connect">Nije moguće spojiti se ili autentificirati, provjerite adresu i priključak poslužitelja.</string>
+    <string name="error_ssh_could_not_exec_command">Nije moguće izvršiti udaljenu naredbu.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Nije moguće poslati sudo lozinku.</string>
+    <string name="error_ssh_hostkey_changed">GREŠKA! Ključ hosta poslužitelja je promijenjen. Ako je to namjerno, možete nastaviti. U suprotnom, ovo može biti napad čovjekom u sredini.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH poslužitelj ne podržava ni metodu autentifikacije \"password\" ni \"keyboard-interactive\" ili zahtijeva prvo metodu \"publickey\". Konfigurirajte ga da dopusti barem jednu od dvije metode ili reconfigurirajte aplikaciju. Dostupne metode autentifikacije: </string>
+    <string name="error_ssh_key_auth_fail">Autentifikacija na SSH poslužitelju s parom ključeva nije uspjela. Provjerite SSH korisničko ime i uvjerite se da je vaš javni ključ u datoteci authorized_keys na udaljenom sustavu.</string>
+    <string name="error_ssh_keypair_decryption_failure">Dešifriranje para ključeva nije uspjelo. Provjerite jeste li ispravno unijeli pristupnu frazu u polje \'SSH pristupna fraza\' na glavnom zaslonu.</string>
+    <string name="error_ssh_keypair_missing">SSH par ključeva još nije generiran! Generirajte ga i stavite (javni dio) u authorized_keys na SSH poslužitelju.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Navedena je pristupna fraza, ali par ključeva nije šifriran. Obrišite pristupnu frazu.</string>
+    <string name="error_ssh_port_forwarding_failure">Nije moguće postaviti prosljeđivanje priključaka za tuneliranje VNC prometa preko SSH-a. Provjerite je li vaš SSH poslužitelj konfiguriran da dopusti prosljeđivanje priključaka i pokušajte ponovo.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH poslužitelj ne podržava metodu autentifikacije \"publickey\", a mi pokušavamo koristiti par ključeva za autentifikaciju. Konfigurirajte ga da dopusti autentifikaciju javnim ključem i pokušajte ponovo. Dostupne metode autentifikacije: </string>
+    <string name="error_ssh_pwd_auth_fail">Autentifikacija na SSH poslužitelju s lozinkom nije uspjela. Provjerite SSH korisničko ime i SSH lozinku.</string>
+    <string name="error_ssh_unable_to_connect">Spajanje na SSH poslužitelj nije uspjelo. Provjerite mrežnu vezu, adresu i priključak SSH poslužitelja.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nije moguće dohvatiti udaljeni VNC priključak iz x11vnc. Provjerite je li x11vnc instaliran. Za sigurnost pokušajte ručno pokrenuti x11vnc u naredbenom retku.</string>
+    <string name="error_uri_noinfo_nosave">Navedeno je nedovoljno informacija za spajanje.</string>
+    <string name="error_uri_parse_error">Nije moguće raščlaniti URI namjere. Provjerite format URI-ja. Također možete pogledati logcat uređaja za više detalja.</string>
+    <string name="error_vnc_authentication">VNC autentifikacija nije uspjela! Provjerite VNC lozinku (i korisnika, ako je primjenjivo).</string>
+    <string name="error_vnc_unable_to_connect">"Veza s VNC poslužiteljem nije uspjela iz razloga: "</string>
+    <string name="error_x509_could_not_generate_encoding">Nije moguće generirati kodiranje certifikata.</string>
+    <string name="error_x509_could_not_generate_signature">Nije moguće generirati SHA1 ili MD5 potpis certifikata. Nije pronađen algoritam SHA1/MD5.</string>
+
+    <string name="export_settings">Izvezi</string>
+
+
+    <string name="extra_keys_disable">Onemogući dodatne tipke</string>
+    <string name="extra_keys_enable">Omogući dodatne tipke</string>
+
+    <string name="fit_to_screen">Prilagodi zaslonu</string>
+
+    <string name="force">Bitmapa cijelog zaslona</string>
+
+    <string name="immersive_mode_disable">Onemogući imerzivni način</string>
+
+    <string name="import_export_settings">📦 Uvezi/izvezi postavke</string>
+    <string name="import_settings">Uvezi</string>
+
+
+    <string name="info">Informacija</string>
+    <string name="info_cert_signatures">"Podaci o certifikatu su: "</string>
+    <string name="info_cert_signatures_identical">\n\nMožete provjeriti odgovaraju li podaci certifikatu poslužitelja kako biste spriječili napad čovjekom u sredini.</string>
+    <string name="info_cert_tunnel">Želite li se spojiti na host identificiran sljedećim certifikatom?\n\nOtisak prsta: %1$s\n\nIzdano za:\n%2$s\n\nIzdano od:\n%3$s\n\nVaži od:\n%4$s\n\nVaži do:\n%5$s\n\nNapomena: Aplikacija ne provjerava certifikacijska tijela niti opoziv certifikata.</string>
+    <string name="info_continue_connecting">"Nastavi spajanje na: "</string>
+    <string name="info_encoding">" kodiranje, "</string>
+    <string name="info_progress_dialog_aborted">Veza je prekinuta!</string>
+    <string name="info_progress_dialog_connecting">Spajanje…</string>
+    <string name="info_progress_dialog_downloading">Preuzimanje prvog okvira.\nMolimo pričekajte…</string>
+    <string name="info_progress_dialog_establishing">Uspostavljanje rukovanja.\nMolimo pričekajte…</string>
+    <string name="info_ssh_initializing_hostkey">Pokušaj inicijalizacije SSH HostKey-a.</string>
+    <string name="info_ssh_key_fingerprint">"Otisak prsta ključa hosta je: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nMožete provjeriti je li identičan poznatom otisku prsta certifikata poslužitelja kako biste spriječili napad čovjekom u sredini.</string>
+    <string name="info_update_color_model_to">"Ažuriranje modela boja na "</string>
+
+    <string name="input_method_direct_drag_pan_description">Izravno, držanje za pomicanje: Povucite za povlačenje i ispuštanje. Dodirnite jednim prstom gdje god želite kliknuti lijevom tipkom, s dva prsta za desni klik i s tri prsta za srednji klik. Prijeđite s dva prsta za pomicanje. Dugo dodirnite za početak pomicanja.</string>
+    <string name="input_method_direct_swipe_pan_description">Izravno, prelazak za pomicanje: Prijeđite za pomicanje po prikazu. Dodirnite jednim prstom gdje god želite kliknuti lijevom tipkom, s dva prsta za desni klik i s tri prsta za srednji klik. Prijeđite s dva prsta za pomicanje. Dugo dodirnite za povlačenje i ispuštanje.</string>
+    <string name="input_method_single_handed_description">Jednom rukom: Prijeđite za pomicanje po prikazu. Dodirnite jednim prstom gdje god želite kliknuti lijevom tipkom. Dugo dodirnite za odabir načina lijevo/desno/srednje povlačenje/pomicanje/zumiranje. Uobičajene višedodirne kontrole također rade.</string>
+    <string name="input_method_touchpad_description">Simulirani touchpad: Prijeđite za pomicanje pokazivača. Dodirnite bilo gdje jednim prstom za lijevi klik, s dva prsta za desni klik i s tri prsta za srednji klik. Prijeđite s dva prsta za pomicanje. Dugo dodirnite za povlačenje i ispuštanje.</string>
+    <string name="input_mode">Način unosa</string>
+
+    <string name="input_mode_fit_to_screen">Bez pomicanja; trackball miš</string>
+    <string name="input_mode_panning">Način pomicanja radne površine</string>
+    <string name="input_method_mouse">Upravljanje pokazivačem miša</string>
+
+    <string name="input_method_direct_swipe_pan">Izravno, prelazak za pomicanje</string>
+    <string name="input_method_direct_drag_pan">Izravno, držanje za pomicanje</string>
+    <string name="input_method_single_handed">Jednom rukom</string>
+    <string name="input_method_touchpad">Simulirani touchpad</string>
+
+    <string name="input_mode_help">Pomoć za način unosa</string>
+    <string name="input_mode_help_text">"
+U bilo kojem načinu unosa, dodirnite ikonu tipkovnice za prikaz tipkovnice na zaslonu. Vaš uređaj može imati i vlastitu gestu za prikaz tipkovnice.
+
+Koristite izravne načine unosa za intuitivniju kontrolu zaslona osjetljivog na dodir. Koristite način simuliranog touchpada za finiju kontrolu miša.
+
+Način izravnog prelaska za pomicanje:
+ - Kontrolirajte miš izravno dodirom.
+ - Prijeđite za pomicanje po prikazu.
+ - Dodir uzrokuje klik mišem na mjestu dodira.
+ - Događaji pomicanja šalju se između dva prsta gdje je počelo povlačenje s dva prsta.
+
+Način izravnog držanja za pomicanje:
+ - Kontrolirajte miš izravno dodirom.
+ - Dugo dodirnite za početak načina pomicanja.
+ - Dodir uzrokuje klik mišem na mjestu dodira.
+ - Događaji pomicanja šalju se između dva prsta gdje je počelo povlačenje s dva prsta.
+
+Način simuliranog touchpada:
+ - Koristite zaslon kao touchpad.
+ - Prijeđite za pomicanje pokazivača miša.
+ - Pomaknite miš izvan ruba zaslona za pomicanje prikaza.
+ - Dodir uzrokuje klik mišem na položaju pokazivača.
+ - Događaji pomicanja šalju se na poziciju gdje se nalazi pokazivač miša.
+
+Način jednom rukom:
+ - Isto kao način izravnog prelaska za pomicanje, osim što dugi dodir otvara izbornik s izborom načina.
+ - Nakon odabira načina, prelazak prsta po zaslonu izvodi odabranu gestu.
+ - Podizanje prsta dovršava gestu.
+
+Svi načini unosa:
+ - Lijevi klik: Jedno dodirivanje.
+ - Dvostruki klik: Dvostruko dodirivanje.
+ - Desni klik: Držanje i dodirivanje drugim prstom (bilo gdje drugdje na zaslonu).
+ - Alternativni desni klik: Koristite gumb ili gestu \"Natrag\" za vaš uređaj.
+ - Srednji klik: Držanje i dodirivanje s još dva prsta (bilo gdje drugdje na zaslonu).
+ - Povlačenje mišem: Dugo držanje i povlačenje.
+ - Kotačić za pomicanje: Povlačenje s dva prsta gore/dolje i lijevo/desno. Brzo povlačenje pomiče brže.
+ - Zumiranje: U načinu skaliranja s zumiranjem, koristite pinch-zoom za kontrolu skaliranja.
+ - Tipke Ctrl/Alt: Izbornik-&gt;Ctrl/Alt gumbi. Ne zaboravite isključiti kada završite!
+ - Kombinacije tipki: Izbornik-&gt;Više-&gt;Pošalji tipke.
+ - Pošalji tekst: Upišite na tipkovnici na zaslonu ili koristite Izbornik-&gt;Više-&gt;Pošalji tekst."</string>
+
+    <string name="intro_close">Zatvori</string>
+    <string name="intro_dont_show">Ne prikazuj ponovo</string>
+
+    <string name="intro_text">
+Trenutni popis bVNC značajki:
+&lt;br&gt;
+- Obični VNC, sigurni VNC preko SSH-a, AnonTLS i VeNCrypt, te UltraVNC Windows prijava s neobaveznim Repeaterom.
+&lt;br&gt;
+- AutoX način: U načinu VNC preko SSH-a, automatski otkrijte postojeće i/ili stvorite nove X-sesije koristeći x11vnc! Radi poput NX klijenta.
+&lt;br&gt;
+- Podrška za slobodnu rotaciju. Koristite operacijski sustav za ograničavanje rotacije ako je potrebno.
+&lt;br&gt;
+- Generiranje i izvoz SSH para javnog/privatnog ključa.
+&lt;br&gt;
+- Sva standardna VNC kodiranja, uključujući Tight, ZRLE i CopyRect.
+&lt;br&gt;
+- Automatsko spremanje sesije.
+&lt;br&gt;
+- Načini skaliranja: s zumiranjem, prilagođeno zaslonu i jedan-na-jedan.
+&lt;br&gt;
+- Višedodirna kontrola udaljenog miša u izravnim načinima i načinu simuliranog touchpada.
+&lt;br&gt;
+- Potpuna kontrola udaljenog miša jednom rukom u načinu jednom rukom.
+&lt;br&gt;
+- Višedodirni klikovi mišem: dodir za lijevi klik, dodir s dva prsta za desni klik, dodir s tri prsta za srednji klik.
+&lt;br&gt;
+- Višedodirno pomicanje: povlačenje s dva prsta gore/dolje i lijevo/desno za pomicanje.
+&lt;br&gt;
+- Meta tipke i tipke sa strelicama na zaslonu koje se mogu potpuno onemogućiti iz izbornika ili sakriti gumbom na zaslonu.
+&lt;br&gt;
+- Slanje teksta i proizvoljnih kombinacija tipki kada ste spojeni.
+&lt;br&gt;
+- Pomoć pri stvaranju veza (\"Izbornik-&gt;Pomoć za veze\") na zaslonu veze.
+&lt;br&gt;
+- Pomoć s načinima unosa (\"Izbornik-&gt;Više-&gt;Pomoć za način unosa\") kada ste spojeni.
+&lt;br&gt;
+- Korištenje dostupnog trackpada kao strelice umjesto pomicanja miša, a klik trackpada kao Ctrl.
+&lt;br&gt;
+- Prebacivanje na portretni način tijekom veza, rotiranje D-pada/trackpada za BT tipkovnice.
+&lt;br&gt;
+- Podrška za više jezika, sve dok VNC poslužitelj ima omogućen potreban raspored jezika.
+&lt;br&gt;
+- Integracija kopiranja/lijepljenja
+&lt;br&gt;
+- Promjene rezolucije udaljenog stroja
+&lt;br&gt;
+- Potpuna podrška za miš na Android 4.0+ uređajima, uključujući desni i srednji klik te kotačić za pomicanje.
+&lt;br&gt;
+&lt;br&gt;
+Poznati problemi:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitivni, sigurni VNC klijent</string>
+
+
+    <string name="keep_password_button">Zadrži</string>
+    <string name="keep_screen_awake_enable">Drži zaslon budnim</string>
+
+    <string name="keys_caption">Tipke</string>
+
+    <string name="landscape_force">Prisili pejzažnu orijentaciju</string>
+
+    <string name="left_handed_mode">Način za ljevake</string>
+    <string name="disable_pointer_offset_correction">Onemogući korekciju pomaka pokazivača</string>
+
+    <string name="list_caption">Popis</string>
+    <string name="list_name_caption">Naziv popisa</string>
+
+    <string name="local_mouse_check">Lokalni pokazivač miša (odaberite ako je pokazivač nevidljiv)</string>
+
+    <string name="main_screen_help">Pomoć za vezu</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kada dodajete ili uređujete vezu, vidjet ćete stranicu za konfiguraciju veze. Ovdje možete postaviti
+novu VNC vezu ili odabrati postojeću. Na vrhu je gumb koji vam omogućuje
+spremanje veze. Ispod toga je mjesto gdje konfigurirate svoju vezu.
+
+Ako tražite brzo poboljšanje performansi, pokušajte postaviti način boja na nižu vrijednost. Također, pokušajte ukloniti sve slike pozadine radne površine na VNC poslužitelju. Na kraju, osigurajte da vaš uređaj ima dobru mrežnu vezu i izbjegavajte pokrivanje antene što bi smanjilo jačinu signala.
+
+ - Vrsta veze: Ovdje odabirete vrstu VNC veze. Dostupne vrste veza su:
+   (a) Obični VNC, kojeg podržavaju svi VNC poslužitelji, ali mu nedostaje enkripcija i ranjiv je na napade grubom silom zbog ograničenja lozinke na 8 znakova.
+   (b) Sigurni VNC preko SSH-a, koji se spaja putem šifriranog SSH tunela. Trebate SSHD uslugu i VNC poslužitelj. Sve dok VNC poslužitelj ne prihvaća veze izravno s interneta, ova vrsta veze nema poznatih ranjivosti, sve dok verificirate potpis certifikata poslužitelja pri prvom spajanju.
+   (c) UltraVNC, koji vam daje opcije Windows prijave i UltraVNC Repeatera. Korištenje Windows prijave ne pati od ograničenja lozinke na 8 znakova, ali ovaj način ne nudi enkripciju, pa je vaša sesija ranjiva na njuškanje.
+   (d) Sigurni VNC preko AnonTLS-a, koji je regularni VNC putem stunnel-ekvivalentne veze. Trebate pokrenuti stunnel ili koristiti VNC poslužitelj poput Vino koji podržava AnonTLS. Ovaj način vam daje enkripciju sesije, ali pati od ograničenja lozinke na 8 znakova i ne sprječava napade čovjekom u sredini.
+   (e) Sigurni VNC preko VeNCrypt-a, koji koristi x509 certifikate i enkripciju sesije, a ovisno o konfiguraciji poslužitelja može koristiti korisničke/lozinkovne vjerodajnice bez ograničenja na 8 znakova. Ovaj način sprječava napade čovjekom u sredini i pruža privatnost sesije. Poslužitelji poput x11vnc i TigerVNC podržavaju ovaj način i jednako su sigurni kao VNC preko SSH-a.
+
+ - Naziv: Svaka veza koju stvorite može imati nadimak za lako prepoznavanje na popisu.
+
+ - Postavke SSH tunela: Dostupno u načinu VNC preko SSH-a.
+   (a) SSH poslužitelj/Priključak: Adresa i priključak SSH poslužitelja kroz koji će veza biti tunelirana. Prema zadanom SSH sluša na priključku 22.
+   (b) Korisničko ime/Lozinka: Korisničko ime i lozinka računa na SSH poslužitelju. Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+   (c) Upravljaj ključem/Koristi ključ: Gumb za upravljanje javnim/privatnim ključevima i potvrdni okvir koji označava hoće li se koristiti ključ umjesto lozinke za autentifikaciju. Ako koristite gumb Kopiraj u međuspremnik nakon generiranja para ključeva, trebali biste moći zalijepiti javni ključ jednom kada ste spojeni na VNC poslužitelj (međuspremnik je sinkroniziran s poslužiteljem).
+
+ - Konfiguriraj AutoX: Dostupno samo u načinu VNC preko SSH-a. Aplikacija može automatski otkriti postojeće i po izboru stvoriti nove X sesije na UNIX sustavima (poput NX klijenta). Trebate x11vnc za pronalaženje, te Xvfb, Xvnc ili Xdummy instalirane na udaljenom sustavu za stvaranje sesija. Možda ćete morati premjestiti datoteku .dmrc i dodati datoteku .xinit u kućni direktorij ako radna površina ne izgleda ispravno ili dobivate samo xterm prozor.
+
+ - Postavke VNC veze:
+   (a) VNC poslužitelj/Priključak: Ovdje unosite naziv hosta ili IP adresu i priključak računala koje pokreće VNC poslužitelj s kojim se želite spojiti. U načinu VNC preko SSH-a, ova adresa je viđena s SSH poslužitelja. Ako su SSH i VNC poslužitelj isto računalo, možete koristiti localhost. VNC poslužitelji tipično slušaju počevši od priključka 5900 (prvi VNC zaslon, zaslon :0).
+   (b) VNC korisnik: Dostupno u načinu UltraVNC s Windows prijavom ili sigurnom VNC preko VeNCrypt-a, ovdje unosite korisničko ime Windows/UNIX računa.
+   (c) VNC lozinka: Ako konfiguracija vašeg VNC poslužitelja zahtijeva lozinku, unesite je ovdje. U načinima UltraVNC s Windows prijavom/VeNCrypt, stavite svoju Windows/UNIX lozinku računa ovdje. Sigurna pohrana se ne koristi za lozinke i lozinka će biti pohranjena samo ako označite okvir "Zadrži". Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+
+ - Način boja: Klijent podržava nekoliko načina boja. Načini s više boja pružaju bolje vizualno iskustvo na račun veće propusnosti i više CPU obrade na vašem uređaju. Neki VNC poslužitelji ne podržavaju sve dubine boja (npr. OS/X Remote Desktop zahtijeva 24-bitnu boju). Ako imate problema s spajanjem, pokušajte s drugom dubinom boja.
+
+ - Koristi D-Pad za strelice: Ako preferirate, možete koristiti D-Pad Bluetooth tipkovnice ili strelice na tipkovnici na zaslonu za slanje strelica VNC poslužitelju.
+
+ - Rotiraj D-Pad: Telefoni upareni s Bluetooth tipkovnicom možda trebaju D-pad tipkovnice rotirati suprotno od smjera kazaljke na satu kako bi se poslali ispravni smjerovi poslužitelju.
+
+ - Lokalni pokazivač miša: Neki VNC poslužitelji (npr. OS/X Remote Desktop) neće crtati pokazivač miša na klijentu. Označavanjem ove opcije aplikacija će crtati pokazivač miša na poziciji miša.
+
+ - Automatski/Bitmapa cijelog zaslona: VNC klijent koristi bitmapu za predstavljanje udaljenog zaslona. Za vrlo velike udaljene zaslone, posebno u načinu prilagođavanja zaslonu, možete doživjeti čudne vizualne artefakte u načinu prilagođavanja zaslonu, zbog ograničenja memorije po procesu. Ako se to dogodi, pokušajte označiti ovu opciju. Imajte na umu da označavanje opcije može uzrokovati zatvaranje aplikacije pri spajanju.
+
+ - Repeater: Dostupno samo u UltraVNC načinu. VAŽNO: Ako imate UltraVNC repeater, unesite njegovu adresu i priključak izvan dijaloga \'UltraVNC Repeater\' i unesite adresu i priključak stvarnog VNC poslužitelja unutar dijaloga \'UltraVNC Repeater\'. Odvojite adresu i priključak VNC poslužitelja dvotočkom, npr. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Omogući glavnu lozinku</string>
+    <string name="master_password_error_failed_to_disable">Nije moguće onemogućiti glavnu lozinku. Provjerite slobodan prostor na uređaju i pokušajte ponovo.</string>
+    <string name="master_password_error_failed_to_enable">Nije moguće omogućiti glavnu lozinku. Provjerite slobodan prostor na uređaju i pokušajte ponovo.</string>
+    <string name="master_password_error_intents_not_supported">Namjere veze još nisu podržane kada je glavna lozinka omogućena.</string>
+    <string name="master_password_error_password_necessary">Glavna lozinka je potrebna za nastavak.</string>
+    <string name="master_password_error_password_not_set">Postavljanje glavne lozinke je otkazano.</string>
+    <string name="master_password_error_shortcuts_not_supported">Prečaci još nisu podržani kada je glavna lozinka omogućena.</string>
+    <string name="master_password_error_wrong_password">Nije moguće autentificirati se s navedenom glavnom lozinkom.</string>
+    <string name="master_password_hint_once">Unesite lozinku</string>
+    <string name="master_password_hint_twice">Ponovite lozinku</string>
+    <string name="master_password_set">Postavi glavnu lozinku</string>
+    <string name="master_password_set_error">Lozinke se ne podudaraju, budite pažljivi!</string>
+    <string name="master_password_set_message">Unesite i zapamtite glavnu lozinku. Što je lozinka dulja, to je teže razbiti je. Ako postavite lozinku pogrešno ili je zaboravite, izgubit ćete sve postavke! Možda biste željeli sada izvesti postavke kao sigurnosnu kopiju (iz izbornika). Čuvajte ih na sigurnom jer izvezene postavke nisu šifrirane.</string>
+    <string name="master_password_verify">Provjeri glavnu lozinku</string>
+    <string name="master_password_verify_message">Unesite ispravnu glavnu lozinku za nastavak.</string>
+
+    <string name="meta_key_title">Pošalji posebne tipke</string>
+
+    <string name="mouse_follow_pan">Miš prati pomicanje</string>
+
+    <string name="new_connection">Nova veza</string>
+    <string name="new_list_button">Novi popis</string>
+
+    <string name="nickname_caption">Nadimak</string>
+    <string name="nickname_caption_hint">Naziv (neobavezno)</string>
+
+    <string name="off">Isključeno</string>
+
+    <string name="one_to_one">Jedan-na-jedan</string>
+
+    <string name="open_doc">Priručnik/Wiki</string>
+
+    <string name="pan_follow_mouse">Pomicanje prati miš</string>
+
+    <string name="password_caption">VNC autentifikacija</string>
+    <string name="password_caption_hint">VNC lozinka</string>
+    <string name="password_caption_ssh">SSH autentifikacija</string>
+    <string name="password_hint_ssh">SSH lozinka</string>
+
+    <string name="port_caption">VNC priključak</string>
+    <string name="port_caption_ssh">SSH priključak</string>
+    <string name="port_hint">Priključak</string>
+    <string name="port_ssh_hint">Priključak</string>
+
+    <string name="portrait_mode">Prebaci na portretni način kada ste spojeni</string>
+    <string name="local_clipboard_integration">Omogući integraciju međuspremnika od lokalnog do udaljenog</string>
+    <string name="remote_clipboard_integration">Omogući integraciju međuspremnika od udaljenog do lokalnog</string>
+    <string name="position_toolbar_last_used">Vrati položaj alatne trake</string>
+    <string name="applies_to_new_connections_only">Primjenjuje se samo na nove veze</string>
+    <string name="pro_feature_mfa">Čini se da vaš poslužitelj ima omogućenu višefaktorsku autentifikaciju. Podržite projekt kupnjom Pro verzije koja podržava ovu značajku. Veza na Pro verziju dostupna je u uvodnom dijalogu.</string>
+    <string name="pro_feature_intro">Čini se da koristite Pro značajku. Podržite projekt kupnjom Pro verzije koja podržava ovu značajku. Provjerite uvodni dijalog za veze na ispravnu aplikaciju.</string>
+    <string name="pro_feature_generic">Čini se da koristite Pro značajku. Podržite projekt kupnjom Pro verzije koja podržava ovu značajku. Veza na Pro verziju dostupna je u uvodnom dijalogu.</string>
+    <string name="pro_feature_rdp">Izgleda da ste pokušali otvoriti .rdp datoteku što je Pro značajka. Podržite projekt kupnjom aRDP Pro koji podržava .rdp datoteke. Veza na aRDP Pro verziju dostupna je u uvodnom dijalogu.</string>
+    <string name="pro_feature_spice">Izgleda da ste pokušali otvoriti .vv datoteku. Ako biste željeli spremati veze na Proxmox ili oVirt izravno u aplikaciji i otvarati .vv datoteke, razmislite o kupnji Opaque. Ako trebate samo podršku za .vv datoteke, možete nabaviti aSPICE Pro. Pronađite veze na obje aplikacije u uvodnom dijalogu.</string>
+
+    <string name="rdp_address_caption_hint">RDP poslužitelj</string>
+    <string name="rdp_adv_console_mode">Konzolni način</string>
+    <string name="rdp_adv_desktop_background">Prikaži pozadinu radne površine</string>
+    <string name="rdp_adv_desktop_composition">Omogući kompoziciju radne površine</string>
+    <string name="rdp_adv_font_smoothing">Izglađivanje fontova</string>
+    <string name="rdp_adv_menu_animation">Prikaži animacije izbornika</string>
+    <string name="rdp_adv_redirect_sdcard">Preusmjeri SD karticu</string>
+    <string name="rdp_adv_remotefx">Omogući RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Omogući vizualne stilove</string>
+    <string name="rdp_adv_window_contents">Prikaži sadržaj prozora tijekom povlačenja</string>
+    <string name="rdp_security_mode">Sigurnosni način</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Veličina udaljene radne površine (ŠxV)</string>
+    <string name="rdp_domain_hint">RDP domena</string>
+    <string name="rdp_geom_automatic">Automatski</string>
+    <string name="rdp_geom_checkbox_enable">Omogući prilagođenu rezoluciju</string>
+    <string name="rdp_geom_custom">Prilagođeno</string>
+    <string name="rdp_geom_description_hint">Poslužitelj treba podršku za ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Onemogućeno</string>
+    <string name="rdp_geom_native_landscape">Izvorna pejzažna</string>
+    <string name="rdp_geom_native_portrait">Izvorna portretna</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Automatsko pregovaranje sigurnosti</string>
+    <string name="rdp_security_rdp">RDP sigurnost</string>
+    <string name="rdp_security_tls">TLS sigurnost</string>
+    <string name="rdp_security_nla">Mrežna razinska autentifikacija</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Hvala vam što podržavate aRDP i softver otvorenog koda općenito! Za pomoć pri korištenju aRDP-a pogledajte stavke Pomoć u izborniku i opis aplikacije u tržištu.
+&lt;br&gt;
+&lt;br&gt;
+Trenutni popis aRDP značajki uključuje:
+&lt;br&gt;
+- Obični RDP, RDP tuneliran preko SSH-a.
+&lt;br&gt;
+- Podrška za slobodnu rotaciju. Koristite operacijski sustav za ograničavanje rotacije ako je potrebno.
+&lt;br&gt;
+- Postavljanje udaljene rezolucije, izvorna rezolucija u pejzažnom i portretnom načinu.
+&lt;br&gt;
+- Generiranje i izvoz SSH para javnog/privatnog ključa.
+&lt;br&gt;
+- Automatsko spremanje sesije.
+&lt;br&gt;
+- Načini skaliranja: s zumiranjem, prilagođeno zaslonu i jedan-na-jedan.
+&lt;br&gt;
+- Višedodirna kontrola udaljenog miša u izravnim načinima i načinu simuliranog touchpada.
+&lt;br&gt;
+- Potpuna kontrola udaljenog miša jednom rukom u načinu jednom rukom.
+&lt;br&gt;
+- Višedodirni klikovi mišem: dodir za lijevi klik, dodir s dva prsta za desni klik, dodir s tri prsta za srednji klik.
+&lt;br&gt;
+- Višedodirno pomicanje: povlačenje s dva prsta gore/dolje i lijevo/desno za pomicanje.
+&lt;br&gt;
+- Meta tipke i tipke sa strelicama na zaslonu koje se mogu potpuno onemogućiti iz izbornika ili sakriti gumbom na zaslonu.
+&lt;br&gt;
+- Slanje teksta i proizvoljnih kombinacija tipki kada ste spojeni.
+&lt;br&gt;
+- Pomoć pri stvaranju veza (\"Izbornik-&gt;Pomoć za veze\") na zaslonu veze.
+&lt;br&gt;
+- Pomoć s načinima unosa (\"Izbornik-&gt;Više-&gt;Pomoć za način unosa\") kada ste spojeni.
+&lt;br&gt;
+- Korištenje dostupnog trackpada kao strelice umjesto pomicanja miša, a klik trackpada kao Ctrl, rotiranje D-pada/trackpada za BT tipkovnice.
+&lt;br&gt;
+- Podrška za više jezika, sve dok RDP poslužitelj ima omogućen potreban raspored jezika.
+&lt;br&gt;
+- Besprijekorne promjene rezolucije udaljenog stroja
+&lt;br&gt;
+- Potpuna podrška za miš na Android 4.0+ uređajima, uključujući desni i srednji klik te kotačić za pomicanje.
+&lt;br&gt;
+- Izbor načina boja
+&lt;br&gt;
+- Integracija kopiranja/lijepljenja
+&lt;br&gt;
+- Izvoz postavki
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+&lt;br&gt;
+Poznati problemi:</string>
+    <string name="rdp_intro_title">aRDP: Intuitivni, sigurni RDP klijent</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kada dodajete ili uređujete vezu, vidjet ćete stranicu za konfiguraciju veze. Ovdje možete postaviti novu RDP vezu ili odabrati postojeću. Na vrhu je gumb koji vam omogućuje spremanje veze. Ispod toga je mjesto gdje konfigurirate svoju vezu.
+
+ - Vrsta veze: Ovdje odabirete vrstu RDP veze. Dostupne vrste veza su:
+   (a) RDP, koji se izravno spaja na računalo putem RDP protokola.
+   (b) RDP preko SSH-a, koji najprije tunelira vašu vezu kroz računalo koje pokreće SSH poslužitelj.
+
+ - Naziv: Svaka veza koju stvorite može imati nadimak za lako prepoznavanje na popisu.
+
+ - Postavke SSH tunela: Dostupno u načinu RDP preko SSH-a.
+   (a) SSH poslužitelj/Priključak: Adresa i priključak SSH poslužitelja kroz koji će veza biti tunelirana. Prema zadanom SSH sluša na priključku 22.
+   (b) Korisničko ime/Lozinka: Korisničko ime i lozinka računa na SSH poslužitelju. Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+   (c) Upravljaj ključem/Koristi ključ: Gumb za upravljanje javnim/privatnim ključevima i potvrdni okvir koji označava hoće li se koristiti ključ umjesto lozinke za autentifikaciju. Ako koristite gumb Kopiraj u međuspremnik nakon generiranja para ključeva, trebali biste moći zalijepiti javni ključ jednom kada ste spojeni na RDP poslužitelj (međuspremnik je sinkroniziran s poslužiteljem).
+
+ - Postavke RDP veze:
+   (a) RDP poslužitelj/Priključak: Ovdje unosite naziv hosta ili IP adresu i priključak računala koje pokreće RDP poslužitelj s kojim se želite spojiti. U načinu RDP preko SSH-a, ova adresa je viđena s SSH poslužitelja. Ako su SSH poslužitelj i RDP poslužitelj isto fizičko računalo, možete koristiti localhost. RDP poslužitelji tipično slušaju na priključku 3389.
+   (b) RDP korisnik: Ovdje unosite korisničko ime Windows/UNIX računa.
+   (c) RDP domena: Unesite domenu kojoj pripada vaš račun.
+   (d) RDP lozinka: Ovdje unosite lozinku Windows/UNIX računa. Sigurna pohrana se ne koristi za lozinke (pohranjavaju se u bazi podataka) i lozinka će biti pohranjena samo ako označite okvir "Zadrži". Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+
+ - Napredne postavke: U ovom odjeljku pronaći ćete načine za prilagodbu rezolucije radne površine i razna RDP podešavanja performansi.
+
+ - Lokalna podešavanja uređaja: Ova podešavaju ponašanje aplikacije na vašem uređaju.
+   (a) Koristi D-Pad za strelice: Ako preferirate, možete koristiti D-Pad Bluetooth tipkovnice ili strelice na tipkovnici na zaslonu za slanje strelica RDP poslužitelju.
+   (b) Rotiraj D-Pad: Telefoni upareni s Bluetooth tipkovnicom možda trebaju D-pad tipkovnice rotirati suprotno od smjera kazaljke na satu kako bi se poslali ispravni smjerovi poslužitelju.
+   (c) Lokalni pokazivač miša: Ako je pokazivač nevidljiv, odaberite ovo kako biste prisilili aplikaciju da ga crta."</string>
+    <string name="rdp_password_hint">RDP lozinka</string>
+    <string name="rdp_server_empty">RDP poslužitelj ili priključak je prazan. Nije moguće spojiti se!</string>
+    <string name="rdp_username_hint">RDP korisničko ime</string>
+
+    <string name="remote_sound_disabled">Zvuk onemogućen</string>
+    <string name="remote_sound_on_device">Zvuk na uređaju</string>
+    <string name="remote_sound_on_server">Zvuk na poslužitelju</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">VAŽNO: Ako koristite UltraVNC repeater, unesite njegovu adresu i priključak izvan ovog dijaloga. Ovdje unesite adresu i priključak stvarnog VNC poslužitelja. Odvojite adresu i priključak VNC poslužitelja dvotočkom, npr. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Ne koristi</string>
+    <string name="repeater_dialog_title">VNC poslužitelj iza repeatera</string>
+    <string name="repeater_empty_text">Bez repeatera</string>
+    <string name="repeater_save">Koristi</string>
+
+    <string name="right_alt_as_iso_l3_shift">Desni Alt kao ISO L3 Shift (samo VNC)</string>
+
+    <string name="rotate_dpad">Rotiraj Bluetooth ili softverski D-Pad</string>
+
+    <string name="save_as_copy">Spremi kao kopiju</string>
+
+    <string name="scaling">Skaliranje</string>
+    <string name="scaling_zoomable">Sa zumiranjem</string>
+
+    <string name="send_button">Pošalji</string>
+    <string name="send_key_again">Pošalji tipku ponovo</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC veza</string>
+    <string name="shortcut_label_rdp">RDP veza</string>
+    <string name="shortcut_label_spice">SPICE veza</string>
+
+    <string name="showkbd_label">Tipkovnica</string>
+
+    <string name="single_cancel">Način jednom rukom otkazan</string>
+    <string name="single_choose">Odaberite način jednom rukom ili odustanite</string>
+    <string name="single_left">Način lijevog povlačenja - prijeđite za povlačenje/odabir, podignite prst za zaustavljanje</string>
+    <string name="single_middle">Način srednjeg povlačenja - prijeđite za povlačenje/odabir, podignite prst za zaustavljanje</string>
+    <string name="single_reposition">Pokazivač miša premješten za način jednom rukom</string>
+    <string name="single_right">Način desnog povlačenja - prijeđite za povlačenje/odabir, podignite prst za zaustavljanje</string>
+    <string name="single_scroll">Način pomicanja - prijeđite gore/dolje za pomicanje, podignite prst za zaustavljanje</string>
+    <string name="single_zoom">Način zumiranja - prijeđite gore/dolje za zumiranje unutra/van, podignite prst za zaustavljanje</string>
+
+    <string name="snap_one_to_one">Zaključano na 1:1 zumiranje</string>
+
+    <string name="special_keys">Pošalji tipke</string>
+
+    <string name="spice_address_caption_hint">SPICE poslužitelj</string>
+    <string name="spice_button_import_ca">Uvezi CA</string>
+    <string name="spice_ca_cert_path_hint">Put do datoteke certifikacijskog tijela</string>
+    <string name="spice_ca_file_error_reading">Greška pri čitanju CA datoteke. Provjerite je li čitljiva.</string>
+    <string name="spice_ca_file_not_found">Datoteka nije pronađena. Unesite valjani naziv datoteke u tekstualno polje (npr. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Predmet certifikata</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Hvala vam što podržavate aSPICE i softver otvorenog koda općenito! Za pomoć pri korištenju aSPICE-a pogledajte stavke Pomoć u izborniku i opis aplikacije u tržištu.
+&lt;br&gt;
+&lt;br&gt;
+Trenutni popis aSPICE značajki uključuje:
+&lt;br&gt;
+- Obični SPICE, SPICE tuneliran preko SSH-a.
+&lt;br&gt;
+- Podrška za slobodnu rotaciju. Koristite operacijski sustav za ograničavanje rotacije ako je potrebno.
+&lt;br&gt;
+- Generiranje i izvoz SSH para javnog/privatnog ključa.
+&lt;br&gt;
+- Automatsko spremanje sesije.
+&lt;br&gt;
+- Načini skaliranja: s zumiranjem, prilagođeno zaslonu i jedan-na-jedan.
+&lt;br&gt;
+- Višedodirna kontrola udaljenog miša u izravnim načinima i načinu simuliranog touchpada.
+&lt;br&gt;
+- Potpuna kontrola udaljenog miša jednom rukom u načinu jednom rukom.
+&lt;br&gt;
+- Višedodirni klikovi mišem: dodir za lijevi klik, dodir s dva prsta za desni klik, dodir s tri prsta za srednji klik.
+&lt;br&gt;
+- Višedodirno pomicanje: povlačenje s dva prsta gore/dolje i lijevo/desno za pomicanje.
+&lt;br&gt;
+- Meta tipke i tipke sa strelicama na zaslonu koje se mogu potpuno onemogućiti iz izbornika ili sakriti gumbom na zaslonu.
+&lt;br&gt;
+- Slanje teksta i proizvoljnih kombinacija tipki kada ste spojeni.
+&lt;br&gt;
+- Pomoć pri stvaranju veza (\"Izbornik-&gt;Pomoć za veze\") na zaslonu veze.
+&lt;br&gt;
+- Pomoć s načinima unosa (\"Izbornik-&gt;Više-&gt;Pomoć za način unosa\") kada ste spojeni.
+&lt;br&gt;
+- Korištenje dostupnog trackpada kao strelice umjesto pomicanja miša, a klik trackpada kao Ctrl, rotiranje D-pada/trackpada za BT tipkovnice.
+&lt;br&gt;
+- Podrška za više jezika, sve dok SPICE poslužitelj ima omogućen potreban raspored jezika.
+&lt;br&gt;
+- Besprijekorne promjene rezolucije udaljenog stroja
+&lt;br&gt;
+- Potpuna podrška za miš na Android 4.0+ uređajima, uključujući desni i srednji klik te kotačić za pomicanje.
+&lt;br&gt;
+&lt;br&gt;
+Planirane značajke:
+&lt;br&gt;
+- Integracija kopiranja/lijepljenja
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+- Poboljšanja performansi
+&lt;br&gt;
+Poznati problemi:
+&lt;br&gt;
+- Slanje teksta ne šalje neke simbole.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitivni, sigurni SPICE klijent</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kada dodajete ili uređujete vezu, vidjet ćete stranicu za konfiguraciju veze. Ovdje možete postaviti novu SPICE vezu ili odabrati postojeću. Na vrhu je gumb koji vam omogućuje spremanje veze. Ispod toga je mjesto gdje konfigurirate svoju vezu.
+
+ - Vrsta veze: Ovdje odabirete vrstu SPICE veze. Dostupne vrste veza su:
+   (a) SPICE, koji se izravno spaja na računalo putem SPICE protokola.
+   (b) SPICE preko SSH-a, koji najprije tunelira vašu vezu kroz računalo koje pokreće SSH poslužitelj.
+
+ - Naziv: Svaka veza koju stvorite može imati nadimak za lako prepoznavanje na popisu.
+
+ - Postavke SSH tunela: Dostupno u načinu SPICE preko SSH-a.
+   (a) SSH poslužitelj/Priključak: Adresa i priključak SSH poslužitelja kroz koji će veza biti tunelirana. Prema zadanom SSH sluša na priključku 22.
+   (b) Korisničko ime/Lozinka: Korisničko ime i lozinka računa na SSH poslužitelju. Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+   (c) Upravljaj ključem/Koristi ključ: Gumb za upravljanje javnim/privatnim ključevima i potvrdni okvir koji označava hoće li se koristiti ključ umjesto lozinke za autentifikaciju. Ako koristite gumb Kopiraj u međuspremnik nakon generiranja para ključeva, trebali biste moći zalijepiti javni ključ jednom kada ste spojeni na SPICE poslužitelj (međuspremnik je sinkroniziran s poslužiteljem).
+
+ - Postavke SPICE veze:
+   (a) SPICE poslužitelj/Priključak: Ovdje unosite naziv hosta ili IP adresu i priključak računala koje pokreće SPICE poslužitelj s kojim se želite spojiti. U načinu SPICE preko SSH-a, ova adresa je viđena s SSH poslužitelja. Ako su SSH poslužitelj i SPICE poslužitelj isto fizičko računalo, možete koristiti localhost. SPICE poslužitelji tipično slušaju na priključku 5900 i više.
+   (b) SPICE lozinka: Ovdje unosite lozinku postavljenu za zaštitu vaše SPICE sesije. Sigurna pohrana se ne koristi za lozinke (pohranjavaju se u bazi podataka) i lozinka će biti pohranjena samo ako označite okvir "Zadrži". Lozinka će biti unesena na ovoj stranici ako niste zatvorili aplikaciju od posljednjeg unosa.
+
+ - Napredne postavke: U ovom odjeljku pronaći ćete sva lokalna podešavanja uređaja ili SPICE podešavanja performansi.
+ - Lokalna podešavanja uređaja: Ova podešavaju ponašanje aplikacije na vašem uređaju.
+   (a) Koristi D-Pad za strelice: Ako preferirate, možete koristiti D-Pad Bluetooth tipkovnice ili strelice na tipkovnici na zaslonu za slanje strelica SPICE poslužitelju.
+   (b) Rotiraj D-Pad: Telefoni upareni s Bluetooth tipkovnicom možda trebaju D-pad tipkovnice rotirati suprotno od smjera kazaljke na satu kako bi se poslali ispravni smjerovi poslužitelju.
+   (c) Lokalni pokazivač miša: Ako je pokazivač nevidljiv, odaberite ovo kako biste prisilili aplikaciju da ga crta."</string>
+    <string name="spice_password_hint">SPICE lozinka</string>
+    <string name="spice_server_empty">SPICE poslužitelj ili priključak je prazan. Nije moguće spojiti se!</string>
+    <string name="spice_tls_port_hint">TLS priključak</string>
+    <string name="spice_username_hint">SPICE korisničko ime</string>
+
+    <string name="ssh_passphrase_hint">SSH pristupna fraza</string>
+    <string name="ssh_pubkey_button">Upravljaj ključem</string>
+    <string name="ssh_use_pubkey">Koristi ključ</string>
+    <string name="ssh_use_x11vnc">Automatska radna površina</string>
+    <string name="ssh_x11vnc_customize">Konfiguriraj AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Onemogući</string>
+    <string name="tap_enable">Omogući</string>
+
+    <string name="username_caption">VNC korisnik</string>
+    <string name="username_hint">UltraVNC MS prijava korisničko ime</string>
+    <string name="username_hint_optional">VNC korisničko ime (neobavezno)</string>
+    <string name="username_hint_ssh">SSH korisničko ime</string>
+    <string name="username_hint_vencrypt">VNC korisničko ime</string>
+    <string name="verification_code">Verifikacijski kôd</string>
+    <string name="verification_code_message">Unesite verifikacijski kôd višefaktorske autentifikacije</string>
+
+    <string name="view_only">Način samo za pregled</string>
+
+    <string name="vnc_server_empty">VNC poslužitelj ili priključak je prazan. Nije moguće spojiti se!</string>
+    <string name="vnc_server_empty_no_save">VNC poslužitelj ili priključak je prazan. Nije moguće spremiti vezu!</string>
+
+    <string name="warning_cert_does_not_match">UPOZORENJE: Spremljeni x509 certifikat ili proslijeđeni potpis ne odgovaraju trenutnom certifikatu poslužitelja! Ovo može biti napad čovjekom u sredini. Ako ste svjesni promjene ključa, možete nastaviti. </string>
+    <string name="copy_logcat">📋 Kopiraj Logcat</string>
+    <string name="log_copied">Logcat kopiran u međuspremnik. Sada ga možete zalijepiti u e-mail ili na forum za podršku. Molimo pregledajte radi osobnih podataka prije objave.</string>
+    <string name="info_set_touchpad_input_mode">Poslužitelj javlja da ne podržava unos miša u načinu klijenta, a trenutni način unosa miša neće ispravno raditi. Ako se to nastavi, provjerite je li spice tools instaliran u virtualnom stroju ili prebacite na način unosa simuliranog touchpada iz izbornika.</string>
+    <string name="ssh_tunnel_settings">Postavke SSH tunela</string>
+    <string name="vnc_connection_settings">Postavke VNC veze</string>
+    <string name="show_advanced_settings">Prikaži napredne postavke</string>
+    <string name="use_no_compression_for_local_connections">Bez kompresije (lokalne veze, Hextile kodiranje)</string>
+    <string name="rdp_connection_settings">Postavke RDP veze</string>
+    <string name="local_device_tweaks">Lokalna podešavanja uređaja</string>
+    <string name="spice_connection_settings">Postavke SPICE veze</string>
+    <string name="ca_subject">Unesite naziv predmeta certifikata ovdje. Možda nije potrebno ako uobičajeno ime certifikata (CN) odgovara nazivu hosta poslužitelja.</string>
+    <string name="path_to_ca">Unesite put datoteke (npr. /sdcard/ca-cert.pem) i dodirnite Uvezi za učitavanje certifikacijskog tijela.</string>
+    <string name="paste_ca">Unesite certifikacijsko tijelo ovdje ako ga ne uvozite kao datoteku.</string>
+    <string name="cert_issuer">Izdavatelj certifikata</string>
+    <string name="cert_fingerprint">Otisak prsta certifikata</string>
+    <string name="error">Greška</string>
+    <string name="panning">Pomicanje zaslona</string>
+    <string name="copy_of">Kopija od</string>
+    <string name="ssh_key_generated">Novi ključ uspješno generiran ili uvezen. Sada možete dodirnuti gumb \'Generiraj/izvezi ključ\' za dijeljenje, kopiranje u međuspremnik ili izvoz javnog ključa.</string>
+    <string name="cursor_force_local">"Lokalni"</string>
+    <string name="cursor_force_disable">"Onemogući"</string>
+    <string name="cursor_mode">"Način pokazivača:"</string>
+    <string name="rendering_mode">"Način renderiranja:"</string>
+    <string name="color_24_bit">"24-bitna boja (24 bpp)"</string>
+    <string name="color_256">"256 boja (8 bpp)"</string>
+    <string name="color_64">"64 boje (4 bpp)"</string>
+    <string name="color_8">"8 boja (2 bpp)"</string>
+    <string name="color_greyscale">"Nijanse sive (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Crno-bijelo (1 bpp)"]]></string>
+    <string name="show">"Prikaži"</string>
+    <string name="hide">"Sakrij"</string>
+    <string name="search_connections">Pretraži veze</string>
+    <string name="user_not_specified">Korisnik nije naveden</string>
+    <string name="enter_ssh_credentials">Unesite SSH vjerodajnice</string>
+    <string name="enter_vnc_credentials">Unesite VNC vjerodajnice</string>
+    <string name="enter_vnc_password">Unesite VNC lozinku</string>
+    <string name="enter_rdp_credentials">Unesite RDP vjerodajnice</string>
+    <string name="enter_gateway_credentials">Unesite vjerodajnice pristupnika</string>
+    <string name="enter_spice_password">Unesite SPICE lozinku</string>
+    <string name="enter_passphrase_title">Unesite pristupnu frazu ključa</string>
+    <string name="enter_passphrase">Unesite pristupnu frazu ključa</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Vaš poslužitelj treba autentifikaciju lozinkom uz autentifikaciju ključem.</string>
+    <string name="main_screen_help_text">"
+Kada se aplikacija pokrene, prikazuje zaslon sa spremljenim vezama.
+
+Ako nema spremljenih veza, donji dio zaslona je prazan i morat ćete pritisnuti gumb plus za stvaranje nove.
+Možete kontrolirati i druge aspekte konfiguracije s ovog zaslona dodirivanjem opcija alatne trake ili izbornika na vrhu,
+na primjer za uređivanje zadanih postavki ili uvoz i izvoz postavki.
+
+Kada imate spremljenu vezu, možete se spojiti na udaljeni poslužitelj jednim dodirom. Također ćete imati mogućnost brisanja ili uređivanja dugim dodirom.
+
+Na kraju, možete koristiti polje Pretraži veze za brzo pronalaženje veza filtriranjem prikazanih veza."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kada dodajete ili uređujete vezu, vidjet ćete stranicu za konfiguraciju veze.
+Ovdje možete postaviti novu Opaque vezu ili odabrati postojeću.
+Na vrhu je gumb koji vam omogućuje spremanje veze.
+Ispod toga je mjesto gdje konfigurirate svoju vezu.
+
+ - Vrsta veze: Ovdje odabirete na koje se virtualizacijsko okruženje spajate.
+
+ - Adresa poslužitelja: Naziv hosta ili IP adresa poslužitelja. Ako sluša na nestandardnom priključku, možete dodati priključak odvojen dvotočkom.
+
+ - Naziv virtualnog stroja: Možete navesti naziv VM-a kako se pojavljuje na vašoj virtualizacijskoj platformi ili ostaviti ovo polje prazno za prikaz popisa VM-ova ili kontejnera za odabir.
+
+ - Korisnik: Unesite korisničko ime za autentifikaciju na vašem virtualizacijskom okviru.
+
+ - Lozinka: Ako biste željeli spremiti lozinku, unesite je ovdje ili ostavite polje prazno da biste bili upitani svaki put.
+
+ - Napredne postavke: U ovom odjeljku pronaći ćete sva lokalna podešavanja uređaja, protokola i performansi."
+    </string>
+    <string name="help">Pomoć ⓘ</string>
+    <string name="need_help">Trebate pomoć?</string>
+    <string name="support_forum">Forum za podršku ❓</string>
+    <string name="email_us">Pošaljite nam e-mail 📧</string>
+    <string name="report_bug">Prijavi grešku 🐛</string>
+    <string name="download_from_server">Preuzmi s poslužitelja</string>
+    <string name="import_from_file">Uvezi iz datoteke</string>
+    <string name="please_grant_permission_from_prefs">Možda ćete morati dodijeliti dozvole aplikaciji putem Postavki.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Više debug zapisa</string>
+    <string name="prefer_sending_unicode">Unicode unos (samo Windows)</string>
+    <string name="hide_connection_thumbnails">Sakrij sličice veza</string>
+    <string name="show_only_connection_nicknames">Prikaži samo nadimke veza</string>
+    <string name="love_our_work">Sviđa vam se naš rad?</string>
+    <string name="rate_app">Ocijenite ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Podijelite 🔗</string>
+    <string name="share_app_toast">Podijelite vezu na aplikaciju sa svim prijateljima na društvenim mrežama!</string>
+    <string name="donate_app">Donirajte ❤</string>
+    <string name="more_apps">Više aplikacija 📱</string>
+    <string name="previous_versions">Prethodne verzije ⍼</string>
+    <string name="keyboard_type">Vrsta softverske tipkovnice</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Zadano (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Tekst/brojevi bez prijedloga (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Tekst s prijedlozima (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Ova veza je postavljena za pokretanje VPN-a putem vanjske aplikacije. Trebate instalirati aplikaciju poput Morpheusly za njezino pokretanje.</string>
+    <string name="vnc_viewer_started">VNC preglednik pokrenut</string>
+    <string name="enable_gateway">Omogući RDP Gateway</string>
+    <string name="scroll_speed">Brzina pomicanja dodirom</string>
+    <string name="desktop_scale_percentage">Prilagođeni postotak skaliranja</string>
+    <string name="show_menu">Prikaži izbornik</string>
+    <string name="move_toolbar">Premjesti alatnu traku</string>
+    <string name="rdp_adv_glyph_cache">Omogući predmemoriju glifova</string>
+
+    <string name="disable_battery_optimizations_failed">
+Nije moguće otvoriti postavke optimizacije baterije. Ručno onemogućite optimizaciju baterije u postavkama sustava.</string>
+    <string name="disable_battery_optimizations">
+🔋Onemogući optimizaciju baterije</string>
+    <string name="disable_battery_optimizations_already_done">
+Aplikacija je već izuzeta od optimizacije baterije.</string>
+    <string name="no_connections_title">Još nema veza</string>
+    <string name="no_connections_hint">Dodirnite gumb + za dodavanje prve udaljene veze</string>
+    <string name="no_connections_hint_tv">Pritisnite gumb + iznad za dodavanje prve udaljene veze</string>
+    <string name="keyboard_layout_map">Raspored tipkovnice</string>
+</resources>

@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">حالت رنگ</string>
+    <string name="message_please_wait">لطفا صبر کنید</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">پیش‌فرض (TYPE_NULL)</string>
+    <string name="ad_donate_text2">نسخه Pro به شما امکان می دهد این گفتگو را غیرفعال کنید و به شما امکان دسترسی به ویژگی های اضافی را می دهد.</string>
+    <string name="snap_one_to_one">به زوم 1:1 تغییر یافت</string>
+    <string name="spice_intro_title">aSPICE: مشتری SPICE بصری و ایمن</string>
+    <string name="auto_x_title">AutoX را پیکربندی کنید</string>
+    <string name="error_ovirt_auth_failure">خرابی احراز هویتلطفا کاربر و رمز عبور ارائه شده را بررسی کنید.</string>
+    <string name="ad_donate_text1">برای حمایت از پروژه با کمک مالی کوچک با خرید نسخه Pro، اینجا را ضربه بزنید.</string>
+    <string name="auto_x_geom_custom">سفارشی</string>
+    <string name="repeater_caption_hint">تکرار کننده UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">رمزگشایی جفت کلید ناموفق بود.لطفاً مطمئن شوید که عبارت عبور خود را به درستی در قسمت \'SSH Passphrase\' در صفحه اصلی وارد کرده‌اید.</string>
+    <string name="master_password_hint_twice">تکرار رمز عبور</string>
+    <string name="connection_setup_password">رمز عبور</string>
+    <string name="support_forum">انجمن پشتیبانی ❓</string>
+    <string name="main_screen_help">راهنما اتصال</string>
+    <string name="spice_server_empty">سرور یا پورت SPICE خالی است.نمیشه وصل شد!</string>
+    <string name="arrow_up">فلش بالا</string>
+    <string name="error_vm_lookup_failed">ماشین مجازی با نام مشخص شده به کاربر شما پیدا نشد.لطفاً نام VM مشخص شده را پاک کنید تا لیستی از ماشین های مجازی اختصاص داده شده به کاربر را مشاهده کنید.</string>
+    <string name="nickname_caption">نام مستعار</string>
+    <string name="auto_x_geom_native">بومی</string>
+    <string name="new_connection">اتصال جدید</string>
+    <string name="error_ssh_unable_to_connect">اتصال به سرور SSH ناموفق بود.لطفاً اتصال شبکه و آدرس و پورت سرور SSH را بررسی کنید.</string>
+    <string name="send_key_again">دوباره کلید را ارسال کنید</string>
+    <string name="input_mode_help">راهنما حالت ورودی</string>
+    <string name="enable_gateway">فعال کردن RDP Gateway</string>
+    <string name="message_please_install_bvnc">لطفاً &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; را از Google Play نصب کنید تا به کنسول VNC این VM متصل شوید.</string>
+    <string name="spice_ca_cert_path_hint">مسیر فایل مرجع گواهی</string>
+    <string name="enter_spice_password">لطفا رمز عبور SPICE را وارد کنید</string>
+    <string name="rdp_adv_window_contents">نمایش محتویات پنجره در حین کشیدن</string>
+    <string name="input_methods">روش ورودی</string>
+    <string name="info_ssh_key_fingerprint">اثر انگشت کلید میزبان عبارت است از:</string>
+    <string name="paste_ca">اگر آن را به عنوان فایل وارد نمی کنید، مرجع صدور گواهی را در اینجا وارد کنید.</string>
+    <string name="enter_otp_code">لطفا کد OTP را وارد کنید</string>
+    <string name="spice_connection_screen_help_text">هنگامی که اتصالی را اضافه یا ویرایش می کنید، صفحه پیکربندی اتصال را مشاهده خواهید کرد.در اینجا می توانید یک اتصال SPICE جدید راه اندازی کنید یا یک اتصال از قبل موجود را انتخاب کنید.در بالا دکمه ای وجود دارد که به شما امکان می دهد اتصال را ذخیره کنید.در زیر آن جایی است که اتصال خود را پیکربندی می کنید.
+
+- نوع اتصال: در اینجا نوع اتصال SPICE را انتخاب می کنید.انواع اتصالات موجود عبارتند از:
+(الف) SPICE که مستقیماً از طریق پروتکل SPICE به رایانه متصل می شود.
+(ب) SPICE روی SSH، که ابتدا اتصال شما را از طریق رایانه ای که یک سرور SSH را اجرا می کند تونل می کند.
+
+- عنوان: هر اتصالی که ایجاد می کنید می تواند یک نام مستعار داشته باشد تا به راحتی آن را در لیست شناسایی کنید.
+
+- تنظیمات تونل SSH: در حالت SPICE در حالت SSH موجود است.
+(الف) SSH Server/Port: آدرس و پورت سرور SSH که اتصال از طریق آن تونل می شود.به طور پیش فرض SSH در پورت 22 گوش می دهد.
+(ب) نام کاربری/رمز عبور: نام کاربری و رمز عبور حساب در سرور SSH.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+(ج) مدیریت کلید/کلید استفاده: دکمه ای برای مدیریت کلیدهای عمومی/خصوصی، و یک چک باکس که نشان می دهد آیا از کلید به جای رمز عبور برای احراز هویت استفاده شود یا خیر.اگر پس از ایجاد یک جفت کلید، از دکمه کپی در کلیپ بورد استفاده می کنید، باید بتوانید کلید عمومی را پس از اتصال به سرور SPICE جایگذاری کنید (کلید بورد با سرور همگام شده است).
+
+- تنظیمات اتصال SPICE:
+(الف) SPICE Server/Port: اینجا جایی است که شما نام میزبان یا آدرس IP و پورت رایانه ای را که سرور SPICE را اجرا می کند و می خواهید با آن تماس بگیرید وارد می کنید.در حالت SPICE over SSH، این آدرس همانطور که از سرور SSH دیده می شود.اگر سرور SSH و سرور SPICE یک کامپیوتر فیزیکی هستند، می توانید از localhost استفاده کنید.سرورهای SPICE معمولاً در پورت 5900 و بالاتر گوش می دهند.
+(ب) SPICE Password: این جایی است که رمز عبور تنظیم شده برای محافظت از جلسه SPICE خود را وارد می کنید.ذخیره‌سازی امن برای گذرواژه‌ها استفاده نمی‌شود (آنها در یک پایگاه داده هستند)، و رمز عبور تنها در صورتی ذخیره می‌شود که کادر Keep را علامت بزنید.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+
+- تنظیمات پیشرفته: در این بخش هر دستگاه محلی یا ترفندهای عملکرد SPICE را پیدا خواهید کرد
+- تنظیمات دستگاه محلی: این تنظیمات رفتار برنامه را در دستگاه شما تنظیم می کنند.
+(الف) از D-Pad برای فلش ها استفاده کنید: اگر ترجیح می دهید، می توانید از D-Pad صفحه کلید بلوتوث یا فلش های روی صفحه کلید روی صفحه خود برای ارسال فلش ها به سرور SPICE استفاده کنید.
+(ب) چرخش D-Pad: تلفن های جفت شده با صفحه کلید بلوتوث ممکن است نیاز به چرخش D-pad صفحه کلید در خلاف جهت عقربه های ساعت داشته باشند تا مسیرهای صحیح را به سرور ارسال کنند.
+(ج) نشانگر محلی ماوس: اگر نشانگر نامرئی است، آن را انتخاب کنید تا مجبور شود توسط برنامه کشیده شود.</string>
+    <string name="auto_x_disabled_selection">AutoX غیرفعال است</string>
+    <string name="button_send_text">ارسال متن</string>
+    <string name="shortcut_label_spice">اتصال SPICE</string>
+    <string name="keep_screen_awake_enable">صفحه را بیدار نگه دارید</string>
+    <string name="open_doc">راهنما/ویکی</string>
+    <string name="remote_sound_disabled">صدا غیرفعال است</string>
+    <string name="spice_ca_file_not_found">فایل پیدا نشدلطفاً نام فایل معتبری را در فیلد متنی وارد کنید (به عنوان مثال /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: مشتری RDP بصری و ایمن</string>
+    <string name="error_pve_api_unexpected_code">پاسخ غیرمنتظره از Proxmox Virtual Environment:</string>
+    <string name="error_out_of_memory">تخصیص حافظه کافی برای ترسیم صفحه نمایش راه دور ممکن نیست.سعی کنید برنامه را مجددا راه اندازی کنید، سپس دستگاه خود را مجددا راه اندازی کنید.همچنین می توانید از طریق تنظیمات برنامه، اندازه دسکتاپ از راه دور را کاهش دهید.</string>
+    <string name="enter_passphrase_title">کلمه عبور کلید را وارد کنید</string>
+    <string name="copy_of">کپی از</string>
+    <string name="rdp_adv_remotefx">RemoteFX را فعال کنید</string>
+    <string name="ok">باشه</string>
+    <string name="rdp_adv_desktop_background">نمایش پس زمینه دسکتاپ</string>
+    <string name="desktop_scale_percentage">درصد مقیاس بندی سفارشی</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="rdp_adv_font_smoothing">صاف کردن فونت را انجام دهید</string>
+    <string name="rdp_domain_hint">دامنه RDP</string>
+    <string name="custom_ca_subject">موضوع گواهی اختیاری.اگر گواهی CN با نام میزبان مطابقت داشته باشد، لازم نیست</string>
+    <string name="color_24_bit">رنگ 24 بیتی (24 bpp)</string>
+    <string name="ssh_passphrase_hint">رمز عبور SSH</string>
+    <string name="username_hint">نام کاربری UltraVNC MS Logon</string>
+    <string name="error_failed_to_download_https">دانلود فایل از طریق HTTPS انجام نشد.شاید گواهی سرور شما غیرقابل اعتماد باشد (منقضی شده یا خود امضا شده است) یا سرور شما غیر قابل دسترسی باشد.</string>
+    <string name="rdp_geom_checkbox_enable">وضوح سفارشی را فعال کنید</string>
+    <string name="enter_rdp_credentials">لطفا اعتبار RDP را وارد کنید</string>
+    <string name="error_dialog_title">خطا</string>
+    <string name="ssl_strict">نیاز به نام مشترک برای مطابقت با گواهی (توصیه می شود)</string>
+    <string name="master_password_hint_once">رمز عبور را وارد کنید</string>
+    <string name="one_to_one">یک به یک</string>
+    <string name="action_rate_or_share_app">⭐ دریافت راهنمایی، رتبه بندی، اشتراک گذاری</string>
+    <string name="error_ssh_kbd_auth_method_unavail">سرور SSH نه از روش های \password\ و نه \keyboard-interactive\ auth پشتیبانی نمی کند یا ابتدا به روش \publickey\ نیاز دارد.لطفاً آن را طوری پیکربندی کنید که حداقل یکی از دو روش مجاز باشد یا برنامه را مجدداً پیکربندی کنید.روش های احراز هویت موجود:</string>
+    <string name="import_settings">واردات</string>
+    <string name="hide_toolbar">پنهان کردن نوار ابزار</string>
+    <string name="verification_code_message">لطفاً کد تأیید اعتبار چند عاملی را وارد کنید</string>
+    <string name="need_help">به کمک نیاز دارید؟</string>
+    <string name="rdp_security_auto">امنیت مذاکره خودکار</string>
+    <string name="master_password_error_failed_to_enable">رمز عبور اصلی فعال نشد.فضای خالی دستگاهتان را بررسی کنید و دوباره امتحان کنید.</string>
+    <string name="cert_issuer">صادر کننده گواهینامه</string>
+    <string name="error">خطا</string>
+    <string name="error_anon_dh_unsupported">سرور VNC سعی می کند از رمزهای ناشناس Diffie Hellman استفاده کند که در دستگاه Android شما پشتیبانی نمی شوند.اگر از سرور Vino VNC گنوم استفاده می کنید، می توانید AnonTLS را با اجرای دستور زیر در ترمینال و سپس راه اندازی مجدد غیرفعال کنید: \gsettings set org.gnome.Vino require-encryption false\.اگر x11vnc را اجرا می کنید، می توانید گزینه های زیر را اضافه کنید: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">چرخ اسکرول</string>
+    <string name="auto_x_session_auto">خودکار</string>
+    <string name="enter_gateway_credentials">لطفاً اطلاعات Gateway را وارد کنید</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">پروژه منبع باز به حمایت شما نیاز دارد!با خرید bVNC Pro به ما کمک کنید.برای پیوندهای bVNC Pro و سایر برنامه‌های ما به زیر مراجعه کنید.</string>
+    <string name="input_method_mouse">کنترل اشاره گر ماوس</string>
+    <string name="pro_feature_rdp">به نظر می‌رسد سعی کرده‌اید یک فایل .rdp را باز کنید که یک ویژگی Pro است.لطفاً با خرید aRDP Pro که از فایل‌های .rdp پشتیبانی می‌کند، از پروژه حمایت کنید.پیوندی به نسخه aRDP Pro در گفتگوی شروع موجود است.</string>
+    <string name="opaque_connection_screen_help_text">هنگامی که اتصالی را اضافه یا ویرایش می کنید، صفحه پیکربندی اتصال را مشاهده خواهید کرد.
+در اینجا می توانید یک اتصال Opaque جدید راه اندازی کنید یا یک اتصال از قبل موجود را انتخاب کنید.
+در بالا دکمه ای وجود دارد که به شما امکان می دهد اتصال را ذخیره کنید.
+در زیر آن جایی است که اتصال خود را پیکربندی می کنید.
+
+- نوع اتصال: در اینجا شما انتخاب می کنید که به چه محیط مجازی سازی متصل می شوید.
+
+- آدرس سرور: نام میزبان یا IP سرور.اگر در یک پورت غیر استاندارد گوش می دهد، می توانید پورتی را اضافه کنید که با کولون جدا شده است.
+
+- نام ماشین مجازی: می‌توانید نام ماشین مجازی را همانطور که در پلتفرم مجازی‌سازی شما نشان داده می‌شود مشخص کنید یا این قسمت را خالی بگذارید تا لیستی از ماشین‌های مجازی یا کانتینرها را انتخاب کنید.
+
+- کاربر: نام کاربری را برای احراز هویت در چارچوب مجازی سازی خود وارد کنید.
+
+- رمز عبور: اگر می خواهید رمز عبور را ذخیره کنید، آن را در اینجا وارد کنید یا فیلد را خالی بگذارید تا هر بار از شما درخواست شود.
+
+- تنظیمات پیشرفته: در این بخش هر دستگاه محلی، پروتکل و ترفندهای عملکرد را پیدا خواهید کرد.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">متن با پیشنهادات (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">کپی لیست</string>
+    <string name="master_password_error_failed_to_disable">رمز عبور اصلی غیرفعال نشد.فضای خالی دستگاهتان را بررسی کنید و دوباره امتحان کنید.</string>
+    <string name="use_no_compression_for_local_connections">بدون فشرده سازی (اتصالات محلی، کدگذاری Hextil)</string>
+    <string name="input_mode_help_text">در هر حالت ورودی، روی نماد صفحه کلید ضربه بزنید تا صفحه کلید روی صفحه نمایش را دریافت کنید.همچنین، ممکن است دستگاه شما ژست مخصوص به خود را داشته باشد که صفحه کلید را بالا می آورد.
+
+از حالت های ورودی مستقیم برای کنترل بصری تر روی صفحه نمایش لمسی استفاده کنید.از حالت پد لمسی شبیه سازی شده برای کنترل دقیق تر روی ماوس استفاده کنید.
+
+مستقیم، حالت Swipe Pan:
+- کنترل ماوس به طور مستقیم از طریق لمس.
+- انگشت خود را برای حرکت به اطراف بکشید.
+- ضربه زدن باعث می شود ماوس در جایی که ضربه زده اید کلیک کند.
+- رویدادهای اسکرول بین دو انگشتی که کش رفتن با دو انگشت شروع شده است ارسال می شود.
+
+مستقیم، حالت پانل نگه دارید:
+- کنترل ماوس به طور مستقیم از طریق لمس.
+- برای شروع حالت پان، ضربه طولانی بزنید.
+- ضربه زدن باعث می شود ماوس در جایی که ضربه زده اید کلیک کند.
+- رویدادهای اسکرول بین دو انگشتی که کش رفتن با دو انگشت شروع شده است ارسال می شود.
+
+حالت پد لمسی شبیه سازی شده:
+- از صفحه نمایش خود مانند یک پد لمسی استفاده کنید.
+- برای حرکت دادن نشانگر ماوس به اطراف بکشید.
+- ماوس را فراتر از لبه صفحه برای حرکت حرکت دهید.
+- ضربه زدن باعث می شود ماوس در جایی که نشانگر است کلیک کند.
+- رویدادهای اسکرول در جایی که نشانگر ماوس قرار دارد ارسال می شود.
+
+حالت تک دستی:
+- مانند Direct، Swipe Pan Mode، به جز اینکه با ضربه طولانی منو با انتخاب حالت ها باز می شود.
+- پس از انتخاب حالت، کشیدن انگشت روی صفحه، حرکت انتخاب شده را انجام می دهد.
+- بلند کردن انگشت ژست را کامل می کند.
+
+همه حالت های ورودی:
+- کلیک چپ: یک بار ضربه بزنید.
+- دوبار کلیک کنید: دوبار ضربه بزنید.
+- راست کلیک کنید: ضربه بزنید و با انگشت دوم ضربه بزنید (هر جای دیگری از صفحه).
+- کلیک راست جایگزین: برای دستگاه خود از دکمه \Back\ یا اشاره استفاده کنید.
+- کلیک وسط: ضربه بزنید و با دو انگشت دیگر ضربه بزنید (هرجای دیگر روی صفحه).
+- کشیدن ماوس: ضربه بزنید و نگه دارید و انگشت خود را بکشید.
+- چرخ اسکرول: با دو انگشت به بالا/پایین و چپ/راست بکشید.کشیدن سریع سریعتر اسکرول می شود.
+- بزرگ‌نمایی/کوچک‌نمایی: در مقیاس‌بندی با قابلیت بزرگ‌نمایی، برای کنترل مقیاس‌گذاری، زوم را کوچک کنید.
+- کلید Ctrl/Alt: منو-&gt; دکمه های Ctrl/Alt.فراموش نکنید که پس از اتمام، خاموش شوید!
+- ترکیبات کلیدی: منو-&gt; بیشتر-&gt; کلیدهای ارسال.
+- ارسال متن: یا روی صفحه کلید روی صفحه تایپ کنید، یا از Menu-&gt; More-&gt;Send Text استفاده کنید.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt به عنوان ISO L3 Shift (فقط VNC)</string>
+    <string name="error_uri_noinfo_nosave">اطلاعات کافی برای اتصال کافی نیست.</string>
+    <string name="single_reposition">نشانگر ماوس برای حالت تک دستی تغییر مکان داد</string>
+    <string name="auto_x_cancel">لغو کنید</string>
+    <string name="vv_file_not_found">فایل .vv پیدا نشد!</string>
+    <string name="error_pve_failed_to_authenticate">احراز هویت در Proxmox Virtual Environment انجام نشد.لطفاً مطمئن شوید که نام کاربری خود را با فرمت user@realm وارد کرده اید و رمز عبور شما صحیح است.</string>
+    <string name="save_as_copy">ذخیره به عنوان کپی</string>
+    <string name="info_cert">آیا این گواهی میزبان جدید یا تغییر یافته را می‌پذیرید؟\n\nاثرانگشت:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nصدور: %4$s\nصدور: %5$s\n\nمعتبر از: %6$s\nمعتبر از: %6$s\nمعتبر تا:</string>
+    <string name="more_debug_logging">ثبت اشکال زدایی بیشتر</string>
+    <string name="error_ssh_key_auth_fail">احراز هویت به سرور SSH با یک جفت کلید انجام نشد.لطفاً نام کاربری SSH خود را بررسی کنید و مطمئن شوید که کلید عمومی شما در فایل authorized_keys در سمت راه دور قرار دارد.</string>
+    <string name="error_vnc_authentication">احراز هویت VNC ناموفق بود!رمز عبور VNC (و کاربر در صورت وجود) را بررسی کنید.</string>
+    <string name="toggle_keyboard">صفحه کلید را تغییر دهید</string>
+    <string name="help">کمک ⓘ</string>
+    <string name="repeater_caption">مهم: اگر از تکرار کننده UltraVNC استفاده می کنید، آدرس و پورت آن را خارج از این گفتگو وارد کنید.در اینجا آدرس و پورت سرور VNC واقعی را وارد کنید.آدرس و پورت سرور VNC را با یک دونقطه جدا کنید، به عنوان مثال.192.168.0.100:5900.</string>
+    <string name="color_8">8 رنگ (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">اتصال یا احراز هویت امکان‌پذیر نیست، لطفاً آدرس سرور، کاربر، رمز عبور و مرجع و موضوع گواهی را بررسی کنید.</string>
+    <string name="error_rdp_authentication_failed">احراز هویت RDP ناموفق بود!لطفاً نام کاربری و رمز عبور RDP را بررسی کنید و دوباره امتحان کنید.</string>
+    <string name="delete_key_list">حذف فهرست کلید</string>
+    <string name="input_method_direct_swipe_pan_description">Direct, Swipe Pan: انگشت خود را برای حرکت به اطراف بکشید.با یک انگشت روی هر جایی که می‌خواهید کلیک چپ کنید، دو انگشت برای کلیک راست و سه انگشت برای کلیک وسط ضربه بزنید.برای پیمایش، با دو انگشت تند بکشید.برای کشیدن و رها کردن ضربه طولانی بزنید.</string>
+    <string name="address_caption_hint">سرور VNC</string>
+    <string name="auto_x_unixpw">به جای مکانیزم امنیتی داخلی از اعتبارنامه یونیکس استفاده کنید.کاربر باید بتواند /bin/su را اجرا کند.</string>
+    <string name="input_method_touchpad">پد لمسی شبیه سازی شده</string>
+    <string name="fit_to_screen">متناسب با صفحه نمایش</string>
+    <string name="list_name_caption">نام فهرست</string>
+    <string name="copy_logcat">📋 Logcat را کپی کنید</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA سفارشی</string>
+    <string name="info_progress_dialog_downloading">اولین فریم را دانلود کنید.\لطفاً صبر کنید…</string>
+    <string name="local_mouse_check">نشانگر محلی ماوس (اگر نشانگر نامرئی است را انتخاب کنید)</string>
+    <string name="rdp_server_empty">سرور RDP یا پورت خالی است.نمیشه وصل شد!</string>
+    <string name="rendering_mode">حالت رندر:</string>
+    <string name="rdp_adv_visual_styles">سبک های بصری را فعال کنید</string>
+    <string name="error_ovirt_timeout">زمان اتصال به VM شما تمام شد.لطفاً بررسی کنید که آدرس گره‌ای که ماشین مجازی شما را اجرا می‌کند صحیح است، از شبکه فعلی شما قابل دسترسی است و هیچ فایروالی اتصال را مسدود نمی‌کند.</string>
+    <string name="extra_keys_enable">کلیدهای اضافی را فعال کنید</string>
+    <string name="showkbd_label">صفحه کلید</string>
+    <string name="audio">صوتی</string>
+    <string name="ssh_x11vnc_customize">AutoX را پیکربندی کنید</string>
+    <string name="address_caption_ssh_hint">سرور SSH</string>
+    <string name="info_progress_dialog_connecting">در حال اتصال…</string>
+    <string name="donate_app">اهدا کنید ❤</string>
+    <string name="rdp_security_rdp">امنیت RDP</string>
+    <string name="applies_to_new_connections_only">فقط برای اتصالات جدید اعمال می شود</string>
+    <string name="spice_button_import_ca">CA را وارد کنید</string>
+    <string name="scaling_zoomable">قابل زوم کردن</string>
+    <string name="error_ssh_port_forwarding_failure">راه‌اندازی پورت برای تونل‌سازی ترافیک VNC روی SSH امکان‌پذیر نیست.لطفاً مطمئن شوید که سرور SSH شما به گونه‌ای پیکربندی شده است که امکان ارسال پورت را فراهم کند و دوباره امتحان کنید.</string>
+    <string name="rdp_adv_desktop_composition">ترکیب دسکتاپ را فعال کنید</string>
+    <string name="scroll_speed">سرعت اسکرول را لمس کنید</string>
+    <string name="rdp_address_caption_hint">سرور RDP</string>
+    <string name="send_button">ارسال کنید</string>
+    <string name="love_our_work">کار ما را دوست دارید؟</string>
+    <string name="download_from_server">از سرور دانلود کنید</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">سرور شما علاوه بر احراز هویت کلید نیاز به احراز هویت رمز عبور دارد.</string>
+    <string name="input_method_single_handed">تک دست</string>
+    <string name="username_hint_ssh">نام کاربری SSH</string>
+    <string name="auto_x_enabled">فعال شد</string>
+    <string name="password_hint_ssh">رمز عبور SSH</string>
+    <string name="audio_will_be_initialized">صدا در حدود 15 ثانیه مقداردهی اولیه می‌شود، لطفاً قبل از آن پخش ویدیو یا صوتی در حال اجرا را متوقف کنید</string>
+    <string name="shortcut_label_vnc">اتصال VNC</string>
+    <string name="auto_request_new_res">همگام سازی از راه دور برای نمایش وضوح</string>
+    <string name="color_256">256 رنگ (8 bpp)</string>
+    <string name="intro_title">bVNC: مشتری VNC بصری و ایمن</string>
+    <string name="error_x509_could_not_generate_encoding">رمزگذاری گواهی ایجاد نشد.</string>
+    <string name="rdp_security_tls">امنیت TLS</string>
+    <string name="action_import_settings">تنظیمات واردات</string>
+    <string name="single_cancel">حالت تک دستی لغو شد</string>
+    <string name="info_set_touchpad_input_mode">سرور گزارش می دهد که از ورودی ماوس حالت کلاینت پشتیبانی نمی کند و حالت ورودی فعلی ماوس به درستی کار نمی کند.اگر این مشکل ادامه داشت، مطمئن شوید که ابزار spice در ماشین مجازی نصب شده است یا از منو به حالت ورودی Touchpad شبیه‌سازی شده بروید.</string>
+    <string name="email_us">به ما ایمیل بزنید📧</string>
+    <string name="color_64">64 رنگ (4 bpp)</string>
+    <string name="ssh_key_generated">کلید جدید با موفقیت تولید یا وارد شد.اکنون می توانید برای اشتراک گذاری، کپی کردن در کلیپ بورد یا صادر کردن کلید عمومی، روی دکمه \'Generate/Export Key\' ضربه بزنید.</string>
+    <string name="repeater_button">تکرار کننده UltraVNC</string>
+    <string name="info_dialog_title">اطلاعات</string>
+    <string name="local_clipboard_integration">ادغام کلیپ بورد محلی به راه دور را فعال کنید</string>
+    <string name="cursor_force_local">محلی</string>
+    <string name="list_caption">فهرست کنید</string>
+    <string name="master_password_error_password_necessary">برای ادامه، رمز اصلی لازم است.</string>
+    <string name="ssh_use_pubkey">از کلید استفاده کنید</string>
+    <string name="super_check">فوق العاده</string>
+    <string name="enter_text">ارسال متن</string>
+    <string name="import_export_settings">📦 تنظیمات واردات/صادرات</string>
+    <string name="info_progress_dialog_aborted">اتصال قطع شد!</string>
+    <string name="input_method_single_handed_description">تک دست: انگشت خود را برای حرکت به اطراف بکشید.با یک انگشت روی هر جایی که می خواهید کلیک چپ کنید ضربه بزنید.برای انتخاب حالت چپ/راست/کشیدن وسط/پیمایش/زوم ضربه طولانی بزنید.کنترل‌های چند لمسی معمولی نیز کار می‌کنند.</string>
+    <string name="verification_code">کد تایید</string>
+    <string name="extra_keys_disable">کلیدهای اضافی را غیرفعال کنید</string>
+    <string name="rotate_dpad">بلوتوث یا نرم افزار D-Pad را بچرخانید</string>
+    <string name="intro_close">بستن</string>
+    <string name="master_password_error_shortcuts_not_supported">هنگامی که رمز عبور اصلی فعال است، کلیدهای میانبر هنوز پشتیبانی نمی شوند.</string>
+    <string name="enter_vnc_credentials">لطفا اعتبارنامه VNC را وارد کنید</string>
+    <string name="connection_edit">ویرایش کنید</string>
+    <string name="error_spice_unable_to_connect">اتصال یا احراز هویت ممکن نیست، لطفا آدرس سرور و پورت را بررسی کنید.</string>
+    <string name="remote_sound_on_server">صدا روی سرور</string>
+    <string name="left_handed_mode">حالت چپ دست</string>
+    <string name="info_ssh_initializing_hostkey">تلاش برای مقداردهی اولیه SSH HostKey.</string>
+    <string name="connect_button">اتصال</string>
+    <string name="ca_new_or_changed">گواهی سرور جدید یا تغییر یافته</string>
+    <string name="close">بستن</string>
+    <string name="master_password_verify">رمز عبور اصلی را تأیید کنید</string>
+    <string name="error_no_vnc_support_yet">نوع صفحه نمایش VNC هنوز پشتیبانی نمی شود، اما یک ویژگی آینده است.با تشکر از درک شما!</string>
+    <string name="rdp_connection_settings">تنظیمات اتصال RDP</string>
+    <string name="immersive_mode_disable">حالت غوطه ور را غیرفعال کنید</string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment داده های پوچ را برگرداند.</string>
+    <string name="auto_x_descript_geom">اندازه دسکتاپ از راه دور (WxH)</string>
+    <string name="enter_passphrase">لطفا کلمه عبور کلیدی را وارد کنید</string>
+    <string name="action_edit_default_settings">⚙ تنظیمات پیش فرض را ویرایش کنید</string>
+    <string name="ca_spice_manage">مدیریت SPICE CA</string>
+    <string name="color_mode">حالت رنگ</string>
+    <string name="back_button">به عقب برگرد</string>
+    <string name="rate_app">امتیاز دهید ⭐⭐⭐⭐⭐</string>
+    <string name="off">خاموش</string>
+    <string name="ssh_tunnel_settings">تنظیمات تونل SSH</string>
+    <string name="error_pve_vmid_not_numeric">شناسه VM عددی نیست.لطفاً یک شناسه VM عددی وارد کنید یا برای انتخاب VM از لیست، آن را خالی بگذارید.</string>
+    <string name="cert_subject">موضوع گواهی</string>
+    <string name="rdp_descript_geom">اندازه دسکتاپ از راه دور (WxH)</string>
+    <string name="master_password_error_wrong_password">با گذرواژه اصلی ارائه شده احراز هویت امکان‌پذیر نیست.</string>
+    <string name="error_pick_correct_item">لطفاً مطمئن شوید که مورد مناسب را در نوع اتصال انتخاب کرده اید.</string>
+    <string name="input_method_direct_drag_pan">مستقیم، پان را نگه دارید</string>
+    <string name="auto_rotation">چرخش صفحه هنگام اتصال</string>
+    <string name="master_password_verify_message">لطفاً برای ادامه، رمز اصلی اصلی را وارد کنید.</string>
+    <string name="error_connection_interrupted">اتصال قطع شد.</string>
+    <string name="auto_x_descript_session">نوع جلسه از راه دور</string>
+    <string name="action_new_connection">✚ اتصال جدید</string>
+    <string name="enter_text_title">متنی را برای ارسال وارد کنید</string>
+    <string name="shortcut_label_rdp">اتصال RDP</string>
+    <string name="spice_address_caption_hint">سرور SPICE</string>
+    <string name="rdp_geom_description_hint">سرور به پشتیبانی ExtendedDesktopSize نیاز دارد</string>
+    <string name="audio_initialized">صدا اولیه شد</string>
+    <string name="intro_text">لیست فعلی ویژگی های bVNC:
+&lt;br&gt;
+- VNC ساده، VNC ایمن از طریق SSH، AnonTLS، و VeNCrypt، و UltraVNC Windows Logon با تکرار کننده اختیاری.
+&lt;br&gt;
+- حالت AutoX: در حالت VNC بیش از SSH، به طور خودکار جلسات X موجود را کشف و/یا با استفاده از x11vnc جدید ایجاد کنید!مانند کلاینت NX کار می کند.
+&lt;br&gt;
+- پشتیبانی از چرخش رایگاندر صورت نیاز از سیستم عامل برای محدود کردن چرخش استفاده کنید.
+&lt;br&gt;
+- تولید و صادرات جفت کلید عمومی/خصوصی SSH.
+&lt;br&gt;
+- تمام کدهای استاندارد VNC، از جمله Tight، ZRLE و CopyRect.
+&lt;br&gt;
+- ذخیره خودکار جلسه
+&lt;br&gt;
+- حالت‌های بزرگ‌نمایی، متناسب با صفحه، و مقیاس‌بندی یک به یک.
+&lt;br&gt;
+- کنترل چند لمسی روی ماوس از راه دور در حالت های ورودی مستقیم و شبیه سازی شده تاچ پد.
+&lt;br&gt;
+- کنترل کامل با یک دست بر روی ماوس از راه دور در حالت ورودی Single-Handed.
+&lt;br&gt;
+- کلیک های چند لمسی ماوس: برای کلیک چپ، ضربه زدن با دو انگشت برای کلیک راست، سه انگشت تا کلیک میانی ضربه بزنید.
+&lt;br&gt;
+- پیمایش چند لمسی: با دو انگشت به بالا/پایین بکشید و برای پیمایش به چپ/راست بکشید.
+&lt;br&gt;
+- کلیدهای متا و پیکان روی صفحه که می توانند به طور کامل از منو غیرفعال شوند یا با دکمه روی صفحه ذخیره شوند.
+&lt;br&gt;
+- ارسال متن و ترکیب کلید دلخواه هنگام اتصال.
+&lt;br&gt;
+- کمک به ایجاد اتصالات (\Menu-&gt;Connection Help\) در صفحه اتصال.
+&lt;br&gt;
+- هنگام اتصال به حالت های ورودی (\Menu-&gt;More-&gt;Input Mode Help\) کمک کنید.
+&lt;br&gt;
+- استفاده از ترک‌پد موجود به‌عنوان فلش به‌جای حرکت دادن ماوس، و ترک‌پد به‌عنوان Ctrl کلیک کنید.
+&lt;br&gt;
+- تغییر به حالت عمودی در حین اتصال، چرخش D-pad/trackpad برای صفحه کلید BT.
+&lt;br&gt;
+- پشتیبانی از چند زبان، تا زمانی که سرور VNC چینش زبان لازم را فعال کرده باشد.
+&lt;br&gt;
+- یکپارچه سازی کپی/پیست
+&lt;br&gt;
+- تغییر وضوح دستگاه از راه دور
+&lt;br&gt;
+- پشتیبانی کامل از ماوس در دستگاه های Android 4.0 و بالاتر، از جمله کلیک راست و وسط و چرخ اسکرول.
+&lt;br&gt;
+&lt;br&gt;
+مسائل شناخته شده:
+&lt;br&gt;</string>
+    <string name="color_greyscale">مقیاس خاکستری (1 bpp)</string>
+    <string name="share_app_toast">پیوند برنامه را با همه دوستان خود در رسانه های اجتماعی به اشتراک بگذارید!</string>
+    <string name="force">بیت مپ تمام صفحه</string>
+    <string name="input_method_touchpad_description">پد لمسی شبیه سازی شده: برای جابجایی نشانگر، انگشت خود را بکشید.با یک انگشت برای کلیک چپ، دو انگشت برای کلیک راست و سه انگشت برای کلیک وسط، روی هر جایی ضربه بزنید.برای پیمایش، با دو انگشت تند بکشید.برای کشیدن و رها کردن ضربه طولانی بزنید.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nمی‌توانید اطمینان حاصل کنید که با اثر انگشت شناخته شده گواهی سرور یکسان است تا از حمله انسان در وسط جلوگیری کنید.</string>
+    <string name="error_no_vm_found_for_user">هیچ ماشین مجازی در دسترس برای کاربر مشخص نیست.</string>
+    <string name="color_black_and_white">سیاه و سفید (1 bpp)</string>
+    <string name="auto">خودکار</string>
+    <string name="pro_feature_generic">به نظر می رسد از یک ویژگی Pro استفاده می کنید.لطفاً با خرید نسخه Pro که از این ویژگی پشتیبانی می کند، از پروژه حمایت کنید.پیوندی به نسخه Pro در گفتگوی شروع موجود است.</string>
+    <string name="rdp_geom_custom">سفارشی</string>
+    <string name="default_input_mode">حالت ورودی پیش فرض</string>
+    <string name="repeater_empty_text">بدون تکرار</string>
+    <string name="ad_donate_text_rdp">پروژه منبع باز به حمایت شما نیاز دارد!با خرید aRDP Pro که از تغییر مسیر صدا پشتیبانی می کند، به ما کمک کنید.برای پیوند به aRDP Pro و سایر برنامه‌های ما به زیر مراجعه کنید.</string>
+    <string name="spice_tls_port_hint">بندر TLS</string>
+    <string name="scaling">مقیاس بندی</string>
+    <string name="spice_connection_settings">تنظیمات اتصال SPICE</string>
+    <string name="error_pve_failed_to_parse_json">پاسخ از Proxmox Virtual Environment تجزیه نشد.</string>
+    <string name="error_ovirt_ssl_handshake_failure">شکست دست دادن SSL.مشکلی در گواهی SSL سرور وجود دارد.اگر از گواهی امضا شده استفاده می کنید، باید مرجع گواهی خود را (دوباره) وارد کنید.</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="vnc_viewer_started">VNC Viewer شروع به کار کرد</string>
+    <string name="ca_subject">نام موضوع گواهی را در اینجا وارد کنید.اگر نام مشترک گواهی (CN) با نام میزبان سرور مطابقت داشته باشد، ممکن است مورد نیاز نباشد.</string>
+    <string name="port_ssh_hint">بندر</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">سرور SSH از روش \publickey\ auth پشتیبانی نمی‌کند و ما سعی می‌کنیم از یک جفت کلید برای احراز هویت استفاده کنیم.لطفاً آن را طوری پیکربندی کنید که تأیید اعتبار با کلید عمومی مجاز باشد و دوباره امتحان کنید.روش های احراز هویت موجود:</string>
+    <string name="username_caption">کاربر VNC</string>
+    <string name="error_ssh_could_not_exec_command">فرمان از راه دور اجرا نشد.</string>
+    <string name="rdp_intro_text">از شما برای حمایت از aRDP و نرم افزار منبع باز به طور کلی سپاسگزاریم!برای راهنمایی در مورد استفاده از aRDP، به موارد راهنما در منو و توضیحات برنامه موجود در بازار مراجعه کنید.
+&lt;br&gt;
+&lt;br&gt;
+لیست فعلی ویژگی های aRDP شامل موارد زیر است:
+&lt;br&gt;
+- RDP ساده، RDP تونل شده روی SSH.
+&lt;br&gt;
+- پشتیبانی از چرخش رایگاندر صورت نیاز از سیستم عامل برای محدود کردن چرخش استفاده کنید.
+&lt;br&gt;
+- تنظیم وضوح از راه دور، وضوح بومی در حالت افقی و عمودی.
+&lt;br&gt;
+- تولید و صادرات جفت کلید عمومی/خصوصی SSH.
+&lt;br&gt;
+- ذخیره خودکار جلسه
+&lt;br&gt;
+- حالت‌های بزرگ‌نمایی، متناسب با صفحه، و مقیاس‌بندی یک به یک.
+&lt;br&gt;
+- کنترل چند لمسی روی ماوس از راه دور در حالت های ورودی مستقیم و شبیه سازی شده تاچ پد.
+&lt;br&gt;
+- کنترل کامل با یک دست بر روی ماوس از راه دور در حالت ورودی Single-Handed.
+&lt;br&gt;
+- کلیک های چند لمسی ماوس: برای کلیک چپ، ضربه زدن با دو انگشت برای کلیک راست، سه انگشت تا کلیک میانی ضربه بزنید.
+&lt;br&gt;
+- پیمایش چند لمسی: با دو انگشت به بالا/پایین بکشید و برای پیمایش به چپ/راست بکشید.
+&lt;br&gt;
+- کلیدهای متا و پیکان روی صفحه که می توانند به طور کامل از منو غیرفعال شوند یا با دکمه روی صفحه ذخیره شوند.
+&lt;br&gt;
+- ارسال متن و ترکیب کلید دلخواه هنگام اتصال.
+&lt;br&gt;
+- کمک به ایجاد اتصالات (\Menu-&gt;Connection Help\) در صفحه اتصال.
+&lt;br&gt;
+- هنگام اتصال به حالت های ورودی (\Menu-&gt;More-&gt;Input Mode Help\) کمک کنید.
+&lt;br&gt;
+- استفاده از ترک‌پد موجود به‌عنوان فلش به‌جای حرکت دادن ماوس، و کلیک پد لمسی به‌عنوان Ctrl، چرخش D-pad/trackpad برای صفحه‌کلیدهای BT.
+&lt;br&gt;
+- پشتیبانی از چند زبان، تا زمانی که سرور RDP چینش زبان لازم را فعال کرده باشد.
+&lt;br&gt;
+- تغییر وضوح دستگاه از راه دور بدون درز
+&lt;br&gt;
+- پشتیبانی کامل از ماوس در دستگاه های Android 4.0 و بالاتر، از جمله کلیک راست و وسط و چرخ اسکرول.
+&lt;br&gt;
+- انتخاب حالت های رنگی
+&lt;br&gt;
+- یکپارچه سازی کپی/پیست
+&lt;br&gt;
+- صادرات تنظیمات
+&lt;br&gt;
+- صدا
+&lt;br&gt;
+&lt;br&gt;
+مسائل شناخته شده:</string>
+    <string name="tap_disable">غیر فعال کردن</string>
+    <string name="view_only">حالت فقط مشاهده</string>
+    <string name="save_button">ذخیره کنید</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">رمز عبور sudo ارسال نشد.</string>
+    <string name="landscape_force">جهت گیری چشم انداز نیرو</string>
+    <string name="export_settings">صادرات</string>
+    <string name="keyboard_type">نوع صفحه کلید نرم افزار</string>
+    <string name="hide_connection_thumbnails">پنهان کردن تصاویر کوچک اتصال</string>
+    <string name="input_method_direct_drag_pan_description">Direct، Hold Pan: برای کشیدن و رها کردن، انگشت خود را بکشید.با یک انگشت روی هر جایی که می‌خواهید کلیک چپ کنید، دو انگشت برای کلیک راست و سه انگشت برای کلیک وسط ضربه بزنید.برای پیمایش، با دو انگشت تند بکشید.برای شروع حرکت، ضربه طولانی بزنید.</string>
+    <string name="panning">پانینگ صفحه</string>
+    <string name="remote_clipboard_integration">ادغام Remote to Local Clipboard را فعال کنید</string>
+    <string name="rdp_connection_screen_help_text">هنگامی که اتصالی را اضافه یا ویرایش می کنید، صفحه پیکربندی اتصال را مشاهده خواهید کرد.در اینجا می توانید یک اتصال RDP جدید راه اندازی کنید یا یک اتصال از قبل موجود را انتخاب کنید.در بالا دکمه ای وجود دارد که به شما امکان می دهد اتصال را ذخیره کنید.در زیر آن جایی است که اتصال خود را پیکربندی می کنید.
+
+- نوع اتصال: در اینجا نوع اتصال RDP را انتخاب می کنید.انواع اتصالات موجود عبارتند از:
+(الف) RDP که مستقیماً از طریق پروتکل RDP به رایانه متصل می شود.
+(ب) RDP روی SSH، که ابتدا اتصال شما را از طریق رایانه ای که یک سرور SSH را اجرا می کند تونل می کند.
+
+- عنوان: هر اتصالی که ایجاد می کنید می تواند یک نام مستعار داشته باشد تا به راحتی آن را در لیست شناسایی کنید.
+
+- تنظیمات تونل SSH: در حالت RDP در حالت SSH موجود است.
+(الف) SSH Server/Port: آدرس و پورت سرور SSH که اتصال از طریق آن تونل می شود.به طور پیش فرض SSH در پورت 22 گوش می دهد.
+(ب) نام کاربری/رمز عبور: نام کاربری و رمز عبور حساب در سرور SSH.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+(ج) مدیریت کلید/کلید استفاده: دکمه ای برای مدیریت کلیدهای عمومی/خصوصی، و یک چک باکس که نشان می دهد آیا از کلید به جای رمز عبور برای احراز هویت استفاده شود یا خیر.اگر بعد از ایجاد یک جفت کلید از دکمه کپی در کلیپ بورد استفاده می کنید، باید بتوانید کلید عمومی را پس از اتصال به سرور RDP جایگذاری کنید (کلید بورد با سرور همگام شده است).
+
+- تنظیمات اتصال RDP:
+(الف) سرور/پورت RDP: این جایی است که نام میزبان یا آدرس IP و پورت رایانه‌ای که سرور RDP را که می‌خواهید با آن ارتباط برقرار می‌کند را وارد کنید.در حالت RDP over SSH، این آدرس همانطور که از سرور SSH دیده می شود.اگر سرور SSH و سرور RDP یک کامپیوتر فیزیکی هستند، می توانید از localhost استفاده کنید.سرورهای RDP معمولاً در پورت 3389 گوش می دهند.
+(ب) RDP User: اینجا جایی است که نام کاربری حساب Windows/UNIX خود را وارد می کنید.
+(ج) دامنه RDP: دامنه ای را وارد کنید که حساب شما به آن تعلق دارد.
+(د) رمز عبور RDP: این رمز عبور حساب Windows/UNIX خود را وارد می‌کنید.ذخیره‌سازی امن برای گذرواژه‌ها استفاده نمی‌شود (آنها در یک پایگاه داده هستند)، و رمز عبور تنها در صورتی ذخیره می‌شود که کادر Keep را علامت بزنید.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+
+- تنظیمات پیشرفته: در این بخش راه هایی برای سفارشی کردن وضوح دسکتاپ و ترفندهای مختلف عملکرد RDP پیدا خواهید کرد.
+
+- تنظیمات دستگاه محلی: این تنظیمات رفتار برنامه را در دستگاه شما تنظیم می کنند.
+(الف) از D-Pad برای فلش ها استفاده کنید: اگر ترجیح می دهید، می توانید از D-Pad صفحه کلید بلوتوث یا فلش های روی صفحه کلید روی صفحه خود برای ارسال فلش ها به سرور RDP استفاده کنید.
+(ب) چرخش D-Pad: تلفن های جفت شده با صفحه کلید بلوتوث ممکن است نیاز به چرخش D-pad صفحه کلید در خلاف جهت عقربه های ساعت داشته باشند تا مسیرهای صحیح را به سرور ارسال کنند.
+(ج) نشانگر محلی ماوس: اگر نشانگر نامرئی است، آن را انتخاب کنید تا مجبور شود توسط برنامه کشیده شود.</string>
+    <string name="alt_check">جایگزین</string>
+    <string name="single_scroll">حالت اسکرول - برای پیمایش انگشت خود را به بالا/پایین بکشید، برای توقف انگشت خود را بردارید</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">حالت بزرگ‌نمایی - برای بزرگ‌نمایی/کوچ کردن، انگشت خود را به سمت بالا/پایین بکشید، برای توقف، انگشت خود را بردارید</string>
+    <string name="rdp_adv_console_mode">حالت کنسول</string>
+    <string name="address_caption_hint_tunneled">سرور VNC</string>
+    <string name="arrow_right">فلش سمت راست</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">متن/شماره بدون پیشنهاد (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">نام کاربری SPICE</string>
+    <string name="error_rdp_connection_failed">اتصال RDP ناموفق بود!یا اتصال شبکه قطع شد، سرور RDP خاموش یا غیرفعال شد، یا جلسه شما تحت کنترل قرار گرفت.</string>
+    <string name="arrow_left">فلش چپ</string>
+    <string name="connection_type_vnc_over_stunnel">VNC ایمن از طریق تونل SSL</string>
+    <string name="report_bug">گزارش یک اشکال 🐛</string>
+    <string name="warning_cert_does_not_match">هشدار: گواهی x509 ذخیره شده یا امضا شده با گواهی سرور فعلی مطابقت ندارد!این می تواند یک حمله مرد میانی باشد.اگر از تغییر کلید آگاه هستید، می توانید ادامه دهید.</string>
+    <string name="more_apps">برنامه های بیشتر 📱</string>
+    <string name="auto_x_disabled">از کار افتاده است</string>
+    <string name="pro_feature_mfa">به نظر می رسد سرور شما احراز هویت چند عاملی را فعال کرده است.لطفاً با خرید نسخه Pro که از این ویژگی پشتیبانی می کند، از پروژه حمایت کنید.پیوندی به نسخه Pro در گفتگوی شروع موجود است.</string>
+    <string name="no_application_to_handle_vpn">این اتصال برای راه اندازی VPN از طریق یک برنامه خارجی تنظیم شده است.برای راه اندازی باید اپلیکیشنی مانند Morpheusly را نصب کنید.</string>
+    <string name="port_caption_ssh">پورت SSH</string>
+    <string name="arrow_down">فلش رو به پایین</string>
+    <string name="pro_feature_spice">به نظر می رسد سعی کرده اید یک فایل .vv را باز کنید.اگر می‌خواهید اتصالات را به Proxmox یا oVirt درست در داخل برنامه ذخیره کنید و همچنین می‌خواهید فایل‌های vv. را باز کنید، Opaque را خریداری کنید.اگر فقط به پشتیبانی از فایل .vv نیاز دارید، می توانید aSPICE Pro را دریافت کنید.پیوندهای هر دو برنامه را در گفتگوی شروع پیدا کنید.</string>
+    <string name="error_vnc_unable_to_connect">اتصال به سرور VNC با دلیل انجام نشد:</string>
+    <string name="rdp_password_hint">رمز عبور RDP</string>
+    <string name="custom_ca_paste">CA را در اینجا بچسبانید (اگر وارد نمی کنید).</string>
+    <string name="cursor_mode">حالت مکان نما:</string>
+    <string name="local_device_tweaks">ترفندهای دستگاه محلی</string>
+    <string name="disconnect">قطع کن</string>
+    <string name="ad_donate_text0">نسخه Pro همچنین از احراز هویت چند عاملی SSH پشتیبانی می کند.علاوه بر این، از ویژگی اصلی رمز عبور بسیار درخواست شده پشتیبانی می کند که از استفاده غیرمجاز جلوگیری می کند و تمام تنظیمات اتصال از جمله رمزهای عبور و کلیدهای SSH را برای محافظت در برابر سرقت رمزگذاری می کند.آن را از منوی اصلی فعال کنید.</string>
+    <string name="info_cert_signatures_identical">\n\nبرای جلوگیری از حمله مرد میانی، می‌توانید اطمینان حاصل کنید که اطلاعات با گواهی سرور مطابقت دارد.</string>
+    <string name="button_send_without_saving">ارسال متن/آن را ذخیره نکنید</string>
+    <string name="single_right">حالت کشیدن به راست - برای کشیدن/انتخاب انگشت خود را بکشید، انگشت را برای توقف بردارید</string>
+    <string name="error_ssh_pwd_auth_fail">احراز هویت به سرور SSH با رمز عبور انجام نشد.لطفا نام کاربری SSH و رمز عبور SSH خود را بررسی کنید.</string>
+    <string name="select_vm_title">ماشین مجازی را انتخاب کنید</string>
+    <string name="ad_donate_text_spice">برای اتصالات Proxmox و oVirt، لطفاً با خرید Opaque یا aSPICE Pro به پروژه کمک مالی کنید.نسخه رایگان aSPICE فقط از اتصال مستقیم به ماشین های مجازی KVM پشتیبانی می کند.برای پیوندهای Opaque و aSPICE Pro و همچنین سایر برنامه‌های ما به زیر مراجعه کنید.</string>
+    <string name="enter_password">لطفا رمز عبور را وارد کنید</string>
+    <string name="main_screen_help_text">هنگامی که برنامه راه اندازی می شود، صفحه ای با اتصالات ذخیره شده روی آن نمایش داده می شود.
+
+اگر هیچ اتصال ذخیره شده ای وجود نداشته باشد، قسمت پایین صفحه خالی است و برای ایجاد اتصال جدید باید دکمه پلاس را فشار دهید.
+همچنین می‌توانید سایر جنبه‌های پیکربندی را از این صفحه با ضربه زدن روی سایر گزینه‌های نوار ابزار یا منو در بالا کنترل کنید.
+به عنوان مثال برای ویرایش تنظیمات پیش فرض، یا تنظیمات واردات و صادرات.
+
+هنگامی که یک اتصال را ذخیره کردید، می توانید با یک بار ضربه زدن به سرور راه دور متصل شوید.همچنین می‌توانید با لمس طولانی آن را حذف یا ویرایش کنید.
+
+در نهایت، می‌توانید از فیلد Search Connections برای یافتن سریع اتصالات با استفاده از فیلترها استفاده کنید.</string>
+    <string name="intro_dont_show">دیگر نشان داده نشود</string>
+    <string name="action_export_settings">تنظیمات صادرات</string>
+    <string name="error_ssh_hostkey_changed">خطا!کلید میزبان سرور تغییر کرده است.اگر این عمدی است، می توانید ادامه دهید.در غیر این صورت، این ممکن است یک مرد در حمله میانی باشد.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">دریافت پورت VNC راه دور از x11vnc ممکن نیست.لطفاً مطمئن شوید که x11vnc نصب شده است.برای اطمینان، x11vnc را با دست در خط فرمان اجرا کنید.</string>
+    <string name="error_failed_to_obtain_content">دریافت فایل انجام نشد.لطفاً دوباره آن را دانلود کنید، اما این بار، به سرعت آن را از پوشه دانلود در یک مدیر فایل باز کنید.</string>
+    <string name="show_menu">نمایش منو</string>
+    <string name="auto_x_unix_auth">با استفاده از نام کاربری/گذرواژه SSH ارائه شده به صورت خودکار (به صفحه ورود سیاه و سفید) احراز هویت کنید.</string>
+    <string name="previous_versions">نسخه های قبلی ⍼</string>
+    <string name="auto_x_xvnc">پیدا کردن یا ایجاد با Xvnc</string>
+    <string name="auto_x_find">فقط پیدا کن، ایجاد نکن</string>
+    <string name="port_caption">پورت VNC</string>
+    <string name="delete_key">حذف کلید انتخاب شده</string>
+    <string name="cert_fingerprint">اثر انگشت گواهی</string>
+    <string name="enter_vnc_password">لطفا رمز عبور VNC را وارد کنید</string>
+    <string name="port_hint">بندر</string>
+    <string name="import_from_file">وارد کردن از فایل</string>
+    <string name="error_rdp_unable_to_connect">به سرور RDP متصل نشد!لطفاً مطمئن شوید که تنظیمات سرور RDP درست است، سرور روشن است، RDP فعال است و سرور در همان شبکه این دستگاه است.</string>
+    <string name="rdp_geom_disabled">از کار افتاده است</string>
+    <string name="ad_donate_spice_text1b">برای خرید نسخه حرفه ای اینجا ضربه بزنید و فقط فایل های vv. را باز کنید.</string>
+    <string name="spice_ca_file_error_reading">خطا در خواندن فایل CA.لطفا مطمئن شوید که قابل خواندن است.</string>
+    <string name="info_vm_launched_on_stand_by">VM شما خاموش است و راه اندازی شده است.لطفاً چند دقیقه دیگر دوباره امتحان کنید.اگر خیلی زود تلاش کردید و اتصال با مشکل مواجه شد، بعداً دوباره امتحان کنید.</string>
+    <string name="special_keys">ارسال کلید</string>
+    <string name="error_failed_to_download_http">دانلود فایل از طریق HTTP انجام نشد.شاید سرور شما غیر قابل دسترس باشد.</string>
+    <string name="rdp_geom_automatic">خودکار</string>
+    <string name="portrait_mode">هنگام اتصال به حالت عمودی بروید</string>
+    <string name="master_password_set_error">گذرواژه ها مطابقت ندارند، لطفا مراقب باشید!</string>
+    <string name="enter_ssh_credentials">لطفا اعتبار SSH را وارد کنید</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">سرور VNC پشت تکرار کننده</string>
+    <string name="prefer_sending_unicode">ورودی یونیکد (فقط ویندوز)</string>
+    <string name="auto_x_caption">برنامه می تواند به طور خودکار جلسات X موجود را در سیستم های لینوکس/یونیکس (مشابه NX) کشف کرده و ایجاد کند.برای یافتن به x11vnc و برای ایجاد جلسات به Xvfb، Xvnc یا Xdummy نیاز دارید.اگر در اتصال مشکل دارید، یک نوع جلسه از راه دور خاص را در تنظیمات پیشرفته AutoX انتخاب کنید.</string>
+    <string name="auto_x_confirm">تایید کنید</string>
+    <string name="position_toolbar_last_used">بازیابی موقعیت نوار ابزار</string>
+    <string name="error_no_such_vm_found_for_user">هیچ ماشین مجازی با شناسه ارائه شده برای کاربر مورد نظر یافت نشد.برای دریافت لیستی از ماشین های مجازی، شناسه را پاک کنید.</string>
+    <string name="single_middle">حالت کشیدن وسط - برای کشیدن/انتخاب انگشت خود را بکشید، انگشت را برای توقف بردارید</string>
+    <string name="info_encoding">رمزگذاری،</string>
+    <string name="rdp_geom_native_portrait">پرتره بومی</string>
+    <string name="input_mode">حالت ورودی</string>
+    <string name="action_delete_connection">اتصال را حذف کنید</string>
+    <string name="keys_caption">کلیدها</string>
+    <string name="single_left">حالت کشیدن به چپ - برای کشیدن/انتخاب، انگشت خود را برای توقف بلند کنید</string>
+    <string name="vv_file_error">فایل .vv یا گم شده یا خراب است!</string>
+    <string name="connection_delete">حذف کنید</string>
+    <string name="info_progress_dialog_establishing">در حال ایجاد دست دادن.\nلطفاً صبر کنید…</string>
+    <string name="keep_password_button">نگه دارید</string>
+    <string name="auto_x_find_login">یافتن X Login (نیاز به sudo)</string>
+    <string name="ssh_use_x11vnc">دسکتاپ خودکار</string>
+    <string name="address_caption_ssh">سرور SSH</string>
+    <string name="spice_password_hint">رمز عبور SPICE</string>
+    <string name="cursor_force_disable">غیر فعال کردن</string>
+    <string name="master_password_error_password_not_set">تنظیم رمز عبور اصلی لغو شد.</string>
+    <string name="info_update_color_model_to">به روز رسانی مدل رنگ به</string>
+    <string name="rdp_adv_menu_animation">نمایش انیمیشن های منو</string>
+    <string name="input_method_help">راهنما روش ورودی</string>
+    <string name="enable_recording">ضبط را فعال کنید</string>
+    <string name="path_to_ca">یک مسیر فایل (به عنوان مثال /sdcard/ca-cert.pem) را وارد کنید و روی Import ضربه بزنید تا مرجع صدور گواهی بارگیری شود.</string>
+    <string name="nickname_caption_hint">عنوان (اختیاری)</string>
+    <string name="connection_caption">اتصال</string>
+    <string name="pan_follow_mouse">پان به دنبال ماوس است</string>
+    <string name="rdp_geom_native_landscape">منظره بومی</string>
+    <string name="meta_key_title">ارسال کلیدهای ویژه</string>
+    <string name="move_toolbar">انتقال نوار ابزار</string>
+    <string name="input_mode_fit_to_screen">بدون پان;ماوس ترک بال</string>
+    <string name="enable_sound">صدا را فعال کنید</string>
+    <string name="error_security_type">سرور نوع امنیتی پشتیبانی شده را ارائه نمی دهد.</string>
+    <string name="connection_type_text">محیط مجازی سازی (RHEV/oVirt یا Proxmox)</string>
+    <string name="connection_setup_host_name">آدرس سرور</string>
+    <string name="vnc_server_empty_no_save">سرور VNC یا پورت خالی است.اتصال ذخیره نمی شود!</string>
+    <string name="ca_ovirt_manage">RHEV/oVirt CA را مدیریت کنید</string>
+    <string name="manage_custom_ca_title">مدیریت CA سفارشی</string>
+    <string name="ca_file_not_found">فایل پیدا نشدلطفاً یک نام فایل معتبر را در فیلد متنی وارد کنید (به عنوان مثال /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">لطفا یک رمز عبور اصلی را وارد کرده و حفظ کنید.هرچه رمز عبور شما طولانی تر باشد، شکستن آن سخت تر می شود.اگر رمز عبور خود را اشتباه تنظیم کنید یا آن را فراموش کنید، تمام تنظیمات خود را از دست خواهید داد!ممکن است بخواهید اکنون تنظیمات خود را صادر کنید تا از آنها نسخه پشتیبان تهیه کنید (از منو).آنها را با خیال راحت ذخیره کنید زیرا تنظیمات صادر شده رمزگذاری نشده اند.</string>
+    <string name="repeater_clear">استفاده نکنید</string>
+    <string name="ad_donate_text3">اگر می‌خواهید از این پروژه بیشتر حمایت کنید، پیوندهای زیر را برای پیوند به برنامه‌های مشتری دنبال کنید:</string>
+    <string name="vnc_connection_settings">تنظیمات اتصال VNC</string>
+    <string name="master_password_enable">🔒 رمز عبور اصلی را فعال کنید</string>
+    <string name="new_list_button">لیست جدید</string>
+    <string name="spice_intro_text">از شما برای حمایت از aSPICE و نرم افزار منبع باز به طور کلی سپاسگزاریم!برای راهنمایی در مورد استفاده از aSPICE، به موارد راهنما در منو و توضیحات برنامه موجود در بازار مراجعه کنید.
+&lt;br&gt;
+&lt;br&gt;
+لیست فعلی ویژگی های aSPICE شامل:
+&lt;br&gt;
+- SPICE ساده، SPICE تونل شده روی SSH.
+&lt;br&gt;
+- پشتیبانی از چرخش رایگاندر صورت نیاز از سیستم عامل برای محدود کردن چرخش استفاده کنید.
+&lt;br&gt;
+- تولید و صادرات جفت کلید عمومی/خصوصی SSH.
+&lt;br&gt;
+- ذخیره خودکار جلسه
+&lt;br&gt;
+- حالت‌های بزرگ‌نمایی، متناسب با صفحه، و مقیاس‌بندی یک به یک.
+&lt;br&gt;
+- کنترل چند لمسی روی ماوس از راه دور در حالت های ورودی مستقیم و شبیه سازی شده تاچ پد.
+&lt;br&gt;
+- کنترل کامل با یک دست بر روی ماوس از راه دور در حالت ورودی Single-Handed.
+&lt;br&gt;
+- کلیک های چند لمسی ماوس: برای کلیک چپ، ضربه زدن با دو انگشت برای کلیک راست، سه انگشت تا کلیک میانی ضربه بزنید.
+&lt;br&gt;
+- پیمایش چند لمسی: با دو انگشت به بالا/پایین بکشید و برای پیمایش به چپ/راست بکشید.
+&lt;br&gt;
+- کلیدهای متا و پیکان روی صفحه که می توانند به طور کامل از منو غیرفعال شوند یا با دکمه روی صفحه ذخیره شوند.
+&lt;br&gt;
+- ارسال متن و ترکیب کلید دلخواه هنگام اتصال.
+&lt;br&gt;
+- کمک به ایجاد اتصالات (\Menu-&gt;Connection Help\) در صفحه اتصال.
+&lt;br&gt;
+- هنگام اتصال به حالت های ورودی (\Menu-&gt;More-&gt;Input Mode Help\) کمک کنید.
+&lt;br&gt;
+- استفاده از ترک‌پد موجود به‌عنوان فلش به‌جای حرکت دادن ماوس، و کلیک پد لمسی به‌عنوان Ctrl، چرخش D-pad/trackpad برای صفحه‌کلیدهای BT.
+&lt;br&gt;
+- پشتیبانی از چند زبان، تا زمانی که سرور SPICE طرح بندی زبان لازم را فعال کرده باشد.
+&lt;br&gt;
+- تغییر وضوح دستگاه از راه دور بدون درز
+&lt;br&gt;
+- پشتیبانی کامل از ماوس در دستگاه های Android 4.0 و بالاتر، از جمله کلیک راست و وسط و چرخ اسکرول.
+&lt;br&gt;
+&lt;br&gt;
+ویژگی های برنامه ریزی شده:
+&lt;br&gt;
+- یکپارچه سازی کپی/پیست
+&lt;br&gt;
+- صدا
+&lt;br&gt;
+- بهبود عملکرد
+&lt;br&gt;
+مسائل شناخته شده:
+&lt;br&gt;
+- ارسال متن برخی از نمادها را ارسال نمی کند.
+&lt;br&gt;</string>
+    <string name="info">اطلاعات</string>
+    <string name="connection_edit_delete_prompt">آیا می خواهید اتصال را ویرایش یا حذف کنید؟</string>
+    <string name="connection_type_caption">نوع اتصال</string>
+    <string name="usb">USB (ابتدا کابل OTG را وصل کنید)</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC را روی VeNCrypt ایمن کنید</string>
+    <string name="log_copied">Logcat در کلیپ بورد کپی شد.اکنون می توانید آن را در یک ایمیل یا در انجمن پشتیبانی جایگذاری کنید.لطفا قبل از ارسال هر گونه اطلاعات شخصی را بررسی کنید.</string>
+    <string name="disable_pointer_offset_correction">تصحیح افست نشانگر را غیرفعال کنید</string>
+    <string name="password_caption_hint">رمز عبور VNC</string>
+    <string name="user_not_specified">کاربر مشخص نشده است</string>
+    <string name="connection_type_vnc_over_ssl">VNC ایمن از طریق AnonTLS</string>
+    <string name="pro_feature_intro">به نظر می رسد از یک ویژگی Pro استفاده می کنید.لطفاً با خرید نسخه Pro که از این ویژگی پشتیبانی می کند، از پروژه حمایت کنید.لطفاً گفتگوی مقدمه را برای پیوندهای برنامه صحیح بررسی کنید.</string>
+    <string name="shift_check">شیفت</string>
+    <string name="error_ssh_keypair_missing">جفت کلید SSH هنوز ایجاد نشده است!لطفاً یکی را ایجاد کنید و (بخش عمومی آن) را در authorized_keys در سرور SSH قرار دهید.</string>
+    <string name="error_connection_failed">اتصال ناموفق بود.</string>
+    <string name="info_continue_connecting">ادامه اتصال به:</string>
+    <string name="connection_type_vnc_over_ssh">امنیت VNC روی SSH</string>
+    <string name="advanced_settings">تنظیمات پیشرفته</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">عبارت عبور ارائه شده است اما جفت کلید رمزگذاری نشده است.لطفا عبارت عبور را حذف کنید</string>
+    <string name="vnc_server_empty">سرور VNC یا پورت خالی است.نمیشه وصل شد!</string>
+    <string name="error_uri_parse_error">قادر به تجزیه URI Intent نیست.لطفا فرمت URI را بررسی کنید.همچنین برای جزئیات بیشتر می‌توانید لاگ‌ت دستگاه را ببینید.</string>
+    <string name="username_hint_vencrypt">نام کاربری VNC</string>
+    <string name="error_vv_download_timeout">پایان زمان دانلود فایل vv.</string>
+    <string name="center_mouse">ماوس @</string>
+    <string name="show_keyboard">نمایش صفحه کلید</string>
+    <string name="info_cert_signatures">اطلاعات گواهی عبارتند از:</string>
+    <string name="rdp_username_hint">نام کاربری RDP</string>
+    <string name="connection_type_vnc">VNC پایه</string>
+    <string name="rdp_security_nla">احراز هویت سطح شبکه</string>
+    <string name="ssh_pubkey_button">مدیریت کلید</string>
+    <string name="ca_file_error_reading">خطا در خواندن فایل CA.لطفا مطمئن شوید که قابل خواندن است.</string>
+    <string name="master_password_error_intents_not_supported">هنگامی که رمز عبور اصلی فعال است، اهداف اتصال هنوز پشتیبانی نمی شوند.</string>
+    <string name="input_method_direct_swipe_pan">مستقیم، سوایپ پان</string>
+    <string name="update_button">به روز رسانی</string>
+    <string name="input_mode_panning">حالت پانینگ دسکتاپ</string>
+    <string name="search_connections">جستجوی اتصالات</string>
+    <string name="error_x509_could_not_generate_signature">امضای گواهینامه SHA1 یا MD5 ایجاد نشد.الگوریتم SHA1/MD5 یافت نشد.</string>
+    <string name="auto_x_xdummy">با Xdummy پیدا یا ایجاد کنید</string>
+    <string name="error_not_connected_to_network">به نظر نمی رسد به اینترنت متصل باشید.بدون اتصال نمی توان ادامه داد!</string>
+    <string name="show_advanced_settings">نمایش تنظیمات پیشرفته</string>
+    <string name="master_password_set">رمز عبور اصلی را تنظیم کنید</string>
+    <string name="custom_ca_import">همچنین، مسیر کامل CA خود را وارد کرده و روی Import ضربه بزنید</string>
+    <string name="mouse_follow_pan">ماوس به دنبال پان</string>
+    <string name="enter_password_auth_failed">احراز هویت ناموفق بود.لطفا اعتبار خود را دوباره وارد کنید.</string>
+    <string name="show">نمایش دهید</string>
+    <string name="dpad_as_arrows">از D-Pad برای فلش ها و D-Pad برای Ctrl استفاده کنید.</string>
+    <string name="tap_enable">فعال کردن</string>
+    <string name="ad_donate_spice_text1a">برای خرید Opaque و ذخیره اتصالات مستقیم به Proxmox و oVirt اینجا ضربه بزنید.همچنین از فایل های .vv پشتیبانی می کند.</string>
+    <string name="please_grant_permission_from_prefs">ممکن است لازم باشد از طریق تنظیمات به برنامه مجوز بدهید.</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="share_app">به اشتراک بگذارید</string>
+    <string name="remote_sound_on_device">صدا در دستگاه</string>
+    <string name="connection_setup_vm_name">نام ماشین مجازی (اختیاری)</string>
+    <string name="single_choose">حالت تک دستی را انتخاب کنید یا لغو کنید</string>
+    <string name="error_no_user_hostname">لطفا حداقل یک کاربر و یک نام میزبان یا آدرس IP وارد کنید.</string>
+    <string name="rdp_adv_redirect_sdcard">تغییر مسیر کارت SD</string>
+    <string name="error_pve_api_io_error">اتصال به Proxmox Virtual Environment انجام نشد:</string>
+    <string name="username_hint_optional">نام کاربری VNC (اختیاری)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">سفارشی</string>
+    <string name="delete_connection">اتصال را حذف کنید</string>
+    <string name="repeater_save">استفاده کنید</string>
+    <string name="get_help">کمک بگیرید</string>
+    <string name="hide">پنهان کردن</string>
+    <string name="rdp_security_mode">حالت امنیتی</string>
+    <string name="connection_type_rdp_over_ssh">RDP بیش از SSH</string>
+    <string name="auto_x_xvfb">با Xvfb پیدا یا ایجاد کنید</string>
+    <string name="address_caption">سرور VNC</string>
+    <string name="show_only_connection_nicknames">نمایش فقط نام مستعار اتصال</string>
+    <string name="ca_spice_use_ovirt">از RHEV/oVirt CA برای SPICE استفاده کنید</string>
+    <string name="info_cert_tunnel">آیا می‌خواهید به میزبان شناسایی شده توسط گواهی زیر متصل شوید؟\n\nاثرانگشت: %1$s\n\nصدور برای:\n%2$s\n\nصدور توسط:\n%3$s\n\nمعتبر از:\n%4$s\n\nمعتبر تا:\n%5$s گواهینامه تأیید نشده است.</string>
+    <string name="error_failed_to_obtain_file">فایل پیدا نشد.لطفاً دوباره آن را دانلود کنید، اما این بار سعی کنید آن را از قسمت Notification یا در صورت امکان مستقیماً از مرورگر باز کنید.</string>
+    <string name="error_pve_timeout_communicating">وقفه در برقراری ارتباط با محیط مجازی Proxmox.</string>
+    <string name="connection_type_spice_over_ssh">SPICE روی SSH</string>
+    <string name="vnc_connection_screen_help_text">
+هنگامی که اتصالی را اضافه یا ویرایش می کنید، صفحه پیکربندی اتصال را مشاهده خواهید کرد.در اینجا می توانید یک اتصال VNC جدید راه اندازی کنید یا یک اتصال از قبل موجود را انتخاب کنید.در بالا دکمه ای وجود دارد که به شما امکان می دهد اتصال را ذخیره کنید.در زیر آن جایی است که اتصال خود را پیکربندی می کنید.
+
+اگر به دنبال افزایش سریع عملکرد هستید، سعی کنید حالت Color را روی مقدار کمتری تنظیم کنید.همچنین، سعی کنید هر تصویر پس زمینه دسکتاپ را در سرور VNC حذف کنید.در نهایت، اطمینان حاصل کنید که دستگاه شما اتصال شبکه خوبی دارد و از پوشاندن آنتن آن و کاهش قدرت سیگنال خودداری کنید.
+
+- نوع اتصال: در اینجا نوع اتصال VNC را انتخاب می کنید.انواع اتصالات موجود عبارتند از:
+(الف) VNC ساده، که توسط همه سرورهای VNC پشتیبانی می‌شود، اما فاقد رمزگذاری است و به دلیل محدودیت رمز عبور 8 کاراکتری، در برابر حملات brute-force آسیب‌پذیر است.
+(ب) VNC ایمن از طریق SSH، که از طریق یک تونل SSH رمزگذاری شده متصل می شود.شما به یک سرویس SSHD و همچنین سرور VNC نیاز دارید.تا زمانی که سرور VNC اتصالات مستقیم از اینترنت را قبول نکند، این نوع اتصال هیچ آسیب‌پذیری شناخته‌شده‌ای ندارد، تا زمانی که امضای گواهی سرور را هنگام اولین اتصال تأیید کنید.
+(ج) UltraVNC که گزینه های Logon ویندوز و UltraVNC Repeater را در اختیار شما قرار می دهد.استفاده از Windows Logon از محدودیت رمز عبور 8 کاراکتری رنج نمی‌برد، اما این حالت هیچ رمزگذاری ارائه نمی‌کند، بنابراین جلسه شما در برابر sniffing آسیب‌پذیر است.
+(د) VNC را روی AnonTLS ایمن کنید، که VNC معمولی روی یک اتصال معادل stunnel است.یا باید stunnel را اجرا کنید یا از یک سرور VNC مانند Vino استفاده کنید که از AnonTLS خارج از جعبه پشتیبانی می کند.این حالت به شما رمزگذاری جلسه می دهد، اما از محدودیت رمز عبور 8 کاراکتری رنج می برد و از حملات مرد میانی جلوگیری نمی کند.
+(ه) امنیت VNC روی VeNCrypt، که از گواهی‌های x509 و همچنین رمزگذاری جلسه استفاده می‌کند و بسته به پیکربندی سرور می‌تواند از اعتبار کاربری/رمز عبور بدون محدودیت 8 کاراکتری استفاده کند.این حالت از حملات man-in-the-middle جلوگیری می کند.و همچنین حفظ حریم خصوصی جلسه.سرورهایی مانند x11vnc و TigerVNC از این حالت پشتیبانی می کنند و به اندازه VNC از SSH ایمن هستند.
+
+- عنوان: هر اتصالی که ایجاد می کنید می تواند یک نام مستعار داشته باشد تا به راحتی آن را در لیست شناسایی کنید.
+
+- تنظیمات تونل SSH: در حالت VNC در حالت SSH موجود است.
+(الف) SSH Server/Port: آدرس و پورت سرور SSH که اتصال از طریق آن تونل می شود.به طور پیش فرض SSH در پورت 22 گوش می دهد.
+(ب) نام کاربری/رمز عبور: نام کاربری و رمز عبور حساب در سرور SSH.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+(ج) مدیریت کلید/کلید استفاده: دکمه ای برای مدیریت کلیدهای عمومی/خصوصی، و یک چک باکس که نشان می دهد آیا از کلید به جای رمز عبور برای احراز هویت استفاده شود یا خیر.اگر بعد از ایجاد یک جفت کلید از دکمه کپی در کلیپ بورد استفاده می کنید، باید بتوانید کلید عمومی را پس از اتصال به سرور VNC جایگذاری کنید (کلیپ بورد با سرور همگام شده است).
+
+- پیکربندی AutoX: فقط در VNC در حالت SSH موجود است.برنامه می تواند به طور خودکار جلسات X موجود را کشف کند و به صورت اختیاری در سیستم های یونیکس (مانند کلاینت NX) جلسات X جدید ایجاد کند.برای یافتن به x11vnc و برای ایجاد جلسات Xvfb، Xvnc یا Xdummy روی سیستم راه دور نصب شده است.اگر دسکتاپ شما مناسب به نظر نمی رسد یا فقط یک پنجره xterm دریافت می کنید، ممکن است مجبور شوید فایل .dmrc خود را حذف کنید و یک فایل xinit. را در فهرست اصلی خود اضافه کنید.
+
+- تنظیمات اتصال VNC:
+(الف) سرور/پورت VNC: اینجا جایی است که نام میزبان یا آدرس IP و پورت رایانه‌ای که سرور VNC را اجرا می‌کند و می‌خواهید با آن تماس بگیرید را وارد می‌کنید.در حالت VNC over SSH، این آدرس همانطور که از سرور SSH دیده می شود.اگر سرور SSH و سرور VNC یک کامپیوتر هستند، می توانید از localhost استفاده کنید.سرورهای VNC معمولاً با شروع درگاه 5900 گوش می دهند (اولین صفحه VNC، صفحه نمایش :0).
+(ب) کاربر VNC: در UltraVNC با حالت ورود به سیستم ویندوز یا Secure VNC از طریق VeNCrypt موجود است، اینجا جایی است که نام کاربری حساب Windows/UNIX خود را وارد می‌کنید.
+(ج) رمز عبور VNC: اگر پیکربندی سرور VNC شما نیاز به رمز عبور دارد، آن رمز عبور را در اینجا وارد کنید.در UltraVNC با حالت های Windows Logon/VeNCrypt، رمز عبور حساب Windows/UNIX خود را در اینجا قرار دهید.ذخیره‌سازی امن برای گذرواژه‌ها استفاده نمی‌شود و رمز عبور تنها در صورتی ذخیره می‌شود که کادر Keep را علامت بزنید.اگر از آخرین باری که برنامه را وارد کرده اید از آن خارج نشده اید، رمز عبور در این صفحه پر می شود.
+- حالت رنگ: مشتری از چندین حالت رنگی پشتیبانی می کند.حالت‌های با رنگ‌های بیشتر تجربه بصری بهتری را به قیمت پهنای باند بیشتر و محاسبات CPU بیشتر در دستگاه شما ارائه می‌کنند.برخی از سرورهای VNC از تمام عمق رنگ ها پشتیبانی نمی کنند (به عنوان مثال، OS/X Remote Desktop به رنگ 24 بیتی نیاز دارد).اگر در اتصال مشکل دارید، عمق رنگ دیگری را امتحان کنید.
+
+- از D-Pad برای فلش ها استفاده کنید: اگر ترجیح می دهید، می توانید از D-Pad صفحه کلید بلوتوث یا فلش های روی صفحه کلید روی صفحه خود برای ارسال فلش ها به سرور VNC استفاده کنید.
+
+- چرخش D-Pad: تلفن های جفت شده با صفحه کلید بلوتوث ممکن است نیاز به چرخش D-pad صفحه کلید در خلاف جهت عقربه های ساعت داشته باشند تا مسیرهای صحیح را به سرور ارسال کنند.
+
+- نشانگر محلی ماوس: برخی از سرورهای VNC (به عنوان مثال OS/X Remote Desktop) نشانگر ماوس را روی کلاینت نمی کشند.تیک زدن این گزینه باعث می شود که برنامه یک نشانگر ماوس را در موقعیت ماوس بکشد.
+
+- Bitmap خودکار/تمام صفحه: مشتری VNC از یک بیت مپ برای نمایش نمایش از راه دور استفاده می کند.برای نمایشگرهای بسیار بزرگ از راه دور، به خصوص در حالت تناسب با صفحه، ممکن است به دلیل محدودیت‌های حافظه در هر فرآیند، در حالت تناسب با صفحه، مصنوعات بصری عجیبی را تجربه کنید.اگر این اتفاق افتاد، این گزینه را علامت بزنید.به خاطر داشته باشید که علامت زدن گزینه ممکن است باعث شود که برنامه از اتصال خارج شود.
+
+- Repeater: فقط در حالت UltraVNC موجود است.مهم: اگر یک تکرارکننده UltraVNC دارید، آدرس و پورت آن را خارج از گفتگوی \'UltraVNC Repeater\' وارد کنید و آدرس و پورت سرور VNC واقعی را در کادر گفتگوی \'UltraVNC Repeater\' وارد کنید.آدرس و پورت سرور VNC را با دو نقطه جدا کنید، به عنوان مثال.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">فعال‌سازی حافظه پنهان گلیف</string>
+    <string name="disable_battery_optimizations_failed">
+تنظیمات بهینه سازی باتری باز نشد.بهینه سازی باتری را به صورت دستی در تنظیمات سیستم غیرفعال کنید.</string>
+    <string name="disable_battery_optimizations">
+🔋بهینه سازی باتری را غیرفعال کنید</string>
+    <string name="disable_battery_optimizations_already_done">
+برنامه از قبل از بهینه سازی باتری معاف است.</string>
+    <string name="no_connections_title">هنوز اتصالی وجود ندارد</string>
+    <string name="no_connections_hint">برای افزودن اولین اتصال از راه دور، دکمه + را لمس کنید</string>
+    <string name="no_connections_hint_tv">برای افزودن اولین اتصال از راه دور، دکمه + بالا را فشار دهید</string>
+    <string name="keyboard_layout_map">چیدمان صفحه‌کلید</string>
+</resources>

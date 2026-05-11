@@ -1,0 +1,45 @@
+diff --git a/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/domain/BookmarkBase.java b/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/domain/BookmarkBase.java
+index 2e0fe2191..4279da139 100644
+--- a/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/domain/BookmarkBase.java
++++ b/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/domain/BookmarkBase.java
+@@ -414,6 +414,16 @@ public class BookmarkBase implements Parcelable, Cloneable
+ 		private boolean fontSmoothing;
+ 		private boolean desktopComposition;
+ 
++		public boolean isGlyphCache() {
++			return glyphCache;
++		}
++
++		public void setGlyphCache(boolean glyphCache) {
++			this.glyphCache = glyphCache;
++		}
++
++		private boolean glyphCache;
++
+ 		public PerformanceFlags()
+ 		{
+ 			remotefx = false;
+@@ -425,6 +435,7 @@ public class BookmarkBase implements Parcelable, Cloneable
+ 			menuAnimations = false;
+ 			fontSmoothing = false;
+ 			desktopComposition = false;
++			glyphCache = false;
+ 		}
+ 
+ 		public PerformanceFlags(Parcel parcel)
+@@ -438,6 +449,7 @@ public class BookmarkBase implements Parcelable, Cloneable
+ 			menuAnimations = parcel.readInt() == 1;
+ 			fontSmoothing = parcel.readInt() == 1;
+ 			desktopComposition = parcel.readInt() == 1;
++			glyphCache = parcel.readInt() == 1;
+ 		}
+ 
+ 		public boolean getRemoteFX()
+@@ -546,6 +558,7 @@ public class BookmarkBase implements Parcelable, Cloneable
+ 			out.writeInt(menuAnimations ? 1 : 0);
+ 			out.writeInt(fontSmoothing ? 1 : 0);
+ 			out.writeInt(desktopComposition ? 1 : 0);
++			out.writeInt(glyphCache ? 1 : 0);
+ 		}
+ 	}
+ 

@@ -1,0 +1,33 @@
+name: vv_viewer
+description: "PVE .vv file viewer for iOS and Android"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  file_picker: ^8.1.7
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.2
+  hooks_riverpod: ^2.6.1
+  flutter_hooks: ^0.20.5
+  equatable: ^2.0.7
+  logger: ^2.5.0
+  app_links: ^6.3.2
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.10.0
+  http: ^1.2.0
+  # sentry_flutter: ^8.0.0  # TODO: 需升级 Kotlin 到 2.1+ 才能使用
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

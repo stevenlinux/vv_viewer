@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Bydd sain yn cael ei gychwyn mewn tua 15 eiliad, stopiwch unrhyw chwarae fideo neu sain cyn hynny</string>
+    <string name="audio_initialized">Sain wedi\'i gychwyn</string>
+    <string name="action_import_settings">Mewnforio Gosodiadau</string>
+    <string name="action_new_connection">✚ Cysylltiad Newydd</string>
+    <string name="action_edit_default_settings">⚙ Golygu Gosodiadau Rhagosodedig</string>
+    <string name="action_export_settings">Allforio Gosodiadau</string>
+    <string name="action_delete_connection">Dileu Cysylltiad</string>
+    <string name="action_rate_or_share_app">⭐ Cael Cymorth, Graddio, Rhannu</string>
+    <string name="get_help">Cael Cymorth</string>
+    <string name="advanced_settings">Gosodiadau Uwch</string>
+    <string name="audio">Sain</string>
+    <string name="auto_rotation">Cylchdroi\'r sgrin wrth gysylltu</string>
+    <string name="auto_request_new_res">Cysoni\'r pell i\'r penderfyniad arddangos</string>
+    <string name="custom_ca_subject">Pwnc Tystysgrif Dewisol. Nid oes ei angen os yw CN y dystysgrif yn cydweddu â\'r enw gwesteiwr</string>
+    <string name="custom_ca_import">Fel arall, rhowch lwybr llawn at eich CA a thapio Mewnforio</string>
+    <string name="custom_ca_paste">Gludwch (os nad ydych yn mewnforio) yr CA yma</string>
+    <string name="ca_ovirt_use_custom">CA RHEV/oVirt Arferol</string>
+    <string name="ca_spice_use_ovirt">Defnyddio CA RHEV/oVirt ar gyfer SPICE</string>
+    <string name="ca_ovirt_manage">Rheoli CA RHEV/oVirt</string>
+    <string name="ca_spice_manage">Rheoli CA SPICE</string>
+    <string name="ca_file_not_found">Ffeil heb ei chanfod. Rhowch enw ffeil dilys yn y maes testun (e.e. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Gwall wrth ddarllen ffeil CA. Sicrhewch ei bod yn ddarllenadwy.</string>
+    <string name="ca_new_or_changed">Tystysgrif gweinydd newydd neu wedi\'i newid</string>
+    <string name="connection_type_text">Amgylchedd Rhithwiredd (RHEV/oVirt neu Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Enw\'r peiriant rhithwir (dewisol)</string>
+    <string name="connection_setup_host_name">Cyfeiriad y Gweinydd</string>
+    <string name="connection_setup_user">Defnyddiwr@Parth</string>
+    <string name="connection_setup_password">Cyfrinair</string>
+    <string name="enter_password">Rhowch gyfrinair</string>
+    <string name="enter_password_auth_failed">Methwyd ag dilysu. Rhowch eich manylion eto.</string>
+    <string name="enter_otp_code">Rhowch god OTP</string>
+    <string name="hide_toolbar">Cuddio\'r bar offer</string>
+    <string name="manage_custom_ca_title">Rheoli CA arferol</string>
+    <string name="save_button">Cadw</string>
+    <string name="select_vm_title">Dewiswch Beiriant Rhithwir</string>
+    <string name="vv_file_not_found">Ni chanfuwyd y ffeil .vv!</string>
+    <string name="vv_file_error">Mae\'r ffeil .vv naill ai ar goll neu wedi\'i llygru!</string>
+    <string name="info_cert">Ydych chi\'n derbyn y dystysgrif gwesteiwr newydd neu wedi\'i newid hon?\n\nOlion bysedd:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nCyhoeddwyd i: %4$s\nCyhoeddwyd gan: %5$s\n\nDilys o: %6$s\nDilys tan: %7$s\n</string>
+
+    <string name="toggle_keyboard">Toglo\'r Bysellfwrdd</string>
+    <string name="show_keyboard">Dangos Bysellfwrdd</string>
+    <string name="scroll_wheel">Olwyn Sgrolio</string>
+
+    <string name="input_method_help">Cymorth Dull Mewnbynnu</string>
+
+    <string name="ok">Iawn</string>
+
+    <string name="input_methods">Dull Mewnbynnu</string>
+
+    <string name="error_failed_to_download_http">Methwyd â lawrlwytho\'r ffeil dros HTTP. Efallai nad oes modd cyrraedd eich gweinydd.</string>
+    <string name="error_failed_to_download_https">Methwyd â lawrlwytho\'r ffeil dros HTTPS. Efallai nad yw tystysgrif eich gweinydd yn ddibynadwy (wedi dod i ben neu hunan-lofnodwyd) neu nad oes modd cyrraedd eich gweinydd.</string>
+    <string name="error_failed_to_obtain_content">Methwyd â chael y ffeil. Lawrlwythwch hi eto, ond y tro hwn, agorwch hi\'n gyflym o\'r ffolder Lawrlwytho mewn Rheolwr Ffeiliau.</string>
+    <string name="error_failed_to_obtain_file">Methwyd â dod o hyd i\'r ffeil. Lawrlwythwch hi eto, ond y tro hwn, ceisiwch ei hagor o\'r ardal Hysbysiadau neu\'n uniongyrchol o\'r Porwr os yn bosibl.</string>
+
+    <string name="error_dialog_title">Gwall</string>
+    <string name="info_dialog_title">Gwybodaeth</string>
+    <string name="info_vm_launched_on_stand_by">Canfuwyd eich VM wedi\'i ddiffodd ac mae wedi\'i gychwyn. Ceisiwch eto mewn ychydig funudau. Os ceisiwch yn rhy fuan a chael methiant cysylltu, ceisiwch eto\'n ddiweddarach.</string>
+    <string name="error_no_vm_found_for_user">Dim Peiriannau Rhithwir ar gael ar gyfer y defnyddiwr hwn.</string>
+    <string name="error_no_such_vm_found_for_user">Ni chanfuwyd unrhyw Beiriant Rhithwir â\'r ID a roddwyd ar gyfer y defnyddiwr hwn. Dilëwch yr ID i gael rhestr o VMau.</string>
+    <string name="error_no_vnc_support_yet">Nid yw math arddangos VNC yn cael ei gefnogi eto, ond mae\'n nodwedd sydd i ddod. Diolch am eich dealltwriaeth!</string>
+    <string name="error_not_connected_to_network">Nid ydych chi\'n ymddangos i fod wedi\'ch cysylltu â\'r Rhyngrwyd. Ni ellir parhau heb gysylltiad!</string>
+    <string name="error_ovirt_timeout">Amser y cysylltiad â\'ch VM wedi dod i ben. Gwiriwch fod cyfeiriad y nod sy\'n rhedeg eich VM yn gywir, ei fod yn hygyrch o\'ch rhwydwaith presennol, a bod dim mur tân yn rhwystro\'r cysylltiad.</string>
+    <string name="error_ovirt_auth_failure">Methiant dilysu. Gwiriwch y defnyddiwr a\'r cyfrinair a roddwyd.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Methiant ysgwyd llaw SSL. Mae problem gyda thystysgrif SSL y gweinydd. Os ydych chi\'n defnyddio tystysgrif hunan-lofnodwyd, mae angen i chi (ail)fewnforio eich awdurdod tystysgrifiau.</string>
+    <string name="error_pve_failed_to_authenticate">Methwyd ag dilysu i Proxmox Virtual Environment. Sicrhewch eich bod yn nodi\'ch enw defnyddiwr yn fformat defnyddiwr@parth a bod eich cyfrinair yn gywir.</string>
+    <string name="error_pve_failed_to_parse_json">Methwyd â phrosesu ymateb o Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">Nid yw ID y VM yn rhifiadol. Rhowch ID VM rhifiadol neu gadewch yn wag i ddewis y VM o restr.</string>
+    <string name="error_pve_api_unexpected_code">Ymateb annisgwyl o Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Methodd y cysylltiad â Proxmox Virtual Environment: </string>
+    <string name="error_pve_null_data">Dychwelodd Proxmox Virtual Environment ddata nwl.</string>
+    <string name="error_pve_timeout_communicating">Amser cyfathrebu â Proxmox Virtual Environment wedi dod i ben.</string>
+    <string name="error_vm_lookup_failed">Ni ellid dod o hyd i beiriant rhithwir â\'r enw a nodwyd wedi\'i neilltuo i\'ch defnyddiwr. Dilëwch enw\'r VM a nodwyd i weld rhestr o VMau wedi\'u neilltuo i\'r defnyddiwr.</string>
+    <string name="error_vv_download_timeout">Amser lawrlwytho\'r ffeil vv wedi dod i ben.</string>
+    <string name="message_please_wait">Arhoswch</string>
+    <string name="message_please_install_bvnc">Gosodwch &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> o Google Play i gysylltu â chonsol VNC y VM hwn.</string>
+    <string name="ssl_strict">Gofyn i\'r enw cyffredin gydweddu â\'r dystysgrif (argymhellir)</string>
+    <string name="usb">USB (plygiwch mewn cebl OTG yn gyntaf)</string>
+
+    <string name="ad_donate_text0">Mae\'r fersiwn Pro hefyd yn cefnogi dilysu SSH aml-ffactor. Yn ogystal, mae\'n cefnogi\'r nodwedd Cyfrinair Meistr a ofynnwyd amdani lawer o weithiau sy\'n atal defnydd heb awdurdod ac yn amgryptio\'r holl osodiadau cysylltiad gan gynnwys cyfrineiriau ac allweddi SSH rhag lladrad. Galluogwch hi o\'r Dewislen brif.</string>
+    <string name="ad_donate_spice_text1a">Tapiwch yma i brynu Opaque a chadw cysylltiadau uniongyrchol â Proxmox ac oVirt. Mae hefyd yn cefnogi ffeiliau .vv.</string>
+    <string name="ad_donate_spice_text1b">Tapiwch yma i brynu\'r fersiwn Pro ac agor ffeiliau .vv yn unig.</string>
+    <string name="ad_donate_text1">Tapiwch yma i gefnogi\'r prosiect gyda rhodd fechan drwy brynu\'r fersiwn Pro.</string>
+    <string name="ad_donate_text2">Mae\'r fersiwn Pro yn caniatáu i chi analluogi\'r ddeialog hon ac yn rhoi mynediad i nodweddion ychwanegol.</string>
+    <string name="ad_donate_text3">Os hoffech chi gefnogi\'r prosiect ymhellach, dilynwch y dolenni canlynol am ddolenni i apiau cleient ar gyfer: </string>
+    <string name="ad_donate_text_vnc">Mae angen eich cefnogaeth ar y prosiect Ffynhonnell Agored! Rhoddwch i ni drwy brynu bVNC Pro. Gweler isod am ddolenni i bVNC Pro a\'n hapiau eraill.</string>
+    <string name="ad_donate_text_rdp">Mae angen eich cefnogaeth ar y prosiect Ffynhonnell Agored! Rhoddwch i ni drwy brynu aRDP Pro, sy\'n cefnogi ailgyfeirio sain. Gweler isod am ddolenni i aRDP Pro a\'n hapiau eraill.</string>
+    <string name="ad_donate_text_spice">Ar gyfer cysylltiadau Proxmox ac oVirt, rhoddwch i\'r prosiect drwy brynu Opaque neu aSPICE Pro. Mae fersiwn Rhad ac Am Ddim aSPICE ond yn cefnogi cysylltiadau uniongyrchol â pheiriannau rhithwir KVM. Gweler isod am ddolenni i Opaque ac aSPICE Pro, yn ogystal â\'n hapiau eraill.</string>
+
+    <string name="address_caption">Gweinydd VNC</string>
+    <string name="address_caption_hint">Gweinydd VNC</string>
+    <string name="address_caption_hint_tunneled">Gweinydd VNC</string>
+    <string name="address_caption_ssh">Gweinydd SSH</string>
+    <string name="address_caption_ssh_hint">Gweinydd SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Saeth i Lawr</string>
+    <string name="arrow_left">Saeth i\'r Chwith</string>
+    <string name="arrow_right">Saeth i\'r Dde</string>
+    <string name="arrow_up">Saeth i Fyny</string>
+
+    <string name="auto">Awtomatig</string>
+    <string name="auto_x_cancel">Canslo</string>
+    <string name="auto_x_caption">Gall y rhaglen ddarganfod yn awtomatig sesiynau X presennol a chreu rhai newydd ar systemau Linux/UNIX (tebyg i NX). Mae angen x11vnc i ddarganfod, a Xvfb, Xvnc, neu Xdummy i greu sesiynau. Os oes gennych chi drafferth cysylltu, ceisiwch ddewis Math Penodol o Sesiwn Pell yn AutoX Gosodiadau Uwch.</string>
+    <string name="auto_x_confirm">Cadarnhau</string>
+    <string name="auto_x_descript_geom">Maint y Bwrdd Gwaith Pell (LxU)</string>
+    <string name="auto_x_descript_session">Math o Sesiwn Bell</string>
+    <string name="auto_x_disabled">Analluogwyd</string>
+    <string name="auto_x_disabled_selection">AutoX Analluogwyd</string>
+    <string name="auto_x_enabled">Galluogwyd</string>
+    <string name="auto_x_find">Darganfod yn Unig, Peidio â Chreu</string>
+    <string name="auto_x_find_login">Darganfod Mewngofnodi X (angen sudo)</string>
+    <string name="auto_x_geom_custom">Arferol</string>
+    <string name="auto_x_geom_native">Brodorol</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Awtomatig</string>
+    <string name="auto_x_session_custom">Arferol</string>
+    <string name="auto_x_title">Ffurfweddu AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Dilysu gan ddefnyddio Enw Defnyddiwr/Cyfrinair SSH a ddarparwyd yn awtomatig (i\'r sgrin fewngofnodi ddu).</string>
+    <string name="auto_x_unixpw">Defnyddio cymwysterau UNIX yn lle\'r mecanwaith diogelwch adeiledig. Rhaid i\'r defnyddiwr allu rhedeg /bin/su.</string>
+    <string name="auto_x_xdummy">Darganfod neu Greu gyda Xdummy</string>
+    <string name="auto_x_xvfb">Darganfod neu Greu gyda Xvfb</string>
+    <string name="auto_x_xvnc">Darganfod neu Greu gyda Xvnc</string>
+
+    <string name="button_send_text">Anfon Testun</string>
+    <string name="button_send_without_saving">Anfon Testun/Peidio â\'i Gadw</string>
+
+    <string name="center_mouse">Llygoden @</string>
+
+    <string name="close">Cau</string>
+
+    <string name="color_format_caption">Modd Lliw</string>
+    <string name="color_mode">Modd Lliw</string>
+
+    <string name="connect_button">Cysylltu</string>
+    <string name="back_button">Mynd yn Ôl</string>
+    <string name="update_button">Diweddaru</string>
+
+    <string name="connection_caption">Cysylltiad</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Math o Gysylltiad</string>
+    <string name="connection_type_rdp_over_ssh">RDP dros SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE dros SSH</string>
+    <string name="connection_type_vnc">VNC Sylfaenol</string>
+    <string name="connection_type_vnc_over_ssh">VNC Diogel dros SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC Diogel dros AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC Diogel dros Dwnnel SSL</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC Diogel dros VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Ydych chi am olygu neu ddileu\'r cysylltiad</string>
+    <string name="connection_edit">Golygu</string>
+    <string name="connection_delete">Dileu</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Copïo Rhestr</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Modd Mewnbynnu Rhagosodedig</string>
+    <string name="delete_connection">Dileu Cysylltiad</string>
+    <string name="delete_key">Dileu Allwedd Ddetholwyd</string>
+    <string name="delete_key_list">Dileu Rhestr Allweddi</string>
+
+    <string name="disconnect">Datgysylltu</string>
+
+    <string name="dpad_as_arrows">Defnyddio\'r D-Pad ar gyfer saethau a chlicied D-Pad ar gyfer Ctrl.</string>
+
+    <string name="enable_recording">Galluogi Recordio</string>
+    <string name="enable_sound">Galluogi Sain</string>
+
+    <string name="enter_text">Anfon Testun</string>
+    <string name="enter_text_title">Rhowch Destun i\'w Anfon</string>
+
+    <string name="error_anon_dh_unsupported">Mae\'r Gweinydd VNC yn ceisio defnyddio siffrau Diffie Hellman Dienw nad ydynt yn cael eu cefnogi ar eich dyfais Android. Os ydych chi\'n defnyddio gweinydd VNC Vino GNOME, gallwch analluogi AnonTLS drwy redeg y gorchymyn canlynol mewn terfynell ac yna ailosod: \"gsettings set org.gnome.Vino require-encryption false\". Os ydych chi\'n rhedeg x11vnc, gallwch ychwanegu\'r opsiynau canlynol: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Methodd y cysylltiad.</string>
+    <string name="error_connection_interrupted">Torrwyd y cysylltiad.</string>
+    <string name="error_no_user_hostname">Rhowch o leiaf enw defnyddiwr ac enw gwesteiwr neu gyfeiriad IP.</string>
+    <string name="error_out_of_memory">Methu â dyrannu digon o gof i dynnu\'r sgrin bell. Ceisiwch ailgychwyn y rhaglen, yna ailgychwyn eich dyfais. Gallwch hefyd geisio lleihau maint y bwrdd gwaith pell drwy osodiadau\'r ap.</string>
+    <string name="error_ovirt_unable_to_connect">Methu â chysylltu neu ddilysu, gwiriwch gyfeiriad y gweinydd, y defnyddiwr, y cyfrinair, ac awdurdod a phwnc y dystysgrif.</string>
+    <string name="error_pick_correct_item">Sicrhewch eich bod wedi dewis yr eitem gywir yn Math o Gysylltiad.</string>
+    <string name="error_rdp_authentication_failed">Methodd Dilysu RDP! Gwiriwch enw defnyddiwr a chyfrinair RDP a cheisiwch eto.</string>
+    <string name="error_rdp_connection_failed">Methodd y Cysylltiad RDP! Naill ai torrwyd cysylltedd rhwydwaith, diffoddwyd neu analluogwyd y gweinydd RDP, neu cymerwyd drosodd eich sesiwn.</string>
+    <string name="error_rdp_unable_to_connect">Methu â chysylltu â gweinydd RDP! Sicrhewch fod gosodiad y Gweinydd RDP yn gywir, bod y gweinydd ymlaen, bod RDP wedi\'i alluogi, a bod y gweinydd ar yr un rhwydwaith â\'r ddyfais hon.</string>
+    <string name="error_security_type">Ni chynigodd y gweinydd math diogelwch a gefnogir.</string>
+    <string name="error_spice_unable_to_connect">Methu â chysylltu neu ddilysu, gwiriwch gyfeiriad a phorth y gweinydd.</string>
+    <string name="error_ssh_could_not_exec_command">Methu â gweithredu gorchymyn pell.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Methu ag anfon cyfrinair sudo.</string>
+    <string name="error_ssh_hostkey_changed">GWALL! Mae allwedd gwesteiwr y gweinydd wedi newid. Os yw hyn yn fwriadol, gallwch barhau. Fel arall, gallai hyn fod yn ymosodiad dyn-yn-y-canol.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Nid yw\'r gweinydd SSH yn cefnogi dulliau dilysu \"cyfrinair\" na \"bysellfwrdd-rhyngweithiol\" neu mae\'n gofyn am ddull \"allwedd gyhoeddus\" yn gyntaf. Ffurfweddwch ef i ganiatáu o leiaf un o\'r ddau ddull, neu ailffurfweddwch y rhaglen. Dulliau dilysu ar gael: </string>
+    <string name="error_ssh_key_auth_fail">Methwyd â dilysu i\'r gweinydd SSH gyda phâr o allweddi. Gwiriwch eich enw defnyddiwr SSH, a sicrhewch fod eich allwedd gyhoeddus yn y ffeil authorized_keys ar yr ochr bell.</string>
+    <string name="error_ssh_keypair_decryption_failure">Methwyd â dadgryptio\'r pâr allweddi. Sicrhewch eich bod wedi rhoi eich cyfrineb yn gywir yn y maes \'Cyfrineb SSH\' ar y prif sgrin.</string>
+    <string name="error_ssh_keypair_missing">Nid yw\'r pâr allweddi SSH wedi\'i gynhyrchu eto! Cynhyrchwch un a rhowch (ei ran gyhoeddus) yn authorized_keys ar y gweinydd SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Cyfrineb wedi\'i roi ond nid yw\'r pâr allweddi wedi\'i amgryptio. Dilëwch y gyfrineb.</string>
+    <string name="error_ssh_port_forwarding_failure">Methu â sefydlu\'r borthladdiad ymlaen ar gyfer twnelu traffig VNC dros SSH. Sicrhewch fod eich gweinydd SSH wedi\'i ffurfweddu i ganiatáu borthladdiad ymlaen a cheisiwch eto.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Nid yw\'r gweinydd SSH yn cefnogi\'r dull dilysu \"allwedd gyhoeddus\", ac rydym yn ceisio defnyddio pâr allweddi i ddilysu. Ffurfweddwch ef i ganiatáu dilysu allwedd gyhoeddus a cheisiwch eto. Dulliau dilysu ar gael: </string>
+    <string name="error_ssh_pwd_auth_fail">Methwyd â dilysu i\'r gweinydd SSH gyda chyfrinair. Gwiriwch eich enw defnyddiwr SSH a chyfrinair SSH.</string>
+    <string name="error_ssh_unable_to_connect">Methwyd â chysylltu â\'r Gweinydd SSH. Gwiriwch gysylltedd rhwydwaith, a chyfeiriad a phorth y Gweinydd SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Methu â chael porth VNC pell o x11vnc. Sicrhewch fod x11vnc wedi\'i osod. I fod yn sicr, ceisiwch redeg x11vnc â llaw ar y llinell orchymyn.</string>
+    <string name="error_uri_noinfo_nosave">Gwybodaeth annigonol wedi\'i nodi i gysylltu.</string>
+    <string name="error_uri_parse_error">Methu â dadansodddi URI Intent. Gwiriwch fformat yr URI. Gallwch hefyd weld logcat y ddyfais am ragor o fanylion.</string>
+    <string name="error_vnc_authentication">Methodd dilysu VNC! Gwiriwch gyfrinair VNC (a defnyddiwr os yn berthnasol).</string>
+    <string name="error_vnc_unable_to_connect">"Methodd y cysylltiad â gweinydd VNC oherwydd: "</string>
+    <string name="error_x509_could_not_generate_encoding">Methu â chynhyrchu amgodiad tystysgrif.</string>
+    <string name="error_x509_could_not_generate_signature">Methu â chynhyrchu llofnod SHA1 neu MD5 o\'r dystysgrif. Ni chanfuwyd algorithm SHA1/MD5.</string>
+
+    <string name="export_settings">Allforio</string>
+
+
+    <string name="extra_keys_disable">Analluogi Allweddi Ychwanegol</string>
+    <string name="extra_keys_enable">Galluogi Allweddi Ychwanegol</string>
+
+    <string name="fit_to_screen">Ffitio i\'r Sgrin</string>
+
+    <string name="force">Map Bits Sgrin Lawn</string>
+
+    <string name="immersive_mode_disable">Analluogi Modd Trochi</string>
+
+    <string name="import_export_settings">📦 Mewnforio/Allforio Gosodiadau</string>
+    <string name="import_settings">Mewnforio</string>
+
+
+    <string name="info">Gwybodaeth</string>
+    <string name="info_cert_signatures">"Mae gwybodaeth y dystysgrif yn: "</string>
+    <string name="info_cert_signatures_identical">\n\nGallwch sicrhau bod y wybodaeth yn cydweddu â thystysgrif y gweinydd i atal ymosodiad dyn-yn-y-canol.</string>
+    <string name="info_cert_tunnel">Ydych chi am gysylltu â\'r gwesteiwr a nodwyd gan y dystysgrif ganlynol?\n\nOl bys: %1$s\n\nCyhoeddwyd i:\n%2$s\n\nCyhoeddwyd gan:\n%3$s\n\nDilys o:\n%4$s\n\nDilys tan:\n%5$s\n\nNodyn: Nid yw\'r rhaglen yn gwirio awdurdodau tystysgrifau nac yn gwirio am ddirymiad tystysgrifau.</string>
+    <string name="info_continue_connecting">"Parhau i gysylltu â: "</string>
+    <string name="info_encoding">" amgodiad, "</string>
+    <string name="info_progress_dialog_aborted">Cysylltiad wedi\'i atal!</string>
+    <string name="info_progress_dialog_connecting">Yn cysylltu…</string>
+    <string name="info_progress_dialog_downloading">Yn lawrlwytho\'r ffrâm gyntaf.\nArhoswch…</string>
+    <string name="info_progress_dialog_establishing">Yn sefydlu ysgwyd llaw.\nArhoswch…</string>
+    <string name="info_ssh_initializing_hostkey">Yn ceisio cychwyn Allwedd Gwesteiwr SSH.</string>
+    <string name="info_ssh_key_fingerprint">"Ol bys yr allwedd gwesteiwr yw: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nGallwch sicrhau ei fod yn union yr un fath â\'r ol bys hysbys o dystysgrif y gweinydd i atal ymosodiad dyn-yn-y-canol.</string>
+    <string name="info_update_color_model_to">"Yn diweddaru\'r Model Lliw i "</string>
+
+    <string name="input_method_direct_drag_pan_description">Uniongyrchol, Dal i Banoramio: Llithro i lusgo a gollwng. Tapiwch â bys un lle bynnag rydych chi am glicio chwith, dau fys i glicio dde, a thri bys i glicio canol. Llithro â dau fys i sgrolio. Tapio hir i ddechrau panoramio.</string>
+    <string name="input_method_direct_swipe_pan_description">Uniongyrchol, Llithro i Banoramio: Llithro i banoramio o amgylch. Tapiwch â bys un lle bynnag rydych chi am glicio chwith, dau fys i glicio dde, a thri bys i glicio canol. Llithro â dau fys i sgrolio. Tapio hir i lusgo a gollwng.</string>
+    <string name="input_method_single_handed_description">Un Llaw: Llithro i banoramio o amgylch. Tapiwch â bys un lle bynnag rydych chi am glicio chwith. Tapio hir i ddewis modd llusgo/dde/canol/sgrolio/chwyddo chwith. Mae rheolaethau aml-gyffwrdd arferol hefyd yn gweithio.</string>
+    <string name="input_method_touchpad_description">Pad Cyffwrdd Efelychiedig: Llithro i symud y pwyntydd. Tapiwch unrhyw le â bys un i glicio chwith, dau fys i glicio dde, a thri bys i glicio canol. Llithro â dau fys i sgrolio. Tapio hir i lusgo a gollwng.</string>
+    <string name="input_mode">Modd Mewnbynnu</string>
+
+    <string name="input_mode_fit_to_screen">Dim Panoramio; Llygoden Pêl Dracio</string>
+    <string name="input_mode_panning">Modd Panoramio Bwrdd Gwaith</string>
+    <string name="input_method_mouse">Rheoli Pwyntydd Llygoden</string>
+
+    <string name="input_method_direct_swipe_pan">Uniongyrchol, Llithro i Banoramio</string>
+    <string name="input_method_direct_drag_pan">Uniongyrchol, Dal i Banoramio</string>
+    <string name="input_method_single_handed">Un Llaw</string>
+    <string name="input_method_touchpad">Pad Cyffwrdd Efelychiedig</string>
+
+    <string name="input_mode_help">Cymorth Modd Mewnbynnu</string>
+    <string name="input_mode_help_text">"
+Yn unrhyw Fodd Mewnbynnu, tapiwch yr eicon bysellfwrdd i gael y bysellfwrdd ar y sgrin. Hefyd, efallai bod gan eich dyfais ei hystum ei hun sy\'n dod â\'r bysellfwrdd i fyny.
+
+Defnyddiwch y modau Mewnbynnu Uniongyrchol ar gyfer rheolaeth cyffwrdd fwy greddfol. Defnyddiwch Modd Pad Cyffwrdd Efelychiedig ar gyfer rheolaeth fanylach dros y llygoden.
+
+Modd Llithro i Banoramio Uniongyrchol:
+ - Rheoli\'r llygoden yn uniongyrchol drwy gyffwrdd.
+ - Llithro i banoramio o amgylch.
+ - Mae tappio yn gwneud i\'r llygoden glicio lle tapiwch.
+ - Anfonir digwyddiadau sgrolio rhwng y ddau fys lle dechreuodd llithriad dau fys.
+
+Modd Dal i Banoramio Uniongyrchol:
+ - Rheoli\'r llygoden yn uniongyrchol drwy gyffwrdd.
+ - Tapio hir i ddechrau modd panoramio.
+ - Mae tappio yn gwneud i\'r llygoden glicio lle tapiwch.
+ - Anfonir digwyddiadau sgrolio rhwng y ddau fys lle dechreuodd llithriad dau fys.
+
+Modd Pad Cyffwrdd Efelychiedig:
+ - Defnyddiwch eich sgrin fel pad cyffwrdd.
+ - Llithro i symud y pwyntydd llygoden o amgylch.
+ - Symudwch y llygoden y tu hwnt i ymyl y sgrin i banoramio.
+ - Mae tappio yn gwneud i\'r llygoden glicio lle mae\'r pwyntydd.
+ - Anfonir digwyddiadau sgrolio lle mae pwyntydd y llygoden.
+
+Modd Un Llaw:
+ - Yr un fath â Modd Llithro i Banoramio Uniongyrchol, ac eithrio bod tapio hir yn agor dewislen gyda dewis o fodau.
+ - Ar ôl dewis modd, mae llithro bys ar y sgrin yn perfformio\'r ystum dethol.
+ - Mae codi bys yn cwblhau\'r ystum.
+
+Pob Modd Mewnbynnu:
+ - Clicio chwith: Tapiwch unwaith.
+ - Clicio dwbl: Tapiwch ddwywaith.
+ - Clicio dde: Dal-tapio a thapio â bys arall (unrhyw le arall ar y sgrin).
+ - Clicio dde amgen: Defnyddiwch y botwm neu ystum \"Yn Ôl\" ar gyfer eich dyfais.
+ - Clicio canol: Dal-tapio a thapio â dau fys arall (unrhyw le arall ar y sgrin).
+ - Llusgo llygoden: Dal-tapio-hir a llithro.
+ - Olwyn sgrolio: Llusgo dau fys i fyny/lawr ac i\'r chwith/dde. Mae llusgo cyflym yn sgrolio\'n gyflymach.
+ - Chwyddo i mewn/allan: Yn sgaladu Chwyddadwy, pinsio i reoli sgalu.
+ - Allwedd Ctrl/Alt: Dewislen-&gt;Botymau Ctrl/Alt. Peidiwch ag anghofio toglo i ffwrdd pan fyddwch wedi gorffen!
+ - Cyfuniadau allweddi: Dewislen-&gt;Mwy-&gt;Anfon Allweddi.
+ - Anfon testun: Naill ai teipiwch ar y bysellfwrdd ar y sgrin, neu defnyddiwch Dewislen-&gt;Mwy-&gt;Anfon Testun."</string>
+
+    <string name="intro_close">Cau</string>
+    <string name="intro_dont_show">Peidio â dangos eto</string>
+
+    <string name="intro_text">
+Rhestr gyfredol o nodweddion bVNC:
+&lt;br&gt;
+- VNC Plaen, VNC Diogel dros SSH, AnonTLS, a VeNCrypt, a Mewngofnodi Windows UltraVNC gydag Ailadroddwr dewisol.
+&lt;br&gt;
+- Modd AutoX: Yn modd VNC dros SSH, darganfod yn awtomatig sesiynau X presennol a/neu greu rhai newydd gan ddefnyddio x11vnc! Yn gweithio fel cleient NX.
+&lt;br&gt;
+- Cefnogaeth cylchdroi rhydd. Defnyddiwch y System Weithredu i gyfyngu cylchdroi os oes angen.
+&lt;br&gt;
+- Cynhyrchu ac allforio pâr allweddi Cyhoeddus/Preifat SSH.
+&lt;br&gt;
+- Pob amgodiad VNC safonol, gan gynnwys Tight, ZRLE, a CopyRect.
+&lt;br&gt;
+- Cadw Sesiwn Awtomatig.
+&lt;br&gt;
+- Modau sgalu Chwyddadwy, Ffitio i\'r Sgrin, ac Un i Un.
+&lt;br&gt;
+- Rheolaeth aml-gyffwrdd dros lygoden bell yn modau mewnbynnu Uniongyrchol a Pad Cyffwrdd Efelychiedig.
+&lt;br&gt;
+- Rheolaeth llawn un llaw dros lygoden bell yn modd mewnbynnu Un Llaw.
+&lt;br&gt;
+- Cliciau llygoden aml-gyffwrdd: tapiwch i Glicio Chwith, tap dau fys i glicio dde, tap tri bys i glicio canol.
+&lt;br&gt;
+- Sgrolio aml-gyffwrdd: llusgo dau fys i Fyny/Lawr, ac i\'r Chwith/Dde i sgrolio.
+&lt;br&gt;
+- Allweddi meta a saeth ar y sgrin y gellir eu hanalluogi\'n llwyr o\'r dewislen neu eu storio gyda botwm ar y sgrin.
+&lt;br&gt;
+- Anfon Testun a Chyfuniadau Allweddi mympwyol pan yn gysylltiedig.
+&lt;br&gt;
+- Cymorth gyda chreu cysylltiadau (\"Dewislen-&gt;Cymorth Cysylltiad\") yn y sgrin cysylltiad.
+&lt;br&gt;
+- Cymorth gyda modau mewnbynnu (\"Dewislen-&gt;Mwy-&gt;Cymorth Modd Mewnbynnu\") pan yn gysylltiedig.
+&lt;br&gt;
+- Defnyddio pad tracio sydd ar gael fel Saethau yn lle symud y llygoden, a chlicied pad tracio fel Ctrl.
+&lt;br&gt;
+- Newid i fodd portread yn ystod cysylltiadau, cylchdroi D-pad/pad tracio ar gyfer bysellfyrddau BT.
+&lt;br&gt;
+- Cefnogaeth aml-iaith, cyhyd â bod gan y gweinydd VNC y cynllun iaith angenrheidiol wedi\'i alluogi.
+&lt;br&gt;
+- Integreiddio Copïo/Gludo
+&lt;br&gt;
+- Newidiadau i benderfyniad y peiriant pell
+&lt;br&gt;
+- Cefnogaeth llygoden lawn ar ddyfeisiau Android 4.0+, gan gynnwys clicio dde a chanol ac olwyn sgrolio.
+&lt;br&gt;
+&lt;br&gt;
+Materion hysbys:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Cleient VNC greddfol, diogel</string>
+
+
+    <string name="keep_password_button">Cadw</string>
+    <string name="keep_screen_awake_enable">Cadw\'r Sgrin yn Effro</string>
+
+    <string name="keys_caption">Allweddi</string>
+
+    <string name="landscape_force">Gorfodi Cyfeiriadaeth Tirwedd</string>
+
+    <string name="left_handed_mode">Modd Llaw Chwith</string>
+    <string name="disable_pointer_offset_correction">Analluogi cywiriad gwyriad y pwyntydd</string>
+
+    <string name="list_caption">Rhestr</string>
+    <string name="list_name_caption">Enw\'r Rhestr</string>
+
+    <string name="local_mouse_check">Pwyntydd llygoden lleol (dewiswch os yw\'r pwyntydd yn anweledig)</string>
+
+    <string name="main_screen_help">Cymorth Cysylltiad</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Pan fyddwch chi\'n ychwanegu neu\'n golygu cysylltiad, byddwch chi\'n gweld tudalen ffurfweddu cysylltiad. Yma gallwch chi sefydlu
+cysylltiad VNC newydd, neu ddewis un presennol. Ar y brig mae botwm sy\'n caniatáu i chi
+gadw\'r cysylltiad. O dan hynny mae lle rydych chi\'n ffurfweddu eich cysylltiad.
+
+Os ydych chi\'n chwilio am hwb perfformiad cyflym, ceisiwch osod y modd Lliw i werth is. Hefyd, ceisiwch dynnu unrhyw ddelwedd cefndir bwrdd gwaith ar y gweinydd VNC. Yn olaf, sicrhewch fod gan eich dyfais gysylltedd rhwydwaith da ac osgoi gorchuddio ei antenna a lleihau cryfder y signal.
+
+ - Math o Gysylltiad: Yma rydych chi\'n dewis y math o gysylltiad VNC. Mae\'r mathau cysylltiad sydd ar gael yn cynnwys:
+   (a) VNC Plaen, a gefnogir gan bob gweinydd VNC ond heb amgryptiad ac yn agored i ymosodiadau grym-bras oherwydd cyfyngiad cyfrinair 8-nod.
+   (b) VNC Diogel dros SSH, sy\'n cysylltu dros dwnnel SSH amgryptiedig. Mae angen gwasanaeth SSHD arnoch yn ogystal â gweinydd VNC. Cyhyd â bod y gweinydd VNC yn peidio â derbyn cysylltiadau\'n uniongyrchol o\'r Rhyngrwyd, nid oes gan y math hwn o gysylltiad unrhyw wendidau hysbys, cyhyd â\'ch bod chi\'n gwirio llofnod tystysgrif y gweinydd wrth gysylltu am y tro cyntaf.
+   (c) UltraVNC, sy\'n rhoi Mewngofnodi Windows ac opsiynau Ailadroddwr UltraVNC i chi. Nid yw defnyddio Mewngofnodi Windows yn dioddef o\'r cyfyngiad cyfrinair 8-nod, ond nid yw\'r modd hwn yn cynnig amgryptiad, felly mae eich sesiwn yn agored i\'w arogli.
+   (d) VNC Diogel dros AnonTLS, sy\'n VNC rheolaidd dros gysylltiad cyfwerth â stunnel. Mae angen i chi naill ai redeg stunnel, neu ddefnyddio gweinydd VNC fel Vino sy\'n cefnogi AnonTLS yn syth o\'r bocs. Mae\'r modd hwn yn rhoi amgryptiad sesiwn i chi, ond mae\'n dioddef o\'r cyfyngiad cyfrinair 8-nod ac nid yw\'n atal ymosodiadau dyn-yn-y-canol.
+   (e) VNC Diogel dros VeNCrypt, sy\'n defnyddio tystysgrifau x509 yn ogystal ag amgryptiad sesiwn, a gall ddefnyddio cymwysterau defnyddiwr/cyfrinair heb gyfyngiad 8-nod yn dibynnu ar ffurfweddiad y gweinydd. Mae\'r modd hwn yn atal ymosodiadau dyn-yn-y-canol. yn ogystal â darparu preifatrwydd sesiwn. Mae gweinyddion fel x11vnc a TigerVNC yn cefnogi\'r modd hwn ac maen nhw mor ddiogel â VNC dros SSH.
+
+ - Teitl: Gall pob cysylltiad a grëwch gael llysenw i\'w adnabod yn hawdd ar y rhestr.
+
+ - Gosodiadau Twnnel SSH: Ar gael yn modd VNC dros SSH.
+   (a) Gweinydd/Porth SSH: Cyfeiriad a phorth y gweinydd SSH y bydd y cysylltiad yn cael ei dwnelu drwyddo. Yn ddiofyn mae SSH yn gwrando ar borth 22.
+   (b) Enw defnyddiwr/Cyfrinair: Enw defnyddiwr a chyfrinair y cyfrif ar y gweinydd SSH. Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael y rhaglen ers i chi ei roi ddiwethaf.
+   (c) Rheoli Allwedd/Defnyddio Allwedd: Botwm i reoli allweddi cyhoeddus/preifat, a blwch gwirio sy\'n nodi a ddylid defnyddio allwedd yn hytrach na chyfrinair i ddilysu. Os defnyddiwch y botwm Copïo i\'r Clipfwrdd ar ôl cynhyrchu pâr allweddi, dylech allu gludo\'r allwedd gyhoeddus unwaith y byddwch wedi cysylltu â\'r gweinydd VNC (mae\'r clipfwrdd wedi\'i gysoni â\'r gweinydd).
+
+ - Ffurfweddu AutoX: Ar gael dim ond yn modd VNC dros SSH. Gall y rhaglen ddarganfod yn awtomatig sesiynau X presennol ac yn ddewisol greu rhai newydd ar systemau UNIX (fel cleient NX). Mae angen x11vnc i ddarganfod, a Xvfb, Xvnc, neu Xdummy wedi\'u gosod ar y system bell i greu sesiynau. Efallai y bydd yn rhaid i chi symud eich ffeil .dmrc a ychwanegu ffeil .xinit yn eich cyfeiriadur cartref os nad yw eich bwrdd gwaith yn edrych yn iawn neu os ydych chi\'n cael dim ond ffenestr xterm.
+
+ - Gosodiadau Cysylltiad VNC:
+   (a) Gweinydd/Porth VNC: Dyma lle rydych chi\'n nodi enw\'r gwesteiwr neu gyfeiriad IP a phorth y cyfrifiadur sy\'n rhedeg y gweinydd VNC yr hoffech chi gysylltu ag ef. Yn modd VNC dros SSH, mae\'r cyfeiriad hwn fel y\'i gwelir o\'r Gweinydd SSH. Os yw\'r Gweinydd SSH a\'r gweinydd VNC yr un cyfrifiadur, gallwch ddefnyddio localhost. Mae gweinyddion VNC fel arfer yn gwrando gan ddechrau ar borth 5900 (y sgrin VNC gyntaf, sgrin :0).
+   (b) Defnyddiwr VNC: Ar gael yn modd UltraVNC gyda Mewngofnodi Windows, neu VNC Diogel dros VeNCrypt, dyma lle rydych chi\'n nodi eich enw defnyddiwr cyfrif Windows/UNIX.
+   (c) Cyfrinair VNC: Os yw ffurfweddiad eich gweinydd VNC yn gofyn am gyfrinair, rhowch y cyfrinair hwnnw yma. Yn modau UltraVNC gyda Mewngofnodi Windows/VeNCrypt, rhowch eich cyfrinair cyfrif Windows/UNIX yma. Nid yw storio diogel yn cael ei ddefnyddio ar gyfer cyfrineiriau, a bydd y cyfrinair yn cael ei gadw dim ond os byddwch chi\'n ticio\'r blwch "Cadw". Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael y rhaglen ers i chi ei roi ddiwethaf.
+
+ - Modd Lliw: Mae\'r cleient yn cefnogi sawl modd lliw. Mae modau â mwy o liwiau yn darparu profiad gweledol gwell ar draul mwy o led band a mwy o gyfrifiad CPU ar eich dyfais. Nid yw rhai gweinyddion VNC yn cefnogi pob dyfnder lliw (e.e. mae Bwrdd Gwaith Pell OS/X yn gofyn am liw 24-bit). Os oes gennych chi broblem cysylltu, ceisiwch ddyfnder lliw arall.
+
+ - Defnyddio D-Pad ar gyfer saethau: Os dymunwch, gallwch ddefnyddio D-Pad eich bysellfwrdd Bluetooth neu saethau ar eich bysellfwrdd ar y sgrin i anfon saethau i\'r gweinydd VNC.
+
+ - Cylchdroi D-Pad: Efallai y bydd angen i ffonau wedi\'u paru â bysellfwrdd Bluetooth gylchdroi D-pad y bysellfwrdd wrth y cloc i anfon cyfeiriadau cywir i\'r gweinydd.
+
+ - Pwyntydd llygoden lleol: Ni fydd rhai gweinyddion VNC (e.e. Bwrdd Gwaith Pell OS/X) yn tynnu pwyntydd y llygoden ar y cleient. Bydd gwirio\'r opsiwn hwn yn achosi i\'r rhaglen dynnu pwyntydd llygoden yn y safle llygoden.
+
+ - Awtomatig/Map Bits Sgrin Lawn: Mae\'r cleient VNC yn defnyddio map bits i gynrychioli\'r arddangosiad pell. Ar gyfer arddangosfeydd pell mawr iawn, yn enwedig yn modd ffitio-i\'r-sgrin, efallai y byddwch chi\'n profi arteffactau gweledol rhyfedd yn modd ffitio-i\'r-sgrin, oherwydd cyfyngiadau cof fesul proses. Os bydd hynny\'n digwydd, ceisiwch wirio\'r opsiwn hwn. Cofiwch y gall gwirio\'r opsiwn achosi i\'r rhaglen gau ar gysylltiad.
+
+ - Ailadroddwr: Ar gael dim ond yn modd UltraVNC. PWYSIG: Os oes gennych chi ailadroddwr UltraVNC, rhowch ei gyfeiriad a\'i borth y tu allan i\'r ddeialog \'Ailadroddwr UltraVNC\' a rhowch gyfeiriad a phorth y gweinydd VNC gwirioneddol y tu mewn i\'r Ddeialog \'Ailadroddwr UltraVNC\'. Gwahanwch gyfeiriad a phorth y gweinydd VNC â cholon, e.e. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Galluogi Cyfrinair Meistr</string>
+    <string name="master_password_error_failed_to_disable">Methu â \'nalluogi\'r cyfrinair meistr. Gwiriwch le rhydd ar eich dyfais a cheisiwch eto.</string>
+    <string name="master_password_error_failed_to_enable">Methu â galluogi\'r cyfrinair meistr. Gwiriwch le rhydd ar eich dyfais a cheisiwch eto.</string>
+    <string name="master_password_error_intents_not_supported">Nid yw bwriadebau cysylltiad yn cael eu cefnogi eto pan fo\'r Cyfrinair Meistr wedi\'i alluogi.</string>
+    <string name="master_password_error_password_necessary">Mae angen Cyfrinair Meistr i barhau.</string>
+    <string name="master_password_error_password_not_set">Cafodd gosod Cyfrinair Meistr ei ganslo.</string>
+    <string name="master_password_error_shortcuts_not_supported">Nid yw llwybrau byr yn cael eu cefnogi eto pan fo\'r Cyfrinair Meistr wedi\'i alluogi.</string>
+    <string name="master_password_error_wrong_password">Methu â dilysu gyda\'r Cyfrinair Meistr a ddarparwyd.</string>
+    <string name="master_password_hint_once">Rhowch Gyfrinair</string>
+    <string name="master_password_hint_twice">Ailadroddwch y Cyfrinair</string>
+    <string name="master_password_set">Gosod Cyfrinair Meistr</string>
+    <string name="master_password_set_error">Nid yw\'r cyfrineiriau yn cydweddu, byddwch yn ofalus!</string>
+    <string name="master_password_set_message">Rhowch a chofiwch Gyfrinair Meistr. Po hiraf yw eich cyfrinair, anoddaf yw ei gracio. Os gosodwch eich cyfrinair yn anghywir neu\'n ei anghofio, byddwch chi\'n colli eich holl osodiadau! Efallai y dylech chi allforio eich gosodiadau nawr i\'w gwneud yn gefn (o\'r Dewislen). Storiwch nhw\'n ddiogel gan nad yw gosodiadau a allforiwyd wedi\'u hamgryptio.</string>
+    <string name="master_password_verify">Gwirio Cyfrinair Meistr</string>
+    <string name="master_password_verify_message">Rhowch y Cyfrinair Meistr cywir i barhau.</string>
+
+    <string name="meta_key_title">Anfon Allweddi Arbennig</string>
+
+    <string name="mouse_follow_pan">Llygoden yn dilyn panoramio</string>
+
+    <string name="new_connection">Cysylltiad Newydd</string>
+    <string name="new_list_button">Rhestr Newydd</string>
+
+    <string name="nickname_caption">Llysenw</string>
+    <string name="nickname_caption_hint">Teitl (dewisol)</string>
+
+    <string name="off">I Ffwrdd</string>
+
+    <string name="one_to_one">Un i Un</string>
+
+    <string name="open_doc">Llawlyfr/Wiki</string>
+
+    <string name="pan_follow_mouse">Panoramio yn dilyn llygoden</string>
+
+    <string name="password_caption">Dilysu VNC</string>
+    <string name="password_caption_hint">Cyfrinair VNC</string>
+    <string name="password_caption_ssh">Dilysu SSH</string>
+    <string name="password_hint_ssh">Cyfrinair SSH</string>
+
+    <string name="port_caption">Porth VNC</string>
+    <string name="port_caption_ssh">Porth SSH</string>
+    <string name="port_hint">Porth</string>
+    <string name="port_ssh_hint">Porth</string>
+
+    <string name="portrait_mode">Newid i fodd portread pan yn gysylltiedig</string>
+    <string name="local_clipboard_integration">Galluogi Integreiddio Clipfwrdd Lleol i Bell</string>
+    <string name="remote_clipboard_integration">Galluogi Integreiddio Clipfwrdd Pell i Lleol</string>
+    <string name="position_toolbar_last_used">Adfer Safle\'r Bar Offer</string>
+    <string name="applies_to_new_connections_only">Yn Berthnasol i Gysylltiadau Newydd yn Unig</string>
+    <string name="pro_feature_mfa">Mae\'n ymddangos bod gan eich gweinydd ddilysu aml-ffactor wedi\'i alluogi. Cefnogwch y prosiect drwy brynu\'r fersiwn Pro sydd â chefnogaeth ar gyfer y nodwedd hon. Mae dolen i\'r fersiwn Pro ar gael yn y ddeialog gychwyn.</string>
+    <string name="pro_feature_intro">Mae\'n ymddangos eich bod chi\'n defnyddio nodwedd Pro. Cefnogwch y prosiect drwy brynu\'r fersiwn Pro sydd â chefnogaeth ar gyfer y nodwedd hon. Gwiriwch y ddeialog cyflwyniad am ddolenni i\'r ap cywir.</string>
+    <string name="pro_feature_generic">Mae\'n ymddangos eich bod chi\'n defnyddio nodwedd Pro. Cefnogwch y prosiect drwy brynu\'r fersiwn Pro sydd â chefnogaeth ar gyfer y nodwedd hon. Mae dolen i\'r fersiwn Pro ar gael yn y ddeialog gychwyn.</string>
+    <string name="pro_feature_rdp">Mae\'n edrych fel i chi geisio agor ffeil .rdp sy\'n nodwedd Pro. Cefnogwch y prosiect drwy brynu aRDP Pro, sy\'n cefnogi ffeiliau .rdp. Mae dolen i fersiwn aRDP Pro ar gael yn y ddeialog gychwyn.</string>
+    <string name="pro_feature_spice">Mae\'n edrych fel i chi geisio agor ffeil .vv. Os hoffech chi gadw cysylltiadau i Proxmox neu oVirt yn uniongyrchol yn yr ap a hefyd eisiau agor ffeiliau .vv, ystyriwch brynu Opaque. Os dim ond cefnogaeth ffeil .vv sydd ei angen arnoch, gallwch gael aSPICE Pro. Dewch o hyd i ddolenni i\'r ddau ap yn y ddeialog gychwyn.</string>
+
+    <string name="rdp_address_caption_hint">Gweinydd RDP</string>
+    <string name="rdp_adv_console_mode">Modd Consol</string>
+    <string name="rdp_adv_desktop_background">Dangos cefndir y bwrdd gwaith</string>
+    <string name="rdp_adv_desktop_composition">Galluogi Cyfansoddiad Bwrdd Gwaith</string>
+    <string name="rdp_adv_font_smoothing">Perfformio llyfnhau ffont</string>
+    <string name="rdp_adv_menu_animation">Dangos Animeiddiadau Dewislen</string>
+    <string name="rdp_adv_redirect_sdcard">Ailgyfeirio Cerdyn SD</string>
+    <string name="rdp_adv_remotefx">Galluogi RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Galluogi Arddulliau Gweledol</string>
+    <string name="rdp_adv_window_contents">Dangos cynnwys ffenestr wrth lusgo</string>
+    <string name="rdp_security_mode">Modd Diogelwch</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Maint y Bwrdd Gwaith Pell (LxU)</string>
+    <string name="rdp_domain_hint">Parth RDP</string>
+    <string name="rdp_geom_automatic">Awtomatig</string>
+    <string name="rdp_geom_checkbox_enable">Galluogi penderfyniad arferol</string>
+    <string name="rdp_geom_custom">Arferol</string>
+    <string name="rdp_geom_description_hint">Mae angen cefnogaeth ExtendedDesktopSize ar y gweinydd</string>
+    <string name="rdp_geom_disabled">Analluogwyd</string>
+    <string name="rdp_geom_native_landscape">Tirwedd Brodorol</string>
+    <string name="rdp_geom_native_portrait">Portread Brodorol</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Trafod Diogelwch yn Awtomatig</string>
+    <string name="rdp_security_rdp">Diogelwch RDP</string>
+    <string name="rdp_security_tls">Diogelwch TLS</string>
+    <string name="rdp_security_nla">Dilysu Lefel Rhwydwaith</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Diolch am gefnogi aRDP a meddalwedd ffynhonnell agored yn gyffredinol! Am gymorth gyda defnyddio aRDP, gweler yr eitemau Cymorth yn y Dewislen, a disgrifiad yr ap yn y farchnad.
+&lt;br&gt;
+&lt;br&gt;
+Mae rhestr gyfredol o nodweddion aRDP yn cynnwys:
+&lt;br&gt;
+- RDP Plaen, RDP wedi\'i dwnelu dros SSH.
+&lt;br&gt;
+- Cefnogaeth cylchdroi rhydd. Defnyddiwch y System Weithredu i gyfyngu cylchdroi os oes angen.
+&lt;br&gt;
+- Gosod penderfyniad pell, penderfyniad brodorol yn modau tirwedd a phortread.
+&lt;br&gt;
+- Cynhyrchu ac allforio pâr allweddi Cyhoeddus/Preifat SSH.
+&lt;br&gt;
+- Cadw Sesiwn Awtomatig.
+&lt;br&gt;
+- Modau sgalu Chwyddadwy, Ffitio i\'r Sgrin, ac Un i Un.
+&lt;br&gt;
+- Rheolaeth aml-gyffwrdd dros lygoden bell yn modau mewnbynnu Uniongyrchol a Pad Cyffwrdd Efelychiedig.
+&lt;br&gt;
+- Rheolaeth llawn un llaw dros lygoden bell yn modd mewnbynnu Un Llaw.
+&lt;br&gt;
+- Cliciau llygoden aml-gyffwrdd: tapiwch i Glicio Chwith, tap dau fys i glicio dde, tap tri bys i glicio canol.
+&lt;br&gt;
+- Sgrolio aml-gyffwrdd: llusgo dau fys i Fyny/Lawr, ac i\'r Chwith/Dde i sgrolio.
+&lt;br&gt;
+- Allweddi meta a saeth ar y sgrin y gellir eu hanalluogi\'n llwyr o\'r dewislen neu eu storio gyda botwm ar y sgrin.
+&lt;br&gt;
+- Anfon Testun a Chyfuniadau Allweddi mympwyol pan yn gysylltiedig.
+&lt;br&gt;
+- Cymorth gyda chreu cysylltiadau (\"Dewislen-&gt;Cymorth Cysylltiad\") yn y sgrin cysylltiad.
+&lt;br&gt;
+- Cymorth gyda modau mewnbynnu (\"Dewislen-&gt;Mwy-&gt;Cymorth Modd Mewnbynnu\") pan yn gysylltiedig.
+&lt;br&gt;
+- Defnyddio pad tracio sydd ar gael fel Saethau yn lle symud y llygoden, a chlicied pad tracio fel Ctrl, cylchdroi D-pad/pad tracio ar gyfer bysellfyrddau BT.
+&lt;br&gt;
+- Cefnogaeth aml-iaith, cyhyd â bod gan y gweinydd RDP y cynllun iaith angenrheidiol wedi\'i alluogi.
+&lt;br&gt;
+- Newidiadau i benderfyniad y peiriant pell di-fwlch
+&lt;br&gt;
+- Cefnogaeth llygoden lawn ar ddyfeisiau Android 4.0+, gan gynnwys clicio dde a chanol ac olwyn sgrolio.
+&lt;br&gt;
+- Dewis o fodau lliw
+&lt;br&gt;
+- Integreiddio Copïo/Gludo
+&lt;br&gt;
+- Allforio gosodiadau
+&lt;br&gt;
+- Sain
+&lt;br&gt;
+&lt;br&gt;
+Materion hysbys:</string>
+    <string name="rdp_intro_title">aRDP: Cleient RDP greddfol, diogel</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Pan fyddwch chi\'n ychwanegu neu\'n golygu cysylltiad, byddwch chi\'n gweld tudalen ffurfweddu cysylltiad. Yma gallwch chi sefydlu cysylltiad RDP newydd, neu ddewis un presennol. Ar y brig mae botwm sy\'n caniatáu i chi gadw\'r cysylltiad. O dan hynny mae lle rydych chi\'n ffurfweddu eich cysylltiad.
+
+ - Math o Gysylltiad: Yma rydych chi\'n dewis y math o gysylltiad RDP. Mae\'r mathau cysylltiad sydd ar gael yn cynnwys:
+   (a) RDP, sy\'n cysylltu\'n uniongyrchol â chyfrifiadur dros y protocol RDP.
+   (b) RDP dros SSH, sy\'n twnelu\'ch cysylltiad yn gyntaf drwy gyfrifiadur sy\'n rhedeg gweinydd SSH.
+
+ - Teitl: Gall pob cysylltiad a grëwch gael llysenw i\'w adnabod yn hawdd ar y rhestr.
+
+ - Gosodiadau Twnnel SSH: Ar gael yn modd RDP dros SSH.
+   (a) Gweinydd/Porth SSH: Cyfeiriad a phorth y gweinydd SSH y bydd y cysylltiad yn cael ei dwnelu drwyddo. Yn ddiofyn mae SSH yn gwrando ar borth 22.
+   (b) Enw defnyddiwr/Cyfrinair: Enw defnyddiwr a chyfrinair y cyfrif ar y gweinydd SSH. Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael yr ap ers i chi ei roi ddiwethaf.
+   (c) Rheoli Allwedd/Defnyddio Allwedd: Botwm i reoli allweddi cyhoeddus/preifat, a blwch gwirio sy\'n nodi a ddylid defnyddio allwedd yn hytrach na chyfrinair i ddilysu. Os defnyddiwch y botwm Copïo i\'r Clipfwrdd ar ôl cynhyrchu pâr allweddi, dylech allu gludo\'r allwedd gyhoeddus unwaith y byddwch wedi cysylltu â\'r gweinydd RDP (mae\'r clipfwrdd wedi\'i gysoni â\'r gweinydd).
+
+ - Gosodiadau Cysylltiad RDP:
+   (a) Gweinydd/Porth RDP: Dyma lle rydych chi\'n nodi enw\'r gwesteiwr neu gyfeiriad IP a phorth y cyfrifiadur sy\'n rhedeg y gweinydd RDP yr hoffech chi gysylltu ag ef. Yn modd RDP dros SSH, mae\'r cyfeiriad hwn fel y\'i gwelir o\'r Gweinydd SSH. Os yw\'r Gweinydd SSH a\'r gweinydd RDP yr un cyfrifiadur ffisegol, gallwch ddefnyddio localhost. Mae gweinyddion RDP fel arfer yn gwrando ar borth 3389.
+   (b) Defnyddiwr RDP: Dyma lle rydych chi\'n nodi enw defnyddiwr eich cyfrif Windows/UNIX.
+   (c) Parth RDP: Rhowch y parth y mae eich cyfrif yn perthyn iddo.
+   (d) Cyfrinair RDP: Dyma lle rydych chi\'n nodi cyfrinair eich cyfrif Windows/UNIX. Nid yw storio diogel yn cael ei ddefnyddio ar gyfer cyfrineiriau (maent mewn cronfa ddata), a bydd y cyfrinair yn cael ei gadw dim ond os byddwch chi\'n ticio\'r blwch "Cadw". Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael yr ap ers i chi ei roi ddiwethaf.
+
+ - Gosodiadau uwch: Yn yr adran hon byddwch chi\'n dod o hyd i ffyrdd i addasu penderfyniad y bwrdd gwaith, a gwahanol dweaks perfformiad RDP
+
+ - Twics Dyfais Lleol: Mae\'r rhain yn addasu ymddygiad yr ap ar eich dyfais.
+   (a) Defnyddio D-Pad ar gyfer saethau: Os dymunwch, gallwch ddefnyddio D-Pad eich bysellfwrdd Bluetooth neu saethau ar eich bysellfwrdd ar y sgrin i anfon saethau i\'r gweinydd RDP.
+   (b) Cylchdroi D-Pad: Efallai y bydd angen i ffonau wedi\'u paru â bysellfwrdd Bluetooth gylchdroi D-pad y bysellfwrdd wrth y cloc i anfon cyfeiriadau cywir i\'r gweinydd.
+   (c) Pwyntydd llygoden lleol: Os yw\'r pwyntydd yn anweledig, dewiswch hwn i\'w orfodi i\'w dynnu gan yr ap."</string>
+    <string name="rdp_password_hint">Cyfrinair RDP</string>
+    <string name="rdp_server_empty">Gweinydd RDP neu borth yn wag. Methu â chysylltu!</string>
+    <string name="rdp_username_hint">Enw Defnyddiwr RDP</string>
+
+    <string name="remote_sound_disabled">Sain Analluogwyd</string>
+    <string name="remote_sound_on_device">Sain ar y Ddyfais</string>
+    <string name="remote_sound_on_server">Sain ar y Gweinydd</string>
+
+    <string name="repeater_button">Ailadroddwr UltraVNC</string>
+    <string name="repeater_caption">PWYSIG: Os ydych chi\'n defnyddio ailadroddwr UltraVNC, rhowch ei gyfeiriad a\'i borth y tu allan i\'r ddeialog hon. Yma, rhowch gyfeiriad a phorth y gweinydd VNC gwirioneddol. Gwahanwch gyfeiriad a phorth y gweinydd VNC â cholon, e.e. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">Ailadroddwr UltraVNC</string>
+    <string name="repeater_clear">Peidio â Defnyddio</string>
+    <string name="repeater_dialog_title">Gweinydd VNC y Tu ôl i\'r Ailadroddwr</string>
+    <string name="repeater_empty_text">Dim ailadroddwr</string>
+    <string name="repeater_save">Defnyddio</string>
+
+    <string name="right_alt_as_iso_l3_shift">Alt Dde fel ISO L3 Shift (VNC yn unig)</string>
+
+    <string name="rotate_dpad">Cylchdroi D-Pad Bluetooth neu feddalwedd</string>
+
+    <string name="save_as_copy">Cadw fel Copi</string>
+
+    <string name="scaling">Sgalu</string>
+    <string name="scaling_zoomable">Chwyddadwy</string>
+
+    <string name="send_button">Anfon</string>
+    <string name="send_key_again">Anfon Allwedd Eto</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">Cysylltiad VNC</string>
+    <string name="shortcut_label_rdp">Cysylltiad RDP</string>
+    <string name="shortcut_label_spice">Cysylltiad SPICE</string>
+
+    <string name="showkbd_label">Bysellfwrdd</string>
+
+    <string name="single_cancel">Modd un llaw wedi\'i ganslo</string>
+    <string name="single_choose">Dewiswch fodd un llaw neu ganslwch</string>
+    <string name="single_left">Modd llusgo chwith - llithro i lusgo/dewis, codi bys i stopio</string>
+    <string name="single_middle">Modd llusgo canol - llithro i lusgo/dewis, codi bys i stopio</string>
+    <string name="single_reposition">Ail-osodwyd pwyntydd y llygoden ar gyfer modd un llaw</string>
+    <string name="single_right">Modd llusgo dde - llithro i lusgo/dewis, codi bys i stopio</string>
+    <string name="single_scroll">Modd sgrolio - llithro i fyny/lawr i sgrolio, codi bys i stopio</string>
+    <string name="single_zoom">Modd chwyddo - llithro i fyny/lawr i chwyddo i mewn/allan, codi bys i stopio</string>
+
+    <string name="snap_one_to_one">Wedi neidio i zoom 1:1</string>
+
+    <string name="special_keys">Anfon Allweddi</string>
+
+    <string name="spice_address_caption_hint">Gweinydd SPICE</string>
+    <string name="spice_button_import_ca">Mewnforio CA</string>
+    <string name="spice_ca_cert_path_hint">Llwybr at ffeil awdurdod tystysgrif</string>
+    <string name="spice_ca_file_error_reading">Gwall wrth ddarllen ffeil CA. Sicrhewch ei bod yn ddarllenadwy.</string>
+    <string name="spice_ca_file_not_found">Ffeil heb ei chanfod. Rhowch enw ffeil dilys yn y maes testun (e.e. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Pwnc y Dystysgrif</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Diolch am gefnogi aSPICE a meddalwedd ffynhonnell agored yn gyffredinol! Am gymorth gyda defnyddio aSPICE, gweler yr eitemau Cymorth yn y Dewislen, a disgrifiad yr ap yn y farchnad.
+&lt;br&gt;
+&lt;br&gt;
+Mae rhestr gyfredol o nodweddion aSPICE yn cynnwys:
+&lt;br&gt;
+- SPICE Plaen, SPICE wedi\'i dwnelu dros SSH.
+&lt;br&gt;
+- Cefnogaeth cylchdroi rhydd. Defnyddiwch y System Weithredu i gyfyngu cylchdroi os oes angen.
+&lt;br&gt;
+- Cynhyrchu ac allforio pâr allweddi Cyhoeddus/Preifat SSH.
+&lt;br&gt;
+- Cadw Sesiwn Awtomatig.
+&lt;br&gt;
+- Modau sgalu Chwyddadwy, Ffitio i\'r Sgrin, ac Un i Un.
+&lt;br&gt;
+- Rheolaeth aml-gyffwrdd dros lygoden bell yn modau mewnbynnu Uniongyrchol a Pad Cyffwrdd Efelychiedig.
+&lt;br&gt;
+- Rheolaeth llawn un llaw dros lygoden bell yn modd mewnbynnu Un Llaw.
+&lt;br&gt;
+- Cliciau llygoden aml-gyffwrdd: tapiwch i Glicio Chwith, tap dau fys i glicio dde, tap tri bys i glicio canol.
+&lt;br&gt;
+- Sgrolio aml-gyffwrdd: llusgo dau fys i Fyny/Lawr, ac i\'r Chwith/Dde i sgrolio.
+&lt;br&gt;
+- Allweddi meta a saeth ar y sgrin y gellir eu hanalluogi\'n llwyr o\'r dewislen neu eu storio gyda botwm ar y sgrin.
+&lt;br&gt;
+- Anfon Testun a Chyfuniadau Allweddi mympwyol pan yn gysylltiedig.
+&lt;br&gt;
+- Cymorth gyda chreu cysylltiadau (\"Dewislen-&gt;Cymorth Cysylltiad\") yn y sgrin cysylltiad.
+&lt;br&gt;
+- Cymorth gyda modau mewnbynnu (\"Dewislen-&gt;Mwy-&gt;Cymorth Modd Mewnbynnu\") pan yn gysylltiedig.
+&lt;br&gt;
+- Defnyddio pad tracio sydd ar gael fel Saethau yn lle symud y llygoden, a chlicied pad tracio fel Ctrl, cylchdroi D-pad/pad tracio ar gyfer bysellfyrddau BT.
+&lt;br&gt;
+- Cefnogaeth aml-iaith, cyhyd â bod gan y gweinydd SPICE y cynllun iaith angenrheidiol wedi\'i alluogi.
+&lt;br&gt;
+- Newidiadau i benderfyniad y peiriant pell di-fwlch
+&lt;br&gt;
+- Cefnogaeth llygoden lawn ar ddyfeisiau Android 4.0+, gan gynnwys clicio dde a chanol ac olwyn sgrolio.
+&lt;br&gt;
+&lt;br&gt;
+Nodweddion a gynlluniwyd:
+&lt;br&gt;
+- Integreiddio Copïo/Gludo
+&lt;br&gt;
+- Sain
+&lt;br&gt;
+- Gwelliannau perfformiad
+&lt;br&gt;
+Materion hysbys:
+&lt;br&gt;
+- Nid yw anfon testun yn anfon rhai symbolau.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Cleient SPICE greddfol, diogel</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Pan fyddwch chi\'n ychwanegu neu\'n golygu cysylltiad, byddwch chi\'n gweld tudalen ffurfweddu cysylltiad. Yma gallwch chi sefydlu cysylltiad SPICE newydd, neu ddewis un presennol. Ar y brig mae botwm sy\'n caniatáu i chi gadw\'r cysylltiad. O dan hynny mae lle rydych chi\'n ffurfweddu eich cysylltiad.
+
+ - Math o Gysylltiad: Yma rydych chi\'n dewis y math o gysylltiad SPICE. Mae\'r mathau cysylltiad sydd ar gael yn cynnwys:
+   (a) SPICE, sy\'n cysylltu\'n uniongyrchol â chyfrifiadur dros y protocol SPICE.
+   (b) SPICE dros SSH, sy\'n twnelu\'ch cysylltiad yn gyntaf drwy gyfrifiadur sy\'n rhedeg gweinydd SSH.
+
+ - Teitl: Gall pob cysylltiad a grëwch gael llysenw i\'w adnabod yn hawdd ar y rhestr.
+
+ - Gosodiadau Twnnel SSH: Ar gael yn modd SPICE dros SSH.
+   (a) Gweinydd/Porth SSH: Cyfeiriad a phorth y gweinydd SSH y bydd y cysylltiad yn cael ei dwnelu drwyddo. Yn ddiofyn mae SSH yn gwrando ar borth 22.
+   (b) Enw defnyddiwr/Cyfrinair: Enw defnyddiwr a chyfrinair y cyfrif ar y gweinydd SSH. Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael yr ap ers i chi ei roi ddiwethaf.
+   (c) Rheoli Allwedd/Defnyddio Allwedd: Botwm i reoli allweddi cyhoeddus/preifat, a blwch gwirio sy\'n nodi a ddylid defnyddio allwedd yn hytrach na chyfrinair i ddilysu. Os defnyddiwch y botwm Copïo i\'r Clipfwrdd ar ôl cynhyrchu pâr allweddi, dylech allu gludo\'r allwedd gyhoeddus unwaith y byddwch wedi cysylltu â\'r gweinydd SPICE (mae\'r clipfwrdd wedi\'i gysoni â\'r gweinydd).
+
+ - Gosodiadau Cysylltiad SPICE:
+   (a) Gweinydd/Porth SPICE: Dyma lle rydych chi\'n nodi enw\'r gwesteiwr neu gyfeiriad IP a phorth y cyfrifiadur sy\'n rhedeg y gweinydd SPICE yr hoffech chi gysylltu ag ef. Yn modd SPICE dros SSH, mae\'r cyfeiriad hwn fel y\'i gwelir o\'r Gweinydd SSH. Os yw\'r Gweinydd SSH a\'r gweinydd SPICE yr un cyfrifiadur ffisegol, gallwch ddefnyddio localhost. Mae gweinyddion SPICE fel arfer yn gwrando ar borth 5900 a thu hwnt.
+   (b) Cyfrinair SPICE: Dyma lle rydych chi\'n nodi\'r cyfrinair a osodwyd i ddiogelu eich sesiwn SPICE. Nid yw storio diogel yn cael ei ddefnyddio ar gyfer cyfrineiriau (maent mewn cronfa ddata), a bydd y cyfrinair yn cael ei gadw dim ond os byddwch chi\'n ticio\'r blwch "Cadw". Bydd y cyfrinair yn cael ei lenwi ar y dudalen hon os nad ydych chi wedi gadael yr ap ers i chi ei roi ddiwethaf.
+
+ - Gosodiadau uwch: Yn yr adran hon byddwch chi\'n dod o hyd i unrhyw dwics dyfais lleol neu berfformiad SPICE
+ - Twics Dyfais Lleol: Mae\'r rhain yn addasu ymddygiad yr ap ar eich dyfais.
+   (a) Defnyddio D-Pad ar gyfer saethau: Os dymunwch, gallwch ddefnyddio D-Pad eich bysellfwrdd Bluetooth neu saethau ar eich bysellfwrdd ar y sgrin i anfon saethau i\'r gweinydd SPICE.
+   (b) Cylchdroi D-Pad: Efallai y bydd angen i ffonau wedi\'u paru â bysellfwrdd Bluetooth gylchdroi D-pad y bysellfwrdd wrth y cloc i anfon cyfeiriadau cywir i\'r gweinydd.
+   (c) Pwyntydd llygoden lleol: Os yw\'r pwyntydd yn anweledig, dewiswch hwn i\'w orfodi i\'w dynnu gan yr ap."</string>
+    <string name="spice_password_hint">Cyfrinair SPICE</string>
+    <string name="spice_server_empty">Gweinydd SPICE neu borth yn wag. Methu â chysylltu!</string>
+    <string name="spice_tls_port_hint">Porth TLS</string>
+    <string name="spice_username_hint">Enw Defnyddiwr SPICE</string>
+
+    <string name="ssh_passphrase_hint">Cyfrineb SSH</string>
+    <string name="ssh_pubkey_button">Rheoli Allwedd</string>
+    <string name="ssh_use_pubkey">Defnyddio Allwedd</string>
+    <string name="ssh_use_x11vnc">Bwrdd Gwaith Awtomatig</string>
+    <string name="ssh_x11vnc_customize">Ffurfweddu AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Analluogi</string>
+    <string name="tap_enable">Galluogi</string>
+
+    <string name="username_caption">Defnyddiwr VNC</string>
+    <string name="username_hint">Enw Defnyddiwr Mewngofnodi MS UltraVNC</string>
+    <string name="username_hint_optional">Enw Defnyddiwr VNC (dewisol)</string>
+    <string name="username_hint_ssh">Enw Defnyddiwr SSH</string>
+    <string name="username_hint_vencrypt">Enw Defnyddiwr VNC</string>
+    <string name="verification_code">Cod Gwirio</string>
+    <string name="verification_code_message">Rhowch y Cod Gwirio dilysu aml-ffactor</string>
+
+    <string name="view_only">Modd gweld yn unig</string>
+
+    <string name="vnc_server_empty">Gweinydd VNC neu borth yn wag. Methu â chysylltu!</string>
+    <string name="vnc_server_empty_no_save">Gweinydd VNC neu borth yn wag. Methu â chadw\'r cysylltiad!</string>
+
+    <string name="warning_cert_does_not_match">RHYBUDD: Nid yw\'r dystysgrif x509 a gadwyd neu\'r llofnod a basiwyd i mewn yn cydweddu â thystysgrif gweinydd gyfredol! Gallai hyn fod yn ymosodiad dyn-yn-y-canol. Os ydych chi\'n ymwybodol o\'r newid allwedd gallwch fynd ymlaen. </string>
+    <string name="copy_logcat">📋 Copïo Logcat</string>
+    <string name="log_copied">Copïwyd Logcat i\'r clipfwrdd. Gallwch nawr ei ludo mewn e-bost neu ar y fforwm cymorth. Edrychwch drwy unrhyw ddata personol cyn postio.</string>
+    <string name="info_set_touchpad_input_mode">Mae\'r gweinydd yn adrodd nad yw\'n cefnogi Mewnbynnu Llygoden Modd Cleient, ac ni fydd y modd mewnbynnu llygoden presennol yn gweithio\'n gywir. Os bydd hyn yn parhau, sicrhewch fod offer spice wedi\'i osod yn y peiriant rhithwir neu newidiwch i Fodd Mewnbynnu Pad Cyffwrdd Efelychiedig o\'r Dewislen.</string>
+    <string name="ssh_tunnel_settings">Gosodiadau Twnnel SSH</string>
+    <string name="vnc_connection_settings">Gosodiadau Cysylltiad VNC</string>
+    <string name="show_advanced_settings">Dangos Gosodiadau Uwch</string>
+    <string name="use_no_compression_for_local_connections">Dim cywasgu (cysylltiadau lleol, amgodiad Hextile)</string>
+    <string name="rdp_connection_settings">Gosodiadau Cysylltiad RDP</string>
+    <string name="local_device_tweaks">Twics Dyfais Lleol</string>
+    <string name="spice_connection_settings">Gosodiadau Cysylltiad SPICE</string>
+    <string name="ca_subject">Rhowch enw pwnc y dystysgrif yma. Efallai na fydd ei angen os yw enw cyffredin y dystysgrif (CN) yn cydweddu â enw gwesteiwr y gweinydd.</string>
+    <string name="path_to_ca">Rhowch lwybr ffeil (er enghraifft /sdcard/ca-cert.pem) a thapio Mewnforio i lwytho eich Awdurdod Tystysgrif.</string>
+    <string name="paste_ca">Rhowch yr Awdurdod Tystysgrif yma os nad ydych chi\'n ei fewnforio fel ffeil.</string>
+    <string name="cert_issuer">Cyhoeddwr y Dystysgrif</string>
+    <string name="cert_fingerprint">Ol Bys y Dystysgrif</string>
+    <string name="error">Gwall</string>
+    <string name="panning">Panoramio\'r Sgrin</string>
+    <string name="copy_of">Copi o</string>
+    <string name="ssh_key_generated">Allwedd newydd wedi\'i chynhyrchu neu ei mewnforio\'n llwyddiannus. Gallwch nawr dapio\'r botwm \'Cynhyrchu/Allforio Allwedd\' i rannu, copïo i\'r clipfwrdd, neu allforio\'r allwedd gyhoeddus.</string>
+    <string name="cursor_force_local">"Lleol"</string>
+    <string name="cursor_force_disable">"Analluogi"</string>
+    <string name="cursor_mode">"Modd Cyrchwr:"</string>
+    <string name="rendering_mode">"Modd Rendro:"</string>
+    <string name="color_24_bit">"Lliw 24-bit (24 bpp)"</string>
+    <string name="color_256">"256 lliw (8 bpp)"</string>
+    <string name="color_64">"64 lliw (4 bpp)"</string>
+    <string name="color_8">"8 lliw (2 bpp)"</string>
+    <string name="color_greyscale">"Llwydlas (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Du a Gwyn (1 bpp)"]]></string>
+    <string name="show">"Dangos"</string>
+    <string name="hide">"Cuddio"</string>
+    <string name="search_connections">Chwilio Cysylltiadau</string>
+    <string name="user_not_specified">Defnyddiwr heb ei nodi</string>
+    <string name="enter_ssh_credentials">Rhowch gymwysterau SSH</string>
+    <string name="enter_vnc_credentials">Rhowch gymwysterau VNC</string>
+    <string name="enter_vnc_password">Rhowch gyfrinair VNC</string>
+    <string name="enter_rdp_credentials">Rhowch gymwysterau RDP</string>
+    <string name="enter_gateway_credentials">Rhowch gymwysterau Porth</string>
+    <string name="enter_spice_password">Rhowch gyfrinair SPICE</string>
+    <string name="enter_passphrase_title">Rhowch Gyfrineb yr Allwedd</string>
+    <string name="enter_passphrase">Rhowch Gyfrineb yr Allwedd</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Mae angen dilysu cyfrinair ar eich gweinydd yn ychwanegol at ddilysu allwedd.</string>
+    <string name="main_screen_help_text">"
+Pan gaiff y rhaglen ei lansio mae\'n dangos sgrin gyda chysylltiadau wedi\'u cadw arni.
+
+Os nad oes cysylltiadau wedi\'u cadw, mae\'r rhan isaf o\'r sgrin yn wag, a bydd yn rhaid i chi dapio\'r botwm plws i greu un newydd.
+Gallwch hefyd reoli agweddau eraill ar y ffurfweddiad o\'r sgrin hon drwy dapio ar opsiynau bar offer neu dewislen eraill ar y brig, er
+enghraifft i olygu gosodiadau rhagosodedig, neu fewnforio ac allforio gosodiadau.
+
+Unwaith y bydd gennych chi gysylltiad wedi\'i gadw, gallwch gysylltu â\'r gweinydd pell drwy ei dapio unwaith. Bydd gennych chi hefyd ddewis i\'w ddileu neu ei olygu drwy dapio hir arno.
+
+Yn olaf, gallwch ddefnyddio\'r maes Chwilio Cysylltiadau i ddarganfod cysylltiadau\'n gyflym drwy hidlo\'r cysylltiadau a ddangosir."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Pan fyddwch chi\'n ychwanegu neu\'n golygu cysylltiad, byddwch chi\'n gweld tudalen ffurfweddu cysylltiad.
+Yma gallwch chi sefydlu cysylltiad Opaque newydd neu ddewis un presennol.
+Ar y brig mae botwm sy\'n caniatáu i chi gadw\'r cysylltiad.
+O dan hynny mae lle rydych chi\'n ffurfweddu eich cysylltiad.
+
+ - Math o Gysylltiad: Yma rydych chi\'n dewis pa Amgylchedd Rhithwiredd rydych chi\'n cysylltu ag ef.
+
+ - Cyfeiriad y Gweinydd: Enw gwesteiwr neu IP y gweinydd. Os yw\'n gwrando ar borth anfwriadol, gallwch ychwanegu porth wedi\'i wahanu â cholon.
+
+ - Enw\'r peiriant rhithwir: Gallwch nodi enw\'r VM fel y mae\'n ymddangos ar eich platfform Rhithwiredd neu adael y maes hwn yn wag i gael rhestr o VMau neu gynwysyddion i ddewis ohonynt.
+
+ - Defnyddiwr: Rhowch yr enw defnyddiwr i ddilysu i\'ch fframwaith rhithwiredd.
+
+ - Cyfrinair: Os hoffech chi gadw\'r cyfrinair, rhowch ef yma neu gadewch y maes yn wag i gael gofyn amdano bob tro.
+
+ - Gosodiadau uwch: Yn yr adran hon byddwch chi\'n dod o hyd i unrhyw dwics dyfais lleol, protocol, a pherfformiad."
+    </string>
+    <string name="help">Cymorth ⓘ</string>
+    <string name="need_help">Angen rhywfaint o gymorth?</string>
+    <string name="support_forum">Fforwm Cymorth ❓</string>
+    <string name="email_us">E-bostiwch Ni 📧</string>
+    <string name="report_bug">Adrodd am Fwg 🐛</string>
+    <string name="download_from_server">Lawrlwytho o\'r Gweinydd</string>
+    <string name="import_from_file">Mewnforio o Ffeil</string>
+    <string name="please_grant_permission_from_prefs">Efallai y bydd angen i chi roi caniatadau i\'r rhaglen drwy\'r Gosodiadau.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Mwy o Logio Dadfygio</string>
+    <string name="prefer_sending_unicode">Mewnbynnu Unicode (Windows yn unig)</string>
+    <string name="hide_connection_thumbnails">Cuddio Miniatyrau Cysylltiad</string>
+    <string name="show_only_connection_nicknames">Dangos Lysenwau Cysylltiad yn Unig</string>
+    <string name="love_our_work">Hoffi ein gwaith?</string>
+    <string name="rate_app">Graddio ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Rhannu 🔗</string>
+    <string name="share_app_toast">Rhannwch ddolen i\'r ap â\'ch holl ffrindiau ar gyfryngau cymdeithasol!</string>
+    <string name="donate_app">Rhoddi ❤</string>
+    <string name="more_apps">Mwy o Apiau 📱</string>
+    <string name="previous_versions">Fersiynau Blaenorol ⍼</string>
+    <string name="keyboard_type">Math o Fysellfwrdd Meddalwedd</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Rhagosodedig (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Testun/Rhifau Dim Awgrymiadau (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Testun Gydag Awgrymiadau (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Mae\'r cysylltiad hwn wedi\'i osod i lansio VPN drwy ap allanol. Mae angen i chi osod ap fel Morpheusly i\'w lansio.</string>
+    <string name="vnc_viewer_started">Gwyliwr VNC wedi\'i gychwyn</string>
+    <string name="enable_gateway">Galluogi RDP Gateway</string>
+    <string name="scroll_speed">Buanedd Sgrolio Cyffwrdd</string>
+    <string name="desktop_scale_percentage">Canran Sgalu Arferol</string>
+    <string name="show_menu">Dangos Dewislen</string>
+    <string name="move_toolbar">Symud y Bar Offer</string>
+    <string name="rdp_adv_glyph_cache">Galluogi Storfa Glyffau</string>
+
+    <string name="disable_battery_optimizations_failed">
+Methu agor gosodiadau optimeiddio batri. Analluogi optimeiddio batri â llaw mewn gosodiadau system.</string>
+    <string name="disable_battery_optimizations">
+🔋 Analluogi Optimeiddio Batri</string>
+    <string name="disable_battery_optimizations_already_done">
+Mae ap eisoes wedi\'i eithrio rhag optimeiddio batri.</string>
+    <string name="no_connections_title">Dim cysylltiadau eto</string>
+    <string name="no_connections_hint">Tapiwch y botwm + i ychwanegu eich cysylltiad pell cyntaf</string>
+    <string name="no_connections_hint_tv">Pwyswch y botwm + uchod i ychwanegu eich cysylltiad pell cyntaf</string>
+    <string name="keyboard_layout_map">Cynllun Bysellfwrdd</string>
+</resources>

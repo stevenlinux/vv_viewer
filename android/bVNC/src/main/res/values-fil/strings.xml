@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Ang audio ay magsisimula sa loob ng humigit-kumulang 15 segundo, mangyaring ihinto ang anumang tumatakbong video o audio bago pa man</string>
+    <string name="audio_initialized">Nainitialize na ang audio</string>
+    <string name="action_import_settings">I-import ang Mga Setting</string>
+    <string name="action_new_connection">✚ Bagong Koneksyon</string>
+    <string name="action_edit_default_settings">⚙ I-edit ang Mga Default na Setting</string>
+    <string name="action_export_settings">I-export ang Mga Setting</string>
+    <string name="action_delete_connection">Burahin ang Koneksyon</string>
+    <string name="action_rate_or_share_app">⭐ Kumuha ng Tulong, I-rate, Ibahagi</string>
+    <string name="get_help">Kumuha ng Tulong</string>
+    <string name="advanced_settings">Mga Advanced na Setting</string>
+    <string name="audio">Audio</string>
+    <string name="auto_rotation">Pag-ikot ng screen habang nakakonekta</string>
+    <string name="auto_request_new_res">I-sync ang remote sa resolusyon ng display</string>
+    <string name="custom_ca_subject">Opsyonal na Cert Subject. Hindi kailangan kung ang CN ng cert ay tumutugma sa hostname</string>
+    <string name="custom_ca_import">Bilang kahalili, ilagay ang buong path sa inyong CA at i-tap ang I-import</string>
+    <string name="custom_ca_paste">I-paste (kung hindi ino-import) ang CA dito</string>
+    <string name="ca_ovirt_use_custom">Custom na RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Gumamit ng RHEV/oVirt CA para sa SPICE</string>
+    <string name="ca_ovirt_manage">Pamahalaan ang RHEV/oVirt CA</string>
+    <string name="ca_spice_manage">Pamahalaan ang SPICE CA</string>
+    <string name="ca_file_not_found">Hindi nahanap ang file. Mangyaring maglagay ng wastong pangalan ng file sa text field (hal. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Error sa pagbabasa ng CA file. Mangyaring tiyakin na mababasa ito.</string>
+    <string name="ca_new_or_changed">Bago o nabagong sertipiko ng server</string>
+    <string name="connection_type_text">Kapaligiran ng Virtualization (RHEV/oVirt o Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Pangalan ng virtual machine (opsyonal)</string>
+    <string name="connection_setup_host_name">Address ng Server</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="connection_setup_password">Password</string>
+    <string name="enter_password">Mangyaring maglagay ng password</string>
+    <string name="enter_password_auth_failed">Nabigo ang pagpapatunay. Mangyaring muling ilagay ang inyong mga kredensyal.</string>
+    <string name="enter_otp_code">Mangyaring maglagay ng OTP code</string>
+    <string name="hide_toolbar">Itago ang toolbar</string>
+    <string name="manage_custom_ca_title">Pamahalaan ang custom na CA</string>
+    <string name="save_button">I-save</string>
+    <string name="select_vm_title">Pumili ng Virtual Machine</string>
+    <string name="vv_file_not_found">Hindi nahanap ang .vv file!</string>
+    <string name="vv_file_error">Ang .vv file ay nawawala o sira!</string>
+    <string name="info_cert">Tinatanggap ba ninyo ang bagong o nabagong sertipiko ng host?\n\nMga Fingerprint:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nInilabas para sa: %4$s\nInilabas ng: %5$s\n\nMay bisa mula: %6$s\nMay bisa hanggang: %7$s\n</string>
+
+    <string name="toggle_keyboard">I-toggle ang Keyboard</string>
+    <string name="show_keyboard">Ipakita ang Keyboard</string>
+    <string name="scroll_wheel">Scroll Wheel</string>
+
+    <string name="input_method_help">Tulong sa Paraan ng Input</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Paraan ng Input</string>
+
+    <string name="error_failed_to_download_http">Nabigo sa pag-download ng file sa pamamagitan ng HTTP. Maaaring hindi maabot ang inyong server.</string>
+    <string name="error_failed_to_download_https">Nabigo sa pag-download ng file sa pamamagitan ng HTTPS. Maaaring ang sertipiko ng inyong server ay hindi pinagkakatiwalaan (nag-expire o self-signed) o hindi maabot ang inyong server.</string>
+    <string name="error_failed_to_obtain_content">Nabigo sa pagkuha ng file. Mangyaring i-download muli ito ngunit sa pagkakataong ito, mabilis na buksan ito mula sa Download folder sa isang File Manager.</string>
+    <string name="error_failed_to_obtain_file">Nabigo sa paghanap ng file. Mangyaring i-download muli ito, ngunit sa pagkakataong ito, subukang buksan ito mula sa lugar ng Notification o direkta mula sa Browser kung posible.</string>
+
+    <string name="error_dialog_title">Error</string>
+    <string name="info_dialog_title">Impormasyon</string>
+    <string name="info_vm_launched_on_stand_by">Ang inyong VM ay natuklasang naka-off at nagsimula na. Mangyaring subukan muli pagkaraan ng ilang minuto. Kung sumubok kayo nang masyadong maaga at nabigo ang koneksyon, subukan muli mamaya.</string>
+    <string name="error_no_vm_found_for_user">Walang available na Virtual Machine para sa ibinigay na user.</string>
+    <string name="error_no_such_vm_found_for_user">Walang Virtual Machine na may ibinigay na ID ang nahanap para sa ibinigay na user. Burahin ang ID upang makakuha ng listahan ng mga VM.</string>
+    <string name="error_no_vnc_support_yet">Hindi pa sinusuportahan ang uri ng display na VNC, ngunit ito ay isang paparating na feature. Salamat sa inyong pag-unawa!</string>
+    <string name="error_not_connected_to_network">Mukhang hindi kayo nakakonekta sa Internet. Hindi maaaring magpatuloy nang walang koneksyon!</string>
+    <string name="error_ovirt_timeout">Nag-timeout ang koneksyon sa inyong VM. Mangyaring tiyakin na ang address ng node na nagpapatakbo ng inyong VM ay tama, na maabot ito mula sa inyong kasalukuyang network, at na walang firewall na naghaharang sa koneksyon.</string>
+    <string name="error_ovirt_auth_failure">Nabigo ang pagpapatunay. Mangyaring suriin ang ibinigay na user at password.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Nabigo ang SSL handshake. May problema sa sertipiko ng SSL ng server. Kung gumagamit kayo ng self-signed na sertipiko, kailangan ninyong (muli) i-import ang inyong certificate authority.</string>
+    <string name="error_pve_failed_to_authenticate">Nabigo sa pagpapatunay sa Proxmox Virtual Environment. Mangyaring tiyakin na inilagay ninyo ang inyong username sa format na user@realm at tama ang inyong password.</string>
+    <string name="error_pve_failed_to_parse_json">Nabigo sa pag-parse ng tugon mula sa Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">Ang VM ID ay hindi numero. Mangyaring maglagay ng numeric na VM ID o mag-iwan ng blangko upang pumili ng VM mula sa listahan.</string>
+    <string name="error_pve_api_unexpected_code">Hindi inaasahang tugon mula sa Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Nabigo ang koneksyon sa Proxmox Virtual Environment: </string>
+    <string name="error_pve_null_data">Nagbalik ng null data ang Proxmox Virtual Environment.</string>
+    <string name="error_pve_timeout_communicating">Nag-timeout ang komunikasyon sa Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Hindi mahanap ang virtual machine na may pangalang tinukoy na itinalaga sa inyong user. Mangyaring burahin ang pangalan ng VM na tinukoy upang makita ang listahan ng mga VM na itinalaga sa user.</string>
+    <string name="error_vv_download_timeout">Nag-timeout ang pag-download ng vv file.</string>
+    <string name="message_please_wait">Mangyaring maghintay</string>
+    <string name="message_please_install_bvnc">Mangyaring i-install ang &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> mula sa Google Play upang makakonekta sa VNC console ng VM na ito.</string>
+    <string name="ssl_strict">Kailanganin na tumugma ang common name sa cert (inirerekomenda)</string>
+    <string name="usb">USB (i-plug ang OTG cable muna)</string>
+
+    <string name="ad_donate_text0">Ang Pro na bersyon ay may suporta rin para sa multi-factor na SSH authentication. Bukod dito, sinusuportahan nito ang lubhang hiniling na Master Password feature na pumipigil sa hindi awtorisadong paggamit at ini-encrypt ang lahat ng setting ng koneksyon kasama ang mga password at SSH key upang maprotektahan laban sa pagnanakaw. I-enable ito mula sa pangunahing Menu.</string>
+    <string name="ad_donate_spice_text1a">I-tap dito upang bilhin ang Opaque at i-save ang mga direktang koneksyon sa Proxmox at oVirt. Sinusuportahan din nito ang mga .vv file.</string>
+    <string name="ad_donate_spice_text1b">I-tap dito upang bilhin ang Pro na bersyon at buksan lamang ang mga .vv file.</string>
+    <string name="ad_donate_text1">I-tap dito upang suportahan ang proyekto sa pamamagitan ng maliit na donasyon sa pamamagitan ng pagbili ng Pro na bersyon.</string>
+    <string name="ad_donate_text2">Ang Pro na bersyon ay nagbibigay-daan sa inyong hindi paganahin ang dialog na ito at nagbibigay sa inyo ng access sa mga karagdagang feature.</string>
+    <string name="ad_donate_text3">Kung nais ninyong suportahan ang proyekto nang higit pa, sundan ang mga sumusunod na link para sa mga link sa mga client app para sa: </string>
+    <string name="ad_donate_text_vnc">Kailangan ng suporta ng Open Source na proyekto! Mag-donate sa amin sa pamamagitan ng pagbili ng bVNC Pro. Tingnan sa ibaba ang mga link sa bVNC Pro at sa aming iba pang mga app.</string>
+    <string name="ad_donate_text_rdp">Kailangan ng suporta ng Open Source na proyekto! Mag-donate sa amin sa pamamagitan ng pagbili ng aRDP Pro, na sumusuporta sa pag-redirect ng sound. Tingnan sa ibaba ang mga link sa aRDP Pro at sa aming iba pang mga app.</string>
+    <string name="ad_donate_text_spice">Para sa mga koneksyon sa Proxmox at oVirt, mangyaring mag-donate sa proyekto sa pamamagitan ng pagbili ng Opaque o aSPICE Pro. Ang Libreng bersyon ng aSPICE ay sumusuporta lamang sa mga direktang koneksyon sa mga KVM virtual machine. Tingnan sa ibaba ang mga link sa Opaque at aSPICE Pro, pati na rin ang aming iba pang mga app.</string>
+
+    <string name="address_caption">VNC Server</string>
+    <string name="address_caption_hint">VNC Server</string>
+    <string name="address_caption_hint_tunneled">VNC Server</string>
+    <string name="address_caption_ssh">SSH Server</string>
+    <string name="address_caption_ssh_hint">SSH Server</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Pababang Arrow</string>
+    <string name="arrow_left">Kaliwang Arrow</string>
+    <string name="arrow_right">Kanang Arrow</string>
+    <string name="arrow_up">Pataas na Arrow</string>
+
+    <string name="auto">Auto</string>
+    <string name="auto_x_cancel">Kanselahin</string>
+    <string name="auto_x_caption">Ang application ay maaaring awtomatikong matuklasan ang mga umiiral at lumikha ng mga bagong X session sa mga Linux/UNIX system (katulad ng NX). Kailangan ninyo ng x11vnc upang mahanap, at Xvfb, Xvnc, o Xdummy upang lumikha ng mga session. Kung may problema kayo sa pagkonekta, subukang pumili ng tiyak na Uri ng Remote Session sa AutoX Advanced Settings.</string>
+    <string name="auto_x_confirm">Kumpirmahin</string>
+    <string name="auto_x_descript_geom">Laki ng Remote Desktop (LxT)</string>
+    <string name="auto_x_descript_session">Uri ng Remote Session</string>
+    <string name="auto_x_disabled">Hindi Pinagana</string>
+    <string name="auto_x_disabled_selection">Naka-disable ang AutoX</string>
+    <string name="auto_x_enabled">Pinagana</string>
+    <string name="auto_x_find">Hanapin Lamang, Huwag Lumikha</string>
+    <string name="auto_x_find_login">Hanapin ang X Login (kailangan ng sudo)</string>
+    <string name="auto_x_geom_custom">Custom</string>
+    <string name="auto_x_geom_native">Native</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Custom</string>
+    <string name="auto_x_title">I-configure ang AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Mag-authenticate gamit ang ibinigay na SSH Username/Password nang awtomatiko (sa itim na login screen).</string>
+    <string name="auto_x_unixpw">Gumamit ng mga UNIX credential sa halip ng built-in na mekanismo ng seguridad. Ang user ay dapat makapagsagawa ng /bin/su.</string>
+    <string name="auto_x_xdummy">Hanapin o Lumikha gamit ang Xdummy</string>
+    <string name="auto_x_xvfb">Hanapin o Lumikha gamit ang Xvfb</string>
+    <string name="auto_x_xvnc">Hanapin o Lumikha gamit ang Xvnc</string>
+
+    <string name="button_send_text">Magpadala ng Teksto</string>
+    <string name="button_send_without_saving">Magpadala ng Teksto/Huwag I-save Ito</string>
+
+    <string name="center_mouse">Mouse @</string>
+
+    <string name="close">Isara</string>
+
+    <string name="color_format_caption">Paraan ng Kulay</string>
+    <string name="color_mode">Paraan ng Kulay</string>
+
+    <string name="connect_button">Kumonekta</string>
+    <string name="back_button">Bumalik</string>
+    <string name="update_button">I-update</string>
+
+    <string name="connection_caption">Koneksyon</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Uri ng Koneksyon</string>
+    <string name="connection_type_rdp_over_ssh">RDP sa pamamagitan ng SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE sa pamamagitan ng SSH</string>
+    <string name="connection_type_vnc">Basic VNC</string>
+    <string name="connection_type_vnc_over_ssh">Secure VNC sa pamamagitan ng SSH</string>
+    <string name="connection_type_vnc_over_ssl">Secure VNC sa pamamagitan ng AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Secure VNC sa pamamagitan ng SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">Secure VNC sa pamamagitan ng VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Nais ba ninyong i-edit o burahin ang koneksyon</string>
+    <string name="connection_edit">I-edit</string>
+    <string name="connection_delete">Burahin</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopyahin ang Listahan</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Default na Paraan ng Input</string>
+    <string name="delete_connection">Burahin ang Koneksyon</string>
+    <string name="delete_key">Burahin ang Napiling Key</string>
+    <string name="delete_key_list">Burahin ang Listahan ng Key</string>
+
+    <string name="disconnect">Idiskonekta</string>
+
+    <string name="dpad_as_arrows">Gumamit ng D-Pad para sa mga arrow at D-Pad click para sa Ctrl.</string>
+
+    <string name="enable_recording">Paganahin ang Pag-record</string>
+    <string name="enable_sound">Paganahin ang Sound</string>
+
+    <string name="enter_text">Magpadala ng Teksto</string>
+    <string name="enter_text_title">Maglagay ng Teksto na Ipapadala</string>
+
+    <string name="error_anon_dh_unsupported">Sinisikap ng VNC Server na gumamit ng Anonymous Diffie Hellman ciphers na hindi sinusuportahan sa inyong Android device. Kung gumagamit ng Vino VNC server ng GNOME, maaari ninyong i-disable ang AnonTLS sa pamamagitan ng pagpapatakbo ng sumusunod na command sa terminal at pagkatapos ay i-restart: \"gsettings set org.gnome.Vino require-encryption false\". Kung nagpapatakbo ng x11vnc, maaari kayong magdagdag ng mga sumusunod na opsyon: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Nabigo ang koneksyon.</string>
+    <string name="error_connection_interrupted">Naputol ang koneksyon.</string>
+    <string name="error_no_user_hostname">Mangyaring maglagay ng kahit isang user at hostname o IP address.</string>
+    <string name="error_out_of_memory">Hindi makalaan ng sapat na memorya upang iguhit ang remote screen. Subukang i-restart ang application, pagkatapos ay i-restart ang inyong device. Maaari rin ninyong subukang bawasan ang laki ng remote desktop sa pamamagitan ng mga setting ng app.</string>
+    <string name="error_ovirt_unable_to_connect">Hindi makakonekta o makapag-authenticate, mangyaring suriin ang address ng server, user, password, at certificate authority at subject.</string>
+    <string name="error_pick_correct_item">Mangyaring tiyakin na pinili ninyo ang tamang item sa Uri ng Koneksyon.</string>
+    <string name="error_rdp_authentication_failed">Nabigo ang RDP Authentication! Mangyaring suriin ang RDP username at password at subukan muli.</string>
+    <string name="error_rdp_connection_failed">Nabigo ang RDP Connection! Alinman sa naputol ang network connectivity, na-off o na-disable ang RDP server, o kinuha ang inyong session.</string>
+    <string name="error_rdp_unable_to_connect">Hindi makakonekta sa RDP server! Mangyaring tiyakin na tama ang setting ng RDP Server, naka-on ang server, pinagana ang RDP, at nasa parehong network ang server tulad ng device na ito.</string>
+    <string name="error_security_type">Hindi nag-alok ang server ng sinusuportahang uri ng seguridad.</string>
+    <string name="error_spice_unable_to_connect">Hindi makakonekta o makapag-authenticate, mangyaring suriin ang address at port ng server.</string>
+    <string name="error_ssh_could_not_exec_command">Hindi mapatupad ang remote command.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Hindi maipadala ang sudo password.</string>
+    <string name="error_ssh_hostkey_changed">ERROR! Nagbago ang host key ng server. Kung ito ay sinasadya, maaari kayong magpatuloy. Kung hindi, maaaring ito ay isang man in the middle attack.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Hindi sinusuportahan ng SSH server ang alinman sa mga paraan ng auth na \"password\" o \"keyboard-interactive\" o kailangan muna ang \"publickey\" na paraan. Mangyaring i-configure ito upang payagan ang kahit isa sa dalawang paraan, o muling i-configure ang application. Mga available na paraan ng auth: </string>
+    <string name="error_ssh_key_auth_fail">Nabigo sa pag-authenticate sa SSH server gamit ang key-pair. Mangyaring suriin ang inyong SSH username, at tiyakin na ang inyong public key ay nasa authorized_keys file sa remote side.</string>
+    <string name="error_ssh_keypair_decryption_failure">Nabigo sa pag-decrypt ng key-pair. Mangyaring tiyakin na tama ang inyong passphrase na inilagay sa field na \'SSH Passphrase\' sa pangunahing screen.</string>
+    <string name="error_ssh_keypair_missing">Hindi pa nalilikha ang SSH key-pair! Mangyaring lumikha ng isa at ilagay (ang public na bahagi nito) sa authorized_keys sa SSH server.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Ibinigay ang passphrase ngunit hindi naka-encrypt ang key-pair. Mangyaring burahin ang passphrase.</string>
+    <string name="error_ssh_port_forwarding_failure">Hindi maset up ang port forwarding para sa pag-tunnel ng VNC traffic sa pamamagitan ng SSH. Mangyaring tiyakin na ang inyong SSH server ay naka-configure upang payagan ang port forwarding at subukan muli.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Hindi sinusuportahan ng SSH server ang paraan ng auth na \"publickey\", at sinisikap naming gumamit ng key-pair upang mag-authenticate. Mangyaring i-configure ito upang payagan ang publickey authentication at subukan muli. Mga available na paraan ng auth: </string>
+    <string name="error_ssh_pwd_auth_fail">Nabigo sa pag-authenticate sa SSH server gamit ang password. Mangyaring suriin ang inyong SSH username at SSH password.</string>
+    <string name="error_ssh_unable_to_connect">Nabigo sa pagkonekta sa SSH Server. Mangyaring suriin ang network connectivity, at ang address at port ng SSH Server.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Hindi makuha ang remote VNC port mula sa x11vnc. Mangyaring tiyakin na naka-install ang x11vnc. Upang masiguro, subukang patakbuhin ang x11vnc nang manu-mano sa command-line.</string>
+    <string name="error_uri_noinfo_nosave">Hindi sapat ang impormasyon na tinukoy upang makakonekta.</string>
+    <string name="error_uri_parse_error">Hindi ma-parse ang Intent URI. Mangyaring suriin ang format ng URI. Maaari rin kayong tumingin sa device logcat para sa karagdagang detalye.</string>
+    <string name="error_vnc_authentication">Nabigo ang VNC authentication! Suriin ang VNC password (at user kung naaangkop).</string>
+    <string name="error_vnc_unable_to_connect">"Nabigo ang koneksyon sa VNC server sa dahilang: "</string>
+    <string name="error_x509_could_not_generate_encoding">Hindi malikha ang encoding ng sertipiko.</string>
+    <string name="error_x509_could_not_generate_signature">Hindi malikha ang SHA1 o MD5 signature ng sertipiko. Walang nahanap na SHA1/MD5 algorithm.</string>
+
+    <string name="export_settings">I-export</string>
+
+
+    <string name="extra_keys_disable">I-disable ang Mga Extra Key</string>
+    <string name="extra_keys_enable">I-enable ang Mga Extra Key</string>
+
+    <string name="fit_to_screen">Iakma sa Screen</string>
+
+    <string name="force">Fullscreen Bitmap</string>
+
+    <string name="immersive_mode_disable">I-disable ang Immersive Mode</string>
+
+    <string name="import_export_settings">📦 I-import/I-export ang Mga Setting</string>
+    <string name="import_settings">I-import</string>
+
+
+    <string name="info">Impormasyon</string>
+    <string name="info_cert_signatures">"Ang impormasyon ng sertipiko ay: "</string>
+    <string name="info_cert_signatures_identical">\n\nMaaari ninyong tiyakin na tumutugma ang impormasyon sa sertipiko ng server upang maiwasan ang man-in-the-middle attack.</string>
+    <string name="info_cert_tunnel">Nais ba ninyong kumonekta sa host na tinukoy ng sumusunod na sertipiko?\n\nFingerprint: %1$s\n\nInilabas para sa:\n%2$s\n\nInilabas ng:\n%3$s\n\nMay bisa mula:\n%4$s\n\nMay bisa hanggang:\n%5$s\n\nTala: Hindi bine-verify ng application ang mga certificate authority o naghahanap ng certificate revocation.</string>
+    <string name="info_continue_connecting">"Magpatuloy sa pagkonekta sa: "</string>
+    <string name="info_encoding">" encoding, "</string>
+    <string name="info_progress_dialog_aborted">Naabort ang koneksyon!</string>
+    <string name="info_progress_dialog_connecting">Kumokonekta…</string>
+    <string name="info_progress_dialog_downloading">Dino-download ang unang frame.\nMangyaring maghintay…</string>
+    <string name="info_progress_dialog_establishing">Itinatag ang handshake.\nMangyaring maghintay…</string>
+    <string name="info_ssh_initializing_hostkey">Sinisikang i-initialize ang SSH HostKey.</string>
+    <string name="info_ssh_key_fingerprint">"Ang fingerprint ng host key ay: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nMaaari ninyong tiyakin na ito ay kapareho ng kilalang fingerprint ng sertipiko ng server upang maiwasan ang man-in-the-middle attack.</string>
+    <string name="info_update_color_model_to">"Ina-update ang Color Model sa "</string>
+
+    <string name="input_method_direct_drag_pan_description">Direkta, Hold Pan: Mag-swipe upang i-drag at i-drop. I-tap sa isang daliri kung saan nais na mag-left-click, dalawang daliri para sa right-click, at tatlong daliri para sa middle-click. Mag-swipe gamit ang dalawang daliri upang mag-scroll. Matagal na tap upang simulan ang panning.</string>
+    <string name="input_method_direct_swipe_pan_description">Direkta, Swipe Pan: Mag-swipe upang mag-pan sa paligid. I-tap sa isang daliri kung saan nais na mag-left-click, dalawang daliri para sa right-click, at tatlong daliri para sa middle-click. Mag-swipe gamit ang dalawang daliri upang mag-scroll. Matagal na tap upang mag-drag at mag-drop.</string>
+    <string name="input_method_single_handed_description">Isang Kamay: Mag-swipe upang mag-pan sa paligid. I-tap sa isang daliri kung saan nais na mag-left-click. Matagal na tap upang pumili ng left/right/middle drag/scroll/zoom mode. Gumagana rin ang karaniwang mga multi-touch control.</string>
+    <string name="input_method_touchpad_description">Simulated Touchpad: Mag-swipe upang ilipat ang pointer. I-tap kahit saan gamit ang isang daliri para sa left-click, dalawang daliri para sa right-click, at tatlong daliri para sa middle-click. Mag-swipe gamit ang dalawang daliri upang mag-scroll. Matagal na tap upang mag-drag at mag-drop.</string>
+    <string name="input_mode">Paraan ng Input</string>
+
+    <string name="input_mode_fit_to_screen">Walang Pan; Trackball Mouse</string>
+    <string name="input_mode_panning">Desktop Panning Mode</string>
+    <string name="input_method_mouse">Kontrol ng Mouse Pointer</string>
+
+    <string name="input_method_direct_swipe_pan">Direkta, Swipe Pan</string>
+    <string name="input_method_direct_drag_pan">Direkta, Hold Pan</string>
+    <string name="input_method_single_handed">Isang Kamay</string>
+    <string name="input_method_touchpad">Simulated Touchpad</string>
+
+    <string name="input_mode_help">Tulong sa Paraan ng Input</string>
+    <string name="input_mode_help_text">"
+Sa anumang Paraan ng Input, i-tap ang icon ng keyboard upang makuha ang on-screen keyboard. Gayundin, ang inyong device ay maaaring may sariling gesture na nagdadala ng keyboard.
+
+Gamitin ang mga Direct input mode para sa mas intuitive na kontrol sa touch-screen. Gamitin ang Simulated Touchpad Mode para sa mas pinong kontrol sa mouse.
+
+Direct, Swipe Pan Mode:
+ - Kontrolin ang mouse nang direkta sa pamamagitan ng touch.
+ - Mag-swipe upang mag-pan sa paligid.
+ - Ang pag-tap ay nagpapaclick ng mouse kung saan kayo nag-tap.
+ - Ang mga scroll event ay ipinapadala sa pagitan ng dalawang daliri kung saan nagsimula ang two-finger swipe.
+
+Direct, Hold Pan Mode:
+ - Kontrolin ang mouse nang direkta sa pamamagitan ng touch.
+ - Matagal na tap upang simulan ang pan mode.
+ - Ang pag-tap ay nagpapaclick ng mouse kung saan kayo nag-tap.
+ - Ang mga scroll event ay ipinapadala sa pagitan ng dalawang daliri kung saan nagsimula ang two-finger swipe.
+
+Simulated Touchpad Mode:
+ - Gamitin ang inyong screen tulad ng touchpad.
+ - Mag-swipe upang ilipat ang mouse pointer sa paligid.
+ - Ilipat ang mouse lampas sa gilid ng screen upang mag-pan.
+ - Ang pag-tap ay nagpapaclick ng mouse kung saan naroon ang pointer.
+ - Ang mga scroll event ay ipinapadala kung saan matatagpuan ang mouse pointer.
+
+Single Handed Mode:
+ - Katulad ng Direct, Swipe Pan Mode, maliban na ang matagal na tap ay nagbubukas ng menu na may pagpipilian ng mga mode.
+ - Pagkatapos pumili ng mode, ang pag-swipe ng daliri sa screen ay nagsasagawa ng napiling gesture.
+ - Ang pag-angat ng daliri ay kumukumpleto ng gesture.
+
+Lahat ng Paraan ng Input:
+ - Left-click: I-tap nang isang beses.
+ - Double-click: Double-tap.
+ - Right-click: Tap-hold at i-tap gamit ang pangalawang daliri (kahit saan sa screen).
+ - Alternatibong Right-click: Gamitin ang button o gesture na \"Back\" para sa inyong device.
+ - Middle-click: Tap-hold at i-tap gamit ang dalawa pang daliri (kahit saan sa screen).
+ - Mouse-drag: Tap-hold-long at mag-swipe.
+ - Scroll-wheel: Two-finger drag pataas/pababa at pakaliwa/pakanan. Ang mabilis na drag ay mas mabilis na nag-i-scroll.
+ - Zoom in/out: Sa Zoomable scaling, pinch-zoom upang kontrolin ang scaling.
+ - Ctrl/Alt key: Menu-&gt;Ctrl/Alt buttons. Huwag kalimutang i-toggle off pagkatapos!
+ - Key combos: Menu-&gt;More-&gt;Send Keys.
+ - Magpadala ng teksto: Alinman sa mag-type sa on-screen keyboard, o gamitin ang Menu-&gt;More-&gt;Send Text."</string>
+
+    <string name="intro_close">Isara</string>
+    <string name="intro_dont_show">Huwag ipakita muli</string>
+
+    <string name="intro_text">
+Kasalukuyang listahan ng mga feature ng bVNC:
+&lt;br&gt;
+- Plain VNC, Secure VNC sa pamamagitan ng SSH, AnonTLS, at VeNCrypt, at UltraVNC Windows Logon na may opsyonal na Repeater.
+&lt;br&gt;
+- AutoX mode: Sa VNC over SSH mode, awtomatikong tuklasin ang mga umiiral at/o lumikha ng mga bagong X-session gamit ang x11vnc! Gumagana tulad ng NX client.
+&lt;br&gt;
+- Suporta sa libreng pag-ikot. Gamitin ang Operating System upang limitahan ang pag-ikot kung kinakailangan.
+&lt;br&gt;
+- Paglikha at pag-export ng SSH Public/Private key-pair.
+&lt;br&gt;
+- Lahat ng karaniwang VNC encoding, kasama ang Tight, ZRLE, at CopyRect.
+&lt;br&gt;
+- Awtomatikong pag-save ng Session.
+&lt;br&gt;
+- Mga mode ng scaling na Zoomable, Fit to Screen, at One to One.
+&lt;br&gt;
+- Multi-touch na kontrol sa remote mouse sa Direct at Simulated Touchpad input mode.
+&lt;br&gt;
+- Kumpletong kontrol sa isang kamay sa remote mouse sa Single-Handed input mode.
+&lt;br&gt;
+- Multi-touch mouse clicks: i-tap para sa Left-click, two-finger tap para sa right-click, three-finger-tap para sa middle click.
+&lt;br&gt;
+- Multi-touch scrolling: two finger drag Pataas/Pababa, at Pakaliwa/Pakanan upang mag-scroll.
+&lt;br&gt;
+- On-screen meta at arrow key na maaaring ganap na i-disable mula sa menu o ilagay gamit ang on-screen button.
+&lt;br&gt;
+- Pagpapadala ng Teksto at arbitrary na mga Key combination kapag nakakonekta.
+&lt;br&gt;
+- Tulong sa paglikha ng mga koneksyon (\"Menu-&gt;Connection Help\") sa connection screen.
+&lt;br&gt;
+- Tulong sa mga paraan ng input (\"Menu-&gt;More-&gt;Input Mode Help\") kapag nakakonekta.
+&lt;br&gt;
+- Paggamit ng available na trackpad bilang Mga Arrow sa halip na paglilipat ng mouse, at trackpad click bilang Ctrl.
+&lt;br&gt;
+- Paglipat sa portrait mode sa panahon ng mga koneksyon, pag-ikot ng D-pad/trackpad para sa BT keyboard.
+&lt;br&gt;
+- Suporta sa maraming wika, hangga\'t ang VNC server ay may kinakailangang language layout na naka-enable.
+&lt;br&gt;
+- Integrasyon ng Copy/Paste
+&lt;br&gt;
+- Mga pagbabago sa resolusyon ng remote machine
+&lt;br&gt;
+- Buong suporta sa mouse sa mga Android 4.0+ device, kasama ang right at middle click at scroll wheel.
+&lt;br&gt;
+&lt;br&gt;
+Mga kilalang isyu:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitive, secure VNC client</string>
+
+
+    <string name="keep_password_button">Panatilihin</string>
+    <string name="keep_screen_awake_enable">Panatilihing Gising ang Screen</string>
+
+    <string name="keys_caption">Mga Key</string>
+
+    <string name="landscape_force">Pilitin ang Landscape Orientation</string>
+
+    <string name="left_handed_mode">Left-Handed Mode</string>
+    <string name="disable_pointer_offset_correction">I-disable ang pointer offset correction</string>
+
+    <string name="list_caption">Listahan</string>
+    <string name="list_name_caption">Pangalan ng Listahan</string>
+
+    <string name="local_mouse_check">Lokal na mouse pointer (piliin kung hindi makita ang pointer)</string>
+
+    <string name="main_screen_help">Tulong sa Koneksyon</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kapag nagdagdag o nag-edit kayo ng koneksyon, makikita ninyo ang pahina ng configuration ng koneksyon. Dito maaari kayong mag-set
+up ng bagong VNC koneksyon, o pumili ng mayroon nang isa. Sa itaas ay isang button na nagbibigay-daan sa inyong
+i-save ang koneksyon. Sa ibaba nito ay kung saan ninyo iko-configure ang inyong koneksyon.
+
+Kung naghahanap kayo ng mabilis na performance boost, subukang itakda ang Color mode sa mas mababang halaga. Gayundin, subukang alisin ang anumang background image ng desktop sa VNC server. Sa wakas, tiyakin na ang inyong device ay may magandang network connectivity at iwasan ang pagtakip sa antenna nito at pagbabawas ng signal strength.
+
+ - Uri ng Koneksyon: Dito ninyo pipiliin ang uri ng VNC koneksyon. Ang mga available na uri ng koneksyon ay:
+   (a) Plain VNC, na sinusuportahan ng lahat ng VNC server ngunit kulang sa encryption at mahina sa brute-force attack dahil sa 8-character na limitasyon ng password.
+   (b) Secure VNC sa pamamagitan ng SSH, na kumokonekta sa pamamagitan ng naka-encrypt na SSH tunnel. Kailangan ninyo ng serbisyong SSHD na tumatakbo pati na rin ang VNC server. Hangga\'t hindi direktang tumatanggap ng mga koneksyon ang VNC server mula sa Internet, ang uri ng koneksyong ito ay walang kilalang kahinaan, hangga\'t bine-verify ninyo ang lagda ng sertipiko ng server kapag unang nakakonekta.
+   (c) UltraVNC, na nagbibigay sa inyo ng mga opsyon ng Windows Logon at UltraVNC Repeater. Ang paggamit ng Windows Logon ay hindi nagdurusa sa 8-character na limitasyon ng password, ngunit ang mode na ito ay walang encryption, kaya ang inyong session ay mahina sa sniffing.
+   (d) Secure VNC sa pamamagitan ng AnonTLS, na regular na VNC sa pamamagitan ng stunnel-equivalent na koneksyon. Kailangan ninyo na magpatakbo ng stunnel, o gumamit ng VNC server tulad ng Vino na sumusuporta sa AnonTLS nang out of the box. Ang mode na ito ay nagbibigay sa inyo ng session encryption, ngunit nagdurusa sa 8-character na limitasyon ng password at hindi pinipigilan ang man-in-the-middle attack.
+   (e) Secure VNC sa pamamagitan ng VeNCrypt, na gumagamit ng x509 certificate pati na rin ang session encryption, at depende sa configuration ng server ay maaaring gumamit ng user/password credentials na walang 8-character na limitasyon. Ang mode na ito ay pumipigil sa man-in-the-middle attack pati na rin nagbibigay ng session privacy. Ang mga server tulad ng x11vnc at TigerVNC ay sumusuporta sa mode na ito at kasing-secure ng VNC sa pamamagitan ng SSH.
+
+ - Pamagat: Ang bawat koneksyon na inyong nilikha ay maaaring magkaroon ng palayaw upang madaling matukoy ito sa listahan.
+
+ - Mga Setting ng SSH Tunnel: Available sa VNC over SSH mode.
+   (a) SSH Server/Port: Ang address at port ng SSH server na dadaanan ng koneksyon. Bilang default, nakikinig ang SSH sa port 22.
+   (b) Username/Password: Ang username at password ng account sa SSH server. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng application mula nang huling ilagay ninyo ito.
+   (c) Manage Key/Use Key: Isang button upang pamahalaan ang mga public/private key, at isang checkbox na nagpapahiwatig kung gagamitin ang key sa halip na password upang mag-authenticate. Kung gagamitin ninyo ang button na Copy to Clipboard pagkatapos ng paglikha ng key-pair, dapat kayong makapag-paste ng public key kapag nakakonekta sa VNC server (ang clipboard ay naka-sync sa server).
+
+ - I-configure ang AutoX: Available lamang sa VNC over SSH mode. Ang application ay maaaring awtomatikong tuklasin ang mga umiiral at opsyonal na lumikha ng mga bagong X session sa mga UNIX system (tulad ng NX client). Kailangan ninyo ng x11vnc upang mahanap, at Xvfb, Xvnc, o Xdummy na naka-install sa remote system upang lumikha ng mga session. Maaaring kailangan ninyong ilipat ang inyong .dmrc file at magdagdag ng .xinit file sa inyong home directory kung hindi maganda ang hitsura ng inyong desktop o nakakakuha lamang kayo ng xterm window.
+
+ - Mga Setting ng VNC Koneksyon:
+   (a) VNC Server/Port: Dito ninyo ilalagay ang host name o IP address at port ng computer na nagpapatakbo ng VNC server na nais ninyong makipag-ugnayan. Sa VNC over SSH mode, ang address na ito ay nakikita mula sa SSH Server. Kung ang SSH Server at VNC server ay iisang computer, maaari kayong gumamit ng localhost. Karaniwang nakikinig ang mga VNC server simula sa port 5900 (ang unang VNC screen, screen :0).
+   (b) VNC User: Available sa UltraVNC na may Windows Logon mode, o Secure VNC sa pamamagitan ng VeNCrypt, dito ninyo ilalagay ang inyong Windows/UNIX account username.
+   (c) VNC Password: Kung ang inyong configuration ng VNC server ay nangangailangan ng password, ilagay ang password dito. Sa mga mode ng UltraVNC na may Windows Logon/VeNCrypt, ilagay ang inyong Windows/UNIX account password dito. Hindi ginagamit ang secure storage para sa mga password, at ang password ay maitatago lamang kung magche-check kayo ng \"Keep\" box. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng application mula nang huling ilagay ninyo ito.
+
+ - Color Mode: Sinusuportahan ng client ang ilang color mode. Ang mga mode na may mas maraming kulay ay nagbibigay ng mas magandang visual experience sa gastos ng mas malaking bandwidth at mas maraming CPU computation sa inyong device. Ang ilang VNC server ay hindi sumusuporta sa lahat ng color depth (hal. ang OS/X Remote Desktop ay nangangailangan ng 24-bit na kulay). Kung may problema kayo sa pagkonekta, subukan ang ibang color depth.
+
+ - Gumamit ng D-Pad para sa mga arrow: Kung gusto ninyo, maaari ninyong gamitin ang D-Pad ng inyong Bluetooth keyboard o mga arrow sa inyong on-screen keyboard upang magpadala ng mga arrow sa VNC server.
+
+ - I-rotate ang D-Pad: Ang mga telepono na nakipag-pair sa Bluetooth keyboard ay maaaring kailangang paikutin ang D-pad ng keyboard nang counter-clockwise upang magpadala ng tamang direksyon sa server.
+
+ - Lokal na mouse pointer: Ang ilang VNC server (hal. OS/X Remote Desktop) ay hindi iguguhit ang mouse pointer sa client. Ang pag-check ng opsyong ito ay magiging sanhi ng application na gumuhit ng mouse pointer sa posisyon ng mouse.
+
+ - Auto/Fullscreen Bitmap: Ang VNC client ay gumagamit ng bitmap upang kumatawan sa remote display. Para sa napakalaking remote display, lalo na sa fit-to-screen mode, maaari kayong makaranas ng kakaibang visual artifact kapag nasa fit-to-screen mode, dahil sa mga limitasyon ng memorya bawat proseso. Kung mangyari iyon, subukang i-check ang opsyong ito. Tandaan na ang pag-check ng opsyon ay maaaring maging sanhi ng pag-quit ng application sa koneksyon.
+
+ - Repeater: Available lamang sa UltraVNC mode. MAHALAGA: Kung mayroon kayong UltraVNC repeater, ilagay ang address at port nito sa labas ng \'UltraVNC Repeater\' dialog at ilagay ang address at port ng aktwal na VNC server sa loob ng \'UltraVNC Repeater\' Dialog. Paghiwalayin ang address at port ng VNC server gamit ang colon, hal. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 I-enable ang Master Password</string>
+    <string name="master_password_error_failed_to_disable">Hindi ma-disable ang master password. Suriin ang libreng espasyo sa inyong device at subukan muli.</string>
+    <string name="master_password_error_failed_to_enable">Hindi ma-enable ang master password. Suriin ang libreng espasyo sa inyong device at subukan muli.</string>
+    <string name="master_password_error_intents_not_supported">Hindi pa sinusuportahan ang mga connection intent kapag naka-enable ang Master Password.</string>
+    <string name="master_password_error_password_necessary">Kinakailangan ang Master Password upang magpatuloy.</string>
+    <string name="master_password_error_password_not_set">Nakansela ang pagtatakda ng Master Password.</string>
+    <string name="master_password_error_shortcuts_not_supported">Hindi pa sinusuportahan ang mga short-cut kapag naka-enable ang Master Password.</string>
+    <string name="master_password_error_wrong_password">Hindi ma-authenticate gamit ang ibinigay na Master Password.</string>
+    <string name="master_password_hint_once">Maglagay ng Password</string>
+    <string name="master_password_hint_twice">Ulitin ang Password</string>
+    <string name="master_password_set">Itakda ang Master Password</string>
+    <string name="master_password_set_error">Hindi magkatugma ang mga password, mangyaring maging maingat!</string>
+    <string name="master_password_set_message">Mangyaring maglagay at memorahin ang Master Password. Habang mas mahaba ang inyong password, mas mahirap itong i-crack. Kung mali ang pagtatakda ng inyong password o nakalimutan ninyo ito, mawawala ang lahat ng inyong setting! Maaaring gusto ninyong i-export ang inyong mga setting ngayon upang ma-back up ang mga ito (mula sa Menu). I-store ang mga ito nang ligtas dahil ang mga na-export na setting ay hindi naka-encrypt.</string>
+    <string name="master_password_verify">I-verify ang Master Password</string>
+    <string name="master_password_verify_message">Mangyaring maglagay ng tamang Master Password upang magpatuloy.</string>
+
+    <string name="meta_key_title">Magpadala ng Mga Espesyal na Key</string>
+
+    <string name="mouse_follow_pan">Sinusundan ng mouse ang pan</string>
+
+    <string name="new_connection">Bagong Koneksyon</string>
+    <string name="new_list_button">Bagong Listahan</string>
+
+    <string name="nickname_caption">Palayaw</string>
+    <string name="nickname_caption_hint">Pamagat (opsyonal)</string>
+
+    <string name="off">Off</string>
+
+    <string name="one_to_one">Isa sa Isa</string>
+
+    <string name="open_doc">Manual/Wiki</string>
+
+    <string name="pan_follow_mouse">Sumusunod ang pan sa mouse</string>
+
+    <string name="password_caption">VNC Auth.</string>
+    <string name="password_caption_hint">VNC Password</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="password_hint_ssh">SSH Password</string>
+
+    <string name="port_caption">VNC Port</string>
+    <string name="port_caption_ssh">SSH Port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Lumipat sa portrait mode kapag nakakonekta</string>
+    <string name="local_clipboard_integration">I-enable ang Integrasyon ng Lokal patungong Remote na Clipboard</string>
+    <string name="remote_clipboard_integration">I-enable ang Integrasyon ng Remote patungong Lokal na Clipboard</string>
+    <string name="position_toolbar_last_used">Ibalik ang Posisyon ng Toolbar</string>
+    <string name="applies_to_new_connections_only">Naaangkop sa Mga Bagong Koneksyon Lamang</string>
+    <string name="pro_feature_mfa">Mukhang ang inyong server ay may multi-factor authentication na naka-enable. Mangyaring suportahan ang proyekto sa pamamagitan ng pagbili ng Pro na bersyon na may suporta para sa feature na ito. Ang isang link sa Pro na bersyon ay available sa start dialog.</string>
+    <string name="pro_feature_intro">Mukhang gumagamit kayo ng Pro feature. Mangyaring suportahan ang proyekto sa pamamagitan ng pagbili ng Pro na bersyon na may suporta para sa feature na ito. Mangyaring suriin ang intro dialog para sa mga link sa tamang app.</string>
+    <string name="pro_feature_generic">Mukhang gumagamit kayo ng Pro feature. Mangyaring suportahan ang proyekto sa pamamagitan ng pagbili ng Pro na bersyon na may suporta para sa feature na ito. Ang isang link sa Pro na bersyon ay available sa start dialog.</string>
+    <string name="pro_feature_rdp">Mukhang sinubukan ninyong buksan ang isang .rdp file na isang Pro feature. Mangyaring suportahan ang proyekto sa pamamagitan ng pagbili ng aRDP Pro, na sumusuporta sa mga .rdp file. Ang isang link sa bersyon ng aRDP Pro ay available sa start dialog.</string>
+    <string name="pro_feature_spice">Mukhang sinubukan ninyong buksan ang isang .vv file. Kung nais ninyong i-save ang mga koneksyon sa Proxmox o oVirt nang direkta sa loob ng app at gusto ring buksan ang mga .vv file, isaalang-alang ang pagbili ng Opaque. Kung kailangan lamang ninyo ng suporta sa .vv file, maaari kayong kumuha ng aSPICE Pro. Hanapin ang mga link sa parehong app sa start dialog.</string>
+
+    <string name="rdp_address_caption_hint">RDP Server</string>
+    <string name="rdp_adv_console_mode">Console Mode</string>
+    <string name="rdp_adv_desktop_background">Ipakita ang background ng desktop</string>
+    <string name="rdp_adv_desktop_composition">I-enable ang Desktop Composition</string>
+    <string name="rdp_adv_font_smoothing">Magsagawa ng font smoothing</string>
+    <string name="rdp_adv_menu_animation">Ipakita ang Mga Menu Animation</string>
+    <string name="rdp_adv_redirect_sdcard">I-redirect ang SD Card</string>
+    <string name="rdp_adv_remotefx">I-enable ang RemoteFX</string>
+    <string name="rdp_adv_visual_styles">I-enable ang Visual Styles</string>
+    <string name="rdp_adv_window_contents">Ipakita ang mga nilalaman ng window habang dini-drag</string>
+    <string name="rdp_security_mode">Security Mode</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Laki ng Remote Desktop (LxT)</string>
+    <string name="rdp_domain_hint">RDP Domain</string>
+    <string name="rdp_geom_automatic">Awtomatiko</string>
+    <string name="rdp_geom_checkbox_enable">I-enable ang custom na resolusyon</string>
+    <string name="rdp_geom_custom">Custom</string>
+    <string name="rdp_geom_description_hint">Kailangan ng server ng suporta sa ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Naka-disable</string>
+    <string name="rdp_geom_native_landscape">Native Landscape</string>
+    <string name="rdp_geom_native_portrait">Native Portrait</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Auto-negotiate Security</string>
+    <string name="rdp_security_rdp">RDP Security</string>
+    <string name="rdp_security_tls">TLS Security</string>
+    <string name="rdp_security_nla">Network Level Authentication</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Salamat sa inyong suporta sa aRDP at sa open-source software sa pangkalahatan! Para sa tulong sa paggamit ng aRDP, tingnan ang mga item na Tulong sa Menu, at ang paglalarawan ng app sa market.
+&lt;br&gt;
+&lt;br&gt;
+Ang kasalukuyang listahan ng mga feature ng aRDP ay kinabibilangan ng:
+&lt;br&gt;
+- Plain RDP, RDP na naka-tunnel sa pamamagitan ng SSH.
+&lt;br&gt;
+- Suporta sa libreng pag-ikot. Gamitin ang Operating System upang limitahan ang pag-ikot kung kinakailangan.
+&lt;br&gt;
+- Pagtatakda ng remote resolution, native resolution sa landscape at portrait mode.
+&lt;br&gt;
+- Paglikha at pag-export ng SSH Public/Private key-pair.
+&lt;br&gt;
+- Awtomatikong pag-save ng Session.
+&lt;br&gt;
+- Mga mode ng scaling na Zoomable, Fit to Screen, at One to One.
+&lt;br&gt;
+- Multi-touch na kontrol sa remote mouse sa Direct at Simulated Touchpad input mode.
+&lt;br&gt;
+- Kumpletong kontrol sa isang kamay sa remote mouse sa Single-Handed input mode.
+&lt;br&gt;
+- Multi-touch mouse clicks: i-tap para sa Left-click, two-finger tap para sa right-click, three-finger-tap para sa middle click.
+&lt;br&gt;
+- Multi-touch scrolling: two finger drag Pataas/Pababa, at Pakaliwa/Pakanan upang mag-scroll.
+&lt;br&gt;
+- On-screen meta at arrow key na maaaring ganap na i-disable mula sa menu o ilagay gamit ang on-screen button.
+&lt;br&gt;
+- Pagpapadala ng Teksto at arbitrary na mga Key combination kapag nakakonekta.
+&lt;br&gt;
+- Tulong sa paglikha ng mga koneksyon (\"Menu-&gt;Connection Help\") sa connection screen.
+&lt;br&gt;
+- Tulong sa mga paraan ng input (\"Menu-&gt;More-&gt;Input Mode Help\") kapag nakakonekta.
+&lt;br&gt;
+- Paggamit ng available na trackpad bilang Mga Arrow sa halip na paglilipat ng mouse, at trackpad click bilang Ctrl, pag-ikot ng D-pad/trackpad para sa BT keyboard.
+&lt;br&gt;
+- Suporta sa maraming wika, hangga\'t ang RDP server ay may kinakailangang language layout na naka-enable.
+&lt;br&gt;
+- Maayos na mga pagbabago sa resolusyon ng remote machine
+&lt;br&gt;
+- Buong suporta sa mouse sa mga Android 4.0+ device, kasama ang right at middle click at scroll wheel.
+&lt;br&gt;
+- Pagpipilian ng mga color mode
+&lt;br&gt;
+- Integrasyon ng Copy/Paste
+&lt;br&gt;
+- Pag-export ng mga setting
+&lt;br&gt;
+- Sound
+&lt;br&gt;
+&lt;br&gt;
+Mga kilalang isyu:</string>
+    <string name="rdp_intro_title">aRDP: Intuitive, secure RDP client</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kapag nagdagdag o nag-edit kayo ng koneksyon, makikita ninyo ang pahina ng configuration ng koneksyon. Dito maaari kayong mag-set up ng bagong RDP koneksyon, o pumili ng mayroon nang isa. Sa itaas ay isang button na nagbibigay-daan sa inyong i-save ang koneksyon. Sa ibaba nito ay kung saan ninyo iko-configure ang inyong koneksyon.
+
+ - Uri ng Koneksyon: Dito ninyo pipiliin ang uri ng RDP koneksyon. Ang mga available na uri ng koneksyon ay:
+   (a) RDP, na direktang kumokonekta sa isang computer sa pamamagitan ng RDP protocol.
+   (b) RDP sa pamamagitan ng SSH, na una ay nagtu-tunnel ng inyong koneksyon sa pamamagitan ng isang computer na nagpapatakbo ng SSH server.
+
+ - Pamagat: Ang bawat koneksyon na inyong nilikha ay maaaring magkaroon ng palayaw upang madaling matukoy ito sa listahan.
+
+ - Mga Setting ng SSH Tunnel: Available sa RDP over SSH mode.
+   (a) SSH Server/Port: Ang address at port ng SSH server na dadaanan ng koneksyon. Bilang default, nakikinig ang SSH sa port 22.
+   (b) Username/Password: Ang username at password ng account sa SSH server. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng app mula nang huling ilagay ninyo ito.
+   (c) Manage Key/Use Key: Isang button upang pamahalaan ang mga public/private key, at isang checkbox na nagpapahiwatig kung gagamitin ang key sa halip na password upang mag-authenticate. Kung gagamitin ninyo ang button na Copy to Clipboard pagkatapos ng paglikha ng key-pair, dapat kayong makapag-paste ng public key kapag nakakonekta sa RDP server (ang clipboard ay naka-sync sa server).
+
+ - Mga Setting ng RDP Koneksyon:
+   (a) RDP Server/Port: Dito ninyo ilalagay ang host name o IP address at port ng computer na nagpapatakbo ng RDP server na nais ninyong makipag-ugnayan. Sa RDP over SSH mode, ang address na ito ay nakikita mula sa SSH Server. Kung ang SSH Server at RDP server ay iisang pisikal na computer, maaari kayong gumamit ng localhost. Karaniwang nakikinig ang mga RDP server sa port 3389.
+   (b) RDP User: Dito ninyo ilalagay ang inyong Windows/UNIX account user name.
+   (c) RDP Domain: Ilagay ang domain na kinabibilangan ng inyong account.
+   (d) RDP Password: Dito ninyo ilalagay ang inyong Windows/UNIX account password. Hindi ginagamit ang secure storage para sa mga password (nasa database ang mga ito), at ang password ay maitatago lamang kung magche-check kayo ng \"Keep\" box. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng app mula nang huling ilagay ninyo ito.
+
+ - Mga advanced na setting: Sa seksyong ito makikita ninyo ang mga paraan upang i-customize ang resolusyon ng desktop, at iba\'t ibang RDP performance tweak.
+
+ - Mga Lokal na Device Tweak: Inaangkop ng mga ito ang gawi ng app sa inyong device.
+   (a) Gumamit ng D-Pad para sa mga arrow: Kung gusto ninyo, maaari ninyong gamitin ang D-Pad ng inyong Bluetooth keyboard o mga arrow sa inyong on-screen keyboard upang magpadala ng mga arrow sa RDP server.
+   (b) I-rotate ang D-Pad: Ang mga telepono na nakipag-pair sa Bluetooth keyboard ay maaaring kailangang paikutin ang D-pad ng keyboard nang counter-clockwise upang magpadala ng tamang direksyon sa server.
+   (c) Lokal na mouse pointer: Kung hindi makita ang pointer, piliin ito upang pilitin itong iguhit ng app."</string>
+    <string name="rdp_password_hint">RDP Password</string>
+    <string name="rdp_server_empty">Walang laman ang RDP Server o port. Hindi makakonekta!</string>
+    <string name="rdp_username_hint">RDP Username</string>
+
+    <string name="remote_sound_disabled">Naka-disable ang Sound</string>
+    <string name="remote_sound_on_device">Sound sa Device</string>
+    <string name="remote_sound_on_server">Sound sa Server</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">MAHALAGA: Kung gumagamit ng UltraVNC repeater, ilagay ang address at port nito sa labas ng dialog na ito. Dito, ilagay ang address at port ng aktwal na VNC server. Paghiwalayin ang address at port ng VNC server gamit ang colon, hal. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Huwag Gamitin</string>
+    <string name="repeater_dialog_title">VNC Server sa Likod ng Repeater</string>
+    <string name="repeater_empty_text">Walang repeater</string>
+    <string name="repeater_save">Gamitin</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt bilang ISO L3 Shift (VNC lamang)</string>
+
+    <string name="rotate_dpad">I-rotate ang Bluetooth o software D-Pad</string>
+
+    <string name="save_as_copy">I-save bilang Kopya</string>
+
+    <string name="scaling">Scaling</string>
+    <string name="scaling_zoomable">Zoomable</string>
+
+    <string name="send_button">Ipadala</string>
+    <string name="send_key_again">Ipadala Muli ang Key</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC Connection</string>
+    <string name="shortcut_label_rdp">RDP Connection</string>
+    <string name="shortcut_label_spice">SPICE Connection</string>
+
+    <string name="showkbd_label">Keyboard</string>
+
+    <string name="single_cancel">Nakansela ang single-handed mode</string>
+    <string name="single_choose">Pumili ng single-handed mode o kanselahin</string>
+    <string name="single_left">Left-drag mode - mag-swipe upang mag-drag/pumili, angatin ang daliri upang huminto</string>
+    <string name="single_middle">Middle-drag mode - mag-swipe upang mag-drag/pumili, angatin ang daliri upang huminto</string>
+    <string name="single_reposition">Naireposisyon ang mouse pointer para sa single-handed mode</string>
+    <string name="single_right">Right-drag mode - mag-swipe upang mag-drag/pumili, angatin ang daliri upang huminto</string>
+    <string name="single_scroll">Scroll mode - mag-swipe pataas/pababa upang mag-scroll, angatin ang daliri upang huminto</string>
+    <string name="single_zoom">Zoom mode - mag-swipe pataas/pababa upang mag-zoom in/out, angatin ang daliri upang huminto</string>
+
+    <string name="snap_one_to_one">Naka-snap sa 1:1 zoom</string>
+
+    <string name="special_keys">Magpadala ng Mga Key</string>
+
+    <string name="spice_address_caption_hint">SPICE Server</string>
+    <string name="spice_button_import_ca">Mag-import ng CA</string>
+    <string name="spice_ca_cert_path_hint">Path patungo sa certificate authority file</string>
+    <string name="spice_ca_file_error_reading">Error sa pagbabasa ng CA file. Mangyaring tiyakin na mababasa ito.</string>
+    <string name="spice_ca_file_not_found">Hindi nahanap ang file. Mangyaring maglagay ng wastong pangalan ng file sa text field (hal. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Certificate Subject</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Salamat sa inyong suporta sa aSPICE at sa open-source software sa pangkalahatan! Para sa tulong sa paggamit ng aSPICE, tingnan ang mga item na Tulong sa Menu, at ang paglalarawan ng app sa market.
+&lt;br&gt;
+&lt;br&gt;
+Ang kasalukuyang listahan ng mga feature ng aSPICE ay kinabibilangan ng:
+&lt;br&gt;
+- Plain SPICE, SPICE na naka-tunnel sa pamamagitan ng SSH.
+&lt;br&gt;
+- Suporta sa libreng pag-ikot. Gamitin ang Operating System upang limitahan ang pag-ikot kung kinakailangan.
+&lt;br&gt;
+- Paglikha at pag-export ng SSH Public/Private key-pair.
+&lt;br&gt;
+- Awtomatikong pag-save ng Session.
+&lt;br&gt;
+- Mga mode ng scaling na Zoomable, Fit to Screen, at One to One.
+&lt;br&gt;
+- Multi-touch na kontrol sa remote mouse sa Direct at Simulated Touchpad input mode.
+&lt;br&gt;
+- Kumpletong kontrol sa isang kamay sa remote mouse sa Single-Handed input mode.
+&lt;br&gt;
+- Multi-touch mouse clicks: i-tap para sa Left-click, two-finger tap para sa right-click, three-finger-tap para sa middle click.
+&lt;br&gt;
+- Multi-touch scrolling: two finger drag Pataas/Pababa, at Pakaliwa/Pakanan upang mag-scroll.
+&lt;br&gt;
+- On-screen meta at arrow key na maaaring ganap na i-disable mula sa menu o ilagay gamit ang on-screen button.
+&lt;br&gt;
+- Pagpapadala ng Teksto at arbitrary na mga Key combination kapag nakakonekta.
+&lt;br&gt;
+- Tulong sa paglikha ng mga koneksyon (\"Menu-&gt;Connection Help\") sa connection screen.
+&lt;br&gt;
+- Tulong sa mga paraan ng input (\"Menu-&gt;More-&gt;Input Mode Help\") kapag nakakonekta.
+&lt;br&gt;
+- Paggamit ng available na trackpad bilang Mga Arrow sa halip na paglilipat ng mouse, at trackpad click bilang Ctrl, pag-ikot ng D-pad/trackpad para sa BT keyboard.
+&lt;br&gt;
+- Suporta sa maraming wika, hangga\'t ang SPICE server ay may kinakailangang language layout na naka-enable.
+&lt;br&gt;
+- Maayos na mga pagbabago sa resolusyon ng remote machine
+&lt;br&gt;
+- Buong suporta sa mouse sa mga Android 4.0+ device, kasama ang right at middle click at scroll wheel.
+&lt;br&gt;
+&lt;br&gt;
+Mga planong feature:
+&lt;br&gt;
+- Integrasyon ng Copy/Paste
+&lt;br&gt;
+- Sound
+&lt;br&gt;
+- Mga pagpapabuti sa performance
+&lt;br&gt;
+Mga kilalang isyu:
+&lt;br&gt;
+- Hindi nagpapadala ng ilang simbolo ang send text.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitive, secure SPICE client</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kapag nagdagdag o nag-edit kayo ng koneksyon, makikita ninyo ang pahina ng configuration ng koneksyon. Dito maaari kayong mag-set up ng bagong SPICE koneksyon, o pumili ng mayroon nang isa. Sa itaas ay isang button na nagbibigay-daan sa inyong i-save ang koneksyon. Sa ibaba nito ay kung saan ninyo iko-configure ang inyong koneksyon.
+
+ - Uri ng Koneksyon: Dito ninyo pipiliin ang uri ng SPICE koneksyon. Ang mga available na uri ng koneksyon ay:
+   (a) SPICE, na direktang kumokonekta sa isang computer sa pamamagitan ng SPICE protocol.
+   (b) SPICE sa pamamagitan ng SSH, na una ay nagtu-tunnel ng inyong koneksyon sa pamamagitan ng isang computer na nagpapatakbo ng SSH server.
+
+ - Pamagat: Ang bawat koneksyon na inyong nilikha ay maaaring magkaroon ng palayaw upang madaling matukoy ito sa listahan.
+
+ - Mga Setting ng SSH Tunnel: Available sa SPICE over SSH mode.
+   (a) SSH Server/Port: Ang address at port ng SSH server na dadaanan ng koneksyon. Bilang default, nakikinig ang SSH sa port 22.
+   (b) Username/Password: Ang username at password ng account sa SSH server. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng app mula nang huling ilagay ninyo ito.
+   (c) Manage Key/Use Key: Isang button upang pamahalaan ang mga public/private key, at isang checkbox na nagpapahiwatig kung gagamitin ang key sa halip na password upang mag-authenticate. Kung gagamitin ninyo ang button na Copy to Clipboard pagkatapos ng paglikha ng key-pair, dapat kayong makapag-paste ng public key kapag nakakonekta sa SPICE server (ang clipboard ay naka-sync sa server).
+
+ - Mga Setting ng SPICE Koneksyon:
+   (a) SPICE Server/Port: Dito ninyo ilalagay ang host name o IP address at port ng computer na nagpapatakbo ng SPICE server na nais ninyong makipag-ugnayan. Sa SPICE over SSH mode, ang address na ito ay nakikita mula sa SSH Server. Kung ang SSH Server at SPICE server ay iisang pisikal na computer, maaari kayong gumamit ng localhost. Karaniwang nakikinig ang mga SPICE server sa port 5900 pataas.
+   (b) SPICE Password: Dito ninyo ilalagay ang password na itinakda upang protektahan ang inyong SPICE session. Hindi ginagamit ang secure storage para sa mga password (nasa database ang mga ito), at ang password ay maitatago lamang kung magche-check kayo ng \"Keep\" box. Malalaman ang password sa pahinang ito kung hindi kayo nag-quit ng app mula nang huling ilagay ninyo ito.
+
+ - Mga advanced na setting: Sa seksyong ito makikita ninyo ang anumang lokal na device o SPICE performance tweak.
+ - Mga Lokal na Device Tweak: Inaangkop ng mga ito ang gawi ng app sa inyong device.
+   (a) Gumamit ng D-Pad para sa mga arrow: Kung gusto ninyo, maaari ninyong gamitin ang D-Pad ng inyong Bluetooth keyboard o mga arrow sa inyong on-screen keyboard upang magpadala ng mga arrow sa SPICE server.
+   (b) I-rotate ang D-Pad: Ang mga telepono na nakipag-pair sa Bluetooth keyboard ay maaaring kailangang paikutin ang D-pad ng keyboard nang counter-clockwise upang magpadala ng tamang direksyon sa server.
+   (c) Lokal na mouse pointer: Kung hindi makita ang pointer, piliin ito upang pilitin itong iguhit ng app."</string>
+    <string name="spice_password_hint">SPICE Password</string>
+    <string name="spice_server_empty">Walang laman ang SPICE Server o port. Hindi makakonekta!</string>
+    <string name="spice_tls_port_hint">TLS Port</string>
+    <string name="spice_username_hint">SPICE Username</string>
+
+    <string name="ssh_passphrase_hint">SSH Passphrase</string>
+    <string name="ssh_pubkey_button">Pamahalaan ang Key</string>
+    <string name="ssh_use_pubkey">Gumamit ng Key</string>
+    <string name="ssh_use_x11vnc">Auto Desktop</string>
+    <string name="ssh_x11vnc_customize">I-configure ang AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">I-disable</string>
+    <string name="tap_enable">I-enable</string>
+
+    <string name="username_caption">VNC User</string>
+    <string name="username_hint">UltraVNC MS Logon Username</string>
+    <string name="username_hint_optional">VNC Username (opsyonal)</string>
+    <string name="username_hint_ssh">SSH Username</string>
+    <string name="username_hint_vencrypt">VNC Username</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verification_code_message">Mangyaring ilagay ang Verification Code ng multi-factor authentication</string>
+
+    <string name="view_only">View-only mode</string>
+
+    <string name="vnc_server_empty">Walang laman ang VNC Server o port. Hindi makakonekta!</string>
+    <string name="vnc_server_empty_no_save">Walang laman ang VNC Server o port. Hindi ma-save ang koneksyon!</string>
+
+    <string name="warning_cert_does_not_match">BABALA: Ang nakatipong x509 na sertipiko o naipasang lagda ay hindi tumutugma sa kasalukuyang sertipiko ng server! Maaaring ito ay isang man-in-the-middle attack. Kung alam ninyo ang pagbabago ng key, maaari kayong magpatuloy. </string>
+    <string name="copy_logcat">📋 Kopyahin ang Logcat</string>
+    <string name="log_copied">Nakopya ang Logcat sa clipboard. Maaari na ninyong i-paste ito sa isang email o sa support forum. Mangyaring tingnan ang para sa anumang personal na data bago mag-post.</string>
+    <string name="info_set_touchpad_input_mode">Inuulat ng server na hindi nito sinusuportahan ang Client Mode Mouse Input, at ang kasalukuyang mouse input mode ay hindi gagana nang tama. Kung nagpapatuloy ito, tiyakin na naka-install ang spice tools sa virtual machine o lumipat sa Simulated Touchpad Input Mode mula sa Menu.</string>
+    <string name="ssh_tunnel_settings">Mga Setting ng SSH Tunnel</string>
+    <string name="vnc_connection_settings">Mga Setting ng VNC Koneksyon</string>
+    <string name="show_advanced_settings">Ipakita ang Mga Advanced na Setting</string>
+    <string name="use_no_compression_for_local_connections">Walang compression (lokal na koneksyon, Hextile encoding)</string>
+    <string name="rdp_connection_settings">Mga Setting ng RDP Koneksyon</string>
+    <string name="local_device_tweaks">Mga Lokal na Device Tweak</string>
+    <string name="spice_connection_settings">Mga Setting ng SPICE Koneksyon</string>
+    <string name="ca_subject">Ilagay dito ang pangalan ng subject ng sertipiko. Maaaring hindi kailangan kung ang common name (CN) ng cert ay tumutugma sa hostname ng server.</string>
+    <string name="path_to_ca">Maglagay ng file path (halimbawa /sdcard/ca-cert.pem) at i-tap ang I-import upang ma-load ang inyong Certificate Authority.</string>
+    <string name="paste_ca">Ilagay dito ang Certificate Authority kung hindi kayo nag-i-import nito bilang file.</string>
+    <string name="cert_issuer">Certificate Issuer</string>
+    <string name="cert_fingerprint">Certificate Fingerprint</string>
+    <string name="error">Error</string>
+    <string name="panning">Panning Screen</string>
+    <string name="copy_of">Kopya ng</string>
+    <string name="ssh_key_generated">Matagumpay na naglikha o nag-import ng bagong key. Maaari na ninyong i-tap ang button na \'Generate/Export Key\' upang ibahagi, kopyahin sa clipboard, o i-export ang public key.</string>
+    <string name="cursor_force_local">"Local"</string>
+    <string name="cursor_force_disable">"Disable"</string>
+    <string name="cursor_mode">"Cursor Mode:"</string>
+    <string name="rendering_mode">"Rendering Mode:"</string>
+    <string name="color_24_bit">"24-bit na kulay (24 bpp)"</string>
+    <string name="color_256">"256 kulay (8 bpp)"</string>
+    <string name="color_64">"64 kulay (4 bpp)"</string>
+    <string name="color_8">"8 kulay (2 bpp)"</string>
+    <string name="color_greyscale">"Greyscale (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Black & White (1 bpp)"]]></string>
+    <string name="show">"Ipakita"</string>
+    <string name="hide">"Itago"</string>
+    <string name="search_connections">Maghanap ng Koneksyon</string>
+    <string name="user_not_specified">Hindi tinukoy ang user</string>
+    <string name="enter_ssh_credentials">Mangyaring ilagay ang mga SSH credential</string>
+    <string name="enter_vnc_credentials">Mangyaring ilagay ang mga VNC credential</string>
+    <string name="enter_vnc_password">Mangyaring ilagay ang VNC password</string>
+    <string name="enter_rdp_credentials">Mangyaring ilagay ang mga RDP credential</string>
+    <string name="enter_gateway_credentials">Mangyaring ilagay ang mga Gateway credential</string>
+    <string name="enter_spice_password">Mangyaring ilagay ang SPICE password</string>
+    <string name="enter_passphrase_title">Ilagay ang Key Passphrase</string>
+    <string name="enter_passphrase">Mangyaring ilagay ang Key Passphrase</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Kailangan ng inyong server ng password authentication bilang karagdagan sa key authentication.</string>
+    <string name="main_screen_help_text">"
+Kapag inilunsad ang application, nagpapakita ito ng screen na may mga nakatipong koneksyon dito.
+
+Kung walang nakatipong koneksyon, ang mas mababang bahagi ng screen ay walang laman, at kailangan ninyong pindutin ang plus button upang lumikha ng bago.
+Maaari rin ninyong kontrolin ang iba pang aspeto ng configuration mula sa screen na ito sa pamamagitan ng pag-tap sa iba pang mga opsyon ng tool-bar o menu sa itaas, halimbawa
+upang mag-edit ng mga default na setting, o mag-import at mag-export ng mga setting.
+
+Kapag may nakatipong koneksyon, maaari kayong kumonekta sa remote server sa pamamagitan ng pag-tap nito nang isang beses. Magkakaroon din kayo ng pagpipilian na burahin o i-edit ito sa pamamagitan ng matagal na pag-tap nito.
+
+Sa wakas, maaari ninyong gamitin ang field na Search Connections upang mabilis na mahanap ang mga koneksyon sa pamamagitan ng pag-filter ng mga ipinapakitang koneksyon."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kapag nagdagdag o nag-edit kayo ng koneksyon, makikita ninyo ang pahina ng configuration ng koneksyon.
+Dito maaari kayong mag-set up ng bagong Opaque koneksyon o pumili ng mayroon nang isa.
+Sa itaas ay isang button na nagbibigay-daan sa inyong i-save ang koneksyon.
+Sa ibaba nito ay kung saan ninyo iko-configure ang inyong koneksyon.
+
+ - Uri ng Koneksyon: Dito ninyo pipiliin kung anong Virtualization Environment ang inyong kokonektahan.
+
+ - Address ng Server: Ang hostname o IP ng server. Kung nakikinig ito sa non-standard na port, maaari kayong magdagdag ng port na pinaghiwalay ng colon.
+
+ - Pangalan ng virtual machine: Maaari ninyong tukuyin ang pangalan ng VM tulad ng lumabas sa inyong Virtualization platform o mag-iwan ng field na ito na blangko upang makakuha ng listahan ng mga VM o container na pipiliin.
+
+ - User: Ilagay ang user name upang mag-authenticate sa inyong virtualization framework.
+
+ - Password: Kung nais ninyong i-save ang password, ilagay ito dito o mag-iwan ng field na blangko upang matanong para dito sa bawat pagkakataon.
+
+ - Mga advanced na setting: Sa seksyong ito makikita ninyo ang anumang lokal na device, protocol, at performance tweak."
+    </string>
+    <string name="help">Tulong ⓘ</string>
+    <string name="need_help">Kailangan ng tulong?</string>
+    <string name="support_forum">Support Forum ❓</string>
+    <string name="email_us">Mag-email sa Amin 📧</string>
+    <string name="report_bug">Mag-ulat ng Bug 🐛</string>
+    <string name="download_from_server">I-download mula sa Server</string>
+    <string name="import_from_file">Mag-import mula sa File</string>
+    <string name="please_grant_permission_from_prefs">Maaaring kailangang magbigay ng mga pahintulot sa application sa pamamagitan ng Mga Setting.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Karagdagang Debug Logging</string>
+    <string name="prefer_sending_unicode">Unicode input (Windows lamang)</string>
+    <string name="hide_connection_thumbnails">Itago ang Mga Connection Thumbnail</string>
+    <string name="show_only_connection_nicknames">Ipakita Lamang ang Mga Palayaw ng Koneksyon</string>
+    <string name="love_our_work">Gusto ang aming gawa?</string>
+    <string name="rate_app">I-rate ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Ibahagi 🔗</string>
+    <string name="share_app_toast">Ibahagi ang link sa app sa lahat ng inyong mga kaibigan sa social media!</string>
+    <string name="donate_app">Mag-donate ❤</string>
+    <string name="more_apps">Higit pang Mga App 📱</string>
+    <string name="previous_versions">Mga Nakaraang Bersyon ⍼</string>
+    <string name="keyboard_type">Uri ng Software Keyboard</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Default (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Teksto/Mga Numero Walang Mungkahi (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Teksto Na May Mga Mungkahi (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Ang koneksyong ito ay naka-set upang ilunsad ang VPN sa pamamagitan ng panlabas na app. Kailangan ninyong mag-install ng app tulad ng Morpheusly upang ilunsad ito.</string>
+    <string name="vnc_viewer_started">Nasimulan ang VNC Viewer</string>
+    <string name="enable_gateway">I-enable ang RDP Gateway</string>
+    <string name="scroll_speed">Bilis ng Touch Scroll</string>
+    <string name="desktop_scale_percentage">Custom na Scaling Percentage</string>
+    <string name="show_menu">Ipakita ang Menu</string>
+    <string name="move_toolbar">Ilipat ang Toolbar</string>
+    <string name="rdp_adv_glyph_cache">I-enable ang Glyph Cache</string>
+
+    <string name="disable_battery_optimizations_failed">
+Hindi mabuksan ang mga setting ng pag-optimize ng baterya. I-disable nang manu-mano ang pag-optimize ng baterya sa mga setting ng system.</string>
+    <string name="disable_battery_optimizations">
+🔋Huwag paganahin ang Battery Optimizations</string>
+    <string name="disable_battery_optimizations_already_done">
+Exempt na ang app sa mga pag-optimize ng baterya.</string>
+    <string name="no_connections_title">Wala pang mga koneksyon</string>
+    <string name="no_connections_hint">I-tap ang button na + upang idagdag ang iyong unang remote na koneksyon</string>
+    <string name="no_connections_hint_tv">Pindutin ang button na + sa itaas upang idagdag ang iyong unang remote na koneksyon</string>
+    <string name="keyboard_layout_map">Layout ng Keyboard</string>
+</resources>

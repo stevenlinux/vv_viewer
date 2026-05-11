@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">Chế độ màu</string>
+    <string name="message_please_wait">Vui lòng chờ</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Mặc định (TYPE_NULL)</string>
+    <string name="ad_donate_text2">Phiên bản Pro cho phép bạn tắt hộp thoại này và cấp cho bạn quyền truy cập vào các tính năng bổ sung.</string>
+    <string name="snap_one_to_one">Đã chụp ở chế độ thu phóng 1:1</string>
+    <string name="spice_intro_title">aSPICE: Ứng dụng khách SPICE trực quan, an toàn</string>
+    <string name="auto_x_title">Định cấu hình AutoX</string>
+    <string name="error_ovirt_auth_failure">Xác thực thất bại. Vui lòng kiểm tra người dùng và mật khẩu được cung cấp.</string>
+    <string name="ad_donate_text1">Nhấn vào đây để hỗ trợ dự án bằng một khoản quyên góp nhỏ bằng cách mua phiên bản Pro.</string>
+    <string name="auto_x_geom_custom">Phong tục</string>
+    <string name="repeater_caption_hint">Bộ lặp UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">Không thể giải mã cặp khóa. Hãy đảm bảo bạn đã nhập chính xác cụm mật khẩu của mình vào trường \'Cụm mật khẩu SSH\' trên màn hình chính.</string>
+    <string name="master_password_hint_twice">Lặp lại mật khẩu</string>
+    <string name="connection_setup_password">Mật khẩu</string>
+    <string name="support_forum">Diễn đàn hỗ trợ ❓</string>
+    <string name="main_screen_help">Trợ giúp kết nối</string>
+    <string name="spice_server_empty">Máy chủ SPICE hoặc cổng trống. Không thể kết nối!</string>
+    <string name="arrow_up">Mũi tên lên</string>
+    <string name="error_vm_lookup_failed">Không thể tìm thấy máy ảo có tên được chỉ định cho người dùng của bạn. Vui lòng xóa tên VM được chỉ định để xem danh sách VM được gán cho người dùng.</string>
+    <string name="nickname_caption">Biệt hiệu</string>
+    <string name="auto_x_geom_native">Tự nhiên</string>
+    <string name="new_connection">Kết nối mới</string>
+    <string name="error_ssh_unable_to_connect">Không thể kết nối với Máy chủ SSH. Vui lòng kiểm tra kết nối mạng cũng như địa chỉ và cổng Máy chủ SSH.</string>
+    <string name="send_key_again">Gửi lại chìa khóa</string>
+    <string name="input_mode_help">Trợ giúp về chế độ nhập liệu</string>
+    <string name="enable_gateway">Bật RDP Gateway</string>
+    <string name="message_please_install_bvnc">Vui lòng cài đặt &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; từ Google Play để kết nối với bảng điều khiển VNC của máy ảo này.</string>
+    <string name="spice_ca_cert_path_hint">Đường dẫn đến tập tin ủy quyền chứng nhận</string>
+    <string name="enter_spice_password">Vui lòng nhập mật khẩu SPICE</string>
+    <string name="rdp_adv_window_contents">Hiển thị nội dung cửa sổ trong khi kéo</string>
+    <string name="input_methods">Phương thức nhập</string>
+    <string name="info_ssh_key_fingerprint">Dấu vân tay của khóa máy chủ là:</string>
+    <string name="paste_ca">Nhập Tổ chức phát hành chứng chỉ vào đây nếu bạn không nhập nó dưới dạng tệp.</string>
+    <string name="enter_otp_code">Vui lòng nhập mã OTP</string>
+    <string name="spice_connection_screen_help_text">Khi bạn thêm hoặc chỉnh sửa kết nối, bạn sẽ thấy trang cấu hình kết nối. Tại đây, bạn có thể thiết lập kết nối SPICE mới hoặc chọn kết nối có sẵn. Ở trên cùng là nút cho phép bạn lưu kết nối. Dưới đây là nơi bạn định cấu hình kết nối của mình.
+
+- Connection Type: Ở đây bạn chọn kiểu kết nối SPICE. Các loại kết nối có sẵn là:
+(a) SPICE, kết nối trực tiếp với máy tính qua giao thức SPICE.
+(b) SPICE qua SSH, đường hầm đầu tiên kết nối của bạn thông qua máy tính chạy máy chủ SSH.
+
+- Tiêu đề: Mỗi kết nối bạn tạo có thể có biệt danh để dễ dàng nhận biết trong danh sách.
+
+- Cài đặt đường hầm SSH: Có sẵn trong SPICE qua chế độ SSH.
+(a) Máy chủ/Cổng SSH: Địa chỉ và cổng của máy chủ SSH mà kết nối sẽ được chuyển qua. Theo mặc định SSH lắng nghe trên cổng 22.
+(b) Tên người dùng/Mật khẩu: Tên người dùng và mật khẩu của tài khoản trên máy chủ SSH. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+(c) Quản lý khóa/Sử dụng khóa: Nút để quản lý khóa chung/riêng và hộp kiểm cho biết có nên sử dụng khóa thay vì mật khẩu để xác thực hay không. Nếu bạn sử dụng nút Sao chép vào bảng nhớ tạm sau khi tạo cặp khóa, bạn sẽ có thể dán khóa chung sau khi được kết nối với máy chủ SPICE (bảng tạm được đồng bộ hóa với máy chủ).
+
+- Cài đặt kết nối SPICE:
+(a) Máy chủ/Cổng SPICE: Đây là nơi bạn nhập tên máy chủ hoặc địa chỉ IP và cổng của máy tính chạy máy chủ SPICE mà bạn muốn liên hệ. Trong chế độ SPICE qua SSH, địa chỉ này được hiển thị từ Máy chủ SSH. Nếu Máy chủ SSH và máy chủ SPICE là cùng một máy tính vật lý, bạn có thể sử dụng localhost. Máy chủ SPICE thường nghe trên cổng 5900 trở lên.
+(d) Mật khẩu SPICE: Đây là nơi bạn nhập mật khẩu được đặt để bảo vệ phiên SPICE của mình. Bộ nhớ an toàn không được sử dụng cho mật khẩu (chúng nằm trong cơ sở dữ liệu) và mật khẩu sẽ chỉ được lưu trữ nếu bạn chọn hộp Keep. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+
+- Cài đặt nâng cao: Trong phần này, bạn sẽ tìm thấy mọi điều chỉnh hiệu suất của thiết bị cục bộ hoặc SPICE
+- Tinh chỉnh thiết bị cục bộ: Những điều chỉnh này điều chỉnh hoạt động của ứng dụng trên thiết bị của bạn.
+(a) Sử dụng D-Pad cho mũi tên: Nếu muốn, bạn có thể sử dụng D-Pad của bàn phím Bluetooth hoặc các mũi tên trên bàn phím ảo để gửi mũi tên đến máy chủ SPICE.
+(b) Xoay D-Pad: Điện thoại được ghép nối với bàn phím Bluetooth có thể cần xoay D-pad của bàn phím ngược chiều kim đồng hồ để gửi hướng dẫn chính xác đến máy chủ.
+(c) Con trỏ chuột cục bộ: Nếu con trỏ không hiển thị, hãy chọn mục này để buộc ứng dụng vẽ nó.</string>
+    <string name="auto_x_disabled_selection">AutoX đã bị vô hiệu hóa</string>
+    <string name="button_send_text">Gửi văn bản</string>
+    <string name="shortcut_label_spice">Kết nối gia vị</string>
+    <string name="keep_screen_awake_enable">Giữ màn hình luôn tỉnh táo</string>
+    <string name="open_doc">Hướng dẫn sử dụng/Wiki</string>
+    <string name="remote_sound_disabled">Âm thanh bị tắt</string>
+    <string name="spice_ca_file_not_found">Không tìm thấy tập tin. Vui lòng nhập tên tệp hợp lệ vào trường văn bản (ví dụ: /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: Máy khách RDP trực quan, an toàn</string>
+    <string name="error_pve_api_unexpected_code">Phản hồi không mong đợi từ Môi trường ảo Proxmox:</string>
+    <string name="error_out_of_memory">Không thể phân bổ đủ bộ nhớ để vẽ màn hình từ xa. Hãy thử khởi động lại ứng dụng, sau đó khởi động lại thiết bị của bạn. Bạn cũng có thể thử giảm kích thước của máy tính từ xa thông qua cài đặt ứng dụng.</string>
+    <string name="enter_passphrase_title">Nhập cụm mật khẩu chính</string>
+    <string name="copy_of">Bản sao của</string>
+    <string name="rdp_adv_remotefx">Kích hoạt RemoteFX</string>
+    <string name="ok">ĐƯỢC RỒI</string>
+    <string name="rdp_adv_desktop_background">Hiển thị nền màn hình</string>
+    <string name="desktop_scale_percentage">Tỷ lệ chia tỷ lệ tùy chỉnh</string>
+    <string name="password_caption_ssh">Xác thực SSH.</string>
+    <string name="rdp_adv_font_smoothing">Thực hiện làm mịn phông chữ</string>
+    <string name="rdp_domain_hint">Tên miền RDP</string>
+    <string name="custom_ca_subject">Chủ đề chứng chỉ tùy chọn. Không cần thiết nếu chứng chỉ CN khớp với tên máy chủ</string>
+    <string name="color_24_bit">Màu 24 bit (24 bpp)</string>
+    <string name="ssh_passphrase_hint">Cụm mật khẩu SSH</string>
+    <string name="username_hint">Tên người dùng đăng nhập UltraVNC MS</string>
+    <string name="error_failed_to_download_https">Không thể tải xuống tệp qua HTTPS. Có lẽ chứng chỉ máy chủ của bạn không đáng tin cậy (đã hết hạn hoặc tự ký) hoặc máy chủ của bạn không thể truy cập được.</string>
+    <string name="rdp_geom_checkbox_enable">Kích hoạt độ phân giải tùy chỉnh</string>
+    <string name="enter_rdp_credentials">Vui lòng nhập thông tin xác thực RDP</string>
+    <string name="error_dialog_title">Lỗi</string>
+    <string name="ssl_strict">Yêu cầu tên chung để khớp với chứng chỉ (được khuyến nghị)</string>
+    <string name="master_password_hint_once">Nhập mật khẩu</string>
+    <string name="one_to_one">Một đối một</string>
+    <string name="action_rate_or_share_app">⭐ Nhận trợ giúp, xếp hạng, chia sẻ</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Máy chủ SSH không hỗ trợ các phương thức xác thực \password\ hay \keyboard-interactive\ hoặc yêu cầu phương thức \publickey\ trước tiên. Vui lòng định cấu hình nó để cho phép ít nhất một trong hai phương pháp hoặc định cấu hình lại ứng dụng. Các phương thức xác thực có sẵn:</string>
+    <string name="import_settings">Nhập khẩu</string>
+    <string name="hide_toolbar">Ẩn thanh công cụ</string>
+    <string name="verification_code_message">Vui lòng nhập Mã xác thực xác thực đa yếu tố</string>
+    <string name="need_help">Cần giúp đỡ?</string>
+    <string name="rdp_security_auto">Tự động đàm phán bảo mật</string>
+    <string name="master_password_error_failed_to_enable">Không thể kích hoạt mật khẩu chính. Hãy kiểm tra dung lượng trống trên thiết bị của bạn và thử lại.</string>
+    <string name="cert_issuer">Nhà phát hành chứng chỉ</string>
+    <string name="error">Lỗi</string>
+    <string name="error_anon_dh_unsupported">Máy chủ VNC đang cố gắng sử dụng mật mã Anonymous Diffie Hellman không được hỗ trợ trên thiết bị Android của bạn. Nếu sử dụng máy chủ Vino VNC của GNOME\, bạn có thể tắt AnonTLS bằng cách chạy lệnh sau trong một thiết bị đầu cuối rồi khởi động lại: \gsettings set org.gnome.Vino require-encryption false\. Nếu chạy x11vnc, bạn có thể thêm các tùy chọn sau: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">Bánh xe cuộn</string>
+    <string name="auto_x_session_auto">Tự động</string>
+    <string name="enter_gateway_credentials">Vui lòng nhập thông tin đăng nhập Cổng</string>
+    <string name="control_check">Điều khiển</string>
+    <string name="ad_donate_text_vnc">Dự án Nguồn Mở cần sự hỗ trợ của bạn! Hãy đóng góp cho chúng tôi bằng cách mua bVNC Pro. Xem bên dưới để biết các liên kết đến bVNC Pro và các ứng dụng khác của chúng tôi.</string>
+    <string name="input_method_mouse">Điều khiển con trỏ chuột</string>
+    <string name="pro_feature_rdp">Có vẻ như bạn đã cố mở tệp .rdp, một tính năng của Pro. Vui lòng hỗ trợ dự án bằng cách mua aRDP Pro, hỗ trợ các tệp .rdp. Liên kết đến phiên bản aRDP Pro có sẵn trong hộp thoại bắt đầu.</string>
+    <string name="opaque_connection_screen_help_text">Khi bạn thêm hoặc chỉnh sửa kết nối, bạn sẽ thấy trang cấu hình kết nối.
+Tại đây bạn có thể thiết lập kết nối Opaque mới hoặc chọn kết nối có sẵn.
+Ở trên cùng là nút cho phép bạn lưu kết nối.
+Dưới đây là nơi bạn định cấu hình kết nối của mình.
+
+- Kiểu kết nối: Tại đây bạn chọn Môi trường ảo hóa mà bạn đang kết nối.
+
+- Server address: Tên máy chủ hoặc IP của máy chủ. Nếu nó đang nghe trên một cổng không chuẩn, bạn có thể thêm một cổng được phân tách bằng dấu hai chấm.
+
+- Tên máy ảo: Bạn có thể chỉ định tên của VM giống như tên xuất hiện trên nền tảng Ảo hóa của bạn hoặc để trống trường này để lấy danh sách các VM hoặc vùng chứa để chọn.
+
+- User: Nhập tên người dùng để xác thực với framework ảo hóa của bạn.
+
+- Mật khẩu: Nếu bạn muốn lưu mật khẩu, hãy nhập mật khẩu vào đây hoặc để trống trường này để được truy vấn mỗi lần.
+
+- Cài đặt nâng cao: Trong phần này, bạn sẽ tìm thấy mọi điều chỉnh về thiết bị, giao thức và hiệu suất cục bộ.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Văn bản có đề xuất (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">Sao chép danh sách</string>
+    <string name="master_password_error_failed_to_disable">Không thể vô hiệu hóa mật khẩu chính. Hãy kiểm tra dung lượng trống trên thiết bị của bạn và thử lại.</string>
+    <string name="use_no_compression_for_local_connections">Không nén (kết nối cục bộ, mã hóa Hextile)</string>
+    <string name="input_mode_help_text">Ở bất kỳ Chế độ nhập liệu nào, hãy nhấn vào biểu tượng bàn phím để lấy bàn phím ảo. Ngoài ra, thiết bị của bạn có thể có cử chỉ riêng để hiển thị bàn phím.
+
+Sử dụng chế độ nhập trực tiếp để điều khiển màn hình cảm ứng trực quan hơn. Sử dụng Chế độ bàn di chuột mô phỏng để kiểm soát chuột tốt hơn.
+
+Chế độ trực tiếp, vuốt Pan:
+- Điều khiển chuột trực tiếp thông qua cảm ứng.
+- Vuốt để xoay xung quanh.
+- Thao tác nhấn sẽ nhấp chuột vào nơi bạn đã nhấn.
+- Sự kiện cuộn được gửi giữa hai ngón tay nơi bắt đầu thao tác vuốt bằng hai ngón tay.
+
+Chế độ Pan trực tiếp, giữ:
+- Điều khiển chuột trực tiếp thông qua cảm ứng.
+- Nhấn và giữ để bắt đầu chế độ xoay.
+- Thao tác nhấn sẽ nhấp chuột vào nơi bạn đã nhấn.
+- Sự kiện cuộn được gửi giữa hai ngón tay nơi bắt đầu thao tác vuốt bằng hai ngón tay.
+
+Chế độ bàn di chuột mô phỏng:
+- Sử dụng màn hình của bạn như một bàn di chuột.
+- Vuốt để di chuyển con trỏ chuột xung quanh.
+- Di chuyển chuột ra ngoài mép màn hình để xoay.
+- Thao tác nhấn sẽ nhấp chuột vào vị trí của con trỏ.
+- Sự kiện cuộn được gửi đến nơi con trỏ chuột được đặt.
+
+Chế độ một tay:
+- Tương tự như Chế độ Trực tiếp, Vuốt Pan, ngoại trừ việc nhấn và giữ menu sẽ mở ra với các lựa chọn chế độ.
+- Sau khi chọn chế độ, vuốt ngón tay trên màn hình sẽ thực hiện thao tác đã chọn.
+- Nhấc ngón tay lên hoàn thành động tác.
+
+Tất cả các chế độ đầu vào:
+- Nhấp chuột trái: Nhấn một lần.
+- Double click: Nhấn đúp.
+- Nhấp chuột phải: Nhấn giữ và nhấn bằng ngón tay thứ hai (bất kỳ nơi nào khác trên màn hình).
+- Nhấp chuột phải thay thế: Sử dụng nút \Quay lại\ hoặc cử chỉ cho thiết bị của bạn.
+- Nhấp chuột giữa: Nhấn giữ và nhấn bằng hai ngón tay nữa (bất cứ nơi nào khác trên màn hình).
+- Kéo chuột: Nhấn giữ và vuốt.
+- Bánh xe cuộn: Dùng 2 ngón tay kéo lên/xuống và sang trái/phải. Kéo nhanh cuộn nhanh hơn.
+- Phóng to/thu nhỏ: Trong Tỷ lệ có thể phóng to, chụm-thu phóng để kiểm soát tỷ lệ.
+- Phím Ctrl/Alt: Menu-&gt;Ctrl/Alt. Đừng quên tắt khi hoàn tất!
+- Tổ hợp phím: Menu-&gt;Thêm-&gt;Gửi phím.
+- Gửi văn bản: Gõ trên bàn phím ảo hoặc sử dụng Menu-&gt;Thêm-&gt;Gửi văn bản.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt dưới dạng ISO L3 Shift (chỉ VNC)</string>
+    <string name="error_uri_noinfo_nosave">Không đủ thông tin cụ thể để kết nối.</string>
+    <string name="single_reposition">Con trỏ chuột được định vị lại cho chế độ một tay</string>
+    <string name="auto_x_cancel">Hủy bỏ</string>
+    <string name="vv_file_not_found">Không tìm thấy tệp .vv!</string>
+    <string name="error_pve_failed_to_authenticate">Không thể xác thực với Môi trường ảo Proxmox. Vui lòng đảm bảo rằng bạn nhập tên người dùng ở định dạng user@realm và mật khẩu của bạn là chính xác.</string>
+    <string name="save_as_copy">Lưu dưới dạng bản sao</string>
+    <string name="info_cert">Bạn có chấp nhận chứng chỉ máy chủ mới hoặc đã thay đổi này không?\n\nDấu vân tay:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nĐược cấp cho: %4$s\nĐược cấp bởi: %5$s\n\nCó hiệu lực từ: %6$s\nCó hiệu lực cho đến: %7$s\n</string>
+    <string name="more_debug_logging">Thêm ghi nhật ký gỡ lỗi</string>
+    <string name="error_ssh_key_auth_fail">Không thể xác thực với máy chủ SSH bằng cặp khóa. Vui lòng kiểm tra tên người dùng SSH của bạn và đảm bảo khóa chung của bạn nằm trong tệp ủy quyền ở phía xa.</string>
+    <string name="error_vnc_authentication">Xác thực VNC không thành công! Kiểm tra mật khẩu VNC (và người dùng nếu có).</string>
+    <string name="toggle_keyboard">Chuyển đổi bàn phím</string>
+    <string name="help">Trợ giúp ⓘ</string>
+    <string name="repeater_caption">QUAN TRỌNG: Nếu sử dụng bộ lặp UltraVNC, hãy nhập địa chỉ và cổng của nó bên ngoài hộp thoại này. Tại đây, nhập địa chỉ và cổng của máy chủ VNC thực tế. Phân tách địa chỉ và cổng của máy chủ VNC bằng dấu hai chấm, ví dụ:192.168.0.100:5900.</string>
+    <string name="color_8">8 màu (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">Không thể kết nối hoặc xác thực, vui lòng kiểm tra địa chỉ máy chủ, người dùng, mật khẩu cũng như chủ đề và tổ chức chứng nhận.</string>
+    <string name="error_rdp_authentication_failed">Xác thực RDP không thành công! Vui lòng kiểm tra tên người dùng và mật khẩu RDP rồi thử lại.</string>
+    <string name="delete_key_list">Xóa danh sách khóa</string>
+    <string name="input_method_direct_swipe_pan_description">Trực tiếp, Vuốt Pan: Vuốt để xoay xung quanh. Nhấn bằng một ngón tay vào bất cứ nơi nào bạn muốn nhấp chuột trái, hai ngón tay để nhấp chuột phải và ba ngón tay để nhấp chuột giữa. Vuốt bằng hai ngón tay để cuộn. Nhấn lâu để kéo và thả.</string>
+    <string name="address_caption_hint">Máy chủ VNC</string>
+    <string name="auto_x_unixpw">Sử dụng thông tin xác thực UNIX thay vì cơ chế bảo mật tích hợp. Người dùng phải có khả năng chạy /bin/su.</string>
+    <string name="input_method_touchpad">Bàn di chuột mô phỏng</string>
+    <string name="fit_to_screen">Vừa với màn hình</string>
+    <string name="list_name_caption">Tên danh sách</string>
+    <string name="copy_logcat">📋 Sao chép logcat</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA tùy chỉnh</string>
+    <string name="info_progress_dialog_downloading">Tải xuống khung hình đầu tiên.\Vui lòng đợi…</string>
+    <string name="local_mouse_check">Con trỏ chuột cục bộ (chọn nếu con trỏ ẩn)</string>
+    <string name="rdp_server_empty">Máy chủ RDP hoặc cổng trống. Không thể kết nối!</string>
+    <string name="rendering_mode">Chế độ kết xuất:</string>
+    <string name="rdp_adv_visual_styles">Bật kiểu trực quan</string>
+    <string name="error_ovirt_timeout">Kết nối với máy ảo của bạn đã hết thời gian chờ. Vui lòng kiểm tra xem địa chỉ của nút chạy VM của bạn có chính xác không, địa chỉ đó có thể truy cập được từ mạng hiện tại của bạn không và không có tường lửa nào chặn kết nối.</string>
+    <string name="extra_keys_enable">Kích hoạt khóa bổ sung</string>
+    <string name="showkbd_label">Bàn phím</string>
+    <string name="audio">Âm thanh</string>
+    <string name="ssh_x11vnc_customize">Định cấu hình AutoX</string>
+    <string name="address_caption_ssh_hint">Máy chủ SSH</string>
+    <string name="info_progress_dialog_connecting">Đang kết nối…</string>
+    <string name="donate_app">Đóng góp ❤</string>
+    <string name="rdp_security_rdp">Bảo mật RDP</string>
+    <string name="applies_to_new_connections_only">Chỉ áp dụng cho các kết nối mới</string>
+    <string name="spice_button_import_ca">Nhập CA</string>
+    <string name="scaling_zoomable">Có thể phóng to</string>
+    <string name="error_ssh_port_forwarding_failure">Không thể thiết lập chuyển tiếp cổng để tạo đường hầm lưu lượng VNC qua SSH. Vui lòng đảm bảo máy chủ SSH của bạn được định cấu hình để cho phép chuyển tiếp cổng và thử lại.</string>
+    <string name="rdp_adv_desktop_composition">Bật thành phần máy tính để bàn</string>
+    <string name="scroll_speed">Tốc độ cuộn cảm ứng</string>
+    <string name="rdp_address_caption_hint">Máy chủ RDP</string>
+    <string name="send_button">Gửi</string>
+    <string name="love_our_work">Yêu công việc của chúng tôi?</string>
+    <string name="download_from_server">Tải xuống từ máy chủ</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Máy chủ của bạn cần xác thực mật khẩu ngoài xác thực khóa.</string>
+    <string name="input_method_single_handed">Một tay</string>
+    <string name="username_hint_ssh">Tên người dùng SSH</string>
+    <string name="auto_x_enabled">Đã bật</string>
+    <string name="password_hint_ssh">Mật khẩu SSH</string>
+    <string name="audio_will_be_initialized">Âm thanh sẽ được khởi tạo sau khoảng 15 giây, vui lòng dừng mọi video hoặc âm thanh đang chạy trước đó</string>
+    <string name="shortcut_label_vnc">Kết nối VNC</string>
+    <string name="auto_request_new_res">Đồng bộ hóa từ xa để hiển thị độ phân giải</string>
+    <string name="color_256">256 màu (8 bpp)</string>
+    <string name="intro_title">bVNC: Máy khách VNC trực quan, an toàn</string>
+    <string name="error_x509_could_not_generate_encoding">Không thể tạo mã hóa chứng chỉ.</string>
+    <string name="rdp_security_tls">Bảo mật TLS</string>
+    <string name="action_import_settings">Cài đặt nhập</string>
+    <string name="single_cancel">Đã hủy chế độ một tay</string>
+    <string name="info_set_touchpad_input_mode">Máy chủ báo cáo rằng nó không hỗ trợ Nhập chuột ở Chế độ Máy khách và chế độ nhập chuột hiện tại sẽ không hoạt động chính xác. Nếu điều này vẫn tiếp diễn, hãy đảm bảo rằng các công cụ gia vị đã được cài đặt trong máy ảo hoặc chuyển sang Chế độ nhập bằng bàn di chuột mô phỏng từ Menu.</string>
+    <string name="email_us">Gửi email cho chúng tôi 📧</string>
+    <string name="color_64">64 màu (4 bpp)</string>
+    <string name="ssh_key_generated">Khóa mới được tạo hoặc nhập thành công. Giờ đây, bạn có thể nhấn vào nút \'Tạo/Xuất khóa\' để chia sẻ, sao chép vào bảng nhớ tạm hoặc xuất khóa chung.</string>
+    <string name="repeater_button">Bộ lặp UltraVNC</string>
+    <string name="info_dialog_title">Thông tin</string>
+    <string name="local_clipboard_integration">Kích hoạt tích hợp Clipboard cục bộ với từ xa</string>
+    <string name="cursor_force_local">Địa phương</string>
+    <string name="list_caption">Danh sách</string>
+    <string name="master_password_error_password_necessary">Cần có Mật khẩu chính để tiếp tục.</string>
+    <string name="ssh_use_pubkey">Sử dụng khóa</string>
+    <string name="super_check">siêu</string>
+    <string name="enter_text">Gửi văn bản</string>
+    <string name="import_export_settings">📦 Cài đặt nhập/xuất</string>
+    <string name="info_progress_dialog_aborted">Kết nối bị hủy!</string>
+    <string name="input_method_single_handed_description">Một tay: Vuốt để xoay xung quanh. Nhấn bằng một ngón tay vào bất cứ nơi nào bạn muốn nhấp chuột trái. Nhấn và giữ để chọn chế độ kéo trái/phải/giữa/cuộn/thu phóng. Điều khiển cảm ứng đa điểm thông thường cũng hoạt động.</string>
+    <string name="verification_code">Mã xác minh</string>
+    <string name="extra_keys_disable">Vô hiệu hóa các phím bổ sung</string>
+    <string name="rotate_dpad">Xoay Bluetooth hoặc phần mềm D-Pad</string>
+    <string name="intro_close">Đóng</string>
+    <string name="master_password_error_shortcuts_not_supported">Các phím tắt chưa được hỗ trợ khi Mật khẩu chính được bật.</string>
+    <string name="enter_vnc_credentials">Vui lòng nhập thông tin đăng nhập VNC</string>
+    <string name="connection_edit">Biên tập</string>
+    <string name="error_spice_unable_to_connect">Không thể kết nối hoặc xác thực, vui lòng kiểm tra địa chỉ và cổng máy chủ.</string>
+    <string name="remote_sound_on_server">Âm thanh trên máy chủ</string>
+    <string name="left_handed_mode">Chế độ thuận tay trái</string>
+    <string name="info_ssh_initializing_hostkey">Đang cố gắng khởi tạo SSH HostKey.</string>
+    <string name="connect_button">Kết nối</string>
+    <string name="ca_new_or_changed">Chứng chỉ máy chủ mới hoặc đã thay đổi</string>
+    <string name="close">Đóng</string>
+    <string name="master_password_verify">Xác minh mật khẩu chính</string>
+    <string name="error_no_vnc_support_yet">Loại hiển thị VNC chưa được hỗ trợ nhưng đây là một tính năng sắp ra mắt. Cảm ơn sự hiểu biết của bạn!</string>
+    <string name="rdp_connection_settings">Cài đặt kết nối RDP</string>
+    <string name="immersive_mode_disable">Tắt chế độ nhập vai</string>
+    <string name="error_pve_null_data">Môi trường ảo Proxmox trả về dữ liệu rỗng.</string>
+    <string name="auto_x_descript_geom">Kích thước máy tính từ xa (WxH)</string>
+    <string name="enter_passphrase">Vui lòng nhập Cụm mật khẩu chính</string>
+    <string name="action_edit_default_settings">⚙ Chỉnh sửa cài đặt mặc định</string>
+    <string name="ca_spice_manage">Quản lý SPICE CA</string>
+    <string name="color_mode">Chế độ màu</string>
+    <string name="back_button">Quay lại</string>
+    <string name="rate_app">Đánh giá ⭐⭐⭐⭐⭐</string>
+    <string name="off">Tắt</string>
+    <string name="ssh_tunnel_settings">Cài đặt đường hầm SSH</string>
+    <string name="error_pve_vmid_not_numeric">ID VM không phải là số. Vui lòng nhập ID VM dạng số hoặc để trống để chọn VM từ danh sách.</string>
+    <string name="cert_subject">Chủ đề chứng chỉ</string>
+    <string name="rdp_descript_geom">Kích thước máy tính từ xa (WxH)</string>
+    <string name="master_password_error_wrong_password">Không thể xác thực bằng Mật khẩu chính được cung cấp.</string>
+    <string name="error_pick_correct_item">Hãy đảm bảo bạn đã chọn đúng mục trong Loại kết nối.</string>
+    <string name="input_method_direct_drag_pan">Trực tiếp, Giữ Pan</string>
+    <string name="auto_rotation">Xoay màn hình khi kết nối</string>
+    <string name="master_password_verify_message">Vui lòng nhập đúng Mật khẩu chính để tiếp tục.</string>
+    <string name="error_connection_interrupted">Kết nối bị gián đoạn.</string>
+    <string name="auto_x_descript_session">Loại phiên từ xa</string>
+    <string name="action_new_connection">✚ Kết nối mới</string>
+    <string name="enter_text_title">Nhập văn bản để gửi</string>
+    <string name="shortcut_label_rdp">Kết nối RDP</string>
+    <string name="spice_address_caption_hint">Máy chủ SPICE</string>
+    <string name="rdp_geom_description_hint">Máy chủ cần hỗ trợ ExtendedDesktopSize</string>
+    <string name="audio_initialized">Đã khởi tạo âm thanh</string>
+    <string name="intro_text">Danh sách các tính năng hiện tại của bVNC:
+&lt;br&gt;
+- VNC thuần túy, VNC bảo mật qua SSH, AnonTLS và VeNCrypt và Đăng nhập Windows UltraVNC với Bộ lặp tùy chọn.
+&lt;br&gt;
+- Chế độ AutoX: Trong chế độ VNC qua SSH, tự động khám phá các phiên X hiện có và/hoặc tạo phiên X mới bằng x11vnc! Hoạt động giống như máy khách NX.
+&lt;br&gt;
+- Hỗ trợ xoay vòng miễn phí. Sử dụng Hệ điều hành để hạn chế xoay nếu cần.
+&lt;br&gt;
+- Tạo và xuất cặp khóa SSH Public/Private.
+&lt;br&gt;
+- Tất cả các mã hóa VNC tiêu chuẩn, bao gồm Tight, ZRLE và CopyRect.
+&lt;br&gt;
+- Tự động lưu phiên.
+&lt;br&gt;
+- Chế độ chia tỷ lệ có thể thu phóng, Vừa với màn hình và Một đến Một.
+&lt;br&gt;
+- Điều khiển cảm ứng đa điểm trên chuột từ xa ở chế độ nhập Touchpad trực tiếp và mô phỏng.
+&lt;br&gt;
+- Điều khiển hoàn toàn bằng một tay đối với chuột từ xa ở chế độ nhập bằng một tay.
+&lt;br&gt;
+- Nhấp chuột đa chạm: chạm để nhấp chuột trái, chạm hai ngón tay để nhấp chuột phải, chạm ba ngón tay để nhấp chuột giữa.
+&lt;br&gt;
+- Di chuyển đa điểm: hai ngón tay kéo Lên/Xuống và Trái/Phải để cuộn.
+&lt;br&gt;
+- Các phím mũi tên và meta trên màn hình có thể bị tắt hoàn toàn khỏi menu hoặc được xếp gọn bằng nút trên màn hình.
+&lt;br&gt;
+- Gửi văn bản và tổ hợp phím tùy ý khi kết nối.
+&lt;br&gt;
+- Trợ giúp tạo kết nối (\Menu-&gt;Trợ giúp kết nối\) trong màn hình kết nối.
+&lt;br&gt;
+- Trợ giúp về các chế độ nhập (\Menu-&gt;More-&gt;Trợ giúp chế độ nhập\) khi được kết nối.
+&lt;br&gt;
+- Sử dụng trackpad có sẵn dưới dạng Arrows thay vì di chuyển chuột và click vào trackpad dưới dạng Ctrl.
+&lt;br&gt;
+- Chuyển sang chế độ dọc trong khi kết nối, xoay D-pad/trackpad cho bàn phím BT.
+&lt;br&gt;
+- Hỗ trợ đa ngôn ngữ, miễn là máy chủ VNC đã bật bố cục ngôn ngữ cần thiết.
+&lt;br&gt;
+- Tích hợp sao chép/dán
+&lt;br&gt;
+- Thay đổi độ phân giải máy từ xa
+&lt;br&gt;
+- Hỗ trợ chuột đầy đủ trên các thiết bị Android 4.0+, bao gồm nhấp chuột phải, giữa và con lăn.
+&lt;br&gt;
+&lt;br&gt;
+Các vấn đề đã biết:
+&lt;br&gt;</string>
+    <string name="color_greyscale">Thang độ xám (1 bpp)</string>
+    <string name="share_app_toast">Chia sẻ liên kết tới ứng dụng với tất cả bạn bè của bạn trên phương tiện truyền thông xã hội!</string>
+    <string name="force">Bản đồ bit toàn màn hình</string>
+    <string name="input_method_touchpad_description">Bàn di chuột mô phỏng: Vuốt để di chuyển con trỏ. Nhấn vào bất kỳ đâu bằng một ngón tay để nhấp chuột trái, hai ngón tay để nhấp chuột phải và ba ngón tay để nhấp chuột giữa. Vuốt bằng hai ngón tay để cuộn. Nhấn lâu để kéo và thả.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nBạn có thể đảm bảo nó giống hệt với dấu vân tay đã biết của chứng chỉ máy chủ để ngăn chặn cuộc tấn công trung gian.</string>
+    <string name="error_no_vm_found_for_user">Không có sẵn Máy ảo nào cho người dùng nhất định.</string>
+    <string name="color_black_and_white">Đen trắng (1 bpp)</string>
+    <string name="auto">Tự động</string>
+    <string name="pro_feature_generic">Có vẻ như bạn đang sử dụng tính năng Pro. Vui lòng hỗ trợ dự án bằng cách mua phiên bản Pro có hỗ trợ tính năng này. Liên kết đến phiên bản Pro có sẵn trong hộp thoại bắt đầu.</string>
+    <string name="rdp_geom_custom">Phong tục</string>
+    <string name="default_input_mode">Chế độ nhập mặc định</string>
+    <string name="repeater_empty_text">Không có bộ lặp</string>
+    <string name="ad_donate_text_rdp">Dự án Nguồn Mở cần sự hỗ trợ của bạn! Hãy đóng góp cho chúng tôi bằng cách mua aRDP Pro, hỗ trợ chuyển hướng âm thanh. Xem bên dưới để biết các liên kết đến aRDP Pro và các ứng dụng khác của chúng tôi.</string>
+    <string name="spice_tls_port_hint">Cổng TLS</string>
+    <string name="scaling">Chia tỷ lệ</string>
+    <string name="spice_connection_settings">Cài đặt kết nối SPICE</string>
+    <string name="error_pve_failed_to_parse_json">Không thể phân tích cú pháp phản hồi từ Môi trường ảo Proxmox.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Lỗi bắt tay SSL. Có vấn đề với chứng chỉ SSL của máy chủ. Nếu bạn đang sử dụng chứng chỉ tự ký, bạn cần nhập lại tổ chức phát hành chứng chỉ của mình.</string>
+    <string name="connection_setup_user">Người dùng@Miền</string>
+    <string name="vnc_viewer_started">Trình xem VNC đã bắt đầu</string>
+    <string name="ca_subject">Nhập tên chủ đề chứng chỉ ở đây. Có thể không cần thiết nếu tên chung của chứng chỉ (CN) khớp với tên máy chủ của máy chủ.</string>
+    <string name="port_ssh_hint">Cảng</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Máy chủ SSH không hỗ trợ phương thức \publickey\ auth và chúng tôi đang cố gắng sử dụng cặp khóa để xác thực. Vui lòng định cấu hình nó để cho phép xác thực khóa công khai và thử lại. Các phương thức xác thực có sẵn:</string>
+    <string name="username_caption">Người dùng VNC</string>
+    <string name="error_ssh_could_not_exec_command">Không thể thực thi lệnh từ xa.</string>
+    <string name="rdp_intro_text">Cảm ơn bạn đã hỗ trợ aRDP và phần mềm nguồn mở nói chung!Để được trợ giúp về cách sử dụng aRDP, hãy xem các mục Trợ giúp trong Menu và mô tả về ứng dụng trên thị trường.
+&lt;br&gt;
+&lt;br&gt;
+Danh sách các tính năng aRDP hiện tại bao gồm:
+&lt;br&gt;
+- RDP đơn giản, RDP được tạo đường hầm qua SSH.
+&lt;br&gt;
+- Hỗ trợ xoay vòng miễn phí. Sử dụng Hệ điều hành để hạn chế xoay nếu cần.
+&lt;br&gt;
+- Cài đặt độ phân giải từ xa, độ phân giải gốc ở chế độ ngang và dọc.
+&lt;br&gt;
+- Tạo và xuất cặp khóa SSH Public/Private.
+&lt;br&gt;
+- Tự động lưu phiên.
+&lt;br&gt;
+- Chế độ chia tỷ lệ có thể thu phóng, Vừa với màn hình và Một đến Một.
+&lt;br&gt;
+- Điều khiển cảm ứng đa điểm trên chuột từ xa ở chế độ nhập Touchpad trực tiếp và mô phỏng.
+&lt;br&gt;
+- Điều khiển hoàn toàn bằng một tay đối với chuột từ xa ở chế độ nhập bằng một tay.
+&lt;br&gt;
+- Nhấp chuột đa chạm: chạm để nhấp chuột trái, chạm hai ngón tay để nhấp chuột phải, chạm ba ngón tay để nhấp chuột giữa.
+&lt;br&gt;
+- Di chuyển đa điểm: hai ngón tay kéo Lên/Xuống và Trái/Phải để cuộn.
+&lt;br&gt;
+- Các phím mũi tên và meta trên màn hình có thể bị tắt hoàn toàn khỏi menu hoặc được xếp gọn bằng nút trên màn hình.
+&lt;br&gt;
+- Gửi văn bản và tổ hợp phím tùy ý khi kết nối.
+&lt;br&gt;
+- Trợ giúp tạo kết nối (\Menu-&gt;Trợ giúp kết nối\) trong màn hình kết nối.
+&lt;br&gt;
+- Trợ giúp về các chế độ nhập (\Menu-&gt;More-&gt;Trợ giúp chế độ nhập\) khi được kết nối.
+&lt;br&gt;
+- Sử dụng trackpad có sẵn làm Mũi tên thay vì di chuyển chuột và bấm trackpad làm Ctrl, xoay D-pad/trackpad cho bàn phím BT.
+&lt;br&gt;
+- Hỗ trợ đa ngôn ngữ, miễn là máy chủ RDP có bật bố cục ngôn ngữ cần thiết.
+&lt;br&gt;
+- Thay đổi độ phân giải máy từ xa liền mạch
+&lt;br&gt;
+- Hỗ trợ chuột đầy đủ trên các thiết bị Android 4.0+, bao gồm nhấp chuột phải, giữa và con lăn.
+&lt;br&gt;
+- Lựa chọn chế độ màu
+&lt;br&gt;
+- Tích hợp sao chép/dán
+&lt;br&gt;
+- Xuất cài đặt
+&lt;br&gt;
+- Âm thanh
+&lt;br&gt;
+&lt;br&gt;
+Các vấn đề đã biết:</string>
+    <string name="tap_disable">Vô hiệu hóa</string>
+    <string name="view_only">Chế độ chỉ xem</string>
+    <string name="save_button">Cứu</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Không thể gửi mật khẩu sudo.</string>
+    <string name="landscape_force">Buộc định hướng cảnh quan</string>
+    <string name="export_settings">Xuất khẩu</string>
+    <string name="keyboard_type">Loại bàn phím phần mềm</string>
+    <string name="hide_connection_thumbnails">Ẩn hình thu nhỏ kết nối</string>
+    <string name="input_method_direct_drag_pan_description">Direct, Hold Pan: Vuốt để kéo và thả. Nhấn bằng một ngón tay vào bất cứ nơi nào bạn muốn nhấp chuột trái, hai ngón tay để nhấp chuột phải và ba ngón tay để nhấp chuột giữa. Vuốt bằng hai ngón tay để cuộn. Nhấn lâu để bắt đầu xoay.</string>
+    <string name="panning">Màn hình xoay</string>
+    <string name="remote_clipboard_integration">Kích hoạt tích hợp bảng tạm từ xa đến cục bộ</string>
+    <string name="rdp_connection_screen_help_text">Khi bạn thêm hoặc chỉnh sửa kết nối, bạn sẽ thấy trang cấu hình kết nối. Tại đây, bạn có thể thiết lập kết nối RDP mới hoặc chọn kết nối có sẵn. Ở trên cùng là nút cho phép bạn lưu kết nối. Dưới đây là nơi bạn định cấu hình kết nối của mình.
+
+- Connection Type: Tại đây bạn chọn kiểu kết nối RDP. Các loại kết nối có sẵn là:
+(a) RDP, kết nối trực tiếp với máy tính qua giao thức RDP.
+(b) RDP qua SSH, đường hầm đầu tiên kết nối của bạn thông qua máy tính chạy máy chủ SSH.
+
+- Tiêu đề: Mỗi kết nối bạn tạo có thể có biệt danh để dễ dàng nhận biết trong danh sách.
+
+- Cài đặt đường hầm SSH: Có sẵn trong RDP qua chế độ SSH.
+(a) Máy chủ/Cổng SSH: Địa chỉ và cổng của máy chủ SSH mà kết nối sẽ được chuyển qua. Theo mặc định SSH lắng nghe trên cổng 22.
+(b) Tên người dùng/Mật khẩu: Tên người dùng và mật khẩu của tài khoản trên máy chủ SSH. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+(c) Quản lý khóa/Sử dụng khóa: Nút để quản lý khóa chung/riêng và hộp kiểm cho biết có nên sử dụng khóa thay vì mật khẩu để xác thực hay không. Nếu bạn sử dụng nút Sao chép vào bảng tạm sau khi tạo cặp khóa, bạn sẽ có thể dán khóa chung sau khi được kết nối với máy chủ RDP (bảng tạm được đồng bộ hóa với máy chủ).
+
+- Cài đặt kết nối RDP:
+(a) Máy chủ/Cổng RDP: Đây là nơi bạn nhập tên máy chủ hoặc địa chỉ IP và cổng của máy tính chạy máy chủ RDP mà bạn muốn liên hệ. Trong RDP qua chế độ SSH, địa chỉ này được hiển thị từ Máy chủ SSH. Nếu Máy chủ SSH và máy chủ RDP là cùng một máy tính vật lý, bạn có thể sử dụng localhost. Máy chủ RDP thường nghe trên cổng 3389.
+(b) Người dùng RDP: Đây là nơi bạn nhập tên người dùng tài khoản Windows/UNIX của mình.
+(c) Tên miền RDP: Nhập tên miền mà tài khoản của bạn thuộc về.
+(d) Mật khẩu RDP: Đây là nơi bạn nhập mật khẩu tài khoản Windows/UNIX của mình. Bộ nhớ an toàn không được sử dụng cho mật khẩu (chúng nằm trong cơ sở dữ liệu) và mật khẩu sẽ chỉ được lưu trữ nếu bạn chọn hộp Keep. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+
+- Cài đặt nâng cao: Trong phần này, bạn sẽ tìm thấy các cách tùy chỉnh độ phân giải của màn hình và các điều chỉnh hiệu suất RDP khác nhau
+
+- Tinh chỉnh thiết bị cục bộ: Những điều chỉnh này điều chỉnh hoạt động của ứng dụng trên thiết bị của bạn.
+(a) Sử dụng D-Pad cho mũi tên: Nếu muốn, bạn có thể sử dụng D-Pad của bàn phím Bluetooth hoặc các mũi tên trên bàn phím ảo để gửi mũi tên đến máy chủ RDP.
+(b) Xoay D-Pad: Điện thoại được ghép nối với bàn phím Bluetooth có thể cần xoay D-pad của bàn phím ngược chiều kim đồng hồ để gửi hướng dẫn chính xác đến máy chủ.
+(c) Con trỏ chuột cục bộ: Nếu con trỏ không hiển thị, hãy chọn mục này để buộc ứng dụng vẽ nó.</string>
+    <string name="alt_check">thay thế</string>
+    <string name="single_scroll">Chế độ cuộn - vuốt lên/xuống để cuộn, nhấc ngón tay để dừng</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">Chế độ thu phóng - vuốt lên/xuống để phóng to/thu nhỏ, nhấc ngón tay để dừng</string>
+    <string name="rdp_adv_console_mode">Chế độ bảng điều khiển</string>
+    <string name="address_caption_hint_tunneled">Máy chủ VNC</string>
+    <string name="arrow_right">Mũi tên phải</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Văn bản/Số Không có Đề xuất (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">Tên người dùng SPICE</string>
+    <string name="error_rdp_connection_failed">Kết nối RDP không thành công! Kết nối mạng bị gián đoạn, máy chủ RDP bị tắt hoặc vô hiệu hóa hoặc phiên của bạn đã bị tiếp quản.</string>
+    <string name="arrow_left">Mũi tên trái</string>
+    <string name="connection_type_vnc_over_stunnel">Bảo mật VNC qua Đường hầm SSL</string>
+    <string name="report_bug">Báo cáo lỗi 🐛</string>
+    <string name="warning_cert_does_not_match">CẢNH BÁO: Chứng chỉ x509 đã lưu hoặc được chuyển qua chữ ký không khớp với chứng chỉ máy chủ hiện tại!Đây có thể là một cuộc tấn công trung gian. Nếu bạn biết về sự thay đổi quan trọng, bạn có thể tiếp tục.</string>
+    <string name="more_apps">Nhiều ứng dụng hơn 📱</string>
+    <string name="auto_x_disabled">Tàn tật</string>
+    <string name="pro_feature_mfa">Có vẻ như máy chủ của bạn đã bật xác thực đa yếu tố. Vui lòng hỗ trợ dự án bằng cách mua phiên bản Pro có hỗ trợ tính năng này. Liên kết đến phiên bản Pro có sẵn trong hộp thoại bắt đầu.</string>
+    <string name="no_application_to_handle_vpn">Kết nối này được thiết lập để khởi chạy VPN thông qua một ứng dụng bên ngoài. Bạn cần cài đặt một ứng dụng như Morpheusly để khởi chạy nó.</string>
+    <string name="port_caption_ssh">Cổng SSH</string>
+    <string name="arrow_down">Mũi tên xuống</string>
+    <string name="pro_feature_spice">Có vẻ như bạn đã cố mở tệp .vv. Nếu bạn muốn lưu kết nối tới Proxmox hoặc oVirt ngay trong ứng dụng và cũng muốn mở tệp .vv, hãy cân nhắc mua Opaque. Nếu bạn chỉ cần hỗ trợ tệp .vv, bạn có thể tải aSPICE Pro. Tìm liên kết đến cả hai ứng dụng trong hộp thoại bắt đầu.</string>
+    <string name="error_vnc_unable_to_connect">Kết nối với máy chủ VNC không thành công với lý do:</string>
+    <string name="rdp_password_hint">Mật khẩu RDP</string>
+    <string name="custom_ca_paste">Dán (nếu không nhập) CA vào đây</string>
+    <string name="cursor_mode">Chế độ con trỏ:</string>
+    <string name="local_device_tweaks">Tinh chỉnh thiết bị cục bộ</string>
+    <string name="disconnect">Ngắt kết nối</string>
+    <string name="ad_donate_text0">Phiên bản Pro cũng hỗ trợ xác thực SSH đa yếu tố. Ngoài ra, nó còn hỗ trợ tính năng Mật khẩu chính được yêu cầu nhiều để ngăn chặn việc sử dụng trái phép và mã hóa tất cả cài đặt kết nối bao gồm mật khẩu và khóa SSH để bảo vệ chống trộm. Kích hoạt nó từ Menu chính.</string>
+    <string name="info_cert_signatures_identical">\n\nBạn có thể đảm bảo thông tin khớp với chứng chỉ máy chủ để ngăn chặn cuộc tấn công trung gian.</string>
+    <string name="button_send_without_saving">Gửi tin nhắn/Đừng lưu nó</string>
+    <string name="single_right">Chế độ kéo phải - vuốt để kéo/chọn, nhấc ngón tay để dừng</string>
+    <string name="error_ssh_pwd_auth_fail">Không thể xác thực máy chủ SSH bằng mật khẩu. Vui lòng kiểm tra tên người dùng SSH và mật khẩu SSH của bạn.</string>
+    <string name="select_vm_title">Chọn máy ảo</string>
+    <string name="ad_donate_text_spice">Đối với kết nối Proxmox và oVirt, vui lòng quyên góp cho dự án bằng cách mua Opaque hoặc aSPICE Pro. Phiên bản miễn phí của aSPICE chỉ hỗ trợ kết nối trực tiếp tới máy ảo KVM. Xem bên dưới để biết các liên kết đến Opaque và aSPICE Pro cũng như các ứng dụng khác của chúng tôi.</string>
+    <string name="enter_password">Vui lòng nhập mật khẩu</string>
+    <string name="main_screen_help_text">Khi ứng dụng được khởi chạy, nó sẽ hiển thị một màn hình với các kết nối đã lưu trên đó.
+
+Nếu không có kết nối nào được lưu, phần dưới của màn hình sẽ trống và bạn sẽ phải nhấn nút dấu cộng để tạo kết nối mới.
+Bạn cũng có thể kiểm soát các khía cạnh khác của cấu hình từ màn hình này bằng cách nhấn vào các tùy chọn menu hoặc thanh công cụ khác ở trên cùng, để
+dụ để chỉnh sửa cài đặt mặc định hoặc nhập và xuất cài đặt.
+
+Khi bạn đã lưu kết nối, bạn có thể kết nối với máy chủ từ xa bằng cách nhấn vào nó một lần. Bạn cũng sẽ có lựa chọn xóa hoặc chỉnh sửa nó bằng cách nhấn và giữ nó.
+
+Cuối cùng, bạn có thể sử dụng trường Tìm kiếm kết nối để nhanh chóng tìm thấy các kết nối bằng cách lọc các kết nối được hiển thị.</string>
+    <string name="intro_dont_show">Đừng hiển thị lại</string>
+    <string name="action_export_settings">Xuất cài đặt</string>
+    <string name="error_ssh_hostkey_changed">LỖI! Khóa máy chủ của máy chủ đã thay đổi. Nếu đây là cố ý, bạn có thể tiếp tục. Nếu không, đây có thể là một người đàn ông ở giữa cuộc tấn công.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Không thể lấy cổng VNC từ xa từ x11vnc. Hãy đảm bảo x11vnc đã được cài đặt. Để chắc chắn, hãy thử chạy x11vnc bằng tay trên dòng lệnh.</string>
+    <string name="error_failed_to_obtain_content">Không thể lấy được tệp. Vui lòng tải xuống lại nhưng lần này, hãy nhanh chóng mở nó từ thư mục Tải xuống trong Trình quản lý tệp.</string>
+    <string name="show_menu">Hiển thị thực đơn</string>
+    <string name="auto_x_unix_auth">Tự động xác thực bằng Tên người dùng/Mật khẩu SSH được cung cấp (đến màn hình đăng nhập màu đen).</string>
+    <string name="previous_versions">Phiên bản trước ⍼</string>
+    <string name="auto_x_xvnc">Tìm hoặc Tạo bằng Xvnc</string>
+    <string name="auto_x_find">Chỉ Tìm, Không Tạo</string>
+    <string name="port_caption">Cảng VNC</string>
+    <string name="delete_key">Xóa khóa đã chọn</string>
+    <string name="cert_fingerprint">Chứng chỉ vân tay</string>
+    <string name="enter_vnc_password">Vui lòng nhập mật khẩu VNC</string>
+    <string name="port_hint">Cảng</string>
+    <string name="import_from_file">Nhập từ tệp</string>
+    <string name="error_rdp_unable_to_connect">Không thể kết nối với máy chủ RDP! Vui lòng đảm bảo cài đặt Máy chủ RDP chính xác, máy chủ được bật, RDP được bật và máy chủ nằm trên cùng mạng với thiết bị này.</string>
+    <string name="rdp_geom_disabled">Tàn tật</string>
+    <string name="ad_donate_spice_text1b">Nhấn vào đây để mua phiên bản Pro và chỉ cần mở tệp .vv.</string>
+    <string name="spice_ca_file_error_reading">Lỗi đọc tệp CA. Hãy đảm bảo nó có thể đọc được.</string>
+    <string name="info_vm_launched_on_stand_by">Máy ảo của bạn được phát hiện đã tắt nguồn và đã được khởi động. Vui lòng thử lại sau vài phút. Nếu bạn thử quá sớm và gặp lỗi kết nối, hãy thử lại sau.</string>
+    <string name="special_keys">Gửi chìa khóa</string>
+    <string name="error_failed_to_download_http">Không thể tải xuống tệp qua HTTP. Có lẽ máy chủ của bạn không thể truy cập được.</string>
+    <string name="rdp_geom_automatic">Tự động</string>
+    <string name="portrait_mode">Chuyển sang chế độ dọc khi được kết nối</string>
+    <string name="master_password_set_error">Mật khẩu không khớp, hãy cẩn thận!</string>
+    <string name="enter_ssh_credentials">Vui lòng nhập thông tin xác thực SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">Máy chủ VNC đằng sau bộ lặp</string>
+    <string name="prefer_sending_unicode">Đầu vào Unicode (chỉ dành cho Windows)</string>
+    <string name="auto_x_caption">Ứng dụng có thể tự động khám phá các phiên X hiện có và tạo mới trên hệ thống Linux/UNIX (tương tự như NX). Bạn cần x11vnc để tìm và Xvfb, Xvnc hoặc Xdummy để tạo phiên. Nếu bạn gặp sự cố khi kết nối, hãy thử chọn Loại phiên từ xa cụ thể trong Cài đặt nâng cao AutoX.</string>
+    <string name="auto_x_confirm">Xác nhận</string>
+    <string name="position_toolbar_last_used">Khôi phục vị trí thanh công cụ</string>
+    <string name="error_no_such_vm_found_for_user">Không tìm thấy Máy ảo nào có ID được cung cấp cho người dùng cụ thể. Xóa ID để lấy danh sách VM.</string>
+    <string name="single_middle">Chế độ kéo giữa - vuốt để kéo/chọn, nhấc ngón tay để dừng</string>
+    <string name="info_encoding">mã hóa,</string>
+    <string name="rdp_geom_native_portrait">Chân dung bản địa</string>
+    <string name="input_mode">Chế độ nhập liệu</string>
+    <string name="action_delete_connection">Xóa kết nối</string>
+    <string name="keys_caption">Phím</string>
+    <string name="single_left">Chế độ kéo sang trái - vuốt để kéo/chọn, nhấc ngón tay để dừng</string>
+    <string name="vv_file_error">Tệp .vv bị thiếu hoặc bị hỏng!</string>
+    <string name="connection_delete">Xóa bỏ</string>
+    <string name="info_progress_dialog_establishing">Đang thiết lập bắt tay.\nXin vui lòng đợi…</string>
+    <string name="keep_password_button">Giữ</string>
+    <string name="auto_x_find_login">Tìm X Đăng nhập (cần sudo)</string>
+    <string name="ssh_use_x11vnc">Máy tính để bàn tự động</string>
+    <string name="address_caption_ssh">Máy chủ SSH</string>
+    <string name="spice_password_hint">Mật khẩu gia vị</string>
+    <string name="cursor_force_disable">Vô hiệu hóa</string>
+    <string name="master_password_error_password_not_set">Việc đặt Mật khẩu chính đã bị hủy.</string>
+    <string name="info_update_color_model_to">Đang cập nhật mẫu màu thành</string>
+    <string name="rdp_adv_menu_animation">Hiển thị ảnh động menu</string>
+    <string name="input_method_help">Trợ giúp về phương thức nhập liệu</string>
+    <string name="enable_recording">Bật ghi âm</string>
+    <string name="path_to_ca">Nhập đường dẫn tệp (ví dụ /sdcard/ca-cert.pem) và nhấn Nhập để tải Tổ chức phát hành chứng chỉ của bạn.</string>
+    <string name="nickname_caption_hint">Tiêu đề (tùy chọn)</string>
+    <string name="connection_caption">Sự liên quan</string>
+    <string name="pan_follow_mouse">Pan đuổi theo chuột</string>
+    <string name="rdp_geom_native_landscape">Phong Cảnh Bản Địa</string>
+    <string name="meta_key_title">Gửi chìa khóa đặc biệt</string>
+    <string name="move_toolbar">Di chuyển thanh công cụ</string>
+    <string name="input_mode_fit_to_screen">Không có chảo;Chuột bi xoay</string>
+    <string name="enable_sound">Bật âm thanh</string>
+    <string name="error_security_type">Máy chủ không cung cấp loại bảo mật được hỗ trợ.</string>
+    <string name="connection_type_text">Môi trường ảo hóa (RHEV/oVirt hoặc Proxmox)</string>
+    <string name="connection_setup_host_name">Địa chỉ máy chủ</string>
+    <string name="vnc_server_empty_no_save">Máy chủ hoặc cổng VNC trống. Không thể lưu kết nối!</string>
+    <string name="ca_ovirt_manage">Quản lý RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">Quản lý CA tùy chỉnh</string>
+    <string name="ca_file_not_found">Không tìm thấy tập tin. Vui lòng nhập tên tệp hợp lệ vào trường văn bản (ví dụ: /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">Vui lòng nhập và ghi nhớ Mật khẩu chính. Mật khẩu của bạn càng dài thì càng khó bị bẻ khóa. Nếu bạn đặt sai mật khẩu hoặc quên mật khẩu, bạn sẽ mất tất cả cài đặt của mình! Bạn có thể muốn xuất cài đặt của mình ngay bây giờ để sao lưu chúng (từ Menu). Lưu trữ chúng một cách an toàn vì cài đặt xuất không được mã hóa.</string>
+    <string name="repeater_clear">Đừng sử dụng</string>
+    <string name="ad_donate_text3">Nếu bạn muốn hỗ trợ thêm cho dự án, hãy nhấp vào các liên kết sau để có liên kết đến ứng dụng khách dành cho:</string>
+    <string name="vnc_connection_settings">Cài đặt kết nối VNC</string>
+    <string name="master_password_enable">🔒 Kích hoạt mật khẩu chính</string>
+    <string name="new_list_button">Danh sách mới</string>
+    <string name="spice_intro_text">Cảm ơn bạn đã ủng hộ aSPICE và phần mềm nguồn mở nói chung!Để được trợ giúp về cách sử dụng aSPICE, hãy xem các mục Trợ giúp trong Menu và mô tả về ứng dụng trên thị trường.
+&lt;br&gt;
+&lt;br&gt;
+Danh sách các tính năng aSPICE hiện tại bao gồm:
+&lt;br&gt;
+- SPICE đơn giản, SPICE được tạo đường hầm qua SSH.
+&lt;br&gt;
+- Hỗ trợ xoay vòng miễn phí. Sử dụng Hệ điều hành để hạn chế xoay nếu cần.
+&lt;br&gt;
+- Tạo và xuất cặp khóa SSH Public/Private.
+&lt;br&gt;
+- Tự động lưu phiên.
+&lt;br&gt;
+- Chế độ chia tỷ lệ có thể thu phóng, Vừa với màn hình và Một đến Một.
+&lt;br&gt;
+- Điều khiển cảm ứng đa điểm trên chuột từ xa ở chế độ nhập Touchpad trực tiếp và mô phỏng.
+&lt;br&gt;
+- Điều khiển hoàn toàn bằng một tay đối với chuột từ xa ở chế độ nhập bằng một tay.
+&lt;br&gt;
+- Nhấp chuột đa chạm: chạm để nhấp chuột trái, chạm hai ngón tay để nhấp chuột phải, chạm ba ngón tay để nhấp chuột giữa.
+&lt;br&gt;
+- Di chuyển đa điểm: hai ngón tay kéo Lên/Xuống và Trái/Phải để cuộn.
+&lt;br&gt;
+- Các phím mũi tên và meta trên màn hình có thể bị tắt hoàn toàn khỏi menu hoặc được xếp gọn bằng nút trên màn hình.
+&lt;br&gt;
+- Gửi văn bản và tổ hợp phím tùy ý khi kết nối.
+&lt;br&gt;
+- Trợ giúp tạo kết nối (\Menu-&gt;Trợ giúp kết nối\) trong màn hình kết nối.
+&lt;br&gt;
+- Trợ giúp về các chế độ nhập (\Menu-&gt;More-&gt;Trợ giúp chế độ nhập\) khi được kết nối.
+&lt;br&gt;
+- Sử dụng trackpad có sẵn làm Mũi tên thay vì di chuyển chuột và bấm trackpad làm Ctrl, xoay D-pad/trackpad cho bàn phím BT.
+&lt;br&gt;
+- Hỗ trợ đa ngôn ngữ, miễn là máy chủ SPICE đã bật bố cục ngôn ngữ cần thiết.
+&lt;br&gt;
+- Thay đổi độ phân giải máy từ xa liền mạch
+&lt;br&gt;
+- Hỗ trợ chuột đầy đủ trên các thiết bị Android 4.0+, bao gồm nhấp chuột phải, giữa và con lăn.
+&lt;br&gt;
+&lt;br&gt;
+Các tính năng dự kiến:
+&lt;br&gt;
+- Tích hợp sao chép/dán
+&lt;br&gt;
+- Âm thanh
+&lt;br&gt;
+- Cải thiện hiệu suất
+&lt;br&gt;
+Các vấn đề đã biết:
+&lt;br&gt;
+- Gửi văn bản không gửi một số ký hiệu.
+&lt;br&gt;</string>
+    <string name="info">Thông tin</string>
+    <string name="connection_edit_delete_prompt">Bạn có muốn chỉnh sửa hoặc xóa kết nối</string>
+    <string name="connection_type_caption">Kiểu kết nối</string>
+    <string name="usb">USB (cắm cáp OOT trước)</string>
+    <string name="connection_type_vnc_over_vencrypt">Bảo mật VNC qua VeNCrypt</string>
+    <string name="log_copied">Đã sao chép logcat vào clipboard. Bây giờ bạn có thể dán nó vào email hoặc trên diễn đàn hỗ trợ. Vui lòng xem qua mọi dữ liệu cá nhân trước khi đăng.</string>
+    <string name="disable_pointer_offset_correction">Tắt hiệu chỉnh bù con trỏ</string>
+    <string name="password_caption_hint">Mật khẩu VNC</string>
+    <string name="user_not_specified">Người dùng không được chỉ định</string>
+    <string name="connection_type_vnc_over_ssl">Bảo mật VNC qua AnonTLS</string>
+    <string name="pro_feature_intro">Có vẻ như bạn đang sử dụng tính năng Pro. Vui lòng hỗ trợ dự án bằng cách mua phiên bản Pro có hỗ trợ tính năng này. Vui lòng kiểm tra hộp thoại giới thiệu để biết các liên kết đến ứng dụng chính xác.</string>
+    <string name="shift_check">Sự thay đổi</string>
+    <string name="error_ssh_keypair_missing">Cặp khóa SSH chưa được tạo! Vui lòng tạo một cái và đặt (phần công khai của nó) vào ủy quyền trên máy chủ SSH.</string>
+    <string name="error_connection_failed">Kết nối không thành công.</string>
+    <string name="info_continue_connecting">Tiếp tục kết nối với:</string>
+    <string name="connection_type_vnc_over_ssh">Bảo mật VNC qua SSH</string>
+    <string name="advanced_settings">Cài đặt nâng cao</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Cụm mật khẩu được cung cấp nhưng cặp khóa không được mã hóa. Vui lòng xóa cụm mật khẩu.</string>
+    <string name="vnc_server_empty">Máy chủ hoặc cổng VNC trống. Không thể kết nối!</string>
+    <string name="error_uri_parse_error">Không thể phân tích URI ý định. Vui lòng kiểm tra định dạng URI. Bạn cũng có thể xem logcat thiết bị để biết thêm chi tiết.</string>
+    <string name="username_hint_vencrypt">Tên người dùng VNC</string>
+    <string name="error_vv_download_timeout">Đã hết thời gian tải xuống tập tin vv.</string>
+    <string name="center_mouse">Chuột @</string>
+    <string name="show_keyboard">Hiển thị bàn phím</string>
+    <string name="info_cert_signatures">Thông tin chứng chỉ là:</string>
+    <string name="rdp_username_hint">Tên người dùng RDP</string>
+    <string name="connection_type_vnc">VNC cơ bản</string>
+    <string name="rdp_security_nla">Xác thực cấp mạng</string>
+    <string name="ssh_pubkey_button">Quản lý khóa</string>
+    <string name="ca_file_error_reading">Lỗi đọc tệp CA. Hãy đảm bảo nó có thể đọc được.</string>
+    <string name="master_password_error_intents_not_supported">Ý định kết nối chưa được hỗ trợ khi Mật khẩu chính được bật.</string>
+    <string name="input_method_direct_swipe_pan">Trực tiếp, Vuốt Pan</string>
+    <string name="update_button">Cập nhật</string>
+    <string name="input_mode_panning">Chế độ xoay màn hình</string>
+    <string name="search_connections">Tìm kiếm kết nối</string>
+    <string name="error_x509_could_not_generate_signature">Không thể tạo chữ ký chứng chỉ SHA1 hoặc MD5. Không tìm thấy thuật toán SHA1/MD5.</string>
+    <string name="auto_x_xdummy">Tìm hoặc tạo bằng Xdummy</string>
+    <string name="error_not_connected_to_network">Có vẻ như bạn không được kết nối với Internet. Không thể tiếp tục nếu không được kết nối!</string>
+    <string name="show_advanced_settings">Hiển thị cài đặt nâng cao</string>
+    <string name="master_password_set">Đặt mật khẩu chính</string>
+    <string name="custom_ca_import">Ngoài ra, hãy nhập đường dẫn đầy đủ tới CA của bạn và nhấn vào Nhập</string>
+    <string name="mouse_follow_pan">Chuột đi theo chảo</string>
+    <string name="enter_password_auth_failed">Xác thực không thành công. Vui lòng nhập lại thông tin đăng nhập của bạn.</string>
+    <string name="show">Trình diễn</string>
+    <string name="dpad_as_arrows">Sử dụng D-Pad cho các mũi tên và D-Pad click cho Ctrl.</string>
+    <string name="tap_enable">Cho phép</string>
+    <string name="ad_donate_spice_text1a">Nhấn vào đây để mua Opaque và lưu các kết nối trực tiếp tới Proxmox và oVirt. Nó cũng hỗ trợ các tập tin .vv.</string>
+    <string name="please_grant_permission_from_prefs">Bạn có thể cần cấp quyền cho ứng dụng thông qua Cài đặt.</string>
+    <string name="password_caption">VNC xác thực</string>
+    <string name="share_app">Chia sẻ 🔗</string>
+    <string name="remote_sound_on_device">Âm thanh trên thiết bị</string>
+    <string name="connection_setup_vm_name">Tên máy ảo (tùy chọn)</string>
+    <string name="single_choose">Chọn chế độ một tay hoặc hủy</string>
+    <string name="error_no_user_hostname">Vui lòng nhập ít nhất một người dùng và tên máy chủ hoặc địa chỉ IP.</string>
+    <string name="rdp_adv_redirect_sdcard">Chuyển hướng thẻ SD</string>
+    <string name="error_pve_api_io_error">Kết nối với Môi trường ảo Proxmox không thành công:</string>
+    <string name="username_hint_optional">Tên người dùng VNC (tùy chọn)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">Phong tục</string>
+    <string name="delete_connection">Xóa kết nối</string>
+    <string name="repeater_save">Sử dụng</string>
+    <string name="get_help">Nhận trợ giúp</string>
+    <string name="hide">Trốn</string>
+    <string name="rdp_security_mode">Chế độ bảo mật</string>
+    <string name="connection_type_rdp_over_ssh">RDP qua SSH</string>
+    <string name="auto_x_xvfb">Tìm hoặc Tạo bằng Xvfb</string>
+    <string name="address_caption">Máy chủ VNC</string>
+    <string name="show_only_connection_nicknames">Chỉ hiển thị biệt hiệu kết nối</string>
+    <string name="ca_spice_use_ovirt">Sử dụng RHEV/oVirt CA cho SPICE</string>
+    <string name="info_cert_tunnel">Bạn có muốn kết nối với máy chủ được xác định bởi chứng chỉ sau không?\n\nVân tay: %1$s\n\nĐược cấp cho:\n%2$s\n\nĐược cấp bởi:\n%3$s\n\nCó hiệu lực từ:\n%4$s\n\nCó hiệu lực cho đến:\n%5$s\n\nLưu ý: Ứng dụng không xác minh tổ chức phát hành chứng chỉ hoặc kiểm tra việc thu hồi chứng chỉ.</string>
+    <string name="error_failed_to_obtain_file">Không tìm thấy tập tin. Vui lòng tải xuống lại, nhưng lần này, hãy thử mở nó từ khu vực Thông báo hoặc trực tiếp từ Trình duyệt nếu có thể.</string>
+    <string name="error_pve_timeout_communicating">Hết thời gian giao tiếp với Môi trường ảo Proxmox.</string>
+    <string name="connection_type_spice_over_ssh">GIA VỊ qua SSH</string>
+    <string name="vnc_connection_screen_help_text">
+Khi bạn thêm hoặc chỉnh sửa kết nối, bạn sẽ thấy trang cấu hình kết nối. Tại đây bạn có thể thiết lập kết nối VNC mới hoặc chọn kết nối có sẵn. Ở trên cùng là nút cho phép bạn lưu kết nối. Dưới đây là nơi bạn định cấu hình kết nối của mình.
+
+Nếu bạn đang muốn tăng hiệu suất nhanh chóng, hãy thử đặt chế độ Màu thành giá trị thấp hơn. Ngoài ra, hãy thử xóa mọi hình nền màn hình trên máy chủ VNC. Cuối cùng, hãy đảm bảo thiết bị của bạn có kết nối mạng tốt và tránh che ăng-ten và giảm cường độ tín hiệu.
+
+- Connection Type: Tại đây bạn chọn kiểu kết nối VNC. Các loại kết nối có sẵn là:
+(a) VNC thuần túy, được hỗ trợ bởi tất cả các máy chủ VNC nhưng thiếu mã hóa và dễ bị tấn công bạo lực do giới hạn mật khẩu 8 ký tự.
+(b) Bảo mật VNC qua SSH, kết nối qua đường hầm SSH được mã hóa. Bạn cần một dịch vụ SSHD chạy tốt như máy chủ VNC. Miễn là máy chủ VNC không chấp nhận kết nối trực tiếp từ Internet, loại kết nối này không có lỗ hổng nào được biết đến, miễn là bạn xác minh chữ ký chứng chỉ máy chủ khi kết nối lần đầu.
+(c) UltraVNC, cung cấp cho bạn các tùy chọn Đăng nhập Windows và UltraVNC Repeater. Sử dụng Windows Logon không bị giới hạn mật khẩu 8 ký tự, nhưng chế độ này không cung cấp mã hóa, do đó phiên của bạn dễ bị đánh cắp.
+(d) Bảo mật VNC qua AnonTLS, là VNC thông thường qua kết nối tương đương stunnel. Bạn cần phải chạy stunnel hoặc sử dụng máy chủ VNC như Vino hỗ trợ AnonTLS ngay lập tức. Chế độ này cung cấp cho bạn mã hóa phiên nhưng bị giới hạn mật khẩu 8 ký tự và không ngăn chặn các cuộc tấn công trung gian.
+(e) Bảo mật VNC qua VeNCrypt, sử dụng chứng chỉ x509 cũng như mã hóa phiên và tùy thuộc vào cấu hình máy chủ, có thể sử dụng thông tin xác thực người dùng/mật khẩu mà không giới hạn 8 ký tự. Chế độ này ngăn chặn các cuộc tấn công trung gian.cũng như cung cấp sự riêng tư của phiên. Các máy chủ như x11vnc và TigerVNC hỗ trợ chế độ này và an toàn như VNC qua SSH.
+
+- Tiêu đề: Mỗi kết nối bạn tạo có thể có biệt danh để dễ dàng nhận biết trong danh sách.
+
+- Cài đặt đường hầm SSH: Có sẵn trong VNC qua chế độ SSH.
+(a) Máy chủ/Cổng SSH: Địa chỉ và cổng của máy chủ SSH mà kết nối sẽ được chuyển qua. Theo mặc định SSH lắng nghe trên cổng 22.
+(b) Tên người dùng/Mật khẩu: Tên người dùng và mật khẩu của tài khoản trên máy chủ SSH. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+(c) Quản lý khóa/Sử dụng khóa: Nút để quản lý khóa chung/riêng và hộp kiểm cho biết có nên sử dụng khóa thay vì mật khẩu để xác thực hay không. Nếu bạn sử dụng nút Sao chép vào bảng tạm sau khi tạo cặp khóa, bạn sẽ có thể dán khóa chung sau khi được kết nối với máy chủ VNC (bảng tạm được đồng bộ hóa với máy chủ).
+
+- Cấu hình AutoX: Chỉ có ở VNC qua chế độ SSH. Ứng dụng có thể tự động khám phá các phiên X hiện có và tùy ý tạo các phiên X mới trên hệ thống UNIX (như máy khách NX). Bạn cần tìm x11vnc và cài đặt Xvfb, Xvnc hoặc Xdummy trên hệ thống từ xa để tạo phiên. Bạn có thể phải di chuyển tệp .dmrc của mình và thêm tệp .xinit vào thư mục chính nếu màn hình nền của bạn trông không phù hợp hoặc bạn chỉ nhận được một cửa sổ xterm.
+
+- Cài đặt kết nối VNC:
+(a) Máy chủ/Cổng VNC: Đây là nơi bạn nhập tên máy chủ hoặc địa chỉ IP và cổng của máy tính chạy máy chủ VNC mà bạn muốn liên hệ. Trong chế độ VNC qua SSH, địa chỉ này được hiển thị từ Máy chủ SSH. Nếu SSH Server và VNC server là cùng một máy tính, bạn có thể sử dụng localhost. Máy chủ VNC thường nghe bắt đầu từ cổng 5900 (màn hình VNC đầu tiên, màn hình :0).
+(b) Người dùng VNC: Có sẵn trong UltraVNC với chế độ Đăng nhập Windows hoặc Bảo mật VNC qua VeNCrypt, đây là nơi bạn nhập tên người dùng tài khoản Windows/UNIX của mình.
+(c) Mật khẩu VNC: Nếu cấu hình máy chủ VNC của bạn yêu cầu mật khẩu, hãy nhập mật khẩu đó vào đây. Trong UltraVNC với chế độ Windows Logon/VeNCrypt, hãy đặt mật khẩu tài khoản Windows/UNIX của bạn vào đây. Bộ nhớ an toàn không được sử dụng cho mật khẩu và mật khẩu sẽ chỉ được lưu trữ nếu bạn chọn hộp Giữ. Mật khẩu sẽ được điền trên trang này nếu bạn chưa thoát khỏi ứng dụng kể từ lần cuối bạn nhập nó.
+- Chế độ màu: Máy khách hỗ trợ một số chế độ màu. Các chế độ có nhiều màu sắc hơn mang lại trải nghiệm hình ảnh tốt hơn nhưng lại tốn băng thông lớn hơn và nhiều CPU hơn trên thiết bị của bạn. Một số máy chủ VNC không hỗ trợ tất cả độ sâu màu (ví dụ: OS/X Remote Desktop yêu cầu màu 24-bit). Nếu bạn gặp sự cố khi kết nối, hãy thử độ sâu màu khác.
+
+- Sử dụng D-Pad cho mũi tên: Nếu muốn, bạn có thể sử dụng D-Pad của bàn phím Bluetooth hoặc mũi tên trên bàn phím ảo để gửi mũi tên đến máy chủ VNC.
+
+- Xoay D-Pad: Điện thoại được ghép nối với bàn phím Bluetooth có thể cần xoay D-pad của bàn phím ngược chiều kim đồng hồ để gửi hướng dẫn chính xác đến máy chủ.
+
+- Con trỏ chuột cục bộ: Một số máy chủ VNC (ví dụ: OS/X Remote Desktop) sẽ không vẽ con trỏ chuột trên máy khách. Việc chọn tùy chọn này sẽ khiến ứng dụng vẽ con trỏ chuột tại vị trí chuột.
+
+- Bitmap tự động/toàn màn hình: Máy khách VNC sử dụng bitmap để thể hiện màn hình từ xa. Đối với các màn hình từ xa rất lớn, đặc biệt là ở chế độ vừa với màn hình, bạn có thể gặp phải các hiện tượng hình ảnh lạ khi ở chế độ vừa với màn hình, do giới hạn bộ nhớ trên mỗi quá trình. Nếu điều đó xảy ra, hãy thử kiểm tra tùy chọn này. Hãy nhớ rằng việc chọn tùy chọn có thể khiến ứng dụng thoát khỏi kết nối.
+
+- Repeater: Chỉ có ở chế độ UltraVNC. QUAN TRỌNG: Nếu bạn có bộ lặp UltraVNC, hãy nhập địa chỉ và cổng của nó bên ngoài hộp thoại \'UltraVNC Repeater\' và nhập địa chỉ và cổng của máy chủ VNC thực tế bên trong hộp thoại \'UltraVNC Repeater\'. Phân tách địa chỉ và cổng của máy chủ VNC bằng dấu hai chấm, ví dụ:192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Bật bộ nhớ đệm Glyph</string>
+    <string name="disable_battery_optimizations_failed">
+Không thể mở cài đặt tối ưu hóa pin. Tắt tối ưu hóa pin theo cách thủ công trong cài đặt hệ thống.</string>
+    <string name="disable_battery_optimizations">
+🔋Tắt tối ưu hóa pin</string>
+    <string name="disable_battery_optimizations_already_done">
+Ứng dụng đã được miễn tối ưu hóa pin.</string>
+    <string name="no_connections_title">Chưa có kết nối nào</string>
+    <string name="no_connections_hint">Nhấn nút + để thêm kết nối từ xa đầu tiên của bạn</string>
+    <string name="no_connections_hint_tv">Nhấn nút + ở trên để thêm kết nối từ xa đầu tiên của bạn</string>
+    <string name="keyboard_layout_map">Bố cục bàn phím</string>
+</resources>

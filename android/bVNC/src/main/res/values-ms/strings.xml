@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">Mod Warna</string>
+    <string name="message_please_wait">Sila tunggu</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Lalai (TYPE_NULL)</string>
+    <string name="ad_donate_text2">Versi Pro membolehkan anda melumpuhkan dialog ini dan memberi anda akses kepada ciri tambahan.</string>
+    <string name="snap_one_to_one">Dipetik ke zum 1:1</string>
+    <string name="spice_intro_title">aSPICE: Pelanggan SPICE yang intuitif dan selamat</string>
+    <string name="auto_x_title">Konfigurasikan AutoX</string>
+    <string name="error_ovirt_auth_failure">Kegagalan pengesahan. Sila semak pengguna dan kata laluan yang disediakan.</string>
+    <string name="ad_donate_text1">Ketik di sini untuk menyokong projek dengan sumbangan kecil dengan membeli versi Pro.</string>
+    <string name="auto_x_geom_custom">Adat</string>
+    <string name="repeater_caption_hint">Pengulang UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">Gagal menyahsulit pasangan kunci. Sila pastikan anda telah memasukkan frasa laluan anda dengan betul dalam medan \'Frasa Laluan SSH\' pada skrin utama.</string>
+    <string name="master_password_hint_twice">Ulang Kata Laluan</string>
+    <string name="connection_setup_password">Kata laluan</string>
+    <string name="support_forum">Forum Sokongan ❓</string>
+    <string name="main_screen_help">Bantuan Sambungan</string>
+    <string name="spice_server_empty">SPICE Pelayan atau port kosong. Tidak boleh menyambung!</string>
+    <string name="arrow_up">Anak panah atas</string>
+    <string name="error_vm_lookup_failed">Tidak dapat mencari mesin maya dengan nama yang ditentukan diberikan kepada pengguna anda. Sila padamkan nama VM yang ditentukan untuk melihat senarai VM yang diberikan kepada pengguna.</string>
+    <string name="nickname_caption">nama samaran</string>
+    <string name="auto_x_geom_native">Orang asli</string>
+    <string name="new_connection">Sambungan Baharu</string>
+    <string name="error_ssh_unable_to_connect">Gagal menyambung ke Pelayan SSH. Sila semak kesambungan rangkaian, dan alamat dan port Pelayan SSH.</string>
+    <string name="send_key_again">Hantar Kunci Lagi</string>
+    <string name="input_mode_help">Bantuan Mod Input</string>
+    <string name="enable_gateway">Dayakan RDP Gateway</string>
+    <string name="message_please_install_bvnc">Sila pasang &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; daripada Google Play untuk menyambung ke konsol VNC VM ini.</string>
+    <string name="spice_ca_cert_path_hint">Laluan untuk mengesahkan fail kuasa</string>
+    <string name="enter_spice_password">Sila masukkan kata laluan SPICE</string>
+    <string name="rdp_adv_window_contents">Tunjukkan kandungan tetingkap sambil menyeret</string>
+    <string name="input_methods">Kaedah Input</string>
+    <string name="info_ssh_key_fingerprint">Cap jari kunci hos ialah:</string>
+    <string name="paste_ca">Masukkan Pihak Berkuasa Sijil di sini jika anda tidak mengimportnya sebagai fail.</string>
+    <string name="enter_otp_code">Sila masukkan kod OTP</string>
+    <string name="spice_connection_screen_help_text">Apabila anda menambah atau mengedit sambungan, anda akan melihat halaman konfigurasi sambungan. Di sini anda boleh menyediakan sambungan SPICE baharu atau memilih sambungan sedia ada. Di bahagian atas terdapat butang yang membolehkan anda menyimpan sambungan. Di bawah itu adalah tempat anda mengkonfigurasi sambungan anda.
+
+- Jenis Sambungan: Di sini anda memilih jenis sambungan SPICE. Jenis sambungan yang tersedia ialah:
+(a) SPICE, yang menyambung terus ke komputer melalui protokol SPICE.
+(b) SPICE over SSH, yang mula-mula menyalurkan sambungan anda melalui komputer yang menjalankan pelayan SSH.
+
+- Tajuk: Setiap sambungan yang anda buat boleh mempunyai nama panggilan untuk mengenal pastinya dengan mudah dalam senarai.
+
+- Tetapan Terowong SSH: Tersedia dalam mod SPICE melalui SSH.
+(a) Pelayan/Pelabuhan SSH: Alamat dan port pelayan SSH yang sambungannya akan dilalui. Secara lalai SSH mendengar pada port 22.
+(b) Nama pengguna/Kata Laluan: Nama pengguna dan kata laluan akaun pada pelayan SSH. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari apl sejak kali terakhir anda memasukkannya.
+(c) Urus Kunci/Kekunci Guna: Butang untuk mengurus kunci awam/peribadi, dan kotak semak yang menunjukkan sama ada hendak menggunakan kunci dan bukannya kata laluan untuk mengesahkan. Jika anda menggunakan butang Salin ke Papan Klip selepas menjana pasangan kunci, anda sepatutnya boleh menampal kunci awam sebaik sahaja disambungkan ke pelayan SPICE (papan keratan disegerakkan ke pelayan).
+
+- Tetapan Sambungan SPICE:
+(a) Pelayan/Port SPICE: Di sinilah anda memasukkan nama hos atau alamat IP dan port komputer yang menjalankan pelayan SPICE yang anda ingin hubungi. Dalam mod SPICE over SSH, alamat ini seperti yang dilihat dari Pelayan SSH. Jika Pelayan SSH dan pelayan SPICE adalah komputer fizikal yang sama, anda boleh menggunakan localhost. Pelayan SPICE biasanya mendengar pada port 5900 dan ke atas.
+(b) Kata Laluan SPICE: Di sinilah anda memasukkan kata laluan yang ditetapkan untuk melindungi sesi SPICE anda. Storan selamat tidak digunakan untuk kata laluan (ia berada dalam pangkalan data), dan kata laluan akan disimpan hanya jika anda menandai kotak Keep. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari apl sejak kali terakhir anda memasukkannya.
+
+- Tetapan lanjutan: Dalam bahagian ini anda akan menemui sebarang peranti tempatan atau tweak prestasi SPICE
+- Tweak Peranti Tempatan: Ini melaraskan gelagat apl pada peranti anda.
+(a) Gunakan D-Pad untuk anak panah: Jika anda mahu, anda boleh menggunakan D-Pad papan kekunci Bluetooth anda atau anak panah pada papan kekunci pada skrin anda untuk menghantar anak panah ke pelayan SPICE.
+(b) Putar D-Pad: Telefon yang dipasangkan dengan papan kekunci Bluetooth mungkin memerlukan papan kekunci D-pad untuk diputar melawan arah jam untuk menghantar arah yang betul ke pelayan.
+(c) Penunjuk tetikus setempat: Jika penuding tidak kelihatan, pilih ini untuk memaksanya dilukis oleh apl.</string>
+    <string name="auto_x_disabled_selection">AutoX Dilumpuhkan</string>
+    <string name="button_send_text">Hantar Teks</string>
+    <string name="shortcut_label_spice">Sambungan SPICE</string>
+    <string name="keep_screen_awake_enable">Pastikan Skrin Terjaga</string>
+    <string name="open_doc">Manual/Wiki</string>
+    <string name="remote_sound_disabled">Bunyi Dilumpuhkan</string>
+    <string name="spice_ca_file_not_found">Fail tidak ditemui. Sila masukkan nama fail yang sah dalam medan teks (cth. /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: Pelanggan RDP yang intuitif dan selamat</string>
+    <string name="error_pve_api_unexpected_code">Sambutan yang tidak dijangka daripada Persekitaran Maya Proxmox:</string>
+    <string name="error_out_of_memory">Tidak dapat memperuntukkan memori yang mencukupi untuk melukis skrin jauh. Cuba mulakan semula aplikasi, kemudian mulakan semula peranti anda. Anda juga boleh cuba mengurangkan saiz desktop jauh melalui tetapan apl.</string>
+    <string name="enter_passphrase_title">Masukkan Frasa Laluan Utama</string>
+    <string name="copy_of">Salinan daripada</string>
+    <string name="rdp_adv_remotefx">Dayakan RemoteFX</string>
+    <string name="ok">OK</string>
+    <string name="rdp_adv_desktop_background">Tunjukkan latar belakang desktop</string>
+    <string name="desktop_scale_percentage">Peratusan Skala Tersuai</string>
+    <string name="password_caption_ssh">Pengesahan SSH.</string>
+    <string name="rdp_adv_font_smoothing">Lakukan pelicinan fon</string>
+    <string name="rdp_domain_hint">Domain RDP</string>
+    <string name="custom_ca_subject">Subjek Sijil Pilihan. Tidak diperlukan jika CN sijil sepadan dengan nama hos</string>
+    <string name="color_24_bit">Warna 24-bit (24 bpp)</string>
+    <string name="ssh_passphrase_hint">Frasa Laluan SSH</string>
+    <string name="username_hint">Nama Pengguna Logon UltraVNC MS</string>
+    <string name="error_failed_to_download_https">Gagal memuat turun fail melalui HTTPS. Mungkin sijil pelayan anda tidak dipercayai (tamat tempoh atau ditandatangani sendiri) atau pelayan anda tidak dapat dihubungi.</string>
+    <string name="rdp_geom_checkbox_enable">Dayakan peleraian tersuai</string>
+    <string name="enter_rdp_credentials">Sila masukkan bukti kelayakan RDP</string>
+    <string name="error_dialog_title">ralat</string>
+    <string name="ssl_strict">Memerlukan nama biasa untuk sepadan dengan sijil (disyorkan)</string>
+    <string name="master_password_hint_once">Masukkan Kata Laluan</string>
+    <string name="one_to_one">Satu kepada Satu</string>
+    <string name="action_rate_or_share_app">⭐ Dapatkan Bantuan, Nilai, Kongsi</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Pelayan SSH tidak menyokong kaedah pengesahan \kata laluan\ mahupun \keyboard-interactive\ atau memerlukan kaedah \publickey\ terlebih dahulu. Sila konfigurasikannya untuk membenarkan sekurang-kurangnya satu daripada dua kaedah, atau konfigurasi semula aplikasi. Kaedah pengesahan yang tersedia:</string>
+    <string name="import_settings">Import</string>
+    <string name="hide_toolbar">Sembunyikan bar alat</string>
+    <string name="verification_code_message">Sila masukkan Kod Pengesahan pengesahan berbilang faktor</string>
+    <string name="need_help">Perlukan bantuan?</string>
+    <string name="rdp_security_auto">Autorunding Keselamatan</string>
+    <string name="master_password_error_failed_to_enable">Tidak dapat mendayakan kata laluan induk. Semak ruang kosong pada peranti anda dan cuba lagi.</string>
+    <string name="cert_issuer">Pengeluar Sijil</string>
+    <string name="error">ralat</string>
+    <string name="error_anon_dh_unsupported">Pelayan VNC cuba menggunakan sifir Anonymous Diffie Hellman yang tidak disokong pada peranti Android anda. Jika menggunakan pelayan Vino VNC GNOME, anda boleh melumpuhkan AnonTLS dengan menjalankan perintah berikut dalam terminal dan kemudian memulakan semula: \gsettings set org.gnome.Vino require-encryption false\. Jika menjalankan x11vnc, anda boleh menambah pilihan berikut: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">Roda Tatal</string>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="enter_gateway_credentials">Sila masukkan kelayakan Gateway</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">Projek Sumber Terbuka memerlukan sokongan anda! Sumbangkan kepada kami dengan membeli bVNC Pro. Lihat di bawah untuk pautan ke bVNC Pro dan apl kami yang lain.</string>
+    <string name="input_method_mouse">Kawalan Penunjuk Tetikus</string>
+    <string name="pro_feature_rdp">Nampaknya anda cuba membuka fail .rdp yang merupakan ciri Pro. Sila sokong projek dengan membeli aRDP Pro, yang menyokong fail .rdp. Pautan ke versi aRDP Pro tersedia dalam dialog mula.</string>
+    <string name="opaque_connection_screen_help_text">Apabila anda menambah atau mengedit sambungan, anda akan melihat halaman konfigurasi sambungan.
+Di sini anda boleh menyediakan sambungan Legap baharu atau memilih sambungan yang sedia ada.
+Di bahagian atas terdapat butang yang membolehkan anda menyimpan sambungan.
+Di bawah itu adalah tempat anda mengkonfigurasi sambungan anda.
+
+- Jenis Sambungan: Di sini anda memilih Persekitaran Maya yang anda sambungkan.
+
+- Alamat Pelayan: Nama hos atau IP pelayan. Jika ia mendengar pada port bukan standard, anda boleh menambah port yang dipisahkan oleh titik bertindih.
+
+- Nama mesin maya: Anda boleh menentukan nama VM seperti yang dipaparkan pada platform Virtualisasi anda atau biarkan medan ini kosong untuk mendapatkan senarai VM atau bekas untuk dipilih.
+
+- Pengguna: Masukkan nama pengguna untuk mengesahkan rangka kerja virtualisasi anda.
+
+- Kata Laluan: Jika anda ingin menyimpan kata laluan, masukkannya di sini atau biarkan medan kosong untuk ditanya tentangnya setiap kali.
+
+- Tetapan lanjutan: Dalam bahagian ini anda akan menemui sebarang peranti tempatan, protokol dan tweak prestasi.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Teks Dengan Cadangan (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">Salin Senarai</string>
+    <string name="master_password_error_failed_to_disable">Tidak dapat melumpuhkan kata laluan induk. Semak ruang kosong pada peranti anda dan cuba lagi.</string>
+    <string name="use_no_compression_for_local_connections">Tiada pemampatan (sambungan tempatan, pengekodan Hextile)</string>
+    <string name="input_mode_help_text">Dalam mana-mana Mod Input, ketik ikon papan kekunci untuk mendapatkan papan kekunci pada skrin. Selain itu, peranti anda mungkin mempunyai gerak isyarat sendiri yang memaparkan papan kekunci.
+
+Gunakan mod input Terus untuk kawalan skrin sentuh yang lebih intuitif. Gunakan Mod Pad Sentuh Simulasi untuk kawalan yang lebih halus ke atas tetikus.
+
+Terus, Mod Pan Leret:
+- Kawal tetikus terus melalui sentuhan.
+- Leret untuk menyorot sekeliling.
+- Mengetik membuatkan tetikus klik di tempat anda mengetik.
+- Acara tatal dihantar antara dua jari tempat leretan dua jari bermula.
+
+Terus, Tahan Mod Pan:
+- Kawal tetikus terus melalui sentuhan.
+- Ketik lama untuk memulakan mod pan.
+- Mengetik membuatkan tetikus klik di tempat anda mengetik.
+- Acara tatal dihantar antara dua jari tempat leretan dua jari bermula.
+
+Mod Pad Sentuh Simulasi:
+- Gunakan skrin anda seperti pad sentuh.
+- Leret untuk menggerakkan penuding tetikus ke sekeliling.
+- Gerakkan tetikus melepasi tepi skrin untuk menyorot.
+- Mengetik membuatkan tetikus mengklik di mana penunjuk berada.
+- Acara tatal dihantar ke tempat penuding tetikus berada.
+
+Mod Satu Tangan:
+- Sama seperti Terus, Mod Pan Leret, kecuali menu buka ketik lama dengan pilihan mod.
+- Selepas memilih mod, meleret jari pada skrin melakukan gerak isyarat yang dipilih.
+- Mengangkat jari melengkapkan gerak isyarat.
+
+Semua Mod Input:
+- Klik kiri: Ketik sekali.
+- Klik dua kali: Ketik dua kali.
+- Klik kanan: Ketik-tahan dan ketik dengan jari kedua (di tempat lain pada skrin).
+- Klik kanan Ganti: Gunakan butang atau gerak isyarat \Kembali\ untuk peranti anda.
+- Klik tengah: Ketik-tahan dan ketik dengan dua lagi jari (di tempat lain pada skrin).
+- Seret tetikus: Ketik-tahan-panjang dan leret.
+- Roda tatal: Seret dua jari ke atas/bawah dan kiri/kanan. Seret pantas menatal dengan lebih pantas.
+- Zum masuk/keluar: Dalam Skala boleh zum, cubit zum untuk mengawal skala.
+- Kekunci Ctrl/Alt: Menu-&gt;Butang Ctrl/Alt. Jangan lupa togol apabila selesai!
+- Gabungan utama: Menu-&gt;Lagi-&gt;Hantar Kekunci.
+- Hantar teks: Sama ada taip pada papan kekunci pada skrin atau gunakan Menu-&gt;Lagi-&gt;Hantar Teks.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt sebagai ISO L3 Shift (VNC sahaja)</string>
+    <string name="error_uri_noinfo_nosave">Maklumat khusus yang tidak mencukupi untuk disambungkan.</string>
+    <string name="single_reposition">Penunjuk tetikus diletakkan semula untuk mod satu tangan</string>
+    <string name="auto_x_cancel">Batal</string>
+    <string name="vv_file_not_found">Fail .vv tidak ditemui!</string>
+    <string name="error_pve_failed_to_authenticate">Gagal untuk mengesahkan Persekitaran Maya Proxmox. Sila pastikan anda memasukkan nama pengguna anda dalam format user@realm dan kata laluan anda adalah betul.</string>
+    <string name="save_as_copy">Simpan sebagai Salin</string>
+    <string name="info_cert">Adakah anda menerima sijil hos baharu atau ditukar ini?\n\nCap jari:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nDikeluarkan kepada: %4$s\nDikeluarkan oleh: %5$s\n\nSah dari: %6$s\n\nSah dari: %6$s\n\n</string>
+    <string name="more_debug_logging">Lagi Pengelogan Nyahpepijat</string>
+    <string name="error_ssh_key_auth_fail">Gagal untuk mengesahkan ke pelayan SSH dengan pasangan kunci. Sila semak nama pengguna SSH anda dan pastikan kunci awam anda berada dalam fail authorized_keys di bahagian jauh.</string>
+    <string name="error_vnc_authentication">Pengesahan VNC gagal! Semak kata laluan VNC (dan pengguna jika berkenaan).</string>
+    <string name="toggle_keyboard">Togol Papan Kekunci</string>
+    <string name="help">Bantu ⓘ</string>
+    <string name="repeater_caption">PENTING: Jika menggunakan pengulang UltraVNC, masukkan alamat dan portnya di luar dialog ini. Di sini, masukkan alamat dan port pelayan VNC sebenar. Pisahkan alamat dan port pelayan VNC dengan titik bertindih, mis.192.168.0.100:5900.</string>
+    <string name="color_8">8 warna (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">Tidak dapat menyambung atau mengesahkan, sila semak alamat pelayan, pengguna, kata laluan dan kuasa dan subjek sijil.</string>
+    <string name="error_rdp_authentication_failed">Pengesahan RDP gagal! Sila semak nama pengguna dan kata laluan RDP dan cuba lagi.</string>
+    <string name="delete_key_list">Padam Senarai Kunci</string>
+    <string name="input_method_direct_swipe_pan_description">Terus, Leret Kuali: Leret untuk menyorot sekeliling. Ketik dengan satu jari di mana sahaja anda mahu klik kiri, dua jari untuk klik kanan dan tiga jari untuk klik tengah. Leret dengan dua jari untuk menatal. Ketik lama untuk seret dan lepas.</string>
+    <string name="address_caption_hint">Pelayan VNC</string>
+    <string name="auto_x_unixpw">Gunakan bukti kelayakan UNIX dan bukannya mekanisme keselamatan terbina dalam. Pengguna mesti boleh menjalankan /bin/su.</string>
+    <string name="input_method_touchpad">Pad Sentuh Simulasi</string>
+    <string name="fit_to_screen">Muat pada Skrin</string>
+    <string name="list_name_caption">Nama Senarai</string>
+    <string name="copy_logcat">📋 Salin Logcat</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA tersuai</string>
+    <string name="info_progress_dialog_downloading">Muat turun bingkai pertama.\Sila tunggu…</string>
+    <string name="local_mouse_check">Penunjuk tetikus setempat (pilih jika penunjuk tidak kelihatan)</string>
+    <string name="rdp_server_empty">Pelayan RDP atau port kosong. Tidak boleh menyambung!</string>
+    <string name="rendering_mode">Mod Rendering:</string>
+    <string name="rdp_adv_visual_styles">Dayakan Gaya Visual</string>
+    <string name="error_ovirt_timeout">Sambungan ke VM anda tamat masa. Sila pastikan alamat nod yang menjalankan VM anda adalah betul, ia boleh diakses daripada rangkaian semasa anda dan tiada tembok api yang menyekat sambungan.</string>
+    <string name="extra_keys_enable">Dayakan Kekunci Tambahan</string>
+    <string name="showkbd_label">papan kekunci</string>
+    <string name="audio">Audio</string>
+    <string name="ssh_x11vnc_customize">Konfigurasikan AutoX</string>
+    <string name="address_caption_ssh_hint">Pelayan SSH</string>
+    <string name="info_progress_dialog_connecting">Menyambung…</string>
+    <string name="donate_app">Menderma ❤</string>
+    <string name="rdp_security_rdp">Keselamatan RDP</string>
+    <string name="applies_to_new_connections_only">Terpakai pada Sambungan Baharu Sahaja</string>
+    <string name="spice_button_import_ca">Import CA</string>
+    <string name="scaling_zoomable">Boleh dizum</string>
+    <string name="error_ssh_port_forwarding_failure">Tidak dapat menyediakan pemajuan port untuk terowong trafik VNC melalui SSH. Sila pastikan pelayan SSH anda dikonfigurasikan untuk membenarkan pemajuan port dan cuba lagi.</string>
+    <string name="rdp_adv_desktop_composition">Dayakan Komposisi Desktop</string>
+    <string name="scroll_speed">Sentuh Kelajuan Tatal</string>
+    <string name="rdp_address_caption_hint">Pelayan RDP</string>
+    <string name="send_button">Hantar</string>
+    <string name="love_our_work">Suka kerja kita?</string>
+    <string name="download_from_server">Muat turun dari Pelayan</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Pelayan anda memerlukan pengesahan kata laluan sebagai tambahan kepada pengesahan kunci.</string>
+    <string name="input_method_single_handed">Tunggal Tangan</string>
+    <string name="username_hint_ssh">Nama Pengguna SSH</string>
+    <string name="auto_x_enabled">Didayakan</string>
+    <string name="password_hint_ssh">Kata Laluan SSH</string>
+    <string name="audio_will_be_initialized">Audio akan dimulakan dalam masa kira-kira 15 saat, sila hentikan sebarang video atau main balik audio yang sedang berjalan sebelum itu</string>
+    <string name="shortcut_label_vnc">Sambungan VNC</string>
+    <string name="auto_request_new_res">Segerakkan jauh untuk memaparkan resolusi</string>
+    <string name="color_256">256 warna (8 bpp)</string>
+    <string name="intro_title">bVNC: Pelanggan VNC yang intuitif dan selamat</string>
+    <string name="error_x509_could_not_generate_encoding">Pengekodan sijil tidak dapat dijana.</string>
+    <string name="rdp_security_tls">Keselamatan TLS</string>
+    <string name="action_import_settings">Tetapan Import</string>
+    <string name="single_cancel">Mod satu tangan dibatalkan</string>
+    <string name="info_set_touchpad_input_mode">Pelayan melaporkan bahawa ia tidak menyokong Input Tetikus Mod Pelanggan, dan mod input tetikus semasa tidak akan berfungsi dengan betul. Jika ini berterusan, pastikan alat rempah dipasang dalam mesin maya atau tukar kepada Mod Input Pad Sentuh Simulasi daripada Menu.</string>
+    <string name="email_us">E-mel Kami 📧</string>
+    <string name="color_64">64 warna (4 bpp)</string>
+    <string name="ssh_key_generated">Kunci baharu berjaya dijana atau diimport. Anda kini boleh mengetik butang \'Jana/Eksport Kunci\' untuk berkongsi, menyalin ke papan keratan atau mengeksport kunci awam.</string>
+    <string name="repeater_button">Pengulang UltraVNC</string>
+    <string name="info_dialog_title">info</string>
+    <string name="local_clipboard_integration">Dayakan Penyepaduan Papan Klip Tempatan ke Jauh</string>
+    <string name="cursor_force_local">Tempatan</string>
+    <string name="list_caption">Senaraikan</string>
+    <string name="master_password_error_password_necessary">Kata Laluan Induk diperlukan untuk meneruskan.</string>
+    <string name="ssh_use_pubkey">Gunakan Kunci</string>
+    <string name="super_check">Super</string>
+    <string name="enter_text">Hantar Teks</string>
+    <string name="import_export_settings">📦 Tetapan Import/Eksport</string>
+    <string name="info_progress_dialog_aborted">Sambungan dihentikan!</string>
+    <string name="input_method_single_handed_description">Satu Tangan: Leret untuk menyorot sekeliling. Ketik dengan satu jari di mana sahaja anda mahu klik kiri. Ketik lama untuk memilih mod seret kiri/kanan/tengah/skrol/zum. Kawalan berbilang sentuh biasa juga berfungsi.</string>
+    <string name="verification_code">Kod Pengesahan</string>
+    <string name="extra_keys_disable">Lumpuhkan Kekunci Tambahan</string>
+    <string name="rotate_dpad">Putar Bluetooth atau perisian D-Pad</string>
+    <string name="intro_close">tutup</string>
+    <string name="master_password_error_shortcuts_not_supported">Pintasan belum lagi disokong apabila Kata Laluan Induk didayakan.</string>
+    <string name="enter_vnc_credentials">Sila masukkan bukti kelayakan VNC</string>
+    <string name="connection_edit">Sunting</string>
+    <string name="error_spice_unable_to_connect">Tidak dapat menyambung atau mengesahkan, sila semak alamat dan port pelayan.</string>
+    <string name="remote_sound_on_server">Bunyi Pada Pelayan</string>
+    <string name="left_handed_mode">Mod Kidal</string>
+    <string name="info_ssh_initializing_hostkey">Percubaan untuk memulakan SSH HostKey.</string>
+    <string name="connect_button">Sambung</string>
+    <string name="ca_new_or_changed">Sijil pelayan baharu atau ditukar</string>
+    <string name="close">tutup</string>
+    <string name="master_password_verify">Sahkan Kata Laluan Induk</string>
+    <string name="error_no_vnc_support_yet">Jenis paparan VNC belum disokong lagi, tetapi ia adalah ciri yang akan datang. Terima kasih atas pemahaman anda!</string>
+    <string name="rdp_connection_settings">Tetapan Sambungan RDP</string>
+    <string name="immersive_mode_disable">Lumpuhkan Mod Imersif</string>
+    <string name="error_pve_null_data">Persekitaran Maya Proxmox mengembalikan data nol.</string>
+    <string name="auto_x_descript_geom">Saiz Desktop Jauh (WxH)</string>
+    <string name="enter_passphrase">Sila masukkan Frasa Laluan Utama</string>
+    <string name="action_edit_default_settings">⚙ Edit Tetapan Lalai</string>
+    <string name="ca_spice_manage">Urus SPICE CA</string>
+    <string name="color_mode">Mod Warna</string>
+    <string name="back_button">Pergi Balik</string>
+    <string name="rate_app">Nilaikan ⭐⭐⭐⭐⭐</string>
+    <string name="off">Mati</string>
+    <string name="ssh_tunnel_settings">Tetapan Terowong SSH</string>
+    <string name="error_pve_vmid_not_numeric">ID VM bukan angka. Sila masukkan ID VM berangka atau biarkan kosong untuk memilih VM daripada senarai.</string>
+    <string name="cert_subject">Subjek Sijil</string>
+    <string name="rdp_descript_geom">Saiz Desktop Jauh (WxH)</string>
+    <string name="master_password_error_wrong_password">Tidak dapat mengesahkan dengan Kata Laluan Induk yang disediakan.</string>
+    <string name="error_pick_correct_item">Sila pastikan anda telah memilih item yang betul dalam Jenis Sambungan.</string>
+    <string name="input_method_direct_drag_pan">Terus, Pegang Kuali</string>
+    <string name="auto_rotation">Putaran skrin semasa disambungkan</string>
+    <string name="master_password_verify_message">Sila masukkan Kata Laluan Induk yang betul untuk meneruskan.</string>
+    <string name="error_connection_interrupted">Sambungan terputus.</string>
+    <string name="auto_x_descript_session">Jenis Sesi Jauh</string>
+    <string name="action_new_connection">✚ Sambungan Baharu</string>
+    <string name="enter_text_title">Masukkan Teks untuk Dihantar</string>
+    <string name="shortcut_label_rdp">Sambungan RDP</string>
+    <string name="spice_address_caption_hint">Pelayan SPICE</string>
+    <string name="rdp_geom_description_hint">Pelayan memerlukan sokongan ExtendedDesktopSize</string>
+    <string name="audio_initialized">Audio dimulakan</string>
+    <string name="intro_text">Senarai semasa ciri bVNC:
+&lt;br&gt;
+- VNC Biasa, VNC Selamat melalui SSH, AnonTLS dan VeNCrypt, dan Logon Windows UltraVNC dengan Pengulang pilihan.
+&lt;br&gt;
+- Mod AutoX: Dalam mod VNC melalui SSH, temui secara automatik sedia ada dan/atau buat sesi X baharu menggunakan x11vnc! Berfungsi seperti pelanggan NX.
+&lt;br&gt;
+- Sokongan putaran percuma. Gunakan Sistem Pengendalian untuk mengehadkan putaran jika perlu.
+&lt;br&gt;
+- Penjanaan dan eksport pasangan kunci Awam/Swasta SSH.
+&lt;br&gt;
+- Semua pengekodan VNC standard, termasuk Tight, ZRLE dan CopyRect.
+&lt;br&gt;
+- Penjimatan Sesi Automatik.
+&lt;br&gt;
+- Mod boleh zum, Muat pada Skrin dan Satu kepada Satu.
+&lt;br&gt;
+- Kawalan berbilang sentuhan ke atas tetikus jauh dalam mod input Pad Sentuh Langsung dan Simulasi.
+&lt;br&gt;
+- Kawalan penuh satu tangan ke atas tetikus jauh dalam mod input Satu Tangan.
+&lt;br&gt;
+- Klik tetikus berbilang sentuh: ketik untuk Klik kiri, ketik dua jari untuk klik kanan, ketik tiga jari ke klik tengah.
+&lt;br&gt;
+- Tatal berbilang sentuhan: seret dua jari ke Atas/Bawah, dan Kiri/Kanan untuk menatal.
+&lt;br&gt;
+- Meta pada skrin dan kekunci anak panah yang boleh dilumpuhkan sepenuhnya daripada menu atau disimpan dengan butang pada skrin.
+&lt;br&gt;
+- Menghantar Teks dan kombinasi Kekunci sewenang-wenangnya apabila disambungkan.
+&lt;br&gt;
+- Bantuan dengan membuat sambungan (\Menu-&gt;Bantuan Sambungan\) dalam skrin sambungan.
+&lt;br&gt;
+- Bantuan dengan mod input (\Menu-&gt;Lagi-&gt;Bantuan Mod Input\) apabila disambungkan.
+&lt;br&gt;
+- Menggunakan pad jejak yang tersedia sebagai Anak panah dan bukannya menggerakkan tetikus, dan pad jejak klik sebagai Ctrl.
+&lt;br&gt;
+- Bertukar kepada mod potret semasa sambungan, memutar D-pad/pad jejak untuk papan kekunci BT.
+&lt;br&gt;
+- Sokongan berbilang bahasa, selagi pelayan VNC mempunyai susun atur bahasa yang diperlukan didayakan.
+&lt;br&gt;
+- Penyepaduan Salin/Tampal
+&lt;br&gt;
+- Perubahan resolusi mesin jauh
+&lt;br&gt;
+- Sokongan tetikus penuh pada peranti Android 4.0+, termasuk klik kanan dan tengah serta roda tatal.
+&lt;br&gt;
+&lt;br&gt;
+Isu yang diketahui:
+&lt;br&gt;</string>
+    <string name="color_greyscale">Skala kelabu (1 bpp)</string>
+    <string name="share_app_toast">Kongsi pautan ke aplikasi dengan semua rakan anda di media sosial!</string>
+    <string name="force">Peta Bit Skrin Penuh</string>
+    <string name="input_method_touchpad_description">Pad Sentuh Simulasi: Leret untuk menggerakkan penunjuk. Ketik di mana-mana sahaja dengan satu jari untuk klik kiri, dua jari untuk klik kanan dan tiga jari untuk klik tengah. Leret dengan dua jari untuk menatal. Ketik lama untuk seret dan lepas.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nAnda boleh memastikan ia adalah sama dengan cap jari yang diketahui bagi sijil pelayan untuk mengelakkan serangan lelaki di tengah.</string>
+    <string name="error_no_vm_found_for_user">Tiada Mesin Maya tersedia untuk pengguna tertentu.</string>
+    <string name="color_black_and_white">Hitam &amp; Putih (1 bpp)</string>
+    <string name="auto">Auto</string>
+    <string name="pro_feature_generic">Nampaknya anda menggunakan ciri Pro. Sila sokong projek dengan membeli versi Pro yang mempunyai sokongan untuk ciri ini. Pautan ke versi Pro tersedia dalam dialog permulaan.</string>
+    <string name="rdp_geom_custom">Adat</string>
+    <string name="default_input_mode">Mod Input Lalai</string>
+    <string name="repeater_empty_text">Tiada pengulang</string>
+    <string name="ad_donate_text_rdp">Projek Sumber Terbuka memerlukan sokongan anda! Derma kepada kami dengan membeli aRDP Pro, yang menyokong pengalihan bunyi. Lihat di bawah untuk pautan ke aRDP Pro dan apl kami yang lain.</string>
+    <string name="spice_tls_port_hint">Pelabuhan TLS</string>
+    <string name="scaling">Penskalaan</string>
+    <string name="spice_connection_settings">Tetapan Sambungan SPICE</string>
+    <string name="error_pve_failed_to_parse_json">Gagal menghuraikan respons daripada Persekitaran Maya Proxmox.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Kegagalan jabat tangan SSL. Terdapat masalah dengan sijil SSL pelayan. Jika anda menggunakan sijil yang ditandatangani sendiri, anda perlu (semula) mengimport pihak berkuasa sijil anda.</string>
+    <string name="connection_setup_user">Pengguna@Domain</string>
+    <string name="vnc_viewer_started">VNC Viewer bermula</string>
+    <string name="ca_subject">Masukkan nama subjek sijil di sini. Mungkin tidak diperlukan jika nama biasa pensijilan (CN) sepadan dengan nama hos pelayan.</string>
+    <string name="port_ssh_hint">Pelabuhan</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Pelayan SSH tidak menyokong kaedah pengesahan \publickey\ dan kami cuba menggunakan pasangan kunci untuk mengesahkan. Sila konfigurasikannya untuk membenarkan pengesahan kunci awam dan cuba lagi. Kaedah pengesahan yang tersedia:</string>
+    <string name="username_caption">Pengguna VNC</string>
+    <string name="error_ssh_could_not_exec_command">Tidak dapat melaksanakan arahan jauh.</string>
+    <string name="rdp_intro_text">Terima kasih kerana menyokong aRDP dan perisian sumber terbuka secara umum! Untuk mendapatkan bantuan menggunakan aRDP, lihat item Bantuan dalam Menu dan perihalan apl di pasaran.
+&lt;br&gt;
+&lt;br&gt;
+Senarai semasa ciri aRDP termasuk:
+&lt;br&gt;
+- RDP biasa, RDP terowong atas SSH.
+&lt;br&gt;
+- Sokongan putaran percuma. Gunakan Sistem Pengendalian untuk mengehadkan putaran jika perlu.
+&lt;br&gt;
+- Tetapan resolusi jauh, resolusi asli dalam mod landskap dan potret.
+&lt;br&gt;
+- Penjanaan dan eksport pasangan kunci Awam/Swasta SSH.
+&lt;br&gt;
+- Penjimatan Sesi Automatik.
+&lt;br&gt;
+- Mod boleh zum, Muat pada Skrin dan Satu kepada Satu.
+&lt;br&gt;
+- Kawalan berbilang sentuhan ke atas tetikus jauh dalam mod input Pad Sentuh Langsung dan Simulasi.
+&lt;br&gt;
+- Kawalan penuh satu tangan ke atas tetikus jauh dalam mod input Satu Tangan.
+&lt;br&gt;
+- Klik tetikus berbilang sentuh: ketik untuk Klik kiri, ketik dua jari untuk klik kanan, ketik tiga jari ke klik tengah.
+&lt;br&gt;
+- Tatal berbilang sentuhan: seret dua jari ke Atas/Bawah, dan Kiri/Kanan untuk menatal.
+&lt;br&gt;
+- Meta pada skrin dan kekunci anak panah yang boleh dilumpuhkan sepenuhnya daripada menu atau disimpan dengan butang pada skrin.
+&lt;br&gt;
+- Menghantar Teks dan kombinasi Kekunci sewenang-wenangnya apabila disambungkan.
+&lt;br&gt;
+- Bantuan dengan membuat sambungan (\Menu-&gt;Bantuan Sambungan\) dalam skrin sambungan.
+&lt;br&gt;
+- Bantuan dengan mod input (\Menu-&gt;Lagi-&gt;Bantuan Mod Input\) apabila disambungkan.
+&lt;br&gt;
+- Menggunakan pad jejak yang tersedia sebagai Anak panah dan bukannya menggerakkan tetikus, dan pad jejak klik sebagai Ctrl, memutar D-pad/pad jejak untuk papan kekunci BT.
+&lt;br&gt;
+- Sokongan berbilang bahasa, selagi pelayan RDP mempunyai susun atur bahasa yang diperlukan didayakan.
+&lt;br&gt;
+- Perubahan resolusi mesin jauh yang lancar
+&lt;br&gt;
+- Sokongan tetikus penuh pada peranti Android 4.0+, termasuk klik kanan dan tengah serta roda tatal.
+&lt;br&gt;
+- Pilihan mod warna
+&lt;br&gt;
+- Penyepaduan Salin/Tampal
+&lt;br&gt;
+- Mengeksport tetapan
+&lt;br&gt;
+- Bunyi
+&lt;br&gt;
+&lt;br&gt;
+Isu yang diketahui:</string>
+    <string name="tap_disable">Lumpuhkan</string>
+    <string name="view_only">Mod lihat sahaja</string>
+    <string name="save_button">Jimat</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Tidak dapat menghantar kata laluan sudo.</string>
+    <string name="landscape_force">Daya Orientasi Landskap</string>
+    <string name="export_settings">Eksport</string>
+    <string name="keyboard_type">Jenis Papan Kekunci Perisian</string>
+    <string name="hide_connection_thumbnails">Sembunyikan Thumbnail Sambungan</string>
+    <string name="input_method_direct_drag_pan_description">Terus, Tahan Kuali: Leret untuk seret dan lepas. Ketik dengan satu jari di mana sahaja anda mahu klik kiri, dua jari untuk klik kanan dan tiga jari untuk klik tengah. Leret dengan dua jari untuk menatal. Ketik lama untuk mula menyorot.</string>
+    <string name="panning">Skrin Menyorot</string>
+    <string name="remote_clipboard_integration">Dayakan Penyepaduan Jauh ke Papan Klip Setempat</string>
+    <string name="rdp_connection_screen_help_text">Apabila anda menambah atau mengedit sambungan, anda akan melihat halaman konfigurasi sambungan. Di sini anda boleh menyediakan sambungan RDP baharu atau memilih sambungan yang sedia ada. Di bahagian atas terdapat butang yang membolehkan anda menyimpan sambungan. Di bawah itu adalah tempat anda mengkonfigurasi sambungan anda.
+
+- Jenis Sambungan: Di sini anda memilih jenis sambungan RDP. Jenis sambungan yang tersedia ialah:
+(a) RDP, yang menyambung terus ke komputer melalui protokol RDP.
+(b) RDP melalui SSH, yang mula-mula menyalurkan sambungan anda melalui komputer yang menjalankan pelayan SSH.
+
+- Tajuk: Setiap sambungan yang anda buat boleh mempunyai nama panggilan untuk mengenal pastinya dengan mudah dalam senarai.
+
+- Tetapan Terowong SSH: Tersedia dalam mod RDP melalui SSH.
+(a) Pelayan/Pelabuhan SSH: Alamat dan port pelayan SSH yang sambungannya akan dilalui. Secara lalai SSH mendengar pada port 22.
+(b) Nama pengguna/Kata Laluan: Nama pengguna dan kata laluan akaun pada pelayan SSH. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari apl sejak kali terakhir anda memasukkannya.
+(c) Urus Kunci/Kekunci Guna: Butang untuk mengurus kunci awam/peribadi, dan kotak semak yang menunjukkan sama ada hendak menggunakan kunci dan bukannya kata laluan untuk mengesahkan. Jika anda menggunakan butang Salin ke Papan Klip selepas menjana pasangan kunci, anda sepatutnya boleh menampal kunci awam setelah disambungkan ke pelayan RDP (papan keratan disegerakkan ke pelayan).
+
+- Tetapan Sambungan RDP:
+(a) Pelayan/Port RDP: Di sinilah anda memasukkan nama hos atau alamat IP dan port komputer yang menjalankan pelayan RDP yang anda ingin hubungi. Dalam mod RDP melalui SSH, alamat ini seperti yang dilihat dari Pelayan SSH. Jika Pelayan SSH dan pelayan RDP adalah komputer fizikal yang sama, anda boleh menggunakan localhost. Pelayan RDP biasanya mendengar pada port 3389.
+(b) Pengguna RDP: Di sinilah anda memasukkan nama pengguna akaun Windows/UNIX anda.
+(c) Domain RDP: Masukkan domain kepunyaan akaun anda.
+(d) Kata Laluan RDP: Ini adalah tempat anda memasukkan kata laluan akaun Windows/UNIX anda. Storan selamat tidak digunakan untuk kata laluan (ia berada dalam pangkalan data), dan kata laluan akan disimpan hanya jika anda menandai kotak Keep. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari apl sejak kali terakhir anda memasukkannya.
+
+- Tetapan lanjutan: Dalam bahagian ini anda akan menemui cara untuk menyesuaikan resolusi desktop, dan pelbagai tweak prestasi RDP
+
+- Tweak Peranti Tempatan: Ini melaraskan gelagat apl pada peranti anda.
+(a) Gunakan D-Pad untuk anak panah: Jika anda mahu, anda boleh menggunakan D-Pad papan kekunci Bluetooth anda atau anak panah pada papan kekunci pada skrin anda untuk menghantar anak panah ke pelayan RDP.
+(b) Putar D-Pad: Telefon yang dipasangkan dengan papan kekunci Bluetooth mungkin memerlukan papan kekunci D-pad untuk diputar melawan arah jam untuk menghantar arah yang betul ke pelayan.
+(c) Penunjuk tetikus setempat: Jika penuding tidak kelihatan, pilih ini untuk memaksanya dilukis oleh apl.</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">Mod tatal - leret ke atas/bawah untuk menatal, angkat jari untuk berhenti</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">Mod zum - leret ke atas/bawah untuk zum masuk/keluar, angkat jari untuk berhenti</string>
+    <string name="rdp_adv_console_mode">Mod Konsol</string>
+    <string name="address_caption_hint_tunneled">Pelayan VNC</string>
+    <string name="arrow_right">Anak Panah Kanan</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Teks/Nombor Tiada Cadangan (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">Nama Pengguna SPICE</string>
+    <string name="error_rdp_connection_failed">Sambungan RDP gagal! Sama ada sambungan rangkaian telah terganggu, pelayan RDP telah dimatikan atau dilumpuhkan, atau sesi anda telah diambil alih.</string>
+    <string name="arrow_left">Anak Panah Kiri</string>
+    <string name="connection_type_vnc_over_stunnel">Lindungi VNC melalui Terowong SSL</string>
+    <string name="report_bug">Laporkan Pepijat 🐛</string>
+    <string name="warning_cert_does_not_match">AMARAN: Sijil x509 yang disimpan atau diluluskan dalam tandatangan tidak sepadan dengan sijil pelayan semasa! Ini mungkin serangan lelaki di tengah. Jika anda mengetahui perubahan utama anda boleh meneruskan.</string>
+    <string name="more_apps">Lagi Apl 📱</string>
+    <string name="auto_x_disabled">Dilumpuhkan</string>
+    <string name="pro_feature_mfa">Nampaknya pelayan anda telah mendayakan pengesahan berbilang faktor. Sila sokong projek dengan membeli versi Pro yang mempunyai sokongan untuk ciri ini. Pautan ke versi Pro tersedia dalam dialog permulaan.</string>
+    <string name="no_application_to_handle_vpn">Sambungan ini ditetapkan untuk melancarkan VPN melalui aplikasi luaran. Anda perlu memasang aplikasi seperti Morpheusly untuk melancarkannya.</string>
+    <string name="port_caption_ssh">Pelabuhan SSH</string>
+    <string name="arrow_down">Anak panah ke bawah</string>
+    <string name="pro_feature_spice">Nampaknya anda cuba membuka fail .vv. Jika anda ingin menyimpan sambungan ke Proxmox atau oVirt terus di dalam apl dan juga ingin membuka fail .vv, pertimbangkan untuk membeli Legap. Jika anda hanya memerlukan sokongan fail .vv, anda boleh mendapatkan aSPICE Pro. Cari pautan ke kedua-dua apl dalam dialog mula.</string>
+    <string name="error_vnc_unable_to_connect">Sambungan ke pelayan VNC gagal dengan sebab:</string>
+    <string name="rdp_password_hint">Kata Laluan RDP</string>
+    <string name="custom_ca_paste">Tampal (jika tidak mengimport) CA di sini</string>
+    <string name="cursor_mode">Mod Kursor:</string>
+    <string name="local_device_tweaks">Tweak Peranti Tempatan</string>
+    <string name="disconnect">Putuskan sambungan</string>
+    <string name="ad_donate_text0">Versi Pro juga mempunyai sokongan untuk pengesahan SSH berbilang faktor. Selain itu, ia menyokong ciri Kata Laluan Induk yang sangat diminta yang menghalang penggunaan tanpa kebenaran dan menyulitkan semua tetapan sambungan termasuk kata laluan dan kekunci SSH untuk melindungi daripada kecurian. Dayakannya dari Menu utama.</string>
+    <string name="info_cert_signatures_identical">\n\nAnda boleh memastikan maklumat sepadan dengan sijil pelayan untuk mengelakkan serangan lelaki di tengah.</string>
+    <string name="button_send_without_saving">Hantar Teks/Jangan Simpan Ia</string>
+    <string name="single_right">Mod seret kanan - leret untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="error_ssh_pwd_auth_fail">Gagal untuk mengesahkan ke pelayan SSH dengan kata laluan. Sila semak nama pengguna SSH anda, dan kata laluan SSH.</string>
+    <string name="select_vm_title">Pilih Mesin Maya</string>
+    <string name="ad_donate_text_spice">Untuk sambungan Proxmox dan oVirt, sila derma kepada projek dengan membeli Opaque atau aSPICE Pro. Versi Percuma aSPICE hanya menyokong sambungan terus ke mesin maya KVM. Lihat di bawah untuk pautan ke Opaque dan aSPICE Pro, serta apl kami yang lain.</string>
+    <string name="enter_password">Sila masukkan kata laluan</string>
+    <string name="main_screen_help_text">Apabila aplikasi dilancarkan ia memaparkan skrin dengan sambungan yang disimpan padanya.
+
+Jika tiada sambungan yang disimpan, bahagian bawah skrin kosong, dan anda perlu menekan butang tambah untuk mencipta sambungan baharu.
+Anda juga boleh mengawal aspek konfigurasi lain dari skrin ini dengan mengetik pada bar alat atau pilihan menu lain di bahagian atas, untuk
+contoh untuk mengedit tetapan lalai, atau tetapan import dan eksport.
+
+Sebaik sahaja anda mempunyai sambungan yang disimpan, anda boleh menyambung ke pelayan jauh dengan mengetiknya sekali. Anda juga akan mempunyai pilihan untuk memadam atau mengeditnya dengan mengetiknya lama.
+
+Akhir sekali, anda boleh menggunakan medan Carian Sambungan untuk mencari sambungan dengan cepat melalui penapis sambungan yang ditunjukkan.</string>
+    <string name="intro_dont_show">Jangan tunjukkan lagi</string>
+    <string name="action_export_settings">Tetapan Eksport</string>
+    <string name="error_ssh_hostkey_changed">RALAT! Kunci hos pelayan telah berubah. Jika ini disengajakan, anda boleh teruskan. Jika tidak, ini mungkin seorang lelaki dalam serangan tengah.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Tidak dapat memperoleh port VNC jauh daripada x11vnc. Sila pastikan x11vnc dipasang. Untuk memastikan, cuba jalankan x11vnc dengan tangan pada baris arahan.</string>
+    <string name="error_failed_to_obtain_content">Gagal mendapatkan fail. Sila muat turun sekali lagi tetapi kali ini, buka dengan pantas dari folder Muat Turun dalam Pengurus Fail.</string>
+    <string name="show_menu">Tunjukkan Menu</string>
+    <string name="auto_x_unix_auth">Sahkan menggunakan Nama Pengguna/Kata Laluan SSH yang dibekalkan secara automatik (ke skrin log masuk hitam).</string>
+    <string name="previous_versions">Versi Sebelumnya ⍼</string>
+    <string name="auto_x_xvnc">Cari atau Buat dengan Xvnc</string>
+    <string name="auto_x_find">Hanya Cari, Jangan Buat</string>
+    <string name="port_caption">Pelabuhan VNC</string>
+    <string name="delete_key">Padamkan Kunci yang Dipilih</string>
+    <string name="cert_fingerprint">Sijil Cap Jari</string>
+    <string name="enter_vnc_password">Sila masukkan kata laluan VNC</string>
+    <string name="port_hint">Pelabuhan</string>
+    <string name="import_from_file">Import daripada Fail</string>
+    <string name="error_rdp_unable_to_connect">Tidak dapat menyambung ke pelayan RDP! Sila pastikan tetapan Pelayan RDP betul, pelayan dihidupkan, RDP didayakan dan pelayan berada pada rangkaian yang sama dengan peranti ini.</string>
+    <string name="rdp_geom_disabled">Dilumpuhkan</string>
+    <string name="ad_donate_spice_text1b">Ketik di sini untuk membeli versi Pro dan buka sahaja fail .vv.</string>
+    <string name="spice_ca_file_error_reading">Ralat membaca fail CA. Sila pastikan ia boleh dibaca.</string>
+    <string name="info_vm_launched_on_stand_by">VM anda didapati dimatikan dan telah dimulakan. Sila cuba lagi dalam beberapa minit. Jika anda mencuba terlalu awal dan mendapat kegagalan sambungan, cuba lagi kemudian.</string>
+    <string name="special_keys">Hantar Kunci</string>
+    <string name="error_failed_to_download_http">Gagal memuat turun fail melalui HTTP. Mungkin pelayan anda tidak dapat dihubungi.</string>
+    <string name="rdp_geom_automatic">Automatik</string>
+    <string name="portrait_mode">Tukar kepada mod potret apabila disambungkan</string>
+    <string name="master_password_set_error">Kata laluan tidak sepadan, sila berhati-hati!</string>
+    <string name="enter_ssh_credentials">Sila masukkan bukti kelayakan SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">Pelayan VNC Di Belakang Pengulang</string>
+    <string name="prefer_sending_unicode">Input Unicode (Windows sahaja)</string>
+    <string name="auto_x_caption">Aplikasi ini secara automatik boleh menemui sesi X yang sedia ada dan mencipta sesi X baharu pada sistem Linux/UNIX (serupa dengan NX). Anda memerlukan x11vnc untuk mencari dan Xvfb, Xvnc atau Xdummy untuk membuat sesi. Jika anda menghadapi masalah menyambung, cuba pilih Jenis Sesi Jauh tertentu dalam Tetapan Lanjutan AutoX.</string>
+    <string name="auto_x_confirm">sahkan</string>
+    <string name="position_toolbar_last_used">Pulihkan Kedudukan Bar Alat</string>
+    <string name="error_no_such_vm_found_for_user">Tiada Mesin Maya dengan ID yang disediakan ditemui untuk pengguna yang diberikan. Padamkan ID untuk mendapatkan senarai VM.</string>
+    <string name="single_middle">Mod seret tengah - leret untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="info_encoding">pengekodan,</string>
+    <string name="rdp_geom_native_portrait">Potret Asli</string>
+    <string name="input_mode">Mod Input</string>
+    <string name="action_delete_connection">Padamkan Sambungan</string>
+    <string name="keys_caption">kunci</string>
+    <string name="single_left">Mod seret kiri - leret untuk seret/pilih, angkat jari untuk berhenti</string>
+    <string name="vv_file_error">Fail .vv sama ada hilang atau rosak!</string>
+    <string name="connection_delete">Padam</string>
+    <string name="info_progress_dialog_establishing">Mewujudkan jabat tangan.\nSila tunggu…</string>
+    <string name="keep_password_button">Simpan</string>
+    <string name="auto_x_find_login">Cari Log Masuk X (memerlukan sudo)</string>
+    <string name="ssh_use_x11vnc">Auto Desktop</string>
+    <string name="address_caption_ssh">Pelayan SSH</string>
+    <string name="spice_password_hint">Kata laluan SPICE</string>
+    <string name="cursor_force_disable">Lumpuhkan</string>
+    <string name="master_password_error_password_not_set">Menetapkan Kata Laluan Induk telah dibatalkan.</string>
+    <string name="info_update_color_model_to">Mengemas kini Model Warna kepada</string>
+    <string name="rdp_adv_menu_animation">Tunjukkan Animasi Menu</string>
+    <string name="input_method_help">Bantuan Kaedah Input</string>
+    <string name="enable_recording">Dayakan Rakaman</string>
+    <string name="path_to_ca">Masukkan laluan fail (contohnya /sdcard/ca-cert.pem) dan ketik Import untuk memuatkan Pihak Berkuasa Sijil anda.</string>
+    <string name="nickname_caption_hint">Tajuk (pilihan)</string>
+    <string name="connection_caption">Sambungan</string>
+    <string name="pan_follow_mouse">Pan mengikut tetikus</string>
+    <string name="rdp_geom_native_landscape">Landskap Asli</string>
+    <string name="meta_key_title">Hantar Kunci Khas</string>
+    <string name="move_toolbar">Gerakkan Bar Alat</string>
+    <string name="input_mode_fit_to_screen">Tiada Kuali;Tetikus Trackball</string>
+    <string name="enable_sound">Dayakan Bunyi</string>
+    <string name="error_security_type">Pelayan tidak menawarkan jenis keselamatan yang disokong.</string>
+    <string name="connection_type_text">Persekitaran Maya (RHEV/oVirt atau Proxmox)</string>
+    <string name="connection_setup_host_name">Alamat Pelayan</string>
+    <string name="vnc_server_empty_no_save">Pelayan VNC atau port kosong. Tidak dapat menyimpan sambungan!</string>
+    <string name="ca_ovirt_manage">Urus RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">Urus CA tersuai</string>
+    <string name="ca_file_not_found">Fail tidak ditemui. Sila masukkan nama fail yang sah dalam medan teks (cth. /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">Sila masukkan dan hafal Kata Laluan Induk. Semakin panjang kata laluan anda, semakin sukar untuk dipecahkan. Jika anda salah menetapkan kata laluan anda atau terlupa, anda akan kehilangan semua tetapan anda! Anda mungkin mahu mengeksport tetapan anda sekarang untuk menyandarkannya (dari Menu). Simpannya dengan selamat kerana tetapan yang dieksport tidak disulitkan.</string>
+    <string name="repeater_clear">Jangan Gunakan</string>
+    <string name="ad_donate_text3">Jika anda ingin menyokong projek itu dengan lebih lanjut, ikuti pautan berikut untuk pautan ke apl pelanggan untuk:</string>
+    <string name="vnc_connection_settings">Tetapan Sambungan VNC</string>
+    <string name="master_password_enable">🔒 Dayakan Kata Laluan Induk</string>
+    <string name="new_list_button">Senarai Baru</string>
+    <string name="spice_intro_text">Terima kasih kerana menyokong aSPICE dan perisian sumber terbuka secara umum! Untuk mendapatkan bantuan menggunakan aSPICE, lihat item Bantuan dalam Menu dan perihalan apl di pasaran.
+&lt;br&gt;
+&lt;br&gt;
+Senarai semasa ciri aSPICE termasuk:
+&lt;br&gt;
+- SPICE Biasa, SPICE terowong atas SSH.
+&lt;br&gt;
+- Sokongan putaran percuma. Gunakan Sistem Pengendalian untuk mengehadkan putaran jika perlu.
+&lt;br&gt;
+- Penjanaan dan eksport pasangan kunci Awam/Swasta SSH.
+&lt;br&gt;
+- Penjimatan Sesi Automatik.
+&lt;br&gt;
+- Mod boleh zum, Muat pada Skrin dan Satu kepada Satu.
+&lt;br&gt;
+- Kawalan berbilang sentuhan ke atas tetikus jauh dalam mod input Pad Sentuh Langsung dan Simulasi.
+&lt;br&gt;
+- Kawalan penuh satu tangan ke atas tetikus jauh dalam mod input Satu Tangan.
+&lt;br&gt;
+- Klik tetikus berbilang sentuh: ketik untuk Klik kiri, ketik dua jari untuk klik kanan, ketik tiga jari ke klik tengah.
+&lt;br&gt;
+- Tatal berbilang sentuhan: seret dua jari ke Atas/Bawah, dan Kiri/Kanan untuk menatal.
+&lt;br&gt;
+- Meta pada skrin dan kekunci anak panah yang boleh dilumpuhkan sepenuhnya daripada menu atau disimpan dengan butang pada skrin.
+&lt;br&gt;
+- Menghantar Teks dan kombinasi Kekunci sewenang-wenangnya apabila disambungkan.
+&lt;br&gt;
+- Bantuan dengan membuat sambungan (\Menu-&gt;Bantuan Sambungan\) dalam skrin sambungan.
+&lt;br&gt;
+- Bantuan dengan mod input (\Menu-&gt;Lagi-&gt;Bantuan Mod Input\) apabila disambungkan.
+&lt;br&gt;
+- Menggunakan pad jejak yang tersedia sebagai Anak panah dan bukannya menggerakkan tetikus, dan pad jejak klik sebagai Ctrl, memutar D-pad/pad jejak untuk papan kekunci BT.
+&lt;br&gt;
+- Sokongan berbilang bahasa, selagi pelayan SPICE mempunyai susun atur bahasa yang diperlukan didayakan.
+&lt;br&gt;
+- Perubahan resolusi mesin jauh yang lancar
+&lt;br&gt;
+- Sokongan tetikus penuh pada peranti Android 4.0+, termasuk klik kanan dan tengah serta roda tatal.
+&lt;br&gt;
+&lt;br&gt;
+Ciri yang dirancang:
+&lt;br&gt;
+- Penyepaduan Salin/Tampal
+&lt;br&gt;
+- Bunyi
+&lt;br&gt;
+- Peningkatan prestasi
+&lt;br&gt;
+Isu yang diketahui:
+&lt;br&gt;
+- Hantar teks tidak menghantar beberapa simbol.
+&lt;br&gt;</string>
+    <string name="info">info</string>
+    <string name="connection_edit_delete_prompt">Adakah anda mahu mengedit atau memadam sambungan</string>
+    <string name="connection_type_caption">Jenis Sambungan</string>
+    <string name="usb">USB (palamkan kabel OTG dahulu)</string>
+    <string name="connection_type_vnc_over_vencrypt">Lindungi VNC daripada VeNCrypt</string>
+    <string name="log_copied">Logcat disalin ke papan keratan. Anda kini boleh menampalnya dalam e-mel atau pada forum sokongan. Sila semak sebarang data peribadi sebelum menyiarkan.</string>
+    <string name="disable_pointer_offset_correction">Lumpuhkan pembetulan offset penunjuk</string>
+    <string name="password_caption_hint">Kata Laluan VNC</string>
+    <string name="user_not_specified">Pengguna tidak dinyatakan</string>
+    <string name="connection_type_vnc_over_ssl">Lindungi VNC melalui AnonTLS</string>
+    <string name="pro_feature_intro">Nampaknya anda menggunakan ciri Pro. Sila sokong projek dengan membeli versi Pro yang mempunyai sokongan untuk ciri ini. Sila semak dialog pengenalan untuk pautan ke apl yang betul.</string>
+    <string name="shift_check">Beralih</string>
+    <string name="error_ssh_keypair_missing">Pasangan kunci SSH belum dijana lagi! Sila jana satu dan letakkan (bahagian awamnya) dalam authorized_keys pada pelayan SSH.</string>
+    <string name="error_connection_failed">Sambungan gagal.</string>
+    <string name="info_continue_connecting">Teruskan menyambung ke:</string>
+    <string name="connection_type_vnc_over_ssh">Lindungi VNC melalui SSH</string>
+    <string name="advanced_settings">Tetapan Lanjutan</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Ungkapan laluan disediakan tetapi pasangan kunci tidak disulitkan. Sila padamkan frasa laluan.</string>
+    <string name="vnc_server_empty">Pelayan VNC atau port kosong. Tidak boleh menyambung!</string>
+    <string name="error_uri_parse_error">Tidak dapat menghuraikan URI Niat. Sila semak format URI. Anda juga boleh melihat logcat peranti untuk mendapatkan butiran lanjut.</string>
+    <string name="username_hint_vencrypt">Nama Pengguna VNC</string>
+    <string name="error_vv_download_timeout">Tamat masa memuat turun fail vv.</string>
+    <string name="center_mouse">tetikus @</string>
+    <string name="show_keyboard">Tunjukkan Papan Kekunci</string>
+    <string name="info_cert_signatures">Maklumat sijil ialah:</string>
+    <string name="rdp_username_hint">Nama Pengguna RDP</string>
+    <string name="connection_type_vnc">VNC asas</string>
+    <string name="rdp_security_nla">Pengesahan Tahap Rangkaian</string>
+    <string name="ssh_pubkey_button">Urus Kunci</string>
+    <string name="ca_file_error_reading">Ralat membaca fail CA. Sila pastikan ia boleh dibaca.</string>
+    <string name="master_password_error_intents_not_supported">Niat sambungan belum lagi disokong apabila Kata Laluan Induk didayakan.</string>
+    <string name="input_method_direct_swipe_pan">Terus, Leret Kuali</string>
+    <string name="update_button">Kemas kini</string>
+    <string name="input_mode_panning">Mod Sorotan Desktop</string>
+    <string name="search_connections">Cari Sambungan</string>
+    <string name="error_x509_could_not_generate_signature">Tidak dapat menjana tandatangan sijil SHA1 atau MD5. Tiada algoritma SHA1/MD5 ditemui.</string>
+    <string name="auto_x_xdummy">Cari atau Buat dengan Xdummy</string>
+    <string name="error_not_connected_to_network">Anda nampaknya tidak disambungkan ke Internet. Tidak boleh meneruskan tanpa disambungkan!</string>
+    <string name="show_advanced_settings">Tunjukkan Tetapan Lanjutan</string>
+    <string name="master_password_set">Tetapkan Kata Laluan Induk</string>
+    <string name="custom_ca_import">Sebagai alternatif, masukkan laluan penuh ke CA anda dan ketik Import</string>
+    <string name="mouse_follow_pan">Tetikus mengikut kuali</string>
+    <string name="enter_password_auth_failed">Pengesahan gagal. Sila masukkan semula kelayakan anda.</string>
+    <string name="show">Tunjukkan</string>
+    <string name="dpad_as_arrows">Gunakan D-Pad untuk anak panah dan D-Pad klik untuk Ctrl.</string>
+    <string name="tap_enable">Dayakan</string>
+    <string name="ad_donate_spice_text1a">Ketik di sini untuk membeli Opaque dan simpan sambungan terus ke Proxmox dan oVirt. Ia juga menyokong fail .vv.</string>
+    <string name="please_grant_permission_from_prefs">Anda mungkin perlu memberikan kebenaran kepada aplikasi melalui Tetapan.</string>
+    <string name="password_caption">Pengesahan VNC.</string>
+    <string name="share_app">Kongsi 🔗</string>
+    <string name="remote_sound_on_device">Bunyi Pada Peranti</string>
+    <string name="connection_setup_vm_name">Nama mesin maya (pilihan)</string>
+    <string name="single_choose">Pilih mod satu tangan atau batalkan</string>
+    <string name="error_no_user_hostname">Sila masukkan sekurang-kurangnya pengguna dan nama hos atau alamat IP.</string>
+    <string name="rdp_adv_redirect_sdcard">Ubah hala Kad SD</string>
+    <string name="error_pve_api_io_error">Sambungan ke Persekitaran Maya Proxmox gagal:</string>
+    <string name="username_hint_optional">Nama Pengguna VNC (pilihan)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">Adat</string>
+    <string name="delete_connection">Padamkan Sambungan</string>
+    <string name="repeater_save">guna</string>
+    <string name="get_help">Dapatkan Bantuan</string>
+    <string name="hide">Sembunyi</string>
+    <string name="rdp_security_mode">Mod Keselamatan</string>
+    <string name="connection_type_rdp_over_ssh">RDP melalui SSH</string>
+    <string name="auto_x_xvfb">Cari atau Buat dengan Xvfb</string>
+    <string name="address_caption">Pelayan VNC</string>
+    <string name="show_only_connection_nicknames">Tunjukkan Hanya Nama Panggilan Sambungan</string>
+    <string name="ca_spice_use_ovirt">Gunakan RHEV/oVirt CA untuk SPICE</string>
+    <string name="info_cert_tunnel">Adakah anda ingin menyambung kepada hos yang dikenal pasti melalui sijil berikut?\n\nCap Jari: %1$s\n\nDikeluarkan kepada:\n%2$s\n\nDikeluarkan oleh:\n%3$s\n\nSah daripada:\n%4$s\n\nSah sehingga:\n%5$s\n\n Nota: Permohonan tidak disahkan semula.</string>
+    <string name="error_failed_to_obtain_file">Gagal mencari fail. Sila muat turun sekali lagi, tetapi kali ini, cuba bukanya dari kawasan Pemberitahuan atau terus dari Pelayar jika boleh.</string>
+    <string name="error_pve_timeout_communicating">Tamat masa berkomunikasi dengan Persekitaran Maya Proxmox.</string>
+    <string name="connection_type_spice_over_ssh">REMPAH atas SSH</string>
+    <string name="vnc_connection_screen_help_text">
+Apabila anda menambah atau mengedit sambungan, anda akan melihat halaman konfigurasi sambungan. Di sini anda boleh menyediakan sambungan VNC baharu atau memilih sambungan yang sedia ada. Di bahagian atas terdapat butang yang membolehkan anda menyimpan sambungan. Di bawah itu adalah tempat anda mengkonfigurasi sambungan anda.
+
+Jika anda sedang mencari peningkatan prestasi pantas, cuba tetapkan mod Warna kepada nilai yang lebih rendah. Juga, cuba alih keluar sebarang imej latar belakang desktop pada pelayan VNC. Akhir sekali, pastikan peranti anda mempunyai sambungan rangkaian yang baik dan elakkan menutup antenanya dan mengurangkan kekuatan isyarat.
+
+- Jenis Sambungan: Di sini anda memilih jenis sambungan VNC. Jenis sambungan yang tersedia ialah:
+(a) Plain VNC, yang disokong oleh semua pelayan VNC tetapi tidak mempunyai penyulitan dan terdedah kepada serangan brute-force disebabkan oleh pengehadan kata laluan 8 aksara.
+(b) Lindungi VNC melalui SSH, yang bersambung melalui terowong SSH yang disulitkan. Anda memerlukan perkhidmatan SSHD yang berjalan serta pelayan VNC. Selagi pelayan VNC tidak menerima sambungan terus daripada Internet, jenis sambungan ini tidak mengalami kelemahan yang diketahui, selagi anda mengesahkan tandatangan sijil pelayan semasa mula-mula menyambung.
+(c) UltraVNC, yang memberi anda pilihan Windows Logon dan UltraVNC Repeater. Menggunakan Windows Logon tidak mengalami had kata laluan 8 aksara, tetapi mod ini tidak menawarkan penyulitan, jadi sesi anda terdedah kepada menghidu.
+(d) Lindungi VNC melalui AnonTLS, iaitu VNC biasa melalui sambungan setara stunnel. Anda sama ada perlu menjalankan stunnel, atau menggunakan pelayan VNC seperti Vino yang menyokong AnonTLS di luar kotak. Mod ini memberi anda penyulitan sesi, tetapi mengalami had kata laluan 8 aksara dan tidak menghalang serangan lelaki di tengah.
+(e) Lindungi VNC melalui VeNCrypt, yang menggunakan sijil x509 serta penyulitan sesi, dan bergantung pada konfigurasi pelayan boleh menggunakan kelayakan pengguna/kata laluan tanpa had 8 aksara. Mod ini menghalang serangan man-in-the-middle.serta menyediakan privasi sesi. Pelayan seperti x11vnc dan TigerVNC menyokong mod ini dan selamat seperti VNC melalui SSH.
+
+- Tajuk: Setiap sambungan yang anda buat boleh mempunyai nama panggilan untuk mengenal pastinya dengan mudah dalam senarai.
+
+- Tetapan Terowong SSH: Tersedia dalam mod VNC melalui SSH.
+(a) Pelayan/Pelabuhan SSH: Alamat dan port pelayan SSH yang sambungannya akan dilalui. Secara lalai SSH mendengar pada port 22.
+(b) Nama pengguna/Kata Laluan: Nama pengguna dan kata laluan akaun pada pelayan SSH. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari aplikasi sejak kali terakhir anda memasukkannya.
+(c) Urus Kunci/Kekunci Guna: Butang untuk mengurus kunci awam/peribadi, dan kotak semak yang menunjukkan sama ada hendak menggunakan kunci dan bukannya kata laluan untuk mengesahkan. Jika anda menggunakan butang Salin ke Papan Klip selepas menjana pasangan kunci, anda sepatutnya boleh menampal kunci awam sebaik sahaja disambungkan ke pelayan VNC (papan keratan disegerakkan ke pelayan).
+
+- Konfigurasikan AutoX: Hanya tersedia dalam mod VNC melalui SSH. Aplikasi ini secara automatik boleh menemui sesi X yang sedia ada dan secara pilihan membuat pada sistem UNIX (seperti klien NX). Anda memerlukan x11vnc untuk mencari dan Xvfb, Xvnc atau Xdummy dipasang pada sistem jauh untuk membuat sesi. Anda mungkin perlu mengalihkan fail .dmrc anda dan menambah fail .xinit dalam direktori rumah anda jika desktop anda kelihatan tidak betul atau anda hanya mendapat tetingkap xterm.
+
+- Tetapan Sambungan VNC:
+(a) Pelayan/Port VNC: Di sinilah anda memasukkan nama hos atau alamat IP dan port komputer yang menjalankan pelayan VNC yang anda ingin hubungi. Dalam mod VNC melalui SSH, alamat ini seperti yang dilihat dari Pelayan SSH. Jika Pelayan SSH dan pelayan VNC adalah komputer yang sama, anda boleh menggunakan localhost. Pelayan VNC biasanya mendengar bermula pada port 5900 (skrin VNC pertama, skrin :0).
+(b) Pengguna VNC: Tersedia dalam UltraVNC dengan mod Windows Logon, atau Secure VNC over VeNCrypt, di sinilah anda memasukkan nama pengguna akaun Windows/UNIX anda.
+(c) Kata Laluan VNC: Jika konfigurasi pelayan VNC anda memerlukan kata laluan, masukkan kata laluan itu di sini. Dalam UltraVNC dengan mod Windows Logon/VeNCrypt, letakkan kata laluan akaun Windows/UNIX anda di sini. Storan selamat tidak digunakan untuk kata laluan dan kata laluan akan disimpan hanya jika anda menandai kotak Keep. Kata laluan akan diisi pada halaman ini jika anda belum keluar dari aplikasi sejak kali terakhir anda memasukkannya.
+- Mod Warna: Pelanggan menyokong beberapa mod warna. Mod dengan lebih banyak warna memberikan pengalaman visual yang lebih baik dengan mengorbankan lebar jalur yang lebih besar dan lebih banyak pengiraan CPU pada peranti anda. Sesetengah pelayan VNC tidak menyokong semua kedalaman warna (cth. Desktop Jauh OS/X memerlukan warna 24-bit). Jika anda menghadapi masalah menyambung, cuba kedalaman warna yang lain.
+
+- Gunakan D-Pad untuk anak panah: Jika anda mahu, anda boleh menggunakan D-Pad papan kekunci Bluetooth anda atau anak panah pada papan kekunci pada skrin anda untuk menghantar anak panah ke pelayan VNC.
+
+- Putar D-Pad: Telefon yang dipasangkan dengan papan kekunci Bluetooth mungkin memerlukan papan kekunci D-pad untuk diputar melawan arah jam untuk menghantar arah yang betul ke pelayan.
+
+- Penunjuk tetikus setempat: Sesetengah pelayan VNC (cth. Desktop Jauh OS/X) tidak akan melukis penuding tetikus pada klien. Menyemak pilihan ini akan menyebabkan aplikasi melukis penunjuk tetikus pada kedudukan tetikus.
+
+- Peta Bit Auto/Skrin Penuh: Pelanggan VNC menggunakan peta bit untuk mewakili paparan jauh. Untuk paparan jauh yang sangat besar, terutamanya dalam mod muat ke skrin, anda mungkin mengalami artifak visual yang aneh apabila dalam mod muat ke skrin, disebabkan oleh had memori setiap proses. Jika itu berlaku, cuba semak pilihan ini. Perlu diingat bahawa menyemak pilihan boleh menyebabkan aplikasi berhenti semasa sambungan.
+
+- Pengulang: Hanya tersedia dalam mod UltraVNC. PENTING: Jika anda mempunyai pengulang UltraVNC, masukkan alamat dan portnya di luar dialog \'UltraVNC Repeater\' dan masukkan alamat dan port pelayan VNC sebenar di dalam Dialog \'UltraVNC Repeater\'. Asingkan alamat dan port pelayan VNC dengan titik bertindih, mis.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Dayakan Cache Glif</string>
+    <string name="disable_battery_optimizations_failed">
+Tidak dapat membuka tetapan pengoptimuman bateri. Lumpuhkan pengoptimuman bateri secara manual dalam tetapan sistem.</string>
+    <string name="disable_battery_optimizations">
+🔋Lumpuhkan Pengoptimuman Bateri</string>
+    <string name="disable_battery_optimizations_already_done">
+Apl sudah pun dikecualikan daripada pengoptimuman bateri.</string>
+    <string name="no_connections_title">Tiada sambungan lagi</string>
+    <string name="no_connections_hint">Ketik butang + untuk menambah sambungan jauh pertama anda</string>
+    <string name="no_connections_hint_tv">Tekan butang + di atas untuk menambah sambungan jauh pertama anda</string>
+    <string name="keyboard_layout_map">Susun Atur Papan Kekunci</string>
+</resources>

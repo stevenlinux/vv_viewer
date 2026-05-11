@@ -1,0 +1,1582 @@
+/**
+ * Copyright (C) 2012-2017 Iordan Iordanov
+ * Copyright (C) 2010 Michael A. MacDonald
+ * <p>
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * <p>
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * <p>
+ * You should have received a copy of the GNU General Public License
+ * along with this software; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
+ * USA.
+ */
+
+//
+// CanvasView is the Activity for showing VNC Desktop.
+//
+package com.iiordanov.bVNC;
+
+import static com.iiordanov.bVNC.Constants.EXTRA_KEYS_TOUR_SHOWN;
+import static com.iiordanov.bVNC.dialogs.MetaKeyDialog.tryPopulateKeysInListWhereFieldMatchesValue;
+
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.media.AudioManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.StrictMode;
+import android.os.SystemClock;
+import android.os.Vibrator;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ListView;
+
+import androidx.viewpager.widget.ViewPager;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.core.view.ViewCompat;
+
+import com.google.android.material.snackbar.Snackbar;
+import com.iiordanov.bVNC.dialogs.EnterTextDialog;
+import com.iiordanov.bVNC.dialogs.MetaKeyDialog;
+import com.iiordanov.bVNC.extrakeys.ExtraKeysView;
+import com.iiordanov.bVNC.extrakeys.ExtraKeysPagerAdapter;
+import com.iiordanov.bVNC.input.IgnoringMouseInputListener;
+import com.iiordanov.bVNC.input.MetaKeyBean;
+import com.iiordanov.bVNC.input.Panner;
+import com.iiordanov.bVNC.input.RemoteCanvasHandler;
+import com.iiordanov.bVNC.input.RemoteClientsInputListener;
+import com.iiordanov.bVNC.input.RemoteKeyboard;
+import com.iiordanov.bVNC.input.ScrollWheelButton;
+import com.iiordanov.bVNC.input.TouchInputHandler;
+import com.iiordanov.bVNC.input.TouchInputHandlerDirectDragPan;
+import com.iiordanov.bVNC.input.TouchInputHandlerDirectSwipePan;
+import com.iiordanov.bVNC.input.TouchInputHandlerSingleHanded;
+import com.iiordanov.bVNC.input.TouchInputHandlerTouchpad;
+import com.iiordanov.bVNC.input.TouchInputDelegate;
+import com.iiordanov.bVNC.protocol.GettingConnectionSettingsException;
+import com.iiordanov.bVNC.protocol.RemoteConnection;
+import com.iiordanov.bVNC.protocol.RemoteConnectionFactory;
+import com.iiordanov.util.SamsungDexUtils;
+import com.undatech.opaque.Connection;
+import com.undatech.opaque.RemoteClientLibConstants;
+import com.undatech.opaque.dialogs.SelectTextElementFragment;
+import com.undatech.opaque.util.GeneralUtils;
+import com.undatech.opaque.util.OnTouchViewMover;
+import com.undatech.opaque.util.RemoteToolbar;
+import com.undatech.remoteClientUi.R;
+
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Timer;
+import java.util.TimerTask;
+
+@SuppressLint("ClickableViewAccessibility")
+public class RemoteCanvasActivity extends AppCompatActivity implements
+        SelectTextElementFragment.OnFragmentDismissedListener, TouchInputDelegate {
+
+    public static final int[] inputModeIds = {R.id.itemInputTouchpad,
+            R.id.itemInputTouchPanZoomMouse,
+            R.id.itemInputDragPanZoomMouse,
+            R.id.itemInputSingleHanded};
+    public static final Map<Integer, String> inputModeMap;
+    private final static String TAG = "RemoteCanvasActivity";
+    private static final int[] scalingModeIds = {R.id.itemZoomable, R.id.itemFitToScreen,
+            R.id.itemOneToOne};
+
+    static {
+        inputModeMap = Map.of(
+                R.id.itemInputTouchpad, TouchInputHandlerTouchpad.ID,
+                R.id.itemInputDragPanZoomMouse, TouchInputHandlerDirectDragPan.ID,
+                R.id.itemInputTouchPanZoomMouse, TouchInputHandlerDirectSwipePan.ID,
+                R.id.itemInputSingleHanded, TouchInputHandlerSingleHanded.ID
+        );
+    }
+
+    final long hideToolbarDelay = 2500;
+    TouchInputHandler touchInputHandler;
+    Panner panner;
+    Handler handler;
+    ViewPager extraKeysToolbar;
+    LinearLayout extraKeysPageIndicator;
+    View[] pageIndicatorDots;
+    ExtraKeysPagerAdapter extraKeysPagerAdapter;
+    boolean extraKeysHidden = false;
+    volatile boolean softKeyboardUp;
+    RemoteToolbar toolbar;
+    View rootView;
+    ActionBarHider actionBarHider = new ActionBarHider();
+    ActionBarShower actionBarShower = new ActionBarShower();
+    KeyboardIconShower keyboardIconShower = new KeyboardIconShower();
+    private Vibrator myVibrator;
+    private FrameLayout canvasLayout;
+    private RemoteCanvas canvas;
+    private RemoteConnection remoteConnection;
+    private MenuItem[] inputModeMenuItems;
+    private MenuItem[] scalingModeMenuItems;
+    private TouchInputHandler[] inputModeHandlers;
+    private Connection connection;
+    public RemoteClientsInputListener inputListener;
+    private ImageButton keyboardIconForAndroidTv;
+    float keyboardIconForAndroidTvX = Float.MAX_VALUE;
+    IgnoringMouseInputListener ignoringMouseInputListener = new IgnoringMouseInputListener();
+    OnTouchViewMover toolbarMover;
+    ActionBarPositionSaver toolbarPositionSaver = new ActionBarPositionSaver();
+    int xPointerOffset = 0;
+    int yPointerOffset = 0;
+
+    /**
+     * This runnable enables immersive mode.
+     */
+    private final Runnable immersiveEnabler = new Runnable() {
+        public void run() {
+            try {
+                if (Utils.querySharedPreferenceBoolean(RemoteCanvasActivity.this,
+                        Constants.disableImmersiveTag, false)) {
+                    Log.d(TAG, "immersiveEnabler - exiting because immersive mode disabled");
+                    return;
+                }
+
+                Log.d(TAG, "immersiveEnabler - enabling immersive mode");
+                if (Constants.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    canvas.setSystemUiVisibility(
+                            View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                                    | View.SYSTEM_UI_FLAG_FULLSCREEN
+                                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+                }
+            } catch (Exception e) {
+                Log.d(TAG, "Ignored Exception while enabling immersive mode");
+            }
+        }
+    };
+    /**
+     * This runnable disables immersive mode.
+     */
+    private final Runnable immersiveDisabler = new Runnable() {
+        public void run() {
+            try {
+                if (!Utils.querySharedPreferenceBoolean(RemoteCanvasActivity.this,
+                        Constants.disableImmersiveTag, false)) {
+                    Log.d(TAG, "immersiveDisabler - exiting because immersive mode enabled");
+                    return;
+                }
+
+                Log.d(TAG, "immersiveDisabler - disabling immersive mode");
+                if (Constants.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    canvasLayout.setFitsSystemWindows(true);
+                    canvas.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+                    ViewCompat.requestApplyInsets(canvasLayout);
+                }
+            } catch (Exception e) {
+                Log.d(TAG, "Ignored Exception while disabling immersive mode");
+            }
+        }
+    };
+
+    /**
+     * This runnable fixes things up after a rotation.
+     */
+    private final Runnable rotationCorrector = () -> {
+        try {
+            correctAfterRotation();
+        } catch (Exception e) {
+            Log.d(TAG, "Ignoring Exception on rotationCorrector run.");
+        }
+    };
+
+    private void correctAfterRotation() throws Exception {
+        Log.d(TAG, "correctAfterRotation");
+        if (canvas == null) {
+            Log.d(TAG, "correctAfterRotation: canvas is null, returning");
+            return;
+        }
+        canvas.waitUntilInflated();
+        // Its quite common to see NullPointerExceptions here when this function is called
+        // at the point of disconnection. Hence, we catch and ignore the error.
+        if (canvas.canvasZoomer == null) {
+            Log.d(TAG, "correctAfterRotation: canvasZoomer is null, returning");
+            return;
+        }
+        float oldScale = canvas.canvasZoomer.getZoomFactor();
+        int x = canvas.absoluteXPosition;
+        int y = canvas.absoluteYPosition;
+        canvas.canvasZoomer.setScaleTypeForActivity(this);
+        float newScale = canvas.canvasZoomer.getZoomFactor();
+        Log.d(TAG, "correctAfterRotation: oldScale=" + oldScale + ", newScale=" + newScale);
+        // Guard against division by zero or invalid scale
+        if (newScale > 0 && oldScale > 0) {
+            canvas.canvasZoomer.changeZoom(this, oldScale / newScale, 0, 0);
+            newScale = canvas.canvasZoomer.getZoomFactor();
+        }
+        // For FitToScreenScaling, always reset position after rotation to ensure full coverage
+        if (canvas.canvasZoomer.getScaleType() == ImageView.ScaleType.FIT_CENTER) {
+            canvas.absoluteXPosition = 0;
+            canvas.absoluteYPosition = 0;
+            canvas.resetScroll();
+        } else if (newScale <= oldScale) {
+            canvas.absoluteXPosition = x;
+            canvas.absoluteYPosition = y;
+            canvas.resetScroll();
+        }
+        if (remoteConnection != null) {
+            remoteConnection.correctAfterRotation();
+        }
+    }
+
+    /**
+     * Controls sticky immersive mode (enables/disables as configured).
+     */
+    private void controlImmersive() {
+        if (handler != null) {
+            handler.removeCallbacks(immersiveEnabler);
+            handler.postDelayed(immersiveEnabler, 200);
+            handler.removeCallbacks(immersiveDisabler);
+            handler.postDelayed(immersiveDisabler, 200);
+        }
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        Log.d(TAG, "onWindowFocusChanged: " + hasFocus);
+        canvas.setForegrounded(hasFocus);
+        if (hasFocus) {
+            controlImmersive();
+        }
+    }
+
+    @SuppressLint("ObsoleteSdkInt")
+    @Override
+    public void onCreate(Bundle icicle) {
+        Log.d(TAG, "OnCreate called, taskId=" + getTaskId() + ", intent=" + getIntent());
+        super.onCreate(icicle);
+
+        // Check if we should close immediately due to parent request
+        if (getIntent() != null && getIntent().getBooleanExtra("finish_from_parent", false)) {
+            Log.d(TAG, "finish_from_parent is true in onCreate, closing immediately");
+            finish();
+            return;
+        }
+
+        Log.d(TAG, "OnCreate continuing with connection setup");
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        Utils.showMenu(this);
+
+        setContentView(R.layout.canvas);
+
+        canvasLayout = findViewById(R.id.canvasLayout);
+        canvas = findViewById(R.id.canvas);
+        keyboardIconForAndroidTv = findViewById(R.id.keyboardIconForAndroidTv);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            canvas.setDefaultFocusHighlightEnabled(false);
+        }
+        if (Build.VERSION.SDK_INT >= 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+
+        myVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+
+        View decorView = getWindow().getDecorView();
+        decorView.setOnSystemUiVisibilityChangeListener
+                (visibility -> {
+                    try {
+                        remoteConnection.correctAfterRotation();
+                    } catch (Exception e) {
+                        Log.d(TAG, "Ignoring Exception during SystemUiVisibilityChangeListener execution");
+                    }
+                });
+
+        Runnable setModes = () -> {
+            try {
+                setModes();
+            } catch (NullPointerException e) {
+                Log.d(TAG, "Ignored NullPointerException while running setModes: " + Log.getStackTraceString(e));
+            }
+        };
+        Runnable hideKeyboardAndExtraKeys = () -> {
+            try {
+                hideKeyboardAndExtraKeys();
+            } catch (NullPointerException e) {
+                Log.d(TAG, "Ignoring NullPointerException while running hideKeyboardAndExtraKeys.");
+            }
+        };
+
+        setApplicationSpecificSettings();
+
+        try {
+            connection = AbstractConnectionBean.getRemoteConnectionSettings(getIntent(), this, isMasterPasswordEnabled());
+        } catch (GettingConnectionSettingsException e) {
+            Utils.showFatalErrorMessage(this, getResources().getString(e.getErrorStringId()));
+            return;
+        }
+
+        if (connection == null || !connection.isReadyForConnection()) {
+            showConnectionScreenOrExitIfNotReadyForConnecting(connection);
+            return;
+        }
+
+        remoteConnection = new RemoteConnectionFactory(this, connection, canvas, hideKeyboardAndExtraKeys).build();
+
+        handler = new RemoteCanvasHandler(this, canvas, remoteConnection, connection, setModes);
+        Log.d(TAG, "OnCreate - initializing session with a REINIT_SESSION message");
+        handler.sendEmptyMessage(RemoteClientLibConstants.REINIT_SESSION);
+        continueConnecting();
+
+        Log.d(TAG, "OnCreate complete");
+    }
+
+    private void setApplicationSpecificSettings() {
+        if (Utils.isOpaque(this)) {
+            setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        } else {
+            if (Utils.querySharedPreferenceBoolean(this, Constants.keepScreenOnTag))
+                getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+            if (Utils.querySharedPreferenceBoolean(this, Constants.forceLandscapeTag))
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+        }
+    }
+
+    private void showConnectionScreenOrExitIfNotReadyForConnecting(Connection connection) {
+        // we need to save the connection to display the loading screen, so otherwise we should exit
+        if (connection == null || !connection.isReadyForConnection()) {
+            Snackbar.make(canvas, getString(R.string.error_uri_noinfo_nosave), Snackbar.LENGTH_LONG).show();
+            if (connection != null && connection.isReadyToBeSaved()) {
+                Log.i(TAG, "Exiting - Insufficient information to connect and connection was not saved.");
+            } else {
+                Log.i(TAG, "Insufficient information to connect, showing connection dialog.");
+                // launch appropriate activity
+                Class<?> cls = bVNC.class;
+                if (Utils.isRdp(this)) {
+                    cls = aRDP.class;
+                } else if (Utils.isSpice(this)) {
+                    cls = aSPICE.class;
+                }
+                Intent Intent = new Intent(this, cls);
+                startActivity(Intent);
+            }
+            Utils.justFinish(this);
+        }
+    }
+
+    @SuppressLint("RtlHardcoded")
+    public void continueConnecting() {
+        Log.d(TAG, "continueConnecting");
+        // Initialize extra keys view and pager.
+        initializeExtraKeysView();
+
+        canvas.setFocusableInTouchMode(true);
+        canvas.setDrawingCacheEnabled(false);
+
+        // This code detects when the soft keyboard is up and sets an appropriate visibleHeight in vncCanvas.
+        // When the keyboard is gone, it resets visibleHeight and pans zero distance to prevent us from being
+        // below the desktop image (if we scrolled all the way down when the keyboard was up).
+        // TODO: Move this into a separate thread, and post the visibility changes to the handler.
+        //       to avoid occupying the UI thread with this.
+        rootView = ((ViewGroup) findViewById(android.R.id.content)).getChildAt(0);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(() -> relayoutViews(rootView));
+
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT);
+
+        if (Utils.querySharedPreferenceBoolean(this, Constants.leftHandedModeTag)) {
+            params.gravity = Gravity.CENTER | Gravity.LEFT;
+        } else {
+            params.gravity = Gravity.CENTER | Gravity.RIGHT;
+        }
+
+        panner = new Panner(this, handler);
+
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("");
+        toolbar.setOnGenericMotionListener(ignoringMouseInputListener);
+        toolbar.getBackground().setAlpha(64);
+        toolbar.setLayoutParams(params);
+        setSupportActionBar(toolbar);
+        showActionBar();
+    }
+
+    void relayoutViews(View rootView) {
+        Log.d(TAG, "onGlobalLayout: start");
+        if (canvas == null) {
+            Log.d(TAG, "onGlobalLayout: canvas null, returning");
+            return;
+        }
+
+        Rect r = new Rect();
+
+        rootView.getWindowVisibleDisplayFrame(r);
+        Log.d(TAG, "onGlobalLayout: getWindowVisibleDisplayFrame: " + r);
+
+        // To avoid setting the visible height to a wrong value after an screen unlock event
+        // (when r.bottom holds the width of the screen rather than the height due to a rotation)
+        // we make sure r.top is zero (i.e. there is no notification bar and we are in full-screen mode)
+        // It's a bit of a hack.
+        // One additional situation that needed handling was that devices with notches / cutouts don't
+        // ever have r.top equal to zero. so a special case for them.
+        Rect re = new Rect();
+        getWindow().getDecorView().getWindowVisibleDisplayFrame(re);
+        if (r.top == 0 || re.top > 0) {
+            if (canvas.getDrawable() != null) {
+                int extraKeysHeight = (extraKeysToolbar != null) ? extraKeysToolbar.getHeight() : 0;
+                int usableHeight = r.bottom - re.top - extraKeysHeight;
+                Log.d(TAG, "onGlobalLayout: Setting VisibleDesktopHeight to: " + usableHeight +
+                        ", extraKeysHeight: " + extraKeysHeight);
+                canvas.setVisibleDesktopHeight(usableHeight);
+                canvas.relativePan(0, 0);
+            } else {
+                Log.d(TAG, "onGlobalLayout: canvas.myDrawable is null");
+            }
+        } else {
+            Log.d(TAG, "onGlobalLayout: Found r.top to be non-zero");
+        }
+
+        // Enable/show the toolbar if the keyboard is gone, and disable/hide otherwise.
+        // We detect the keyboard if more than 19% of the screen is covered.
+        // Use the visible display frame of the decor view to compute notch dimensions.
+        int rootViewHeight = rootView.getHeight();
+
+        if (keyboardIconForAndroidTvX == Float.MAX_VALUE) {
+            keyboardIconForAndroidTvX = keyboardIconForAndroidTv.getX();
+        }
+
+        int[] rootViewScreenPos = new int[2];
+        rootView.getLocationOnScreen(rootViewScreenPos);
+        int rootViewTopInScreen = rootViewScreenPos[1];
+
+        int layoutKeysBottom = extraKeysToolbar.getBottom();
+        int toolbarBottom = toolbar.getBottom();
+        int rootViewBottom = extraKeysToolbar.getRootView().getBottom();
+        int diffLayoutKeysPosition = r.bottom - rootViewTopInScreen - layoutKeysBottom;
+        int diffToolbarPosition = r.bottom - re.top - toolbarBottom - r.bottom / 2;
+        int standardToolbarPositionX = r.right - toolbar.getWidth();
+        int standardToolbarPositionY = r.bottom - re.top - toolbar.getHeight() - r.bottom / 2;
+        Log.d(TAG, "onGlobalLayout: before: r.bottom: " + r.bottom +
+                " rootViewHeight: " + rootViewHeight + " re.top: " + re.top + " re.bottom: " + re.bottom +
+                " layoutKeysBottom: " + layoutKeysBottom + " rootViewBottom: " + rootViewBottom + " toolbarBottom: " + toolbarBottom +
+                " diffLayoutKeysPosition: " + diffLayoutKeysPosition + " diffToolbarPosition: " + diffToolbarPosition);
+
+        if (r.bottom > rootViewHeight * 0.81) {
+            Log.d(TAG, "onGlobalLayout: Less than 19% of screen is covered");
+            String direction = "down";
+            // Soft Kbd gone, shift the extra keys toolbar down.
+            if (extraKeysToolbar != null) {
+                shiftToolbar(r, diffLayoutKeysPosition, diffToolbarPosition, standardToolbarPositionX, standardToolbarPositionY, direction);
+                if (softKeyboardUp) {
+                    Log.d(TAG, "onGlobalLayout: softKeyboardUp was true, but keyboard is now hidden. Hiding on-screen buttons");
+                    setExtraKeysVisibility(View.GONE, false);
+                    canvas.invalidate();
+                }
+            }
+            softKeyboardUp = false;
+        } else {
+            Log.d(TAG, "onGlobalLayout: More than 19% of screen is covered");
+            softKeyboardUp = true;
+            String direction = "up";
+            //  Soft Kbd up, shift the extra keys toolbar up.
+            if (extraKeysToolbar != null) {
+                shiftToolbar(r, diffLayoutKeysPosition, diffToolbarPosition, standardToolbarPositionX, standardToolbarPositionY, direction);
+                if (extraKeysHidden) {
+                    Log.d(TAG, "onGlobalLayout: on-screen buttons should be hidden");
+                    setExtraKeysVisibility(View.GONE, false);
+                } else {
+                    Log.d(TAG, "onGlobalLayout: on-screen buttons should be showing");
+                    setExtraKeysVisibility(View.VISIBLE, true);
+                }
+                canvas.invalidate();
+            }
+        }
+        if (extraKeysToolbar != null) {
+            layoutKeysBottom = extraKeysToolbar.getBottom();
+            rootViewBottom = extraKeysToolbar.getRootView().getBottom();
+        }
+        Log.d(TAG, "onGlobalLayout: after: r.bottom: " + r.bottom +
+                " rootViewHeight: " + rootViewHeight + " re.top: " + re.top + " re.bottom: " + re.bottom +
+                " layoutKeysBottom: " + layoutKeysBottom + " rootViewBottom: " + rootViewBottom + " toolbarBottom: " + toolbarBottom +
+                " diffLayoutKeysPosition: " + diffLayoutKeysPosition + " diffToolbarPosition: " + diffToolbarPosition);
+
+        recalculateYPointerOffset();
+    }
+
+    private void recalculateYPointerOffset() {
+        boolean disabled = Utils.querySharedPreferenceBoolean(getApplicationContext(), "disablePointerOffsetCalculation");
+        if (disabled) {
+            Log.d(TAG, "recalculateTitleBarHeight - pointer offset calculation disabled");
+            xPointerOffset = 0;
+            yPointerOffset = 0;
+        } else {
+            Rect frame = new Rect();
+            getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+            int[] location = new int[2];
+            getWindow().getDecorView().getLocationOnScreen(location);
+
+            if (isWidthFull()) {
+                Log.d(TAG, "recalculateTitleBarHeight - app is occupying full width of screen, skipping x offset calculation");
+                xPointerOffset = 0;
+            } else {
+                int displayLeft = location[0];
+                xPointerOffset = frame.left - displayLeft;
+                Log.d(TAG, "recalculateTitleBarHeight - frame.left - displayLeft = xPointerOffset: " +
+                        frame.left + " - " + displayLeft + " = " + xPointerOffset);
+            }
+
+            if (isHeightFull()) {
+                Log.d(TAG, "recalculateTitleBarHeight - app is occupying full height of screen, skipping y offset calculation");
+                yPointerOffset = 0;
+            } else {
+                int displayTop = location[1];
+                yPointerOffset = frame.top - displayTop;
+                Log.d(TAG, "recalculateTitleBarHeight - frame.top - displayTop = yPointerOffset: " +
+                        frame.top + " - " + displayTop + " = " + yPointerOffset);
+            }
+        }
+    }
+
+    public boolean isWidthFull() {
+        int w = canvas.getWidth();
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        int dW = displayMetrics.widthPixels;
+        Log.d(TAG, "isWidthFull - view width: " + w + ", display width: " + dW);
+        return w == dW;
+    }
+
+    public boolean isHeightFull() {
+        int h = canvas.getHeight();
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        int dH = displayMetrics.heightPixels;
+        Log.d(TAG, "isHeightFull - view height: " + h + ", display height: " + dH);
+        return h == dH;
+    }
+
+    private void shiftToolbar(Rect r, int diffLayoutKeysPosition, int diffToolbarPosition, int standardToolbarPositionX, int standardToolbarPositionY, String direction) {
+        Log.d(TAG, String.format("onGlobalLayout: shifting on-screen buttons %s by: %d", direction, diffLayoutKeysPosition));
+        // Use setTranslationY instead of offsetTopAndBottom: unlike offsetTopAndBottom, setTranslationY
+        // is a render-layer transform that is not reset by layout passes, and does not change getBottom(),
+        // so every onGlobalLayout call sets the same absolute translation regardless of intermediate layouts.
+        extraKeysToolbar.setTranslationY(diffLayoutKeysPosition);
+        if (extraKeysPageIndicator != null)
+            extraKeysPageIndicator.setTranslationY(diffLayoutKeysPosition);
+        offsetOrRestoreSavedToolbarPosition(r, diffToolbarPosition, standardToolbarPositionX, standardToolbarPositionY);
+    }
+
+    private void offsetOrRestoreSavedToolbarPosition(Rect r, int diffToolbarPosition, int standardPositionX, int standardPositionY) {
+        boolean useLastPosition = connection.getUseLastPositionToolbar();
+        boolean toolbarMoved = connection.getUseLastPositionToolbarMoved();
+        if (!useLastPosition || !toolbarMoved) {
+            toolbar.offsetTopAndBottom(diffToolbarPosition);
+        } else {
+            toolbar.setPositionToMakeVisible(
+                    connection.getUseLastPositionToolbarX(),
+                    connection.getUseLastPositionToolbarY(),
+                    r.right,
+                    r.bottom,
+                    standardPositionX,
+                    standardPositionY);
+        }
+    }
+
+    public void extraKeysToggle(MenuItem m) {
+        if (extraKeysToolbar.getVisibility() == View.VISIBLE) {
+            extraKeysHidden = true;
+            setExtraKeysVisibility(View.GONE, false);
+        } else {
+            extraKeysHidden = false;
+            setExtraKeysVisibility(View.VISIBLE, true);
+        }
+        setKeyStowDrawableAndVisibility(m);
+        relayoutViews(rootView);
+    }
+
+    private void setKeyStowDrawableAndVisibility(MenuItem m) {
+        if (m == null) {
+            return;
+        }
+        Drawable replacer;
+        m.setVisible(connection.getExtraKeysToggleType() != Constants.EXTRA_KEYS_OFF);
+        if (extraKeysToolbar.getVisibility() == View.GONE)
+            replacer = ResourcesCompat.getDrawable(getResources(), R.drawable.showkeys, null);
+        else
+            replacer = ResourcesCompat.getDrawable(getResources(), R.drawable.hidekeys, null);
+
+        m.setIcon(replacer);
+    }
+
+    public void sendShortVibration() {
+        if (myVibrator != null) {
+            myVibrator.vibrate(Constants.SHORT_VIBRATION);
+        } else {
+            Log.i(TAG, "Device cannot vibrate, not sending vibration");
+        }
+    }
+
+    @Override
+    public <T extends View> T findViewById(int id) {
+        return super.findViewById(id);
+    }
+
+    @Override
+    public boolean getUseDpadAsArrows() {
+        return connection != null && connection.getUseDpadAsArrows();
+    }
+
+    @Override
+    public boolean getRotateDpad() {
+        return connection != null && connection.getRotateDpad();
+    }
+
+    @Override
+    public int getxPointerOffset() {
+        return xPointerOffset;
+    }
+
+    @Override
+    public int getyPointerOffset() {
+        return yPointerOffset;
+    }
+
+    private void initializeExtraKeysView() {
+        extraKeysToolbar = findViewById(R.id.extraKeysToolbar);
+        float extraKeysAlpha = Color.alpha(ContextCompat.getColor(this, R.color.extra_keys_background)) / 255f;
+        extraKeysToolbar.setAlpha(extraKeysAlpha);
+
+        extraKeysPagerAdapter = new ExtraKeysPagerAdapter(this, new ExtraKeysPagerAdapter.Callbacks() {
+            @Override
+            public void onSendText(String text) {
+                if (inputListener != null) {
+                    inputListener.sendText(text);
+                }
+            }
+            @Override
+            public RemoteKeyboard getKeyboard() {
+                return remoteConnection != null ? remoteConnection.getKeyboard() : null;
+            }
+        });
+        extraKeysToolbar.setAdapter(extraKeysPagerAdapter);
+
+        extraKeysToolbar.setCurrentItem(1, false);
+
+        extraKeysPageIndicator = findViewById(R.id.extraKeysPageIndicator);
+        extraKeysPageIndicator.setAlpha(extraKeysAlpha);
+        pageIndicatorDots = new View[]{
+            findViewById(R.id.dotPage0),
+            findViewById(R.id.dotPage1),
+            findViewById(R.id.dotPage2)
+        };
+        updatePageDots(1);
+
+        extraKeysToolbar.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                updatePageDots(position);
+                if (position == 0) {
+                    if (extraKeysPagerAdapter != null && extraKeysPagerAdapter.getSendTextPanel() != null)
+                        extraKeysPagerAdapter.getSendTextPanel().requestFocusOnText();
+                } else {
+                    canvas.requestFocus();
+                }
+            }
+        });
+    }
+
+    /**
+     * Shows the extra-keys toolbar (if hidden) and navigates to the Send Text panel with an
+     * animated slide from the modifier-keys page, hinting that a right swipe reaches it.
+     */
+    private void openSendTextPanel() {
+        extraKeysHidden = false;
+        setExtraKeysVisibility(View.VISIBLE, true);
+        // Snap to the modifier-keys page (1) without animation so the subsequent animated
+        // slide always travels one page to the right, demonstrating the swipe gesture.
+        extraKeysToolbar.setCurrentItem(1, false);
+        extraKeysToolbar.post(() -> extraKeysToolbar.setCurrentItem(0, true));
+    }
+
+    /** Updates the page indicator dots so the active page's dot is bright and the others are dim. */
+    private void updatePageDots(int activePage) {
+        if (pageIndicatorDots == null) return;
+        for (int i = 0; i < pageIndicatorDots.length; i++) {
+            GradientDrawable dot = new GradientDrawable();
+            dot.setShape(GradientDrawable.OVAL);
+            dot.setColor(i == activePage ? 0xFFFFFFFF : 0x55FFFFFF);
+            pageIndicatorDots[i].setBackground(dot);
+        }
+    }
+
+    /**
+     * On the very first launch, animates through all three pages so the user discovers the
+     * swipe gestures. Runs only once, tracked in SharedPreferences.
+     */
+    private void maybeRunExtraKeysTour() {
+        if (Utils.querySharedPreferenceBoolean(this, EXTRA_KEYS_TOUR_SHOWN, false)) {
+            return;
+        }
+        Utils.setSharedPreferenceBoolean(this, EXTRA_KEYS_TOUR_SHOWN, true);
+        // Sweep: modifier keys → F-keys → modifier keys → send text → modifier keys
+        extraKeysToolbar.postDelayed(() -> extraKeysToolbar.setCurrentItem(2, true), 1000);
+        extraKeysToolbar.postDelayed(() -> extraKeysToolbar.setCurrentItem(1, true), 2000);
+        extraKeysToolbar.postDelayed(() -> extraKeysToolbar.setCurrentItem(0, true), 3000);
+        extraKeysToolbar.postDelayed(() -> extraKeysToolbar.setCurrentItem(1, true), 4000);
+    }
+
+    /**
+     * Resets the state of the on-screen special buttons.
+     */
+    private int resetOnScreenKeys(int keyCode) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_SHIFT_LEFT:
+            case KeyEvent.KEYCODE_SHIFT_RIGHT:
+                return keyCode;
+        }
+        ExtraKeysView extraKeysView = extraKeysPagerAdapter != null ? extraKeysPagerAdapter.getExtraKeysView() : null;
+        if (extraKeysView != null) {
+            extraKeysView.resetSpecialButtons();
+        }
+        return keyCode;
+    }
+
+    /**
+     * Sets the visibility of the extra keys appropriately.
+     */
+    private void setExtraKeysVisibility(int visibility, boolean forceVisible) {
+        Configuration config = getResources().getConfiguration();
+
+        boolean makeVisible = forceVisible;
+        if (config.hardKeyboardHidden == Configuration.HARDKEYBOARDHIDDEN_NO)
+            makeVisible = true;
+
+        if (!extraKeysHidden && makeVisible &&
+                connection.getExtraKeysToggleType() == Constants.EXTRA_KEYS_ON) {
+            extraKeysToolbar.setVisibility(View.VISIBLE);
+            if (extraKeysPageIndicator != null)
+                extraKeysPageIndicator.setVisibility(View.VISIBLE);
+            extraKeysToolbar.invalidate();
+            maybeRunExtraKeysTour();
+            return;
+        }
+
+        if (visibility == View.GONE) {
+            extraKeysToolbar.setVisibility(View.GONE);
+            if (extraKeysPageIndicator != null)
+                extraKeysPageIndicator.setVisibility(View.GONE);
+            extraKeysToolbar.invalidate();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(TAG, "onPause called.");
+        try {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(canvas.getWindowToken(), 0);
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during onPause");
+        }
+    }
+
+    @Override
+    public void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.d(TAG, "onNewIntent called with intent=" + intent);
+
+        if (intent.getBooleanExtra("finish_from_parent", false)) {
+            Log.d(TAG, "finish_from_parent is true, closing activity");
+            finish();
+            return;
+        }
+
+        // Compare vv_file_path extra instead of URI
+        // URI changes every time because content:// generates different temp files
+        // But vv_file_path stays consistent for the same connection
+        String newVVFilePath = intent.getStringExtra("vv_file_path");
+        String currentVVFilePath = getIntent() != null ? getIntent().getStringExtra("vv_file_path") : null;
+        String newPveUrl = intent.getStringExtra("pve_url");
+        String currentPveUrl = getIntent() != null ? getIntent().getStringExtra("pve_url") : null;
+
+        Log.d(TAG, "onNewIntent: newVVFilePath=" + newVVFilePath + ", currentVVFilePath=" + currentVVFilePath);
+        Log.d(TAG, "onNewIntent: newPveUrl=" + newPveUrl + ", currentPveUrl=" + currentPveUrl);
+
+        // For PVE URLs, we need to compare both vv_file_path (hash) and the actual PVE URL
+        // If either is different, it's a different connection
+        boolean isDifferentConnection = false;
+        if (newVVFilePath != null && !newVVFilePath.equals(currentVVFilePath)) {
+            isDifferentConnection = true;
+        } else if (newPveUrl != null && currentPveUrl != null && !newPveUrl.equals(currentPveUrl)) {
+            // PVE URL changed (different VM)
+            isDifferentConnection = true;
+        } else if (newPveUrl != null && currentPveUrl == null) {
+            // Switching from .vv file to PVE URL
+            isDifferentConnection = true;
+        }
+
+        if (isDifferentConnection) {
+            Log.d(TAG, "Different connection detected, launching new activity");
+            // Close current connection properly before starting new one
+            if (remoteConnection != null) {
+                Log.d(TAG, "onNewIntent: closing current connection");
+                remoteConnection.closeConnection();
+            }
+            // Use FLAG_ACTIVITY_CLEAR_TOP to bring existing activity to front
+            // The activity will handle the new connection in onResume
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            // Don't call finish() - let the existing activity handle it
+        } else {
+            // Same connection or same link re-invoked, only update intent
+            setIntent(intent);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume called.");
+        // Check if we should close due to finish_from_parent
+        if (getIntent() != null && getIntent().getBooleanExtra("finish_from_parent", false)) {
+            Log.d(TAG, "finish_from_parent is true in onResume, closing activity");
+            finish();
+            return;
+        }
+        try {
+            canvas.postInvalidateDelayed(600);
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during onResume");
+        }
+    }
+
+    /**
+     * Set modes on start to match what is specified in the ConnectionBean;
+     * color mode (already done) scaling, input mode
+     */
+    void setModes() {
+        Log.d(TAG, "setModes");
+        setInputHandler(getInputHandlerByName(connection.getInputMode()));
+        AbstractScaling.getByScaleType(connection.getScaleMode()).setScaleTypeForActivity(this);
+        initializeExtraKeysView();
+        try {
+            COLORMODEL cm = COLORMODEL.valueOf(connection.getColorModel());
+            remoteConnection.setColorModel(cm);
+        } catch (NullPointerException | IllegalArgumentException e) {
+            Log.w(TAG, "Could not set color model");
+        }
+        canvas.setFocusableInTouchMode(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            canvas.setFocusedByDefault(true);
+        }
+        canvas.requestFocus();
+        canvas.setDrawingCacheEnabled(false);
+
+        SamsungDexUtils.INSTANCE.dexMetaKeyCapture(this);
+    }
+
+    /*
+     * (non-Javadoc)
+     *
+     * @see android.app.Activity#onCreateDialog(int)
+     */
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        if (id == R.layout.entertext) {
+            return new EnterTextDialog(this);
+        } else if (id == R.id.itemHelpInputMode) {
+            return createHelpDialog();
+        }
+
+        // Default to meta key dialog
+        return new MetaKeyDialog(this);
+    }
+
+    /**
+     * Creates the help dialog for this activity.
+     */
+    private Dialog createHelpDialog() {
+        AlertDialog.Builder adb = new AlertDialog.Builder(this)
+                .setMessage(R.string.input_mode_help_text)
+                .setPositiveButton(R.string.close,
+                        (dialog, whichButton) -> {
+                            // We don't have to do anything.
+                        });
+        Dialog d = adb.setView(new ListView(this)).create();
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        Window window = d.getWindow();
+        if (window != null) {
+            lp.copyFrom(window.getAttributes());
+            lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+            d.show();
+            window.setAttributes(lp);
+        }
+        return d;
+    }
+
+    /*
+     * (non-Javadoc)
+     *
+     * @see android.app.Activity#onPrepareDialog(int, android.app.Dialog)
+     */
+    @SuppressWarnings("deprecation")
+    @Override
+    protected void onPrepareDialog(int id, Dialog dialog) {
+        super.onPrepareDialog(id, dialog);
+        if (dialog instanceof ConnectionSettable)
+            ((ConnectionSettable) dialog).setConnection(connection);
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        controlImmersive();
+        try {
+            setExtraKeysVisibility(View.GONE, false);
+            handler.postDelayed(rotationCorrector, 300);
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during onConfigurationChanged");
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG, "onStart called.");
+        try {
+            canvas.postInvalidateDelayed(800);
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during onStart");
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG, "onStop called.");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(TAG, "onRestart called.");
+        try {
+            canvas.postInvalidateDelayed(1000);
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during onRestart");
+
+        }
+    }
+
+    @Override
+    public void onPanelClosed(int featureId, @NonNull Menu menu) {
+        showActionBar();
+        super.onPanelClosed(featureId, menu);
+    }
+
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu) {
+        if (menu != null) {
+            Log.i(TAG, "Menu opened, disabling hiding action bar");
+            handler.removeCallbacks(actionBarHider);
+            updateScalingMenu();
+            updateInputMenu();
+        }
+        return super.onMenuOpened(featureId, menu);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Make sure extra keys stow item is gone if extra keys are disabled and vice versa.
+        setKeyStowDrawableAndVisibility(menu.findItem(R.id.extraKeysToggle));
+        menu.findItem(R.id.itemColorMode).setVisible(remoteConnection.canUpdateColorModelConnected());
+        return true;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        Log.d(TAG, "OnCreateOptionsMenu called");
+        try {
+            getMenuInflater().inflate(R.menu.canvasactivitymenu, menu);
+
+            Menu inputMenu = menu.findItem(R.id.itemInputMode).getSubMenu();
+            inputModeMenuItems = new MenuItem[inputModeIds.length];
+            for (int i = 0; i < inputModeIds.length; i++) {
+                if (inputMenu != null) {
+                    inputModeMenuItems[i] = inputMenu.findItem(inputModeIds[i]);
+                }
+            }
+            updateInputMenu();
+
+            Menu scalingMenu = menu.findItem(R.id.itemScaling).getSubMenu();
+            scalingModeMenuItems = new MenuItem[scalingModeIds.length];
+            for (int i = 0; i < scalingModeIds.length; i++) {
+                if (scalingMenu != null) {
+                    scalingModeMenuItems[i] = scalingMenu.findItem(scalingModeIds[i]);
+                }
+            }
+            updateScalingMenu();
+
+            // Set the text of the Extra Keys menu item appropriately.
+            // TODO: Implement for Opaque
+            if (connection != null && connection.getExtraKeysToggleType() == Constants.EXTRA_KEYS_ON)
+                menu.findItem(R.id.itemExtraKeys).setTitle(R.string.extra_keys_disable);
+            else
+                menu.findItem(R.id.itemExtraKeys).setTitle(R.string.extra_keys_enable);
+
+            toolbarMover = new OnTouchViewMover(toolbar, handler, toolbarPositionSaver, actionBarHider, hideToolbarDelay);
+            ImageButton moveButton = new ImageButton(this);
+
+            moveButton.setBackgroundResource(R.drawable.ic_all_out_gray_36dp);
+            MenuItem moveToolbar = menu.findItem(R.id.moveToolbar);
+            moveToolbar.setActionView(moveButton);
+            moveButton.setOnTouchListener(toolbarMover);
+
+            // Set up scroll wheel button
+            MenuItem scrollWheelItem = menu.findItem(R.id.actionScrollWheel);
+            if (scrollWheelItem != null) {
+                ScrollWheelButton scrollWheelButton = new ScrollWheelButton(this);
+                scrollWheelButton.setRemoteInput(remoteConnection);
+                scrollWheelButton.setTouchInputDelegate(this);
+                scrollWheelItem.setActionView(scrollWheelButton);
+                Log.d(TAG, "ScrollWheelButton added to toolbar");
+            }
+        } catch (NullPointerException e) {
+            Log.e(TAG, "onCreateOptionsMenu - NullPointerException: " + Log.getStackTraceString(e));
+        }
+        Log.d(TAG, "OnCreateOptionsMenu complete");
+        return true;
+    }
+
+    /**
+     * Change the scaling mode sub-menu to reflect available scaling modes.
+     */
+    void updateScalingMenu() {
+        try {
+            for (MenuItem item : scalingModeMenuItems) {
+                // If the entire framebuffer is NOT contained in the bitmap, fit-to-screen is meaningless.
+                if (item.getItemId() == R.id.itemFitToScreen) {
+                    item.setEnabled(canvas == null || canvas.myDrawable == null ||
+                            (canvas.myDrawable.getBitmapHeight() == canvas.myDrawable.getFramebufferHeight() &&
+                                    canvas.myDrawable.getBitmapWidth() == canvas.myDrawable.getFramebufferWidth()));
+                } else {
+                    item.setEnabled(true);
+                }
+
+                AbstractScaling scaling = AbstractScaling.getById(item.getItemId());
+                if (scaling.scaleType == connection.getScaleMode()) {
+                    item.setChecked(true);
+                }
+            }
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during updateScalingMenu");
+        }
+    }
+
+    /**
+     * Change the input mode sub-menu to reflect change in scaling
+     */
+    void updateInputMenu() {
+        try {
+            for (MenuItem item : inputModeMenuItems) {
+                item.setEnabled(canvas.canvasZoomer.isValidInputMode(item.getItemId()));
+                if (getInputHandlerById(item.getItemId()) == touchInputHandler)
+                    item.setChecked(true);
+            }
+        } catch (NullPointerException e) {
+            Log.d(TAG, "Ignoring NullPointerException during updateInputMenu");
+        }
+    }
+
+    /**
+     * If id represents an input handler, return that; otherwise return null
+     */
+    TouchInputHandler getInputHandlerById(int id) {
+        myVibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+
+        if (inputModeHandlers == null) {
+            inputModeHandlers = new TouchInputHandler[inputModeIds.length];
+        }
+        for (int i = 0; i < inputModeIds.length; ++i) {
+            if (inputModeIds[i] == id) {
+                if (inputModeHandlers[i] == null) {
+                    if (id == R.id.itemInputTouchPanZoomMouse) {
+                        inputModeHandlers[i] = new TouchInputHandlerDirectSwipePan(this, canvas, remoteConnection, App.debugLog, getScrollSensitivitySetting());
+                    } else if (id == R.id.itemInputDragPanZoomMouse) {
+                        inputModeHandlers[i] = new TouchInputHandlerDirectDragPan(this, canvas, remoteConnection, App.debugLog, getScrollSensitivitySetting());
+                    } else if (id == R.id.itemInputTouchpad) {
+                        inputModeHandlers[i] = new TouchInputHandlerTouchpad(this, canvas, remoteConnection, App.debugLog, getScrollSensitivitySetting());
+                    } else if (id == R.id.itemInputSingleHanded) {
+                        inputModeHandlers[i] = new TouchInputHandlerSingleHanded(this, canvas, remoteConnection, App.debugLog, getScrollSensitivitySetting());
+                    } else {
+                        throw new IllegalStateException("Unexpected value: " + id);
+                    }
+                }
+                return inputModeHandlers[i];
+            }
+        }
+        return null;
+    }
+
+    TouchInputHandler getInputHandlerByName(String name) {
+        TouchInputHandler result = null;
+        for (int id : inputModeIds) {
+            TouchInputHandler handler = getInputHandlerById(id);
+            if (handler.getId().equals(name)) {
+                result = handler;
+                break;
+            }
+        }
+        if (result == null) {
+            result = getInputHandlerById(R.id.itemInputTouchPanZoomMouse);
+        }
+        return result;
+    }
+
+    int getModeIdFromHandler(TouchInputHandler handler) {
+        for (int id : inputModeIds) {
+            if (handler == getInputHandlerById(id))
+                return id;
+        }
+        return R.id.itemInputTouchPanZoomMouse;
+    }
+
+    int getScrollSensitivitySetting() {
+        // SeekBar starts at 0, so add 1 to not have 0 sensitivity
+        return Utils.querySharedPreferencesInt(this, Constants.scrollSpeed, Constants.DEFAULT_SCROLL_SPEED) + 1;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        RemoteKeyboard k = remoteConnection.getKeyboard();
+        if (k != null) {
+            k.setAfterMenu(true);
+        }
+        int itemId = item.getItemId();
+        if (itemId == R.id.itemInfo) {
+            remoteConnection.showConnectionInfo();
+            return true;
+        } else if (itemId == R.id.itemSpecialKeys) {
+            showDialog(R.layout.metakey);
+            return true;
+        } else if (itemId == R.id.itemColorMode) {
+            selectColorModel();
+            return true;
+            // Following sets one of the scaling options
+        } else if (itemId == R.id.itemZoomable || itemId == R.id.itemOneToOne || itemId == R.id.itemFitToScreen) {
+            AbstractScaling.getById(item.getItemId()).setScaleTypeForActivity(this);
+            item.setChecked(true);
+            showPanningState(false);
+            return true;
+        } else if (itemId == R.id.itemCenterMouse) {
+            remoteConnection.getPointer().movePointer(canvas.absoluteXPosition + canvas.getVisibleDesktopWidth() / 2,
+                    canvas.absoluteYPosition + canvas.getVisibleDesktopHeight() / 2);
+            return true;
+        } else if (itemId == R.id.itemDisconnect) {
+            disconnectAndFinishActivity();
+            return true;
+        } else if (itemId == R.id.itemEnterText) {
+            openSendTextPanel();
+            return true;
+        } else if (itemId == R.id.itemCtrlAltDel) {
+            remoteConnection.getKeyboard().sendMetaKey(MetaKeyBean.keyCtrlAltDel);
+            return true;
+        } else if (itemId == R.id.itemSendKeyAgain) {
+            sendSpecialKeyAgain();
+            return true;
+        } else if (itemId == R.id.itemExtraKeys) {
+            if (connection.getExtraKeysToggleType() == Constants.EXTRA_KEYS_ON) {
+                connection.setExtraKeysToggleType(Constants.EXTRA_KEYS_OFF);
+                item.setTitle(R.string.extra_keys_enable);
+                setExtraKeysVisibility(View.GONE, false);
+            } else {
+                connection.setExtraKeysToggleType(Constants.EXTRA_KEYS_ON);
+                item.setTitle(R.string.extra_keys_disable);
+                setExtraKeysVisibility(View.VISIBLE, false);
+                extraKeysHidden = false;
+            }
+            invalidateOptionsMenu();
+            connection.save(this);
+            return true;
+        } else if (itemId == R.id.itemHelpInputMode) {
+            showDialog(R.id.itemHelpInputMode);
+            return true;
+        } else {
+            boolean inputModeSet = setInputMode(item.getItemId());
+            item.setChecked(inputModeSet);
+            if (inputModeSet) {
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void disconnectAndFinishActivity() {
+        remoteConnection.closeConnection();
+        Utils.justFinish(this);
+    }
+
+    public boolean setInputMode(int id) {
+        TouchInputHandler input = getInputHandlerById(id);
+        if (input != null) {
+            setInputHandler(input);
+            connection.setInputMode(input.getId());
+            if (input.getId().equals(TouchInputHandlerTouchpad.ID)) {
+                connection.setFollowMouse(true);
+                connection.setFollowPan(true);
+            } else {
+                connection.setFollowMouse(false);
+                connection.setFollowPan(false);
+                remoteConnection.getPointer().setRelativeEvents(false);
+            }
+
+            showPanningState(true);
+            connection.save(this);
+            return true;
+        }
+        return false;
+    }
+
+    private void setInputHandler(TouchInputHandler input) {
+        touchInputHandler = input;
+        inputListener = new RemoteClientsInputListener(
+                this,
+                remoteConnection,
+                remoteConnection,
+                touchInputHandler,
+                this::resetOnScreenKeys,
+                connection.getUseDpadAsArrows()
+        );
+        canvas.setOnKeyListener(inputListener);
+    }
+
+    private void sendSpecialKeyAgain() {
+        ArrayList<MetaKeyBean> keys = new ArrayList<>();
+        Database database = new Database(this);
+        tryPopulateKeysInListWhereFieldMatchesValue(
+                database, keys, MetaKeyBean.GEN_FIELD__ID, connection.getLastMetaKeyId(), false
+        );
+        database.close();
+        if (!keys.isEmpty()) {
+            remoteConnection.getKeyboard().sendMetaKey(keys.get(0));
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG, "onDestroy called. taskId=" + getTaskId() + ", isFinishing=" + isFinishing());
+        // 执行关闭连接操作，避免阻塞主线程导致 ANR
+        // SpiceCommunicator.close() 包含 native 调用 SpiceClientDisconnect()
+        // 这会阻塞主线程导致 onDestroy ANR
+        Thread closeThread = new Thread(() -> {
+            try {
+                if (remoteConnection != null) {
+                    Log.d(TAG, "onDestroy: closing connection on background thread");
+                    remoteConnection.closeConnection();
+                    Log.d(TAG, "onDestroy: connection closed");
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Exception during onDestroy closeConnection: " + Log.getStackTraceString(e));
+            }
+        });
+        closeThread.start();
+        System.gc();
+    }
+
+    public void showPanningState(boolean showLonger) {
+        if (showLonger) {
+            final Snackbar t = Snackbar.make(canvas, touchInputHandler.getDescription(), Snackbar.LENGTH_LONG);
+            TimerTask tt = new TimerTask() {
+                @Override
+                public void run() {
+                    t.show();
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        Log.d(TAG, "Ignored InterruptedException during showPanningState");
+                    }
+                    t.show();
+                }
+            };
+            new Timer().schedule(tt, 2000);
+            t.show();
+        } else {
+            Snackbar t = Snackbar.make(canvas, touchInputHandler.getDescription(), Snackbar.LENGTH_SHORT);
+            t.show();
+        }
+    }
+
+    /*
+     * (non-Javadoc)
+     *
+     * @see android.app.Activity#onTrackballEvent(android.view.MotionEvent)
+     */
+    @Override
+    public boolean onTrackballEvent(MotionEvent event) {
+        boolean consumed = false;
+        if (inputListener != null) {
+            consumed = inputListener.onTrackballEvent(event);
+        }
+        if (!consumed) {
+            consumed = super.onTrackballEvent(event);
+        }
+        return consumed;
+    }
+
+    // Send touch events or mouse events like button clicks to be handled.
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        boolean consumed = false;
+        if (inputListener != null) {
+            consumed = inputListener.onTouchEvent(event);
+        }
+        if (!consumed) {
+            consumed = super.onTrackballEvent(event);
+        }
+        return consumed;
+    }
+
+    // Send e.g. mouse events like hover and scroll to be handled.
+    @Override
+    public boolean onGenericMotionEvent(MotionEvent event) {
+        boolean consumed = false;
+        if (inputListener != null) {
+            consumed = inputListener.onGenericMotionEvent(event);
+        }
+        if (!consumed) {
+            consumed = super.onGenericMotionEvent(event);
+        }
+        return consumed;
+    }
+
+    private void selectColorModel() {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        ListView list = getColorsListView(dialog);
+        dialog.setContentView(list);
+        dialog.show();
+    }
+
+    @NonNull
+    private ListView getColorsListView(Dialog dialog) {
+        String[] choices = new String[COLORMODEL.values().length];
+        int currentSelection = -1;
+        for (int i = 0; i < choices.length; i++) {
+            COLORMODEL cm = COLORMODEL.values()[i];
+            choices[i] = cm.toString();
+            if (remoteConnection.isColorModel(cm))
+                currentSelection = i;
+        }
+        ListView list = new ListView(this);
+        list.setAdapter(new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_checked, choices));
+        list.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        list.setItemChecked(currentSelection, true);
+        list.setOnItemClickListener((arg0, arg1, arg2, arg3) -> {
+            dialog.dismiss();
+            COLORMODEL cm = COLORMODEL.values()[arg2];
+            remoteConnection.setColorModel(cm);
+            connection.setColorModel(cm.nameString());
+            connection.save(RemoteCanvasActivity.this);
+            Snackbar.make(canvas, getString(R.string.info_update_color_model_to) + cm, Snackbar.LENGTH_SHORT).show();
+        });
+        return list;
+    }
+
+    public void showActionBar() {
+        handler.removeCallbacks(actionBarShower);
+        handler.postAtTime(actionBarShower, SystemClock.uptimeMillis() + 50);
+        handler.removeCallbacks(actionBarHider);
+        handler.postAtTime(actionBarHider, SystemClock.uptimeMillis() + hideToolbarDelay);
+    }
+
+    public void showKeyboardIcon() {
+        handler.removeCallbacks(keyboardIconShower);
+        handler.postAtTime(keyboardIconShower, SystemClock.uptimeMillis() + 50);
+        handler.removeCallbacks(actionBarHider);
+        handler.postAtTime(actionBarHider, SystemClock.uptimeMillis() + hideToolbarDelay);
+    }
+
+    @Override
+    public void onTextSelected(String selectedString) {
+        Log.i(TAG, "onTextSelected called with selectedString: " + selectedString);
+        remoteConnection.pd.show();
+        connection.setVmname(remoteConnection.vmNameToId.get(selectedString));
+        connection.save(this);
+        synchronized (remoteConnection.getRfbConn()) {
+            remoteConnection.getRfbConn().notify();
+        }
+    }
+
+    public void toggleKeyboard(MenuItem menuItem) {
+        if (softKeyboardUp) {
+            hideKeyboard();
+        } else {
+            showKeyboard();
+        }
+    }
+
+    public void showKeyboard() {
+        Log.i(TAG, "Showing keyboard and hiding action bar");
+        canvas.requestFocus();
+        Utils.showKeyboard(this, canvas);
+        softKeyboardUp = true;
+        Objects.requireNonNull(getSupportActionBar()).hide();
+    }
+
+    public void hideKeyboard() {
+        Log.i(TAG, "Hiding keyboard and hiding action bar");
+        canvas.requestFocus();
+        Utils.hideKeyboard(this, getCurrentFocus());
+        softKeyboardUp = false;
+        Objects.requireNonNull(getSupportActionBar()).hide();
+    }
+
+    public void hideKeyboardAndExtraKeys() {
+        hideKeyboard();
+        if (extraKeysToolbar.getVisibility() == View.VISIBLE) {
+            extraKeysHidden = true;
+            setExtraKeysVisibility(View.GONE, false);
+        }
+    }
+
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public RemoteCanvas getCanvas() {
+        return canvas;
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("WORKAROUND_FOR_BUG_19917_KEY", "WORKAROUND_FOR_BUG_19917_VALUE");
+        super.onSaveInstanceState(outState);
+    }
+
+    private boolean isMasterPasswordEnabled() {
+        SharedPreferences sp = getSharedPreferences(Constants.generalSettingsTag, Context.MODE_PRIVATE);
+        return sp.getBoolean(Constants.masterPasswordEnabledTag, false);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (GeneralUtils.isTv(this)) {
+            disconnectAndFinishActivity();
+            super.onBackPressed();
+        }
+        if (inputListener != null) {
+            inputListener.onKey(canvas, KeyEvent.KEYCODE_BACK, new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_BACK));
+        }
+    }
+
+    public RemoteConnection getRemoteConnection() {
+        return remoteConnection;
+    }
+
+    public Handler getHandler() { return handler; }
+
+    private class ActionBarPositionSaver implements Runnable {
+        public void run() {
+            connection.setUseLastPositionToolbarX(toolbarMover.getLastX());
+            connection.setUseLastPositionToolbarY(toolbarMover.getLastY());
+            connection.setUseLastPositionToolbarMoved(true);
+            connection.save(RemoteCanvasActivity.this);
+        }
+    }
+
+    private class ActionBarHider implements Runnable {
+        public void run() {
+            if (GeneralUtils.isTv(RemoteCanvasActivity.this)) {
+                keyboardIconForAndroidTv.setVisibility(View.GONE);
+            } else {
+                ActionBar actionBar = getSupportActionBar();
+                if (actionBar != null) {
+                    Log.d(TAG, "ActionBarHider: Hiding ActionBar");
+                    actionBar.hide();
+                }
+            }
+        }
+    }
+
+    private class ActionBarShower implements Runnable {
+        public void run() {
+            showActionBar();
+        }
+
+        private void showActionBar() {
+            ActionBar actionBar = getSupportActionBar();
+            if (actionBar != null) {
+                Log.d(TAG, "ActionBarShower: Showing ActionBar");
+                actionBar.show();
+            }
+        }
+    }
+
+    private class KeyboardIconShower implements Runnable {
+        public void run() {
+            if (GeneralUtils.isTv(RemoteCanvasActivity.this)) {
+                animateKeyboardIconForAndroidTv();
+            }
+        }
+
+        private void animateKeyboardIconForAndroidTv() {
+            keyboardIconForAndroidTv.setVisibility(View.VISIBLE);
+            Log.d(TAG, "ActionBarHider: keyboardIconForAndroidTv X position to: " + keyboardIconForAndroidTvX);
+            keyboardIconForAndroidTv.setX(keyboardIconForAndroidTvX);
+            ObjectAnimator animation = ObjectAnimator.ofFloat(keyboardIconForAndroidTv, "translationX", -100f);
+            animation.setDuration(1000);
+            animation.start();
+        }
+    }
+}

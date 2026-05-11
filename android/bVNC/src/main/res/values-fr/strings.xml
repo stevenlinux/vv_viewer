@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">L\'audio sera initialisé dans environ 15 secondes, veuillez arrêter toute lecture vidéo ou audio en cours avant cela</string>
+    <string name="audio_initialized">Audio initialisé</string>
+    <string name="action_import_settings">Importer les paramètres</string>
+    <string name="action_new_connection">✚ Nouvelle connexion</string>
+    <string name="action_edit_default_settings">⚙ Modifier les paramètres par défaut</string>
+    <string name="action_export_settings">Exporter les paramètres</string>
+    <string name="action_delete_connection">Supprimer la connexion</string>
+    <string name="action_rate_or_share_app">⭐ Aide, évaluer, partager</string>
+    <string name="get_help">Obtenir de l\'aide</string>
+    <string name="advanced_settings">Paramètres avancés</string>
+    <string name="audio">Audio</string>
+    <string name="auto_rotation">Rotation de l\'écran lors de la connexion</string>
+    <string name="auto_request_new_res">Synchroniser la résolution distante avec l\'affichage</string>
+    <string name="custom_ca_subject">Sujet du certificat (optionnel). Non nécessaire si le CN du certificat correspond au nom d\'hôte</string>
+    <string name="custom_ca_import">Sinon, saisissez le chemin complet vers votre CA et appuyez sur Importer</string>
+    <string name="custom_ca_paste">Collez ici le CA (si vous ne l\'importez pas)</string>
+    <string name="ca_ovirt_use_custom">CA RHEV/oVirt personnalisée</string>
+    <string name="ca_spice_use_ovirt">Utiliser la CA RHEV/oVirt pour SPICE</string>
+    <string name="ca_ovirt_manage">Gérer la CA RHEV/oVirt</string>
+    <string name="ca_spice_manage">Gérer la CA SPICE</string>
+    <string name="ca_file_not_found">Fichier introuvable. Veuillez entrer un nom de fichier valide dans le champ texte (ex. : /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Erreur lors de la lecture du fichier CA. Veuillez vous assurer qu\'il est lisible.</string>
+    <string name="ca_new_or_changed">Certificat serveur nouveau ou modifié</string>
+    <string name="connection_type_text">Environnement de virtualisation (RHEV/oVirt ou Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Nom de la machine virtuelle (optionnel)</string>
+    <string name="connection_setup_host_name">Adresse du serveur</string>
+    <string name="connection_setup_user">Utilisateur@Domaine</string>
+    <string name="connection_setup_password">Mot de passe</string>
+    <string name="enter_password">Veuillez entrer le mot de passe</string>
+    <string name="enter_password_auth_failed">Authentification échouée. Veuillez saisir à nouveau vos identifiants.</string>
+    <string name="enter_otp_code">Veuillez entrer le code OTP</string>
+    <string name="hide_toolbar">Masquer la barre d\'outils</string>
+    <string name="manage_custom_ca_title">Gérer la CA personnalisée</string>
+    <string name="save_button">Enregistrer</string>
+    <string name="select_vm_title">Sélectionner une machine virtuelle</string>
+    <string name="vv_file_not_found">Le fichier .vv est introuvable !</string>
+    <string name="vv_file_error">Le fichier .vv est manquant ou corrompu !</string>
+    <string name="info_cert">Acceptez-vous ce certificat d\'hôte nouveau ou modifié ?\n\nEmpreintes :\nMD5 : %1$s\nSHA1 : %2$s\nSHA256 : %3$s\n\nDélivré à : %4$s\nDélivré par : %5$s\n\nValide du : %6$s\nValide jusqu\'au : %7$s\n</string>
+
+    <string name="toggle_keyboard">Afficher/masquer le clavier</string>
+    <string name="show_keyboard">Afficher le clavier</string>
+    <string name="scroll_wheel">Molette de défilement</string>
+
+    <string name="input_method_help">Aide sur le mode de saisie</string>
+
+    <string name="ok">OK</string>
+
+    <string name="input_methods">Mode de saisie</string>
+
+    <string name="error_failed_to_download_http">Échec du téléchargement du fichier via HTTP. Votre serveur est peut-être inaccessible.</string>
+    <string name="error_failed_to_download_https">Échec du téléchargement du fichier via HTTPS. Le certificat du serveur est peut-être non fiable (expiré ou auto-signé) ou le serveur est inaccessible.</string>
+    <string name="error_failed_to_obtain_content">Impossible d\'obtenir le fichier. Veuillez le télécharger à nouveau, puis l\'ouvrir rapidement depuis le dossier Téléchargements dans un gestionnaire de fichiers.</string>
+    <string name="error_failed_to_obtain_file">Fichier introuvable. Veuillez le télécharger à nouveau, puis essayez de l\'ouvrir depuis la zone de notification ou directement depuis le navigateur si possible.</string>
+
+    <string name="error_dialog_title">Erreur</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_vm_launched_on_stand_by">Votre VM a été trouvée éteinte et a été démarrée. Veuillez réessayer dans quelques minutes. Si vous réessayez trop tôt et obtenez un échec de connexion, réessayez plus tard.</string>
+    <string name="error_no_vm_found_for_user">Aucune machine virtuelle disponible pour l\'utilisateur indiqué.</string>
+    <string name="error_no_such_vm_found_for_user">Aucune machine virtuelle avec l\'identifiant fourni n\'a été trouvée pour cet utilisateur. Effacez l\'identifiant pour obtenir une liste de VM.</string>
+    <string name="error_no_vnc_support_yet">Le type d\'affichage VNC n\'est pas encore pris en charge, mais c\'est une fonctionnalité à venir. Merci pour votre compréhension !</string>
+    <string name="error_not_connected_to_network">Vous ne semblez pas être connecté à Internet. Impossible de continuer sans connexion !</string>
+    <string name="error_ovirt_timeout">La connexion à votre VM a expiré. Veuillez vérifier que l\'adresse du nœud hébergeant votre VM est correcte, qu\'il est accessible depuis votre réseau actuel et qu\'aucun pare-feu ne bloque la connexion.</string>
+    <string name="error_ovirt_auth_failure">Échec de l\'authentification. Veuillez vérifier l\'utilisateur et le mot de passe fournis.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Échec de la poignée de main SSL. Il y a un problème avec le certificat SSL du serveur. Si vous utilisez un certificat auto-signé, vous devez (ré)importer votre autorité de certification.</string>
+    <string name="error_pve_failed_to_authenticate">Échec de l\'authentification sur Proxmox Virtual Environment. Veuillez vous assurer de saisir votre nom d\'utilisateur au format utilisateur@domaine et que votre mot de passe est correct.</string>
+    <string name="error_pve_failed_to_parse_json">Échec de l\'analyse de la réponse de Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">L\'identifiant VM n\'est pas numérique. Veuillez entrer un identifiant VM numérique ou laisser vide pour choisir la VM dans une liste.</string>
+    <string name="error_pve_api_unexpected_code">Réponse inattendue de Proxmox Virtual Environment : </string>
+    <string name="error_pve_api_io_error">Échec de la connexion à Proxmox Virtual Environment : </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment a renvoyé des données nulles.</string>
+    <string name="error_pve_timeout_communicating">Délai d\'attente de communication avec Proxmox Virtual Environment dépassé.</string>
+    <string name="error_vm_lookup_failed">Impossible de trouver une machine virtuelle avec le nom spécifié associé à votre utilisateur. Veuillez effacer le nom de VM spécifié pour voir la liste des VM assignées à l\'utilisateur.</string>
+    <string name="error_vv_download_timeout">Délai de téléchargement du fichier vv dépassé.</string>
+    <string name="message_please_wait">Veuillez patienter</string>
+    <string name="message_please_install_bvnc">Veuillez installer &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> depuis Google Play pour vous connecter à la console VNC de cette VM.</string>
+    <string name="ssl_strict">Exiger que le nom commun corresponde au certificat (recommandé)</string>
+    <string name="usb">USB (branchez d\'abord le câble OTG)</string>
+
+    <string name="ad_donate_text0">La version Pro prend également en charge l\'authentification SSH multi-facteurs. De plus, elle supporte la très demandée fonctionnalité Mot de passe principal qui empêche toute utilisation non autorisée et chiffre tous les paramètres de connexion, y compris les mots de passe et les clés SSH, pour se prémunir contre le vol. Activez-la depuis le menu principal.</string>
+    <string name="ad_donate_spice_text1a">Appuyez ici pour acheter Opaque et enregistrer des connexions directes à Proxmox et oVirt. Il prend également en charge les fichiers .vv.</string>
+    <string name="ad_donate_spice_text1b">Appuyez ici pour acheter la version Pro et ouvrir simplement les fichiers .vv.</string>
+    <string name="ad_donate_text1">Appuyez ici pour soutenir le projet avec un petit don en achetant la version Pro.</string>
+    <string name="ad_donate_text2">La version Pro vous permet de désactiver cette boîte de dialogue et vous donne accès à des fonctionnalités supplémentaires.</string>
+    <string name="ad_donate_text3">Si vous souhaitez soutenir davantage le projet, suivez les liens ci-dessous pour accéder aux applications clientes pour : </string>
+    <string name="ad_donate_text_vnc">Le projet open source a besoin de votre soutien ! Faites un don en achetant bVNC Pro. Voir ci-dessous les liens vers bVNC Pro et nos autres applications.</string>
+    <string name="ad_donate_text_rdp">Le projet open source a besoin de votre soutien ! Faites un don en achetant aRDP Pro, qui prend en charge la redirection audio. Voir ci-dessous les liens vers aRDP Pro et nos autres applications.</string>
+    <string name="ad_donate_text_spice">Pour les connexions Proxmox et oVirt, veuillez soutenir le projet en achetant Opaque ou aSPICE Pro. La version gratuite de aSPICE ne prend en charge que les connexions directes aux machines virtuelles KVM. Voir ci-dessous les liens vers Opaque et aSPICE Pro, ainsi que nos autres applications.</string>
+
+    <string name="address_caption">Serveur VNC</string>
+    <string name="address_caption_hint">Serveur VNC</string>
+    <string name="address_caption_hint_tunneled">Serveur VNC</string>
+    <string name="address_caption_ssh">Serveur SSH</string>
+    <string name="address_caption_ssh_hint">Serveur SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Flèche bas</string>
+    <string name="arrow_left">Flèche gauche</string>
+    <string name="arrow_right">Flèche droite</string>
+    <string name="arrow_up">Flèche haut</string>
+
+    <string name="auto">Auto</string>
+    <string name="auto_x_cancel">Annuler</string>
+    <string name="auto_x_caption">L\'application peut découvrir automatiquement les sessions X existantes et en créer de nouvelles sur les systèmes Linux/UNIX (comme NX). Vous avez besoin de x11vnc pour trouver, et de Xvfb, Xvnc ou Xdummy pour créer des sessions. Si vous avez des difficultés à vous connecter, essayez de sélectionner un type de session distante spécifique dans les paramètres avancés AutoX.</string>
+    <string name="auto_x_confirm">Confirmer</string>
+    <string name="auto_x_descript_geom">Taille du bureau distant (LxH)</string>
+    <string name="auto_x_descript_session">Type de session distante</string>
+    <string name="auto_x_disabled">Désactivé</string>
+    <string name="auto_x_disabled_selection">AutoX désactivé</string>
+    <string name="auto_x_enabled">Activé</string>
+    <string name="auto_x_find">Trouver uniquement, ne pas créer</string>
+    <string name="auto_x_find_login">Trouver la session X Login (nécessite sudo)</string>
+    <string name="auto_x_geom_custom">Personnalisé</string>
+    <string name="auto_x_geom_native">Natif</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Personnalisé</string>
+    <string name="auto_x_title">Configurer AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Authentifier automatiquement en utilisant le nom d\'utilisateur/mot de passe SSH fourni (à l\'écran de connexion noir).</string>
+    <string name="auto_x_unixpw">Utiliser les identifiants UNIX au lieu du mécanisme de sécurité intégré. L\'utilisateur doit pouvoir exécuter /bin/su.</string>
+    <string name="auto_x_xdummy">Trouver ou créer avec Xdummy</string>
+    <string name="auto_x_xvfb">Trouver ou créer avec Xvfb</string>
+    <string name="auto_x_xvnc">Trouver ou créer avec Xvnc</string>
+
+    <string name="button_send_text">Envoyer du texte</string>
+    <string name="button_send_without_saving">Envoyer le texte / Ne pas enregistrer</string>
+
+    <string name="center_mouse">Souris @</string>
+
+    <string name="close">Fermer</string>
+
+    <string name="color_format_caption">Mode couleur</string>
+    <string name="color_mode">Mode couleur</string>
+
+    <string name="connect_button">Connexion</string>
+    <string name="back_button">Retour</string>
+    <string name="update_button">Mettre à jour</string>
+
+    <string name="connection_caption">Connexion</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Type de connexion</string>
+    <string name="connection_type_rdp_over_ssh">RDP via SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE via SSH</string>
+    <string name="connection_type_vnc">VNC de base</string>
+    <string name="connection_type_vnc_over_ssh">VNC sécurisé via SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC sécurisé via AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC sécurisé via tunnel SSL</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC sécurisé via VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Voulez-vous modifier ou supprimer la connexion</string>
+    <string name="connection_edit">Modifier</string>
+    <string name="connection_delete">Supprimer</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Copier la liste</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Suppr</string>
+
+    <string name="default_input_mode">Mode de saisie par défaut</string>
+    <string name="delete_connection">Supprimer la connexion</string>
+    <string name="delete_key">Supprimer la touche sélectionnée</string>
+    <string name="delete_key_list">Supprimer la liste de touches</string>
+
+    <string name="disconnect">Déconnecter</string>
+
+    <string name="dpad_as_arrows">Utiliser le D-Pad pour les flèches et le clic D-Pad pour Ctrl.</string>
+
+    <string name="enable_recording">Activer l\'enregistrement</string>
+    <string name="enable_sound">Activer le son</string>
+
+    <string name="enter_text">Envoyer du texte</string>
+    <string name="enter_text_title">Entrer le texte à envoyer</string>
+
+    <string name="error_anon_dh_unsupported">Le serveur VNC tente d\'utiliser des chiffrements Diffie-Hellman anonymes qui ne sont pas pris en charge sur votre appareil Android. Si vous utilisez le serveur VNC Vino de GNOME, vous pouvez désactiver AnonTLS en exécutant la commande suivante dans un terminal puis en redémarrant : \"gsettings set org.gnome.Vino require-encryption false\". Si vous utilisez x11vnc, vous pouvez ajouter les options suivantes : \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Échec de la connexion.</string>
+    <string name="error_connection_interrupted">Connexion interrompue.</string>
+    <string name="error_no_user_hostname">Veuillez entrer au moins un utilisateur et un nom d\'hôte ou une adresse IP.</string>
+    <string name="error_out_of_memory">Impossible d\'allouer suffisamment de mémoire pour afficher l\'écran distant. Essayez de redémarrer l\'application, puis votre appareil. Vous pouvez également essayer de réduire la taille du bureau distant dans les paramètres de l\'application.</string>
+    <string name="error_ovirt_unable_to_connect">Impossible de se connecter ou de s\'authentifier. Veuillez vérifier l\'adresse du serveur, l\'utilisateur, le mot de passe et l\'autorité de certification et son sujet.</string>
+    <string name="error_pick_correct_item">Veuillez vous assurer d\'avoir sélectionné le bon élément dans Type de connexion.</string>
+    <string name="error_rdp_authentication_failed">Échec de l\'authentification RDP ! Veuillez vérifier le nom d\'utilisateur et le mot de passe RDP, puis réessayez.</string>
+    <string name="error_rdp_connection_failed">Échec de la connexion RDP ! La connectivité réseau a été interrompue, le serveur RDP a été éteint ou désactivé, ou votre session a été prise en charge par quelqu\'un d\'autre.</string>
+    <string name="error_rdp_unable_to_connect">Impossible de se connecter au serveur RDP ! Veuillez vous assurer que le paramètre Serveur RDP est correct, que le serveur est allumé, que RDP est activé et que le serveur est sur le même réseau que cet appareil.</string>
+    <string name="error_security_type">Le serveur n\'a proposé aucun type de sécurité pris en charge.</string>
+    <string name="error_spice_unable_to_connect">Impossible de se connecter ou de s\'authentifier. Veuillez vérifier l\'adresse du serveur et le port.</string>
+    <string name="error_ssh_could_not_exec_command">Impossible d\'exécuter la commande distante.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Impossible d\'envoyer le mot de passe sudo.</string>
+    <string name="error_ssh_hostkey_changed">ERREUR ! La clé d\'hôte du serveur a changé. Si c\'est intentionnel, vous pouvez continuer. Sinon, il pourrait s\'agir d\'une attaque de l\'homme du milieu.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Le serveur SSH ne prend en charge ni la méthode d\'authentification \"password\" ni \"keyboard-interactive\", ou exige la méthode \"publickey\" en premier. Veuillez le configurer pour autoriser au moins l\'une de ces deux méthodes, ou reconfigurer l\'application. Méthodes d\'authentification disponibles : </string>
+    <string name="error_ssh_key_auth_fail">Échec de l\'authentification au serveur SSH avec une paire de clés. Veuillez vérifier votre nom d\'utilisateur SSH et vous assurer que votre clé publique se trouve dans le fichier authorized_keys côté distant.</string>
+    <string name="error_ssh_keypair_decryption_failure">Échec du déchiffrement de la paire de clés. Veuillez vous assurer d\'avoir saisi correctement votre phrase de passe dans le champ \'Phrase secrète SSH\' sur l\'écran principal.</string>
+    <string name="error_ssh_keypair_missing">Paire de clés SSH non encore générée ! Veuillez en générer une et placer (sa partie publique) dans authorized_keys sur le serveur SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Phrase secrète fournie mais la paire de clés n\'est pas chiffrée. Veuillez supprimer la phrase secrète.</string>
+    <string name="error_ssh_port_forwarding_failure">Impossible de configurer le transfert de port pour tunneliser le trafic VNC via SSH. Veuillez vous assurer que votre serveur SSH est configuré pour autoriser le transfert de port et réessayez.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Le serveur SSH ne prend pas en charge la méthode d\'authentification \"publickey\", et nous essayons d\'utiliser une paire de clés pour nous authentifier. Veuillez le configurer pour autoriser l\'authentification par clé publique et réessayez. Méthodes d\'authentification disponibles : </string>
+    <string name="error_ssh_pwd_auth_fail">Échec de l\'authentification au serveur SSH avec un mot de passe. Veuillez vérifier votre nom d\'utilisateur SSH et votre mot de passe SSH.</string>
+    <string name="error_ssh_unable_to_connect">Échec de la connexion au serveur SSH. Veuillez vérifier la connectivité réseau, l\'adresse et le port du serveur SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Impossible d\'obtenir le port VNC distant depuis x11vnc. Veuillez vous assurer que x11vnc est installé. Pour être sûr, essayez d\'exécuter x11vnc manuellement en ligne de commande.</string>
+    <string name="error_uri_noinfo_nosave">Informations insuffisantes spécifiées pour la connexion.</string>
+    <string name="error_uri_parse_error">Impossible d\'analyser l\'URI de l\'intention. Veuillez vérifier le format de l\'URI. Vous pouvez également consulter le logcat de l\'appareil pour plus de détails.</string>
+    <string name="error_vnc_authentication">Échec de l\'authentification VNC ! Vérifiez le mot de passe VNC (et l\'utilisateur si applicable).</string>
+    <string name="error_vnc_unable_to_connect">"Échec de la connexion au serveur VNC avec la raison : "</string>
+    <string name="error_x509_could_not_generate_encoding">L\'encodage du certificat n\'a pas pu être généré.</string>
+    <string name="error_x509_could_not_generate_signature">Impossible de générer la signature SHA1 ou MD5 du certificat. Aucun algorithme SHA1/MD5 trouvé.</string>
+
+    <string name="export_settings">Exporter</string>
+
+
+    <string name="extra_keys_disable">Désactiver les touches supplémentaires</string>
+    <string name="extra_keys_enable">Activer les touches supplémentaires</string>
+
+    <string name="fit_to_screen">Ajuster à l\'écran</string>
+
+    <string name="force">Bitmap plein écran</string>
+
+    <string name="immersive_mode_disable">Désactiver le mode immersif</string>
+
+    <string name="import_export_settings">📦 Importer/Exporter les paramètres</string>
+    <string name="import_settings">Importer</string>
+
+
+    <string name="info">Info</string>
+    <string name="info_cert_signatures">"Les informations du certificat sont : "</string>
+    <string name="info_cert_signatures_identical">\n\nVous pouvez vérifier que les informations correspondent au certificat du serveur pour prévenir une attaque de l\'homme du milieu.</string>
+    <string name="info_cert_tunnel">Voulez-vous vous connecter à l\'hôte identifié par le certificat suivant ?\n\nEmpreinte : %1$s\n\nDélivré à :\n%2$s\n\nDélivré par :\n%3$s\n\nValide du :\n%4$s\n\nValide jusqu\'au :\n%5$s\n\nRemarque : L\'application ne vérifie pas les autorités de certification et ne contrôle pas la révocation des certificats.</string>
+    <string name="info_continue_connecting">"Continuer la connexion à : "</string>
+    <string name="info_encoding">" encodage, "</string>
+    <string name="info_progress_dialog_aborted">Connexion abandonnée !</string>
+    <string name="info_progress_dialog_connecting">Connexion en cours…</string>
+    <string name="info_progress_dialog_downloading">Téléchargement de la première image.\nVeuillez patienter…</string>
+    <string name="info_progress_dialog_establishing">Établissement de la poignée de main.\nVeuillez patienter…</string>
+    <string name="info_ssh_initializing_hostkey">Tentative d\'initialisation de la clé d\'hôte SSH.</string>
+    <string name="info_ssh_key_fingerprint">"L\'empreinte de la clé d\'hôte est : "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nVous pouvez vérifier qu\'elle est identique à l\'empreinte connue du certificat du serveur pour prévenir une attaque de l\'homme du milieu.</string>
+    <string name="info_update_color_model_to">"Mise à jour du modèle de couleur vers "</string>
+
+    <string name="input_method_direct_drag_pan_description">Direct, maintien pour déplacer : Faire glisser pour effectuer un glisser-déposer. Appuyer avec un doigt là où vous souhaitez faire un clic gauche, deux doigts pour un clic droit et trois doigts pour un clic central. Faire glisser avec deux doigts pour faire défiler. Appui long pour commencer le déplacement.</string>
+    <string name="input_method_direct_swipe_pan_description">Direct, balayage pour déplacer : Faire glisser pour se déplacer. Appuyer avec un doigt là où vous souhaitez faire un clic gauche, deux doigts pour un clic droit et trois doigts pour un clic central. Faire glisser avec deux doigts pour faire défiler. Appui long pour effectuer un glisser-déposer.</string>
+    <string name="input_method_single_handed_description">Mode une main : Faire glisser pour se déplacer. Appuyer avec un doigt là où vous souhaitez faire un clic gauche. Appui long pour choisir le mode gauche/droite/central glisser/défiler/zoom. Les commandes multitouch habituelles fonctionnent également.</string>
+    <string name="input_method_touchpad_description">Pavé tactile simulé : Faire glisser pour déplacer le pointeur. Appuyer n\'importe où avec un doigt pour un clic gauche, deux doigts pour un clic droit et trois doigts pour un clic central. Faire glisser avec deux doigts pour faire défiler. Appui long pour effectuer un glisser-déposer.</string>
+    <string name="input_mode">Mode de saisie</string>
+
+    <string name="input_mode_fit_to_screen">Sans déplacement ; Souris par boule de commande</string>
+    <string name="input_mode_panning">Mode déplacement du bureau</string>
+    <string name="input_method_mouse">Contrôle du pointeur de souris</string>
+
+    <string name="input_method_direct_swipe_pan">Direct, balayage pour déplacer</string>
+    <string name="input_method_direct_drag_pan">Direct, maintien pour déplacer</string>
+    <string name="input_method_single_handed">Mode une main</string>
+    <string name="input_method_touchpad">Pavé tactile simulé</string>
+
+    <string name="input_mode_help">Aide sur le mode de saisie</string>
+    <string name="input_mode_help_text">"
+Dans n\'importe quel mode de saisie, appuyez sur l\'icône du clavier pour afficher le clavier à l\'écran. De plus, votre appareil peut avoir son propre geste pour afficher le clavier.
+
+Utilisez les modes de saisie Direct pour un contrôle tactile plus intuitif. Utilisez le mode Pavé tactile simulé pour un contrôle plus précis de la souris.
+
+Mode Direct, balayage pour déplacer :
+ - Contrôler la souris directement via le toucher.
+ - Faire glisser pour se déplacer.
+ - Un appui fait cliquer la souris à l\'endroit où vous avez appuyé.
+ - Les événements de défilement sont envoyés entre les deux doigts là où a commencé le glissement à deux doigts.
+
+Mode Direct, maintien pour déplacer :
+ - Contrôler la souris directement via le toucher.
+ - Appui long pour démarrer le mode déplacement.
+ - Un appui fait cliquer la souris à l\'endroit où vous avez appuyé.
+ - Les événements de défilement sont envoyés entre les deux doigts là où a commencé le glissement à deux doigts.
+
+Mode Pavé tactile simulé :
+ - Utiliser votre écran comme un pavé tactile.
+ - Faire glisser pour déplacer le pointeur de souris.
+ - Déplacer la souris au-delà du bord de l\'écran pour se déplacer.
+ - Un appui fait cliquer la souris à l\'endroit où se trouve le pointeur.
+ - Les événements de défilement sont envoyés à l\'emplacement du pointeur de souris.
+
+Mode une main :
+ - Identique au mode Direct, balayage pour déplacer, sauf qu\'un appui long ouvre un menu avec des choix de modes.
+ - Après avoir choisi un mode, faire glisser le doigt sur l\'écran effectue le geste sélectionné.
+ - Lever le doigt complète le geste.
+
+Tous les modes de saisie :
+ - Clic gauche : Appuyer une fois.
+ - Double-clic : Double appui.
+ - Clic droit : Appui-maintien et appuyer avec un second doigt (n\'importe où ailleurs sur l\'écran).
+ - Clic droit alternatif : Utiliser le bouton ou geste \"Retour\" de votre appareil.
+ - Clic central : Appui-maintien et appuyer avec deux autres doigts (n\'importe où ailleurs sur l\'écran).
+ - Glisser la souris : Appui-maintien long et faire glisser.
+ - Molette de défilement : Glissement à deux doigts haut/bas et gauche/droite. Un glissement rapide défile plus vite.
+ - Zoom avant/arrière : En mode Zoomable, pincer pour contrôler le zoom.
+ - Touche Ctrl/Alt : Menu-&gt;boutons Ctrl/Alt. N\'oubliez pas de les désactiver quand vous avez terminé !
+ - Combinaisons de touches : Menu-&gt;Plus-&gt;Envoyer des touches.
+ - Envoyer du texte : Soit taper sur le clavier à l\'écran, soit utiliser Menu-&gt;Plus-&gt;Envoyer du texte."</string>
+
+    <string name="intro_close">Fermer</string>
+    <string name="intro_dont_show">Ne plus afficher</string>
+
+    <string name="intro_text">
+Liste actuelle des fonctionnalités de bVNC :
+&lt;br&gt;
+- VNC simple, VNC sécurisé via SSH, AnonTLS, et VeNCrypt, et connexion Windows UltraVNC avec répéteur optionnel.
+&lt;br&gt;
+- Mode AutoX : En mode VNC via SSH, découvrir automatiquement les sessions X existantes et/ou en créer de nouvelles en utilisant x11vnc ! Fonctionne comme le client NX.
+&lt;br&gt;
+- Prise en charge de la rotation libre. Utiliser le système d\'exploitation pour limiter la rotation si nécessaire.
+&lt;br&gt;
+- Génération et exportation de paires de clés publiques/privées SSH.
+&lt;br&gt;
+- Tous les encodages VNC standard, y compris Tight, ZRLE et CopyRect.
+&lt;br&gt;
+- Sauvegarde automatique de session.
+&lt;br&gt;
+- Modes de mise à l\'échelle zoomable, ajuster à l\'écran et un pour un.
+&lt;br&gt;
+- Contrôle multitouch de la souris distante en modes de saisie Direct et Pavé tactile simulé.
+&lt;br&gt;
+- Contrôle complet à une main de la souris distante en mode de saisie une main.
+&lt;br&gt;
+- Clics de souris multitouch : appuyer pour clic gauche, appui à deux doigts pour clic droit, appui à trois doigts pour clic central.
+&lt;br&gt;
+- Défilement multitouch : glissement à deux doigts haut/bas et gauche/droite pour défiler.
+&lt;br&gt;
+- Touches méta et flèches à l\'écran pouvant être complètement désactivées depuis le menu ou rangées avec le bouton à l\'écran.
+&lt;br&gt;
+- Envoi de texte et de combinaisons de touches arbitraires lors de la connexion.
+&lt;br&gt;
+- Aide pour créer des connexions (\"Menu-&gt;Aide connexion\") dans l\'écran de connexion.
+&lt;br&gt;
+- Aide pour les modes de saisie (\"Menu-&gt;Plus-&gt;Aide mode de saisie\") lors de la connexion.
+&lt;br&gt;
+- Utilisation d\'un pavé tactile disponible comme flèches au lieu de déplacer la souris, et clic du pavé tactile comme Ctrl.
+&lt;br&gt;
+- Passage en mode portrait lors des connexions, rotation du D-pad/pavé tactile pour les claviers BT.
+&lt;br&gt;
+- Prise en charge multilingue, à condition que le serveur VNC ait la disposition de langue nécessaire activée.
+&lt;br&gt;
+- Intégration copier/coller
+&lt;br&gt;
+- Changements de résolution de la machine distante
+&lt;br&gt;
+- Prise en charge complète de la souris sur les appareils Android 4.0+, y compris les clics droit et central et la molette de défilement.
+&lt;br&gt;
+&lt;br&gt;
+Problèmes connus :
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC : client VNC intuitif et sécurisé</string>
+
+
+    <string name="keep_password_button">Conserver</string>
+    <string name="keep_screen_awake_enable">Maintenir l\'écran allumé</string>
+
+    <string name="keys_caption">Touches</string>
+
+    <string name="landscape_force">Forcer l\'orientation paysage</string>
+
+    <string name="left_handed_mode">Mode gaucher</string>
+    <string name="disable_pointer_offset_correction">Désactiver la correction de décalage du pointeur</string>
+
+    <string name="list_caption">Liste</string>
+    <string name="list_name_caption">Nom de la liste</string>
+
+    <string name="local_mouse_check">Pointeur de souris local (sélectionner si le pointeur est invisible)</string>
+
+    <string name="main_screen_help">Aide connexion</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Lorsque vous ajoutez ou modifiez une connexion, vous verrez une page de configuration de connexion. Vous pouvez y configurer
+une nouvelle connexion VNC ou en choisir une préexistante. En haut se trouve un bouton qui vous permet d\'
+enregistrer la connexion. En dessous se trouve la configuration de votre connexion.
+
+Si vous cherchez un gain de performance rapide, essayez de régler le mode couleur sur une valeur inférieure. Essayez également de supprimer toute image d\'arrière-plan du bureau sur le serveur VNC. Enfin, assurez-vous que votre appareil dispose d\'une bonne connexion réseau et évitez de couvrir son antenne et de réduire la puissance du signal.
+
+ - Type de connexion : Ici vous choisissez le type de connexion VNC. Les types de connexion disponibles sont :
+   (a) VNC simple, qui est pris en charge par tous les serveurs VNC mais manque de chiffrement et est vulnérable aux attaques par force brute en raison d\'une limitation de mot de passe à 8 caractères.
+   (b) VNC sécurisé via SSH, qui se connecte via un tunnel SSH chiffré. Vous avez besoin d\'un service SSHD ainsi que d\'un serveur VNC. Tant que le serveur VNC n\'accepte pas les connexions directement depuis Internet, ce type de connexion ne souffre d\'aucune vulnérabilité connue, à condition de vérifier la signature du certificat du serveur lors de la première connexion.
+   (c) UltraVNC, qui vous offre les options de connexion Windows et de répéteur UltraVNC. L\'utilisation de la connexion Windows ne souffre pas de la limitation à 8 caractères, mais ce mode n\'offre aucun chiffrement, donc votre session est vulnérable à l\'espionnage.
+   (d) VNC sécurisé via AnonTLS, qui est du VNC normal via une connexion équivalente à stunnel. Vous devez soit exécuter stunnel, soit utiliser un serveur VNC comme Vino qui prend en charge AnonTLS nativement. Ce mode vous offre le chiffrement de session, mais souffre de la limitation à 8 caractères et ne prévient pas les attaques de l\'homme du milieu.
+   (e) VNC sécurisé via VeNCrypt, qui utilise des certificats x509 ainsi que le chiffrement de session, et selon la configuration du serveur peut utiliser des identifiants utilisateur/mot de passe sans limitation à 8 caractères. Ce mode prévient les attaques de l\'homme du milieu ainsi que la confidentialité des sessions. Des serveurs comme x11vnc et TigerVNC prennent en charge ce mode et sont aussi sécurisés que VNC via SSH.
+
+ - Titre : Chaque connexion que vous créez peut avoir un surnom pour l\'identifier facilement dans la liste.
+
+ - Paramètres du tunnel SSH : Disponible en mode VNC via SSH.
+   (a) Serveur SSH/Port : L\'adresse et le port du serveur SSH par lequel la connexion sera tunnélisée. Par défaut, SSH écoute sur le port 22.
+   (b) Nom d\'utilisateur/Mot de passe : Le nom d\'utilisateur et le mot de passe du compte sur le serveur SSH. Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+   (c) Gérer la clé/Utiliser la clé : Un bouton pour gérer les clés publiques/privées et une case à cocher indiquant s\'il faut utiliser une clé plutôt qu\'un mot de passe pour s\'authentifier. Si vous utilisez le bouton Copier dans le presse-papiers après avoir généré une paire de clés, vous devriez pouvoir coller la clé publique une fois connecté au serveur VNC (le presse-papiers est synchronisé avec le serveur).
+
+ - Configurer AutoX : Disponible uniquement en mode VNC via SSH. L\'application peut découvrir automatiquement les sessions X existantes et éventuellement en créer de nouvelles sur les systèmes UNIX (comme le client NX). Vous avez besoin de x11vnc pour trouver, et de Xvfb, Xvnc ou Xdummy installés sur le système distant pour créer des sessions. Vous devrez peut-être déplacer votre fichier .dmrc et ajouter un fichier .xinit dans votre répertoire personnel si votre bureau n\'a pas l\'apparence souhaitée ou si vous n\'obtenez qu\'une fenêtre xterm.
+
+ - Paramètres de connexion VNC :
+   (a) Serveur VNC/Port : C\'est ici que vous entrez le nom d\'hôte ou l\'adresse IP et le port de l\'ordinateur exécutant le serveur VNC que vous souhaitez contacter. En mode VNC via SSH, cette adresse est vue depuis le serveur SSH. Si le serveur SSH et le serveur VNC sont le même ordinateur, vous pouvez utiliser localhost. Les serveurs VNC écoutent généralement à partir du port 5900 (le premier écran VNC, écran :0).
+   (b) Utilisateur VNC : Disponible en mode UltraVNC avec connexion Windows, ou VNC sécurisé via VeNCrypt, c\'est ici que vous entrez votre nom d\'utilisateur de compte Windows/UNIX.
+   (c) Mot de passe VNC : Si la configuration de votre serveur VNC nécessite un mot de passe, entrez-le ici. En mode UltraVNC avec connexion Windows/VeNCrypt, mettez votre mot de passe de compte Windows/UNIX ici. Le stockage sécurisé n\'est pas utilisé pour les mots de passe et le mot de passe ne sera stocké que si vous cochez la case "Conserver". Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+
+ - Mode couleur : Le client prend en charge plusieurs modes de couleur. Les modes avec plus de couleurs offrent une meilleure expérience visuelle au prix d\'une plus grande bande passante et d\'un calcul CPU plus important sur votre appareil. Certains serveurs VNC ne prennent pas en charge toutes les profondeurs de couleur (par exemple, Bureau à distance OS/X nécessite une couleur 24 bits). Si vous avez des problèmes de connexion, essayez une autre profondeur de couleur.
+
+ - Utiliser le D-Pad pour les flèches : Si vous préférez, vous pouvez utiliser le D-Pad de votre clavier Bluetooth ou les flèches de votre clavier à l\'écran pour envoyer des flèches au serveur VNC.
+
+ - Rotation du D-Pad : Les téléphones couplés à un clavier Bluetooth peuvent avoir besoin que le D-pad du clavier soit tourné dans le sens antihoraire pour envoyer les directions correctes au serveur.
+
+ - Pointeur de souris local : Certains serveurs VNC (par exemple, Bureau à distance OS/X) ne dessinent pas le pointeur de souris sur le client. Cocher cette option amènera l\'application à dessiner un pointeur de souris à la position de la souris.
+
+ - Auto/Bitmap plein écran : Le client VNC utilise un bitmap pour représenter l\'affichage distant. Pour les très grands affichages distants, surtout en mode ajuster à l\'écran, vous pouvez rencontrer d\'étranges artefacts visuels en mode ajuster à l\'écran, en raison des limitations de mémoire par processus. Si cela se produit, essayez de cocher cette option. Gardez à l\'esprit que cocher l\'option peut faire quitter l\'application lors de la connexion.
+
+ - Répéteur : Disponible uniquement en mode UltraVNC. IMPORTANT : Si vous avez un répéteur UltraVNC, entrez son adresse et son port en dehors de la boîte de dialogue \'Répéteur UltraVNC\' et entrez l\'adresse et le port du vrai serveur VNC dans la boîte de dialogue \'Répéteur UltraVNC\'. Séparez l\'adresse et le port du serveur VNC par deux-points, par exemple 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Activer le mot de passe principal</string>
+    <string name="master_password_error_failed_to_disable">Impossible de désactiver le mot de passe principal. Vérifiez l\'espace libre sur votre appareil et réessayez.</string>
+    <string name="master_password_error_failed_to_enable">Impossible d\'activer le mot de passe principal. Vérifiez l\'espace libre sur votre appareil et réessayez.</string>
+    <string name="master_password_error_intents_not_supported">Les intentions de connexion ne sont pas encore prises en charge lorsque le mot de passe principal est activé.</string>
+    <string name="master_password_error_password_necessary">Le mot de passe principal est requis pour continuer.</string>
+    <string name="master_password_error_password_not_set">La définition du mot de passe principal a été annulée.</string>
+    <string name="master_password_error_shortcuts_not_supported">Les raccourcis ne sont pas encore pris en charge lorsque le mot de passe principal est activé.</string>
+    <string name="master_password_error_wrong_password">Impossible de s\'authentifier avec le mot de passe principal fourni.</string>
+    <string name="master_password_hint_once">Entrer le mot de passe</string>
+    <string name="master_password_hint_twice">Répéter le mot de passe</string>
+    <string name="master_password_set">Définir le mot de passe principal</string>
+    <string name="master_password_set_error">Les mots de passe ne correspondent pas, soyez attentif !</string>
+    <string name="master_password_set_message">Veuillez entrer et mémoriser un mot de passe principal. Plus votre mot de passe est long, plus il est difficile à craquer. Si vous définissez votre mot de passe incorrectement ou l\'oubliez, vous perdrez tous vos paramètres ! Vous pouvez exporter vos paramètres maintenant pour les sauvegarder (depuis le menu). Conservez-les en lieu sûr car les paramètres exportés ne sont pas chiffrés.</string>
+    <string name="master_password_verify">Vérifier le mot de passe principal</string>
+    <string name="master_password_verify_message">Veuillez entrer le mot de passe principal correct pour continuer.</string>
+
+    <string name="meta_key_title">Envoyer des touches spéciales</string>
+
+    <string name="mouse_follow_pan">La souris suit le déplacement</string>
+
+    <string name="new_connection">Nouvelle connexion</string>
+    <string name="new_list_button">Nouvelle liste</string>
+
+    <string name="nickname_caption">Surnom</string>
+    <string name="nickname_caption_hint">Titre (optionnel)</string>
+
+    <string name="off">Désactivé</string>
+
+    <string name="one_to_one">Un pour un</string>
+
+    <string name="open_doc">Manuel/Wiki</string>
+
+    <string name="pan_follow_mouse">Le déplacement suit la souris</string>
+
+    <string name="password_caption">Auth. VNC</string>
+    <string name="password_caption_hint">Mot de passe VNC</string>
+    <string name="password_caption_ssh">Auth. SSH</string>
+    <string name="password_hint_ssh">Mot de passe SSH</string>
+
+    <string name="port_caption">Port VNC</string>
+    <string name="port_caption_ssh">Port SSH</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Passer en mode portrait lors de la connexion</string>
+    <string name="local_clipboard_integration">Activer l\'intégration du presse-papiers local vers distant</string>
+    <string name="remote_clipboard_integration">Activer l\'intégration du presse-papiers distant vers local</string>
+    <string name="position_toolbar_last_used">Restaurer la position de la barre d\'outils</string>
+    <string name="applies_to_new_connections_only">S\'applique uniquement aux nouvelles connexions</string>
+    <string name="pro_feature_mfa">Il semble que votre serveur ait l\'authentification multi-facteurs activée. Veuillez soutenir le projet en achetant la version Pro qui prend en charge cette fonctionnalité. Un lien vers la version Pro est disponible dans la boîte de dialogue de démarrage.</string>
+    <string name="pro_feature_intro">Il semble que vous utilisiez une fonctionnalité Pro. Veuillez soutenir le projet en achetant la version Pro qui prend en charge cette fonctionnalité. Veuillez consulter la boîte de dialogue d\'introduction pour les liens vers l\'application correcte.</string>
+    <string name="pro_feature_generic">Il semble que vous utilisiez une fonctionnalité Pro. Veuillez soutenir le projet en achetant la version Pro qui prend en charge cette fonctionnalité. Un lien vers la version Pro est disponible dans la boîte de dialogue de démarrage.</string>
+    <string name="pro_feature_rdp">Il semble que vous ayez essayé d\'ouvrir un fichier .rdp qui est une fonctionnalité Pro. Veuillez soutenir le projet en achetant aRDP Pro, qui prend en charge les fichiers .rdp. Un lien vers la version aRDP Pro est disponible dans la boîte de dialogue de démarrage.</string>
+    <string name="pro_feature_spice">Il semble que vous ayez essayé d\'ouvrir un fichier .vv. Si vous souhaitez enregistrer des connexions à Proxmox ou oVirt directement dans l\'application et également ouvrir des fichiers .vv, envisagez d\'acheter Opaque. Si vous n\'avez besoin que de la prise en charge des fichiers .vv, vous pouvez obtenir aSPICE Pro. Trouvez des liens vers les deux applications dans la boîte de dialogue de démarrage.</string>
+
+    <string name="rdp_address_caption_hint">Serveur RDP</string>
+    <string name="rdp_adv_console_mode">Mode console</string>
+    <string name="rdp_adv_desktop_background">Afficher l\'arrière-plan du bureau</string>
+    <string name="rdp_adv_desktop_composition">Activer la composition du bureau</string>
+    <string name="rdp_adv_font_smoothing">Effectuer le lissage des polices</string>
+    <string name="rdp_adv_menu_animation">Afficher les animations de menu</string>
+    <string name="rdp_adv_redirect_sdcard">Rediriger la carte SD</string>
+    <string name="rdp_adv_remotefx">Activer RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Activer les styles visuels</string>
+    <string name="rdp_adv_window_contents">Afficher le contenu des fenêtres lors du glissement</string>
+    <string name="rdp_security_mode">Mode de sécurité</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Taille du bureau distant (LxH)</string>
+    <string name="rdp_domain_hint">Domaine RDP</string>
+    <string name="rdp_geom_automatic">Automatique</string>
+    <string name="rdp_geom_checkbox_enable">Activer la résolution personnalisée</string>
+    <string name="rdp_geom_custom">Personnalisé</string>
+    <string name="rdp_geom_description_hint">Le serveur nécessite la prise en charge d\'ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Désactivé</string>
+    <string name="rdp_geom_native_landscape">Paysage natif</string>
+    <string name="rdp_geom_native_portrait">Portrait natif</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Négociation automatique de la sécurité</string>
+    <string name="rdp_security_rdp">Sécurité RDP</string>
+    <string name="rdp_security_tls">Sécurité TLS</string>
+    <string name="rdp_security_nla">Authentification au niveau réseau</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Merci de soutenir aRDP et les logiciels open source en général ! Pour obtenir de l\'aide sur l\'utilisation de aRDP, consultez les éléments d\'aide dans le menu et la description de l\'application dans la boutique.
+&lt;br&gt;
+&lt;br&gt;
+La liste actuelle des fonctionnalités de aRDP comprend :
+&lt;br&gt;
+- RDP simple, RDP tunnélisé via SSH.
+&lt;br&gt;
+- Prise en charge de la rotation libre. Utiliser le système d\'exploitation pour limiter la rotation si nécessaire.
+&lt;br&gt;
+- Réglage de la résolution distante, résolution native en modes paysage et portrait.
+&lt;br&gt;
+- Génération et exportation de paires de clés publiques/privées SSH.
+&lt;br&gt;
+- Sauvegarde automatique de session.
+&lt;br&gt;
+- Modes de mise à l\'échelle zoomable, ajuster à l\'écran et un pour un.
+&lt;br&gt;
+- Contrôle multitouch de la souris distante en modes de saisie Direct et Pavé tactile simulé.
+&lt;br&gt;
+- Contrôle complet à une main de la souris distante en mode de saisie une main.
+&lt;br&gt;
+- Clics de souris multitouch : appuyer pour clic gauche, appui à deux doigts pour clic droit, appui à trois doigts pour clic central.
+&lt;br&gt;
+- Défilement multitouch : glissement à deux doigts haut/bas et gauche/droite pour défiler.
+&lt;br&gt;
+- Touches méta et flèches à l\'écran pouvant être complètement désactivées depuis le menu ou rangées avec le bouton à l\'écran.
+&lt;br&gt;
+- Envoi de texte et de combinaisons de touches arbitraires lors de la connexion.
+&lt;br&gt;
+- Aide pour créer des connexions (\"Menu-&gt;Aide connexion\") dans l\'écran de connexion.
+&lt;br&gt;
+- Aide pour les modes de saisie (\"Menu-&gt;Plus-&gt;Aide mode de saisie\") lors de la connexion.
+&lt;br&gt;
+- Utilisation d\'un pavé tactile disponible comme flèches au lieu de déplacer la souris, et clic du pavé tactile comme Ctrl, rotation du D-pad/pavé tactile pour les claviers BT.
+&lt;br&gt;
+- Prise en charge multilingue, à condition que le serveur RDP ait la disposition de langue nécessaire activée.
+&lt;br&gt;
+- Changements de résolution de la machine distante en toute transparence
+&lt;br&gt;
+- Prise en charge complète de la souris sur les appareils Android 4.0+, y compris les clics droit et central et la molette de défilement.
+&lt;br&gt;
+- Un choix de modes de couleur
+&lt;br&gt;
+- Intégration copier/coller
+&lt;br&gt;
+- Exportation des paramètres
+&lt;br&gt;
+- Son
+&lt;br&gt;
+&lt;br&gt;
+Problèmes connus :</string>
+    <string name="rdp_intro_title">aRDP : client RDP intuitif et sécurisé</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Lorsque vous ajoutez ou modifiez une connexion, vous verrez une page de configuration de connexion. Vous pouvez y configurer une nouvelle connexion RDP ou en choisir une préexistante. En haut se trouve un bouton qui vous permet d\'enregistrer la connexion. En dessous se trouve la configuration de votre connexion.
+
+ - Type de connexion : Ici vous choisissez le type de connexion RDP. Les types de connexion disponibles sont :
+   (a) RDP, qui se connecte directement à un ordinateur via le protocole RDP.
+   (b) RDP via SSH, qui tunnélise d\'abord votre connexion via un ordinateur exécutant un serveur SSH.
+
+ - Titre : Chaque connexion que vous créez peut avoir un surnom pour l\'identifier facilement dans la liste.
+
+ - Paramètres du tunnel SSH : Disponible en mode RDP via SSH.
+   (a) Serveur SSH/Port : L\'adresse et le port du serveur SSH par lequel la connexion sera tunnélisée. Par défaut, SSH écoute sur le port 22.
+   (b) Nom d\'utilisateur/Mot de passe : Le nom d\'utilisateur et le mot de passe du compte sur le serveur SSH. Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+   (c) Gérer la clé/Utiliser la clé : Un bouton pour gérer les clés publiques/privées et une case à cocher indiquant s\'il faut utiliser une clé plutôt qu\'un mot de passe pour s\'authentifier. Si vous utilisez le bouton Copier dans le presse-papiers après avoir généré une paire de clés, vous devriez pouvoir coller la clé publique une fois connecté au serveur RDP (le presse-papiers est synchronisé avec le serveur).
+
+ - Paramètres de connexion RDP :
+   (a) Serveur RDP/Port : C\'est ici que vous entrez le nom d\'hôte ou l\'adresse IP et le port de l\'ordinateur exécutant le serveur RDP que vous souhaitez contacter. En mode RDP via SSH, cette adresse est vue depuis le serveur SSH. Si le serveur SSH et le serveur RDP sont le même ordinateur physique, vous pouvez utiliser localhost. Les serveurs RDP écoutent généralement sur le port 3389.
+   (b) Utilisateur RDP : C\'est ici que vous entrez votre nom d\'utilisateur de compte Windows/UNIX.
+   (c) Domaine RDP : Entrez le domaine auquel appartient votre compte.
+   (d) Mot de passe RDP : C\'est ici que vous entrez le mot de passe de votre compte Windows/UNIX. Le stockage sécurisé n\'est pas utilisé pour les mots de passe (ils sont dans une base de données) et le mot de passe ne sera stocké que si vous cochez la case "Conserver". Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+
+ - Paramètres avancés : Dans cette section vous trouverez des moyens de personnaliser la résolution du bureau et diverses optimisations de performance RDP.
+
+ - Ajustements de l\'appareil local : Ces éléments ajustent le comportement de l\'application sur votre appareil.
+   (a) Utiliser le D-Pad pour les flèches : Si vous préférez, vous pouvez utiliser le D-Pad de votre clavier Bluetooth ou les flèches de votre clavier à l\'écran pour envoyer des flèches au serveur RDP.
+   (b) Rotation du D-Pad : Les téléphones couplés à un clavier Bluetooth peuvent avoir besoin que le D-pad du clavier soit tourné dans le sens antihoraire pour envoyer les directions correctes au serveur.
+   (c) Pointeur de souris local : Si le pointeur est invisible, sélectionnez ceci pour forcer l\'application à le dessiner."</string>
+    <string name="rdp_password_hint">Mot de passe RDP</string>
+    <string name="rdp_server_empty">Serveur RDP ou port vide. Impossible de se connecter !</string>
+    <string name="rdp_username_hint">Nom d\'utilisateur RDP</string>
+
+    <string name="remote_sound_disabled">Son désactivé</string>
+    <string name="remote_sound_on_device">Son sur l\'appareil</string>
+    <string name="remote_sound_on_server">Son sur le serveur</string>
+
+    <string name="repeater_button">Répéteur UltraVNC</string>
+    <string name="repeater_caption">IMPORTANT : Si vous utilisez un répéteur UltraVNC, entrez son adresse et son port en dehors de cette boîte de dialogue. Ici, entrez l\'adresse et le port du vrai serveur VNC. Séparez l\'adresse et le port du serveur VNC par deux-points, par exemple 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">Répéteur UltraVNC</string>
+    <string name="repeater_clear">Ne pas utiliser</string>
+    <string name="repeater_dialog_title">Serveur VNC derrière un répéteur</string>
+    <string name="repeater_empty_text">Aucun répéteur</string>
+    <string name="repeater_save">Utiliser</string>
+
+    <string name="right_alt_as_iso_l3_shift">Alt droit comme ISO L3 Shift (VNC uniquement)</string>
+
+    <string name="rotate_dpad">Faire pivoter le D-Pad Bluetooth ou logiciel</string>
+
+    <string name="save_as_copy">Enregistrer comme copie</string>
+
+    <string name="scaling">Mise à l\'échelle</string>
+    <string name="scaling_zoomable">Zoomable</string>
+
+    <string name="send_button">Envoyer</string>
+    <string name="send_key_again">Envoyer à nouveau la touche</string>
+
+    <string name="shift_check">Maj</string>
+
+    <string name="shortcut_label_vnc">Connexion VNC</string>
+    <string name="shortcut_label_rdp">Connexion RDP</string>
+    <string name="shortcut_label_spice">Connexion SPICE</string>
+
+    <string name="showkbd_label">Clavier</string>
+
+    <string name="single_cancel">Mode une main annulé</string>
+    <string name="single_choose">Choisir le mode une main ou annuler</string>
+    <string name="single_left">Mode glisser gauche - faire glisser pour déplacer/sélectionner, lever le doigt pour arrêter</string>
+    <string name="single_middle">Mode glisser central - faire glisser pour déplacer/sélectionner, lever le doigt pour arrêter</string>
+    <string name="single_reposition">Pointeur de souris repositionné pour le mode une main</string>
+    <string name="single_right">Mode glisser droit - faire glisser pour déplacer/sélectionner, lever le doigt pour arrêter</string>
+    <string name="single_scroll">Mode défilement - faire glisser haut/bas pour défiler, lever le doigt pour arrêter</string>
+    <string name="single_zoom">Mode zoom - faire glisser haut/bas pour zoomer/dézoomer, lever le doigt pour arrêter</string>
+
+    <string name="snap_one_to_one">Ancré au zoom 1:1</string>
+
+    <string name="special_keys">Envoyer des touches</string>
+
+    <string name="spice_address_caption_hint">Serveur SPICE</string>
+    <string name="spice_button_import_ca">Importer une CA</string>
+    <string name="spice_ca_cert_path_hint">Chemin vers le fichier d\'autorité de certification</string>
+    <string name="spice_ca_file_error_reading">Erreur lors de la lecture du fichier CA. Veuillez vous assurer qu\'il est lisible.</string>
+    <string name="spice_ca_file_not_found">Fichier introuvable. Veuillez entrer un nom de fichier valide dans le champ texte (ex. : /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Sujet du certificat</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Merci de soutenir aSPICE et les logiciels open source en général ! Pour obtenir de l\'aide sur l\'utilisation de aSPICE, consultez les éléments d\'aide dans le menu et la description de l\'application dans la boutique.
+&lt;br&gt;
+&lt;br&gt;
+La liste actuelle des fonctionnalités de aSPICE comprend :
+&lt;br&gt;
+- SPICE simple, SPICE tunnélisé via SSH.
+&lt;br&gt;
+- Prise en charge de la rotation libre. Utiliser le système d\'exploitation pour limiter la rotation si nécessaire.
+&lt;br&gt;
+- Génération et exportation de paires de clés publiques/privées SSH.
+&lt;br&gt;
+- Sauvegarde automatique de session.
+&lt;br&gt;
+- Modes de mise à l\'échelle zoomable, ajuster à l\'écran et un pour un.
+&lt;br&gt;
+- Contrôle multitouch de la souris distante en modes de saisie Direct et Pavé tactile simulé.
+&lt;br&gt;
+- Contrôle complet à une main de la souris distante en mode de saisie une main.
+&lt;br&gt;
+- Clics de souris multitouch : appuyer pour clic gauche, appui à deux doigts pour clic droit, appui à trois doigts pour clic central.
+&lt;br&gt;
+- Défilement multitouch : glissement à deux doigts haut/bas et gauche/droite pour défiler.
+&lt;br&gt;
+- Touches méta et flèches à l\'écran pouvant être complètement désactivées depuis le menu ou rangées avec le bouton à l\'écran.
+&lt;br&gt;
+- Envoi de texte et de combinaisons de touches arbitraires lors de la connexion.
+&lt;br&gt;
+- Aide pour créer des connexions (\"Menu-&gt;Aide connexion\") dans l\'écran de connexion.
+&lt;br&gt;
+- Aide pour les modes de saisie (\"Menu-&gt;Plus-&gt;Aide mode de saisie\") lors de la connexion.
+&lt;br&gt;
+- Utilisation d\'un pavé tactile disponible comme flèches au lieu de déplacer la souris, et clic du pavé tactile comme Ctrl, rotation du D-pad/pavé tactile pour les claviers BT.
+&lt;br&gt;
+- Prise en charge multilingue, à condition que le serveur SPICE ait la disposition de langue nécessaire activée.
+&lt;br&gt;
+- Changements de résolution de la machine distante en toute transparence
+&lt;br&gt;
+- Prise en charge complète de la souris sur les appareils Android 4.0+, y compris les clics droit et central et la molette de défilement.
+&lt;br&gt;
+&lt;br&gt;
+Fonctionnalités prévues :
+&lt;br&gt;
+- Intégration copier/coller
+&lt;br&gt;
+- Son
+&lt;br&gt;
+- Améliorations des performances
+&lt;br&gt;
+Problèmes connus :
+&lt;br&gt;
+- L\'envoi de texte n\'envoie pas certains symboles.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE : client SPICE intuitif et sécurisé</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Lorsque vous ajoutez ou modifiez une connexion, vous verrez une page de configuration de connexion. Vous pouvez y configurer une nouvelle connexion SPICE ou en choisir une préexistante. En haut se trouve un bouton qui vous permet d\'enregistrer la connexion. En dessous se trouve la configuration de votre connexion.
+
+ - Type de connexion : Ici vous choisissez le type de connexion SPICE. Les types de connexion disponibles sont :
+   (a) SPICE, qui se connecte directement à un ordinateur via le protocole SPICE.
+   (b) SPICE via SSH, qui tunnélise d\'abord votre connexion via un ordinateur exécutant un serveur SSH.
+
+ - Titre : Chaque connexion que vous créez peut avoir un surnom pour l\'identifier facilement dans la liste.
+
+ - Paramètres du tunnel SSH : Disponible en mode SPICE via SSH.
+   (a) Serveur SSH/Port : L\'adresse et le port du serveur SSH par lequel la connexion sera tunnélisée. Par défaut, SSH écoute sur le port 22.
+   (b) Nom d\'utilisateur/Mot de passe : Le nom d\'utilisateur et le mot de passe du compte sur le serveur SSH. Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+   (c) Gérer la clé/Utiliser la clé : Un bouton pour gérer les clés publiques/privées et une case à cocher indiquant s\'il faut utiliser une clé plutôt qu\'un mot de passe pour s\'authentifier. Si vous utilisez le bouton Copier dans le presse-papiers après avoir généré une paire de clés, vous devriez pouvoir coller la clé publique une fois connecté au serveur SPICE (le presse-papiers est synchronisé avec le serveur).
+
+ - Paramètres de connexion SPICE :
+   (a) Serveur SPICE/Port : C\'est ici que vous entrez le nom d\'hôte ou l\'adresse IP et le port de l\'ordinateur exécutant le serveur SPICE que vous souhaitez contacter. En mode SPICE via SSH, cette adresse est vue depuis le serveur SSH. Si le serveur SSH et le serveur SPICE sont le même ordinateur physique, vous pouvez utiliser localhost. Les serveurs SPICE écoutent généralement sur le port 5900 et au-delà.
+   (b) Mot de passe SPICE : C\'est ici que vous entrez le mot de passe défini pour protéger votre session SPICE. Le stockage sécurisé n\'est pas utilisé pour les mots de passe (ils sont dans une base de données) et le mot de passe ne sera stocké que si vous cochez la case "Conserver". Le mot de passe sera rempli sur cette page si vous n\'avez pas quitté l\'application depuis la dernière saisie.
+
+ - Paramètres avancés : Dans cette section vous trouverez des ajustements de l\'appareil local ou des optimisations de performance SPICE.
+ - Ajustements de l\'appareil local : Ces éléments ajustent le comportement de l\'application sur votre appareil.
+   (a) Utiliser le D-Pad pour les flèches : Si vous préférez, vous pouvez utiliser le D-Pad de votre clavier Bluetooth ou les flèches de votre clavier à l\'écran pour envoyer des flèches au serveur SPICE.
+   (b) Rotation du D-Pad : Les téléphones couplés à un clavier Bluetooth peuvent avoir besoin que le D-pad du clavier soit tourné dans le sens antihoraire pour envoyer les directions correctes au serveur.
+   (c) Pointeur de souris local : Si le pointeur est invisible, sélectionnez ceci pour forcer l\'application à le dessiner."</string>
+    <string name="spice_password_hint">Mot de passe SPICE</string>
+    <string name="spice_server_empty">Serveur SPICE ou port vide. Impossible de se connecter !</string>
+    <string name="spice_tls_port_hint">Port TLS</string>
+    <string name="spice_username_hint">Nom d\'utilisateur SPICE</string>
+
+    <string name="ssh_passphrase_hint">Phrase secrète SSH</string>
+    <string name="ssh_pubkey_button">Gérer la clé</string>
+    <string name="ssh_use_pubkey">Utiliser la clé</string>
+    <string name="ssh_use_x11vnc">Bureau automatique</string>
+    <string name="ssh_x11vnc_customize">Configurer AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Désactiver</string>
+    <string name="tap_enable">Activer</string>
+
+    <string name="username_caption">Utilisateur VNC</string>
+    <string name="username_hint">Nom d\'utilisateur MS Logon UltraVNC</string>
+    <string name="username_hint_optional">Nom d\'utilisateur VNC (optionnel)</string>
+    <string name="username_hint_ssh">Nom d\'utilisateur SSH</string>
+    <string name="username_hint_vencrypt">Nom d\'utilisateur VNC</string>
+    <string name="verification_code">Code de vérification</string>
+    <string name="verification_code_message">Veuillez entrer le code de vérification d\'authentification multi-facteurs</string>
+
+    <string name="view_only">Mode lecture seule</string>
+
+    <string name="vnc_server_empty">Serveur VNC ou port vide. Impossible de se connecter !</string>
+    <string name="vnc_server_empty_no_save">Serveur VNC ou port vide. Impossible d\'enregistrer la connexion !</string>
+
+    <string name="warning_cert_does_not_match">AVERTISSEMENT : Le certificat x509 enregistré ou la signature transmise ne correspond pas au certificat du serveur actuel ! Il pourrait s\'agir d\'une attaque de l\'homme du milieu. Si vous êtes au courant du changement de clé, vous pouvez continuer. </string>
+    <string name="copy_logcat">📋 Copier le Logcat</string>
+    <string name="log_copied">Logcat copié dans le presse-papiers. Vous pouvez maintenant le coller dans un e-mail ou sur le forum d\'assistance. Veuillez le parcourir à la recherche de données personnelles avant de le publier.</string>
+    <string name="info_set_touchpad_input_mode">Le serveur indique qu\'il ne prend pas en charge le mode de saisie souris client, et le mode de saisie souris actuel ne fonctionnera pas correctement. Si cela persiste, assurez-vous que spice tools est installé dans la machine virtuelle ou passez en mode de saisie Pavé tactile simulé depuis le menu.</string>
+    <string name="ssh_tunnel_settings">Paramètres du tunnel SSH</string>
+    <string name="vnc_connection_settings">Paramètres de connexion VNC</string>
+    <string name="show_advanced_settings">Afficher les paramètres avancés</string>
+    <string name="use_no_compression_for_local_connections">Sans compression (connexions locales, encodage Hextile)</string>
+    <string name="rdp_connection_settings">Paramètres de connexion RDP</string>
+    <string name="local_device_tweaks">Ajustements de l\'appareil local</string>
+    <string name="spice_connection_settings">Paramètres de connexion SPICE</string>
+    <string name="ca_subject">Entrez ici le nom du sujet du certificat. Peut ne pas être nécessaire si le nom commun (CN) du certificat correspond au nom d\'hôte du serveur.</string>
+    <string name="path_to_ca">Entrez un chemin de fichier (par exemple /sdcard/ca-cert.pem) et appuyez sur Importer pour charger votre autorité de certification.</string>
+    <string name="paste_ca">Entrez ici l\'autorité de certification si vous ne l\'importez pas sous forme de fichier.</string>
+    <string name="cert_issuer">Émetteur du certificat</string>
+    <string name="cert_fingerprint">Empreinte du certificat</string>
+    <string name="error">Erreur</string>
+    <string name="panning">Déplacement de l\'écran</string>
+    <string name="copy_of">Copie de</string>
+    <string name="ssh_key_generated">Nouvelle clé générée ou importée avec succès. Vous pouvez maintenant appuyer sur le bouton \'Générer/Exporter la clé\' pour partager, copier dans le presse-papiers ou exporter la clé publique.</string>
+    <string name="cursor_force_local">"Local"</string>
+    <string name="cursor_force_disable">"Désactiver"</string>
+    <string name="cursor_mode">"Mode curseur :"</string>
+    <string name="rendering_mode">"Mode de rendu :"</string>
+    <string name="color_24_bit">"Couleur 24 bits (24 bpp)"</string>
+    <string name="color_256">"256 couleurs (8 bpp)"</string>
+    <string name="color_64">"64 couleurs (4 bpp)"</string>
+    <string name="color_8">"8 couleurs (2 bpp)"</string>
+    <string name="color_greyscale">"Niveaux de gris (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Noir & Blanc (1 bpp)"]]></string>
+    <string name="show">"Afficher"</string>
+    <string name="hide">"Masquer"</string>
+    <string name="search_connections">Rechercher des connexions</string>
+    <string name="user_not_specified">Utilisateur non spécifié</string>
+    <string name="enter_ssh_credentials">Veuillez entrer les identifiants SSH</string>
+    <string name="enter_vnc_credentials">Veuillez entrer les identifiants VNC</string>
+    <string name="enter_vnc_password">Veuillez entrer le mot de passe VNC</string>
+    <string name="enter_rdp_credentials">Veuillez entrer les identifiants RDP</string>
+    <string name="enter_gateway_credentials">Veuillez entrer les identifiants de la passerelle</string>
+    <string name="enter_spice_password">Veuillez entrer le mot de passe SPICE</string>
+    <string name="enter_passphrase_title">Entrer la phrase secrète de la clé</string>
+    <string name="enter_passphrase">Veuillez entrer la phrase secrète de la clé</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Votre serveur nécessite une authentification par mot de passe en plus de l\'authentification par clé.</string>
+    <string name="main_screen_help_text">"
+Lorsque l\'application est lancée, elle affiche un écran avec les connexions enregistrées.
+
+S\'il n\'y a pas de connexions enregistrées, la partie inférieure de l\'écran est vide et vous devrez appuyer sur le bouton plus pour en créer une nouvelle.
+Vous pouvez également contrôler d\'autres aspects de la configuration depuis cet écran en appuyant sur d\'autres options de la barre d\'outils ou du menu en haut, par exemple pour modifier les paramètres par défaut ou importer et exporter des paramètres.
+
+Une fois qu\'une connexion est enregistrée, vous pouvez vous connecter au serveur distant en appuyant dessus une fois. Vous aurez également la possibilité de la supprimer ou de la modifier en faisant un appui long.
+
+Enfin, vous pouvez utiliser le champ Rechercher des connexions pour trouver rapidement des connexions par filtre parmi les connexions affichées."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Lorsque vous ajoutez ou modifiez une connexion, vous verrez une page de configuration de connexion.
+Vous pouvez y configurer une nouvelle connexion Opaque ou en choisir une préexistante.
+En haut se trouve un bouton qui vous permet d\'enregistrer la connexion.
+En dessous se trouve la configuration de votre connexion.
+
+ - Type de connexion : Ici vous choisissez l\'environnement de virtualisation auquel vous vous connectez.
+
+ - Adresse du serveur : Le nom d\'hôte ou l\'IP du serveur. S\'il écoute sur un port non standard, vous pouvez ajouter un port séparé par deux-points.
+
+ - Nom de la machine virtuelle : Vous pouvez spécifier le nom de la VM tel qu\'il apparaît sur votre plateforme de virtualisation ou laisser ce champ vide pour obtenir une liste de VM ou de conteneurs parmi lesquels choisir.
+
+ - Utilisateur : Entrez le nom d\'utilisateur pour s\'authentifier à votre infrastructure de virtualisation.
+
+ - Mot de passe : Si vous souhaitez enregistrer le mot de passe, entrez-le ici ou laissez le champ vide pour être invité à le saisir à chaque fois.
+
+ - Paramètres avancés : Dans cette section vous trouverez des ajustements de l\'appareil local, du protocole et des performances."
+    </string>
+    <string name="help">Aide ⓘ</string>
+    <string name="need_help">Besoin d\'aide ?</string>
+    <string name="support_forum">Forum d\'assistance ❓</string>
+    <string name="email_us">Nous contacter 📧</string>
+    <string name="report_bug">Signaler un bogue 🐛</string>
+    <string name="download_from_server">Télécharger depuis le serveur</string>
+    <string name="import_from_file">Importer depuis un fichier</string>
+    <string name="please_grant_permission_from_prefs">Vous devrez peut-être accorder des autorisations à l\'application via les Paramètres.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Plus de journalisation de débogage</string>
+    <string name="prefer_sending_unicode">Saisie Unicode (Windows uniquement)</string>
+    <string name="hide_connection_thumbnails">Masquer les vignettes de connexion</string>
+    <string name="show_only_connection_nicknames">Afficher uniquement les surnoms de connexion</string>
+    <string name="love_our_work">Vous aimez notre travail ?</string>
+    <string name="rate_app">Évaluer ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Partager 🔗</string>
+    <string name="share_app_toast">Partagez un lien vers l\'application avec tous vos amis sur les réseaux sociaux !</string>
+    <string name="donate_app">Faire un don ❤</string>
+    <string name="more_apps">Plus d\'applications 📱</string>
+    <string name="previous_versions">Versions précédentes ⍼</string>
+    <string name="keyboard_type">Type de clavier logiciel</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Par défaut (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Texte/Chiffres sans suggestions (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Texte avec suggestions (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Cette connexion est configurée pour lancer un VPN via une application externe. Vous devez installer une application comme Morpheusly pour le lancer.</string>
+    <string name="vnc_viewer_started">VNC Viewer démarré</string>
+    <string name="enable_gateway">Activer RDP Gateway</string>
+    <string name="scroll_speed">Vitesse de défilement tactile</string>
+    <string name="desktop_scale_percentage">Pourcentage de mise à l\'échelle personnalisé</string>
+    <string name="show_menu">Afficher le menu</string>
+    <string name="move_toolbar">Déplacer la barre d\'outils</string>
+    <string name="rdp_adv_glyph_cache">Activer le cache de glyphes</string>
+
+    <string name="disable_battery_optimizations_failed">
+Impossible d\'ouvrir les paramètres d\'optimisation de la batterie. Désactivez manuellement l\'optimisation de la batterie dans les paramètres système.</string>
+    <string name="disable_battery_optimizations">
+🔋Désactiver les optimisations de la batterie</string>
+    <string name="disable_battery_optimizations_already_done">
+L\'application est déjà exemptée des optimisations de la batterie.</string>
+    <string name="no_connections_title">Aucune connexion pour l\'instant</string>
+    <string name="no_connections_hint">Appuyez sur le bouton + pour ajouter votre première connexion distante</string>
+    <string name="no_connections_hint_tv">Appuyez sur le bouton + ci-dessus pour ajouter votre première connexion distante</string>
+    <string name="keyboard_layout_map">Disposition du clavier</string>
+</resources>

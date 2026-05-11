@@ -1,0 +1,15 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml
+INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/steve/ClaudeProjects/vv_viewer/android/remoteClientLib/jni/libs/deps/FreeRDP/client/Android/Studio/freeRDPCore/src/main/AndroidManifest.xml

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Zvuk bude inicializov\u00e1n p\u0159ibli\u017en\u011b za 15 sekund, p\u0159ed t\u00edm pros\u00edm zastavte ve\u0161ker\u00e9 p\u0159ehr\u00e1v\u00e1n\u00ed videa nebo zvuku</string>
+    <string name="audio_initialized">Zvuk inicializov\u00e1n</string>
+    <string name="action_import_settings">Importovat nastaven\u00ed</string>
+    <string name="action_new_connection">✚ Nov\u00e9 p\u0159ipojen\u00ed</string>
+    <string name="action_edit_default_settings">⚙ Upravit v\u00fdchoz\u00ed nastaven\u00ed</string>
+    <string name="action_export_settings">Exportovat nastaven\u00ed</string>
+    <string name="action_delete_connection">Smazat p\u0159ipojen\u00ed</string>
+    <string name="action_rate_or_share_app">⭐ N\u00e1pov\u011bda, hodnocen\u00ed, sd\u00edlen\u00ed</string>
+    <string name="get_help">Z\u00edskat n\u00e1pov\u011bdu</string>
+    <string name="advanced_settings">Pokro\u010dil\u00e1 nastaven\u00ed</string>
+    <string name="audio">Zvuk</string>
+    <string name="auto_rotation">Ot\u00e1\u010den\u00ed obrazovky p\u0159i p\u0159ipojen\u00ed</string>
+    <string name="auto_request_new_res">Synchronizovat vzd\u00e1len\u00e9 rozli\u0161en\u00ed s displejem</string>
+    <string name="custom_ca_subject">Voliteln\u00fd p\u0159edm\u011bt certifik\u00e1tu. Nen\u00ed pot\u0159eba, pokud CN certifik\u00e1tu odpov\u00edd\u00e1 n\u00e1zvu hostitele</string>
+    <string name="custom_ca_import">P\u0159\u00edpadn\u011b zadejte \u00faplnou cestu k va\u0161\u00ed CA a klepn\u011bte na Importovat</string>
+    <string name="custom_ca_paste">Vlo\u017ete (pokud neimportujete) CA sem</string>
+    <string name="ca_ovirt_use_custom">Vlastn\u00ed RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Pou\u017e\u00edt RHEV/oVirt CA pro SPICE</string>
+    <string name="ca_ovirt_manage">Spravovat RHEV/oVirt CA</string>
+    <string name="ca_spice_manage">Spravovat SPICE CA</string>
+    <string name="ca_file_not_found">Soubor nenalezen. Zadejte pros\u00edm platn\u00fd n\u00e1zev souboru do textov\u00e9ho pole (nap\u0159. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Chyba p\u0159i \u010dten\u00ed souboru CA. Ujist\u011bte se, \u017ee je \u010diteln\u00fd.</string>
+    <string name="ca_new_or_changed">Nov\u00fd nebo zm\u011bn\u011bn\u00fd certifik\u00e1t serveru</string>
+    <string name="connection_type_text">Virtualiza\u010dn\u00ed prost\u0159ed\u00ed (RHEV/oVirt nebo Proxmox)</string>
+    <string name="connection_setup_vm_name">N\u00e1zev virtu\u00e1ln\u00edho stroje (voliteln\u00e9)</string>
+    <string name="connection_setup_host_name">Adresa serveru</string>
+    <string name="connection_setup_user">U\u017eivatel@Dom\u00e9na</string>
+    <string name="connection_setup_password">Heslo</string>
+    <string name="enter_password">Zadejte pros\u00edm heslo</string>
+    <string name="enter_password_auth_failed">Ov\u011b\u0159en\u00ed se nezda\u0159ilo. Zadejte pros\u00edm znovu sv\u00e9 p\u0159ihla\u0161ovac\u00ed \u00fadaje.</string>
+    <string name="enter_otp_code">Zadejte pros\u00edm OTP k\u00f3d</string>
+    <string name="hide_toolbar">Skr\u00fdt panel n\u00e1stroj\u016f</string>
+    <string name="manage_custom_ca_title">Spravovat vlastn\u00ed CA</string>
+    <string name="save_button">Ulo\u017eit</string>
+    <string name="select_vm_title">Vybrat virtu\u00e1ln\u00ed stroj</string>
+    <string name="vv_file_not_found">Soubor .vv nebyl nalezen!</string>
+    <string name="vv_file_error">Soubor .vv chyb\u00ed nebo je po\u0161kozen\u00fd!</string>
+    <string name="info_cert">P\u0159ij\u00edm\u00e1te tento nov\u00fd nebo zm\u011bn\u011bn\u00fd certifik\u00e1t hostitele?\n\nOtisky:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nVyd\u00e1no pro: %4$s\nVyd\u00e1no k\u00fdm: %5$s\n\nPlatn\u00e9 od: %6$s\nPlatn\u00e9 do: %7$s\n</string>
+
+    <string name="toggle_keyboard">P\u0159epnout kl\u00e1vesnici</string>
+    <string name="show_keyboard">Zobrazit kl\u00e1vesnici</string>
+    <string name="scroll_wheel">Rolovac\u00ed kole\u010dko</string>
+
+    <string name="input_method_help">N\u00e1pov\u011bda ke zp\u016fsobu vstupu</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Zp\u016fsob vstupu</string>
+
+    <string name="error_failed_to_download_http">Sta\u017een\u00ed souboru p\u0159es HTTP se nezda\u0159ilo. Mo\u017en\u00e1 je v\u00e1\u0161 server nedostupn\u00fd.</string>
+    <string name="error_failed_to_download_https">Sta\u017een\u00ed souboru p\u0159es HTTPS se nezda\u0159ilo. Mo\u017en\u00e1 je certifik\u00e1t va\u0161eho serveru ned\u016fv\u011bryhodn\u00fd (vypr\u0161el\u00fd nebo podepsan\u00fd s\u00e1m sebou) nebo je server nedostupn\u00fd.</string>
+    <string name="error_failed_to_obtain_content">Nepoda\u0159ilo se z\u00edskat soubor. St\u00e1hn\u011bte jej znovu, ale tentokr\u00e1t ho rychle otev\u0159ete ze slo\u017eky Sta\u017een\u00e9 ve Spr\u00e1vci soubor\u016f.</string>
+    <string name="error_failed_to_obtain_file">Soubor nebyl nalezen. St\u00e1hn\u011bte jej znovu, ale tentokr\u00e1t ho zkuste otev\u0159\u00edt z oznamovac\u00ed oblasti nebo p\u0159\u00edmo z prohl\u00ed\u017ee\u010de, pokud je to mo\u017en\u00e9.</string>
+
+    <string name="error_dialog_title">Chyba</string>
+    <string name="info_dialog_title">Informace</string>
+    <string name="info_vm_launched_on_stand_by">V\u00e1\u0161 VM byl nalezen vypnut\u00fd a byl spu\u0161t\u011bn. Zkuste to pros\u00edm znovu za p\u00e1r minut. Pokud se p\u0159ipoj\u00edte p\u0159\u00edli\u0161 brzy a p\u0159ipojen\u00ed se nezda\u0159\u00ed, zkuste to pozd\u011bji.</string>
+    <string name="error_no_vm_found_for_user">\u017d\u00e1dn\u00e9 dostupn\u00e9 virtu\u00e1ln\u00ed stroje pro dan\u00e9ho u\u017eivatele.</string>
+    <string name="error_no_such_vm_found_for_user">Nebyl nalezen \u017e\u00e1dn\u00fd virtu\u00e1ln\u00ed stroj s dan\u00fdm ID pro tohoto u\u017eivatele. Vyma\u017ete ID pro zobrazen\u00ed seznamu VM.</string>
+    <string name="error_no_vnc_support_yet">Typ zobrazen\u00ed VNC zat\u00edm nen\u00ed podporov\u00e1n, ale je to pl\u00e1novan\u00e1 funkce. D\u011bkujeme za pochopen\u00ed!</string>
+    <string name="error_not_connected_to_network">Zd\u00e1 se, \u017ee nejste p\u0159ipojeni k internetu. Bez p\u0159ipojen\u00ed nelze pokra\u010dovat!</string>
+    <string name="error_ovirt_timeout">P\u0159ipojen\u00ed k va\u0161emu VM vypr\u0161elo. Zkontrolujte, \u017ee adresa uzlu, na kter\u00e9m b\u011b\u017e\u00ed v\u00e1\u0161 VM, je spr\u00e1vn\u00e1, \u017ee je dostupn\u00fd z va\u0161\u00ed aktu\u00e1ln\u00ed s\u00edt\u011b a \u017ee \u017e\u00e1dn\u00fd firewall neblokuje p\u0159ipojen\u00ed.</string>
+    <string name="error_ovirt_auth_failure">Chyba ov\u011b\u0159en\u00ed. Zkontrolujte pros\u00edm zadan\u00e9 u\u017eivatelsk\u00e9 jm\u00e9no a heslo.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Chyba SSL handshake. Nastal probl\u00e9m s SSL certifik\u00e1tem serveru. Pokud pou\u017e\u00edv\u00e1te certifik\u00e1t podepsan\u00fd s\u00e1m sebou, mus\u00edte (znovu)importovat svou certifika\u010dn\u00ed autoritu.</string>
+    <string name="error_pve_failed_to_authenticate">Ov\u011b\u0159en\u00ed v Proxmox Virtual Environment se nezda\u0159ilo. Ujist\u011bte se, \u017ee zad\u00e1v\u00e1te u\u017eivatelsk\u00e9 jm\u00e9no ve form\u00e1tu u\u017eivatel@oblast a \u017ee je va\u0161e heslo spr\u00e1vn\u00e9.</string>
+    <string name="error_pve_failed_to_parse_json">Nepoda\u0159ilo se zpracovat odpov\u011b\u010f z Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">ID VM nen\u00ed \u010d\u00edseln\u00e9. Zadejte \u010d\u00edseln\u00e9 ID VM nebo nechte pole pr\u00e1zdn\u00e9 pro v\u00fdb\u011br VM ze seznamu.</string>
+    <string name="error_pve_api_unexpected_code">Neo\u010dek\u00e1van\u00e1 odpov\u011b\u010f z Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">P\u0159ipojen\u00ed k Proxmox Virtual Environment se nezda\u0159ilo: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment vr\u00e1til pr\u00e1zdn\u00e1 data.</string>
+    <string name="error_pve_timeout_communicating">\u010casov\u00fd limit komunikace s Proxmox Virtual Environment vypr\u0161el.</string>
+    <string name="error_vm_lookup_failed">Nepoda\u0159ilo se nal\u00e9zt virtu\u00e1ln\u00ed stroj se zadan\u00fdm n\u00e1zvem p\u0159i\u0159azen\u00fd va\u0161emu u\u017eivateli. Vyma\u017ete n\u00e1zev VM pro zobrazen\u00ed seznamu VM p\u0159i\u0159azen\u00fdch u\u017eivateli.</string>
+    <string name="error_vv_download_timeout">\u010casov\u00fd limit stahov\u00e1n\u00ed souboru vv vypr\u0161el.</string>
+    <string name="message_please_wait">Pros\u00edm \u010dekejte</string>
+    <string name="message_please_install_bvnc">Nainstalujte pros\u00edm &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> z Google Play pro p\u0159ipojen\u00ed ke konzoli VNC tohoto VM.</string>
+    <string name="ssl_strict">Vy\u017eadovat shodu b\u011b\u017en\u00e9ho n\u00e1zvu s certifik\u00e1tem (doporu\u010deno)</string>
+    <string name="usb">USB (nejprve p\u0159ipojte OTG kabel)</string>
+
+    <string name="ad_donate_text0">Verze Pro tak\u00e9 podporuje v\u00edcefaktorov\u00e9 SSH ov\u011b\u0159ov\u00e1n\u00ed. Nav\u00edc podporuje velmi \u017e\u00e1danou funkci Hlavn\u00ed heslo, kter\u00e1 br\u00e1n\u00ed neopr\u00e1vn\u011bn\u00e9mu pou\u017eit\u00ed a \u0161ifruje v\u0161echna nastaven\u00ed p\u0159ipojen\u00ed v\u010detn\u011b hesel a SSH kl\u00ed\u010d\u016f pro ochranu p\u0159ed kr\u00e1de\u017e\u00ed. Aktivujte ji z hlavn\u00ed nab\u00eddky.</string>
+    <string name="ad_donate_spice_text1a">Klepn\u011bte sem pro koupi Opaque a ukl\u00e1dejte p\u0159\u00edm\u00e1 p\u0159ipojen\u00ed k Proxmox a oVirt. Podporuje tak\u00e9 soubory .vv.</string>
+    <string name="ad_donate_spice_text1b">Klepn\u011bte sem pro koupi verze Pro a jednodu\u0161e otev\u00edrejte soubory .vv.</string>
+    <string name="ad_donate_text1">Klepn\u011bte sem pro podporu projektu mal\u00fdm darem zakoupen\u00edm verze Pro.</string>
+    <string name="ad_donate_text2">Verze Pro v\u00e1m umo\u017en\u00ed vypnout tento dialog a d\u00e1 v\u00e1m p\u0159\u00edstup k dal\u0161\u00edm funkc\u00edm.</string>
+    <string name="ad_donate_text3">Pokud chcete projekt d\u00e1le podpo\u0159it, n\u00e1sledujte n\u00ed\u017ee uveden\u00e9 odkazy na klientsk\u00e9 aplikace pro: </string>
+    <string name="ad_donate_text_vnc">Open Source projekt pot\u0159ebuje va\u0161i podporu! P\u0159isp\u011bjte n\u00e1m zakoupen\u00edm bVNC Pro. N\u00ed\u017ee naleznete odkazy na bVNC Pro a na\u0161e dal\u0161\u00ed aplikace.</string>
+    <string name="ad_donate_text_rdp">Open Source projekt pot\u0159ebuje va\u0161i podporu! P\u0159isp\u011bjte n\u00e1m zakoupen\u00edm aRDP Pro, kter\u00fd podporuje p\u0159esm\u011brov\u00e1n\u00ed zvuku. N\u00ed\u017ee naleznete odkazy na aRDP Pro a na\u0161e dal\u0161\u00ed aplikace.</string>
+    <string name="ad_donate_text_spice">Pro p\u0159ipojen\u00ed k Proxmox a oVirt pros\u00edm p\u0159isp\u011bjte projektu zakoupen\u00edm Opaque nebo aSPICE Pro. Bezplatn\u00e1 verze aSPICE podporuje pouze p\u0159\u00edm\u00e1 p\u0159ipojen\u00ed k virtu\u00e1ln\u00edm stroj\u016fm KVM. N\u00ed\u017ee naleznete odkazy na Opaque a aSPICE Pro, stejn\u011b jako na na\u0161e dal\u0161\u00ed aplikace.</string>
+
+    <string name="address_caption">VNC Server</string>
+    <string name="address_caption_hint">VNC Server</string>
+    <string name="address_caption_hint_tunneled">VNC Server</string>
+    <string name="address_caption_ssh">SSH Server</string>
+    <string name="address_caption_ssh_hint">SSH Server</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">\u0160ipka dol\u016f</string>
+    <string name="arrow_left">\u0160ipka vlevo</string>
+    <string name="arrow_right">\u0160ipka vpravo</string>
+    <string name="arrow_up">\u0160ipka nahoru</string>
+
+    <string name="auto">Auto</string>
+    <string name="auto_x_cancel">Zru\u0161it</string>
+    <string name="auto_x_caption">Aplikace m\u016f\u017ee automaticky objevovat existuj\u00edc\u00ed a vytv\u00e1\u0159et nov\u00e9 X relace na syst\u00e9mech Linux/UNIX (podobn\u011b jako NX). Pot\u0159ebujete x11vnc pro hled\u00e1n\u00ed a Xvfb, Xvnc nebo Xdummy pro vytv\u00e1\u0159en\u00ed relac\u00ed. Pokud m\u00e1te probl\u00e9my s p\u0159ipojen\u00edm, zkuste vybrat konkr\u00e9tn\u00ed typ vzd\u00e1len\u00e9 relace v pokro\u010dil\u00e9m nastaven\u00ed AutoX.</string>
+    <string name="auto_x_confirm">Potvrdit</string>
+    <string name="auto_x_descript_geom">Velikost vzd\u00e1len\u00e9 plochy (\u0160xV)</string>
+    <string name="auto_x_descript_session">Typ vzd\u00e1len\u00e9 relace</string>
+    <string name="auto_x_disabled">Zak\u00e1z\u00e1no</string>
+    <string name="auto_x_disabled_selection">AutoX zak\u00e1z\u00e1no</string>
+    <string name="auto_x_enabled">Povoleno</string>
+    <string name="auto_x_find">Pouze nal\u00e9zt, nevytv\u00e1\u0159et</string>
+    <string name="auto_x_find_login">Nal\u00e9zt X p\u0159ihl\u00e1\u0161en\u00ed (vy\u017eaduje sudo)</string>
+    <string name="auto_x_geom_custom">Vlastn\u00ed</string>
+    <string name="auto_x_geom_native">Nativn\u00ed</string>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Vlastn\u00ed</string>
+    <string name="auto_x_title">Konfigurovat AutoX</string>
+    <string name="auto_x_unix_auth">Automaticky ov\u011b\u0159it pomoc\u00ed zadan\u00e9ho SSH u\u017eivatelsk\u00e9ho jm\u00e9na/hesla (na \u010dern\u00e9 p\u0159ihla\u0161ovac\u00ed obrazovce).</string>
+    <string name="auto_x_unixpw">Pou\u017e\u00edt UNIX p\u0159ihla\u0161ovac\u00ed \u00fadaje nam\u00edsto vestav\u011bn\u00e9ho bezpe\u010dnostn\u00edho mechanismu. U\u017eivatel mus\u00ed m\u00edt opr\u00e1vn\u011bn\u00ed ke spu\u0161t\u011bn\u00ed /bin/su.</string>
+    <string name="auto_x_xdummy">Nal\u00e9zt nebo vytvo\u0159it s Xdummy</string>
+    <string name="auto_x_xvfb">Nal\u00e9zt nebo vytvo\u0159it s Xvfb</string>
+    <string name="auto_x_xvnc">Nal\u00e9zt nebo vytvo\u0159it s Xvnc</string>
+
+    <string name="button_send_text">Odeslat text</string>
+    <string name="button_send_without_saving">Odeslat text/neukl\u00e1dat</string>
+
+    <string name="center_mouse">My\u0161 @</string>
+
+    <string name="close">Zav\u0159\u00edt</string>
+
+    <string name="color_format_caption">Barevn\u00fd re\u017eim</string>
+    <string name="color_mode">Barevn\u00fd re\u017eim</string>
+
+    <string name="connect_button">P\u0159ipojit</string>
+    <string name="back_button">Zp\u011bt</string>
+    <string name="update_button">Aktualizovat</string>
+
+    <string name="connection_caption">P\u0159ipojen\u00ed</string>
+    <string name="connection_type_caption">Typ p\u0159ipojen\u00ed</string>
+    <string name="connection_type_rdp_over_ssh">RDP p\u0159es SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE p\u0159es SSH</string>
+    <string name="connection_type_vnc">Z\u00e1kladn\u00ed VNC</string>
+    <string name="connection_type_vnc_over_ssh">Zabezpe\u010den\u00e9 VNC p\u0159es SSH</string>
+    <string name="connection_type_vnc_over_ssl">Zabezpe\u010den\u00e9 VNC p\u0159es AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Zabezpe\u010den\u00e9 VNC p\u0159es SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">Zabezpe\u010den\u00e9 VNC p\u0159es VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Chcete p\u0159ipojen\u00ed upravit nebo smazat</string>
+    <string name="connection_edit">Upravit</string>
+    <string name="connection_delete">Smazat</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kop\u00edrovat seznam</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">V\u00fdchoz\u00ed re\u017eim vstupu</string>
+    <string name="delete_connection">Smazat p\u0159ipojen\u00ed</string>
+    <string name="delete_key">Smazat vybran\u00fd kl\u00ed\u010d</string>
+    <string name="delete_key_list">Smazat seznam kl\u00ed\u010d\u016f</string>
+
+    <string name="disconnect">Odpojit</string>
+
+    <string name="dpad_as_arrows">Pou\u017e\u00edt D-Pad pro \u0161ipky a kliknut\u00ed D-Pad pro Ctrl.</string>
+
+    <string name="enable_recording">Povolit nahr\u00e1v\u00e1n\u00ed</string>
+    <string name="enable_sound">Povolit zvuk</string>
+
+    <string name="enter_text">Odeslat text</string>
+    <string name="enter_text_title">Zadejte text k odesl\u00e1n\u00ed</string>
+
+    <string name="error_anon_dh_unsupported">VNC Server se pokou\u0161\u00ed pou\u017e\u00edt \u0161ifry Anonymous Diffie Hellman, kter\u00e9 nejsou na va\u0161em za\u0159\u00edzen\u00ed Android podporov\u00e1ny. Pokud pou\u017e\u00edv\u00e1te VNC server Vino z GNOME, m\u016f\u017eete AnonTLS zak\u00e1zat spu\u0161t\u011bn\u00edm n\u00e1sleduj\u00edc\u00edho p\u0159\u00edkazu v termin\u00e1lu a n\u00e1sledn\u00fdm restartov\u00e1n\u00edm: \"gsettings set org.gnome.Vino require-encryption false\". Pokud pou\u017e\u00edv\u00e1te x11vnc, m\u016f\u017eete p\u0159idat n\u00e1sleduj\u00edc\u00ed volby: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">P\u0159ipojen\u00ed se nezda\u0159ilo.</string>
+    <string name="error_connection_interrupted">P\u0159ipojen\u00ed bylo p\u0159eru\u0161eno.</string>
+    <string name="error_no_user_hostname">Zadejte pros\u00edm alespo\u0148 u\u017eivatele a n\u00e1zev hostitele nebo IP adresu.</string>
+    <string name="error_out_of_memory">Nelze alokovat dostatek pam\u011bti pro vykreslen\u00ed vzd\u00e1len\u00e9 obrazovky. Zkuste restartovat aplikaci a pot\u00e9 za\u0159\u00edzen\u00ed. M\u016f\u017eete tak\u00e9 zkusit zmen\u0161it velikost vzd\u00e1len\u00e9 plochy v nastaven\u00ed aplikace.</string>
+    <string name="error_ovirt_unable_to_connect">Nelze se p\u0159ipojit nebo ov\u011b\u0159it, zkontrolujte pros\u00edm adresu serveru, u\u017eivatele, heslo a certifika\u010dn\u00ed autoritu a p\u0159edm\u011bt.</string>
+    <string name="error_pick_correct_item">Ujist\u011bte se, \u017ee jste vybrali spr\u00e1vnou polo\u017eku v Typu p\u0159ipojen\u00ed.</string>
+    <string name="error_rdp_authentication_failed">RDP ov\u011b\u0159en\u00ed se nezda\u0159ilo! Zkontrolujte pros\u00edm RDP u\u017eivatelsk\u00e9 jm\u00e9no a heslo a zkuste to znovu.</string>
+    <string name="error_rdp_connection_failed">RDP p\u0159ipojen\u00ed se nezda\u0159ilo! Bu\u010f bylo p\u0159eru\u0161eno s\u00ed\u0165ov\u00e9 p\u0159ipojen\u00ed, RDP server byl vypnut nebo zak\u00e1z\u00e1n, nebo va\u0161e relace byla p\u0159evzata.</string>
+    <string name="error_rdp_unable_to_connect">Nelze se p\u0159ipojit k RDP serveru! Ujist\u011bte se, \u017ee nastaven\u00ed RDP serveru je spr\u00e1vn\u00e9, server je zapnut\u00fd, RDP je povoleno a server je ve stejn\u00e9 s\u00edti jako toto za\u0159\u00edzen\u00ed.</string>
+    <string name="error_security_type">Server nenab\u00eddl podporovan\u00fd typ zabezpe\u010den\u00ed.</string>
+    <string name="error_spice_unable_to_connect">Nelze se p\u0159ipojit nebo ov\u011b\u0159it, zkontrolujte pros\u00edm adresu a port serveru.</string>
+    <string name="error_ssh_could_not_exec_command">Nepoda\u0159ilo se spustit vzd\u00e1len\u00fd p\u0159\u00edkaz.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Nepoda\u0159ilo se odeslat heslo sudo.</string>
+    <string name="error_ssh_hostkey_changed">CHYBA! Kl\u00ed\u010d hostitele serveru se zm\u011bnil. Pokud je to z\u00e1m\u011brn\u00e9, m\u016f\u017eete pokra\u010dovat. V opa\u010dn\u00e9m p\u0159\u00edpad\u011b to m\u016f\u017ee b\u00fdt \u00fatok man in the middle.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH server nepodporuje ani metodu ov\u011b\u0159en\u00ed \"password\" ani \"keyboard-interactive\" nebo vy\u017eaduje nejprve metodu \"publickey\". Nakonfigurujte jej pros\u00edm tak, aby umo\u017e\u0148oval alespo\u0148 jednu z t\u011bchto dvou metod, nebo p\u0159ekonfigurujte aplikaci. Dostupn\u00e9 metody ov\u011b\u0159en\u00ed: </string>
+    <string name="error_ssh_key_auth_fail">Ov\u011b\u0159en\u00ed na SSH serveru pomoc\u00ed p\u00e1ru kl\u00ed\u010d\u016f se nezda\u0159ilo. Zkontrolujte sv\u00e9 SSH u\u017eivatelsk\u00e9 jm\u00e9no a ujist\u011bte se, \u017ee v\u00e1\u0161 ve\u0159ejn\u00fd kl\u00ed\u010d je v souboru authorized_keys na vzd\u00e1len\u00e9 stran\u011b.</string>
+    <string name="error_ssh_keypair_decryption_failure">Nepoda\u0159ilo se de\u0161ifrovat p\u00e1r kl\u00ed\u010d\u016f. Ujist\u011bte se, \u017ee jste spr\u00e1vn\u011b zadali p\u0159\u00edstupovou fr\u00e1zi v poli \'SSH Passphrase\' na hlavn\u00ed obrazovce.</string>
+    <string name="error_ssh_keypair_missing">SSH p\u00e1r kl\u00ed\u010d\u016f dosud nebyl vygenerov\u00e1n! Vygenerujte jej a um\u00edst\u011bte (jeho ve\u0159ejnou \u010d\u00e1st) do authorized_keys na SSH serveru.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">P\u0159\u00edstupov\u00e1 fr\u00e1ze zad\u00e1na, ale p\u00e1r kl\u00ed\u010d\u016f nen\u00ed \u0161ifrovan\u00fd. Sma\u017ete pros\u00edm p\u0159\u00edstupovou fr\u00e1zi.</string>
+    <string name="error_ssh_port_forwarding_failure">Nepoda\u0159ilo se nastavit p\u0159esm\u011brov\u00e1n\u00ed port\u016f pro tunelov\u00e1n\u00ed VNC provozu p\u0159es SSH. Ujist\u011bte se, \u017ee v\u00e1\u0161 SSH server je nastaven tak, aby umo\u017e\u0148oval p\u0159esm\u011brov\u00e1n\u00ed port\u016f, a zkuste to znovu.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH server nepodporuje metodu ov\u011b\u0159en\u00ed \"publickey\" a my se pokou\u0161\u00edme pou\u017e\u00edt p\u00e1r kl\u00ed\u010d\u016f pro ov\u011b\u0159en\u00ed. Nakonfigurujte jej pros\u00edm tak, aby umo\u017e\u0148oval ov\u011b\u0159en\u00ed pomoc\u00ed ve\u0159ejn\u00e9ho kl\u00ed\u010de, a zkuste to znovu. Dostupn\u00e9 metody ov\u011b\u0159en\u00ed: </string>
+    <string name="error_ssh_pwd_auth_fail">Ov\u011b\u0159en\u00ed na SSH serveru pomoc\u00ed hesla se nezda\u0159ilo. Zkontrolujte sv\u00e9 SSH u\u017eivatelsk\u00e9 jm\u00e9no a SSH heslo.</string>
+    <string name="error_ssh_unable_to_connect">P\u0159ipojen\u00ed k SSH serveru se nezda\u0159ilo. Zkontrolujte s\u00ed\u0165ov\u00e9 p\u0159ipojen\u00ed a adresu a port SSH serveru.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nepoda\u0159ilo se z\u00edskat vzd\u00e1len\u00fd VNC port z x11vnc. Ujist\u011bte se, \u017ee je x11vnc nainstalov\u00e1n. Pro jistotu zkuste spustit x11vnc ru\u010dn\u011b na p\u0159\u00edkazov\u00e9m \u0159\u00e1dku.</string>
+    <string name="error_uri_noinfo_nosave">Nedostatek informac\u00ed pro p\u0159ipojen\u00ed.</string>
+    <string name="error_uri_parse_error">Nelze analyzovat Intent URI. Zkontrolujte pros\u00edm form\u00e1t URI. Pod\u00edvejte se tak\u00e9 do logcatu za\u0159\u00edzen\u00ed pro v\u00edce podrobnost\u00ed.</string>
+    <string name="error_vnc_authentication">VNC ov\u011b\u0159en\u00ed se nezda\u0159ilo! Zkontrolujte VNC heslo (a u\u017eivatele, pokud je to relevantn\u00ed).</string>
+    <string name="error_vnc_unable_to_connect">"P\u0159ipojen\u00ed k VNC serveru se nezda\u0159ilo s d\u016fvodem: "</string>
+    <string name="error_x509_could_not_generate_encoding">Nepoda\u0159ilo se vygenerovat k\u00f3dov\u00e1n\u00ed certifik\u00e1tu.</string>
+    <string name="error_x509_could_not_generate_signature">Nepoda\u0159ilo se vygenerovat SHA1 nebo MD5 podpis certifik\u00e1tu. Nebyl nalezen algoritmus SHA1/MD5.</string>
+
+    <string name="export_settings">Exportovat</string>
+
+
+    <string name="extra_keys_disable">Zak\u00e1zat dodate\u010dn\u00e9 kl\u00e1vesy</string>
+    <string name="extra_keys_enable">Povolit dodate\u010dn\u00e9 kl\u00e1vesy</string>
+
+    <string name="fit_to_screen">P\u0159izp\u016fsobit obrazovce</string>
+
+    <string name="force">Celoploch\u00fd bitmap</string>
+
+    <string name="immersive_mode_disable">Zak\u00e1zat imerzn\u00ed re\u017eim</string>
+
+    <string name="import_export_settings">📦 Import/Export nastaven\u00ed</string>
+    <string name="import_settings">Importovat</string>
+
+
+    <string name="info">Informace</string>
+    <string name="info_cert_signatures">"Informace o certifik\u00e1tu: "</string>
+    <string name="info_cert_signatures_identical">\n\nM\u016f\u017eete ov\u011b\u0159it, \u017ee informace odpov\u00eddaj\u00ed certifik\u00e1tu serveru, abyste zabr\u00e1nili \u00fatoku man-in-the-middle.</string>
+    <string name="info_cert_tunnel">Chcete se p\u0159ipojit k hostiteli identifikovan\u00e9mu n\u00e1sleduj\u00edc\u00edm certifik\u00e1tem?\n\nOtisk: %1$s\n\nVyd\u00e1no pro:\n%2$s\n\nVyd\u00e1no k\u00fdm:\n%3$s\n\nPlatn\u00e9 od:\n%4$s\n\nPlatn\u00e9 do:\n%5$s\n\nPozn\u00e1mka: Aplikace neov\u011b\u0159uje certifika\u010dn\u00ed autority ani nekontroluje odvoln\u00ed certifik\u00e1t\u016f.</string>
+    <string name="info_continue_connecting">"Pokra\u010dovat v p\u0159ipojen\u00ed k: "</string>
+    <string name="info_encoding">" k\u00f3dov\u00e1n\u00ed, "</string>
+    <string name="info_progress_dialog_aborted">P\u0159ipojen\u00ed p\u0159eru\u0161eno!</string>
+    <string name="info_progress_dialog_connecting">P\u0159ipojov\u00e1n\u00ed\u2026</string>
+    <string name="info_progress_dialog_downloading">Stahov\u00e1n\u00ed prvn\u00edho sn\u00edmku.\nPros\u00edm \u010dekejte\u2026</string>
+    <string name="info_progress_dialog_establishing">Nav\u00e1z\u00e1n\u00ed spojen\u00ed.\nPros\u00edm \u010dekejte\u2026</string>
+    <string name="info_ssh_initializing_hostkey">Pokus o inicializaci SSH kl\u00ed\u010de hostitele.</string>
+    <string name="info_ssh_key_fingerprint">"Otisk kl\u00ed\u010de hostitele: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nM\u016f\u017eete ov\u011b\u0159it, \u017ee je identick\u00fd se zn\u00e1m\u00fdm otiskem certifik\u00e1tu serveru, abyste zabr\u00e1nili \u00fatoku man-in-the-middle.</string>
+    <string name="info_update_color_model_to">"Aktualizace barevn\u00e9ho modelu na "</string>
+
+    <string name="input_method_direct_drag_pan_description">P\u0159\u00edm\u00fd, podr\u017een\u00ed pro pos\u00fan: P\u0159ejd\u011bte prstem pro p\u0159eta\u017een\u00ed. Klepn\u011bte jedn\u00edm prstem kdekoli pro lev\u00e9 kliknut\u00ed, dv\u011bma prsty pro prav\u00e9 kliknut\u00ed a t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed. P\u0159eje\u010fte dv\u011bma prsty pro rolov\u00e1n\u00ed. Dlouh\u00e9 klepnut\u00ed pro pos\u00fan obrazu.</string>
+    <string name="input_method_direct_swipe_pan_description">P\u0159\u00edm\u00fd, p\u0159ejet\u00ed pro pos\u00fan: P\u0159eje\u010fte pro pos\u00fan po obrazovce. Klepn\u011bte jedn\u00edm prstem kdekoli pro lev\u00e9 kliknut\u00ed, dv\u011bma prsty pro prav\u00e9 kliknut\u00ed a t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed. P\u0159eje\u010fte dv\u011bma prsty pro rolov\u00e1n\u00ed. Dlouh\u00e9 klepnut\u00ed pro p\u0159eta\u017een\u00ed.</string>
+    <string name="input_method_single_handed_description">Jedn\u00edm prstem: P\u0159eje\u010fte pro pos\u00fan po obrazovce. Klepn\u011bte jedn\u00edm prstem kdekoli pro lev\u00e9 kliknut\u00ed. Dlouh\u00e9 klepnut\u00ed pro v\u00fdb\u011br re\u017eimu lev\u00e9/prav\u00e9/prost\u0159edn\u00ed ta\u017een\u00ed/rolov\u00e1n\u00ed/p\u0159ibl\u00ed\u017een\u00ed. B\u011b\u017en\u00e9 v\u00edcedotykov\u00e9 ovl\u00e1d\u00e1n\u00ed tak\u00e9 funguje.</string>
+    <string name="input_method_touchpad_description">Simulovan\u00fd touchpad: P\u0159eje\u010fte pro pohyb ukazatele. Klepn\u011bte kdekoli jedn\u00edm prstem pro lev\u00e9 kliknut\u00ed, dv\u011bma prsty pro prav\u00e9 kliknut\u00ed a t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed. P\u0159eje\u010fte dv\u011bma prsty pro rolov\u00e1n\u00ed. Dlouh\u00e9 klepnut\u00ed pro p\u0159eta\u017een\u00ed.</string>
+    <string name="input_mode">Re\u017eim vstupu</string>
+
+    <string name="input_mode_fit_to_screen">\u017d\u00e1dn\u00fd pos\u00fan; trackball my\u0161</string>
+    <string name="input_mode_panning">Re\u017eim posouvac\u00ed plochy</string>
+    <string name="input_method_mouse">Ovl\u00e1d\u00e1n\u00ed ukazatele my\u0161i</string>
+
+    <string name="input_method_direct_swipe_pan">P\u0159\u00edm\u00fd, p\u0159ejet\u00ed pro pos\u00fan</string>
+    <string name="input_method_direct_drag_pan">P\u0159\u00edm\u00fd, podr\u017een\u00ed pro pos\u00fan</string>
+    <string name="input_method_single_handed">Jedn\u00edm prstem</string>
+    <string name="input_method_touchpad">Simulovan\u00fd touchpad</string>
+
+    <string name="input_mode_help">N\u00e1pov\u011bda k re\u017eimu vstupu</string>
+    <string name="input_mode_help_text">"
+V jak\u00e9mkoli re\u017eimu vstupu klepn\u011bte na ikonu kl\u00e1vesnice pro zobrazen\u00ed kl\u00e1vesnice na obrazovce. Va\u0161e za\u0159\u00edzen\u00ed m\u016f\u017ee m\u00edt tak\u00e9 vlastn\u00ed gesto pro zobrazen\u00ed kl\u00e1vesnice.
+
+Pou\u017eijte re\u017eimy P\u0159\u00edm\u00e9ho vstupu pro intuitivn\u011bj\u0161\u00ed ovl\u00e1d\u00e1n\u00ed dotykovou obrazovkou. Re\u017eim Simulovan\u00e9ho touchpadu pou\u017eijte pro jemn\u011bj\u0161\u00ed ovl\u00e1d\u00e1n\u00ed my\u0161i.
+
+Re\u017eim P\u0159\u00edm\u00fd, p\u0159ejet\u00ed pro pos\u00fan:
+ - Ovl\u00e1dejte my\u0161 p\u0159\u00edmo dotykem.
+ - P\u0159eje\u010fte pro pos\u00fan po obrazovce.
+ - Klepnut\u00ed provede kliknut\u00ed my\u0161\u00ed tam, kam jste klepli.
+ - Ud\u00e1losti rolov\u00e1n\u00ed se odes\u00edlaj\u00ed mezi dv\u011bma prsty, kde za\u010dalo p\u0159ejet\u00ed dv\u011bma prsty.
+
+Re\u017eim P\u0159\u00edm\u00fd, podr\u017een\u00ed pro pos\u00fan:
+ - Ovl\u00e1dejte my\u0161 p\u0159\u00edmo dotykem.
+ - Dlouh\u00e9 klepnut\u00ed spust\u00ed re\u017eim pos\u00fan\u016f.
+ - Klepnut\u00ed provede kliknut\u00ed my\u0161\u00ed tam, kam jste klepli.
+ - Ud\u00e1losti rolov\u00e1n\u00ed se odes\u00edlaj\u00ed mezi dv\u011bma prsty, kde za\u010dalo p\u0159ejet\u00ed dv\u011bma prsty.
+
+Re\u017eim Simulovan\u00fd touchpad:
+ - Pou\u017e\u00edvejte obrazovku jako touchpad.
+ - P\u0159eje\u010fte pro p\u0159esun ukazatele my\u0161i.
+ - P\u0159esu\u0148te my\u0161 za okraj obrazovky pro pos\u00fan.
+ - Klepnut\u00ed provede kliknut\u00ed my\u0161\u00ed tam, kde je ukazatel.
+ - Ud\u00e1losti rolov\u00e1n\u00ed se odes\u00edlaj\u00ed tam, kde se nach\u00e1z\u00ed ukazatel my\u0161i.
+
+Re\u017eim Jedn\u00edm prstem:
+ - Stejn\u00e9 jako re\u017eim P\u0159\u00edm\u00fd, p\u0159ejet\u00ed pro pos\u00fan, ale dlouh\u00e9 klepnut\u00ed otev\u0159e nab\u00eddku s volbou re\u017eim\u016f.
+ - Po v\u00fdb\u011bru re\u017eimu provede p\u0159ejet\u00ed prstem po obrazovce vybran\u00e9 gesto.
+ - Zvednut\u00ed prstu dokon\u010d\u00ed gesto.
+
+V\u0161echny re\u017eimy vstupu:
+ - Lev\u00e9 kliknut\u00ed: Jedno klepnut\u00ed.
+ - Dvojklik: Dvojit\u00e9 klepnut\u00ed.
+ - Prav\u00e9 kliknut\u00ed: Klepn\u011bte a podr\u017ete a klepn\u011bte druh\u00fdm prstem (kdekoli jinde na obrazovce).
+ - Alternativn\u00ed prav\u00e9 kliknut\u00ed: Pou\u017eijte tla\u010d\u00edtko \"Zp\u011bt\" nebo gesto va\u0161eho za\u0159\u00edzen\u00ed.
+ - Prost\u0159edn\u00ed kliknut\u00ed: Klepn\u011bte a podr\u017ete a klepn\u011bte dal\u0161\u00edmi dv\u011bma prsty (kdekoli jinde na obrazovce).
+ - Ta\u017een\u00ed my\u0161\u00ed: Klepn\u011bte, podr\u017ete dlouze a p\u0159eje\u010fte.
+ - Rolovac\u00ed kole\u010dko: Ta\u017een\u00ed dv\u011bma prsty nahoru/dol\u016f a vlevo/vpravo. Rychl\u00e9 ta\u017een\u00ed roluje rychleji.
+ - P\u0159ibl\u00ed\u017een\u00ed/odd\u00e1len\u00ed: V re\u017eimu Zoomovateln\u00e9, \u0161t\u00edpnut\u00edm p\u0159ibl\u00ed\u017e\u00edte/odd\u00e1l\u00edte.
+ - Kl\u00e1vesy Ctrl/Alt: Menu-&gt;tla\u010d\u00edtka Ctrl/Alt. Nezapome\u0148te je vypnout, a\u017e skon\u010d\u00edte!
+ - Kombinace kl\u00e1ves: Menu-&gt;V\u00edce-&gt;Odeslat kl\u00e1vesy.
+ - Odesl\u00e1n\u00ed textu: Bu\u010f pi\u0161te na kl\u00e1vesnici na obrazovce, nebo pou\u017eijte Menu-&gt;V\u00edce-&gt;Odeslat text."</string>
+
+    <string name="intro_close">Zav\u0159\u00edt</string>
+    <string name="intro_dont_show">Nezobrazovat znovu</string>
+
+    <string name="intro_text">
+Aktu\u00e1ln\u00ed seznam funkc\u00ed bVNC:
+&lt;br&gt;
+- Prost\u00e9 VNC, zabezpe\u010den\u00e9 VNC p\u0159es SSH, AnonTLS a VeNCrypt a UltraVNC Windows p\u0159ihl\u00e1\u0161en\u00ed s volitelnou opakovac\u00ed stanic\u00ed.
+&lt;br&gt;
+- Re\u017eim AutoX: V re\u017eimu VNC p\u0159es SSH automaticky objevujte existuj\u00edc\u00ed a/nebo vytv\u00e1\u0159ejte nov\u00e9 X relace pomoc\u00ed x11vnc! Funguje jako NX klient.
+&lt;br&gt;
+- Voln\u00e1 podpora ot\u00e1\u010den\u00ed. Pou\u017eijte opera\u010dn\u00ed syst\u00e9m k omezen\u00ed ot\u00e1\u010den\u00ed v p\u0159\u00edpad\u011b pot\u0159eby.
+&lt;br&gt;
+- Generov\u00e1n\u00ed a export SSH ve\u0159ejn\u00e9ho/soukrom\u00e9ho p\u00e1ru kl\u00ed\u010d\u016f.
+&lt;br&gt;
+- V\u0161echna standardn\u00ed VNC k\u00f3dov\u00e1n\u00ed v\u010detn\u011b Tight, ZRLE a CopyRect.
+&lt;br&gt;
+- Automatick\u00e9 ukl\u00e1d\u00e1n\u00ed relac\u00ed.
+&lt;br&gt;
+- Re\u017eimy m\u011b\u0159\u00edtka: Zoomovateln\u00e9, P\u0159izp\u016fsobit obrazovce a Jedna ku jedn\u00e9.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i v re\u017eimech P\u0159\u00edm\u00fd a Simulovan\u00fd touchpad.
+&lt;br&gt;
+- Pln\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i jednou rukou v re\u017eimu Jedn\u00edm prstem.
+&lt;br&gt;
+- V\u00edcedotykov\u00e1 kliknut\u00ed my\u0161\u00ed: klepn\u011bte pro lev\u00e9 kliknut\u00ed, klepnut\u00ed dv\u011bma prsty pro prav\u00e9 kliknut\u00ed, klepnut\u00ed t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 rolov\u00e1n\u00ed: ta\u017een\u00ed dv\u011bma prsty nahoru/dol\u016f a vlevo/vpravo.
+&lt;br&gt;
+- Kl\u00e1vesy meta a \u0161ipky na obrazovce, kter\u00e9 lze zcela zak\u00e1zat z nab\u00eddky nebo skr\u00fdt tla\u010d\u00edtkem na obrazovce.
+&lt;br&gt;
+- Odes\u00edl\u00e1n\u00ed textu a libovoln\u00fdch kombinac\u00ed kl\u00e1ves p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda pro vytv\u00e1\u0159en\u00ed p\u0159ipojen\u00ed (\"Menu-&gt;N\u00e1pov\u011bda p\u0159ipojen\u00ed\") na obrazovce p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda k re\u017eim\u016fm vstupu (\"Menu-&gt;V\u00edce-&gt;N\u00e1pov\u011bda re\u017eimu vstupu\") p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- Pou\u017eit\u00ed dostupn\u00e9ho touchpadu jako \u0161ipek nam\u00edsto pohybu my\u0161i a kliknut\u00ed touchpadu jako Ctrl.
+&lt;br&gt;
+- P\u0159epnut\u00ed do re\u017eimu na v\u00fd\u0161ku p\u0159i p\u0159ipojen\u00ed, ot\u00e1\u010den\u00ed D-Pad/touchpadu pro BT kl\u00e1vesnice.
+&lt;br&gt;
+- V\u00edcejazykov\u00e1 podpora, pokud m\u00e1 VNC server povoleno pot\u0159ebn\u00e9 jazykov\u00e9 rozlo\u017een\u00ed.
+&lt;br&gt;
+- Integrace kop\u00edrov\u00e1n\u00ed/vkl\u00e1d\u00e1n\u00ed
+&lt;br&gt;
+- Zm\u011bny rozli\u0161en\u00ed vzd\u00e1len\u00e9ho po\u010d\u00edta\u010de
+&lt;br&gt;
+- Pln\u00e1 podpora my\u0161i na za\u0159\u00edzen\u00edch s Android 4.0+, v\u010detn\u011b prav\u00e9ho a prost\u0159edn\u00edho kliknut\u00ed a rolovac\u00edho kole\u010dka.
+&lt;br&gt;
+&lt;br&gt;
+Zn\u00e1m\u00e9 probl\u00e9my:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitivn\u00ed, bezpe\u010dn\u00fd VNC klient</string>
+
+
+    <string name="keep_password_button">Ponechat</string>
+    <string name="keep_screen_awake_enable">Nechat obrazovku zapnutou</string>
+
+    <string name="keys_caption">Kl\u00e1vesy</string>
+
+    <string name="landscape_force">Vynutit orientaci na \u0161\u00ed\u0159ku</string>
+
+    <string name="left_handed_mode">Re\u017eim pro lev\u00e1ky</string>
+    <string name="disable_pointer_offset_correction">Zak\u00e1zat korekci ofsetu ukazatele</string>
+
+    <string name="list_caption">Seznam</string>
+    <string name="list_name_caption">N\u00e1zev seznamu</string>
+
+    <string name="local_mouse_check">M\u00edstn\u00ed ukazatel my\u0161i (vyberte, pokud je ukazatel neviditeln\u00fd)</string>
+
+    <string name="main_screen_help">N\u00e1pov\u011bda p\u0159ipojen\u00ed</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kdy\u017e p\u0159id\u00e1te nebo uprav\u00edte p\u0159ipojen\u00ed, uvid\u00edte str\u00e1nku konfigurace p\u0159ipojen\u00ed. Zde m\u016f\u017eete nastavit
+nov\u00e9 VNC p\u0159ipojen\u00ed nebo zvolit ji\u017e existuj\u00edc\u00ed. Naho\u0159e je tla\u010d\u00edtko pro
+ulo\u017een\u00ed p\u0159ipojen\u00ed. Pod n\u00edm je konfigurace va\u0161eho p\u0159ipojen\u00ed.
+
+Pokud hled\u00e1te rychl\u00e9 zv\u00fd\u0161en\u00ed v\u00fdkonu, zkuste nastavit barevn\u00fd re\u017eim na ni\u017e\u0161\u00ed hodnotu. Tak\u00e9 zkuste odebrat pozad\u00ed plochy na VNC serveru. Nakonec se ujist\u011bte, \u017ee va\u0161e za\u0159\u00edzen\u00ed m\u00e1 dobr\u00e9 s\u00ed\u0165ov\u00e9 p\u0159ipojen\u00ed a vyhn\u011bte se zakr\u00fdv\u00e1n\u00ed ant\u00e9ny a sni\u017eov\u00e1n\u00ed s\u00edly sign\u00e1lu.
+
+ - Typ p\u0159ipojen\u00ed: Zde zvol\u00edte typ VNC p\u0159ipojen\u00ed. Dostupn\u00e9 typy p\u0159ipojen\u00ed jsou:
+   (a) Prost\u00e9 VNC, kter\u00e9 je podporov\u00e1no v\u0161emi VNC servery, ale nem\u00e1 \u0161ifrov\u00e1n\u00ed a je zraniteln\u00e9 v\u016f\u010di \u00fatok\u016fm hrubou silou kv\u016fli omezen\u00ed hesla na 8 znak\u016f.
+   (b) Zabezpe\u010den\u00e9 VNC p\u0159es SSH, kter\u00e9 se p\u0159ipojuje p\u0159es \u0161ifrovan\u00fd SSH tunel. Pot\u0159ebujete b\u011b\u017e\u00edc\u00ed slu\u017ebu SSHD a VNC server. Pokud VNC server nep\u0159ij\u00edm\u00e1 p\u0159ipojen\u00ed p\u0159\u00edmo z internetu, tento typ p\u0159ipojen\u00ed nem\u00e1 \u017e\u00e1dn\u00e9 zn\u00e1m\u00e9 zranitelnosti, pokud ov\u011b\u0159\u00edte podpis certifik\u00e1tu serveru p\u0159i prvn\u00edm p\u0159ipojen\u00ed.
+   (c) UltraVNC, kter\u00e9 v\u00e1m d\u00e1v\u00e1 mo\u017enosti Windows p\u0159ihl\u00e1\u0161en\u00ed a UltraVNC opakovac\u00ed stanice. Pou\u017eit\u00ed Windows p\u0159ihl\u00e1\u0161en\u00ed nem\u00e1 omezen\u00ed hesla na 8 znak\u016f, ale tento re\u017eim nenab\u00edz\u00ed \u0161ifrov\u00e1n\u00ed, tak\u017ee va\u0161e relace je zraniteln\u00e1 v\u016f\u010di odposlechu.
+   (d) Zabezpe\u010den\u00e9 VNC p\u0159es AnonTLS, co\u017e je b\u011b\u017en\u00e9 VNC p\u0159es p\u0159ipojen\u00ed ekvivalentn\u00ed stunnel. Pot\u0159ebujete bu\u010f spustit stunnel, nebo pou\u017e\u00edt VNC server jako Vino, kter\u00fd podporuje AnonTLS. Tento re\u017eim v\u00e1m d\u00e1v\u00e1 \u0161ifrov\u00e1n\u00ed relace, ale m\u00e1 omezen\u00ed hesla na 8 znak\u016f a nechr\u00e1n\u00ed p\u0159ed \u00fatoky man-in-the-middle.
+   (e) Zabezpe\u010den\u00e9 VNC p\u0159es VeNCrypt, kter\u00e9 pou\u017e\u00edv\u00e1 certifik\u00e1ty x509 a \u0161ifrov\u00e1n\u00ed relace a v z\u00e1vislosti na konfiguraci serveru m\u016f\u017ee pou\u017e\u00edvat p\u0159ihla\u0161ovac\u00ed \u00fadaje u\u017eivatele/hesla bez omezen\u00ed 8 znak\u016f. Tento re\u017eim chr\u00e1n\u00ed p\u0159ed \u00fatoky man-in-the-middle a zaji\u0161\u0165uje soukrom\u00ed relace. Servery jako x11vnc a TigerVNC tento re\u017eim podporuj\u00ed a jsou stejn\u011b bezpe\u010dn\u00e9 jako VNC p\u0159es SSH.
+
+ - N\u00e1zev: Ka\u017ed\u00e9 p\u0159ipojen\u00ed m\u016f\u017ee m\u00edt p\u0159ezd\u00edvku pro snadn\u011bj\u0161\u00ed identifikaci v seznamu.
+
+ - Nastaven\u00ed SSH tunelu: Dostupn\u00e9 v re\u017eimu VNC p\u0159es SSH.
+   (a) SSH Server/Port: Adresa a port SSH serveru, p\u0159es kter\u00fd bude p\u0159ipojen\u00ed tunelovan\u00e9. SSH standardn\u011b naslouch\u00e1 na portu 22.
+   (b) U\u017eivatelsk\u00e9 jm\u00e9no/Heslo: U\u017eivatelsk\u00e9 jm\u00e9no a heslo \u00fa\u010dtu na SSH serveru. Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+   (c) Spr\u00e1va kl\u00ed\u010de/Pou\u017e\u00edt kl\u00ed\u010d: Tla\u010d\u00edtko pro spr\u00e1vu ve\u0159ejn\u00fdch/soukrom\u00fdch kl\u00ed\u010d\u016f a za\u0161krt\u00e1vac\u00ed pol\u00ed\u010dko ur\u010duj\u00edc\u00ed, zda pou\u017e\u00edt kl\u00ed\u010d nam\u00edsto hesla pro ov\u011b\u0159en\u00ed. Pokud po vygenerov\u00e1n\u00ed p\u00e1ru kl\u00ed\u010d\u016f pou\u017eijete tla\u010d\u00edtko Kop\u00edrovat do schr\u00e1nky, m\u011bli byste b\u00fdt schopni vlo\u017eit ve\u0159ejn\u00fd kl\u00ed\u010d po p\u0159ipojen\u00ed k VNC serveru (schr\u00e1nka je synchronizov\u00e1na se serverem).
+
+ - Konfigurace AutoX: Dostupn\u00e1 pouze v re\u017eimu VNC p\u0159es SSH. Aplikace m\u016f\u017ee automaticky objevovat existuj\u00edc\u00ed a voliteln\u011b vytv\u00e1\u0159et nov\u00e9 X relace na syst\u00e9mech UNIX (jako NX klient). Pot\u0159ebujete x11vnc pro hled\u00e1n\u00ed a Xvfb, Xvnc nebo Xdummy nainstalovan\u00e9 na vzd\u00e1len\u00e9m syst\u00e9mu pro vytv\u00e1\u0159en\u00ed relac\u00ed. Mo\u017en\u00e1 budete muset p\u0159esunout soubor .dmrc a p\u0159idat soubor .xinit do sv\u00e9ho domovsk\u00e9ho adres\u00e1\u0159e, pokud va\u0161e pracovn\u00ed plocha nevypad\u00e1 spr\u00e1vn\u011b nebo vid\u00edte jen okno xterm.
+
+ - Nastaven\u00ed VNC p\u0159ipojen\u00ed:
+   (a) VNC Server/Port: Zde zad\u00e1te n\u00e1zev hostitele nebo IP adresu a port po\u010d\u00edta\u010de s VNC serverem, ke kter\u00e9mu se chcete p\u0159ipojit. V re\u017eimu VNC p\u0159es SSH je tato adresa vid\u011bna z SSH serveru. Pokud jsou SSH server a VNC server na stejn\u00e9m po\u010d\u00edta\u010di, m\u016f\u017eete pou\u017e\u00edt localhost. VNC servery obvykle naslouch\u00e1j\u00ed od portu 5900 (prvn\u00ed VNC obrazovka, obrazovka :0).
+   (b) VNC u\u017eivatel: Dostupn\u00e9 v re\u017eimu UltraVNC s Windows p\u0159ihl\u00e1\u0161en\u00edm nebo Zabezpe\u010den\u00e9 VNC p\u0159es VeNCrypt, zde zad\u00e1te u\u017eivatelsk\u00e9 jm\u00e9no sv\u00e9ho Windows/UNIX \u00fa\u010dtu.
+   (c) VNC heslo: Pokud konfigurace va\u0161eho VNC serveru vy\u017eaduje heslo, zadejte ho zde. V re\u017eimech UltraVNC s Windows p\u0159ihl\u00e1\u0161en\u00edm/VeNCrypt zadejte heslo sv\u00e9ho Windows/UNIX \u00fa\u010dtu. Pro hesla se nepou\u017e\u00edv\u00e1 bezpe\u010dn\u00e9 \u00falo\u017ei\u0161t\u011b a heslo bude ulo\u017eeno pouze pokud za\u0161krtnete pol\u00ed\u010dko \"Ponechat\". Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+
+ - Barevn\u00fd re\u017eim: Klient podporuje n\u011bkolik barevn\u00fdch re\u017eim\u016f. Re\u017eimy s v\u00edce barvami poskytuj\u00ed lep\u0161\u00ed vizu\u00e1ln\u00ed z\u00e1\u017eitek za cenu v\u011bt\u0161\u00ed \u0161\u00ed\u0159ky p\u00e1sma a vy\u0161\u0161\u00edho vyt\u00ed\u017een\u00ed CPU va\u0161eho za\u0159\u00edzen\u00ed. N\u011bkter\u00e9 VNC servery nepodporuj\u00ed v\u0161echny barevn\u00e9 hloubky (nap\u0159. OS/X Remote Desktop vy\u017eaduje 24bitov\u00e9 barvy). Pokud m\u00e1te probl\u00e9my s p\u0159ipojen\u00edm, zkuste jinou barevnou hloubku.
+
+ - Pou\u017e\u00edt D-Pad pro \u0161ipky: Pokud d\u00e1v\u00e1te p\u0159ednost, m\u016f\u017eete pou\u017e\u00edt D-Pad va\u0161\u00ed Bluetooth kl\u00e1vesnice nebo \u0161ipky na kl\u00e1vesnici na obrazovce pro odes\u00edl\u00e1n\u00ed \u0161ipek na VNC server.
+
+ - Ot\u00e1\u010den\u00ed D-Pad: Telefony sp\u00e1rovan\u00e9 s Bluetooth kl\u00e1vesnic\u00ed mohou pot\u0159ebovat oto\u010dit D-Pad kl\u00e1vesnice proti sm\u011bru hodinov\u00fdch ru\u010di\u010dek pro spr\u00e1vn\u00e9 sm\u011bry na serveru.
+
+ - M\u00edstn\u00ed ukazatel my\u0161i: N\u011bkter\u00e9 VNC servery (nap\u0159. OS/X Remote Desktop) nevykresluj\u00ed ukazatel my\u0161i na klientovi. Za\u0161krtnut\u00ed t\u00e9to volby zp\u016fsob\u00ed, \u017ee aplikace vykresl\u00ed ukazatel my\u0161i na pozici my\u0161i.
+
+ - Auto/Celoploch\u00fd bitmap: VNC klient pou\u017e\u00edv\u00e1 bitmap pro reprezentaci vzd\u00e1len\u00e9ho displeje. Pro velmi velk\u00e9 vzd\u00e1len\u00e9 displeje, zejm\u00e9na v re\u017eimu p\u0159izp\u016fsobit obrazovce, m\u016f\u017eete za\u017e\u00edt podivn\u00e9 vizu\u00e1ln\u00ed artefakty kv\u016fli omezen\u00edm pam\u011bti na proces. Pokud se to stane, zkuste za\u0161krtnout tuto volbu. M\u011bjte na pam\u011bti, \u017ee za\u0161krtnut\u00ed volby m\u016f\u017ee zp\u016fsobit ukon\u010den\u00ed aplikace p\u0159i p\u0159ipojen\u00ed.
+
+ - Opakovac\u00ed stanice: Dostupn\u00e9 pouze v re\u017eimu UltraVNC. D\u016eLE\u017dIT\u00c9: Pokud m\u00e1te UltraVNC opakovac\u00ed stanici, zadejte jej\u00ed adresu a port mimo dialog \'UltraVNC Repeater\' a adresu a port skute\u010dn\u00e9ho VNC serveru zadejte uvnit\u0159 dialogu \'UltraVNC Repeater\'. Odd\u011blte adresu a port VNC serveru dvojte\u010dkou, nap\u0159. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">\uD83D\uDD12 Povolit hlavn\u00ed heslo</string>
+    <string name="master_password_error_failed_to_disable">Nepoda\u0159ilo se zak\u00e1zat hlavn\u00ed heslo. Zkontrolujte voln\u00e9 m\u00edsto na za\u0159\u00edzen\u00ed a zkuste to znovu.</string>
+    <string name="master_password_error_failed_to_enable">Nepoda\u0159ilo se povolit hlavn\u00ed heslo. Zkontrolujte voln\u00e9 m\u00edsto na za\u0159\u00edzen\u00ed a zkuste to znovu.</string>
+    <string name="master_password_error_intents_not_supported">Intentov\u00e1 p\u0159ipojen\u00ed nejsou je\u0161t\u011b podporov\u00e1na, kdy\u017e je hlavn\u00ed heslo povoleno.</string>
+    <string name="master_password_error_password_necessary">Hlavn\u00ed heslo je pot\u0159eba pro pokra\u010dov\u00e1n\u00ed.</string>
+    <string name="master_password_error_password_not_set">Nastaven\u00ed hlavn\u00edho hesla bylo zru\u0161eno.</string>
+    <string name="master_password_error_shortcuts_not_supported">Z\u00e1stupci nejsou je\u0161t\u011b podporov\u00e1ni, kdy\u017e je hlavn\u00ed heslo povoleno.</string>
+    <string name="master_password_error_wrong_password">Nepoda\u0159ilo se ov\u011b\u0159it se zadan\u00fdm hlavn\u00edm heslem.</string>
+    <string name="master_password_hint_once">Zadejte heslo</string>
+    <string name="master_password_hint_twice">Zopakujte heslo</string>
+    <string name="master_password_set">Nastavit hlavn\u00ed heslo</string>
+    <string name="master_password_set_error">Hesla se neshoduj\u00ed, bu\u010fte pros\u00edm opatrn\u00ed!</string>
+    <string name="master_password_set_message">Zadejte a zapamatujte si hlavn\u00ed heslo. \u010c\u00edm del\u0161\u00ed heslo, t\u00edm t\u011b\u017e\u0161\u00ed je prolomit. Pokud zad\u00e1te \u0161patn\u00e9 heslo nebo ho zapomenete, ztrat\u00edte v\u0161echna sv\u00e1 nastaven\u00ed! Mo\u017en\u00e1 budete cht\u00edt sv\u00e1 nastaven\u00ed nyn\u00ed exportovat jako z\u00e1lohu (z nab\u00eddky). Ulo\u017ete je bezpe\u010dn\u011b, proto\u017ee exportovan\u00e1 nastaven\u00ed nejsou \u0161ifrovan\u00e1.</string>
+    <string name="master_password_verify">Ov\u011b\u0159it hlavn\u00ed heslo</string>
+    <string name="master_password_verify_message">Pro pokra\u010dov\u00e1n\u00ed zadejte spr\u00e1vn\u00e9 hlavn\u00ed heslo.</string>
+
+    <string name="meta_key_title">Odeslat speci\u00e1ln\u00ed kl\u00e1vesy</string>
+
+    <string name="mouse_follow_pan">My\u0161 sleduje pos\u00fan</string>
+
+    <string name="new_connection">Nov\u00e9 p\u0159ipojen\u00ed</string>
+    <string name="new_list_button">Nov\u00fd seznam</string>
+
+    <string name="nickname_caption">P\u0159ezd\u00edvka</string>
+    <string name="nickname_caption_hint">N\u00e1zev (voliteln\u00e9)</string>
+
+    <string name="off">Vyp</string>
+
+    <string name="one_to_one">Jedna ku jedn\u00e9</string>
+
+    <string name="open_doc">P\u0159\u00edru\u010dka/Wiki</string>
+
+    <string name="pan_follow_mouse">Pos\u00fan sleduje my\u0161</string>
+
+    <string name="password_caption">VNC ov\u011b\u0159en\u00ed</string>
+    <string name="password_caption_hint">VNC heslo</string>
+    <string name="password_caption_ssh">SSH ov\u011b\u0159en\u00ed</string>
+    <string name="password_hint_ssh">SSH heslo</string>
+
+    <string name="port_caption">VNC port</string>
+    <string name="port_caption_ssh">SSH port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">P\u0159epnout do re\u017eimu na v\u00fd\u0161ku p\u0159i p\u0159ipojen\u00ed</string>
+    <string name="local_clipboard_integration">Povolit integraci m\u00edstn\u00ed do vzd\u00e1len\u00e9 schr\u00e1nky</string>
+    <string name="remote_clipboard_integration">Povolit integraci vzd\u00e1len\u00e9 do m\u00edstn\u00ed schr\u00e1nky</string>
+    <string name="position_toolbar_last_used">Obnovit pozici panelu n\u00e1stroj\u016f</string>
+    <string name="applies_to_new_connections_only">Plat\u00ed pouze pro nov\u00e1 p\u0159ipojen\u00ed</string>
+    <string name="pro_feature_mfa">Zd\u00e1 se, \u017ee v\u00e1\u0161 server m\u00e1 povoleno v\u00edcefaktorov\u00e9 ov\u011b\u0159ov\u00e1n\u00ed. Podpo\u0159te pros\u00edm projekt zakoupen\u00edm verze Pro, kter\u00e1 tuto funkci podporuje. Odkaz na verzi Pro je dostupn\u00fd v \u00favodn\u00edm dialogu.</string>
+    <string name="pro_feature_intro">Zd\u00e1 se, \u017ee pou\u017e\u00edv\u00e1te funkci Pro. Podpo\u0159te pros\u00edm projekt zakoupen\u00edm verze Pro, kter\u00e1 tuto funkci podporuje. Zkontrolujte pros\u00edm \u00favodn\u00ed dialog pro odkazy na spr\u00e1vnou aplikaci.</string>
+    <string name="pro_feature_generic">Zd\u00e1 se, \u017ee pou\u017e\u00edv\u00e1te funkci Pro. Podpo\u0159te pros\u00edm projekt zakoupen\u00edm verze Pro, kter\u00e1 tuto funkci podporuje. Odkaz na verzi Pro je dostupn\u00fd v \u00favodn\u00edm dialogu.</string>
+    <string name="pro_feature_rdp">Vypad\u00e1 to, \u017ee jste se pokusili otev\u0159\u00edt soubor .rdp, co\u017e je funkce Pro. Podpo\u0159te pros\u00edm projekt zakoupen\u00edm aRDP Pro, kter\u00fd podporuje soubory .rdp. Odkaz na verzi aRDP Pro je dostupn\u00fd v \u00favodn\u00edm dialogu.</string>
+    <string name="pro_feature_spice">Vypad\u00e1 to, \u017ee jste se pokusili otev\u0159\u00edt soubor .vv. Pokud chcete ukl\u00e1dat p\u0159ipojen\u00ed k Proxmox nebo oVirt p\u0159\u00edmo v aplikaci a tak\u00e9 otev\u00edrat soubory .vv, zva\u017ete koupi Opaque. Pokud pot\u0159ebujete pouze podporu soubor\u016f .vv, m\u016f\u017eete z\u00edskat aSPICE Pro. Odkazy na ob\u011b aplikace naleznete v \u00favodn\u00edm dialogu.</string>
+
+    <string name="rdp_address_caption_hint">RDP Server</string>
+    <string name="rdp_adv_console_mode">Re\u017eim konzole</string>
+    <string name="rdp_adv_desktop_background">Zobrazit pozad\u00ed plochy</string>
+    <string name="rdp_adv_desktop_composition">Povolit kompozici plochy</string>
+    <string name="rdp_adv_font_smoothing">Vyhlazov\u00e1n\u00ed p\u00edsem</string>
+    <string name="rdp_adv_menu_animation">Zobrazit animace nab\u00eddek</string>
+    <string name="rdp_adv_redirect_sdcard">P\u0159esm\u011brovat SD kartu</string>
+    <string name="rdp_adv_remotefx">Povolit RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Povolit vizu\u00e1ln\u00ed styly</string>
+    <string name="rdp_adv_window_contents">Zobrazit obsah oken p\u0159i p\u0159et\u00e1hov\u00e1n\u00ed</string>
+    <string name="rdp_security_mode">Re\u017eim zabezpe\u010den\u00ed</string>
+    <string name="rdp_descript_geom">Velikost vzd\u00e1len\u00e9 plochy (\u0160xV)</string>
+    <string name="rdp_domain_hint">RDP dom\u00e9na</string>
+    <string name="rdp_geom_automatic">Automatick\u00e9</string>
+    <string name="rdp_geom_checkbox_enable">Povolit vlastn\u00ed rozli\u0161en\u00ed</string>
+    <string name="rdp_geom_custom">Vlastn\u00ed</string>
+    <string name="rdp_geom_description_hint">Server pot\u0159ebuje podporu ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Zak\u00e1z\u00e1no</string>
+    <string name="rdp_geom_native_landscape">Nativn\u00ed na \u0161\u00ed\u0159ku</string>
+    <string name="rdp_geom_native_portrait">Nativn\u00ed na v\u00fd\u0161ku</string>
+    <string name="rdp_security_auto">Automatick\u00e9 vyjedn\u00e1v\u00e1n\u00ed zabezpe\u010den\u00ed</string>
+    <string name="rdp_security_rdp">RDP zabezpe\u010den\u00ed</string>
+    <string name="rdp_security_tls">TLS zabezpe\u010den\u00ed</string>
+    <string name="rdp_security_nla">Ov\u011b\u0159ov\u00e1n\u00ed na \u00farovni s\u00edt\u011b</string>
+    <string name="rdp_intro_text">
+D\u011bkujeme za podporu aRDP a open-source softwaru obecn\u011b! Pro n\u00e1pov\u011bdu k pou\u017e\u00edv\u00e1n\u00ed aRDP se pod\u00edvejte na polo\u017eky N\u00e1pov\u011bda v nab\u00eddce a na popis aplikace na trhu.
+&lt;br&gt;
+&lt;br&gt;
+Aktu\u00e1ln\u00ed seznam funkc\u00ed aRDP zahrnuje:
+&lt;br&gt;
+- Prost\u00e9 RDP, RDP tunelovan\u00e9 p\u0159es SSH.
+&lt;br&gt;
+- Voln\u00e1 podpora ot\u00e1\u010den\u00ed. Pou\u017eijte opera\u010dn\u00ed syst\u00e9m k omezen\u00ed ot\u00e1\u010den\u00ed v p\u0159\u00edpad\u011b pot\u0159eby.
+&lt;br&gt;
+- Nastaven\u00ed vzd\u00e1len\u00e9ho rozli\u0161en\u00ed, nativn\u00ed rozli\u0161en\u00ed v re\u017eimu na \u0161\u00ed\u0159ku a na v\u00fd\u0161ku.
+&lt;br&gt;
+- Generov\u00e1n\u00ed a export SSH ve\u0159ejn\u00e9ho/soukrom\u00e9ho p\u00e1ru kl\u00ed\u010d\u016f.
+&lt;br&gt;
+- Automatick\u00e9 ukl\u00e1d\u00e1n\u00ed relac\u00ed.
+&lt;br&gt;
+- Re\u017eimy m\u011b\u0159\u00edtka: Zoomovateln\u00e9, P\u0159izp\u016fsobit obrazovce a Jedna ku jedn\u00e9.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i v re\u017eimech P\u0159\u00edm\u00fd a Simulovan\u00fd touchpad.
+&lt;br&gt;
+- Pln\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i jednou rukou v re\u017eimu Jedn\u00edm prstem.
+&lt;br&gt;
+- V\u00edcedotykov\u00e1 kliknut\u00ed my\u0161\u00ed: klepn\u011bte pro lev\u00e9 kliknut\u00ed, klepnut\u00ed dv\u011bma prsty pro prav\u00e9 kliknut\u00ed, klepnut\u00ed t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 rolov\u00e1n\u00ed: ta\u017een\u00ed dv\u011bma prsty nahoru/dol\u016f a vlevo/vpravo.
+&lt;br&gt;
+- Kl\u00e1vesy meta a \u0161ipky na obrazovce, kter\u00e9 lze zcela zak\u00e1zat z nab\u00eddky nebo skr\u00fdt tla\u010d\u00edtkem na obrazovce.
+&lt;br&gt;
+- Odes\u00edl\u00e1n\u00ed textu a libovoln\u00fdch kombinac\u00ed kl\u00e1ves p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda pro vytv\u00e1\u0159en\u00ed p\u0159ipojen\u00ed (\"Menu-&gt;N\u00e1pov\u011bda p\u0159ipojen\u00ed\") na obrazovce p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda k re\u017eim\u016fm vstupu (\"Menu-&gt;V\u00edce-&gt;N\u00e1pov\u011bda re\u017eimu vstupu\") p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- Pou\u017eit\u00ed dostupn\u00e9ho touchpadu jako \u0161ipek nam\u00edsto pohybu my\u0161i a kliknut\u00ed touchpadu jako Ctrl, ot\u00e1\u010den\u00ed D-Pad/touchpadu pro BT kl\u00e1vesnice.
+&lt;br&gt;
+- V\u00edcejazykov\u00e1 podpora, pokud m\u00e1 RDP server povoleno pot\u0159ebn\u00e9 jazykov\u00e9 rozlo\u017een\u00ed.
+&lt;br&gt;
+- Plynul\u00e9 zm\u011bny rozli\u0161en\u00ed vzd\u00e1len\u00e9ho po\u010d\u00edta\u010de
+&lt;br&gt;
+- Pln\u00e1 podpora my\u0161i na za\u0159\u00edzen\u00edch s Android 4.0+, v\u010detn\u011b prav\u00e9ho a prost\u0159edn\u00edho kliknut\u00ed a rolovac\u00edho kole\u010dka.
+&lt;br&gt;
+- Volba barevn\u00fdch re\u017eim\u016f
+&lt;br&gt;
+- Integrace kop\u00edrov\u00e1n\u00ed/vkl\u00e1d\u00e1n\u00ed
+&lt;br&gt;
+- Export nastaven\u00ed
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+&lt;br&gt;
+Zn\u00e1m\u00e9 probl\u00e9my:</string>
+    <string name="rdp_intro_title">aRDP: Intuitivn\u00ed, bezpe\u010dn\u00fd RDP klient</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kdy\u017e p\u0159id\u00e1te nebo uprav\u00edte p\u0159ipojen\u00ed, uvid\u00edte str\u00e1nku konfigurace p\u0159ipojen\u00ed. Zde m\u016f\u017eete nastavit nov\u00e9 RDP p\u0159ipojen\u00ed nebo zvolit ji\u017e existuj\u00edc\u00ed. Naho\u0159e je tla\u010d\u00edtko pro ulo\u017een\u00ed p\u0159ipojen\u00ed. Pod n\u00edm je konfigurace va\u0161eho p\u0159ipojen\u00ed.
+
+ - Typ p\u0159ipojen\u00ed: Zde zvol\u00edte typ RDP p\u0159ipojen\u00ed. Dostupn\u00e9 typy p\u0159ipojen\u00ed jsou:
+   (a) RDP, kter\u00e9 se p\u0159ipojuje p\u0159\u00edmo k po\u010d\u00edta\u010di p\u0159es protokol RDP.
+   (b) RDP p\u0159es SSH, kter\u00e9 nejprve tuneluje va\u0161e p\u0159ipojen\u00ed p\u0159es po\u010d\u00edta\u010d s b\u011b\u017e\u00edc\u00edm SSH serverem.
+
+ - N\u00e1zev: Ka\u017ed\u00e9 p\u0159ipojen\u00ed m\u016f\u017ee m\u00edt p\u0159ezd\u00edvku pro snadn\u011bj\u0161\u00ed identifikaci v seznamu.
+
+ - Nastaven\u00ed SSH tunelu: Dostupn\u00e9 v re\u017eimu RDP p\u0159es SSH.
+   (a) SSH Server/Port: Adresa a port SSH serveru, p\u0159es kter\u00fd bude p\u0159ipojen\u00ed tunelovan\u00e9. SSH standardn\u011b naslouch\u00e1 na portu 22.
+   (b) U\u017eivatelsk\u00e9 jm\u00e9no/Heslo: U\u017eivatelsk\u00e9 jm\u00e9no a heslo \u00fa\u010dtu na SSH serveru. Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+   (c) Spr\u00e1va kl\u00ed\u010de/Pou\u017e\u00edt kl\u00ed\u010d: Tla\u010d\u00edtko pro spr\u00e1vu ve\u0159ejn\u00fdch/soukrom\u00fdch kl\u00ed\u010d\u016f a za\u0161krt\u00e1vac\u00ed pol\u00ed\u010dko ur\u010duj\u00edc\u00ed, zda pou\u017e\u00edt kl\u00ed\u010d nam\u00edsto hesla pro ov\u011b\u0159en\u00ed. Pokud po vygenerov\u00e1n\u00ed p\u00e1ru kl\u00ed\u010d\u016f pou\u017eijete tla\u010d\u00edtko Kop\u00edrovat do schr\u00e1nky, m\u011bli byste b\u00fdt schopni vlo\u017eit ve\u0159ejn\u00fd kl\u00ed\u010d po p\u0159ipojen\u00ed k RDP serveru (schr\u00e1nka je synchronizov\u00e1na se serverem).
+
+ - Nastaven\u00ed RDP p\u0159ipojen\u00ed:
+   (a) RDP Server/Port: Zde zad\u00e1te n\u00e1zev hostitele nebo IP adresu a port po\u010d\u00edta\u010de s RDP serverem, ke kter\u00e9mu se chcete p\u0159ipojit. V re\u017eimu RDP p\u0159es SSH je tato adresa vid\u011bna z SSH serveru. Pokud jsou SSH server a RDP server na stejn\u00e9m po\u010d\u00edta\u010di, m\u016f\u017eete pou\u017e\u00edt localhost. RDP servery obvykle naslouch\u00e1j\u00ed na portu 3389.
+   (b) RDP u\u017eivatel: Zde zad\u00e1te u\u017eivatelsk\u00e9 jm\u00e9no sv\u00e9ho Windows/UNIX \u00fa\u010dtu.
+   (c) RDP dom\u00e9na: Zadejte dom\u00e9nu, do kter\u00e9 pat\u0159\u00ed v\u00e1\u0161 \u00fa\u010det.
+   (d) RDP heslo: Zde zad\u00e1te heslo sv\u00e9ho Windows/UNIX \u00fa\u010dtu. Pro hesla se nepou\u017e\u00edv\u00e1 bezpe\u010dn\u00e9 \u00falo\u017ei\u0161t\u011b (jsou v datab\u00e1zi) a heslo bude ulo\u017eeno pouze pokud za\u0161krtnete pol\u00ed\u010dko \"Ponechat\". Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+
+ - Pokro\u010dil\u00e1 nastaven\u00ed: V t\u00e9to sekci najdete zp\u016fsoby p\u0159izp\u016fsoben\u00ed rozli\u0161en\u00ed plochy a r\u016fzn\u00e9 RDP v\u00fdkonnostn\u00ed \u00fapravy
+
+ - M\u00edstn\u00ed nastaven\u00ed za\u0159\u00edzen\u00ed: Tato nastaven\u00ed upravuj\u00ed chov\u00e1n\u00ed aplikace na va\u0161em za\u0159\u00edzen\u00ed.
+   (a) Pou\u017e\u00edt D-Pad pro \u0161ipky: Pokud d\u00e1v\u00e1te p\u0159ednost, m\u016f\u017eete pou\u017e\u00edt D-Pad va\u0161\u00ed Bluetooth kl\u00e1vesnice nebo \u0161ipky na kl\u00e1vesnici na obrazovce pro odes\u00edl\u00e1n\u00ed \u0161ipek na RDP server.
+   (b) Ot\u00e1\u010den\u00ed D-Pad: Telefony sp\u00e1rovan\u00e9 s Bluetooth kl\u00e1vesnic\u00ed mohou pot\u0159ebovat oto\u010dit D-Pad kl\u00e1vesnice proti sm\u011bru hodinov\u00fdch ru\u010di\u010dek pro spr\u00e1vn\u00e9 sm\u011bry na serveru.
+   (c) M\u00edstn\u00ed ukazatel my\u0161i: Pokud je ukazatel neviditeln\u00fd, vyberte tuto volbu, aby ho aplikace vykreslovala."</string>
+    <string name="rdp_password_hint">RDP heslo</string>
+    <string name="rdp_server_empty">RDP server nebo port je pr\u00e1zdn\u00fd. Nelze se p\u0159ipojit!</string>
+    <string name="rdp_username_hint">RDP u\u017eivatelsk\u00e9 jm\u00e9no</string>
+
+    <string name="remote_sound_disabled">Zvuk zak\u00e1z\u00e1n</string>
+    <string name="remote_sound_on_device">Zvuk na za\u0159\u00edzen\u00ed</string>
+    <string name="remote_sound_on_server">Zvuk na serveru</string>
+
+    <string name="repeater_button">UltraVNC opakovac\u00ed stanice</string>
+    <string name="repeater_caption">D\u016eLE\u017dIT\u00c9: Pokud pou\u017e\u00edv\u00e1te UltraVNC opakovac\u00ed stanici, zadejte jej\u00ed adresu a port mimo tento dialog. Zde zadejte adresu a port skute\u010dn\u00e9ho VNC serveru. Odd\u011blte adresu a port VNC serveru dvojte\u010dkou, nap\u0159. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC opakovac\u00ed stanice</string>
+    <string name="repeater_clear">Nepou\u017e\u00edvat</string>
+    <string name="repeater_dialog_title">VNC server za opakovac\u00ed stanic\u00ed</string>
+    <string name="repeater_empty_text">\u017d\u00e1dn\u00e1 opakovac\u00ed stanice</string>
+    <string name="repeater_save">Pou\u017e\u00edt</string>
+
+    <string name="right_alt_as_iso_l3_shift">Prav\u00fd Alt jako ISO L3 Shift (pouze VNC)</string>
+
+    <string name="rotate_dpad">Ot\u00e1\u010den\u00ed Bluetooth nebo softwarov\u00e9ho D-Pad</string>
+
+    <string name="save_as_copy">Ulo\u017eit jako kopii</string>
+
+    <string name="scaling">M\u011b\u0159\u00edtko</string>
+    <string name="scaling_zoomable">Zoomovateln\u00e9</string>
+
+    <string name="send_button">Odeslat</string>
+    <string name="send_key_again">Odeslat kl\u00e1vesu znovu</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC p\u0159ipojen\u00ed</string>
+    <string name="shortcut_label_rdp">RDP p\u0159ipojen\u00ed</string>
+    <string name="shortcut_label_spice">SPICE p\u0159ipojen\u00ed</string>
+
+    <string name="showkbd_label">Kl\u00e1vesnice</string>
+
+    <string name="single_cancel">Re\u017eim jednou rukou zru\u0161en</string>
+    <string name="single_choose">Zvolte re\u017eim jednou rukou nebo zru\u0161te</string>
+    <string name="single_left">Re\u017eim ta\u017een\u00ed vlevo - p\u0159eje\u010fte pro ta\u017een\u00ed/v\u00fdb\u011br, zvednut\u00edm prstu zastavte</string>
+    <string name="single_middle">Re\u017eim ta\u017een\u00ed prost\u0159edn\u00edm - p\u0159eje\u010fte pro ta\u017een\u00ed/v\u00fdb\u011br, zvednut\u00edm prstu zastavte</string>
+    <string name="single_reposition">Ukazatel my\u0161i p\u0159em\u00edst\u011bn pro re\u017eim jednou rukou</string>
+    <string name="single_right">Re\u017eim ta\u017een\u00ed vpravo - p\u0159eje\u010fte pro ta\u017een\u00ed/v\u00fdb\u011br, zvednut\u00edm prstu zastavte</string>
+    <string name="single_scroll">Re\u017eim rolov\u00e1n\u00ed - p\u0159eje\u010fte nahoru/dol\u016f pro rolov\u00e1n\u00ed, zvednut\u00edm prstu zastavte</string>
+    <string name="single_zoom">Re\u017eim p\u0159ibl\u00ed\u017een\u00ed - p\u0159eje\u010fte nahoru/dol\u016f pro p\u0159ibl\u00ed\u017een\u00ed/odd\u00e1len\u00ed, zvednut\u00edm prstu zastavte</string>
+
+    <string name="snap_one_to_one">P\u0159ichyceno na p\u0159ibl\u00ed\u017een\u00ed 1:1</string>
+
+    <string name="special_keys">Odeslat kl\u00e1vesy</string>
+
+    <string name="spice_address_caption_hint">SPICE Server</string>
+    <string name="spice_button_import_ca">Importovat CA</string>
+    <string name="spice_ca_cert_path_hint">Cesta k souboru certifika\u010dn\u00ed autority</string>
+    <string name="spice_ca_file_error_reading">Chyba p\u0159i \u010dten\u00ed souboru CA. Ujist\u011bte se, \u017ee je \u010diteln\u00fd.</string>
+    <string name="spice_ca_file_not_found">Soubor nenalezen. Zadejte pros\u00edm platn\u00fd n\u00e1zev souboru do textov\u00e9ho pole (nap\u0159. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">P\u0159edm\u011bt certifik\u00e1tu</string>
+    <string name="spice_intro_text">
+D\u011bkujeme za podporu aSPICE a open-source softwaru obecn\u011b! Pro n\u00e1pov\u011bdu k pou\u017e\u00edv\u00e1n\u00ed aSPICE se pod\u00edvejte na polo\u017eky N\u00e1pov\u011bda v nab\u00eddce a na popis aplikace na trhu.
+&lt;br&gt;
+&lt;br&gt;
+Aktu\u00e1ln\u00ed seznam funkc\u00ed aSPICE zahrnuje:
+&lt;br&gt;
+- Prost\u00e9 SPICE, SPICE tunelovan\u00e9 p\u0159es SSH.
+&lt;br&gt;
+- Voln\u00e1 podpora ot\u00e1\u010den\u00ed. Pou\u017eijte opera\u010dn\u00ed syst\u00e9m k omezen\u00ed ot\u00e1\u010den\u00ed v p\u0159\u00edpad\u011b pot\u0159eby.
+&lt;br&gt;
+- Generov\u00e1n\u00ed a export SSH ve\u0159ejn\u00e9ho/soukrom\u00e9ho p\u00e1ru kl\u00ed\u010d\u016f.
+&lt;br&gt;
+- Automatick\u00e9 ukl\u00e1d\u00e1n\u00ed relac\u00ed.
+&lt;br&gt;
+- Re\u017eimy m\u011b\u0159\u00edtka: Zoomovateln\u00e9, P\u0159izp\u016fsobit obrazovce a Jedna ku jedn\u00e9.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i v re\u017eimech P\u0159\u00edm\u00fd a Simulovan\u00fd touchpad.
+&lt;br&gt;
+- Pln\u00e9 ovl\u00e1d\u00e1n\u00ed vzd\u00e1len\u00e9 my\u0161i jednou rukou v re\u017eimu Jedn\u00edm prstem.
+&lt;br&gt;
+- V\u00edcedotykov\u00e1 kliknut\u00ed my\u0161\u00ed: klepn\u011bte pro lev\u00e9 kliknut\u00ed, klepnut\u00ed dv\u011bma prsty pro prav\u00e9 kliknut\u00ed, klepnut\u00ed t\u0159emi prsty pro prost\u0159edn\u00ed kliknut\u00ed.
+&lt;br&gt;
+- V\u00edcedotykov\u00e9 rolov\u00e1n\u00ed: ta\u017een\u00ed dv\u011bma prsty nahoru/dol\u016f a vlevo/vpravo.
+&lt;br&gt;
+- Kl\u00e1vesy meta a \u0161ipky na obrazovce, kter\u00e9 lze zcela zak\u00e1zat z nab\u00eddky nebo skr\u00fdt tla\u010d\u00edtkem na obrazovce.
+&lt;br&gt;
+- Odes\u00edl\u00e1n\u00ed textu a libovoln\u00fdch kombinac\u00ed kl\u00e1ves p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda pro vytv\u00e1\u0159en\u00ed p\u0159ipojen\u00ed (\"Menu-&gt;N\u00e1pov\u011bda p\u0159ipojen\u00ed\") na obrazovce p\u0159ipojen\u00ed.
+&lt;br&gt;
+- N\u00e1pov\u011bda k re\u017eim\u016fm vstupu (\"Menu-&gt;V\u00edce-&gt;N\u00e1pov\u011bda re\u017eimu vstupu\") p\u0159i p\u0159ipojen\u00ed.
+&lt;br&gt;
+- Pou\u017eit\u00ed dostupn\u00e9ho touchpadu jako \u0161ipek nam\u00edsto pohybu my\u0161i a kliknut\u00ed touchpadu jako Ctrl, ot\u00e1\u010den\u00ed D-Pad/touchpadu pro BT kl\u00e1vesnice.
+&lt;br&gt;
+- V\u00edcejazykov\u00e1 podpora, pokud m\u00e1 SPICE server povoleno pot\u0159ebn\u00e9 jazykov\u00e9 rozlo\u017een\u00ed.
+&lt;br&gt;
+- Plynul\u00e9 zm\u011bny rozli\u0161en\u00ed vzd\u00e1len\u00e9ho po\u010d\u00edta\u010de
+&lt;br&gt;
+- Pln\u00e1 podpora my\u0161i na za\u0159\u00edzen\u00edch s Android 4.0+, v\u010detn\u011b prav\u00e9ho a prost\u0159edn\u00edho kliknut\u00ed a rolovac\u00edho kole\u010dka.
+&lt;br&gt;
+&lt;br&gt;
+Pl\u00e1novan\u00e9 funkce:
+&lt;br&gt;
+- Integrace kop\u00edrov\u00e1n\u00ed/vkl\u00e1d\u00e1n\u00ed
+&lt;br&gt;
+- Zvuk
+&lt;br&gt;
+- Vylep\u0161en\u00ed v\u00fdkonu
+&lt;br&gt;
+Zn\u00e1m\u00e9 probl\u00e9my:
+&lt;br&gt;
+- Odes\u00edl\u00e1n\u00ed textu neodeslu n\u011bkter\u00e9 symboly.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitivn\u00ed, bezpe\u010dn\u00fd SPICE klient</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kdy\u017e p\u0159id\u00e1te nebo uprav\u00edte p\u0159ipojen\u00ed, uvid\u00edte str\u00e1nku konfigurace p\u0159ipojen\u00ed. Zde m\u016f\u017eete nastavit nov\u00e9 SPICE p\u0159ipojen\u00ed nebo zvolit ji\u017e existuj\u00edc\u00ed. Naho\u0159e je tla\u010d\u00edtko pro ulo\u017een\u00ed p\u0159ipojen\u00ed. Pod n\u00edm je konfigurace va\u0161eho p\u0159ipojen\u00ed.
+
+ - Typ p\u0159ipojen\u00ed: Zde zvol\u00edte typ SPICE p\u0159ipojen\u00ed. Dostupn\u00e9 typy p\u0159ipojen\u00ed jsou:
+   (a) SPICE, kter\u00e9 se p\u0159ipojuje p\u0159\u00edmo k po\u010d\u00edta\u010di p\u0159es protokol SPICE.
+   (b) SPICE p\u0159es SSH, kter\u00e9 nejprve tuneluje va\u0161e p\u0159ipojen\u00ed p\u0159es po\u010d\u00edta\u010d s b\u011b\u017e\u00edc\u00edm SSH serverem.
+
+ - N\u00e1zev: Ka\u017ed\u00e9 p\u0159ipojen\u00ed m\u016f\u017ee m\u00edt p\u0159ezd\u00edvku pro snadn\u011bj\u0161\u00ed identifikaci v seznamu.
+
+ - Nastaven\u00ed SSH tunelu: Dostupn\u00e9 v re\u017eimu SPICE p\u0159es SSH.
+   (a) SSH Server/Port: Adresa a port SSH serveru, p\u0159es kter\u00fd bude p\u0159ipojen\u00ed tunelovan\u00e9. SSH standardn\u011b naslouch\u00e1 na portu 22.
+   (b) U\u017eivatelsk\u00e9 jm\u00e9no/Heslo: U\u017eivatelsk\u00e9 jm\u00e9no a heslo \u00fa\u010dtu na SSH serveru. Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+   (c) Spr\u00e1va kl\u00ed\u010de/Pou\u017e\u00edt kl\u00ed\u010d: Tla\u010d\u00edtko pro spr\u00e1vu ve\u0159ejn\u00fdch/soukrom\u00fdch kl\u00ed\u010d\u016f a za\u0161krt\u00e1vac\u00ed pol\u00ed\u010dko ur\u010duj\u00edc\u00ed, zda pou\u017e\u00edt kl\u00ed\u010d nam\u00edsto hesla pro ov\u011b\u0159en\u00ed. Pokud po vygenerov\u00e1n\u00ed p\u00e1ru kl\u00ed\u010d\u016f pou\u017eijete tla\u010d\u00edtko Kop\u00edrovat do schr\u00e1nky, m\u011bli byste b\u00fdt schopni vlo\u017eit ve\u0159ejn\u00fd kl\u00ed\u010d po p\u0159ipojen\u00ed k SPICE serveru (schr\u00e1nka je synchronizov\u00e1na se serverem).
+
+ - Nastaven\u00ed SPICE p\u0159ipojen\u00ed:
+   (a) SPICE Server/Port: Zde zad\u00e1te n\u00e1zev hostitele nebo IP adresu a port po\u010d\u00edta\u010de s SPICE serverem, ke kter\u00e9mu se chcete p\u0159ipojit. V re\u017eimu SPICE p\u0159es SSH je tato adresa vid\u011bna z SSH serveru. Pokud jsou SSH server a SPICE server na stejn\u00e9m po\u010d\u00edta\u010di, m\u016f\u017eete pou\u017e\u00edt localhost. SPICE servery obvykle naslouch\u00e1j\u00ed na portu 5900 a v\u00fd\u0161e.
+   (b) SPICE heslo: Zde zad\u00e1te heslo nastaven\u00e9 pro ochranu va\u0161\u00ed SPICE relace. Pro hesla se nepou\u017e\u00edv\u00e1 bezpe\u010dn\u00e9 \u00falo\u017ei\u0161t\u011b (jsou v datab\u00e1zi) a heslo bude ulo\u017eeno pouze pokud za\u0161krtnete pol\u00ed\u010dko \"Ponechat\". Heslo bude vyln\u011bno na t\u00e9to str\u00e1nce, pokud jste od posledn\u00edho zad\u00e1n\u00ed neukon\u010dili aplikaci.
+
+ - Pokro\u010dil\u00e1 nastaven\u00ed: V t\u00e9to sekci najdete nastaven\u00ed m\u00edstn\u00edho za\u0159\u00edzen\u00ed nebo v\u00fdkonnostn\u00ed \u00fapravy SPICE
+ - M\u00edstn\u00ed nastaven\u00ed za\u0159\u00edzen\u00ed: Tato nastaven\u00ed upravuj\u00ed chov\u00e1n\u00ed aplikace na va\u0161em za\u0159\u00edzen\u00ed.
+   (a) Pou\u017e\u00edt D-Pad pro \u0161ipky: Pokud d\u00e1v\u00e1te p\u0159ednost, m\u016f\u017eete pou\u017e\u00edt D-Pad va\u0161\u00ed Bluetooth kl\u00e1vesnice nebo \u0161ipky na kl\u00e1vesnici na obrazovce pro odes\u00edl\u00e1n\u00ed \u0161ipek na SPICE server.
+   (b) Ot\u00e1\u010den\u00ed D-Pad: Telefony sp\u00e1rovan\u00e9 s Bluetooth kl\u00e1vesnic\u00ed mohou pot\u0159ebovat oto\u010dit D-Pad kl\u00e1vesnice proti sm\u011bru hodinov\u00fdch ru\u010di\u010dek pro spr\u00e1vn\u00e9 sm\u011bry na serveru.
+   (c) M\u00edstn\u00ed ukazatel my\u0161i: Pokud je ukazatel neviditeln\u00fd, vyberte tuto volbu, aby ho aplikace vykreslovala."</string>
+    <string name="spice_password_hint">SPICE heslo</string>
+    <string name="spice_server_empty">SPICE server nebo port je pr\u00e1zdn\u00fd. Nelze se p\u0159ipojit!</string>
+    <string name="spice_tls_port_hint">TLS port</string>
+    <string name="spice_username_hint">SPICE u\u017eivatelsk\u00e9 jm\u00e9no</string>
+
+    <string name="ssh_passphrase_hint">SSH p\u0159\u00edstupov\u00e1 fr\u00e1ze</string>
+    <string name="ssh_pubkey_button">Spr\u00e1va kl\u00ed\u010de</string>
+    <string name="ssh_use_pubkey">Pou\u017e\u00edt kl\u00ed\u010d</string>
+    <string name="ssh_use_x11vnc">Automatick\u00e1 plocha</string>
+    <string name="ssh_x11vnc_customize">Konfigurovat AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Zak\u00e1zat</string>
+    <string name="tap_enable">Povolit</string>
+
+    <string name="username_caption">VNC u\u017eivatel</string>
+    <string name="username_hint">UltraVNC MS Logon u\u017eivatelsk\u00e9 jm\u00e9no</string>
+    <string name="username_hint_optional">VNC u\u017eivatelsk\u00e9 jm\u00e9no (voliteln\u00e9)</string>
+    <string name="username_hint_ssh">SSH u\u017eivatelsk\u00e9 jm\u00e9no</string>
+    <string name="username_hint_vencrypt">VNC u\u017eivatelsk\u00e9 jm\u00e9no</string>
+    <string name="verification_code">Ov\u011b\u0159ovac\u00ed k\u00f3d</string>
+    <string name="verification_code_message">Zadejte pros\u00edm ov\u011b\u0159ovac\u00ed k\u00f3d v\u00edcefaktorov\u00e9ho ov\u011b\u0159ov\u00e1n\u00ed</string>
+
+    <string name="view_only">Re\u017eim pouze pro \u010dten\u00ed</string>
+
+    <string name="vnc_server_empty">VNC server nebo port je pr\u00e1zdn\u00fd. Nelze se p\u0159ipojit!</string>
+    <string name="vnc_server_empty_no_save">VNC server nebo port je pr\u00e1zdn\u00fd. Nelze ulo\u017eit p\u0159ipojen\u00ed!</string>
+
+    <string name="warning_cert_does_not_match">VAROV\u00c1N\u00cd: Ulo\u017een\u00fd certifik\u00e1t x509 nebo p\u0159edan\u00fd podpis neodpov\u00edd\u00e1 aktu\u00e1ln\u00edmu certifik\u00e1tu serveru! To by mohl b\u00fdt \u00fatok man-in-the-middle. Pokud v\u00edte o zm\u011bn\u011b kl\u00ed\u010de, m\u016f\u017eete pokra\u010dovat. </string>
+    <string name="copy_logcat">\uD83D\uDCCB Kop\u00edrovat Logcat</string>
+    <string name="log_copied">Logcat zkop\u00edrov\u00e1n do schr\u00e1nky. Nyn\u00ed ho m\u016f\u017eete vlo\u017eit do e-mailu nebo na f\u00f3rum podpory. P\u0159ed zve\u0159ejn\u011bn\u00edm si pros\u00edm zkontrolujte p\u0159\u00edpadn\u00e9 osobn\u00ed \u00fadaje.</string>
+    <string name="info_set_touchpad_input_mode">Server hl\u00e1s\u00ed, \u017ee nepodporuje vstup my\u0161i v re\u017eimu klienta a aktu\u00e1ln\u00ed re\u017eim vstupu my\u0161i nebude spr\u00e1vn\u011b fungovat. Pokud probl\u00e9m p\u0159etrv\u00e1v\u00e1, ujist\u011bte se, \u017ee jsou ve virtu\u00e1ln\u00edm stroji nainstalov\u00e1ny n\u00e1stroje spice, nebo p\u0159epn\u011bte na re\u017eim Simulovan\u00fd touchpad z nab\u00eddky.</string>
+    <string name="ssh_tunnel_settings">Nastaven\u00ed SSH tunelu</string>
+    <string name="vnc_connection_settings">Nastaven\u00ed VNC p\u0159ipojen\u00ed</string>
+    <string name="show_advanced_settings">Zobrazit pokro\u010dil\u00e1 nastaven\u00ed</string>
+    <string name="use_no_compression_for_local_connections">\u017d\u00e1dn\u00e1 komprese (m\u00edstn\u00ed p\u0159ipojen\u00ed, Hextile k\u00f3dov\u00e1n\u00ed)</string>
+    <string name="rdp_connection_settings">Nastaven\u00ed RDP p\u0159ipojen\u00ed</string>
+    <string name="local_device_tweaks">M\u00edstn\u00ed nastaven\u00ed za\u0159\u00edzen\u00ed</string>
+    <string name="spice_connection_settings">Nastaven\u00ed SPICE p\u0159ipojen\u00ed</string>
+    <string name="ca_subject">Zadejte n\u00e1zev p\u0159edm\u011btu certifik\u00e1tu. Nemus\u00ed b\u00fdt pot\u0159eba, pokud b\u011b\u017en\u00fd n\u00e1zev certifik\u00e1tu (CN) odpov\u00edd\u00e1 n\u00e1zvu hostitele serveru.</string>
+    <string name="path_to_ca">Zadejte cestu k souboru (nap\u0159\u00edklad /sdcard/ca-cert.pem) a klepn\u011bte na Importovat pro na\u010dten\u00ed va\u0161\u00ed certifika\u010dn\u00ed autority.</string>
+    <string name="paste_ca">Zadejte certifika\u010dn\u00ed autoritu zde, pokud ji neimportujete jako soubor.</string>
+    <string name="cert_issuer">Vydavatel certifik\u00e1tu</string>
+    <string name="cert_fingerprint">Otisk certifik\u00e1tu</string>
+    <string name="error">Chyba</string>
+    <string name="panning">Posouvání obrazovky</string>
+    <string name="copy_of">Kopie</string>
+    <string name="ssh_key_generated">Nov\u00fd kl\u00ed\u010d byl \u00fasp\u011b\u0161n\u011b vygenerov\u00e1n nebo importov\u00e1n. Nyn\u00ed m\u016f\u017eete klepnout na tla\u010d\u00edtko \'Generovat/Exportovat kl\u00ed\u010d\' pro sd\u00edlen\u00ed, kop\u00edrov\u00e1n\u00ed do schr\u00e1nky nebo export ve\u0159ejn\u00e9ho kl\u00ed\u010de.</string>
+    <string name="cursor_force_local">"M\u00edstn\u00ed"</string>
+    <string name="cursor_force_disable">"Zak\u00e1zat"</string>
+    <string name="cursor_mode">"Re\u017eim kurzoru:"</string>
+    <string name="rendering_mode">"Re\u017eim vykreslov\u00e1n\u00ed:"</string>
+    <string name="color_24_bit">"24bitov\u00e9 barvy (24 bpp)"</string>
+    <string name="color_256">"256 barev (8 bpp)"</string>
+    <string name="color_64">"64 barev (4 bpp)"</string>
+    <string name="color_8">"8 barev (2 bpp)"</string>
+    <string name="color_greyscale">"Odst\u00edny \u0161ed\u00e9 (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Černo-bílá (1 bpp)"]]></string>
+    <string name="show">"Zobrazit"</string>
+    <string name="hide">"Skr\u00fdt"</string>
+    <string name="search_connections">Hledat p\u0159ipojen\u00ed</string>
+    <string name="user_not_specified">U\u017eivatel nen\u00ed ur\u010den</string>
+    <string name="enter_ssh_credentials">Zadejte pros\u00edm SSH p\u0159ihla\u0161ovac\u00ed \u00fadaje</string>
+    <string name="enter_vnc_credentials">Zadejte pros\u00edm VNC p\u0159ihla\u0161ovac\u00ed \u00fadaje</string>
+    <string name="enter_vnc_password">Zadejte pros\u00edm VNC heslo</string>
+    <string name="enter_rdp_credentials">Zadejte pros\u00edm RDP p\u0159ihla\u0161ovac\u00ed \u00fadaje</string>
+    <string name="enter_gateway_credentials">Zadejte pros\u00edm p\u0159ihla\u0161ovac\u00ed \u00fadaje br\u00e1ny</string>
+    <string name="enter_spice_password">Zadejte pros\u00edm SPICE heslo</string>
+    <string name="enter_passphrase_title">Zadejte p\u0159\u00edstupovou fr\u00e1zi kl\u00ed\u010de</string>
+    <string name="enter_passphrase">Zadejte pros\u00edm p\u0159\u00edstupovou fr\u00e1zi kl\u00ed\u010de</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">V\u00e1\u0161 server vy\u017eaduje ov\u011b\u0159en\u00ed heslem nav\u00edc k ov\u011b\u0159en\u00ed kl\u00ed\u010dem.</string>
+    <string name="main_screen_help_text">"
+Po spu\u0161t\u011bn\u00ed aplikace se zobraz\u00ed obrazovka s ulo\u017een\u00fdmi p\u0159ipojen\u00edmi.
+
+Pokud nejsou \u017e\u00e1dn\u00e1 ulo\u017een\u00e1 p\u0159ipojen\u00ed, spodn\u00ed \u010d\u00e1st obrazovky je pr\u00e1zdn\u00e1 a budete muset stisknout tla\u010d\u00edtko plus pro vytvo\u0159en\u00ed nov\u00e9ho.
+Z t\u00e9to obrazovky m\u016f\u017eete tak\u00e9 ovl\u00e1dat dal\u0161\u00ed aspekty konfigurace klepnut\u00edm na dal\u0161\u00ed tla\u010d\u00edtka na panelu n\u00e1stroj\u016f nebo polo\u017eky nab\u00eddky naho\u0159e,
+nap\u0159\u00edklad pro \u00fapravu v\u00fdchoz\u00edho nastaven\u00ed nebo import a export nastaven\u00ed.
+
+Jakmile m\u00e1te ulo\u017een\u00e9 p\u0159ipojen\u00ed, m\u016f\u017eete se p\u0159ipojit ke vzd\u00e1len\u00e9mu serveru jedn\u00edm klepnut\u00edm. Dlouh\u00fdm klepnut\u00edm m\u016f\u017eete tak\u00e9 p\u0159ipojen\u00ed smazat nebo upravit.
+
+Nakonec m\u016f\u017eete pou\u017e\u00edt pole Hledat p\u0159ipojen\u00ed pro rychl\u00e9 nalezen\u00ed p\u0159ipojen\u00ed filtrovan\u00fdm zobrazen\u00fdch p\u0159ipojen\u00ed."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kdy\u017e p\u0159id\u00e1te nebo uprav\u00edte p\u0159ipojen\u00ed, uvid\u00edte str\u00e1nku konfigurace p\u0159ipojen\u00ed.
+Zde m\u016f\u017eete nastavit nov\u00e9 Opaque p\u0159ipojen\u00ed nebo zvolit ji\u017e existuj\u00edc\u00ed.
+Naho\u0159e je tla\u010d\u00edtko pro ulo\u017een\u00ed p\u0159ipojen\u00ed.
+Pod n\u00edm je konfigurace va\u0161eho p\u0159ipojen\u00ed.
+
+ - Typ p\u0159ipojen\u00ed: Zde zvol\u00edte, k jak\u00e9mu virtualiza\u010dn\u00edmu prost\u0159ed\u00ed se p\u0159ipojujete.
+
+ - Adresa serveru: N\u00e1zev hostitele nebo IP serveru. Pokud naslouch\u00e1 na nestandardn\u00edm portu, m\u016f\u017eete p\u0159idat port odd\u011blen\u00fd dvojte\u010dkou.
+
+ - N\u00e1zev virtu\u00e1ln\u00edho stroje: M\u016f\u017eete zadat n\u00e1zev VM, jak se zobrazuje na va\u0161\u00ed virtualiza\u010dn\u00ed platform\u011b, nebo nechte toto pole pr\u00e1zdn\u00e9 pro zobrazen\u00ed seznamu VM nebo kontejner\u016f k v\u00fdb\u011bru.
+
+ - U\u017eivatel: Zadejte u\u017eivatelsk\u00e9 jm\u00e9no pro ov\u011b\u0159en\u00ed k va\u0161emu virtualiza\u010dn\u00edmu frameworku.
+
+ - Heslo: Pokud chcete heslo ulo\u017eit, zadejte ho zde, nebo nechte pole pr\u00e1zdn\u00e9 a budete dotazov\u00e1ni p\u0159i ka\u017ed\u00e9m p\u0159ipojen\u00ed.
+
+ - Pokro\u010dil\u00e1 nastaven\u00ed: V t\u00e9to sekci najdete nastaven\u00ed m\u00edstn\u00edho za\u0159\u00edzen\u00ed, protokolu a v\u00fdkonnostn\u00ed \u00fapravy."
+    </string>
+    <string name="help">N\u00e1pov\u011bda \u24d8</string>
+    <string name="need_help">Pot\u0159ebujete pomoc?</string>
+    <string name="support_forum">F\u00f3rum podpory \u2753</string>
+    <string name="email_us">Napi\u0161te n\u00e1m \uD83D\uDCE7</string>
+    <string name="report_bug">Nahl\u00e1sit chybu \uD83D\uDC1B</string>
+    <string name="download_from_server">St\u00e1hnout ze serveru</string>
+    <string name="import_from_file">Importovat ze souboru</string>
+    <string name="please_grant_permission_from_prefs">Mo\u017en\u00e1 budete muset ud\u011blit opr\u00e1vn\u011bn\u00ed aplikaci prost\u0159ednictv\u00edm Nastaven\u00ed.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">V\u00edce ladic\u00edho protokolov\u00e1n\u00ed</string>
+    <string name="prefer_sending_unicode">Unicode vstup (pouze Windows)</string>
+    <string name="hide_connection_thumbnails">Skr\u00fdt n\u00e1hledy p\u0159ipojen\u00ed</string>
+    <string name="show_only_connection_nicknames">Zobrazit pouze p\u0159ezd\u00edvky p\u0159ipojen\u00ed</string>
+    <string name="love_our_work">L\u00edb\u00ed se v\u00e1m na\u0161e pr\u00e1ce?</string>
+    <string name="rate_app">Ohodnotit \u2b50\u2b50\u2b50\u2b50\u2b50</string>
+    <string name="share_app">Sd\u00edlet \uD83D\uDD17</string>
+    <string name="share_app_toast">Sd\u00edlejte odkaz na aplikaci se v\u0161emi sv\u00fdmi p\u0159\u00e1teli na soci\u00e1ln\u00edch s\u00edt\u00edch!</string>
+    <string name="donate_app">P\u0159isp\u011bt \u2764</string>
+    <string name="more_apps">Dal\u0161\u00ed aplikace \uD83D\uDCF1</string>
+    <string name="previous_versions">P\u0159edchoz\u00ed verze \u237c</string>
+    <string name="keyboard_type">Typ softwarov\u00e9 kl\u00e1vesnice</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">V\u00fdchoz\u00ed (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/\u010d\u00edsla bez n\u00e1vrh\u016f (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text s n\u00e1vrhy (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Toto p\u0159ipojen\u00ed je nastaveno ke spu\u0161t\u011bn\u00ed VPN p\u0159es extern\u00ed aplikaci. Pot\u0159ebujete nainstalovat aplikaci jako Morpheusly pro jej\u00ed spu\u0161t\u011bn\u00ed.</string>
+    <string name="vnc_viewer_started">VNC prohl\u00ed\u017ee\u010d spu\u0161t\u011bn</string>
+    <string name="enable_gateway">Povolit RDP Gateway</string>
+    <string name="scroll_speed">Rychlost dotykov\u00e9ho rolov\u00e1n\u00ed</string>
+    <string name="desktop_scale_percentage">Vlastn\u00ed procento m\u011b\u0159\u00edtka</string>
+    <string name="show_menu">Zobrazit nab\u00eddku</string>
+    <string name="move_toolbar">P\u0159esunout panel n\u00e1stroj\u016f</string>
+    <string name="rdp_adv_glyph_cache">Povolit mezipaměť glyfů</string>
+
+    <string name="disable_battery_optimizations_failed">
+Nastavení optimalizace baterie nelze otevřít. Zakázat optimalizaci baterie ručně v nastavení systému.</string>
+    <string name="disable_battery_optimizations">
+🔋Zakažte optimalizace baterie</string>
+    <string name="disable_battery_optimizations_already_done">
+Aplikace je již osvobozena od optimalizace baterie.</string>
+    <string name="no_connections_title">Zatím žádná připojení</string>
+    <string name="no_connections_hint">Klepnutím na tlačítko + přidáte první vzdálené připojení</string>
+    <string name="no_connections_hint_tv">Stisknutím tlačítka + nahoře přidáte první vzdálené připojení</string>
+    <string name="keyboard_layout_map">Rozložení klávesnice</string>
+</resources>

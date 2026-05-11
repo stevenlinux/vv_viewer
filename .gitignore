@@ -1,0 +1,27 @@
+# Flutter
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Android
+android/app/build/
+android/bVNC/build/
+android/common/build/
+android/remoteClientLib/build/
+android/pubkeyGenerator/build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+*.swp
+
+# Misc
+*.hprof
+*.log

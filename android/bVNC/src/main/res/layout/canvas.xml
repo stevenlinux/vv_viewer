@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/canvasLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    >
+
+    <com.iiordanov.bVNC.RemoteCanvas
+        android:id="@+id/canvas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom|center"
+        android:background="@android:color/background_dark">
+    </com.iiordanov.bVNC.RemoteCanvas>
+
+    <com.undatech.opaque.util.RemoteToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="?attr/colorPrimary">
+    </com.undatech.opaque.util.RemoteToolbar>
+
+    <ImageButton
+        android:id="@+id/keyboardIconForAndroidTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:visibility="gone"
+        android:background="@drawable/ic_keyboard"
+        android:contentDescription="@string/show_keyboard" />
+
+    <RelativeLayout
+        android:id="@+id/singleHandOpts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="0dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:orientation="horizontal"
+                android:paddingBottom="10sp">
+
+                <ImageButton
+                    android:id="@+id/singleDrag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_left" />
+
+                <ImageButton
+                    android:id="@+id/singleMiddle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_middle" />
+
+                <ImageButton
+                    android:id="@+id/singleRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal"
+                android:padding="0dip">
+
+                <ImageButton
+                    android:id="@+id/singleScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_scroll" />
+
+                <ImageButton
+                    android:id="@+id/singleZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_zoom" />
+
+                <ImageButton
+                    android:id="@+id/singleCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/single_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/extraKeysToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_keys_height"
+        android:layout_gravity="bottom|center"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/extraKeysPageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/extra_keys_indicator_margin_bottom"
+        android:orientation="horizontal"
+        android:background="#55000000"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/dotPage0"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp" />
+
+        <View
+            android:id="@+id/dotPage1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp" />
+
+        <View
+            android:id="@+id/dotPage2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

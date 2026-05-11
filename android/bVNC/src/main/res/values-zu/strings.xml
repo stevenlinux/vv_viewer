@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Umsindo uzaqaliswa emizuzwini engu-15, sicela umise noma yikuphi ukudlalwa kwevidiyo noma umsindo ngaphambi kwaleso sikhathi</string>
+    <string name="audio_initialized">Umsindo uqaliswe</string>
+    <string name="action_import_settings">Ngenisa Izilungiselelo</string>
+    <string name="action_new_connection">✚ Uxhumano Olusha</string>
+    <string name="action_edit_default_settings">⚙ Hlela Izilungiselelo Ezivamile</string>
+    <string name="action_export_settings">Thumela Izilungiselelo</string>
+    <string name="action_delete_connection">Susa Uxhumano</string>
+    <string name="action_rate_or_share_app">⭐ Thola Usizo, Etha Izikhombiso, Yabelana</string>
+    <string name="get_help">Thola Usizo</string>
+    <string name="advanced_settings">Izilungiselelo Ezithuthukile</string>
+    <string name="audio">Umsindo</string>
+    <string name="auto_rotation">Ukuphenduka kwesikrini ngesikhathi sexhumano</string>
+    <string name="auto_request_new_res">Vumisa okukude nosandiso lwesikrini</string>
+    <string name="custom_ca_subject">Isihloko se-Cert Esingenamandla. Asidingeki uma i-CN ye-cert ihambisana negama lomsingathi</string>
+    <string name="custom_ca_import">Ngenisa indlela ephelele kuya ku-CA yakho bese uchofoza Ngenisa</string>
+    <string name="custom_ca_paste">Namathisela (uma ungayingenisi) i-CA lapha</string>
+    <string name="ca_ovirt_use_custom">I-CA Ezikhethekile ye-RHEV/oVirt</string>
+    <string name="ca_spice_use_ovirt">Sebenzisa i-CA ye-RHEV/oVirt ye-SPICE</string>
+    <string name="ca_ovirt_manage">Phatha i-CA ye-RHEV/oVirt</string>
+    <string name="ca_spice_manage">Phatha i-CA ye-SPICE</string>
+    <string name="ca_file_not_found">Ifayela alitholakalanga. Sicela ufake igama lefayela elivumelekile enkundleni yombhalo (isib. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Iphutha lokufunda ifayela le-CA. Sicela uqiniseke ukuthi liyafundeka.</string>
+    <string name="ca_new_or_changed">Isitifiketi seseva esisha noma esishintshiwe</string>
+    <string name="connection_type_text">Imvelo Yokuzenzela (RHEV/oVirt noma Proxmox)</string>
+    <string name="connection_setup_vm_name">Igama lomshini obonakalayo (okukhethayo)</string>
+    <string name="connection_setup_host_name">Ikheli Leseva</string>
+    <string name="connection_setup_user">Umsebenzisi@Isizinda</string>
+    <string name="connection_setup_password">Iphasiwedi</string>
+    <string name="enter_password">Sicela ufake iphasiwedi</string>
+    <string name="enter_password_auth_failed">Ukuqinisekisa kuhlulekile. Sicela ufake kabusha iziqinisekiso zakho.</string>
+    <string name="enter_otp_code">Sicela ufake ikhodi ye-OTP</string>
+    <string name="hide_toolbar">Fihla ibha yamathuluzi</string>
+    <string name="manage_custom_ca_title">Phatha i-CA ekhethekile</string>
+    <string name="save_button">Londoloza</string>
+    <string name="select_vm_title">Khetha Umshini Obonakalayo</string>
+    <string name="vv_file_not_found">Ifayela le-.vv alitholakalanga!</string>
+    <string name="vv_file_error">Ifayela le-.vv alikhona noma lonakele!</string>
+    <string name="info_cert">Ingabe uyasamukela lesi sitifiketi somsingathi esisha noma esishintshiwe?\n\nIzigxivizo Zeminwe:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nIkhishwe kuya ku: %4$s\nIkhishwe ngu: %5$s\n\nKusukela ku: %6$s\nKuya ku: %7$s\n</string>
+
+    <string name="toggle_keyboard">Guqula Ikhibhodi</string>
+    <string name="show_keyboard">Bonisa Ikhibhodi</string>
+    <string name="scroll_wheel">Isondo Lokuskrola</string>
+
+    <string name="input_method_help">Usizo Lwendlela Yokufaka</string>
+
+    <string name="ok">Kulungile</string>
+
+    <string name="input_methods">Indlela Yokufaka</string>
+
+    <string name="error_failed_to_download_http">Kuhlulekile ukulanda ifayela nge-HTTP. Mhlawumbe iseva yakho ayifinyeleleki.</string>
+    <string name="error_failed_to_download_https">Kuhlulekile ukulanda ifayela nge-HTTPS. Mhlawumbe isitifiketi seseva yakho asithembekile (siphelelwe yisikhathi noma siziqinisekisile) noma iseva yakho ayifinyeleleki.</string>
+    <string name="error_failed_to_obtain_content">Kuhlulekile ukuthola ifayela. Sicela ulilande futhi kodwa kulokhu, ulivule ngokushesha ukusuka kufolda Yokulanda ku-File Manager.</string>
+    <string name="error_failed_to_obtain_file">Kuhlulekile ukuthola ifayela. Sicela ulilande futhi, kodwa kulokhu, uzame ukulivula ukusuka endaweni Yezaziso noma ngqo kusuka ku-Browser uma kungenzeka.</string>
+
+    <string name="error_dialog_title">Iphutha</string>
+    <string name="info_dialog_title">Ulwazi</string>
+    <string name="info_vm_launched_on_stand_by">I-VM yakho itholakale icishiwe futhi iqalisiwe. Sicela uzame futhi emizuzwini embalwa. Uma uzama masinyane futhi uthola ukuhluleka koxhumano, zama futhi kamuva.</string>
+    <string name="error_no_vm_found_for_user">Azikho Imishini Ebonakalayo etholakalayo yomsebenzisi onikeziwe.</string>
+    <string name="error_no_such_vm_found_for_user">Akukho Mishini Ebonakalayo ene-ID enikeziwe etholakele yomsebenzisi onikeziwe. Sula i-ID ukuthola uhlu lwe-VM.</string>
+    <string name="error_no_vnc_support_yet">Uhlobo lokubonisa lwe-VNC alusekelwa okwamanje, kodwa lusizinda oluzayo. Siyabonga ngokuqonda kwakho!</string>
+    <string name="error_not_connected_to_network">Kubonakala sengathi awuxhunyiwe ku-Inthanethi. Awukwazi ukuqhubeka ngaphandle kokuxhumeka!</string>
+    <string name="error_ovirt_timeout">Uxhumano ku-VM yakho luphelelwe yisikhathi. Sicela uhlole ukuthi ikheli lenodi esebenzisa i-VM yakho ilungile, ukuthi iyafinyeleleka kunethiwekhi yakho yamanje, nokuthi akukho firewall evimba uxhumano.</string>
+    <string name="error_ovirt_auth_failure">Ukuqinisekisa kuhlulekile. Sicela uhlole umsebenzisi nephasiwedi enikeziwe.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Ukuxhawulana kwe-SSL kuhlulekile. Kunenkinga ngesitifiketi se-SSL seseva. Uma usebenzisa isitifiketi esiziqinisekisile, udinga ukuthi u(phinde u)ngenise isikhulu sesitifiketi sakho.</string>
+    <string name="error_pve_failed_to_authenticate">Kuhlulekile ukuqinisekisa ku-Proxmox Virtual Environment. Sicela uqiniseke ukuthi ufaka igama lakho lomsebenzisi ngefomethi ye-user@realm nokuthi iphasiwedi yakho ilungile.</string>
+    <string name="error_pve_failed_to_parse_json">Kuhlulekile ukuhlaziya impendulo evela ku-Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">I-VM ID akuyona inombolo. Sicela ufake i-VM ID enezinombolo noma uyishiye ingenalutho ukukhetha i-VM ohlwini.</string>
+    <string name="error_pve_api_unexpected_code">Impendulo engalindelekile evela ku-Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Uxhumano ku-Proxmox Virtual Environment luhlulekile: </string>
+    <string name="error_pve_null_data">I-Proxmox Virtual Environment ibuyise idatha engenalutho.</string>
+    <string name="error_pve_timeout_communicating">Isikhathi sokuqeda sokuxhumana ne-Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Ayikwazanga ukuthola umshini obonakalayo onegama elibekiwe olunikezwe umsebenzisi wakho. Sicela usule igama le-VM elibekiwe ukuze ubone uhlu lwe-VM ezabelwe umsebenzisi.</string>
+    <string name="error_vv_download_timeout">Isikhathi sokuqeda sokulanda ifayela le-vv.</string>
+    <string name="message_please_wait">Sicela ulinde</string>
+    <string name="message_please_install_bvnc">Sicela ufake &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> evela ku-Google Play ukuze uxhume ku-VNC console yalokhu ku-VM.</string>
+    <string name="ssl_strict">Dinga igama elifanayo ukuze lifane nesitifiketi (kuphakanyiswa)</string>
+    <string name="usb">USB (faka intambo ye-OTG kuqala)</string>
+
+    <string name="ad_donate_text0">Inguqulo ye-Pro futhi inesekelo lokuqinisekisa kwe-SSH okuningi. Ngaphezu kwalokho, isekela isici se-Master Password esiceliwe kakhulu esivimba ukusebenza okungagunyaziwe futhi ibethela zonke izilungiselelo zoxhumano kufaka phakathi amaphasiwedi nezikhiye ze-SSH ukuvikela ekubiwen. Yivule ku-Menu eyinhloko.</string>
+    <string name="ad_donate_spice_text1a">Chofoza lapha ukuthenga Opaque futhi ulondoloze uxhumano oluqondile ku-Proxmox ne-oVirt. Futhi isekela amafayela e-.vv.</string>
+    <string name="ad_donate_spice_text1b">Chofoza lapha ukuthenga inguqulo ye-Pro futhi uvule amafayela e-.vv kuphela.</string>
+    <string name="ad_donate_text1">Chofoza lapha ukusekela iphrojekthi ngomnikelo omncane ngokuthenga inguqulo ye-Pro.</string>
+    <string name="ad_donate_text2">Inguqulo ye-Pro ikuvumela ukuthi ukhubaze le ngxoxo futhi ikunikeze ukufinyelela ezicini ezengeziwe.</string>
+    <string name="ad_donate_text3">Uma ungathanda ukusekela iphrojekthi ngokuningi, landela izixhumanisi ezilandelayo zamaxhumaniso ezihlelo zokusebenza zamakhasimende zika-: </string>
+    <string name="ad_donate_text_vnc">Iphrojekthi ye-Open Source idinga ukusekelwa kwakho! Nikela kithi ngokuthenga bVNC Pro. Bona ngezansi amaxhumaniso aya ku-bVNC Pro nezinye izinhlelo zokusebenza zethu.</string>
+    <string name="ad_donate_text_rdp">Iphrojekthi ye-Open Source idinga ukusekelwa kwakho! Nikela kithi ngokuthenga aRDP Pro, esekela ukuqondisa kabusha komsindo. Bona ngezansi amaxhumaniso aya ku-aRDP Pro nezinye izinhlelo zokusebenza zethu.</string>
+    <string name="ad_donate_text_spice">Ngoxhumano lwe-Proxmox ne-oVirt, sicela unikele kuphrojekthi ngokuthenga Opaque noma aSPICE Pro. Inguqulo yamahhala ye-aSPICE isekela kuphela uxhumano oluqondile kumaShini Ebonakalayo e-KVM. Bona ngezansi amaxhumaniso aya ku-Opaque ne-aSPICE Pro, kanye nezinye izinhlelo zokusebenza zethu.</string>
+
+    <string name="address_caption">Iseva ye-VNC</string>
+    <string name="address_caption_hint">Iseva ye-VNC</string>
+    <string name="address_caption_hint_tunneled">Iseva ye-VNC</string>
+    <string name="address_caption_ssh">Iseva ye-SSH</string>
+    <string name="address_caption_ssh_hint">Iseva ye-SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Umcibisholo Ophansi</string>
+    <string name="arrow_left">Umcibisholo Okwesokunxele</string>
+    <string name="arrow_right">Umcibisholo Okwesokudla</string>
+    <string name="arrow_up">Umcibisholo Ophezulu</string>
+
+    <string name="auto">Okuzenzakalelayo</string>
+    <string name="auto_x_cancel">Khansela</string>
+    <string name="auto_x_caption">Uhlelo zokusebenza lungathola ngokuzenzakalelayo ama-session e-X akhona futhi lwakhe amasha kumasistemu e-Linux/UNIX (efana ne-NX). Udinga i-x11vnc ukuthola, ne-Xvfb, i-Xvnc, noma i-Xdummy ukwakha ama-session. Uma unenkinga yokuxhuma, zama ukukhetha Uhlobo Oluthize Lwe-Session Ekude Ezilungiselelweni Ezithuthukile ze-AutoX.</string>
+    <string name="auto_x_confirm">Qinisekisa</string>
+    <string name="auto_x_descript_geom">Usayizi Wedeskithophu Ekude (WxH)</string>
+    <string name="auto_x_descript_session">Uhlobo Lwe-Session Ekude</string>
+    <string name="auto_x_disabled">Kukhutshaziwe</string>
+    <string name="auto_x_disabled_selection">AutoX Kukhutshaziwe</string>
+    <string name="auto_x_enabled">Kuvuliwe</string>
+    <string name="auto_x_find">Thola Kuphela, Ungakhi</string>
+    <string name="auto_x_find_login">Thola Ukungena kwe-X (kudinga sudo)</string>
+    <string name="auto_x_geom_custom">Ngokwezifiso</string>
+    <string name="auto_x_geom_native">Yomdabu</string>
+    <string name="auto_x_session_auto">Okuzenzakalelayo</string>
+    <string name="auto_x_session_custom">Ngokwezifiso</string>
+    <string name="auto_x_title">Lungiselela i-AutoX</string>
+    <string name="auto_x_unix_auth">Qinisekisa usebenzisa Igama Lomsebenzisi/Iphasiwedi ye-SSH enikeziwe ngokuzenzakalelayo (esikrinini esimnyama sokungena).</string>
+    <string name="auto_x_unixpw">Sebenzisa iziqinisekiso ze-UNIX esikhundleni sendlela yezokuphepha yangaphakathi. Umsebenzisi kumele akwazi ukusebenzisa /bin/su.</string>
+    <string name="auto_x_xdummy">Thola noma Yakha nge-Xdummy</string>
+    <string name="auto_x_xvfb">Thola noma Yakha nge-Xvfb</string>
+    <string name="auto_x_xvnc">Thola noma Yakha nge-Xvnc</string>
+
+    <string name="button_send_text">Thumela Umbhalo</string>
+    <string name="button_send_without_saving">Thumela Umbhalo/Ungawulondolozi</string>
+
+    <string name="center_mouse">Igundane @</string>
+
+    <string name="close">Vala</string>
+
+    <string name="color_format_caption">Imodi Yombala</string>
+    <string name="color_mode">Imodi Yombala</string>
+
+    <string name="connect_button">Xhuma</string>
+    <string name="back_button">Buyela Emuva</string>
+    <string name="update_button">Buyekeza</string>
+
+    <string name="connection_caption">Uxhumano</string>
+    <string name="connection_type_caption">Uhlobo Loxhumano</string>
+    <string name="connection_type_rdp_over_ssh">RDP nge-SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE nge-SSH</string>
+    <string name="connection_type_vnc">VNC Eyisisekelo</string>
+    <string name="connection_type_vnc_over_ssh">VNC Ephephile nge-SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC Ephephile nge-AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC Ephephile nge-SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC Ephephile nge-VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Ingabe ufuna ukuhlela noma ukususa uxhumano</string>
+    <string name="connection_edit">Hlela</string>
+    <string name="connection_delete">Susa</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopisha Uhlu</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Imodi Yokufaka Eyivamile</string>
+    <string name="delete_connection">Susa Uxhumano</string>
+    <string name="delete_key">Susa Ukhiye Okhethiwe</string>
+    <string name="delete_key_list">Susa Uhlu Lokhiye</string>
+
+    <string name="disconnect">Nqamula</string>
+
+    <string name="dpad_as_arrows">Sebenzisa D-Pad yemicibisholo ne-D-Pad click ye-Ctrl.</string>
+
+    <string name="enable_recording">Vumela Ukurekhoda</string>
+    <string name="enable_sound">Vumela Umsindo</string>
+
+    <string name="enter_text">Thumela Umbhalo</string>
+    <string name="enter_text_title">Faka Umbhalo Ozothunywa</string>
+
+    <string name="error_anon_dh_unsupported">Iseva ye-VNC izama ukusebenzisa ama-cipher e-Anonymous Diffie Hellman angasekelwa kudivayisi yakho ye-Android. Uma usebenzisa iseva ye-VNC ye-Vino ye-GNOME, ungakhubaza i-AnonTLS ngokusebenzisa lo myalo kutheminali bese uqala kabusha: \"gsettings set org.gnome.Vino require-encryption false\". Uma usebenzisa i-x11vnc, ungangeza lezi zinketho: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Uxhumano luhlulekile.</string>
+    <string name="error_connection_interrupted">Uxhumano luphazamisekile.</string>
+    <string name="error_no_user_hostname">Sicela ufake okungenani umsebenzisi negama lomsingathi noma ikheli le-IP.</string>
+    <string name="error_out_of_memory">Ayikwazi ukwaba inkumbulo eyanele yokudweba isikrini sakude. Zama ukuqala kabusha uhlelo zokusebenza, bese uqala kabusha idivayisi yakho. Ungaphinda uzame ukunciphisa usayizi wedeskithophu ekude ngezilungiselelo zohlelo zokusebenza.</string>
+    <string name="error_ovirt_unable_to_connect">Ayikwazi ukuxhuma noma ukuqinisekisa, sicela uhlole ikheli leseva, umsebenzisi, iphasiwedi, nesitifiketi sesikhulu kanye nesihloko.</string>
+    <string name="error_pick_correct_item">Sicela uqiniseke ukuthi ukhethe into efanele ku-Uhlobo Loxhumano.</string>
+    <string name="error_rdp_authentication_failed">Ukuqinisekisa kwe-RDP kuhlulekile! Sicela uhlole igama lomsebenzisi le-RDP nephasiwedi bese uzama futhi.</string>
+    <string name="error_rdp_connection_failed">Uxhumano lwe-RDP luhlulekile! Ukuxhumeka kwenethiwekhi kuphazamisekile, iseva ye-RDP icishiwe noma ikhutshaziwe, noma i-session yakho ithathwe.</string>
+    <string name="error_rdp_unable_to_connect">Ayikwazanga ukuxhuma kuziseva ze-RDP! Sicela uqiniseke ukuthi isilungiselelo se-RDP Server silungile, iseva ivuliwe, i-RDP ivuliwe, nokuthi iseva ikuyo nethiwekhi efanayo naleli divayisi.</string>
+    <string name="error_security_type">Iseva ayihlinzekanga uhlobo lwezokuphepha olusekelwayo.</string>
+    <string name="error_spice_unable_to_connect">Ayikwazi ukuxhuma noma ukuqinisekisa, sicela uhlole ikheli leseva nembobo.</string>
+    <string name="error_ssh_could_not_exec_command">Ayikwazanga ukwenza umyalo okude.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Ayikwazanga ukuthumela iphasiwedi ye-sudo.</string>
+    <string name="error_ssh_hostkey_changed">IPHUTHA! Ukhiye womsingathi weseva ushintshile. Uma lokhu kuneqolo, ungaqhubeka. Ngaphandle kwalokho, lokhu kungaba ukuhlasela kwe-man in the middle.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Iseva ye-SSH ayisekeli izindlela zokuqinisekisa ze-\"password\" noma ze-\"keyboard-interactive\" noma idinga indlela ye-\"publickey\" kuqala. Sicela uyilungise ukuthi ivumele okungenani enye yezindlela ezimbili, noma ulungise kabusha uhlelo zokusebenza. Izindlela zokuqinisekisa ezitholakalayo: </string>
+    <string name="error_ssh_key_auth_fail">Kuhlulekile ukuqinisekisa kuseva ye-SSH ngepheya lokhiye. Sicela uhlole igama lakho lomsebenzisi le-SSH, futhi uqiniseke ukuthi ukhiye wakho womphakathi usefayeleni le-authorized_keys ohlangothini olukude.</string>
+    <string name="error_ssh_keypair_decryption_failure">Kuhlulekile ukuvula ipheya lokhiye. Sicela uqiniseke ukuthi ufake ibinzana lakho lephasiwedi ngendlela efanele enkundleni ye-\'SSH Passphrase\' esikrinini esiyinhloko.</string>
+    <string name="error_ssh_keypair_missing">Ipheya lokhiye le-SSH alikakhiqizwa okwamanje! Sicela ulikhiqize futhi ulibeke (ingxenye yomphakathi) ku-authorized_keys kuseva ye-SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Ibinzana lephasiwedi linikeziwe kodwa ipheya lokhiye alibekhelwe. Sicela ususe ibinzana lephasiwedi.</string>
+    <string name="error_ssh_port_forwarding_failure">Ayikwazanga ukulungiselela ukudluliswa kwembobo yokudonsa ithrafikhi ye-VNC nge-SSH. Sicela uqiniseke ukuthi iseva yakho ye-SSH ilungiselelwe ukuthi ivumele ukudluliswa kwembobo bese uzama futhi.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Iseva ye-SSH ayisekeli indlela yokuqinisekisa ye-\"publickey\", futhi sizama ukusebenzisa ipheya lokhiye ukuqinisekisa. Sicela uyilungise ukuthi ivumele ukuqinisekisa kokhiye womphakathi bese uzama futhi. Izindlela zokuqinisekisa ezitholakalayo: </string>
+    <string name="error_ssh_pwd_auth_fail">Kuhlulekile ukuqinisekisa kuseva ye-SSH ngephasiwedi. Sicela uhlole igama lakho lomsebenzisi le-SSH, nephasiwedi ye-SSH.</string>
+    <string name="error_ssh_unable_to_connect">Kuhlulekile ukuxhuma kuziseva ze-SSH. Sicela uhlole ukuxhumeka kwenethiwekhi, nekheli le-Seva ye-SSH nembobo.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Ayikwazanga ukuthola imbobo ye-VNC ekude esuka ku-x11vnc. Sicela uqiniseke ukuthi i-x11vnc ifakiwe. Ukuqiniseka, zama ukusebenzisa i-x11vnc ngesandla emgqeni womyalo.</string>
+    <string name="error_uri_noinfo_nosave">Ulwazi olunganele olubekiwe lokuxhuma.</string>
+    <string name="error_uri_parse_error">Ayikwazi ukuhlaziya i-Intent URI. Sicela uhlole ifomethi ye-URI. Ungaphinda ubone i-logcat yedivayisi ukuthola imininingwane engeziwe.</string>
+    <string name="error_vnc_authentication">Ukuqinisekisa kwe-VNC kuhlulekile! Hlola iphasiwedi ye-VNC (nomsebenzisi uma kufanele).</string>
+    <string name="error_vnc_unable_to_connect">"Uxhumano luseva ye-VNC luhlulekile ngesizathu: "</string>
+    <string name="error_x509_could_not_generate_encoding">Ukubethela kwesitifiketi akukwazanga ukukhiqizwa.</string>
+    <string name="error_x509_could_not_generate_signature">Akukwazanga ukukhiqizwa isiginesha ye-SHA1 noma ye-MD5 yesitifiketi. Ayikho i-algorithm ye-SHA1/MD5 etholiwe.</string>
+
+    <string name="export_settings">Thumela</string>
+
+
+    <string name="extra_keys_disable">Khubaza Okhiye Abangaphandle</string>
+    <string name="extra_keys_enable">Vumela Okhiye Abangaphandle</string>
+
+    <string name="fit_to_screen">Lingana Nesikrini</string>
+
+    <string name="force">I-Bitmap Yesikrini Esigcwele</string>
+
+    <string name="immersive_mode_disable">Khubaza Imodi Yokucwila</string>
+
+    <string name="import_export_settings">📦 Ngenisa/Thumela Izilungiselelo</string>
+    <string name="import_settings">Ngenisa</string>
+
+
+    <string name="info">Ulwazi</string>
+    <string name="info_cert_signatures">"Ulwazi lwesitifiketi yilolu: "</string>
+    <string name="info_cert_signatures_identical">\n\nUngaqiniseka ukuthi ulwazi lufana nesitifiketi seseva ukuvikela ukuhlasela kwe-man-in-the-middle.</string>
+    <string name="info_cert_tunnel">Ingabe ufuna ukuxhuma kumsingathi ohlonzwa yilesi sitifiketi esilandelayo?\n\nIsigxivizo Seminwe: %1$s\n\nIkhishwe kuya ku:\n%2$s\n\nIkhishwe ngu:\n%3$s\n\nKusukela ku:\n%4$s\n\nKuya ku:\n%5$s\n\nQaphela: Uhlelo zokusebenza aluqinisekisi izikhulu zezitifiketi noma luhlole ukuhoxiswa kwezitifiketi.</string>
+    <string name="info_continue_connecting">"Qhubeka uxhuma ku: "</string>
+    <string name="info_encoding">" ukubethela, "</string>
+    <string name="info_progress_dialog_aborted">Uxhumano lumisiwe!</string>
+    <string name="info_progress_dialog_connecting">Kuxhuma…</string>
+    <string name="info_progress_dialog_downloading">Kulendwa ifreyimu yokuqala.\nSicela ulinde…</string>
+    <string name="info_progress_dialog_establishing">Kuqaliswa ukuxhawulana.\nSicela ulinde…</string>
+    <string name="info_ssh_initializing_hostkey">Kuzanywa ukuqalisa i-HostKey ye-SSH.</string>
+    <string name="info_ssh_key_fingerprint">"Isigxivizo seminwe sokhiye womsingathi sithi: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nUngaqiniseka ukuthi sifana nesigxivizo seminwe esaziwayo sesitifiketi seseva ukuvikela ukuhlasela kwe-man-in-the-middle.</string>
+    <string name="info_update_color_model_to">"Kubuyekezwa Imodeli Yombala kuya ku "</string>
+
+    <string name="input_method_direct_drag_pan_description">Ngqo, Bamba Ukupana: Swayipha ukudonsela futhi uphonse. Chofoza ngomunwe owodwa lapho ufuna ukukhilikitha ngakwesokunxele, iminwe emibili ukukhilikitha ngakwesokudla, neminwe emithathu ukukhilikitha phakathi. Swayipha ngeminwe emibili ukuskrola. Chofoza isikhathi eside ukuqala ukupana.</string>
+    <string name="input_method_direct_swipe_pan_description">Ngqo, Swayipha Ukupana: Swayipha ukupana. Chofoza ngomunwe owodwa lapho ufuna ukukhilikitha ngakwesokunxele, iminwe emibili ukukhilikitha ngakwesokudla, neminwe emithathu ukukhilikitha phakathi. Swayipha ngeminwe emibili ukuskrola. Chofoza isikhathi eside ukudonsela futhi uphonse.</string>
+    <string name="input_method_single_handed_description">Ngesandla Esisodwa: Swayipha ukupana. Chofoza ngomunwe owodwa lapho ufuna ukukhilikitha ngakwesokunxele. Chofoza isikhathi eside ukukhetha imodi yokudonsela kwesokunxele/kwesokudla/phakathi/ukuskrola/ukusondeza. Izilawuli zokuthinta ezijwayelekile nazo ziyasebenza.</string>
+    <string name="input_method_touchpad_description">I-Touchpad Efaniswe: Swayipha ukuhambisa isikhombisi. Chofoza noma kuphi ngomunwe owodwa ukukhilikitha ngakwesokunxele, iminwe emibili ukukhilikitha ngakwesokudla, neminwe emithathu ukukhilikitha phakathi. Swayipha ngeminwe emibili ukuskrola. Chofoza isikhathi eside ukudonsela futhi uphonse.</string>
+    <string name="input_mode">Imodi Yokufaka</string>
+
+    <string name="input_mode_fit_to_screen">Ayikho Ukupana; Igundane le-Trackball</string>
+    <string name="input_mode_panning">Imodi Yokupana Kwedeskithophu</string>
+    <string name="input_method_mouse">Ukulawula Isikhombisi Segundane</string>
+
+    <string name="input_method_direct_swipe_pan">Ngqo, Swayipha Ukupana</string>
+    <string name="input_method_direct_drag_pan">Ngqo, Bamba Ukupana</string>
+    <string name="input_method_single_handed">Ngesandla Esisodwa</string>
+    <string name="input_method_touchpad">I-Touchpad Efaniswe</string>
+
+    <string name="input_mode_help">Usizo Lwemodi Yokufaka</string>
+    <string name="input_mode_help_text">"
+Kunoma iyiphi Imodi Yokufaka, chofoza isithonjana sekhibhodi ukuthola ikhibhodi yesikrini. Futhi, idivayisi yakho ingase ibe nesenzo sayo esiletha ikhibhodi.
+
+Sebenzisa izimodi zokufaka Ngqo ukulawula isikrini sokuthinta ngokuqondile. Sebenzisa Imodi ye-Touchpad Efaniswe ukulawula ngcono igundane.
+
+Imodi Yokupana Ngokuswayipha Ngqo:
+ - Lawula igundane ngqo ngokuthinta.
+ - Swayipha ukupana.
+ - Ukuchofoza kwenza igundane likhilikithe lapho uchofoza khona.
+ - Izehlakalo zokuskrola zithunyelwa phakathi kweminwe emibili lapho ukuswayipha ngeminwe emibili kuqale khona.
+
+Imodi Yokupana Ngokubamba Ngqo:
+ - Lawula igundane ngqo ngokuthinta.
+ - Chofoza isikhathi eside ukuqala imodi yokupana.
+ - Ukuchofoza kwenza igundane likhilikithe lapho uchofoza khona.
+ - Izehlakalo zokuskrola zithunyelwa phakathi kweminwe emibili lapho ukuswayipha ngeminwe emibili kuqale khona.
+
+Imodi ye-Touchpad Efaniswe:
+ - Sebenzisa isikrini sakho njengetouchpad.
+ - Swayipha ukuhambisa isikhombisi segundane.
+ - Hambisa igundane ngale komngcele wesikrini ukupana.
+ - Ukuchofoza kwenza igundane likhilikithe lapho isikhombisi sikhona.
+ - Izehlakalo zokuskrola zithunyelwa lapho isikhombisi segundane sikhona.
+
+Imodi Ngesandla Esisodwa:
+ - Efana Nemodi Yokupana Ngokuswayipha Ngqo, ngaphandle kokuthi ukuchofoza isikhathi eside kuvula imenyu enokuzikhethela kwezimodi.
+ - Ngemuva kokuzikhethela imodi, ukuswayipha umnwe esikrinini kwenza isenzo esikhethiwe.
+ - Ukuphakamisa umnwe kuqedela isenzo.
+
+Zonke Izimodi Zokufaka:
+ - Khilikitha kwesokunxele: Chofoza kanye.
+ - Khilikitha kabili: Chofoza kabili.
+ - Khilikitha kwesokudla: Chofoza-bamba bese uchofoza ngomunwe wesibili (noma kuphi kwenye indawo esikrinini).
+ - Enye Ukukhilikitha Kwesokudla: Sebenzisa inkinobho ethi \"Emuva\" noma isenzo sedivayisi yakho.
+ - Khilikitha Phakathi: Chofoza-bamba bese uchofoza ngeminwe emibili engaphezu (noma kuphi kwenye indawo esikrinini).
+ - Ukudonsela Kwegundane: Chofoza-bamba-isikhathi-eside bese uswayipha.
+ - Isondo Lokuskrola: Donsa ngeminwe emibili phezulu/phansi nangakwesokunxele/kwesokudla. Ukudonsa ngokushesha kuskrola ngokushesha.
+ - Sondeza/Susa: Ku-scaling Yokusondeza, nciphiza-sondeza ukulawula uskaling.
+ - Ukhiye we-Ctrl/Alt: Imenyu-&gt;Izinkinobho ze-Ctrl/Alt. Ungakhohlwa ukuvala uma uqedile!
+ - Izinhlanganisela zokhiye: Imenyu-&gt;Okuningi-&gt;Thumela Okhiye.
+ - Thumela umbhalo: Thayipha kwikhibhodi yesikrini, noma usebenzise Imenyu-&gt;Okuningi-&gt;Thumela Umbhalo."</string>
+
+    <string name="intro_close">Vala</string>
+    <string name="intro_dont_show">Ungakhombisi futhi</string>
+
+    <string name="intro_text">
+Uhlu lwamanje lwezici ze-bVNC:
+&lt;br&gt;
+- VNC Evamile, VNC Ephephile nge-SSH, AnonTLS, ne-VeNCrypt, ne-UltraVNC Windows Logon ngokukhethwa kwe-Repeater.
+&lt;br&gt;
+- Imodi ye-AutoX: Kwimodi ye-VNC nge-SSH, thola ngokuzenzakalelayo ama-session e-X akhona futhi/noma wakhe amasha usebenzisa i-x11vnc! Isebenza njengeqalabulzo le-NX.
+&lt;br&gt;
+- Ukusekelwa kokuphendula ngokukhululeka. Sebenzisa Uhlelo Lokusebenza ukunciphisa ukuphendula uma kudingeka.
+&lt;br&gt;
+- Ukukhiqizwa nokuthunywa kokhiye womphakathi/wangasese we-SSH.
+&lt;br&gt;
+- Zonke izindlela ezijwayelekile zokubethela ze-VNC, kufaka phakathi i-Tight, i-ZRLE, ne-CopyRect.
+&lt;br&gt;
+- Ukulondolozwa Kwe-Session Okuzenzakalelayo.
+&lt;br&gt;
+- Izimodi zokuskala Ezisondezekayo, Lingana Nesikrini, ne-Eyodwa Ku-Eyodwa.
+&lt;br&gt;
+- Ukulawulwa kwegundane elekude ngokuthinta okuningi kwizimodi zokufaka Ngqo ne-Touchpad Efaniswe.
+&lt;br&gt;
+- Ukulawulwa okuphelele kwegundane elekude ngesandla esisodwa kwimodi yokufaka Ngesandla Esisodwa.
+&lt;br&gt;
+- Ukukhilikitha kwegundane ngokuthinta okuningi: chofoza ukukhilikitha Kwesokunxele, ukuchofoza ngeminwe emibili ukukhilikitha kwesokudla, ukuchofoza ngeminwe emithathu ukukhilikitha phakathi.
+&lt;br&gt;
+- Ukuskrola ngokuthinta okuningi: ukudonsa ngeminwe emibili Phezulu/Phansi, nangakwesokunxele/kwesokudla ukuskrola.
+&lt;br&gt;
+- Okhiye be-meta nemicibisholo yesikrini abangakhutshazwa ngokuphelele kumenyu noma bagcinwe ngenkinobho yesikrini.
+&lt;br&gt;
+- Ukuthumela Umbhalo nezinhlanganisela zokhiye ezingavumelekile lapho kuxhunyiwe.
+&lt;br&gt;
+- Usizo lokwakha uxhumano (\"Imenyu-&gt;Usizo Loxhumano\") esikrinini soxhumano.
+&lt;br&gt;
+- Usizo lwezimodi zokufaka (\"Imenyu-&gt;Okuningi-&gt;Usizo Lwemodi Yokufaka\") lapho kuxhunyiwe.
+&lt;br&gt;
+- Ukusebenzisa i-trackpad etholakalayo njengeMicibisholo esikhundleni sokuhambisa igundane, nokuchofoza kwetrekhphedi njenge-Ctrl.
+&lt;br&gt;
+- Ukushintshela kwimodi ye-portrait ngesikhathi soxhumano, ukuphendula i-D-Pad/i-trackpad yamakhibhodi e-BT.
+&lt;br&gt;
+- Ukusekelwa kwezilimi eziningi, uma nje iseva ye-VNC inendlela yolimi edingekayo evuliwe.
+&lt;br&gt;
+- Ukuhlanganiswa Kwekopishi/Kunamathisele
+&lt;br&gt;
+- Ukushintshwa kosandiso lwedeskithophu ekude
+&lt;br&gt;
+- Ukusekelwa okuphelele kwegundane kumadivayisi e-Android 4.0+, kufaka phakathi ukukhilikitha kwesokudla nokuphakathi nesondo lokuskrola.
+&lt;br&gt;
+&lt;br&gt;
+Izinkinga ezaziwayo:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Iqalabulzo ye-VNC eqondile, ephephile</string>
+
+
+    <string name="keep_password_button">Gcina</string>
+    <string name="keep_screen_awake_enable">Gcina Isikrini Sivukile</string>
+
+    <string name="keys_caption">Okhiye</string>
+
+    <string name="landscape_force">Phoqa Ukuma Okulandelayo</string>
+
+    <string name="left_handed_mode">Imodi Yesandla Sokunxele</string>
+    <string name="disable_pointer_offset_correction">Khubaza ukulungiswa kwesikhombisi se-offset</string>
+
+    <string name="list_caption">Uhlu</string>
+    <string name="list_name_caption">Igama Lohlu</string>
+
+    <string name="local_mouse_check">Isikhombisi segundane sendawo (khetha uma isikhombisi singabonakali)</string>
+
+    <string name="main_screen_help">Usizo Loxhumano</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Uma ungeza noma uhlela uxhumano, uzobona ikhasi lokulungiselelwa koxhumano. Lapha ungalungiselela uxhumano olusha lwe-VNC, noma ukhethe oluvele lukhona. Phezulu kukhona inkinobho ekuvumela ukuthi ulondoloze uxhumano. Ngezansi kungalapho ulungisa khona uxhumano lwakho.
+
+Uma ufuna ukukhuphulwa kwamandla okushesha, zama ukusetha Imodi Yombala kulinganiso eliphansi. Futhi, zama ukususa isithombe sangemuva sedeskithophu kuseva ye-VNC. Ekugcineni, qiniseka ukuthi idivayisi yakho inokuxhumeka kwenethiwekhi okuhle futhi ugweme ukumboza i-antenna yayo ukunciphisa amandla wesignali.
+
+ - Uhlobo Loxhumano: Lapha ukhetha uhlobo loxhumano lwe-VNC. Izinhlobo zoxhumano ezitholakalayo yilezi:
+   (a) VNC Evamile, esekelwa yizo zonke iziseva ze-VNC kodwa ayinayo ukubethela futhi inobuthakathaka ekuhlaselweni kwe-brute-force ngenxa yokuvinjelwa kwephasiwedi engabalingani abangu-8.
+   (b) VNC Ephephile nge-SSH, exhuma ngethunneli ebethelwe ye-SSH. Udinga isevisi ye-SSHD esebenzayo kanye neseva ye-VNC. Uma nje iseva ye-VNC ingamukeli uxhumano ngqo ku-Inthanethi, lolu hlobo loxhumano alunabo ubuthakathaka obaziwa, uma nje uqinisekisa isiginesha sesitifiketi seseva uma uxhuma okokuqala.
+   (c) UltraVNC, ekunikeza izinketho ze-Windows Logon ne-UltraVNC Repeater. Ukusebenzisa i-Windows Logon akuhlupheki ngokuvinjelwa kwephasiwedi engabalingani abangu-8, kodwa le modi ayinikezi ukubethela, ngakho i-session yakho inobuthakathaka ekuhogeni.
+   (d) VNC Ephephile nge-AnonTLS, eyona i-VNC evamile phezu koxhumano olulingana ne-stunnel. Udinga ukusebenzisa i-stunnel, noma usebenzise iseva ye-VNC efana ne-Vino esekela i-AnonTLS ngaphandle kwesidingo. Le modi ikunikeza ukubethela kwe-session, kodwa ihlupheka ngokuvinjelwa kwephasiwedi engabalingani abangu-8 futhi ayivikeli ukuhlasela kwe-man-in-the-middle.
+   (e) VNC Ephephile nge-VeNCrypt, esebenzisa izitifiketi ze-x509 kanye nokubethela kwe-session, futhi ngokuya ngokulungiselela kweseva ingasebenzisa iziqinisekiso zomsebenzisi/iphasiwedi ngaphandle kokuvinjelwa kwabalingani abangu-8. Le modi ivikela ukuhlasela kwe-man-in-the-middle kanye nokunikeza ubumfihlo be-session. Iziseva ezifana ne-x11vnc ne-TigerVNC zisekela le modi futhi ziphephe njenge-VNC nge-SSH.
+
+ - Isihloko: Uxhumano ngalunye olwakhayo lungaba nesiteketiso sokulubona kalula ohlwini.
+
+ - Izilungiselelo Zethunneli ye-SSH: Zitholakala kwimodi ye-VNC nge-SSH.
+   (a) Iseva ye-SSH/Imbobo: Ikheli nembobo yeseva ye-SSH uxhumano oluzodluliswa kuyo. Ngokuvamile i-SSH ilalela kumbhobo 22.
+   (b) Igama Lomsebenzisi/Iphasiwedi: Igama lomsebenzisi nephasiwedi ye-akhawunti kuseva ye-SSH. Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+   (c) Phatha Ukhiye/Sebenzisa Ukhiye: Inkinobho yokuphatha okhiye bomphakathi/bangasese, nebhokisi lokuhlola elibonisa ukuthi kusebenziswe ukhiye kunokusetshenziswa kwephasiwedi ukuqinisekisa. Uma usebenzisa inkinobho yokukopishela ku-Clipboard ngemuva kokukhiqiza ipheya lokhiye, kumele ukwazi ukunamathisela ukhiye womphakathi uma usuxhunyiwe kuseva ye-VNC (i-clipboard ivumelaniswe neseva).
+
+ - Lungisa i-AutoX: Itholakala kuphela kwimodi ye-VNC nge-SSH. Uhlelo zokusebenza lungathola ngokuzenzakalelayo ama-session e-X akhona futhi ngokukhethwa lwakhe amasha kumasistemu e-UNIX (njengeqalabulzo le-NX). Udinga i-x11vnc ukuthola, ne-Xvfb, i-Xvnc, noma i-Xdummy efakwe kuzisitemu ezikude ukwakha ama-session. Kungase kudingeke ukuthi ususe ifayela lakho le-.dmrc futhi ungeze ifayela le-.xinit kumkhombandlela wakho wasekhaya uma ideskithophu yakho ingabukeki kahle noma uthola iwindi le-xterm kuphela.
+
+ - Izilungiselelo Zoxhumano Lwe-VNC:
+   (a) Iseva ye-VNC/Imbobo: Yilapha lapho ufaka khona igama lomsingathi noma ikheli le-IP nembobo yekhompyutha esebenzisa iseva ye-VNC ofuna ukuyithinta. Kwimodi ye-VNC nge-SSH, leli kheli libonakala kusuka kuziseva ye-SSH. Uma iseva ye-SSH neseva ye-VNC kuyikhompyutha efanayo, ungasebenzisa localhost. Iziseva ze-VNC zivame ukulalela kusukela kumbhobo 5900 (isikrini sokuqala se-VNC, isikrini :0).
+   (b) Umsebenzisi we-VNC: Itholakala kwimodi ye-UltraVNC ne-Windows Logon, noma ye-VNC Ephephile nge-VeNCrypt, yilapha lapho ufaka khona igama lakho lomsebenzisi le-Windows/UNIX.
+   (c) Iphasiwedi ye-VNC: Uma ukulungiselela kweseva yakho ye-VNC kudinga iphasiwedi, faka leyo phasiwedi lapha. Kwizimodi ze-UltraVNC ne-Windows Logon/VeNCrypt, faka iphasiwedi ye-akhawunti yakho ye-Windows/UNIX lapha. Isitoreji esiphephile asisetshenziswa kumaphasiwedi, futhi iphasiwedi izolondolozwa kuphela uma uhlola ibhokisi elithi \"Gcina\". Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+
+ - Imodi Yombala: Iqalabulzo lisekela izimodi eziningi zombala. Izimodi ezinombala omningi zinikeza umuzwa obukeka kangcono ngezindleko zebhandwidi elikhulu nokukhomputha okuningi kwe-CPU kudivayisi yakho. Ezinye iziseva ze-VNC azisekeli ukujula kombala konke (isib. i-OS/X Remote Desktop idinga umbala wama-24 bit). Uma unenkinga yokuxhuma, zama elinye ijula lombala.
+
+ - Sebenzisa D-Pad yemicibisholo: Uma ukhetha, ungasebenzisa i-D-Pad yekhibhodi yakho ye-Bluetooth noma imicibisholo yekhibhodi yakho yesikrini ukuthumela imicibisholo kuseva ye-VNC.
+
+ - Phendula D-Pad: Izingcingo eziphahlene nekhibhodi ye-Bluetooth zingase zidinge ukuthi i-D-pad yekhibhodi iphendulwe ngokuphambana newashi ukuthumela iziqondiso ezilungile kuseva.
+
+ - Isikhombisi segundane sendawo: Ezinye iziseva ze-VNC (isib. i-OS/X Remote Desktop) ngeke zidwebe isikhombisi segundane kuqalabulzo. Ukuhlola le nketho kuzobangela uhlelo zokusebenza ukuthi ludwebe isikhombisi segundane endaweni yegundane.
+
+ - Okuzenzakalelayo/I-Bitmap Yesikrini Esigcwele: Iqalabulzo le-VNC lisebenzisa i-bitmap ukumela ukubonisa okukude. Ngokubonisa okukude okukhulu kakhulu, ikakhulukazi kwimodi yokulinga nesikrini, ungase ubhekane nomqondo wezinto ezingavamile lapho kwimodi yokulinga nesikrini, ngenxa yokuvinjelwa kwenkumbulo yomsebenzi ngamunye. Uma lokho kwenzeka, zama ukuhlola le nketho. Qaphela ukuthi ukuhlola le nketho kungabangela uhlelo zokusebenza ukuthi luyeke ekuxhumeni.
+
+ - Repeater: Itholakala kuphela kwimodi ye-UltraVNC. OKUBALULEKILE: Uma une-UltraVNC repeater, faka ikheli layo nembobo ngaphandle kwengxoxo ye-\'UltraVNC Repeater\' futhi ufake ikheli nembobo yeseva ye-VNC yangempela ngaphakathi kwengxoxo ye-\'UltraVNC Repeater\'. Hlukanisa ikheli leseva ye-VNC nembobo ngokucolon, isib. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Vumela Iphasiwedi Eyinhloko</string>
+    <string name="master_password_error_failed_to_disable">Ayikwazanga ukukhubaza iphasiwedi eyinhloko. Hlola isikhala esikhululekile kudivayisi yakho bese uzama futhi.</string>
+    <string name="master_password_error_failed_to_enable">Ayikwazanga ukuvumela iphasiwedi eyinhloko. Hlola isikhala esikhululekile kudivayisi yakho bese uzama futhi.</string>
+    <string name="master_password_error_intents_not_supported">Ama-Intent oxhumano awakasekelwa lapho Iphasiwedi Eyinhloko ivuliwe.</string>
+    <string name="master_password_error_password_necessary">Iphasiwedi Eyinhloko iyadingeka ukuze kuqhutshekwe.</string>
+    <string name="master_password_error_password_not_set">Ukusetha Iphasiwedi Eyinhloko kukhanselelwe.</string>
+    <string name="master_password_error_shortcuts_not_supported">Izinqamuleli azikasekelwa lapho Iphasiwedi Eyinhloko ivuliwe.</string>
+    <string name="master_password_error_wrong_password">Ayikwazanga ukuqinisekisa ngephasiwedi eyinhloko enikeziwe.</string>
+    <string name="master_password_hint_once">Faka Iphasiwedi</string>
+    <string name="master_password_hint_twice">Phinda Iphasiwedi</string>
+    <string name="master_password_set">Setha Iphasiwedi Eyinhloko</string>
+    <string name="master_password_set_error">Amaphasiwedi awafani, sicela uqaphele!</string>
+    <string name="master_password_set_message">Sicela ufake futhi ukhumbule Iphasiwedi Eyinhloko. Uma iphasiwedi yakho inde, kunzima ukuyiphula. Uma usetha iphasiwedi yakho kabi noma uyikhohlwa, uzokhumbula zonke izilungiselelo zakho! Ungase ufune ukuthumela izilungiselelo zakho manje ukuzigcina (kusuka kuMenyu). Zigcine ngokuphepha ngoba izilungiselelo ezithunyelwe azibethelwe.</string>
+    <string name="master_password_verify">Qinisekisa Iphasiwedi Eyinhloko</string>
+    <string name="master_password_verify_message">Sicela ufake Iphasiwedi Eyinhloko elungile ukuze uqhubeke.</string>
+
+    <string name="meta_key_title">Thumela Okhiye Abakhethekile</string>
+
+    <string name="mouse_follow_pan">Igundane lilandela ukupana</string>
+
+    <string name="new_connection">Uxhumano Olusha</string>
+    <string name="new_list_button">Uhlu Olusha</string>
+
+    <string name="nickname_caption">Isiteketiso</string>
+    <string name="nickname_caption_hint">Isihloko (okukhethayo)</string>
+
+    <string name="off">Cisha</string>
+
+    <string name="one_to_one">Eyodwa Ku-Eyodwa</string>
+
+    <string name="open_doc">Incwadi/Wiki</string>
+
+    <string name="pan_follow_mouse">Ukupana kulandela igundane</string>
+
+    <string name="password_caption">Ukuqinisekisa kwe-VNC</string>
+    <string name="password_caption_hint">Iphasiwedi ye-VNC</string>
+    <string name="password_caption_ssh">Ukuqinisekisa kwe-SSH</string>
+    <string name="password_hint_ssh">Iphasiwedi ye-SSH</string>
+
+    <string name="port_caption">Imbobo ye-VNC</string>
+    <string name="port_caption_ssh">Imbobo ye-SSH</string>
+    <string name="port_hint">Imbobo</string>
+    <string name="port_ssh_hint">Imbobo</string>
+
+    <string name="portrait_mode">Shintshela kwimodi ye-portrait lapho kuxhunyiwe</string>
+    <string name="local_clipboard_integration">Vumela Ukuhlanganiswa Kwe-Clipboard Yendawo kuya Kokukude</string>
+    <string name="remote_clipboard_integration">Vumela Ukuhlanganiswa Kwe-Clipboard Ekude kuya Kwendawo</string>
+    <string name="position_toolbar_last_used">Buyisela Indawo Yebha Yamathuluzi</string>
+    <string name="applies_to_new_connections_only">Isebenza Koxhumano Olusha Kuphela</string>
+    <string name="pro_feature_mfa">Kubonakala sengathi iseva yakho inokuqinisekisa okuningi okuvuliwe. Sicela usekele iphrojekthi ngokuthenga inguqulo ye-Pro enesekelo lalesi sici. Ixhumaniso lokuya inguqulweni ye-Pro litholakala engxoxweni yokuqala.</string>
+    <string name="pro_feature_intro">Kubonakala sengathi usebenzisa isici se-Pro. Sicela usekele iphrojekthi ngokuthenga inguqulo ye-Pro enesekelo lalesi sici. Sicela uhlole ingxoxo yesethulo ukuthola amaxhumaniso ohlelo zokusebenza olufanele.</string>
+    <string name="pro_feature_generic">Kubonakala sengathi usebenzisa isici se-Pro. Sicela usekele iphrojekthi ngokuthenga inguqulo ye-Pro enesekelo lalesi sici. Ixhumaniso lokuya inguqulweni ye-Pro litholakala engxoxweni yokuqala.</string>
+    <string name="pro_feature_rdp">Kubonakala sengathi uzamile ukuvula ifayela le-.rdp okuyisici se-Pro. Sicela usekele iphrojekthi ngokuthenga aRDP Pro, esekela amafayela e-.rdp. Ixhumaniso lokuya inguqulweni ye-aRDP Pro litholakala engxoxweni yokuqala.</string>
+    <string name="pro_feature_spice">Kubonakala sengathi uzamile ukuvula ifayela le-.vv. Uma ungathanda ukulondoloza uxhumano ku-Proxmox noma ku-oVirt ngqo ngaphakathi kohlelo zokusebenza futhi ufune ukuvula amafayela e-.vv, cabanga ngokuthenga Opaque. Uma udinga ukusekelwa kwefayela le-.vv kuphela, ungathola aSPICE Pro. Thola amaxhumaniso azo zombili izinhlelo zokusebenza engxoxweni yokuqala.</string>
+
+    <string name="rdp_address_caption_hint">Iseva ye-RDP</string>
+    <string name="rdp_adv_console_mode">Imodi ye-Console</string>
+    <string name="rdp_adv_desktop_background">Bonisa isithombe sangemuva sedeskithophu</string>
+    <string name="rdp_adv_desktop_composition">Vumela Ukuhlanganiswa Kwedeskithophu</string>
+    <string name="rdp_adv_font_smoothing">Yenza ukuthambisa kwamafonti</string>
+    <string name="rdp_adv_menu_animation">Bonisa Ukukhazimulisa Kwemenyu</string>
+    <string name="rdp_adv_redirect_sdcard">Qondisa Kabusha Ikhadi le-SD</string>
+    <string name="rdp_adv_remotefx">Vumela RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Vumela Izitayela Zokubuka</string>
+    <string name="rdp_adv_window_contents">Bonisa okuqukethwe kwewindi lapho kudonswayo</string>
+    <string name="rdp_security_mode">Imodi Yezokuphepha</string>
+    <string name="rdp_descript_geom">Usayizi Wedeskithophu Ekude (WxH)</string>
+    <string name="rdp_domain_hint">Isizinda se-RDP</string>
+    <string name="rdp_geom_automatic">Okuzenzakalelayo</string>
+    <string name="rdp_geom_checkbox_enable">Vumela usandiso olungokwezifiso</string>
+    <string name="rdp_geom_custom">Ngokwezifiso</string>
+    <string name="rdp_geom_description_hint">Iseva idinga ukusekelwa kwe-ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Kukhutshaziwe</string>
+    <string name="rdp_geom_native_landscape">Yomdabu Okulandelayo</string>
+    <string name="rdp_geom_native_portrait">Yomdabu Okumi</string>
+    <string name="rdp_security_auto">Xoxisana Ngokuzenzakalelayo Ngezokuphepha</string>
+    <string name="rdp_security_rdp">Ukuphepha kwe-RDP</string>
+    <string name="rdp_security_tls">Ukuphepha kwe-TLS</string>
+    <string name="rdp_security_nla">Ukuqinisekisa Kwezinga Lenethiwekhi</string>
+    <string name="rdp_intro_text">
+Siyabonga ngokusekelwa kwe-aRDP kanye nesofthiwe ye-open-source ngokujwayelekile! Ukuthola usizo ngokusebenzisa i-aRDP, bona izinto Zosizo kuMenyu, nencazelo yohlelo zokusebenza emakethe.
+&lt;br&gt;
+&lt;br&gt;
+Uhlu lwamanje lwezici ze-aRDP lufaka:
+&lt;br&gt;
+- RDP Evamile, RDP edluliswe ngethunneli ye-SSH.
+&lt;br&gt;
+- Ukusekelwa kokuphendula ngokukhululeka. Sebenzisa Uhlelo Lokusebenza ukunciphisa ukuphendula uma kudingeka.
+&lt;br&gt;
+- Ukusetha usandiso lwekude, usandiso lomdabu kwizimodi ze-landscape ne-portrait.
+&lt;br&gt;
+- Ukukhiqizwa nokuthunywa kokhiye womphakathi/wangasese we-SSH.
+&lt;br&gt;
+- Ukulondolozwa Kwe-Session Okuzenzakalelayo.
+&lt;br&gt;
+- Izimodi zokuskala Ezisondezekayo, Lingana Nesikrini, ne-Eyodwa Ku-Eyodwa.
+&lt;br&gt;
+- Ukulawulwa kwegundane elekude ngokuthinta okuningi kwizimodi zokufaka Ngqo ne-Touchpad Efaniswe.
+&lt;br&gt;
+- Ukulawulwa okuphelele kwegundane elekude ngesandla esisodwa kwimodi yokufaka Ngesandla Esisodwa.
+&lt;br&gt;
+- Ukukhilikitha kwegundane ngokuthinta okuningi: chofoza ukukhilikitha Kwesokunxele, ukuchofoza ngeminwe emibili ukukhilikitha kwesokudla, ukuchofoza ngeminwe emithathu ukukhilikitha phakathi.
+&lt;br&gt;
+- Ukuskrola ngokuthinta okuningi: ukudonsa ngeminwe emibili Phezulu/Phansi, nangakwesokunxele/kwesokudla ukuskrola.
+&lt;br&gt;
+- Okhiye be-meta nemicibisholo yesikrini abangakhutshazwa ngokuphelele kumenyu noma bagcinwe ngenkinobho yesikrini.
+&lt;br&gt;
+- Ukuthumela Umbhalo nezinhlanganisela zokhiye ezingavumelekile lapho kuxhunyiwe.
+&lt;br&gt;
+- Usizo lokwakha uxhumano (\"Imenyu-&gt;Usizo Loxhumano\") esikrinini soxhumano.
+&lt;br&gt;
+- Usizo lwezimodi zokufaka (\"Imenyu-&gt;Okuningi-&gt;Usizo Lwemodi Yokufaka\") lapho kuxhunyiwe.
+&lt;br&gt;
+- Ukusebenzisa i-trackpad etholakalayo njengeMicibisholo esikhundleni sokuhambisa igundane, nokuchofoza kwetrekhphedi njenge-Ctrl, ukuphendula i-D-Pad/i-trackpad yamakhibhodi e-BT.
+&lt;br&gt;
+- Ukusekelwa kwezilimi eziningi, uma nje iseva ye-RDP inendlela yolimi edingekayo evuliwe.
+&lt;br&gt;
+- Ukushintshwa kosandiso lwedeskithophu ekude ngaphandle kwenkinga
+&lt;br&gt;
+- Ukusekelwa okuphelele kwegundane kumadivayisi e-Android 4.0+, kufaka phakathi ukukhilikitha kwesokudla nokuphakathi nesondo lokuskrola.
+&lt;br&gt;
+- Ukukhetha kwezimodi zombala
+&lt;br&gt;
+- Ukuhlanganiswa Kwekopishi/Kunamathisele
+&lt;br&gt;
+- Ukuthumela izilungiselelo
+&lt;br&gt;
+- Umsindo
+&lt;br&gt;
+&lt;br&gt;
+Izinkinga ezaziwayo:</string>
+    <string name="rdp_intro_title">aRDP: Iqalabulzo ye-RDP eqondile, ephephile</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Uma ungeza noma uhlela uxhumano, uzobona ikhasi lokulungiselelwa koxhumano. Lapha ungalungiselela uxhumano olusha lwe-RDP, noma ukhethe oluvele lukhona. Phezulu kukhona inkinobho ekuvumela ukuthi ulondoloze uxhumano. Ngezansi kungalapho ulungisa khona uxhumano lwakho.
+
+ - Uhlobo Loxhumano: Lapha ukhetha uhlobo loxhumano lwe-RDP. Izinhlobo zoxhumano ezitholakalayo yilezi:
+   (a) RDP, exhuma ngqo kukhompyutha nge-protocol ye-RDP.
+   (b) RDP nge-SSH, eqala ngokudonsa uxhumano lwakho ngekhompyutha esebenzisa iseva ye-SSH.
+
+ - Isihloko: Uxhumano ngalunye olwakhayo lungaba nesiteketiso sokulubona kalula ohlwini.
+
+ - Izilungiselelo Zethunneli ye-SSH: Zitholakala kwimodi ye-RDP nge-SSH.
+   (a) Iseva ye-SSH/Imbobo: Ikheli nembobo yeseva ye-SSH uxhumano oluzodluliswa kuyo. Ngokuvamile i-SSH ilalela kumbhobo 22.
+   (b) Igama Lomsebenzisi/Iphasiwedi: Igama lomsebenzisi nephasiwedi ye-akhawunti kuseva ye-SSH. Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+   (c) Phatha Ukhiye/Sebenzisa Ukhiye: Inkinobho yokuphatha okhiye bomphakathi/bangasese, nebhokisi lokuhlola elibonisa ukuthi kusebenziswe ukhiye kunokusetshenziswa kwephasiwedi ukuqinisekisa. Uma usebenzisa inkinobho yokukopishela ku-Clipboard ngemuva kokukhiqiza ipheya lokhiye, kumele ukwazi ukunamathisela ukhiye womphakathi uma usuxhunyiwe kuseva ye-RDP (i-clipboard ivumelaniswe neseva).
+
+ - Izilungiselelo Zoxhumano Lwe-RDP:
+   (a) Iseva ye-RDP/Imbobo: Yilapha lapho ufaka khona igama lomsingathi noma ikheli le-IP nembobo yekhompyutha esebenzisa iseva ye-RDP ofuna ukuyithinta. Kwimodi ye-RDP nge-SSH, leli kheli libonakala kusuka kuziseva ye-SSH. Uma iseva ye-SSH neseva ye-RDP kuyikhompyutha efanayo ngokomzimba, ungasebenzisa localhost. Iziseva ze-RDP zivame ukulalela kumbhobo 3389.
+   (b) Umsebenzisi we-RDP: Yilapha lapho ufaka khona igama lakho lomsebenzisi le-akhawunti ye-Windows/UNIX.
+   (c) Isizinda se-RDP: Faka isizinda i-akhawunti yakho engaphansi kwaso.
+   (d) Iphasiwedi ye-RDP: Yilapha lapho ufaka khona iphasiwedi ye-akhawunti yakho ye-Windows/UNIX. Isitoreji esiphephile asisetshenziswa kumaphasiwedi (akusedathabheyisi), futhi iphasiwedi izolondolozwa kuphela uma uhlola ibhokisi elithi \"Gcina\". Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+
+ - Izilungiselelo ezithuthukile: Kulesi sigaba uzothola izindlela zokwenza usandiso lwedeskithophu ngokwezifiso, nokuthutha ukusebenza kwe-RDP okuhlukahlukene
+
+ - Ukulungiselela Kwedivayisi Yendawo: Lokhu kulungisa ukuziphatha kohlelo zokusebenza kudivayisi yakho.
+   (a) Sebenzisa D-Pad yemicibisholo: Uma ukhetha, ungasebenzisa i-D-Pad yekhibhodi yakho ye-Bluetooth noma imicibisholo yekhibhodi yakho yesikrini ukuthumela imicibisholo kuseva ye-RDP.
+   (b) Phendula D-Pad: Izingcingo eziphahlene nekhibhodi ye-Bluetooth zingase zidinge ukuthi i-D-pad yekhibhodi iphendulwe ngokuphambana newashi ukuthumela iziqondiso ezilungile kuseva.
+   (c) Isikhombisi segundane sendawo: Uma isikhombisi singabonakali, khetha lokhu ukuphoqa ukuthi sidwetshwe uhlelo zokusebenza."</string>
+    <string name="rdp_password_hint">Iphasiwedi ye-RDP</string>
+    <string name="rdp_server_empty">Iseva ye-RDP noma imbobo ayinalutho. Ayikwazi ukuxhuma!</string>
+    <string name="rdp_username_hint">Igama Lomsebenzisi le-RDP</string>
+
+    <string name="remote_sound_disabled">Umsindo Ukhutshaziwe</string>
+    <string name="remote_sound_on_device">Umsindo Kudivayisi</string>
+    <string name="remote_sound_on_server">Umsindo Kuseva</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">OKUBALULEKILE: Uma usebenzisa i-UltraVNC repeater, faka ikheli layo nembobo ngaphandle kwale ngxoxo. Lapha, faka ikheli nembobo yeseva ye-VNC yangempela. Hlukanisa ikheli leseva ye-VNC nembobo ngokucolon, isib. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Ungasebenzisi</string>
+    <string name="repeater_dialog_title">Iseva ye-VNC Ngemuva kwe-Repeater</string>
+    <string name="repeater_empty_text">Ayikho i-repeater</string>
+    <string name="repeater_save">Sebenzisa</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt njengo-ISO L3 Shift (VNC kuphela)</string>
+
+    <string name="rotate_dpad">Phendula i-Bluetooth noma isofthiwe D-Pad</string>
+
+    <string name="save_as_copy">Londoloza Njengekopi</string>
+
+    <string name="scaling">Ukuskala</string>
+    <string name="scaling_zoomable">Esondezekayo</string>
+
+    <!-- Thumela ukhiye we-metakey okhethiwe -->
+    <string name="send_button">Thumela</string>
+    <string name="send_key_again">Thumela Ukhiye Futhi</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">Uxhumano lwe-VNC</string>
+    <string name="shortcut_label_rdp">Uxhumano lwe-RDP</string>
+    <string name="shortcut_label_spice">Uxhumano lwe-SPICE</string>
+
+    <string name="showkbd_label">Ikhibhodi</string>
+
+    <string name="single_cancel">Imodi yesandla esisodwa ikhanselelwe</string>
+    <string name="single_choose">Khetha imodi yesandla esisodwa noma ukhansele</string>
+    <string name="single_left">Imodi yokudonsela kwesokunxele - swayipha ukudonsa/ukukhetha, phakamisa umnwe ukumisa</string>
+    <string name="single_middle">Imodi yokudonsela phakathi - swayipha ukudonsa/ukukhetha, phakamisa umnwe ukumisa</string>
+    <string name="single_reposition">Isikhombisi segundane sibekwe kabusha kwimodi yesandla esisodwa</string>
+    <string name="single_right">Imodi yokudonsela kwesokudla - swayipha ukudonsa/ukukhetha, phakamisa umnwe ukumisa</string>
+    <string name="single_scroll">Imodi yokuskrola - swayipha phezulu/phansi ukuskrola, phakamisa umnwe ukumisa</string>
+    <string name="single_zoom">Imodi yokusondeza - swayipha phezulu/phansi ukusondeza/ukususa, phakamisa umnwe ukumisa</string>
+
+    <string name="snap_one_to_one">Kunamathele ku-1:1 ukusondeza</string>
+
+    <string name="special_keys">Thumela Okhiye</string>
+
+    <string name="spice_address_caption_hint">Iseva ye-SPICE</string>
+    <string name="spice_button_import_ca">Ngenisa i-CA</string>
+    <string name="spice_ca_cert_path_hint">Indlela eya efayeleni lesikhulu sesitifiketi</string>
+    <string name="spice_ca_file_error_reading">Iphutha lokufunda ifayela le-CA. Sicela uqiniseke ukuthi liyafundeka.</string>
+    <string name="spice_ca_file_not_found">Ifayela alitholakalanga. Sicela ufake igama lefayela elivumelekile enkundleni yombhalo (isib. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Isihloko Sesitifiketi</string>
+    <string name="spice_intro_text">
+Siyabonga ngokusekelwa kwe-aSPICE kanye nesofthiwe ye-open-source ngokujwayelekile! Ukuthola usizo ngokusebenzisa i-aSPICE, bona izinto Zosizo kuMenyu, nencazelo yohlelo zokusebenza emakethe.
+&lt;br&gt;
+&lt;br&gt;
+Uhlu lwamanje lwezici ze-aSPICE lufaka:
+&lt;br&gt;
+- SPICE Evamile, SPICE edluliswe ngethunneli ye-SSH.
+&lt;br&gt;
+- Ukusekelwa kokuphendula ngokukhululeka. Sebenzisa Uhlelo Lokusebenza ukunciphisa ukuphendula uma kudingeka.
+&lt;br&gt;
+- Ukukhiqizwa nokuthunywa kokhiye womphakathi/wangasese we-SSH.
+&lt;br&gt;
+- Ukulondolozwa Kwe-Session Okuzenzakalelayo.
+&lt;br&gt;
+- Izimodi zokuskala Ezisondezekayo, Lingana Nesikrini, ne-Eyodwa Ku-Eyodwa.
+&lt;br&gt;
+- Ukulawulwa kwegundane elekude ngokuthinta okuningi kwizimodi zokufaka Ngqo ne-Touchpad Efaniswe.
+&lt;br&gt;
+- Ukulawulwa okuphelele kwegundane elekude ngesandla esisodwa kwimodi yokufaka Ngesandla Esisodwa.
+&lt;br&gt;
+- Ukukhilikitha kwegundane ngokuthinta okuningi: chofoza ukukhilikitha Kwesokunxele, ukuchofoza ngeminwe emibili ukukhilikitha kwesokudla, ukuchofoza ngeminwe emithathu ukukhilikitha phakathi.
+&lt;br&gt;
+- Ukuskrola ngokuthinta okuningi: ukudonsa ngeminwe emibili Phezulu/Phansi, nangakwesokunxele/kwesokudla ukuskrola.
+&lt;br&gt;
+- Okhiye be-meta nemicibisholo yesikrini abangakhutshazwa ngokuphelele kumenyu noma bagcinwe ngenkinobho yesikrini.
+&lt;br&gt;
+- Ukuthumela Umbhalo nezinhlanganisela zokhiye ezingavumelekile lapho kuxhunyiwe.
+&lt;br&gt;
+- Usizo lokwakha uxhumano (\"Imenyu-&gt;Usizo Loxhumano\") esikrinini soxhumano.
+&lt;br&gt;
+- Usizo lwezimodi zokufaka (\"Imenyu-&gt;Okuningi-&gt;Usizo Lwemodi Yokufaka\") lapho kuxhunyiwe.
+&lt;br&gt;
+- Ukusebenzisa i-trackpad etholakalayo njengeMicibisholo esikhundleni sokuhambisa igundane, nokuchofoza kwetrekhphedi njenge-Ctrl, ukuphendula i-D-Pad/i-trackpad yamakhibhodi e-BT.
+&lt;br&gt;
+- Ukusekelwa kwezilimi eziningi, uma nje iseva ye-SPICE inendlela yolimi edingekayo evuliwe.
+&lt;br&gt;
+- Ukushintshwa kosandiso lwedeskithophu ekude ngaphandle kwenkinga
+&lt;br&gt;
+- Ukusekelwa okuphelele kwegundane kumadivayisi e-Android 4.0+, kufaka phakathi ukukhilikitha kwesokudla nokuphakathi nesondo lokuskrola.
+&lt;br&gt;
+&lt;br&gt;
+Izici ezihlelelwe:
+&lt;br&gt;
+- Ukuhlanganiswa Kwekopishi/Kunamathisele
+&lt;br&gt;
+- Umsindo
+&lt;br&gt;
+- Ukuthuthukiswa kokusebenza
+&lt;br&gt;
+Izinkinga ezaziwayo:
+&lt;br&gt;
+- Ukuthumela umbhalo akuthumeli amanye amasimboli.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Iqalabulzo ye-SPICE eqondile, ephephile</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Uma ungeza noma uhlela uxhumano, uzobona ikhasi lokulungiselelwa koxhumano. Lapha ungalungiselela uxhumano olusha lwe-SPICE, noma ukhethe oluvele lukhona. Phezulu kukhona inkinobho ekuvumela ukuthi ulondoloze uxhumano. Ngezansi kungalapho ulungisa khona uxhumano lwakho.
+
+ - Uhlobo Loxhumano: Lapha ukhetha uhlobo loxhumano lwe-SPICE. Izinhlobo zoxhumano ezitholakalayo yilezi:
+   (a) SPICE, exhuma ngqo kukhompyutha nge-protocol ye-SPICE.
+   (b) SPICE nge-SSH, eqala ngokudonsa uxhumano lwakho ngekhompyutha esebenzisa iseva ye-SSH.
+
+ - Isihloko: Uxhumano ngalunye olwakhayo lungaba nesiteketiso sokulubona kalula ohlwini.
+
+ - Izilungiselelo Zethunneli ye-SSH: Zitholakala kwimodi ye-SPICE nge-SSH.
+   (a) Iseva ye-SSH/Imbobo: Ikheli nembobo yeseva ye-SSH uxhumano oluzodluliswa kuyo. Ngokuvamile i-SSH ilalela kumbhobo 22.
+   (b) Igama Lomsebenzisi/Iphasiwedi: Igama lomsebenzisi nephasiwedi ye-akhawunti kuseva ye-SSH. Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+   (c) Phatha Ukhiye/Sebenzisa Ukhiye: Inkinobho yokuphatha okhiye bomphakathi/bangasese, nebhokisi lokuhlola elibonisa ukuthi kusebenziswe ukhiye kunokusetshenziswa kwephasiwedi ukuqinisekisa. Uma usebenzisa inkinobho yokukopishela ku-Clipboard ngemuva kokukhiqiza ipheya lokhiye, kumele ukwazi ukunamathisela ukhiye womphakathi uma usuxhunyiwe kuseva ye-SPICE (i-clipboard ivumelaniswe neseva).
+
+ - Izilungiselelo Zoxhumano Lwe-SPICE:
+   (a) Iseva ye-SPICE/Imbobo: Yilapha lapho ufaka khona igama lomsingathi noma ikheli le-IP nembobo yekhompyutha esebenzisa iseva ye-SPICE ofuna ukuyithinta. Kwimodi ye-SPICE nge-SSH, leli kheli libonakala kusuka kuziseva ye-SSH. Uma iseva ye-SSH neseva ye-SPICE kuyikhompyutha efanayo ngokomzimba, ungasebenzisa localhost. Iziseva ze-SPICE zivame ukulalela kumbhobo 5900 nangaphezulu.
+   (d) Iphasiwedi ye-SPICE: Yilapha lapho ufaka khona iphasiwedi esetelwe ukuvikela i-session yakho ye-SPICE. Isitoreji esiphephile asisetshenziswa kumaphasiwedi (akusedathabheyisi), futhi iphasiwedi izolondolozwa kuphela uma uhlola ibhokisi elithi \"Gcina\". Iphasiwedi izogcwaliswa kuleli khasi uma ungakayeki uhlelo zokusebenza kusukela ekugcineni uyifakile.
+
+ - Izilungiselelo ezithuthukile: Kulesi sigaba uzothola izilungiselelo zedivayisi yendawo noma ukuthutha ukusebenza kwe-SPICE
+ - Ukulungiselela Kwedivayisi Yendawo: Lokhu kulungisa ukuziphatha kohlelo zokusebenza kudivayisi yakho.
+   (a) Sebenzisa D-Pad yemicibisholo: Uma ukhetha, ungasebenzisa i-D-Pad yekhibhodi yakho ye-Bluetooth noma imicibisholo yekhibhodi yakho yesikrini ukuthumela imicibisholo kuseva ye-SPICE.
+   (b) Phendula D-Pad: Izingcingo eziphahlene nekhibhodi ye-Bluetooth zingase zidinge ukuthi i-D-pad yekhibhodi iphendulwe ngokuphambana newashi ukuthumela iziqondiso ezilungile kuseva.
+   (c) Isikhombisi segundane sendawo: Uma isikhombisi singabonakali, khetha lokhu ukuphoqa ukuthi sidwetshwe uhlelo zokusebenza."</string>
+    <string name="spice_password_hint">Iphasiwedi ye-SPICE</string>
+    <string name="spice_server_empty">Iseva ye-SPICE noma imbobo ayinalutho. Ayikwazi ukuxhuma!</string>
+    <string name="spice_tls_port_hint">Imbobo ye-TLS</string>
+    <string name="spice_username_hint">Igama Lomsebenzisi le-SPICE</string>
+
+    <string name="ssh_passphrase_hint">Ibinzana Lephasiwedi ye-SSH</string>
+    <string name="ssh_pubkey_button">Phatha Ukhiye</string>
+    <string name="ssh_use_pubkey">Sebenzisa Ukhiye</string>
+    <string name="ssh_use_x11vnc">Ideskithophu Ezenzakalelayo</string>
+    <string name="ssh_x11vnc_customize">Lungiselela i-AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Khubaza</string>
+    <string name="tap_enable">Vumela</string>
+
+    <string name="username_caption">Umsebenzisi we-VNC</string>
+    <string name="username_hint">Igama Lomsebenzisi le-UltraVNC MS Logon</string>
+    <string name="username_hint_optional">Igama Lomsebenzisi le-VNC (okukhethayo)</string>
+    <string name="username_hint_ssh">Igama Lomsebenzisi le-SSH</string>
+    <string name="username_hint_vencrypt">Igama Lomsebenzisi le-VNC</string>
+    <string name="verification_code">Ikhodi Yokuqinisekisa</string>
+    <string name="verification_code_message">Sicela ufake Ikhodi Yokuqinisekisa yokungena okuningi</string>
+
+    <string name="view_only">Imodi yokubuka kuphela</string>
+
+    <string name="vnc_server_empty">Iseva ye-VNC noma imbobo ayinalutho. Ayikwazi ukuxhuma!</string>
+    <string name="vnc_server_empty_no_save">Iseva ye-VNC noma imbobo ayinalutho. Ayikwazi ukulondoloza uxhumano!</string>
+
+    <string name="warning_cert_does_not_match">ISEXWAYISO: Isitifiketi se-x509 esilondoloziwe noma isiginesha edluliselwe ayifani nesitifiketi samanje seseva! Lokhu kungaba ukuhlasela kwe-man-in-the-middle. Uma wazi ngokushintshwa kokhiye ungaqhubeka. </string>
+    <string name="copy_logcat">📋 Kopisha i-Logcat</string>
+    <string name="log_copied">I-Logcat ikopishelwe ku-clipboard. Usungayinamathisela ku-imeyili noma esikhundleni sosizo. Sicela ubheke noma yidiphu yomuntu siqu ngaphambi kokushicilela.</string>
+    <string name="info_set_touchpad_input_mode">Iseva ibika ukuthi ayisekeli Ukufakwa Kwegundane Kwemodi Yeqalabulzo, futhi imodi yamanje yokufaka igundane ngeke isebenze ngendlela efanele. Uma lokhu kuqhubeka, qiniseka ukuthi i-spice tools ifakiwe kushini obonakalayo noma ushintshe kuModi Yokufaka ye-Touchpad Efaniswe kusuka kuMenyu.</string>
+    <string name="ssh_tunnel_settings">Izilungiselelo Zethunneli ye-SSH</string>
+    <string name="vnc_connection_settings">Izilungiselelo Zoxhumano Lwe-VNC</string>
+    <string name="show_advanced_settings">Bonisa Izilungiselelo Ezithuthukile</string>
+    <string name="use_no_compression_for_local_connections">Ayikho ukucindezelwa (uxhumano lwendawo, ukubethela kwe-Hextile)</string>
+    <string name="rdp_connection_settings">Izilungiselelo Zoxhumano Lwe-RDP</string>
+    <string name="local_device_tweaks">Ukulungiselela Kwedivayisi Yendawo</string>
+    <string name="spice_connection_settings">Izilungiselelo Zoxhumano Lwe-SPICE</string>
+    <string name="ca_subject">Faka igama lesihloko sesitifiketi lapha. Kungase kungadingeki uma igama elifanayo lesitifiketi (CN) lihambisana negama lomsingathi weseva.</string>
+    <string name="path_to_ca">Faka indlela yefayela (isibonelo /sdcard/ca-cert.pem) bese uchofoza Ngenisa ukulayisha Isikhulu Sesitifiketi sakho.</string>
+    <string name="paste_ca">Faka Isikhulu Sesitifiketi lapha uma ungasingenisi njengefayela.</string>
+    <string name="cert_issuer">Umkhiqizi Wesitifiketi</string>
+    <string name="cert_fingerprint">Isigxivizo Seminwe Sesitifiketi</string>
+    <string name="error">Iphutha</string>
+    <string name="panning">Ukupana Kwesikrini</string>
+    <string name="copy_of">Ikhophi ka</string>
+    <string name="ssh_key_generated">Ukhiye omusha ukhiqizwe noma ungeniswe ngempumelelo. Usungachofoza inkinobho ethi \'Khiqiza/Thumela Ukhiye\' ukuze wabelane, ukopishele ku-clipboard, noma uthumele ukhiye womphakathi.</string>
+    <string name="cursor_force_local">"Wendawo"</string>
+    <string name="cursor_force_disable">"Khubaza"</string>
+    <string name="cursor_mode">"Imodi Yesikhombisi:"</string>
+    <string name="rendering_mode">"Imodi Yokwenza:"</string>
+    <string name="color_24_bit">"Umbala we-24 bit (24 bpp)"</string>
+    <string name="color_256">"Imibala engu-256 (8 bpp)"</string>
+    <string name="color_64">"Imibala engu-64 (4 bpp)"</string>
+    <string name="color_8">"Imibala engu-8 (2 bpp)"</string>
+    <string name="color_greyscale">"I-Greyscale (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Okumnyama & Okumhlophe (1 bpp)"]]></string>
+    <string name="show">"Bonisa"</string>
+    <string name="hide">"Fihla"</string>
+    <string name="search_connections">Sesha Uxhumano</string>
+    <string name="user_not_specified">Umsebenzisi akabhalwanga</string>
+    <string name="enter_ssh_credentials">Sicela ufake iziqinisekiso ze-SSH</string>
+    <string name="enter_vnc_credentials">Sicela ufake iziqinisekiso ze-VNC</string>
+    <string name="enter_vnc_password">Sicela ufake iphasiwedi ye-VNC</string>
+    <string name="enter_rdp_credentials">Sicela ufake iziqinisekiso ze-RDP</string>
+    <string name="enter_gateway_credentials">Sicela ufake iziqinisekiso ze-Gateway</string>
+    <string name="enter_spice_password">Sicela ufake iphasiwedi ye-SPICE</string>
+    <string name="enter_passphrase_title">Faka Ibinzana Lephasiwedi Lokhiye</string>
+    <string name="enter_passphrase">Sicela ufake Ibinzana Lephasiwedi Lokhiye</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Iseva yakho idinga ukuqinisekisa ngephasiwedi ngaphezu kokuqinisekisa ngokhiye.</string>
+    <string name="main_screen_help_text">"
+Uma uhlelo zokusebenza luqalisiwe lubonisa isikrini esinesixhumano esilondoloziwe kuso.
+
+Uma kungekho uxhumano olulondoloziwe, ingxenye engezansi yesikrini ayinalutho, futhi kuzodingeka uchofoza inkinobho ye-plus ukwakha olusha.
+Ungaphinda ulawule ezinye izingxenye zokulungiselelwa ukusuka kulesi sikrini ngokuchofoza ezinye izinketho zebha yamathuluzi noma zemenyu phezulu, isibonelo
+ukuhlela izilungiselelo ezivamile, noma ukungenisa nokuthumela izilungiselelo.
+
+Uma usunoxhumano olulondoloziwe, ungaxhuma kuseva ekude ngokulichofoza kanye. Uzophinda ube nokuzikhethela ukususa noma uluhlele ngokulichofoza isikhathi eside.
+
+Ekugcineni, ungasebenzisa inkundla yokuseshelwa Ukuxhumano ukuthola ngokushesha uxhumano ngokuhlunga uxhumano olubonisiwe."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Uma ungeza noma uhlela uxhumano, uzobona ikhasi lokulungiselelwa koxhumano.
+Lapha ungalungiselela uxhumano olusha lwe-Opaque noma ukhethe oluvele lukhona.
+Phezulu kukhona inkinobho ekuvumela ukuthi ulondoloze uxhumano.
+Ngezansi kungalapho ulungisa khona uxhumano lwakho.
+
+ - Uhlobo Loxhumano: Lapha ukhetha ukuthi uxhuma kumvelo yokuzenzela ethini.
+
+ - Ikheli Leseva: Igama lomsingathi noma i-IP yeseva. Uma ilalele kumbhobo ongavamile, ungangeza imbobo ehlukaniswe ngokucolon.
+
+ - Igama lomshini obonakalayo: Ungabeka igama le-VM njengoba libonakala kuphlatifomi yakho Yokuzenzela noma uyishiye ingenalutho le nkundla ukuthola uhlu lwe-VM noma iziqukathi ozozikhethela kuzo.
+
+ - Umsebenzisi: Faka igama lomsebenzisi ukuqinisekisa kuhlaka lakho lokuzenzela.
+
+ - Iphasiwedi: Uma ungathanda ukulondoloza iphasiwedi, yifake lapha noma uyishiye le nkundla ingenalutho ukubuzwa ngezikhathi zonke.
+
+ - Izilungiselelo ezithuthukile: Kulesi sigaba uzothola noma yiziphi izilungiselelo zedivayisi yendawo, ze-protocol, nokuthutha ukusebenza."
+    </string>
+    <string name="help">Usizo ⓘ</string>
+    <string name="need_help">Udinga usizo?</string>
+    <string name="support_forum">Isikhungo Sosizo ❓</string>
+    <string name="email_us">Sithumelele I-imeyili 📧</string>
+    <string name="report_bug">Bika Iphutha 🐛</string>
+    <string name="download_from_server">Landa Kuseva</string>
+    <string name="import_from_file">Ngenisa Kusuka Kufayela</string>
+    <string name="please_grant_permission_from_prefs">Kungase kudingeke ukuthi unikeze izimvume kuhlelo zokusebenza ngezilungiselelo.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Ukuloga Okwengeziwe Kokulungisa</string>
+    <string name="prefer_sending_unicode">Ukufaka i-Unicode (Windows kuphela)</string>
+    <string name="hide_connection_thumbnails">Fihla Izithombe Ezincane Zoxhumano</string>
+    <string name="show_only_connection_nicknames">Bonisa Iziteketiso Zoxhumano Kuphela</string>
+    <string name="love_our_work">Uthanda umsebenzi wethu?</string>
+    <string name="rate_app">Etha ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Yabelana 🔗</string>
+    <string name="share_app_toast">Yabelana ngexhumaniso lohlelo zokusebenza nabangane bakho bonke kumanetiwekhi abantu!</string>
+    <string name="donate_app">Nikela ❤</string>
+    <string name="more_apps">Izinhlelo Zokusebenza Ezengeziwe 📱</string>
+    <string name="previous_versions">Izinguqulo Ezedlule ⍼</string>
+    <string name="keyboard_type">Uhlobo Lwekhibhodi Yesofthiwe</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Okuvamile (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Umbhalo/Izinombolo Ngaphandle Kweziphakamiso (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Umbhalo Oneziphakamiso (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Lolu xhumano lusetelwe ukuqalisa i-VPN ngohlelo zokusebenza lwangaphandle. Udinga ukufaka uhlelo zokusebenza olufana ne-Morpheusly ukuluqalisa.</string>
+    <string name="vnc_viewer_started">Isibukeli se-VNC siqalisiwe</string>
+    <string name="enable_gateway">Vumela i-RDP Gateway</string>
+    <string name="scroll_speed">Isivinini Sokuskrola Ngokuthinta</string>
+    <string name="desktop_scale_percentage">Iphesenti Lokuskala Ngokwezifiso</string>
+    <string name="show_menu">Bonisa Imenyu</string>
+    <string name="move_toolbar">Hambisa Ibha Yamathuluzi</string>
+    <string name="rdp_adv_glyph_cache">Nika amandla i-Glyph Cache</string>
+    <string name="disable_battery_optimizations_failed">
+Ayikwazanga ukuvula izilungiselelo zokuthuthukisa ibhethri. Khubaza ukulungiselelwa kwebhethri mathupha kuzilungiselelo zohlelo.</string>
+    <string name="disable_battery_optimizations">
+🔋Khubaza Ukulungiselelwa Kwebhethri</string>
+    <string name="disable_battery_optimizations_already_done">
+Uhlelo lokusebenza seluvele lukhululiwe ekulungiselelweni kwebhethri.</string>
+    <string name="no_connections_title">Ayikho imiqhagamshelwano okwamanje</string>
+    <string name="no_connections_hint">Thinta inkinobho + ukwengeza ukuxhumana kwakho kokuqala okulawulwa ngekude</string>
+    <string name="no_connections_hint_tv">Cindezela inkinobho + engenhla ukwengeza ukuxhumana kwakho kokuqala okulawulwa ngekude</string>
+    <string name="keyboard_layout_map">Ukuhlela Ikhibhodi</string>
+</resources>

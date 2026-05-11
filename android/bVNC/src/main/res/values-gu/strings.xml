@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">ઑડિયો લગભગ 15 સેકન્ડમાં પ્રારંભ થશે, કૃપા કરીને તે પહેલાં કોઈ પણ ચાલુ વિડિઓ અથવા ઑડિયો પ્લેબૅક બંધ કરો</string>
+    <string name="audio_initialized">ઑડિયો પ્રારંભ થયો</string>
+    <string name="action_import_settings">સેટિંગ્સ આયાત કરો</string>
+    <string name="action_new_connection">✚ નવું કનેક્શન</string>
+    <string name="action_edit_default_settings">⚙ મૂળભૂત સેટિંગ્સ સંપાદિત કરો</string>
+    <string name="action_export_settings">સેટિંગ્સ નિકાસ કરો</string>
+    <string name="action_delete_connection">કનેક્શન કાઢી નાખો</string>
+    <string name="action_rate_or_share_app">⭐ સહાય મેળવો, રેટ કરો, શેર કરો</string>
+    <string name="get_help">સહાય મેળવો</string>
+    <string name="advanced_settings">અદ્યતન સેટિંગ્સ</string>
+    <string name="audio">ઑડિયો</string>
+    <string name="auto_rotation">કનેક્ટ હોય ત્યારે સ્ક્રીન રોટેશન</string>
+    <string name="auto_request_new_res">રિમોટને ડિસ્પ્લે રિઝોલ્યૂશન સાથે સિંક કરો</string>
+    <string name="custom_ca_subject">વૈકલ્પિક સર્ટ સબ્જેક્ટ. જો cert CN હોસ્ટનેમ સાથે મેળ ખાય તો જરૂરી નથી</string>
+    <string name="custom_ca_import">વૈકલ્પિક રીતે, તમારી CA નો સંપૂર્ણ પાથ દાખલ કરો અને Import પર ટૅપ કરો</string>
+    <string name="custom_ca_paste">CA અહીં પેસ્ટ કરો (જો આયાત ન કરતા હો તો)</string>
+    <string name="ca_ovirt_use_custom">કસ્ટમ RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">SPICE માટે RHEV/oVirt CA વાપરો</string>
+    <string name="ca_ovirt_manage">RHEV/oVirt CA મૅનેજ કરો</string>
+    <string name="ca_spice_manage">SPICE CA મૅનેજ કરો</string>
+    <string name="ca_file_not_found">ફાઇલ મળી નહીં. કૃપા કરીને ટેક્સ્ટ ફીલ્ડમાં માન્ય ફાઇલ નામ દાખલ કરો (દા.ત. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">CA ફાઇલ વાંચવામાં ભૂલ. કૃપા કરીને ખાતરી કરો કે તે વાંચી શકાય છે.</string>
+    <string name="ca_new_or_changed">નવું અથવા બદલાયેલ સર્વર સર્ટિફિકેટ</string>
+    <string name="connection_type_text">વર્ચ્યુઅલાઇઝેશન પર્યાવરણ (RHEV/oVirt અથવા Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">વર્ચ્યુઅલ મશીનનું નામ (વૈકલ્પિક)</string>
+    <string name="connection_setup_host_name">સર્વર સરનામું</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="connection_setup_password">પાસવર્ડ</string>
+    <string name="enter_password">કૃપા કરીને પાસવર્ડ દાખલ કરો</string>
+    <string name="enter_password_auth_failed">પ્રમાણીકરણ નિષ્ફળ. કૃપા કરીને તમારી ઓળખપત્ર ફરીથી દાખલ કરો.</string>
+    <string name="enter_otp_code">કૃપા કરીને OTP કોડ દાખલ કરો</string>
+    <string name="hide_toolbar">ટૂલબાર છુપાવો</string>
+    <string name="manage_custom_ca_title">કસ્ટમ CA મૅનેજ કરો</string>
+    <string name="save_button">સાચવો</string>
+    <string name="select_vm_title">વર્ચ્યુઅલ મશીન પસંદ કરો</string>
+    <string name="vv_file_not_found">.vv ફાઇલ મળી નહીં!</string>
+    <string name="vv_file_error">.vv ફાઇલ ખૂટે છે અથવા ભ્રષ્ટ છે!</string>
+    <string name="info_cert">શું તમે આ નવા અથવા બદલાયેલ હોસ્ટ સર્ટિફિકેટ સ્વીકારો છો?\n\nફિંગરપ્રિન્ટ્સ:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nજારી કરવામાં આવ્યું: %4$s\nજારી કરનાર: %5$s\n\nથી માન્ય: %6$s\nસુધી માન્ય: %7$s\n</string>
+    <string name="toggle_keyboard">કીબોર્ડ ટૉગલ કરો</string>
+    <string name="show_keyboard">કીબોર્ડ બતાવો</string>
+    <string name="scroll_wheel">સ્ક્રોલ વ્હીલ</string>
+    <string name="input_method_help">ઇનપુટ પદ્ધતિ સહાય</string>
+    <string name="ok">ઠીક</string>
+    <string name="input_methods">ઇનપુટ પદ્ધતિ</string>
+    <string name="error_failed_to_download_http">HTTP દ્વારા ફાઇલ ડાઉનલોડ કરવામાં નિષ્ફળ. કદાચ તમારો સર્વર પહોંચી શકાતો નથી.</string>
+    <string name="error_failed_to_download_https">HTTPS દ્વારા ફાઇલ ડાઉનલોડ કરવામાં નિષ્ફળ. કદાચ તમારા સર્વર સર્ટ પર વિશ્વાસ નથી (એક્સ્પાયર્ડ અથવા સ્વ-સહી) અથવા તમારો સર્વર પહોંચી શકાતો નથી.</string>
+    <string name="error_failed_to_obtain_content">ફાઇલ મેળવવામાં નિષ્ફળ. કૃપા કરીને તેને ફરીથી ડાઉનલોડ કરો, પરંતુ આ વખતે ફાઇલ મૅનેજરમાં ડાઉનલોડ ફોલ્ડરમાંથી ઝડપથી ખોલો.</string>
+    <string name="error_failed_to_obtain_file">ફાઇલ શોધવામાં નિષ્ફળ. કૃપા કરીને તેને ફરીથી ડાઉનલોડ કરો, પરંતુ આ વખતે નૉટિફિકેશન વિસ્તારમાંથી અથવા સીધા બ્રાઉઝરમાંથી ખોલવાનો પ્રયાસ કરો.</string>
+    <string name="error_dialog_title">ભૂલ</string>
+    <string name="info_dialog_title">માહિતી</string>
+    <string name="info_vm_launched_on_stand_by">તમારો VM બંધ હાલતમાં મળ્યો અને શરૂ કરવામાં આવ્યો. કૃપા કરીને થોડી મિનિટ રાહ જોઈ ફરી પ્રયાસ કરો. જો વહેલા પ્રયાસ કરો અને કનેક્શન નિષ્ફળ થાય, તો પછીથી ફરી પ્રયાસ કરો.</string>
+    <string name="error_no_vm_found_for_user">આ વપરાશકર્તા માટે કોઈ ઉપલબ્ધ વર્ચ્યુઅલ મશીન નથી.</string>
+    <string name="error_no_such_vm_found_for_user">આ ID ધરાવતો VM આ વપરાશકર્તા માટે મળ્યો નહીં. VMsની સૂચિ મેળવવા ID ભૂંસી નાખો.</string>
+    <string name="error_no_vnc_support_yet">VNC ડિસ્પ્લે પ્રકાર હજી સમર્થિત નથી, પરંતુ તે આગામી સુવિધા છે. તમારી સમજ માટે આભાર!</string>
+    <string name="error_not_connected_to_network">તમે ઇન્ટરનેટ સાથે કનેક્ટ નથી. કનેક્ટ થયા વિના આગળ વધી શકાતું નથી!</string>
+    <string name="error_ovirt_timeout">તમારા VM સાથેનું કનેક્શન ટાઇમ આઉટ થયું. કૃપા કરીને ખાતરી કરો કે VM ચલાવતા નોડનું સરનામું સાચું છે, તે તમારા નેટવર્કથી પ્રાપ્ય છે, અને કોઈ ફાયરવૉલ કનેક્શન અવરોધી રહ્યો નથી.</string>
+    <string name="error_ovirt_auth_failure">પ્રમાણીકરણ નિષ્ફળ. કૃપા કરીને આપેલ વપરાશકર્તા અને પાસવર્ડ તપાસો.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL હૅન્ડશેક નિષ્ફળ. સર્વર SSL સર્ટિફિકેટ સાથે સમસ્યા છે. જો સ્વ-સહી સર્ટ વાપરતા હો, તો (ફરીથી) તમારી certificate authority આયાત કરો.</string>
+    <string name="error_pve_failed_to_authenticate">Proxmox Virtual Environment પ્રમાણીકરણ નિષ્ફળ. ખાતરી કરો કે user@realm ફોર્મેટ વાપરો અને પાસવર્ડ સાચો છે.</string>
+    <string name="error_pve_failed_to_parse_json">Proxmox Virtual Environment ના જવાબ parse કરવામાં નિષ્ફળ.</string>
+    <string name="error_pve_vmid_not_numeric">VM ID સંખ્યાત્મક નથી. કૃપા કરીને સંખ્યાત્મક VM ID દાખલ કરો અથવા સૂચિમાંથી VM પસંદ કરવા ખાલી છોડો.</string>
+    <string name="error_pve_api_unexpected_code">Proxmox Virtual Environment તરફથી અણધાર્યો જવાબ: </string>
+    <string name="error_pve_api_io_error">Proxmox Virtual Environment સાથે કનેક્શન નિષ્ફળ: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment એ null ડેટા પાઠવ્યો.</string>
+    <string name="error_pve_timeout_communicating">Proxmox Virtual Environment સાથે સંવાદ ટાઇમ આઉટ.</string>
+    <string name="error_vm_lookup_failed">તમારા વપરાશકર્તાને સોંપાયેલ આ નામ ધરાવતો VM મળ્યો નહીં. VM ની સૂચિ જોવા VM નામ ભૂંસી નાખો.</string>
+    <string name="error_vv_download_timeout">vv ફાઇલ ડાઉનલોડ ટાઇમ આઉટ.</string>
+    <string name="message_please_wait">કૃપા કરીને રાહ જુઓ</string>
+    <string name="message_please_install_bvnc">આ VM ના VNC કન્સોલ સાથે કનેક્ટ કરવા Google Play માંથી &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> ઇન્સ્ટૉલ કરો.</string>
+    <string name="ssl_strict">common name ને cert સાથે મેળ ખાવા ફરજ પાડો (ભલામણ)</string>
+    <string name="usb">USB (પહેલાં OTG કેબલ ભરાવો)</string>
+    <string name="ad_donate_text0">Pro આવૃત્તિ multi-factor SSH પ્રમાણીકરણ સમર્થન ધરાવે છે. ઉપરાંત, તે Master Password સુવિધા સમર્થે છે જે અનધિકૃત ઉપયોગ રોકે છે અને ચોરી સામે રક્ષણ માટે પાસવર્ડ અને SSH કી સહિત બધી કનેક્શન સેટિંગ્સ એન્ક્રિપ્ટ કરે છે. મુખ્ય મેનૂ માંથી સક્ષમ કરો.</string>
+    <string name="ad_donate_spice_text1a">Opaque ખરીદવા અને Proxmox અને oVirt સાથે સીધા કનેક્શન સાચવવા અહીં ટૅપ કરો. .vv ફાઇલ્સ પણ સમર્થ છે.</string>
+    <string name="ad_donate_spice_text1b">Pro આવૃત્તિ ખરીદવા અને ફક્ત .vv ફાઇલ્સ ખોલવા અહીં ટૅપ કરો.</string>
+    <string name="ad_donate_text1">Pro આવૃત્તિ ખરીદીને નાના દાન સાથે પ્રોજેક્ટ સમર્થન કરવા અહીં ટૅપ કરો.</string>
+    <string name="ad_donate_text2">Pro આવૃત્તિ તમને આ ડાયલૉગ અક્ષમ કરવા અને વધારાની સુવિધાઓ ઍક્સેસ કરવા દે છે.</string>
+    <string name="ad_donate_text3">જો તમે પ્રોજેક્ટ વધુ સમર્થ કરવા ઇચ્છો, તો ક્લાયન્ટ ઍપ્સ માટેની લિંક્સ અહીં જુઓ: </string>
+    <string name="ad_donate_text_vnc">ઑપન સોર્સ પ્રોજેક્ટ ને તમારા સમર્થ ની જરૂર છે! bVNC Pro ખરીદીને દાન કરો. bVNC Pro અને અન્ય ઍપ્સ ની લિંક્સ નીચે જુઓ.</string>
+    <string name="ad_donate_text_rdp">ઑપન સોર્સ પ્રોજેક્ટ ને તમારા સમર્થ ની જરૂર છે! aRDP Pro ખરીદીને દાન કરો, જે સાઉન્ડ રીડાયરેક્શન સમર્થ છે. aRDP Pro અને અન્ય ઍપ્સ ની લિંક્સ નીચે જુઓ.</string>
+    <string name="ad_donate_text_spice">Proxmox અને oVirt કનેક્શન માટે, Opaque અથવા aSPICE Pro ખરીદીને પ્રોજેક્ટ ને દાન કરો. aSPICE ની ફ્રી આવૃત્તિ ફક્ત KVM વર્ચ્યુઅલ મશીનો સાથે સીધા કનેક્શન સમર્થ છે. Opaque અને aSPICE Pro ની લિંક્સ, તેમ જ અન્ય ઍપ્સ, નીચે જુઓ.</string>
+    <string name="address_caption">VNC સર્વર</string>
+    <string name="address_caption_hint">VNC સર્વર</string>
+    <string name="address_caption_hint_tunneled">VNC સર્વર</string>
+    <string name="address_caption_ssh">SSH સર્વર</string>
+    <string name="address_caption_ssh_hint">SSH સર્વર</string>
+    <string name="alt_check">Alt</string>
+    <string name="arrow_down">નીચે તીર</string>
+    <string name="arrow_left">ડાબે તીર</string>
+    <string name="arrow_right">જમણે તીર</string>
+    <string name="arrow_up">ઉપર તીર</string>
+    <string name="auto">ઑટો</string>
+    <string name="auto_x_cancel">રદ કરો</string>
+    <string name="auto_x_caption">એપ્લિકેશન Linux/UNIX સિસ્ટમ્સ પર આપોઆપ હાલની X સૅશન શોધી અને નવી X સૅશન બનાવી શકે છે (NX ની જેમ). તમારે x11vnc શોધ માટે, અને Xvfb, Xvnc, અથવા Xdummy સૅશન બનાવવા માટે જોઈએ. જો કનેક્ટ કરવામાં સમસ્યા આવે, AutoX Advanced Settings માં ચોક્કસ Remote Session Type પસંદ કરો.</string>
+    <string name="auto_x_confirm">પુષ્ટિ કરો</string>
+    <string name="auto_x_descript_geom">રિમોટ ડેસ્કટૉપ સાઇઝ (WxH)</string>
+    <string name="auto_x_descript_session">રિમોટ સૅશન પ્રકાર</string>
+    <string name="auto_x_disabled">અક્ષમ</string>
+    <string name="auto_x_disabled_selection">AutoX અક્ષમ</string>
+    <string name="auto_x_enabled">સક્ષમ</string>
+    <string name="auto_x_find">ફક્ત શોધો, બનાવો નહીં</string>
+    <string name="auto_x_find_login">X લૉગિન શોધો (sudo જોઈએ)</string>
+    <string name="auto_x_geom_custom">કસ્ટમ</string>
+    <string name="auto_x_geom_native">નૅટિવ</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">ઑટો</string>
+    <string name="auto_x_session_custom">કસ્ટમ</string>
+    <string name="auto_x_title">AutoX ગોઠવો</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">આપેલ SSH Username/Password વાપરી આપોઆપ પ્રમાણીકૃત કરો (કાળી લૉગિન સ્ક્રીન પર).</string>
+    <string name="auto_x_unixpw">બિલ્ટ-ઇન સુરક્ષા મિકેનિઝ્મ ને બદલે UNIX ઓળખપત્ર વાપરો. વપરાશકર્તા /bin/su ચલાવી શકવો જોઈએ.</string>
+    <string name="auto_x_xdummy">Xdummy સાથે શોધો અથવા બનાવો</string>
+    <string name="auto_x_xvfb">Xvfb સાથે શોધો અથવા બનાવો</string>
+    <string name="auto_x_xvnc">Xvnc સાથે શોધો અથવા બનાવો</string>
+    <string name="button_send_text">ટેક્સ્ટ મોકલો</string>
+    <string name="button_send_without_saving">ટેક્સ્ટ મોકલો/સાચવો નહીં</string>
+    <string name="center_mouse">Mouse @</string>
+    <string name="close">બંધ કરો</string>
+    <string name="color_format_caption">કલર મોડ</string>
+    <string name="color_mode">કલર મોડ</string>
+    <string name="connect_button">કનેક્ટ</string>
+    <string name="back_button">પાછા જાઓ</string>
+    <string name="update_button">અપડેટ</string>
+    <string name="connection_caption">કનેક્શન</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">કનેક્શન પ્રકાર</string>
+    <string name="connection_type_rdp_over_ssh">RDP over SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE over SSH</string>
+    <string name="connection_type_vnc">Basic VNC</string>
+    <string name="connection_type_vnc_over_ssh">Secure VNC over SSH</string>
+    <string name="connection_type_vnc_over_ssl">Secure VNC over AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Secure VNC over SSL Tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">Secure VNC over VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">શું તમે કનેક્શન સંપાદિત અથવા કાઢી નાખવા ઇચ્છો છો</string>
+    <string name="connection_edit">સંપાદિત કરો</string>
+    <string name="connection_delete">કાઢી નાખો</string>
+    <string name="control_check">Ctrl</string>
+    <string name="copy_list_button">સૂચિ કૉપિ કરો</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="default_input_mode">મૂળભૂત ઇનપુટ મોડ</string>
+    <string name="delete_connection">કનેક્શન કાઢી નાખો</string>
+    <string name="delete_key">પસંદ કરેલ કી કાઢી નાખો</string>
+    <string name="delete_key_list">કી સૂચિ કાઢી નાખો</string>
+    <string name="disconnect">ડિસ્કનેક્ટ</string>
+    <string name="dpad_as_arrows">તીર માટે D-Pad વાપરો અને Ctrl માટે D-Pad ક્લિક.</string>
+    <string name="enable_recording">રેકૉર્ડિંગ સક્ષમ કરો</string>
+    <string name="enable_sound">સાઉન્ડ સક્ષમ કરો</string>
+    <string name="enter_text">ટેક્સ્ટ મોકલો</string>
+    <string name="enter_text_title">મોકલવા માટે ટેક્સ્ટ દાખલ કરો</string>
+    <string name="error_anon_dh_unsupported">VNC સર્વર Anonymous Diffie Hellman સાઇફર્સ વાપરવા પ્રયાસ કરી રહ્યો છે જે તમારા Android ઉપકરણ પર સમર્થ નથી. GNOME ના Vino VNC સર્વર ઉપયોગ કરો ત્યારે, ટર્મિનલ માં આ કૅમ્ડ ચલાવી અને ફરી ચાલુ કરીને AnonTLS અક્ષમ કરી શકો: \"gsettings set org.gnome.Vino require-encryption false\". x11vnc ચલાવો ત્યારે, આ વિકલ્પો ઉમેરી શકો: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">કનેક્શન નિષ્ફળ.</string>
+    <string name="error_connection_interrupted">કનેક્શન અવરોધ.</string>
+    <string name="error_no_user_hostname">કૃપા કરીને ઓછામાં ઓછો વપરાશકર્તા અને hostname અથવા IP સરનામું દાખલ કરો.</string>
+    <string name="error_out_of_memory">રિમોટ સ્ક્રીન દોરવા પૂરતી મેમરી ફાળવી શક્યા નહીં. ઍપ્લિકેશન ફરી ચાલુ કરો, પછી ઉપકરણ ફરી ચાલુ કરો. ઍપ સેટિંગ્સ દ્વારા રિમોટ ડેસ્કટૉપ સાઇઝ ઘટાડવાનો પ્રયાસ પણ કરી શકો.</string>
+    <string name="error_ovirt_unable_to_connect">કનેક્ટ અથવા પ્રમાણ નથી કરી શકાતું, કૃપા કરીને સર્વર સરનામું, વપરાશકર્તા, પાસવર્ડ, અને cert authority અને subject તપાસો.</string>
+    <string name="error_pick_correct_item">કૃપા કરીને ખાતરી કરો કે Connection Type માં સાચી આઇટમ પસંદ કરી.</string>
+    <string name="error_rdp_authentication_failed">RDP પ્રમાણીકરણ નિષ્ફળ! RDP username અને password તપાસો અને ફરી પ્રયાસ કરો.</string>
+    <string name="error_rdp_connection_failed">RDP કનેક્શન નિષ્ફળ! નેટવર્ક કનેક્ટિવિટી અવરોધ, RDP સર્વર બંધ અથવા અક્ષમ, અથવા તમારી સૅશન ટેઇક ઓવર થઈ.</string>
+    <string name="error_rdp_unable_to_connect">RDP સર્વર સાથે કનેક્ટ ન થઈ શક્યા! ખાતરી કરો કે RDP Server સેટિંગ સાચી છે, સર્વર ચાલુ છે, RDP સક્ષમ છે, અને સર્વર આ ઉપકરણ જેવા નેટવર્ક પર છે.</string>
+    <string name="error_security_type">સર્વરે સમર્થ સુરક્ષા પ્રકાર ઑફર ન કર્યો.</string>
+    <string name="error_spice_unable_to_connect">કનેક્ટ અથવા પ્રમાણ નથી કરી શકાતું, કૃપા કરીને સર્વર સરનામું અને પૉર્ટ તપાસો.</string>
+    <string name="error_ssh_could_not_exec_command">રિમોટ કૅમ્ડ ચલાવી ન શક્યા.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">sudo પાસવર્ડ મોકલી ન શક્યા.</string>
+    <string name="error_ssh_hostkey_changed">ભૂલ! સર્વર host key બદલાઈ. જો આ ઇરાદાપૂર્વક છે, તો ચાલુ રાખી શકો. નહીંતર, આ man in the middle attack હોઈ શકે.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH સર્વર \"password\" કે \"keyboard-interactive\" auth પદ્ધતિ સમર્થ નથી, અથવા પ્રથમ \"publickey\" પદ્ધતિ ફરજ પાડે છે. ઓછામાં ઓછી એક પ્રકારની પ્રમાણ પ્રક્રિયા સ્વીકારવા ગોઠવો, અથવા ઍપ્લિકેશન ફરીથી ગોઠવો. ઉપલબ્ધ auth પદ્ધતિઓ: </string>
+    <string name="error_ssh_key_auth_fail">key-pair વડે SSH સર્વર પ્રમાણ નિષ્ફળ. SSH username તપાસો, અને ખાતરી કરો કે public key રિમોટ સર્વર ની authorized_keys ફાઇલ માં છે.</string>
+    <string name="error_ssh_keypair_decryption_failure">key-pair ડીક્રિપ્ટ કરવામાં નિષ્ફળ. ખાતરી કરો કે \'SSH Passphrase\' ફીલ્ડ માં passphrase સાચી રીતે દાખલ કરી.</string>
+    <string name="error_ssh_keypair_missing">SSH key-pair હજી ઉત્પન્ન ન થઈ! કૃપા કરીને ઉત્પન્ન કરો અને SSH સર્વર ના authorized_keys માં (public ભાગ) મૂકો.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Passphrase આપ્યો પણ key-pair એન્ક્રિપ્ટ નથી. passphrase ભૂંસી નાખો.</string>
+    <string name="error_ssh_port_forwarding_failure">SSH ટ્યૂનલ ઉપર VNC ટ્રૅફિક માટે port forwarding ગોઠવી ન શક્યા. ખાતરી કરો SSH સર્વર port forwarding ની મંજૂરી આપે છે અને ફરી પ્રયાસ કરો.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH સર્વર \"publickey\" auth પદ્ધતિ સમર્થ નથી, અને અમે key-pair વડે authenticate કરવા પ્રયાસ કરી રહ્યા છીએ. publickey authentication ની મંજૂરી આપવા ગોઠવો અને ફરી પ્રયાસ કરો. ઉપલબ્ધ auth પદ્ધતિઓ: </string>
+    <string name="error_ssh_pwd_auth_fail">password વડે SSH સર્વર પ્રમાણ નિષ્ફળ. SSH username અને SSH password તપાસો.</string>
+    <string name="error_ssh_unable_to_connect">SSH સર્વર સાથે કનેક્ટ ન થઈ શક્યા. નેટવર્ક કનેક્ટિવિટી, SSH Server સરનામું અને port તપાસો.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">x11vnc થી રિમોટ VNC port મેળવી ન શક્યા. ખાતરી કરો x11vnc ઇન્સ્ટૉલ છે. ખાતરી માટે command-line ઉપર x11vnc હાથ વડે ચલાવો.</string>
+    <string name="error_uri_noinfo_nosave">કનેક્ટ કરવા પૂરતી માહિતી ઉલ્લેખ ન થઈ.</string>
+    <string name="error_uri_parse_error">Intent URI parse ન થઈ શક્યો. URI ફૉર્મેટ તપાસો. device logcat માં વધુ વિગત જોઈ શકો.</string>
+    <string name="error_vnc_authentication">VNC authentication નિષ્ફળ! VNC password (અને લાગુ પડે ત્યારે user) તપાસો.</string>
+    <string name="error_vnc_unable_to_connect">"VNC સર્વર સાથે કનેક્શન કારણ સાથે નિષ્ફળ: "</string>
+    <string name="error_x509_could_not_generate_encoding">Certificate encoding ઉત્પન્ન ન થઈ શક્યી.</string>
+    <string name="error_x509_could_not_generate_signature">Certificate ની SHA1 અથવા MD5 signature ઉત્પન્ન ન થઈ. SHA1/MD5 algorithm મળ્યો નહીં.</string>
+    <string name="export_settings">નિકાસ</string>
+
+    <string name="extra_keys_disable">Extra Keys અક્ષમ કરો</string>
+    <string name="extra_keys_enable">Extra Keys સક્ષમ કરો</string>
+    <string name="fit_to_screen">સ્ક્રીન ને ફિટ કરો</string>
+    <string name="force">ફૂલસ્ક્રીન Bitmap</string>
+    <string name="immersive_mode_disable">Immersive Mode અક્ષમ કરો</string>
+    <string name="import_export_settings">📦 સેટિંગ્સ આયાત/નિકાસ</string>
+    <string name="import_settings">આયાત</string>
+
+    <string name="info">માહિતી</string>
+    <string name="info_cert_signatures">"Certificate ની માહિતી: "</string>
+    <string name="info_cert_signatures_identical">\n\nman-in-the-middle attack અટકાવવા ખાતરી કરો કે માહિતી સર્વર certificate સાથે મેળ ખાય.</string>
+    <string name="info_cert_tunnel">શું તમે નીચેના certificate વડે ઓળખાતા host સાથે કનેક્ટ કરવા ઇચ્છો છો?\n\nFingerprint: %1$s\n\nજારી કરવામાં આવ્યું:\n%2$s\n\nજારી કરનાર:\n%3$s\n\nથી માન્ય:\n%4$s\n\nસુધી માન્ય:\n%5$s\n\nનૉધ: ઍપ્લિકેશન certificate authorities ચકાસતી નથી કે certificate revocation તપાસતી નથી.</string>
+    <string name="info_continue_connecting">"સાથે કનેક્ટ ચાલુ રાખો: "</string>
+    <string name="info_encoding">" encoding, "</string>
+    <string name="info_progress_dialog_aborted">કનેક્શન રદ!</string>
+    <string name="info_progress_dialog_connecting">કનેક્ટ થઈ રહ્યા છે…</string>
+    <string name="info_progress_dialog_downloading">પ્રથમ ફ્રેમ ડાઉનલોડ.\nકૃપા રાહ જુઓ…</string>
+    <string name="info_progress_dialog_establishing">Handshake સ્થાપિત કરી રહ્યા.\nકૃપા રાહ જુઓ…</string>
+    <string name="info_ssh_initializing_hostkey">SSH HostKey initialize કરવાનો પ્રયાસ.</string>
+    <string name="info_ssh_key_fingerprint">"Host key fingerprint: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nman-in-the-middle attack અટકાવવા ખાતરી કરો કે તે સર્વર certificate ની જાણીતી fingerprint સાથે સરખી છે.</string>
+    <string name="info_update_color_model_to">"Color Model અપડેટ: "</string>
+    <string name="input_method_direct_drag_pan_description">ડાઇરેક્ટ, Hold Pan: ખેંચ-છોડ માટે સ્વાઇપ. left-click માટે એક આંગળી ટૅપ, right-click માટે બે, middle-click માટે ત્રણ. સ્ક્રૉલ માટે બે આંગળી સ્વાઇપ. panning શરૂ કરવા long tap.</string>
+    <string name="input_method_direct_swipe_pan_description">ડાઇરેક્ટ, Swipe Pan: ફેરવવા સ્વાઇપ. left-click માટે એક આંગળી ટૅપ, right-click માટે બે, middle-click માટે ત્રણ. સ્ક્રૉલ માટે બે આંગળી સ્વાઇપ. ખેંચ-છોડ માટે long tap.</string>
+    <string name="input_method_single_handed_description">Single Handed: ફેરવવા સ્વાઇપ. left-click માટે એક આંગળી ટૅપ. left/right/middle drag/scroll/zoom મોડ પસંદ કરવા long tap. સામાન્ય multi-touch controls પણ કામ કરે.</string>
+    <string name="input_method_touchpad_description">Simulated Touchpad: pointer ખસેડવા સ્વાઇપ. left-click માટે ગમે ત્યાં એક આંગળી ટૅપ, right-click માટે બે, middle-click માટે ત્રણ. સ્ક્રૉલ માટે બે આંગળી સ્વાઇપ. ખેંચ-છોડ માટે long tap.</string>
+    <string name="input_mode">ઇનપુટ મોડ</string>
+    <string name="input_mode_fit_to_screen">Pan નહીં; Trackball Mouse</string>
+    <string name="input_mode_panning">Desktop Panning Mode</string>
+    <string name="input_method_mouse">Mouse Pointer Control</string>
+    <string name="input_method_direct_swipe_pan">ડાઇરેક્ટ, Swipe Pan</string>
+    <string name="input_method_direct_drag_pan">ડાઇરેક્ટ, Hold Pan</string>
+    <string name="input_method_single_handed">Single Handed</string>
+    <string name="input_method_touchpad">Simulated Touchpad</string>
+    <string name="input_mode_help">ઇનપુટ મોડ સહાય</string>
+    <string name="input_mode_help_text">"
+કોઈ પણ Input Mode માં, on-screen keyboard મેળવવા keyboard icon ટૅપ કરો. ઉપરાંત, તમારા ઉપકરણ ની પોતાની gesture keyboard ઉઠાવી શકે.
+
+Direct input modes વધારે સ્વાભાવિક touch-screen control માટે વાપરો. mouse પર ઝીણો control માટે Simulated Touchpad Mode વાપરો.
+
+Direct, Swipe Pan Mode:
+ - touch દ્વારા mouse સીધો control.
+ - ફેરવવા સ્વાઇપ.
+ - ટૅપ કરવાથી ટૅપ કર્યા ત્યાં mouse click.
+ - Scroll events બે આંગળી swipe શરૂ ત્યાં મોકલાય.
+
+Direct, Hold Pan Mode:
+ - touch દ્વારા mouse સીધો control.
+ - pan mode શરૂ કરવા Long-tap.
+ - ટૅપ કરવાથી ટૅપ કર્યા ત્યાં mouse click.
+ - Scroll events બે આંગળી swipe શરૂ ત્યાં મોકલાય.
+
+Simulated Touchpad Mode:
+ - screen ને touchpad ની જેમ વાપરો.
+ - mouse pointer ખસેડવા સ્વાઇપ.
+ - pointer ને screen ની ધારથી આગળ ખસેડો pan માટે.
+ - ટૅપ કરવાથી pointer હોય ત્યાં mouse click.
+ - Scroll events mouse pointer ની જગ્યાએ મોકલાય.
+
+Single Handed Mode:
+ - Direct, Swipe Pan Mode જેવો, Long-tap menu ખોલે modes ની પસંદ સાથે.
+ - mode પસંદ પછી, screen પર swipe selected gesture perform કરે.
+ - આંગળી ઉઠાવવાથી gesture પૂર્ણ.
+
+All Input Modes:
+ - Left-click: એક વાર ટૅપ.
+ - Double-click: Double-tap.
+ - Right-click: Tap-hold અને બીજી આંગળી (screen ક્ય ત્યાં) ટૅપ.
+ - Alternate Right-click: ઉપકરણ નો \"Back\" button અથવા gesture.
+ - Middle-click: Tap-hold અને બે વધુ આંગળી (screen ક્ય ત્યાં) ટૅપ.
+ - Mouse-drag: Tap-hold-long અને swipe.
+ - Scroll-wheel: Two-finger drag up/down and left/right. ઝડપી drag ઝડપથી scroll.
+ - Zoom in/out: Zoomable scaling માં, zoom control માટે pinch-zoom.
+ - Ctrl/Alt key: Menu-&gt;Ctrl/Alt buttons. ઉપયોગ પૂર્ણ ત્યારે toggle off કરવાનું ભૂલશો નહીં!
+ - Key combos: Menu-&gt;More-&gt;Send Keys.
+ - Send text: on-screen keyboard ઉપર ટાઇપ કરો, અથવા Menu-&gt;More-&gt;Send Text."</string>
+    <string name="intro_close">બંધ કરો</string>
+    <string name="intro_dont_show">ફરી બતાવો નહીં</string>
+
+    <string name="intro_text">
+bVNC ની સુવિધાઓ ની વર્તમાન સૂચિ:
+&lt;br&gt;
+- Plain VNC, Secure VNC over SSH, AnonTLS, અને VeNCrypt, અને UltraVNC Windows Logon with optional Repeater.
+&lt;br&gt;
+- AutoX mode: VNC over SSH mode માં, x11vnc ઉપયોગ કરી આપોઆપ X-sessions શોધો/બનાવો! NX client ની જેમ.
+&lt;br&gt;
+- ફ્રી rotation support. જરૂર પડ્યે Operating System ઉપર rotation મર્યાદા.
+&lt;br&gt;
+- SSH Public/Private key-pair generation અને export.
+&lt;br&gt;
+- બધા standard VNC encodings, Tight, ZRLE, અને CopyRect સહિત.
+&lt;br&gt;
+- આપોઆપ Session saving.
+&lt;br&gt;
+- Zoomable, Fit to Screen, અને One to One scaling modes.
+&lt;br&gt;
+- Direct અને Simulated Touchpad input modes માં remote mouse ઉપર Multi-touch control.
+&lt;br&gt;
+- Single-Handed input mode માં remote mouse ઉપર Full single-handed control.
+&lt;br&gt;
+- Multi-touch mouse clicks: Left-click માટે tap, right-click માટે two-finger tap, middle click માટે three-finger-tap.
+&lt;br&gt;
+- Multi-touch scrolling: scroll માટે two finger drag Up/Down, અને Left/Right.
+&lt;br&gt;
+- On-screen meta અને arrow keys જે menu અથવા on-screen button ઉપરથી સંપૂર્ણ અક્ષમ કરી શકો.
+&lt;br&gt;
+- Connected હોય ત્યારે Text અને arbitrary Key combinations મોકલો.
+&lt;br&gt;
+- કનેક્શન સ્ક્રીન માં connections બનાવવા સહાય (\"Menu-&gt;Connection Help\").
+&lt;br&gt;
+- Connected હોય ત્યારે input modes સહાય (\"Menu-&gt;More-&gt;Input Mode Help\").
+&lt;br&gt;
+- mouse ખસેડવા ને બદલે Arrows તરીકે trackpad ઉપયોગ, અને Ctrl તરીકે trackpad click.
+&lt;br&gt;
+- connections દરમ્યાન portrait mode પર switch, BT keyboards માટે D-pad/trackpad rotate.
+&lt;br&gt;
+- Multi-language support, VNC server ઉપર ભાષા layout active હોય ત્યાં સુધી.
+&lt;br&gt;
+- Copy/Paste integration
+&lt;br&gt;
+- Remote machine resolution changes
+&lt;br&gt;
+- Android 4.0+ devices ઉપર Full mouse support, right અને middle click અને scroll wheel સહિત.
+&lt;br&gt;
+&lt;br&gt;
+જાણીતી સમસ્યાઓ:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: સ્વાભાવિક, સુરક્ષિત VNC client</string>
+
+    <string name="keep_password_button">રાખો</string>
+    <string name="keep_screen_awake_enable">સ્ક્રીન જાગ્રત રાખો</string>
+    <string name="keys_caption">Keys</string>
+    <string name="landscape_force">Landscape Orientation ફૉર્સ</string>
+    <string name="left_handed_mode">Left-Handed Mode</string>
+    <string name="disable_pointer_offset_correction">Pointer offset correction અક્ષમ</string>
+    <string name="list_caption">સૂચિ</string>
+    <string name="list_name_caption">સૂચિ નામ</string>
+    <string name="local_mouse_check">સ્થાનિક mouse pointer (pointer અદ્રશ્ય હોય ત્યારે પસંદ)</string>
+    <string name="main_screen_help">Connection Help</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+જ્યારે તમે connection ઉમેરો અથવા edit કરો, ત્યારે connection configuration page દેખાશે. અહીં તમે નવું VNC connection ગોઠવી અથવા હાલનું પસંદ કરી શકો. ઉપર connection save કરવા button. નીચે connection configure.
+
+ઝડપ boost ઇચ્છો, Color mode ઓછી value ઉપર set કરો. VNC server ઉપર desktop background image હઠાવો. અને ઉપકરણ ની સારી network connectivity ખાતરી કરો.
+
+ - Connection Type: VNC connection type પસંદ. ઉપલબ્ધ types:
+   (a) Plain VNC, બધા VNC servers સમર્થ, encryption નથી, 8-character password limit ને કારણે brute-force attacks ની સંભાવના.
+   (b) Secure VNC over SSH, encrypted SSH tunnel ઉપર. SSHD service અને VNC server ફરજ. VNC server internet ઉપર સીધો accept ન કરે ત્યાં સુધી, first connection ઉપર server certificate signature ચકાસો.
+   (c) UltraVNC, Windows Logon અને UltraVNC Repeater options. Windows Logon ઉપર 8-character limit નહીં, પણ encryption નથી.
+   (d) Secure VNC over AnonTLS, stunnel-equivalent connection ઉપર. stunnel ચલાવો, અથવા AnonTLS ઉપ Vino જેવો VNC server. session encryption, 8-character limit, man-in-the-middle attacks ની સંભાવના.
+   (e) Secure VNC over VeNCrypt, x509 certificates અને session encryption, server config ઉપર user/password credentials 8-character limit વિના. man-in-the-middle attacks ને અટકાવે. x11vnc અને TigerVNC સમર્થ, VNC over SSH જેટલો સુરક્ષિત.
+
+ - Title: દરેક connection ને list ઉપર ઓળખ માટે nickname.
+
+ - SSH Tunnel Settings: VNC over SSH mode.
+   (a) SSH Server/Port: SSH server ઉપર tunnel address અને port. SSH default port 22.
+   (b) Username/Password: SSH server ઉપર account ના credentials.
+   (c) Manage Key/Use Key: public/private keys manage button, key authenticate checkbox. Copy to Clipboard ઉપયોગ પછી, VNC server connected ઉપર public key paste કરી શકો (clipboard server synchronized).
+
+ - Configure AutoX: VNC over SSH mode. App UNIX systems ઉપર X sessions detect/create. x11vnc, Xvfb, Xvnc, અથવા Xdummy ફરજ. Desktop ઠીક ન દેખાય ત્યારે .dmrc ખસેડો, .xinit ઉમેરો.
+
+ - VNC Connection Settings:
+   (a) VNC Server/Port: VNC server hostname/IP/port. VNC over SSH mode, SSH Server ની નજરે address. SSH Server અને VNC server સમ, localhost. VNC servers port 5900 ઉપર.
+   (b) VNC User: UltraVNC Windows Logon mode, અથવા Secure VNC over VeNCrypt. Windows/UNIX account username.
+   (c) VNC Password: VNC server password. UltraVNC/VeNCrypt modes, Windows/UNIX account password. \"Keep\" box check ઉપર password store. Secure storage નહીં.
+
+ - Color Mode: multiple color modes. વધારે colors = સારો visual experience = વધારે bandwidth/CPU. કેટલાક VNC servers બધા color depths સમર્થ ન. trouble ઉપર, બીજો color depth try.
+
+ - Use D-Pad for arrows: Bluetooth keyboard D-Pad VNC server ઉપર arrows.
+
+ - Rotate D-Pad: Bluetooth keyboard paired phones ઉપર D-pad anti-clockwise rotate.
+
+ - Local mouse pointer: કેટલાક VNC servers (OS/X Remote Desktop) client ઉપર mouse pointer draw ન. App ઉપર mouse pointer draw ફૉર્સ.
+
+ - Auto/Fullscreen Bitmap: VNC client bitmap. fit-to-screen mode ઉપર strange artifacts, try this option. Note: app quit on connection.
+
+ - Repeater: UltraVNC mode. IMPORTANT: UltraVNC repeater address/port \'UltraVNC Repeater\' dialog બહાર, actual VNC server address/port dialog \'UltraVNC Repeater\' અંદર. VNC server address:port colon separate, e.g. 192.168.0.100:5900."</string>
+    <string name="master_password_enable">🔒 Master Password સક્ષમ</string>
+    <string name="master_password_error_failed_to_disable">Master password અક્ષમ ન. ઉપકરણ ઉપર free space તપાસો અને ફરી try.</string>
+    <string name="master_password_error_failed_to_enable">Master password સક્ષમ ન. ઉપકરણ ઉપર free space તપાસો અને ફરી try.</string>
+    <string name="master_password_error_intents_not_supported">Master Password active હોય ત્યારે Connection intents સમર્થ નથી.</string>
+    <string name="master_password_error_password_necessary">ચાલુ રાખવા Master Password ફરજ.</string>
+    <string name="master_password_error_password_not_set">Master Password set રદ.</string>
+    <string name="master_password_error_shortcuts_not_supported">Master Password active હોય ત્યારે Short-cuts સમર્થ નથી.</string>
+    <string name="master_password_error_wrong_password">આ Master Password ઉપર authenticate ન.</string>
+    <string name="master_password_hint_once">Password દાખલ</string>
+    <string name="master_password_hint_twice">Password ફરી</string>
+    <string name="master_password_set">Master Password Set</string>
+    <string name="master_password_set_error">Passwords મળ્યા નથી, ધ્યાન રાખો!</string>
+    <string name="master_password_set_message">Master Password દાખલ કરો અને યાદ રાખો. લાંબો password crack કરવો અઘરો. password ખોટો set અથવા ભૂલ્યા, બધી settings જશે! settings backup export (Menu) now. exported settings encrypt નહીં, safe store.</string>
+    <string name="master_password_verify">Master Password ચકાસો</string>
+    <string name="master_password_verify_message">ચાલુ રાખવા સાચો Master Password દાખલ.</string>
+    <string name="meta_key_title">Special Keys મોકલો</string>
+    <string name="mouse_follow_pan">Pan ઉપર Mouse follow</string>
+    <string name="new_connection">નવું કનેક્શન</string>
+    <string name="new_list_button">નવી સૂચિ</string>
+    <string name="nickname_caption">Nickname</string>
+    <string name="nickname_caption_hint">Title (વૈકલ્પિક)</string>
+    <string name="off">Off</string>
+    <string name="one_to_one">One to One</string>
+    <string name="open_doc">Manual/Wiki</string>
+    <string name="pan_follow_mouse">Mouse ઉપર Pan follow</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="password_caption_hint">VNC Password</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="password_hint_ssh">SSH Password</string>
+    <string name="port_caption">VNC Port</string>
+    <string name="port_caption_ssh">SSH Port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+    <string name="portrait_mode">Connected ઉપર portrait mode ઉપર switch</string>
+    <string name="local_clipboard_integration">Local to Remote Clipboard Integration સક્ષમ</string>
+    <string name="remote_clipboard_integration">Remote to Local Clipboard Integration સક્ષમ</string>
+    <string name="position_toolbar_last_used">Toolbar Position restore</string>
+    <string name="applies_to_new_connections_only">ફક્ત New Connections ઉપર લાગુ</string>
+    <string name="pro_feature_mfa">તમારા server ઉપર multi-factor authentication active. Pro version ખરીદી project support. Start dialog ઉપર Pro link.</string>
+    <string name="pro_feature_intro">Pro feature ઉપયોગ. Pro version ખરીદી project support. Intro dialog ઉપર correct app link.</string>
+    <string name="pro_feature_generic">Pro feature ઉપયોગ. Pro version ખરીદી project support. Start dialog ઉપર Pro link.</string>
+    <string name="pro_feature_rdp">.rdp file ખોલવા try. Pro feature. aRDP Pro ખરીદી project support, .rdp files સમર્થ. Start dialog ઉપર aRDP Pro link.</string>
+    <string name="pro_feature_spice">.vv file ખોલવા try. Proxmox/oVirt connections save અને .vv files, Opaque. ફક્ત .vv file, aSPICE Pro. Start dialog ઉપર links.</string>
+    <string name="rdp_address_caption_hint">RDP Server</string>
+    <string name="rdp_adv_console_mode">Console Mode</string>
+    <string name="rdp_adv_desktop_background">Desktop background બતાવો</string>
+    <string name="rdp_adv_desktop_composition">Desktop Composition સક્ષમ</string>
+    <string name="rdp_adv_font_smoothing">Font smoothing</string>
+    <string name="rdp_adv_menu_animation">Menu Animations બતાવો</string>
+    <string name="rdp_adv_redirect_sdcard">SD Card Redirect</string>
+    <string name="rdp_adv_remotefx">RemoteFX સક્ષમ</string>
+    <string name="rdp_adv_visual_styles">Visual Styles સક્ષમ</string>
+    <string name="rdp_adv_window_contents">ખેંચ ઉપર window contents બતાવો</string>
+    <string name="rdp_security_mode">Security Mode</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Remote Desktop Size (WxH)</string>
+    <string name="rdp_domain_hint">RDP Domain</string>
+    <string name="rdp_geom_automatic">Automatic</string>
+    <string name="rdp_geom_checkbox_enable">Custom resolution સક્ષમ</string>
+    <string name="rdp_geom_custom">Custom</string>
+    <string name="rdp_geom_description_hint">Server ને ExtendedDesktopSize support ફરજ</string>
+    <string name="rdp_geom_disabled">Disabled</string>
+    <string name="rdp_geom_native_landscape">Native Landscape</string>
+    <string name="rdp_geom_native_portrait">Native Portrait</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Security Auto-negotiate</string>
+    <string name="rdp_security_rdp">RDP Security</string>
+    <string name="rdp_security_tls">TLS Security</string>
+    <string name="rdp_security_nla">Network Level Authentication</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+aRDP અને open-source software ને support બદલ આભાર! aRDP ઉપયોગ સહાય, Menu Help items અને market description.
+&lt;br&gt;
+&lt;br&gt;
+aRDP ની સુવિધાઓ:
+&lt;br&gt;
+- Plain RDP, RDP tunneled over SSH.
+&lt;br&gt;
+- ફ્રી rotation support. જરૂર ઉપર OS rotation limit.
+&lt;br&gt;
+- Remote resolution, landscape અને portrait modes native resolution.
+&lt;br&gt;
+- SSH Public/Private key-pair generation અને export.
+&lt;br&gt;
+- Automatic Session saving.
+&lt;br&gt;
+- Zoomable, Fit to Screen, અને One to One scaling modes.
+&lt;br&gt;
+- Direct અને Simulated Touchpad input modes ઉપર Multi-touch remote mouse.
+&lt;br&gt;
+- Single-Handed input mode ઉપર Full single-handed remote mouse.
+&lt;br&gt;
+- Multi-touch mouse clicks: Left-click tap, right-click two-finger tap, middle click three-finger-tap.
+&lt;br&gt;
+- Multi-touch scrolling: two finger drag Up/Down, Left/Right.
+&lt;br&gt;
+- On-screen meta અને arrow keys, menu/on-screen button ઉપર disable.
+&lt;br&gt;
+- Connected ઉપર Text અને arbitrary Key combinations.
+&lt;br&gt;
+- Connection screen ઉપર connections help (\"Menu-&gt;Connection Help\").
+&lt;br&gt;
+- Connected ઉપર input modes help (\"Menu-&gt;More-&gt;Input Mode Help\").
+&lt;br&gt;
+- Trackpad Arrows, Ctrl trackpad click, BT keyboards D-pad/trackpad rotate.
+&lt;br&gt;
+- Multi-language support, RDP server ઉપર language layout active.
+&lt;br&gt;
+- Seamless remote machine resolution changes
+&lt;br&gt;
+- Android 4.0+ Full mouse support, right middle click scroll wheel.
+&lt;br&gt;
+- Color modes
+&lt;br&gt;
+- Copy/Paste integration
+&lt;br&gt;
+- Settings export
+&lt;br&gt;
+- Sound
+&lt;br&gt;
+&lt;br&gt;
+જાણીતી સમસ્યાઓ:</string>
+    <string name="rdp_intro_title">aRDP: સ્વાભાવિક, સુરક્ષિત RDP client</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+connection ઉમેરો/edit ઉપર, connection configuration page. નવું RDP connection ગોઠવો, અથવા હાલનું. ઉપર save button. નીચે configure.
+
+ - Connection Type: RDP connection type.
+   (a) RDP, computer ઉપર RDP protocol.
+   (b) RDP over SSH, SSH server tunnel.
+
+ - Title: connection nickname.
+
+ - SSH Tunnel Settings: RDP over SSH mode.
+   (a) SSH Server/Port: tunnel SSH server address/port. Default SSH port 22.
+   (b) Username/Password: SSH server account credentials.
+   (c) Manage Key/Use Key: public/private keys, key authenticate checkbox. Copy to Clipboard ઉપર, RDP server connected ઉપર public key paste (clipboard server synchronized).
+
+ - RDP Connection Settings:
+   (a) RDP Server/Port: RDP server hostname/IP/port. RDP over SSH mode, SSH Server ની નજ. SSH Server=RDP server, localhost. RDP port 3389.
+   (b) RDP User: Windows/UNIX account username.
+   (c) RDP Domain: account domain.
+   (d) RDP Password: Windows/UNIX account password. \"Keep\" box ઉપર password store. Secure storage નહીં.
+
+ - Advanced settings: desktop resolution, RDP performance tweaks.
+
+ - Local Device Tweaks: app behaviour on device.
+   (a) Use D-Pad for arrows: Bluetooth keyboard D-Pad RDP server arrows.
+   (b) Rotate D-Pad: Bluetooth keyboard D-pad anti-clockwise rotate.
+   (c) Local mouse pointer: pointer invisible, app draw force."</string>
+    <string name="rdp_password_hint">RDP Password</string>
+    <string name="rdp_server_empty">RDP Server અથવા port ખાલી. Connect ન!</string>
+    <string name="rdp_username_hint">RDP Username</string>
+    <string name="remote_sound_disabled">Sound Disabled</string>
+    <string name="remote_sound_on_device">Sound On Device</string>
+    <string name="remote_sound_on_server">Sound On Server</string>
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">IMPORTANT: UltraVNC repeater ઉપયોગ, repeater address/port dialog બહાર. અહીં actual VNC server address/port. VNC server address:port colon separate, e.g. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">ઉપયોગ ન</string>
+    <string name="repeater_dialog_title">Repeater પાછળ VNC Server</string>
+    <string name="repeater_empty_text">Repeater નહીં</string>
+    <string name="repeater_save">ઉપયોગ</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt as ISO L3 Shift (VNC only)</string>
+    <string name="rotate_dpad">Bluetooth અથવા software D-Pad rotate</string>
+    <string name="save_as_copy">Copy તરીકે Save</string>
+    <string name="scaling">Scaling</string>
+    <string name="scaling_zoomable">Zoomable</string>
+    <string name="send_button">મોકલો</string>
+    <string name="send_key_again">Key ફરી મોકલો</string>
+    <string name="shift_check">Shift</string>
+    <string name="shortcut_label_vnc">VNC Connection</string>
+    <string name="shortcut_label_rdp">RDP Connection</string>
+    <string name="shortcut_label_spice">SPICE Connection</string>
+    <string name="showkbd_label">Keyboard</string>
+    <string name="single_cancel">Single-handed mode રદ</string>
+    <string name="single_choose">Single-handed mode પસંદ અથવા રદ</string>
+    <string name="single_left">Left-drag mode - drag/select swipe, આંગળી ઉઠાવો stop</string>
+    <string name="single_middle">Middle-drag mode - drag/select swipe, આંગળી ઉઠાવો stop</string>
+    <string name="single_reposition">Single-handed mode માટે Mouse pointer repositioned</string>
+    <string name="single_right">Right-drag mode - drag/select swipe, આંગળી ઉઠાવો stop</string>
+    <string name="single_scroll">Scroll mode - scroll swipe up/down, આંગળી ઉઠાવો stop</string>
+    <string name="single_zoom">Zoom mode - zoom in/out swipe up/down, આંગળી ઉઠાવો stop</string>
+    <string name="snap_one_to_one">1:1 zoom ઉપર snapped</string>
+    <string name="special_keys">Keys મોકલો</string>
+    <string name="spice_address_caption_hint">SPICE Server</string>
+    <string name="spice_button_import_ca">CA Import</string>
+    <string name="spice_ca_cert_path_hint">cert authority ફાઇલ path</string>
+    <string name="spice_ca_file_error_reading">CA ફાઇલ વાંચવામાં ભૂલ. ખાતરી વાંચી શકો.</string>
+    <string name="spice_ca_file_not_found">ફાઇલ મળી નહીં. text field ઉપર valid file name (e.g. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Certificate Subject</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+aSPICE અને open-source software ને support બદલ આભાર! aSPICE ઉપયોગ સહાય, Menu Help items અને market description.
+&lt;br&gt;
+&lt;br&gt;
+aSPICE ની સુવિધાઓ:
+&lt;br&gt;
+- Plain SPICE, SPICE tunneled over SSH.
+&lt;br&gt;
+- ફ્રી rotation support. જરૂર ઉપર OS rotation limit.
+&lt;br&gt;
+- SSH Public/Private key-pair generation અને export.
+&lt;br&gt;
+- Automatic Session saving.
+&lt;br&gt;
+- Zoomable, Fit to Screen, અને One to One scaling modes.
+&lt;br&gt;
+- Direct અને Simulated Touchpad input modes ઉપર Multi-touch remote mouse.
+&lt;br&gt;
+- Single-Handed input mode ઉપર Full single-handed remote mouse.
+&lt;br&gt;
+- Multi-touch mouse clicks: Left-click tap, right-click two-finger tap, middle click three-finger-tap.
+&lt;br&gt;
+- Multi-touch scrolling: two finger drag Up/Down, Left/Right.
+&lt;br&gt;
+- On-screen meta અને arrow keys, menu/on-screen button ઉપર disable.
+&lt;br&gt;
+- Connected ઉપર Text અને arbitrary Key combinations.
+&lt;br&gt;
+- Connection screen ઉપર connections help (\"Menu-&gt;Connection Help\").
+&lt;br&gt;
+- Connected ઉપર input modes help (\"Menu-&gt;More-&gt;Input Mode Help\").
+&lt;br&gt;
+- Trackpad Arrows, Ctrl trackpad click, BT keyboards D-pad/trackpad rotate.
+&lt;br&gt;
+- Multi-language support, SPICE server ઉપર language layout active.
+&lt;br&gt;
+- Seamless remote machine resolution changes
+&lt;br&gt;
+- Android 4.0+ Full mouse support, right middle click scroll wheel.
+&lt;br&gt;
+&lt;br&gt;
+Planned features:
+&lt;br&gt;
+- Copy/Paste integration
+&lt;br&gt;
+- Sound
+&lt;br&gt;
+- Performance improvements
+&lt;br&gt;
+Known issues:
+&lt;br&gt;
+- Send text does not send some symbols.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: સ્વાભાવિક, સુરક્ષિત SPICE client</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+connection ઉમેરો/edit ઉપર, connection configuration page. નવું SPICE connection ગોઠવો, અથવા હાલનું. ઉપર save button. નીચે configure.
+
+ - Connection Type: SPICE connection type.
+   (a) SPICE, computer ઉપર SPICE protocol.
+   (b) SPICE over SSH, SSH server tunnel.
+
+ - Title: connection nickname.
+
+ - SSH Tunnel Settings: SPICE over SSH mode.
+   (a) SSH Server/Port: tunnel SSH server address/port. Default SSH port 22.
+   (b) Username/Password: SSH server account credentials.
+   (c) Manage Key/Use Key: public/private keys, key authenticate checkbox. Copy to Clipboard ઉપર, SPICE server connected ઉપર public key paste (clipboard server synchronized).
+
+ - SPICE Connection Settings:
+   (a) SPICE Server/Port: SPICE server hostname/IP/port. SPICE over SSH mode, SSH Server ની નજ. SSH Server=SPICE server, localhost. SPICE port 5900+.
+   (b) SPICE Password: SPICE session password. \"Keep\" box ઉપર password store. Secure storage નહીં.
+
+ - Advanced settings: local device, SPICE performance tweaks.
+ - Local Device Tweaks: app behaviour.
+   (a) Use D-Pad for arrows: Bluetooth keyboard D-Pad SPICE server arrows.
+   (b) Rotate D-Pad: Bluetooth keyboard D-pad anti-clockwise rotate.
+   (c) Local mouse pointer: pointer invisible, app draw force."</string>
+    <string name="spice_password_hint">SPICE Password</string>
+    <string name="spice_server_empty">SPICE Server અથવા port ખાલી. Connect ન!</string>
+    <string name="spice_tls_port_hint">TLS Port</string>
+    <string name="spice_username_hint">SPICE Username</string>
+    <string name="ssh_passphrase_hint">SSH Passphrase</string>
+    <string name="ssh_pubkey_button">Key Manage</string>
+    <string name="ssh_use_pubkey">Key ઉપયોગ</string>
+    <string name="ssh_use_x11vnc">Auto Desktop</string>
+    <string name="ssh_x11vnc_customize">AutoX ગોઠવો</string>
+    <string name="super_check">Super</string>
+    <string name="tap_disable">Disable</string>
+    <string name="tap_enable">Enable</string>
+    <string name="username_caption">VNC User</string>
+    <string name="username_hint">UltraVNC MS Logon Username</string>
+    <string name="username_hint_optional">VNC Username (વૈકલ્પિક)</string>
+    <string name="username_hint_ssh">SSH Username</string>
+    <string name="username_hint_vencrypt">VNC Username</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verification_code_message">multi-factor authentication Verification Code દાખલ કરો</string>
+    <string name="view_only">View-only mode</string>
+    <string name="vnc_server_empty">VNC Server અથવા port ખાલી. Connect ન!</string>
+    <string name="vnc_server_empty_no_save">VNC Server અથવા port ખાલી. Connection save ન!</string>
+    <string name="warning_cert_does_not_match">WARNING: saved x509 certificate અથવા passed signature current server certificate સાથે match ન! man-in-the-middle attack. key change aware, proceed. </string>
+    <string name="copy_logcat">📋 Logcat Copy</string>
+    <string name="log_copied">Logcat clipboard ઉપર copy. email અથવા support forum ઉપર paste. post ઉપર personal data check.</string>
+    <string name="info_set_touchpad_input_mode">Server reports Client Mode Mouse Input support નહીં, current mouse input mode ઠીક ન. persist ઉપર, virtual machine ઉપર spice tools installed ખાતરી, અથવા Menu ઉપર Simulated Touchpad Input Mode switch.</string>
+    <string name="ssh_tunnel_settings">SSH Tunnel Settings</string>
+    <string name="vnc_connection_settings">VNC Connection Settings</string>
+    <string name="show_advanced_settings">Advanced Settings બતાવો</string>
+    <string name="use_no_compression_for_local_connections">Compression નહીં (local connections, Hextile encoding)</string>
+    <string name="rdp_connection_settings">RDP Connection Settings</string>
+    <string name="local_device_tweaks">Local Device Tweaks</string>
+    <string name="spice_connection_settings">SPICE Connection Settings</string>
+    <string name="ca_subject">certificate subject name અહીં. cert common name (CN) server hostname match ઉપર ન ફરજ.</string>
+    <string name="path_to_ca">file path (e.g. /sdcard/ca-cert.pem) દાખલ, Import tap, Certificate Authority load.</string>
+    <string name="paste_ca">file import ન ઉપર, Certificate Authority અહીં.</string>
+    <string name="cert_issuer">Certificate Issuer</string>
+    <string name="cert_fingerprint">Certificate Fingerprint</string>
+    <string name="error">ભૂલ</string>
+    <string name="panning">Panning Screen</string>
+    <string name="copy_of">Copy of</string>
+    <string name="ssh_key_generated">નવી key generate/import. \'Generate/Export Key\' button tap, public key share/copy/export.</string>
+    <string name="cursor_force_local">"Local"</string>
+    <string name="cursor_force_disable">"Disable"</string>
+    <string name="cursor_mode">"Cursor Mode:"</string>
+    <string name="rendering_mode">"Rendering Mode:"</string>
+    <string name="color_24_bit">"24-bit color (24 bpp)"</string>
+    <string name="color_256">"256 colors (8 bpp)"</string>
+    <string name="color_64">"64 colors (4 bpp)"</string>
+    <string name="color_8">"8 colors (2 bpp)"</string>
+    <string name="color_greyscale">"Greyscale (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Black & White (1 bpp)"]]></string>
+    <string name="show">"Show"</string>
+    <string name="hide">"Hide"</string>
+    <string name="search_connections">Connections Search</string>
+    <string name="user_not_specified">User ઉલ્લેખ ન</string>
+    <string name="enter_ssh_credentials">SSH credentials દાખલ</string>
+    <string name="enter_vnc_credentials">VNC credentials દાખલ</string>
+    <string name="enter_vnc_password">VNC password દાખલ</string>
+    <string name="enter_rdp_credentials">RDP credentials દાખલ</string>
+    <string name="enter_gateway_credentials">Gateway credentials દાખલ</string>
+    <string name="enter_spice_password">SPICE password દાખલ</string>
+    <string name="enter_passphrase_title">Key Passphrase દાખલ</string>
+    <string name="enter_passphrase">Key Passphrase દાખલ</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">તમારા server ને key authentication ઉપરાંત password authentication ફરજ.</string>
+    <string name="main_screen_help_text">"
+app launch ઉપર saved connections screen.
+
+saved connections ન, screen નીચે ખાલી, plus button ઉપર new. toolbar/menu options ઉપર default settings edit, settings import/export.
+
+connection saved, tap remote server connect. long-tap delete/edit.
+
+Search Connections field ઉપર filter connections."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+connection ઉમેરો/edit ઉપર, connection configuration page.
+નવું Opaque connection ગોઠવો અથવા હાલનું.
+ઉપર save button.
+નીચે configure.
+
+ - Connection Type: Virtualization Environment.
+
+ - Server Address: server hostname/IP. non-standard port, colon separate.
+
+ - Virtual machine name: VM name specify, અથવા VMs/containers list ઉપર ખાલી.
+
+ - User: virtualization framework authenticate username.
+
+ - Password: password save ઇચ્છો, અહીં, અથવા every time query ઉપર ખાલી.
+
+ - Advanced settings: local device, protocol, performance tweaks."
+    </string>
+    <string name="help">સહાય ⓘ</string>
+    <string name="need_help">સહાય ફરજ?</string>
+    <string name="support_forum">Support Forum ❓</string>
+    <string name="email_us">Email Us 📧</string>
+    <string name="report_bug">Bug Report 🐛</string>
+    <string name="download_from_server">Server ઉપરથી Download</string>
+    <string name="import_from_file">File ઉપરથી Import</string>
+    <string name="please_grant_permission_from_prefs">Settings ઉપર application ને permissions grant ફરજ.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">More Debug Logging</string>
+    <string name="prefer_sending_unicode">Unicode input (Windows only)</string>
+    <string name="hide_connection_thumbnails">Connection Thumbnails છુપાવો</string>
+    <string name="show_only_connection_nicknames">ફક્ત Connection Nicknames બતાવો</string>
+    <string name="love_our_work">અમારું કામ ગમ્યું?</string>
+    <string name="rate_app">Rate ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Share 🔗</string>
+    <string name="share_app_toast">social media ઉપર friends સાથે app link share!</string>
+    <string name="donate_app">Donate ❤</string>
+    <string name="more_apps">More Apps 📱</string>
+    <string name="previous_versions">Previous Versions ⍼</string>
+    <string name="keyboard_type">Software Keyboard Type</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Default (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/Numbers No Suggestions (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text With Suggestions (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">આ connection external app VPN launch set. Morpheusly જેવો app install ફરજ.</string>
+    <string name="vnc_viewer_started">VNC Viewer started</string>
+    <string name="enable_gateway">RDP Gateway સક્ષમ</string>
+    <string name="scroll_speed">Touch Scroll Speed</string>
+    <string name="desktop_scale_percentage">Custom Scaling Percentage</string>
+    <string name="show_menu">Menu બતાવો</string>
+    <string name="move_toolbar">Toolbar ખસેડો</string>
+    <string name="rdp_adv_glyph_cache">ગ્લિફ કેશ સક્ષમ કરો</string>
+
+    <string name="disable_battery_optimizations_failed">
+બેટરી ઓપ્ટિમાઇઝેશન સેટિંગ્સ ખોલી શકાઈ નથી.સિસ્ટમ સેટિંગ્સમાં મેન્યુઅલી બેટરી ઓપ્ટિમાઇઝેશનને અક્ષમ કરો.</string>
+    <string name="disable_battery_optimizations">
+🔋બૅટરી ઑપ્ટિમાઇઝેશનને અક્ષમ કરો</string>
+    <string name="disable_battery_optimizations_already_done">
+એપ પહેલાથી જ બેટરી ઓપ્ટિમાઇઝેશનમાંથી મુક્ત છે.</string>
+    <string name="no_connections_title">હજી સુધી કોઈ જોડાણ નથી</string>
+    <string name="no_connections_hint">તમારું પ્રથમ રિમોટ જોડાણ ઉમેરવા + બટન ટૅપ કરો</string>
+    <string name="no_connections_hint_tv">તમારું પ્રથમ રિમોટ જોડાણ ઉમેરવા ઉપરનું + બટન દબાવો</string>
+    <string name="keyboard_layout_map">કીબોર્ડ લેઆઉટ</string>
+</resources>

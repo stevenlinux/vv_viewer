@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">L\'àudio s\'inicialitzarà en uns 15 segons; atureu qualsevol reproducció de vídeo o àudio abans d\'aleshores</string>
+    <string name="audio_initialized">Àudio inicialitzat</string>
+    <string name="action_import_settings">Importa la configuració</string>
+    <string name="action_new_connection">✚ Nova connexió</string>
+    <string name="action_edit_default_settings">⚙ Edita la configuració predeterminada</string>
+    <string name="action_export_settings">Exporta la configuració</string>
+    <string name="action_delete_connection">Suprimeix la connexió</string>
+    <string name="action_rate_or_share_app">⭐ Obtén ajuda, Puntua, Comparteix</string>
+    <string name="get_help">Obtén ajuda</string>
+    <string name="advanced_settings">Configuració avançada</string>
+    <string name="audio">Àudio</string>
+    <string name="auto_rotation">Rotació de pantalla durant la connexió</string>
+    <string name="auto_request_new_res">Sincronitza la resolució remota amb la de la pantalla</string>
+    <string name="custom_ca_subject">Assumpte del certificat opcional. No cal si el CN del certificat coincideix amb el nom d\'amfitrió</string>
+    <string name="custom_ca_import">Alternativament, introduïu el camí complet de la vostra CA i toqueu Importa</string>
+    <string name="custom_ca_paste">Enganxeu aquí la CA (si no l\'importeu)</string>
+    <string name="ca_ovirt_use_custom">CA personalitzada de RHEV/oVirt</string>
+    <string name="ca_spice_use_ovirt">Utilitza la CA de RHEV/oVirt per a SPICE</string>
+    <string name="ca_ovirt_manage">Gestiona la CA de RHEV/oVirt</string>
+    <string name="ca_spice_manage">Gestiona la CA de SPICE</string>
+    <string name="ca_file_not_found">Fitxer no trobat. Introduïu un nom de fitxer vàlid al camp de text (p. ex. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Error en llegir el fitxer CA. Assegureu-vos que és llegible.</string>
+    <string name="ca_new_or_changed">Certificat del servidor nou o modificat</string>
+    <string name="connection_type_text">Entorn de virtualització (RHEV/oVirt o Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Nom de la màquina virtual (opcional)</string>
+    <string name="connection_setup_host_name">Adreça del servidor</string>
+    <string name="connection_setup_user">Usuari@Domini</string>
+    <string name="connection_setup_password">Contrasenya</string>
+    <string name="enter_password">Introduïu la contrasenya</string>
+    <string name="enter_password_auth_failed">L\'autenticació ha fallat. Torneu a introduir les credencials.</string>
+    <string name="enter_otp_code">Introduïu el codi OTP</string>
+    <string name="hide_toolbar">Amaga la barra d\'eines</string>
+    <string name="manage_custom_ca_title">Gestiona la CA personalitzada</string>
+    <string name="save_button">Desa</string>
+    <string name="select_vm_title">Seleccioneu la màquina virtual</string>
+    <string name="vv_file_not_found">No s\'ha trobat el fitxer .vv!</string>
+    <string name="vv_file_error">El fitxer .vv no es troba o és corrupte!</string>
+    <string name="info_cert">Accepteu aquest certificat d\'amfitrió nou o modificat?\n\nEmpremtes digitals:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nEmès a: %4$s\nEmès per: %5$s\n\nVàlid des de: %6$s\nVàlid fins a: %7$s\n</string>
+
+    <string name="toggle_keyboard">Commuta el teclat</string>
+    <string name="show_keyboard">Mostra el teclat</string>
+    <string name="scroll_wheel">Roda de desplaçament</string>
+
+    <string name="input_method_help">Ajuda sobre el mètode d\'entrada</string>
+
+    <string name="ok">D\'acord</string>
+
+    <string name="input_methods">Mètode d\'entrada</string>
+
+    <string name="error_failed_to_download_http">No s\'ha pogut descarregar el fitxer per HTTP. Pot ser que el servidor no estigui accessible.</string>
+    <string name="error_failed_to_download_https">No s\'ha pogut descarregar el fitxer per HTTPS. Pot ser que el certificat del servidor no sigui de confiança (caducat o autosignat) o que el servidor no estigui accessible.</string>
+    <string name="error_failed_to_obtain_content">No s\'ha pogut obtenir el fitxer. Torneu a descarregar-lo i, aquesta vegada, obriu-lo ràpidament des de la carpeta de descàrregues en un gestor de fitxers.</string>
+    <string name="error_failed_to_obtain_file">No s\'ha pogut trobar el fitxer. Torneu a descarregar-lo i, aquesta vegada, intenteu obrir-lo des de l\'àrea de notificacions o directament des del navegador si és possible.</string>
+
+    <string name="error_dialog_title">Error</string>
+    <string name="info_dialog_title">Informació</string>
+    <string name="info_vm_launched_on_stand_by">S\'ha trobat la màquina virtual apagada i s\'ha engegat. Torneu-ho a intentar d\'aquí a uns minuts. Si ho intenteu massa aviat i es produeix un error de connexió, torneu-ho a intentar més tard.</string>
+    <string name="error_no_vm_found_for_user">No hi ha màquines virtuals disponibles per a l\'usuari indicat.</string>
+    <string name="error_no_such_vm_found_for_user">No s\'ha trobat cap màquina virtual amb l\'ID proporcionat per a l\'usuari indicat. Esborreu l\'ID per obtenir una llista de màquines virtuals.</string>
+    <string name="error_no_vnc_support_yet">El tipus de pantalla VNC encara no és compatible, però és una funcionalitat pròxima. Gràcies per la vostra comprensió!</string>
+    <string name="error_not_connected_to_network">Sembla que no esteu connectats a Internet. No es pot continuar sense connexió!</string>
+    <string name="error_ovirt_timeout">S\'ha esgotat el temps de connexió a la vostra màquina virtual. Comproveu que l\'adreça del node que executa la màquina virtual és correcta, que és accessible des de la xarxa actual i que cap tallafoc no bloqueja la connexió.</string>
+    <string name="error_ovirt_auth_failure">Error d\'autenticació. Comproveu l\'usuari i la contrasenya proporcionats.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Error en la negociació SSL. Hi ha un problema amb el certificat SSL del servidor. Si feu servir un certificat autosignat, heu de (re)importar la vostra autoritat de certificació.</string>
+    <string name="error_pve_failed_to_authenticate">No s\'ha pogut autenticar a Proxmox Virtual Environment. Assegureu-vos d\'introduir el nom d\'usuari en format usuari@àmbit i que la contrasenya és correcta.</string>
+    <string name="error_pve_failed_to_parse_json">No s\'ha pogut analitzar la resposta de Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">L\'ID de la màquina virtual no és numèric. Introduïu un ID de màquina virtual numèric o deixeu el camp buit per triar la màquina virtual d\'una llista.</string>
+    <string name="error_pve_api_unexpected_code">Resposta inesperada de Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Ha fallat la connexió a Proxmox Virtual Environment: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment ha retornat dades nul·les.</string>
+    <string name="error_pve_timeout_communicating">S\'ha esgotat el temps de comunicació amb Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">No s\'ha pogut trobar cap màquina virtual amb el nom especificat assignat al vostre usuari. Esborreu el nom de la màquina virtual especificat per veure una llista de màquines virtuals assignades a l\'usuari.</string>
+    <string name="error_vv_download_timeout">S\'ha esgotat el temps de descàrrega del fitxer vv.</string>
+    <string name="message_please_wait">Espereu</string>
+    <string name="message_please_install_bvnc">Instal·leu &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> des de Google Play per connectar-vos a la consola VNC d\'aquesta màquina virtual.</string>
+    <string name="ssl_strict">Requereix que el nom comú coincideixi amb el certificat (recomanat)</string>
+    <string name="usb">USB (connecteu primer el cable OTG)</string>
+
+    <string name="ad_donate_text0">La versió Pro també té compatibilitat amb l\'autenticació SSH multifactor. A més, admet la funció de contrasenya mestra molt sol·licitada, que impedeix l\'ús no autoritzat i xifra tota la configuració de connexió, incloses contrasenyes i claus SSH, per protegir-la davant de robatoris. Activeu-la des del menú principal.</string>
+    <string name="ad_donate_spice_text1a">Toqueu aquí per comprar Opaque i desar connexions directes a Proxmox i oVirt. També admet fitxers .vv.</string>
+    <string name="ad_donate_spice_text1b">Toqueu aquí per comprar la versió Pro i obrir fitxers .vv.</string>
+    <string name="ad_donate_text1">Toqueu aquí per donar suport al projecte amb una petita donació comprant la versió Pro.</string>
+    <string name="ad_donate_text2">La versió Pro us permet desactivar aquest diàleg i us dóna accés a funcionalitats addicionals.</string>
+    <string name="ad_donate_text3">Si voleu donar suport addicional al projecte, seguiu els enllaços següents per als clients d\'aplicacions de: </string>
+    <string name="ad_donate_text_vnc">El projecte de codi obert necessita el vostre suport! Feu una donació comprant bVNC Pro. Vegeu a continuació els enllaços a bVNC Pro i les nostres altres aplicacions.</string>
+    <string name="ad_donate_text_rdp">El projecte de codi obert necessita el vostre suport! Feu una donació comprant aRDP Pro, que admet la redirecció de so. Vegeu a continuació els enllaços a aRDP Pro i les nostres altres aplicacions.</string>
+    <string name="ad_donate_text_spice">Per a connexions a Proxmox i oVirt, feu una donació al projecte comprant Opaque o aSPICE Pro. La versió gratuïta d\'aSPICE només admet connexions directes a màquines virtuals KVM. Vegeu a continuació els enllaços a Opaque i aSPICE Pro, i a les nostres altres aplicacions.</string>
+
+    <string name="address_caption">Servidor VNC</string>
+    <string name="address_caption_hint">Servidor VNC</string>
+    <string name="address_caption_hint_tunneled">Servidor VNC</string>
+    <string name="address_caption_ssh">Servidor SSH</string>
+    <string name="address_caption_ssh_hint">Servidor SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Fletxa avall</string>
+    <string name="arrow_left">Fletxa esquerra</string>
+    <string name="arrow_right">Fletxa dreta</string>
+    <string name="arrow_up">Fletxa amunt</string>
+
+    <string name="auto">Automàtic</string>
+    <string name="auto_x_cancel">Cancel·la</string>
+    <string name="auto_x_caption">L\'aplicació pot descobrir automàticament sessions X existents i crear-ne de noves en sistemes Linux/UNIX (similar a NX). Necessiteu x11vnc per trobar sessions, i Xvfb, Xvnc o Xdummy per crear-ne. Si teniu problemes per connectar-vos, proveu de seleccionar un tipus de sessió remota específic a la configuració avançada d\'AutoX.</string>
+    <string name="auto_x_confirm">Confirma</string>
+    <string name="auto_x_descript_geom">Mida de l\'escriptori remot (AmplxAlt)</string>
+    <string name="auto_x_descript_session">Tipus de sessió remota</string>
+    <string name="auto_x_disabled">Desactivat</string>
+    <string name="auto_x_disabled_selection">AutoX desactivat</string>
+    <string name="auto_x_enabled">Activat</string>
+    <string name="auto_x_find">Només cerca, no crea</string>
+    <string name="auto_x_find_login">Cerca inici de sessió X (necessita sudo)</string>
+    <string name="auto_x_geom_custom">Personalitzat</string>
+    <string name="auto_x_geom_native">Natiu</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Automàtic</string>
+    <string name="auto_x_session_custom">Personalitzat</string>
+    <string name="auto_x_title">Configura AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Autentica automàticament amb el nom d\'usuari/contrasenya SSH proporcionats (a la pantalla de connexió negra).</string>
+    <string name="auto_x_unixpw">Utilitza les credencials UNIX en lloc del mecanisme de seguretat integrat. L\'usuari ha de poder executar /bin/su.</string>
+    <string name="auto_x_xdummy">Cerca o crea amb Xdummy</string>
+    <string name="auto_x_xvfb">Cerca o crea amb Xvfb</string>
+    <string name="auto_x_xvnc">Cerca o crea amb Xvnc</string>
+
+    <string name="button_send_text">Envia text</string>
+    <string name="button_send_without_saving">Envia el text/No el desïs</string>
+
+    <string name="center_mouse">Ratolí @</string>
+
+    <string name="close">Tanca</string>
+
+    <string name="color_format_caption">Mode de color</string>
+    <string name="color_mode">Mode de color</string>
+
+    <string name="connect_button">Connecta</string>
+    <string name="back_button">Torna enrere</string>
+    <string name="update_button">Actualitza</string>
+
+    <string name="connection_caption">Connexió</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Tipus de connexió</string>
+    <string name="connection_type_rdp_over_ssh">RDP sobre SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE sobre SSH</string>
+    <string name="connection_type_vnc">VNC bàsic</string>
+    <string name="connection_type_vnc_over_ssh">VNC segur sobre SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC segur sobre AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC segur sobre túnel SSL</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC segur sobre VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Voleu editar o suprimir la connexió</string>
+    <string name="connection_edit">Edita</string>
+    <string name="connection_delete">Suprimeix</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Copia la llista</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Supr</string>
+
+    <string name="default_input_mode">Mode d\'entrada predeterminat</string>
+    <string name="delete_connection">Suprimeix la connexió</string>
+    <string name="delete_key">Suprimeix la clau seleccionada</string>
+    <string name="delete_key_list">Suprimeix la llista de claus</string>
+
+    <string name="disconnect">Desconnecta</string>
+
+    <string name="dpad_as_arrows">Utilitza el D-Pad per a les fletxes i el clic del D-Pad per a Ctrl.</string>
+
+    <string name="enable_recording">Activa l\'enregistrament</string>
+    <string name="enable_sound">Activa el so</string>
+
+    <string name="enter_text">Envia text</string>
+    <string name="enter_text_title">Introduïu el text a enviar</string>
+
+    <string name="error_anon_dh_unsupported">El servidor VNC intenta utilitzar xifrats Anonymous Diffie Hellman que no estan admesos al vostre dispositiu Android. Si feu servir el servidor VNC Vino de GNOME, podeu desactivar AnonTLS executant la comanda següent en un terminal i reiniciant: \"gsettings set org.gnome.Vino require-encryption false\". Si executeu x11vnc, podeu afegir les opcions següents: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">La connexió ha fallat.</string>
+    <string name="error_connection_interrupted">La connexió s\'ha interromput.</string>
+    <string name="error_no_user_hostname">Introduïu almenys un usuari i un nom d\'amfitrió o adreça IP.</string>
+    <string name="error_out_of_memory">No s\'ha pogut assignar prou memòria per mostrar la pantalla remota. Proveu de reiniciar l\'aplicació i, després, el dispositiu. També podeu intentar reduir la mida de l\'escriptori remot a través de la configuració de l\'aplicació.</string>
+    <string name="error_ovirt_unable_to_connect">No s\'ha pogut connectar ni autenticar; comproveu l\'adreça del servidor, l\'usuari, la contrasenya i l\'autoritat de certificació i l\'assumpte.</string>
+    <string name="error_pick_correct_item">Assegureu-vos d\'haver seleccionat l\'element correcte a Tipus de connexió.</string>
+    <string name="error_rdp_authentication_failed">Ha fallat l\'autenticació RDP. Comproveu el nom d\'usuari i la contrasenya RDP i torneu-ho a intentar.</string>
+    <string name="error_rdp_connection_failed">Ha fallat la connexió RDP. La connectivitat de xarxa s\'ha interromput, el servidor RDP s\'ha apagat o desactivat, o la sessió ha estat presa per un altre usuari.</string>
+    <string name="error_rdp_unable_to_connect">No s\'ha pogut connectar al servidor RDP. Assegureu-vos que la configuració del servidor RDP és correcta, que el servidor està engegat, que RDP està activat i que el servidor es troba a la mateixa xarxa que aquest dispositiu.</string>
+    <string name="error_security_type">El servidor no ha ofert cap tipus de seguretat compatible.</string>
+    <string name="error_spice_unable_to_connect">No s\'ha pogut connectar ni autenticar; comproveu l\'adreça del servidor i el port.</string>
+    <string name="error_ssh_could_not_exec_command">No s\'ha pogut executar la comanda remota.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">No s\'ha pogut enviar la contrasenya de sudo.</string>
+    <string name="error_ssh_hostkey_changed">ERROR! La clau d\'amfitrió del servidor ha canviat. Si és intencionat, podeu continuar. En cas contrari, podria ser un atac de tipus home al mig.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">El servidor SSH no admet els mètodes d\'autenticació «password» ni «keyboard-interactive», o requereix el mètode «publickey» primer. Configureu-lo per permetre almenys un dels dos mètodes, o reconfigureu l\'aplicació. Mètodes d\'autenticació disponibles: </string>
+    <string name="error_ssh_key_auth_fail">No s\'ha pogut autenticar al servidor SSH amb un parell de claus. Comproveu el nom d\'usuari SSH i assegureu-vos que la clau pública és al fitxer authorized_keys del costat remot.</string>
+    <string name="error_ssh_keypair_decryption_failure">No s\'ha pogut desxifrar el parell de claus. Assegureu-vos d\'haver introduït correctament la frase de contrasenya al camp «Frase de contrasenya SSH» de la pantalla principal.</string>
+    <string name="error_ssh_keypair_missing">El parell de claus SSH encara no s\'ha generat. Genereu-ne un i poseu (la part pública) a authorized_keys al servidor SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">S\'ha proporcionat una frase de contrasenya però el parell de claus no està xifrat. Suprimiu la frase de contrasenya.</string>
+    <string name="error_ssh_port_forwarding_failure">No s\'ha pogut configurar el reenviament de ports per tunelitzar el trànsit VNC sobre SSH. Assegureu-vos que el servidor SSH està configurat per permetre el reenviament de ports i torneu-ho a intentar.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">El servidor SSH no admet el mètode d\'autenticació «publickey» i s\'intenta autenticar amb un parell de claus. Configureu-lo per permetre l\'autenticació amb clau pública i torneu-ho a intentar. Mètodes d\'autenticació disponibles: </string>
+    <string name="error_ssh_pwd_auth_fail">No s\'ha pogut autenticar al servidor SSH amb una contrasenya. Comproveu el nom d\'usuari i la contrasenya SSH.</string>
+    <string name="error_ssh_unable_to_connect">No s\'ha pogut connectar al servidor SSH. Comproveu la connectivitat de xarxa, l\'adreça i el port del servidor SSH.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">No s\'ha pogut obtenir el port VNC remot de x11vnc. Assegureu-vos que x11vnc està instal·lat. Per estar segurs, proveu d\'executar x11vnc manualment des de la línia de comandes.</string>
+    <string name="error_uri_noinfo_nosave">La informació especificada és insuficient per connectar-se.</string>
+    <string name="error_uri_parse_error">No s\'ha pogut analitzar l\'URI de la intents. Comproveu el format de l\'URI. També podeu consultar el logcat del dispositiu per a més detalls.</string>
+    <string name="error_vnc_authentication">Ha fallat l\'autenticació VNC. Comproveu la contrasenya VNC (i l\'usuari si escau).</string>
+    <string name="error_vnc_unable_to_connect">"La connexió al servidor VNC ha fallat amb el motiu: "</string>
+    <string name="error_x509_could_not_generate_encoding">No s\'ha pogut generar la codificació del certificat.</string>
+    <string name="error_x509_could_not_generate_signature">No s\'ha pogut generar la signatura SHA1 o MD5 del certificat. No s\'ha trobat cap algorisme SHA1/MD5.</string>
+
+    <string name="export_settings">Exporta</string>
+
+
+    <string name="extra_keys_disable">Desactiva les tecles addicionals</string>
+    <string name="extra_keys_enable">Activa les tecles addicionals</string>
+
+    <string name="fit_to_screen">Ajusta a la pantalla</string>
+
+    <string name="force">Mapa de bits a pantalla completa</string>
+
+    <string name="immersive_mode_disable">Desactiva el mode immersiu</string>
+
+    <string name="import_export_settings">📦 Importa/Exporta la configuració</string>
+    <string name="import_settings">Importa</string>
+
+
+    <string name="info">Informació</string>
+    <string name="info_cert_signatures">"La informació del certificat és: "</string>
+    <string name="info_cert_signatures_identical">\n\nPodeu comprovar que la informació coincideix amb el certificat del servidor per evitar un atac de tipus home al mig.</string>
+    <string name="info_cert_tunnel">Voleu connectar-vos a l\'amfitrió identificat pel certificat següent?\n\nEmpremta digital: %1$s\n\nEmès a:\n%2$s\n\nEmès per:\n%3$s\n\nVàlid des de:\n%4$s\n\nVàlid fins a:\n%5$s\n\nNota: L\'aplicació no verifica les autoritats de certificació ni comprova la revocació de certificats.</string>
+    <string name="info_continue_connecting">"Continua la connexió a: "</string>
+    <string name="info_encoding">" codificació, "</string>
+    <string name="info_progress_dialog_aborted">Connexió interrompuda!</string>
+    <string name="info_progress_dialog_connecting">Connectant…</string>
+    <string name="info_progress_dialog_downloading">S\'està descarregant el primer fotograma.\nEspereu…</string>
+    <string name="info_progress_dialog_establishing">S\'està establint la negociació.\nEspereu…</string>
+    <string name="info_ssh_initializing_hostkey">S\'intenta inicialitzar la clau d\'amfitrió SSH.</string>
+    <string name="info_ssh_key_fingerprint">"L\'empremta digital de la clau d\'amfitrió és: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nPodeu comprovar que és idèntica a l\'empremta digital coneguda del certificat del servidor per evitar un atac de tipus home al mig.</string>
+    <string name="info_update_color_model_to">"S\'actualitza el model de color a "</string>
+
+    <string name="input_method_direct_drag_pan_description">Directe, mantén per panoràmica: llisca per arrossegar i deixar anar. Toca amb un dit on vols fer clic esquerre, amb dos dits per clic dret i amb tres dits per clic del mig. Llisca amb dos dits per desplaçar-te. Mantén premut per iniciar la panoràmica.</string>
+    <string name="input_method_direct_swipe_pan_description">Directe, llisca per panoràmica: llisca per moure la vista. Toca amb un dit on vols fer clic esquerre, amb dos dits per clic dret i amb tres dits per clic del mig. Llisca amb dos dits per desplaçar-te. Mantén premut per arrossegar i deixar anar.</string>
+    <string name="input_method_single_handed_description">Una sola mà: llisca per moure la vista. Toca amb un dit on vols fer clic esquerre. Mantén premut per triar el mode d\'arrossegament esquerre/dret/mig, desplaçament o zoom. Els controls multitàctils habituals també funcionen.</string>
+    <string name="input_method_touchpad_description">Ratolí tàctil simulat: llisca per moure el cursor. Toca arreu amb un dit per clic esquerre, amb dos dits per clic dret i amb tres dits per clic del mig. Llisca amb dos dits per desplaçar-te. Mantén premut per arrossegar i deixar anar.</string>
+    <string name="input_mode">Mode d\'entrada</string>
+
+    <string name="input_mode_fit_to_screen">Sense panoràmica; ratolí trackball</string>
+    <string name="input_mode_panning">Mode de panoràmica d\'escriptori</string>
+    <string name="input_method_mouse">Control del cursor del ratolí</string>
+
+    <string name="input_method_direct_swipe_pan">Directe, llisca per panoràmica</string>
+    <string name="input_method_direct_drag_pan">Directe, mantén per panoràmica</string>
+    <string name="input_method_single_handed">Una sola mà</string>
+    <string name="input_method_touchpad">Ratolí tàctil simulat</string>
+
+    <string name="input_mode_help">Ajuda sobre el mode d\'entrada</string>
+    <string name="input_mode_help_text">"
+En qualsevol mode d\'entrada, toqueu la icona del teclat per obtenir el teclat en pantalla. A més, el vostre dispositiu pot tenir el seu propi gest per mostrar el teclat.
+
+Utilitza els modes d\'entrada directa per a un control tàctil més intuïtiu. Utilitza el mode de ratolí tàctil simulat per a un control més fi del ratolí.
+
+Mode directe, llisca per panoràmica:
+ - Controla el ratolí directament mitjançant el toc.
+ - Llisca per moure la vista.
+ - Tocar fa clic del ratolí on heu tocat.
+ - Els esdeveniments de desplaçament s\'envien entre els dos dits on s\'ha iniciat el lliscament amb dos dits.
+
+Mode directe, mantén per panoràmica:
+ - Controla el ratolí directament mitjançant el toc.
+ - Mantén premut per iniciar el mode de panoràmica.
+ - Tocar fa clic del ratolí on heu tocat.
+ - Els esdeveniments de desplaçament s\'envien entre els dos dits on s\'ha iniciat el lliscament amb dos dits.
+
+Mode de ratolí tàctil simulat:
+ - Utilitza la pantalla com un ratolí tàctil.
+ - Llisca per moure el cursor del ratolí.
+ - Mou el ratolí més enllà de la vora de la pantalla per fer panoràmica.
+ - Tocar fa clic del ratolí on és el cursor.
+ - Els esdeveniments de desplaçament s\'envien on és el cursor del ratolí.
+
+Mode d\'una sola mà:
+ - Igual que el mode directe, llisca per panoràmica, excepte que mantenir premut llarg obre un menú per triar el mode.
+ - Després de triar el mode, lliscar el dit per la pantalla realitza el gest seleccionat.
+ - Aixecar el dit completa el gest.
+
+Tots els modes d\'entrada:
+ - Clic esquerre: toca una vegada.
+ - Doble clic: toca dues vegades.
+ - Clic dret: mantén premut i toca amb un segon dit (a qualsevol lloc de la pantalla).
+ - Clic dret alternatiu: utilitza el botó o gest «Enrere» del vostre dispositiu.
+ - Clic del mig: mantén premut i toca amb dos dits més (a qualsevol lloc de la pantalla).
+ - Arrossegament del ratolí: mantén premut llarg i llisca.
+ - Roda de desplaçament: llisca amb dos dits amunt/avall i esquerra/dreta. Un lliscament ràpid desplaça més ràpid.
+ - Zoom d\'entrada/sortida: en l\'escala ampliable, fes pinça per controlar l\'escala.
+ - Tecla Ctrl/Alt: Menú-&gt;botons Ctrl/Alt. No oblideu desactivar-los quan acabeu!
+ - Combinacions de tecles: Menú-&gt;Més-&gt;Envia tecles.
+ - Envia text: escriviu al teclat en pantalla o utilitzeu Menú-&gt;Més-&gt;Envia text."</string>
+
+    <string name="intro_close">Tanca</string>
+    <string name="intro_dont_show">No tornis a mostrar</string>
+
+    <string name="intro_text">
+Llista actual de funcions de bVNC:
+&lt;br&gt;
+- VNC bàsic, VNC segur sobre SSH, AnonTLS i VeNCrypt, i inici de sessió de Windows UltraVNC amb repetidor opcional.
+&lt;br&gt;
+- Mode AutoX: en el mode VNC sobre SSH, descobreix automàticament sessions X existents i/o crea noves sessions X amb x11vnc! Funciona com el client NX.
+&lt;br&gt;
+- Compatibilitat amb rotació lliure. Utilitza el sistema operatiu per limitar la rotació si cal.
+&lt;br&gt;
+- Generació i exportació de parells de claus públiques/privades SSH.
+&lt;br&gt;
+- Totes les codificacions VNC estàndard, incloent-hi Tight, ZRLE i CopyRect.
+&lt;br&gt;
+- Desament automàtic de sessió.
+&lt;br&gt;
+- Modes d\'escala ampliable, ajusta a la pantalla i un a un.
+&lt;br&gt;
+- Control multitàctil del ratolí remot en els modes d\'entrada directa i de ratolí tàctil simulat.
+&lt;br&gt;
+- Control complet amb una sola mà del ratolí remot en el mode d\'una sola mà.
+&lt;br&gt;
+- Clics de ratolí multitàctils: toca per clic esquerre, toca amb dos dits per clic dret, toca amb tres dits per clic del mig.
+&lt;br&gt;
+- Desplaçament multitàctil: llisca amb dos dits amunt/avall i esquerra/dreta per desplaçar-te.
+&lt;br&gt;
+- Tecles meta i fletxes en pantalla que es poden desactivar completament des del menú o plegar amb el botó en pantalla.
+&lt;br&gt;
+- Enviament de text i combinacions de tecles arbitràries durant la connexió.
+&lt;br&gt;
+- Ajuda per crear connexions («Menú-&gt;Ajuda de connexió») a la pantalla de connexió.
+&lt;br&gt;
+- Ajuda amb els modes d\'entrada («Menú-&gt;Més-&gt;Ajuda del mode d\'entrada») durant la connexió.
+&lt;br&gt;
+- Ús del trackpad disponible com a fletxes en lloc de moure el ratolí, i clic del trackpad com a Ctrl.
+&lt;br&gt;
+- Canvi al mode vertical durant les connexions, rotació del D-Pad/trackpad per a teclats BT.
+&lt;br&gt;
+- Compatibilitat amb múltiples idiomes, sempre que el servidor VNC tingui activada la disposició d\'idioma necessària.
+&lt;br&gt;
+- Integració de copiar/enganxar
+&lt;br&gt;
+- Canvis de resolució de la màquina remota
+&lt;br&gt;
+- Compatibilitat completa amb ratolí en dispositius Android 4.0+, incloent-hi clic dret, clic del mig i roda de desplaçament.
+&lt;br&gt;
+&lt;br&gt;
+Problemes coneguts:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Client VNC intuïtiu i segur</string>
+
+
+    <string name="keep_password_button">Conserva</string>
+    <string name="keep_screen_awake_enable">Mantén la pantalla activa</string>
+
+    <string name="keys_caption">Tecles</string>
+
+    <string name="landscape_force">Força l\'orientació horitzontal</string>
+
+    <string name="left_handed_mode">Mode per a esquerrans</string>
+    <string name="disable_pointer_offset_correction">Desactiva la correcció del desplaçament del cursor</string>
+
+    <string name="list_caption">Llista</string>
+    <string name="list_name_caption">Nom de la llista</string>
+
+    <string name="local_mouse_check">Cursor del ratolí local (seleccioneu si el cursor és invisible)</string>
+
+    <string name="main_screen_help">Ajuda de connexió</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Quan afegiu o editeu una connexió, veureu una pàgina de configuració de connexió. Aquí podeu configurar
+una nova connexió VNC o triar-ne una d\'existent. A la part superior hi ha un botó per desar la connexió.
+A continuació és on configureu la connexió.
+
+Si busqueu un augment de rendiment ràpid, proveu de configurar el mode de color a un valor més baix. A més, proveu d\'eliminar qualsevol imatge de fons de l\'escriptori al servidor VNC. Finalment, assegureu-vos que el dispositiu té bona connectivitat de xarxa i eviteu tapar l\'antena i reduir la intensitat del senyal.
+
+ - Tipus de connexió: Aquí trieu el tipus de connexió VNC. Els tipus de connexió disponibles són:
+   (a) VNC bàsic, compatible amb tots els servidors VNC però sense xifrat i vulnerable a atacs de força bruta a causa d\'una limitació de contrasenya de 8 caràcters.
+   (b) VNC segur sobre SSH, que es connecta a través d\'un túnel SSH xifrat. Necessiteu un servei SSHD en execució i un servidor VNC. Sempre que el servidor VNC no accepti connexions directament des d\'Internet, aquest tipus de connexió no té vulnerabilitats conegudes, sempre que verifiqueu la signatura del certificat del servidor la primera vegada que us connecteu.
+   (c) UltraVNC, que us ofereix inici de sessió de Windows i opcions de repetidor UltraVNC. L\'ús de l\'inici de sessió de Windows no pateix la limitació de contrasenya de 8 caràcters, però aquest mode no ofereix xifrat, de manera que la sessió és vulnerable a la captura.
+   (d) VNC segur sobre AnonTLS, que és VNC normal sobre una connexió equivalent a stunnel. Heu d\'executar stunnel o utilitzar un servidor VNC com Vino que admet AnonTLS de sèrie. Aquest mode us ofereix xifrat de sessió, però pateix la limitació de contrasenya de 8 caràcters i no evita atacs de tipus home al mig.
+   (e) VNC segur sobre VeNCrypt, que utilitza certificats x509 i xifrat de sessió, i en funció de la configuració del servidor pot utilitzar credencials d\'usuari/contrasenya sense limitació de 8 caràcters. Aquest mode evita atacs de tipus home al mig i proporciona privacitat de sessió. Servidors com x11vnc i TigerVNC admeten aquest mode i són tan segurs com VNC sobre SSH.
+
+ - Títol: Cada connexió que creeu pot tenir un àlies per identificar-la fàcilment a la llista.
+
+ - Configuració del túnel SSH: Disponible en el mode VNC sobre SSH.
+   (a) Servidor/Port SSH: L\'adreça i el port del servidor SSH a través del qual es tunnelitzarà la connexió. Per defecte, SSH escolta al port 22.
+   (b) Nom d\'usuari/Contrasenya: El nom d\'usuari i la contrasenya del compte al servidor SSH. La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+   (c) Gestiona clau/Utilitza clau: Un botó per gestionar claus públiques/privades i una casella de verificació que indica si s\'ha d\'utilitzar una clau en lloc d\'una contrasenya per autenticar-se. Si feu servir el botó Copia al porta-retalls després de generar un parell de claus, hauríeu de poder enganxar la clau pública un cop connectats al servidor VNC (el porta-retalls es sincronitza amb el servidor).
+
+ - Configura AutoX: Disponible només en el mode VNC sobre SSH. L\'aplicació pot descobrir automàticament sessions X existents i opcionalment crear-ne de noves en sistemes UNIX (com el client NX). Necessiteu x11vnc per trobar sessions, i Xvfb, Xvnc o Xdummy instal·lats al sistema remot per crear sessions. Pot ser que hàgiu de moure el fitxer .dmrc i afegir un fitxer .xinit al vostre directori inicial si l\'escriptori no té bon aspecte o si obteniu una finestra xterm.
+
+ - Configuració de connexió VNC:
+   (a) Servidor VNC/Port: Aquí introduïu el nom d\'amfitrió o l\'adreça IP i el port de l\'ordinador que executa el servidor VNC al qual voleu connectar-vos. En el mode VNC sobre SSH, aquesta adreça és tal com es veu des del servidor SSH. Si el servidor SSH i el servidor VNC són el mateix ordinador, podeu utilitzar localhost. Els servidors VNC típicament escolten a partir del port 5900 (la primera pantalla VNC, pantalla :0).
+   (b) Usuari VNC: Disponible en el mode UltraVNC amb inici de sessió de Windows o VNC segur sobre VeNCrypt, aquí introduïu el nom d\'usuari del compte Windows/UNIX.
+   (c) Contrasenya VNC: Si la configuració del servidor VNC requereix una contrasenya, introduïu-la aquí. En els modes UltraVNC amb inici de sessió de Windows/VeNCrypt, poseu aquí la contrasenya del compte Windows/UNIX. No s\'utilitza emmagatzematge segur per a les contrasenyes, i la contrasenya es desarà només si marqueu la casella «Conserva». La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+
+ - Mode de color: El client admet diversos modes de color. Els modes amb més colors ofereixen una millor experiència visual a costa d\'un ús major de l\'amplada de banda i més càlcul de CPU al dispositiu. Alguns servidors VNC no admeten totes les profunditats de color (p. ex., Escriptori remot d\'OS/X requereix color de 24 bits). Si teniu problemes per connectar-vos, proveu una altra profunditat de color.
+
+ - Utilitza D-Pad per a fletxes: Si ho preferiu, podeu utilitzar el D-Pad del teclat Bluetooth o les fletxes del teclat en pantalla per enviar fletxes al servidor VNC.
+
+ - Gira D-Pad: Els telèfons emparellats amb un teclat Bluetooth poden necessitar que el D-Pad del teclat es giri en sentit antihorari per enviar direccions correctes al servidor.
+
+ - Cursor del ratolí local: Alguns servidors VNC (p. ex., Escriptori remot d\'OS/X) no dibuixen el cursor del ratolí al client. Marcar aquesta opció farà que l\'aplicació dibuixi un cursor del ratolí a la posició del ratolí.
+
+ - Automàtic/Mapa de bits a pantalla completa: El client VNC utilitza un mapa de bits per representar la pantalla remota. Per a pantalles remotes molt grans, especialment en el mode d\'ajusta a la pantalla, podeu experimentar artefactes visuals estranys en el mode d\'ajusta a la pantalla, a causa de les limitacions de memòria per procés. Si passa, proveu de marcar aquesta opció. Tingueu en compte que marcar l\'opció pot fer que l\'aplicació surti en connectar.
+
+ - Repetidor: Disponible només en el mode UltraVNC. IMPORTANT: Si teniu un repetidor UltraVNC, introduïu la seva adreça i port fora del diàleg «Repetidor UltraVNC» i introduïu l\'adreça i el port del servidor VNC real dins del diàleg «Repetidor UltraVNC». Separeu l\'adreça i el port del servidor VNC amb dos punts, p. ex. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Activa la contrasenya mestra</string>
+    <string name="master_password_error_failed_to_disable">No s\'ha pogut desactivar la contrasenya mestra. Comproveu l\'espai lliure al dispositiu i torneu-ho a intentar.</string>
+    <string name="master_password_error_failed_to_enable">No s\'ha pogut activar la contrasenya mestra. Comproveu l\'espai lliure al dispositiu i torneu-ho a intentar.</string>
+    <string name="master_password_error_intents_not_supported">Les intents de connexió encara no estan admeses quan la contrasenya mestra està activada.</string>
+    <string name="master_password_error_password_necessary">Cal la contrasenya mestra per continuar.</string>
+    <string name="master_password_error_password_not_set">S\'ha cancel·lat la configuració de la contrasenya mestra.</string>
+    <string name="master_password_error_shortcuts_not_supported">Les dreceres encara no estan admeses quan la contrasenya mestra està activada.</string>
+    <string name="master_password_error_wrong_password">No s\'ha pogut autenticar amb la contrasenya mestra proporcionada.</string>
+    <string name="master_password_hint_once">Introduïu la contrasenya</string>
+    <string name="master_password_hint_twice">Repetiu la contrasenya</string>
+    <string name="master_password_set">Estableix la contrasenya mestra</string>
+    <string name="master_password_set_error">Les contrasenyes no coincideixen; aneu amb compte!</string>
+    <string name="master_password_set_message">Introduïu i memoritzeu una contrasenya mestra. Com més llarga sigui la contrasenya, més difícil serà de trencar. Si configureu la contrasenya incorrectament o l\'oblideu, perdreu tota la configuració. Potser voldreu exportar la configuració ara per fer-ne una còpia de seguretat (des del Menú). Guardeu-la de manera segura, ja que la configuració exportada no està xifrada.</string>
+    <string name="master_password_verify">Verifica la contrasenya mestra</string>
+    <string name="master_password_verify_message">Introduïu la contrasenya mestra correcta per continuar.</string>
+
+    <string name="meta_key_title">Envia tecles especials</string>
+
+    <string name="mouse_follow_pan">El ratolí segueix la panoràmica</string>
+
+    <string name="new_connection">Nova connexió</string>
+    <string name="new_list_button">Nova llista</string>
+
+    <string name="nickname_caption">Àlies</string>
+    <string name="nickname_caption_hint">Títol (opcional)</string>
+
+    <string name="off">Desactivat</string>
+
+    <string name="one_to_one">Un a un</string>
+
+    <string name="open_doc">Manual/Wiki</string>
+
+    <string name="pan_follow_mouse">La panoràmica segueix el ratolí</string>
+
+    <string name="password_caption">Auth. VNC</string>
+    <string name="password_caption_hint">Contrasenya VNC</string>
+    <string name="password_caption_ssh">Auth. SSH</string>
+    <string name="password_hint_ssh">Contrasenya SSH</string>
+
+    <string name="port_caption">Port VNC</string>
+    <string name="port_caption_ssh">Port SSH</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Canvia al mode vertical durant la connexió</string>
+    <string name="local_clipboard_integration">Activa la integració del porta-retalls local al remot</string>
+    <string name="remote_clipboard_integration">Activa la integració del porta-retalls remot al local</string>
+    <string name="position_toolbar_last_used">Restaura la posició de la barra d\'eines</string>
+    <string name="applies_to_new_connections_only">S\'aplica només a les connexions noves</string>
+    <string name="pro_feature_mfa">Sembla que el vostre servidor té l\'autenticació multifactor activada. Doneu suport al projecte comprant la versió Pro, que admet aquesta funcionalitat. Un enllaç a la versió Pro és disponible al diàleg d\'inici.</string>
+    <string name="pro_feature_intro">Sembla que esteu utilitzant una funcionalitat Pro. Doneu suport al projecte comprant la versió Pro, que admet aquesta funcionalitat. Consulteu el diàleg d\'introducció per als enllaços a l\'aplicació correcta.</string>
+    <string name="pro_feature_generic">Sembla que esteu utilitzant una funcionalitat Pro. Doneu suport al projecte comprant la versió Pro, que admet aquesta funcionalitat. Un enllaç a la versió Pro és disponible al diàleg d\'inici.</string>
+    <string name="pro_feature_rdp">Sembla que heu intentat obrir un fitxer .rdp, que és una funcionalitat Pro. Doneu suport al projecte comprant aRDP Pro, que admet fitxers .rdp. Un enllaç a la versió aRDP Pro és disponible al diàleg d\'inici.</string>
+    <string name="pro_feature_spice">Sembla que heu intentat obrir un fitxer .vv. Si voleu desar connexions a Proxmox o oVirt directament a l\'aplicació i també voleu obrir fitxers .vv, considereu comprar Opaque. Si només necessiteu compatibilitat amb fitxers .vv, podeu obtenir aSPICE Pro. Trobareu enllaços a les dues aplicacions al diàleg d\'inici.</string>
+
+    <string name="rdp_address_caption_hint">Servidor RDP</string>
+    <string name="rdp_adv_console_mode">Mode de consola</string>
+    <string name="rdp_adv_desktop_background">Mostra el fons de l\'escriptori</string>
+    <string name="rdp_adv_desktop_composition">Activa la composició de l\'escriptori</string>
+    <string name="rdp_adv_font_smoothing">Realitza el suavitzat de tipus de lletra</string>
+    <string name="rdp_adv_menu_animation">Mostra les animacions del menú</string>
+    <string name="rdp_adv_redirect_sdcard">Redirigeix la targeta SD</string>
+    <string name="rdp_adv_remotefx">Activa RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Activa els estils visuals</string>
+    <string name="rdp_adv_window_contents">Mostra el contingut de les finestres mentre s\'arrosseguen</string>
+    <string name="rdp_security_mode">Mode de seguretat</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Mida de l\'escriptori remot (AmplxAlt)</string>
+    <string name="rdp_domain_hint">Domini RDP</string>
+    <string name="rdp_geom_automatic">Automàtic</string>
+    <string name="rdp_geom_checkbox_enable">Activa la resolució personalitzada</string>
+    <string name="rdp_geom_custom">Personalitzat</string>
+    <string name="rdp_geom_description_hint">El servidor necessita compatibilitat amb ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Desactivat</string>
+    <string name="rdp_geom_native_landscape">Horitzontal natiu</string>
+    <string name="rdp_geom_native_portrait">Vertical natiu</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Negocia la seguretat automàticament</string>
+    <string name="rdp_security_rdp">Seguretat RDP</string>
+    <string name="rdp_security_tls">Seguretat TLS</string>
+    <string name="rdp_security_nla">Autenticació a nivell de xarxa</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Gràcies per donar suport a aRDP i al programari de codi obert en general! Per obtenir ajuda per usar aRDP, consulteu els elements d\'ajuda del Menú i la descripció de l\'aplicació al mercat.
+&lt;br&gt;
+&lt;br&gt;
+La llista actual de funcions d\'aRDP inclou:
+&lt;br&gt;
+- RDP bàsic, RDP tunnelitzat sobre SSH.
+&lt;br&gt;
+- Compatibilitat amb rotació lliure. Utilitza el sistema operatiu per limitar la rotació si cal.
+&lt;br&gt;
+- Configuració de la resolució remota, resolució nativa en modes horitzontal i vertical.
+&lt;br&gt;
+- Generació i exportació de parells de claus públiques/privades SSH.
+&lt;br&gt;
+- Desament automàtic de sessió.
+&lt;br&gt;
+- Modes d\'escala ampliable, ajusta a la pantalla i un a un.
+&lt;br&gt;
+- Control multitàctil del ratolí remot en els modes d\'entrada directa i de ratolí tàctil simulat.
+&lt;br&gt;
+- Control complet amb una sola mà del ratolí remot en el mode d\'una sola mà.
+&lt;br&gt;
+- Clics de ratolí multitàctils: toca per clic esquerre, toca amb dos dits per clic dret, toca amb tres dits per clic del mig.
+&lt;br&gt;
+- Desplaçament multitàctil: llisca amb dos dits amunt/avall i esquerra/dreta per desplaçar-te.
+&lt;br&gt;
+- Tecles meta i fletxes en pantalla que es poden desactivar completament des del menú o plegar amb el botó en pantalla.
+&lt;br&gt;
+- Enviament de text i combinacions de tecles arbitràries durant la connexió.
+&lt;br&gt;
+- Ajuda per crear connexions («Menú-&gt;Ajuda de connexió») a la pantalla de connexió.
+&lt;br&gt;
+- Ajuda amb els modes d\'entrada («Menú-&gt;Més-&gt;Ajuda del mode d\'entrada») durant la connexió.
+&lt;br&gt;
+- Ús del trackpad disponible com a fletxes en lloc de moure el ratolí, i clic del trackpad com a Ctrl, rotació del D-Pad/trackpad per a teclats BT.
+&lt;br&gt;
+- Compatibilitat amb múltiples idiomes, sempre que el servidor RDP tingui activada la disposició d\'idioma necessària.
+&lt;br&gt;
+- Canvis de resolució de la màquina remota sense interrupcions
+&lt;br&gt;
+- Compatibilitat completa amb ratolí en dispositius Android 4.0+, incloent-hi clic dret, clic del mig i roda de desplaçament.
+&lt;br&gt;
+- Selecció de modes de color
+&lt;br&gt;
+- Integració de copiar/enganxar
+&lt;br&gt;
+- Exportació de la configuració
+&lt;br&gt;
+- So
+&lt;br&gt;
+&lt;br&gt;
+Problemes coneguts:</string>
+    <string name="rdp_intro_title">aRDP: Client RDP intuïtiu i segur</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Quan afegiu o editeu una connexió, veureu una pàgina de configuració de connexió. Aquí podeu configurar una nova connexió RDP o triar-ne una d\'existent. A la part superior hi ha un botó per desar la connexió. A continuació és on configureu la connexió.
+
+ - Tipus de connexió: Aquí trieu el tipus de connexió RDP. Els tipus de connexió disponibles són:
+   (a) RDP, que es connecta directament a un ordinador mitjançant el protocol RDP.
+   (b) RDP sobre SSH, que primer tunnelitza la connexió a través d\'un ordinador que executa un servidor SSH.
+
+ - Títol: Cada connexió que creeu pot tenir un àlies per identificar-la fàcilment a la llista.
+
+ - Configuració del túnel SSH: Disponible en el mode RDP sobre SSH.
+   (a) Servidor/Port SSH: L\'adreça i el port del servidor SSH a través del qual es tunnelitzarà la connexió. Per defecte, SSH escolta al port 22.
+   (b) Nom d\'usuari/Contrasenya: El nom d\'usuari i la contrasenya del compte al servidor SSH. La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+   (c) Gestiona clau/Utilitza clau: Un botó per gestionar claus públiques/privades i una casella de verificació que indica si s\'ha d\'utilitzar una clau en lloc d\'una contrasenya per autenticar-se. Si feu servir el botó Copia al porta-retalls després de generar un parell de claus, hauríeu de poder enganxar la clau pública un cop connectats al servidor RDP (el porta-retalls es sincronitza amb el servidor).
+
+ - Configuració de connexió RDP:
+   (a) Servidor RDP/Port: Aquí introduïu el nom d\'amfitrió o l\'adreça IP i el port de l\'ordinador que executa el servidor RDP al qual voleu connectar-vos. En el mode RDP sobre SSH, aquesta adreça és tal com es veu des del servidor SSH. Si el servidor SSH i el servidor RDP són el mateix ordinador físic, podeu utilitzar localhost. Els servidors RDP típicament escolten al port 3389.
+   (b) Usuari RDP: Aquí introduïu el nom d\'usuari del compte Windows/UNIX.
+   (c) Domini RDP: Introduïu el domini al qual pertany el vostre compte.
+   (d) Contrasenya RDP: Aquí introduïu la contrasenya del compte Windows/UNIX. No s\'utilitza emmagatzematge segur per a les contrasenyes (es troben en una base de dades), i la contrasenya es desarà només si marqueu la casella «Conserva». La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+
+ - Configuració avançada: En aquesta secció trobareu maneres de personalitzar la resolució de l\'escriptori i diverses optimitzacions de rendiment RDP
+
+ - Ajustos del dispositiu local: Ajusten el comportament de l\'aplicació al dispositiu.
+   (a) Utilitza D-Pad per a fletxes: Si ho preferiu, podeu utilitzar el D-Pad del teclat Bluetooth o les fletxes del teclat en pantalla per enviar fletxes al servidor RDP.
+   (b) Gira D-Pad: Els telèfons emparellats amb un teclat Bluetooth poden necessitar que el D-Pad del teclat es giri en sentit antihorari per enviar direccions correctes al servidor.
+   (c) Cursor del ratolí local: Si el cursor és invisible, seleccioneu-ho per forçar que l\'aplicació el dibuixi."</string>
+    <string name="rdp_password_hint">Contrasenya RDP</string>
+    <string name="rdp_server_empty">El servidor o port RDP és buit. No es pot connectar!</string>
+    <string name="rdp_username_hint">Nom d\'usuari RDP</string>
+
+    <string name="remote_sound_disabled">So desactivat</string>
+    <string name="remote_sound_on_device">So al dispositiu</string>
+    <string name="remote_sound_on_server">So al servidor</string>
+
+    <string name="repeater_button">Repetidor UltraVNC</string>
+    <string name="repeater_caption">IMPORTANT: Si feu servir un repetidor UltraVNC, introduïu la seva adreça i port fora d\'aquest diàleg. Aquí, introduïu l\'adreça i el port del servidor VNC real. Separeu l\'adreça i el port del servidor VNC amb dos punts, p. ex. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">Repetidor UltraVNC</string>
+    <string name="repeater_clear">No utilitzis</string>
+    <string name="repeater_dialog_title">Servidor VNC darrere del repetidor</string>
+    <string name="repeater_empty_text">Sense repetidor</string>
+    <string name="repeater_save">Utilitza</string>
+
+    <string name="right_alt_as_iso_l3_shift">Alt dret com a ISO L3 Shift (només VNC)</string>
+
+    <string name="rotate_dpad">Gira el D-Pad Bluetooth o de programari</string>
+
+    <string name="save_as_copy">Desa com a còpia</string>
+
+    <string name="scaling">Escala</string>
+    <string name="scaling_zoomable">Ampliable</string>
+
+    <string name="send_button">Envia</string>
+    <string name="send_key_again">Torna a enviar la tecla</string>
+
+    <string name="shift_check">Maj</string>
+
+    <string name="shortcut_label_vnc">Connexió VNC</string>
+    <string name="shortcut_label_rdp">Connexió RDP</string>
+    <string name="shortcut_label_spice">Connexió SPICE</string>
+
+    <string name="showkbd_label">Teclat</string>
+
+    <string name="single_cancel">Mode d\'una sola mà cancel·lat</string>
+    <string name="single_choose">Trieu el mode d\'una sola mà o cancel·leu</string>
+    <string name="single_left">Mode d\'arrossegament esquerre: llisca per arrossegar/seleccionar, aixeca el dit per aturar</string>
+    <string name="single_middle">Mode d\'arrossegament del mig: llisca per arrossegar/seleccionar, aixeca el dit per aturar</string>
+    <string name="single_reposition">Cursor del ratolí reposicionat per al mode d\'una sola mà</string>
+    <string name="single_right">Mode d\'arrossegament dret: llisca per arrossegar/seleccionar, aixeca el dit per aturar</string>
+    <string name="single_scroll">Mode de desplaçament: llisca amunt/avall per desplaçar-te, aixeca el dit per aturar</string>
+    <string name="single_zoom">Mode de zoom: llisca amunt/avall per fer zoom d\'entrada/sortida, aixeca el dit per aturar</string>
+
+    <string name="snap_one_to_one">Ajustat al zoom 1:1</string>
+
+    <string name="special_keys">Envia tecles</string>
+
+    <string name="spice_address_caption_hint">Servidor SPICE</string>
+    <string name="spice_button_import_ca">Importa CA</string>
+    <string name="spice_ca_cert_path_hint">Camí al fitxer de l\'autoritat de certificació</string>
+    <string name="spice_ca_file_error_reading">Error en llegir el fitxer CA. Assegureu-vos que és llegible.</string>
+    <string name="spice_ca_file_not_found">Fitxer no trobat. Introduïu un nom de fitxer vàlid al camp de text (p. ex. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Assumpte del certificat</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Gràcies per donar suport a aSPICE i al programari de codi obert en general! Per obtenir ajuda per usar aSPICE, consulteu els elements d\'ajuda del Menú i la descripció de l\'aplicació al mercat.
+&lt;br&gt;
+&lt;br&gt;
+La llista actual de funcions d\'aSPICE inclou:
+&lt;br&gt;
+- SPICE bàsic, SPICE tunnelitzat sobre SSH.
+&lt;br&gt;
+- Compatibilitat amb rotació lliure. Utilitza el sistema operatiu per limitar la rotació si cal.
+&lt;br&gt;
+- Generació i exportació de parells de claus públiques/privades SSH.
+&lt;br&gt;
+- Desament automàtic de sessió.
+&lt;br&gt;
+- Modes d\'escala ampliable, ajusta a la pantalla i un a un.
+&lt;br&gt;
+- Control multitàctil del ratolí remot en els modes d\'entrada directa i de ratolí tàctil simulat.
+&lt;br&gt;
+- Control complet amb una sola mà del ratolí remot en el mode d\'una sola mà.
+&lt;br&gt;
+- Clics de ratolí multitàctils: toca per clic esquerre, toca amb dos dits per clic dret, toca amb tres dits per clic del mig.
+&lt;br&gt;
+- Desplaçament multitàctil: llisca amb dos dits amunt/avall i esquerra/dreta per desplaçar-te.
+&lt;br&gt;
+- Tecles meta i fletxes en pantalla que es poden desactivar completament des del menú o plegar amb el botó en pantalla.
+&lt;br&gt;
+- Enviament de text i combinacions de tecles arbitràries durant la connexió.
+&lt;br&gt;
+- Ajuda per crear connexions («Menú-&gt;Ajuda de connexió») a la pantalla de connexió.
+&lt;br&gt;
+- Ajuda amb els modes d\'entrada («Menú-&gt;Més-&gt;Ajuda del mode d\'entrada») durant la connexió.
+&lt;br&gt;
+- Ús del trackpad disponible com a fletxes en lloc de moure el ratolí, i clic del trackpad com a Ctrl, rotació del D-Pad/trackpad per a teclats BT.
+&lt;br&gt;
+- Compatibilitat amb múltiples idiomes, sempre que el servidor SPICE tingui activada la disposició d\'idioma necessària.
+&lt;br&gt;
+- Canvis de resolució de la màquina remota sense interrupcions
+&lt;br&gt;
+- Compatibilitat completa amb ratolí en dispositius Android 4.0+, incloent-hi clic dret, clic del mig i roda de desplaçament.
+&lt;br&gt;
+&lt;br&gt;
+Funcions planificades:
+&lt;br&gt;
+- Integració de copiar/enganxar
+&lt;br&gt;
+- So
+&lt;br&gt;
+- Millores de rendiment
+&lt;br&gt;
+Problemes coneguts:
+&lt;br&gt;
+- L\'enviament de text no envia alguns símbols.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Client SPICE intuïtiu i segur</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Quan afegiu o editeu una connexió, veureu una pàgina de configuració de connexió. Aquí podeu configurar una nova connexió SPICE o triar-ne una d\'existent. A la part superior hi ha un botó per desar la connexió. A continuació és on configureu la connexió.
+
+ - Tipus de connexió: Aquí trieu el tipus de connexió SPICE. Els tipus de connexió disponibles són:
+   (a) SPICE, que es connecta directament a un ordinador mitjançant el protocol SPICE.
+   (b) SPICE sobre SSH, que primer tunnelitza la connexió a través d\'un ordinador que executa un servidor SSH.
+
+ - Títol: Cada connexió que creeu pot tenir un àlies per identificar-la fàcilment a la llista.
+
+ - Configuració del túnel SSH: Disponible en el mode SPICE sobre SSH.
+   (a) Servidor/Port SSH: L\'adreça i el port del servidor SSH a través del qual es tunnelitzarà la connexió. Per defecte, SSH escolta al port 22.
+   (b) Nom d\'usuari/Contrasenya: El nom d\'usuari i la contrasenya del compte al servidor SSH. La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+   (c) Gestiona clau/Utilitza clau: Un botó per gestionar claus públiques/privades i una casella de verificació que indica si s\'ha d\'utilitzar una clau en lloc d\'una contrasenya per autenticar-se. Si feu servir el botó Copia al porta-retalls després de generar un parell de claus, hauríeu de poder enganxar la clau pública un cop connectats al servidor SPICE (el porta-retalls es sincronitza amb el servidor).
+
+ - Configuració de connexió SPICE:
+   (a) Servidor SPICE/Port: Aquí introduïu el nom d\'amfitrió o l\'adreça IP i el port de l\'ordinador que executa el servidor SPICE al qual voleu connectar-vos. En el mode SPICE sobre SSH, aquesta adreça és tal com es veu des del servidor SSH. Si el servidor SSH i el servidor SPICE són el mateix ordinador físic, podeu utilitzar localhost. Els servidors SPICE típicament escolten al port 5900 i superiors.
+   (b) Contrasenya SPICE: Aquí introduïu la contrasenya establerta per protegir la sessió SPICE. No s\'utilitza emmagatzematge segur per a les contrasenyes (es troben en una base de dades), i la contrasenya es desarà només si marqueu la casella «Conserva». La contrasenya s\'emplenarà en aquesta pàgina si no heu sortit de l\'aplicació des de l\'última vegada que la vàreu introduir.
+
+ - Configuració avançada: En aquesta secció trobareu qualsevol ajust de rendiment del dispositiu local o SPICE
+ - Ajustos del dispositiu local: Ajusten el comportament de l\'aplicació al dispositiu.
+   (a) Utilitza D-Pad per a fletxes: Si ho preferiu, podeu utilitzar el D-Pad del teclat Bluetooth o les fletxes del teclat en pantalla per enviar fletxes al servidor SPICE.
+   (b) Gira D-Pad: Els telèfons emparellats amb un teclat Bluetooth poden necessitar que el D-Pad del teclat es giri en sentit antihorari per enviar direccions correctes al servidor.
+   (c) Cursor del ratolí local: Si el cursor és invisible, seleccioneu-ho per forçar que l\'aplicació el dibuixi."</string>
+    <string name="spice_password_hint">Contrasenya SPICE</string>
+    <string name="spice_server_empty">El servidor o port SPICE és buit. No es pot connectar!</string>
+    <string name="spice_tls_port_hint">Port TLS</string>
+    <string name="spice_username_hint">Nom d\'usuari SPICE</string>
+
+    <string name="ssh_passphrase_hint">Frase de contrasenya SSH</string>
+    <string name="ssh_pubkey_button">Gestiona la clau</string>
+    <string name="ssh_use_pubkey">Utilitza la clau</string>
+    <string name="ssh_use_x11vnc">Escriptori automàtic</string>
+    <string name="ssh_x11vnc_customize">Configura AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Desactiva</string>
+    <string name="tap_enable">Activa</string>
+
+    <string name="username_caption">Usuari VNC</string>
+    <string name="username_hint">Nom d\'usuari d\'inici de sessió MS d\'UltraVNC</string>
+    <string name="username_hint_optional">Nom d\'usuari VNC (opcional)</string>
+    <string name="username_hint_ssh">Nom d\'usuari SSH</string>
+    <string name="username_hint_vencrypt">Nom d\'usuari VNC</string>
+    <string name="verification_code">Codi de verificació</string>
+    <string name="verification_code_message">Introduïu el codi de verificació d\'autenticació multifactor</string>
+
+    <string name="view_only">Mode de només visualització</string>
+
+    <string name="vnc_server_empty">El servidor o port VNC és buit. No es pot connectar!</string>
+    <string name="vnc_server_empty_no_save">El servidor o port VNC és buit. No es pot desar la connexió!</string>
+
+    <string name="warning_cert_does_not_match">ADVERTIMENT: El certificat x509 desat o la signatura proporcionada no coincideix amb el certificat del servidor actual. Podria ser un atac de tipus home al mig. Si sou conscients del canvi de clau, podeu continuar. </string>
+    <string name="copy_logcat">📋 Copia el Logcat</string>
+    <string name="log_copied">El logcat s\'ha copiat al porta-retalls. Ara podeu enganxar-lo en un correu electrònic o al fòrum d\'assistència. Comproveu si hi ha dades personals abans de publicar-lo.</string>
+    <string name="info_set_touchpad_input_mode">El servidor informa que no admet l\'entrada del ratolí en mode client, i el mode d\'entrada del ratolí actual no funcionarà correctament. Si persisteix, assegureu-vos que spice tools està instal·lat a la màquina virtual o canvieu al mode d\'entrada de ratolí tàctil simulat des del Menú.</string>
+    <string name="ssh_tunnel_settings">Configuració del túnel SSH</string>
+    <string name="vnc_connection_settings">Configuració de la connexió VNC</string>
+    <string name="show_advanced_settings">Mostra la configuració avançada</string>
+    <string name="use_no_compression_for_local_connections">Sense compressió (connexions locals, codificació Hextile)</string>
+    <string name="rdp_connection_settings">Configuració de la connexió RDP</string>
+    <string name="local_device_tweaks">Ajustos del dispositiu local</string>
+    <string name="spice_connection_settings">Configuració de la connexió SPICE</string>
+    <string name="ca_subject">Introduïu el nom d\'assumpte del certificat aquí. Pot no ser necessari si el nom comú (CN) del certificat coincideix amb el nom d\'amfitrió del servidor.</string>
+    <string name="path_to_ca">Introduïu un camí de fitxer (per exemple /sdcard/ca-cert.pem) i toqueu Importa per carregar la vostra autoritat de certificació.</string>
+    <string name="paste_ca">Introduïu aquí l\'autoritat de certificació si no l\'importeu com a fitxer.</string>
+    <string name="cert_issuer">Emissor del certificat</string>
+    <string name="cert_fingerprint">Empremta digital del certificat</string>
+    <string name="error">Error</string>
+    <string name="panning">Pantalla de panoràmica</string>
+    <string name="copy_of">Còpia de</string>
+    <string name="ssh_key_generated">S\'ha generat o importat una nova clau correctament. Ara podeu tocar el botó «Genera/Exporta la clau» per compartir, copiar al porta-retalls o exportar la clau pública.</string>
+    <string name="cursor_force_local">"Local"</string>
+    <string name="cursor_force_disable">"Desactiva"</string>
+    <string name="cursor_mode">"Mode del cursor:"</string>
+    <string name="rendering_mode">"Mode de renderització:"</string>
+    <string name="color_24_bit">"Color de 24 bits (24 bpp)"</string>
+    <string name="color_256">"256 colors (8 bpp)"</string>
+    <string name="color_64">"64 colors (4 bpp)"</string>
+    <string name="color_8">"8 colors (2 bpp)"</string>
+    <string name="color_greyscale">"Escala de grisos (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Blanc i negre (1 bpp)"]]></string>
+    <string name="show">"Mostra"</string>
+    <string name="hide">"Amaga"</string>
+    <string name="search_connections">Cerca connexions</string>
+    <string name="user_not_specified">Usuari no especificat</string>
+    <string name="enter_ssh_credentials">Introduïu les credencials SSH</string>
+    <string name="enter_vnc_credentials">Introduïu les credencials VNC</string>
+    <string name="enter_vnc_password">Introduïu la contrasenya VNC</string>
+    <string name="enter_rdp_credentials">Introduïu les credencials RDP</string>
+    <string name="enter_gateway_credentials">Introduïu les credencials de la passarel·la</string>
+    <string name="enter_spice_password">Introduïu la contrasenya SPICE</string>
+    <string name="enter_passphrase_title">Introduïu la frase de contrasenya de la clau</string>
+    <string name="enter_passphrase">Introduïu la frase de contrasenya de la clau</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">El vostre servidor necessita autenticació per contrasenya a més de l\'autenticació per clau.</string>
+    <string name="main_screen_help_text">"
+Quan s\'inicia l\'aplicació, es mostra una pantalla amb les connexions desades.
+
+Si no hi ha connexions desades, la part inferior de la pantalla és buida i haureu de tocar el botó de més per crear-ne una de nova.
+També podeu controlar altres aspectes de la configuració des d\'aquesta pantalla tocant altres opcions de la barra d\'eines o del menú a la part superior, per exemple per editar la configuració predeterminada o importar i exportar la configuració.
+
+Un cop tingueu una connexió desada, podeu connectar-vos al servidor remot tocant-la una vegada. També tindreu l\'opció de suprimir-la o editar-la mantenint-la premuda.
+
+Finalment, podeu utilitzar el camp Cerca connexions per trobar ràpidament connexions filtrant les connexions mostrades."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Quan afegiu o editeu una connexió, veureu una pàgina de configuració de connexió.
+Aquí podeu configurar una nova connexió Opaque o triar-ne una d\'existent.
+A la part superior hi ha un botó per desar la connexió.
+A continuació és on configureu la connexió.
+
+ - Tipus de connexió: Aquí trieu a quin entorn de virtualització us connecteu.
+
+ - Adreça del servidor: El nom d\'amfitrió o l\'adreça IP del servidor. Si escolta en un port no estàndard, podeu afegir un port separat per dos punts.
+
+ - Nom de la màquina virtual: Podeu especificar el nom de la màquina virtual tal com apareix a la plataforma de virtualització o deixar aquest camp buit per obtenir una llista de màquines virtuals o contenidors per seleccionar.
+
+ - Usuari: Introduïu el nom d\'usuari per autenticar-vos al marc de virtualització.
+
+ - Contrasenya: Si voleu desar la contrasenya, introduïu-la aquí o deixeu el camp buit perquè us la demanin cada vegada.
+
+ - Configuració avançada: En aquesta secció trobareu qualsevol ajust de rendiment del dispositiu local, protocol i rendiment."
+    </string>
+    <string name="help">Ajuda ⓘ</string>
+    <string name="need_help">Necessiteu ajuda?</string>
+    <string name="support_forum">Fòrum d\'assistència ❓</string>
+    <string name="email_us">Envieu-nos un correu 📧</string>
+    <string name="report_bug">Informa d\'un error 🐛</string>
+    <string name="download_from_server">Descarrega del servidor</string>
+    <string name="import_from_file">Importa des del fitxer</string>
+    <string name="please_grant_permission_from_prefs">Pot ser que hàgiu de concedir permisos a l\'aplicació a través de la Configuració.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Més registre de depuració</string>
+    <string name="prefer_sending_unicode">Entrada Unicode (només Windows)</string>
+    <string name="hide_connection_thumbnails">Amaga les miniatures de connexió</string>
+    <string name="show_only_connection_nicknames">Mostra només els àlies de connexió</string>
+    <string name="love_our_work">Us agrada la nostra feina?</string>
+    <string name="rate_app">Puntua ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Comparteix 🔗</string>
+    <string name="share_app_toast">Comparteix un enllaç a l\'aplicació amb tots els amics a les xarxes socials!</string>
+    <string name="donate_app">Dona ❤</string>
+    <string name="more_apps">Més aplicacions 📱</string>
+    <string name="previous_versions">Versions anteriors ⍼</string>
+    <string name="keyboard_type">Tipus de teclat de programari</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Predeterminat (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/Números sense suggeriments (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text amb suggeriments (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Aquesta connexió està configurada per llançar VPN mitjançant una aplicació externa. Cal instal·lar una aplicació com Morpheusly per llançar-la.</string>
+    <string name="vnc_viewer_started">Visualitzador VNC iniciat</string>
+    <string name="enable_gateway">Activa RDP Gateway</string>
+    <string name="scroll_speed">Velocitat de desplaçament tàctil</string>
+    <string name="desktop_scale_percentage">Percentatge d\'escala personalitzat</string>
+    <string name="show_menu">Mostra el menú</string>
+    <string name="move_toolbar">Mou la barra d\'eines</string>
+    <string name="rdp_adv_glyph_cache">Activa la memòria cau de glifs</string>
+    <string name="disable_battery_optimizations_failed">
+No s\'ha pogut obrir la configuració d\'optimització de la bateria. Desactiveu l\'optimització de la bateria manualment a la configuració del sistema.</string>
+    <string name="disable_battery_optimizations">
+🔋Desactiva les optimitzacions de la bateria</string>
+    <string name="disable_battery_optimizations_already_done">
+L\'aplicació ja està exempta d\'optimitzacions de bateria.</string>
+    <string name="no_connections_title">Encara no hi ha connexions</string>
+    <string name="no_connections_hint">Toca el botó + per afegir la teva primera connexió remota</string>
+    <string name="no_connections_hint_tv">Prem el botó + a dalt per afegir la teva primera connexió remota</string>
+    <string name="keyboard_layout_map">Disposició del teclat</string>
+</resources>

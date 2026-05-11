@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">Litastilling</string>
+    <string name="message_please_wait">Vinsamlegast bíddu</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Sjálfgefið (TYPE_NULL)</string>
+    <string name="ad_donate_text2">Pro útgáfan gerir þér kleift að slökkva á þessum glugga og gefur þér aðgang að viðbótareiginleikum.</string>
+    <string name="snap_one_to_one">Festur við 1:1 aðdrátt</string>
+    <string name="spice_intro_title">aSPICE: Leiðandi, öruggur SPICE viðskiptavinur</string>
+    <string name="auto_x_title">Stilla AutoX</string>
+    <string name="error_ovirt_auth_failure">Auðkenningarbilun. Vinsamlegast athugaðu uppgefið notanda og lykilorð.</string>
+    <string name="ad_donate_text1">Ýttu hér til að styðja verkefnið með litlu framlagi með því að kaupa Pro útgáfuna.</string>
+    <string name="auto_x_geom_custom">Sérsniðin</string>
+    <string name="repeater_caption_hint">UltraVNC endurtakari</string>
+    <string name="error_ssh_keypair_decryption_failure">Mistókst að afkóða lyklapar. Gakktu úr skugga um að þú hafir slegið inn lykilorðið þitt rétt í \'SSH Passphrase\' reitinn á aðalskjánum.</string>
+    <string name="master_password_hint_twice">Endurtaktu lykilorð</string>
+    <string name="connection_setup_password">Lykilorð</string>
+    <string name="support_forum">Stuðningsvettvangur ❓</string>
+    <string name="main_screen_help">Tengingarhjálp</string>
+    <string name="spice_server_empty">SPICE Server eða port tómt. Get ekki tengst!</string>
+    <string name="arrow_up">Upp ör</string>
+    <string name="error_vm_lookup_failed">Fann ekki sýndarvél með nafninu sem tilgreint var sem notandanum þínum var úthlutað. Vinsamlegast eyddu VM nafninu sem tilgreint er til að sjá lista yfir VM sem úthlutað er til notanda.</string>
+    <string name="nickname_caption">Gælunafn</string>
+    <string name="auto_x_geom_native">Innfæddur</string>
+    <string name="new_connection">Nýtt samband</string>
+    <string name="error_ssh_unable_to_connect">Mistókst að tengjast SSH Server. Vinsamlegast athugaðu nettengingu og SSH netfang og tengi.</string>
+    <string name="send_key_again">Sendu lykil aftur</string>
+    <string name="input_mode_help">Hjálp fyrir inntaksstillingu</string>
+    <string name="enable_gateway">Virkja RDP Gateway</string>
+    <string name="message_please_install_bvnc">Vinsamlegast settu upp &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; frá Google Play til að tengjast VNC stjórnborði þessa VM.</string>
+    <string name="spice_ca_cert_path_hint">Slóð að skrá vottunaryfirvalds</string>
+    <string name="enter_spice_password">Vinsamlegast sláðu inn SPICE lykilorð</string>
+    <string name="rdp_adv_window_contents">Sýna innihald glugga á meðan þú dregur</string>
+    <string name="input_methods">Inntaksaðferð</string>
+    <string name="info_ssh_key_fingerprint">Fingrafar hýsillykilsins er:</string>
+    <string name="paste_ca">Sláðu inn vottunaryfirvöld hér ef þú ert ekki að flytja það inn sem skrá.</string>
+    <string name="enter_otp_code">Vinsamlegast sláðu inn OTP kóða</string>
+    <string name="spice_connection_screen_help_text">Þegar þú bætir við eða breytir tengingu muntu sjá tengingarstillingarsíðu. Hér geturðu sett upp nýja SPICE tengingu eða valið þá sem fyrir er. Efst er hnappur sem gerir þér kleift að vista tenginguna. Fyrir neðan það er þar sem þú stillir tenginguna þína.
+
+- Tengitegund: Hér velur þú SPICE tengigerðina. Tiltækar tengigerðir eru:
+(a) SPICE, sem tengist beint við tölvu í gegnum SPICE samskiptareglur.
+(b) SPICE yfir SSH, sem fyrst tengir tenginguna þína í gegnum tölvu sem keyrir SSH netþjón.
+
+- Titill: Hver tenging sem þú býrð til getur haft gælunafn til að auðkenna hana á listanum.
+
+- SSH Tunnel Settings: Fáanlegt í SPICE yfir SSH ham.
+(a) SSH Server/Port: Heimilisfang og port SSH netþjónsins sem tengingin verður flutt í gegnum. Sjálfgefið er að SSH hlustar á port 22.
+(b) Notandanafn/Lykilorð: Notandanafn og lykilorð reikningsins á SSH þjóninum. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki hætt í appinu síðan þú slóst það síðast inn.
+(c) Stjórna lykli/nota lykil: Hnappur til að stjórna opinberum/einkalyklum og gátreitur sem gefur til kynna hvort nota eigi lykil frekar en lykilorð til að auðkenna. Ef þú notar hnappinn Afrita á klemmuspjald eftir að hafa búið til lyklapar ættirðu að geta límt opinbera lykilinn þegar hann er tengdur við SPICE netþjóninn (klemmuspjaldið er samstillt við netþjóninn).
+
+- SPICE tengistillingar:
+(a) SPICE Server/Port: Þetta er þar sem þú slærð inn hýsilheiti eða IP tölu og tengi tölvunnar sem keyrir SPICE netþjóninn sem þú vilt hafa samband við. Í SPICE yfir SSH ham er þetta heimilisfang eins og sést frá SSH netþjóninum. Ef SSH Server og SPICE miðlarinn eru sama líkamlega tölvan geturðu notað localhost. SPICE netþjónar hlusta venjulega á port 5900 og upp úr.
+(b) SPICE Lykilorð: Þetta er þar sem þú slærð inn lykilorðið sem sett er til að vernda SPICE lotuna þína. Örugg geymsla er ekki notuð fyrir lykilorð (þau eru í gagnagrunni) og lykilorðið verður aðeins geymt ef þú hakar í Keep reitinn. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki hætt í appinu síðan þú slóst það síðast inn.
+
+- Ítarlegar stillingar: Í þessum hluta finnurðu hvaða staðbundnu tæki eða SPICE flutningsbreytingar sem er
+- Staðbundnar breytingar á tækjum: Þetta stillir hegðun forritsins í tækinu þínu.
+(a) Notaðu D-Pad fyrir örvar: Ef þú vilt geturðu notað D-Pad á Bluetooth lyklaborðinu þínu eða örvarnar á skjályklaborðinu þínu til að senda örvar til SPICE netþjónsins.
+(b) Snúa D-Pad: Símar sem eru paraðir við Bluetooth lyklaborð gætu þurft að D-púði lyklaborðsins sé snúið rangsælis til að senda réttar leiðbeiningar til netþjónsins.
+(c) Staðbundinn músarbendill: Ef bendillinn er ósýnilegur skaltu velja þetta til að þvinga hann til að vera teiknaður af appinu.</string>
+    <string name="auto_x_disabled_selection">AutoX óvirkt</string>
+    <string name="button_send_text">Senda texta</string>
+    <string name="shortcut_label_spice">SPICE Tenging</string>
+    <string name="keep_screen_awake_enable">Haltu skjánum vakandi</string>
+    <string name="open_doc">Handbók/Wiki</string>
+    <string name="remote_sound_disabled">Hljóð óvirkt</string>
+    <string name="spice_ca_file_not_found">Skrá fannst ekki. Vinsamlega sláðu inn gilt skráarnafn í textareitinn (t.d. /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: Leiðandi, öruggur RDP viðskiptavinur</string>
+    <string name="error_pve_api_unexpected_code">Óvænt svar frá Proxmox sýndarumhverfi:</string>
+    <string name="error_out_of_memory">Ekki er hægt að úthluta nægu minni til að teikna ytri skjá. Prófaðu að endurræsa forritið og endurræstu síðan tækið. Þú getur líka prófað að minnka stærð ytra skjáborðsins í gegnum forritastillingarnar.</string>
+    <string name="enter_passphrase_title">Sláðu inn lykilorðasetningu</string>
+    <string name="copy_of">Afrit af</string>
+    <string name="rdp_adv_remotefx">Virkja RemoteFX</string>
+    <string name="ok">Allt í lagi</string>
+    <string name="rdp_adv_desktop_background">Sýna bakgrunn á skjáborðinu</string>
+    <string name="desktop_scale_percentage">Sérsniðin skalunarprósenta</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="rdp_adv_font_smoothing">Framkvæmdu leturjöfnun</string>
+    <string name="rdp_domain_hint">RDP lén</string>
+    <string name="custom_ca_subject">Valfrjálst vottunarefni. Ekki þörf ef cert CN passar við hýsingarheiti</string>
+    <string name="color_24_bit">24 bita litur (24 bpp)</string>
+    <string name="ssh_passphrase_hint">SSH lykilorð</string>
+    <string name="username_hint">UltraVNC MS Logon notendanafn</string>
+    <string name="error_failed_to_download_https">Mistókst að hlaða niður skrá yfir HTTPS. Kannski er netþjónsvottorðið þitt ótraust (útrunnið eða sjálfundirritað) eða að ekki er hægt að ná í netþjóninn þinn.</string>
+    <string name="rdp_geom_checkbox_enable">Virkja sérsniðna upplausn</string>
+    <string name="enter_rdp_credentials">Vinsamlega sláðu inn RDP skilríki</string>
+    <string name="error_dialog_title">Villa</string>
+    <string name="ssl_strict">Krefjast almenns nafns til að passa við vottorð (mælt með)</string>
+    <string name="master_password_hint_once">Sláðu inn lykilorð</string>
+    <string name="one_to_one">Einn á einn</string>
+    <string name="action_rate_or_share_app">⭐ Fáðu hjálp, gefðu einkunn, deildu</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH þjónninn styður hvorki \password\ né \keyboard-interactive\ auðkenningaraðferðir eða krefst \publickey\ aðferð fyrst. Vinsamlega stilltu það til að leyfa að minnsta kosti eina af tveimur aðferðum, eða endurstilltu forritið. Tiltækar heimildaraðferðir:</string>
+    <string name="import_settings">Innflutningur</string>
+    <string name="hide_toolbar">Fela tækjastikuna</string>
+    <string name="verification_code_message">Vinsamlegast sláðu inn fjölþátta auðkenningarstaðfestingarkóðann</string>
+    <string name="need_help">Þarftu hjálp?</string>
+    <string name="rdp_security_auto">Sjálfvirkt semja um öryggi</string>
+    <string name="master_password_error_failed_to_enable">Gat ekki virkjað aðallykilorð. Athugaðu laust pláss í tækinu þínu og reyndu aftur.</string>
+    <string name="error">Villa</string>
+    <string name="error_anon_dh_unsupported">VNC þjónninn er að reyna að nota Anonymous Diffie Hellman dulmál sem eru ekki studd á Android tækinu þínu. Ef þú notar Vino VNC miðlara GNOME geturðu slökkt á AnonTLS með því að keyra eftirfarandi skipun í flugstöðinni og endurræsa síðan: \gsettings set org.gnome.Vino require-encryption false\. Ef þú keyrir x11vnc geturðu bætt við eftirfarandi valkostum: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">Skrunahjól</string>
+    <string name="auto_x_session_auto">Sjálfvirk</string>
+    <string name="enter_gateway_credentials">Vinsamlega sláðu inn Gateway-skilríki</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">Open Source verkefnið þarf þinn stuðning! Gefðu okkur með því að kaupa bVNC Pro. Sjá hér að neðan fyrir tengla á bVNC Pro og önnur öpp okkar.</string>
+    <string name="input_method_mouse">Stjórna músarbendi</string>
+    <string name="pro_feature_rdp">Það lítur út fyrir að þú hafir reynt að opna .rdp skrá sem er Pro eiginleiki. Vinsamlegast styrktu verkefnið með því að kaupa aRDP Pro, sem styður .rdp skrár. Tengill á aRDP Pro útgáfu er fáanlegur í upphafsglugganum.</string>
+    <string name="opaque_connection_screen_help_text">Þegar þú bætir við eða breytir tengingu muntu sjá tengingarstillingarsíðu.
+Hér getur þú sett upp nýja ógagnsæi tengingu eða valið þá sem fyrir er.
+Efst er hnappur sem gerir þér kleift að vista tenginguna.
+Fyrir neðan það er þar sem þú stillir tenginguna þína.
+
+- Tegund tengingar: Hér velur þú hvaða sýndarumhverfi þú ert að tengjast.
+
+- Netfang netþjóns: Hýsingarheiti eða IP netþjónn. Ef það er að hlusta á óstöðluðu tengi geturðu bætt við tengi aðskilið með tvípunkti.
+
+- Heiti sýndarvélar: Þú getur tilgreint nafn VM eins og það birtist á sýndarvæðingarvettvangnum þínum eða skilið þennan reit eftir auðan til að fá lista yfir VM eða ílát til að velja úr.
+
+- Notandi: Sláðu inn notandanafnið til að auðkenna við sýndarvæðingarrammann þinn.
+
+- Lykilorð: Ef þú vilt vista lykilorðið skaltu slá það inn hér eða skilja reitinn eftir auðan til að spyrjast fyrir um það í hvert skipti.
+
+- Ítarlegar stillingar: Í þessum hluta finnurðu allar staðbundnar breytingar á tæki, samskiptareglum og afköstum.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Texti með tillögum (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">Afrita lista</string>
+    <string name="master_password_error_failed_to_disable">Gat ekki slökkt á aðallykilorði. Athugaðu laust pláss í tækinu þínu og reyndu aftur.</string>
+    <string name="use_no_compression_for_local_connections">Engin þjöppun (staðbundnar tengingar, hextil kóðun)</string>
+    <string name="input_mode_help_text">Í hvaða innsláttarstillingu sem er, pikkaðu á lyklaborðstáknið til að fá skjályklaborðið. Einnig gæti tækið þitt haft sína eigin bendingu sem vekur upp lyklaborðið.
+
+Notaðu beinar innsláttarstillingar fyrir leiðandi snertiskjástýringu. Notaðu herma snertiborðsstillingu fyrir fínni stjórn á músinni.
+
+Bein, strjúktu pönnuhamur:
+- Stjórna músinni beint með snertingu.
+- Strjúktu til að fletta í kring.
+- Með því að banka smellir músin þar sem þú bankaðir.
+- Skrunaviðburðir eru sendir á milli tveggja fingra þar sem tveggja fingra strjúka byrjaði.
+
+Bein, Haltu Pan Mode:
+- Stjórna músinni beint með snertingu.
+- Ýttu lengi til að hefja pönnuham.
+- Með því að banka smellir músin þar sem þú bankaðir.
+- Skrunaviðburðir eru sendir á milli tveggja fingra þar sem tveggja fingra strjúka byrjaði.
+
+Hermt snertiborðsstilling:
+- Notaðu skjáinn þinn eins og snertiborð.
+- Strjúktu til að færa músarbendilinn.
+- Færðu músina út fyrir brún skjásins til að fletta.
+- Með því að banka smellir músin þar sem bendillinn er.
+- Skrunaviðburðir eru sendir þangað sem músarbendillinn er staðsettur.
+
+Einhendisstilling:
+- Sama og Bein, Strjúktu Pan Mode, nema langsmella opnar valmynd með vali á stillingum.
+- Eftir að hafa valið stillingu framkvæmir valin látbragð með því að strjúka fingri á skjánum.
+- Að lyfta fingri lýkur látbragðinu.
+
+Allar inntaksstillingar:
+- Vinstri smellur: Bankaðu einu sinni.
+- Tvísmelltu: Tvísmelltu.
+- Hægrismelltu: Haltu inni og bankaðu með öðrum fingri (hvar sem er annars staðar á skjánum).
+- Hægrismellur til skiptis: Notaðu \Til baka\ hnappinn eða bending fyrir tækið þitt.
+- Miðsmellur: Haltu inni og bankaðu með tveimur fingrum til viðbótar (hvar sem er annars staðar á skjánum).
+- Dragðu músina: Ýttu-haltu lengi og strjúktu.
+- Skrunahjól: Dragðu með tveimur fingrum upp/niður og til vinstri/hægri. Hraðdragandi flettir hraðar.
+- Aðdráttur inn/út: Í aðdráttarstærð, klíptu aðdrátt til að stjórna stærðarstærð.
+- Ctrl/Alt takki: Valmynd-&gt;Ctrl/Alt takkar. Ekki gleyma að slökkva á þegar þú ert búinn!
+- Lyklasamsetningar: Valmynd-&gt; Meira-&gt; Senda lykla.
+- Senda texta: Annað hvort sláðu inn á skjályklaborðið eða notaðu Valmynd-&gt;Meira-&gt;Senda texta.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt sem ISO L3 Shift (aðeins VNC)</string>
+    <string name="error_uri_noinfo_nosave">Ófullnægjandi upplýsingar sérstaklega til að tengjast.</string>
+    <string name="single_reposition">Músarbendill færður aftur fyrir einhenda stillingu</string>
+    <string name="auto_x_cancel">Hætta við</string>
+    <string name="vv_file_not_found">.vv skráin fannst ekki!</string>
+    <string name="error_pve_failed_to_authenticate">Mistókst að auðkenna fyrir Proxmox sýndarumhverfi. Gakktu úr skugga um að þú slærð inn notandanafnið þitt á user@realm sniði og að lykilorðið þitt sé rétt.</string>
+    <string name="save_as_copy">Vista sem afrita</string>
+    <string name="info_cert">Samþykkir þú þetta nýja eða breytta hýsingarvottorð?\n\nFingerför:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nGefið út til: %4$s\nGefið út af: %5$s\n\nGildir frá: %6$s\n$gildir til: %7$s\n$</string>
+    <string name="more_debug_logging">Meira kembiforrit</string>
+    <string name="error_ssh_key_auth_fail">Mistókst að auðkenna SSH netþjóni með lyklapari. Vinsamlegast athugaðu SSH notandanafnið þitt og tryggðu að opinberi lykillinn þinn sé í authorized_keys skránni á ytri hliðinni.</string>
+    <string name="error_vnc_authentication">VNC auðkenning mistókst! Athugaðu VNC lykilorð (og notanda ef við á).</string>
+    <string name="toggle_keyboard">Skiptu um lyklaborð</string>
+    <string name="help">Hjálp ⓘ</string>
+    <string name="repeater_caption">MIKILVÆGT: Ef þú notar UltraVNC endurvarpa skaltu slá inn heimilisfang hans og tengi fyrir utan þennan glugga. Hér skaltu slá inn heimilisfang og höfn raunverulegs VNC netþjóns. Aðskilið heimilisfang og gátt VNC netþjónsins með tvípunkti, t.d.192.168.0.100:5900.</string>
+    <string name="color_8">8 litir (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">Ekki er hægt að tengjast eða sannvotta, vinsamlegast athugaðu netfang netþjóns, notanda, lykilorð og vottunarvald og efni.</string>
+    <string name="error_rdp_authentication_failed">RDP auðkenning mistókst! Athugaðu RDP notendanafnið og lykilorðið og reyndu aftur.</string>
+    <string name="delete_key_list">Eyða lyklalista</string>
+    <string name="input_method_direct_swipe_pan_description">Beint, strjúktu pönnu: Strjúktu til að fletta í kring. Bankaðu með einum fingri hvar sem þú vilt vinstrismella, tveimur fingrum til að hægrismella og þremur fingrum til að miðsmella. Strjúktu með tveimur fingrum til að fletta. Pikkaðu lengi til að draga og sleppa.</string>
+    <string name="address_caption_hint">VNC þjónn</string>
+    <string name="auto_x_unixpw">Notaðu UNIX skilríki í stað innbyggða öryggiskerfisins. Notandi verður að geta keyrt /bin/su.</string>
+    <string name="input_method_touchpad">Hermt snertiborð</string>
+    <string name="fit_to_screen">Passa á skjá</string>
+    <string name="list_name_caption">Nafn lista</string>
+    <string name="copy_logcat">📋 Afritaðu Logcat</string>
+    <string name="ca_ovirt_use_custom">Sérsniðin RHEV/oVirt CA</string>
+    <string name="info_progress_dialog_downloading">Sæktu fyrsta rammann.\Vinsamlegast bíddu...</string>
+    <string name="local_mouse_check">Staðbundinn músarbendill (velja ef bendillinn er ósýnilegur)</string>
+    <string name="rdp_server_empty">RDP Server eða port tómt. Get ekki tengst!</string>
+    <string name="rendering_mode">Rekstrarstilling:</string>
+    <string name="rdp_adv_visual_styles">Virkjaðu sjónræna stíla</string>
+    <string name="error_ovirt_timeout">Tengingin við VM þinn rann út á tíma. Vinsamlega athugaðu hvort heimilisfang hnútsins sem keyrir VM þinn sé rétt, að það sé aðgengilegt frá núverandi neti og að enginn eldveggur hindrar tenginguna.</string>
+    <string name="extra_keys_enable">Virkja aukalykla</string>
+    <string name="showkbd_label">Lyklaborð</string>
+    <string name="audio">Hljóð</string>
+    <string name="ssh_x11vnc_customize">Stilla AutoX</string>
+    <string name="address_caption_ssh_hint">SSH þjónn</string>
+    <string name="info_progress_dialog_connecting">Tengist…</string>
+    <string name="donate_app">Gefðu ❤</string>
+    <string name="rdp_security_rdp">RDP öryggi</string>
+    <string name="applies_to_new_connections_only">Á aðeins við um nýjar tengingar</string>
+    <string name="spice_button_import_ca">Flytja inn CA</string>
+    <string name="scaling_zoomable">Aðdráttarhæfur</string>
+    <string name="error_ssh_port_forwarding_failure">Gat ekki sett upp framsendingu hafnar fyrir jarðgangaflutning VNC umferðar yfir SSH. Gakktu úr skugga um að SSH þjónninn þinn sé stilltur til að leyfa framsendingu gátta og reyndu aftur.</string>
+    <string name="rdp_adv_desktop_composition">Virkjaðu skjáborðssamsetningu</string>
+    <string name="scroll_speed">Snertu Skrunahraði</string>
+    <string name="rdp_address_caption_hint">RDP þjónn</string>
+    <string name="send_button">Senda</string>
+    <string name="love_our_work">Elskarðu vinnuna okkar?</string>
+    <string name="download_from_server">Sækja frá þjóninum</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Miðlarinn þinn þarf auðkenningu með lykilorði til viðbótar við auðkenningu lykils.</string>
+    <string name="input_method_single_handed">Einhendir</string>
+    <string name="username_hint_ssh">SSH notendanafn</string>
+    <string name="auto_x_enabled">Virkt</string>
+    <string name="password_hint_ssh">SSH lykilorð</string>
+    <string name="audio_will_be_initialized">Hljóð verður frumstillt eftir um það bil 15 sekúndur, vinsamlegast stöðvaðu alla hlaupandi mynd- eða hljóðspilun fyrir þann tíma</string>
+    <string name="shortcut_label_vnc">VNC tenging</string>
+    <string name="auto_request_new_res">Samstilltu fjarstýringu til að sýna upplausn</string>
+    <string name="color_256">256 litir (8 bpp)</string>
+    <string name="intro_title">bVNC: Leiðandi, öruggur VNC viðskiptavinur</string>
+    <string name="error_x509_could_not_generate_encoding">Ekki var hægt að búa til kóðun vottorðs.</string>
+    <string name="rdp_security_tls">TLS öryggi</string>
+    <string name="action_import_settings">Innflutningsstillingar</string>
+    <string name="single_cancel">Einhendishamur hætt</string>
+    <string name="info_set_touchpad_input_mode">Miðlarinn greinir frá því að hann styður ekki inntak viðskiptavinarhams músar og núverandi músinntakshamur mun ekki virka rétt. Ef þetta er viðvarandi skaltu ganga úr skugga um að kryddverkfæri séu uppsett í sýndarvélinni eða skiptu yfir í herma snertiborðsinntaksstillingu úr valmyndinni.</string>
+    <string name="email_us">Sendu okkur tölvupóst 📧</string>
+    <string name="color_64">64 litir (4 bpp)</string>
+    <string name="ssh_key_generated">Nýr lykill búinn til eða fluttur inn. Þú getur nú ýtt á hnappinn \'Búa til/flytja út lykil\' til að deila, afrita á klemmuspjald eða flytja út opinbera lykilinn.</string>
+    <string name="repeater_button">UltraVNC endurtakari</string>
+    <string name="info_dialog_title">Upplýsingar</string>
+    <string name="local_clipboard_integration">Virkjaðu samþættingu staðbundinnar í fjarklemmuspjald</string>
+    <string name="cursor_force_local">Staðbundið</string>
+    <string name="list_caption">Listi</string>
+    <string name="master_password_error_password_necessary">Aðallykilorð er nauðsynlegt til að halda áfram.</string>
+    <string name="ssh_use_pubkey">Notaðu lykil</string>
+    <string name="super_check">Frábær</string>
+    <string name="enter_text">Senda texta</string>
+    <string name="import_export_settings">📦 Innflutnings-/útflutningsstillingar</string>
+    <string name="info_progress_dialog_aborted">Tenging hætt!</string>
+    <string name="input_method_single_handed_description">Einhendis: Strjúktu til að fletta í kring. Bankaðu með einum fingri hvar sem þú vilt vinstrismella. Pikkaðu lengi til að velja vinstri/hægri/miðju draga/fletta/aðdráttarstillingu. Venjulegar fjölsnertistýringar virka líka.</string>
+    <string name="verification_code">Staðfestingarkóði</string>
+    <string name="extra_keys_disable">Slökktu á aukalykla</string>
+    <string name="rotate_dpad">Snúðu Bluetooth eða hugbúnaði D-Pad</string>
+    <string name="intro_close">Loka</string>
+    <string name="master_password_error_shortcuts_not_supported">Flýtileiðir eru ekki enn studdar þegar aðallykilorð er virkt.</string>
+    <string name="enter_vnc_credentials">Vinsamlegast sláðu inn VNC skilríki</string>
+    <string name="connection_edit">Breyta</string>
+    <string name="error_spice_unable_to_connect">Ekki er hægt að tengjast eða sannvotta, vinsamlegast athugaðu vistfang netþjóns og tengi.</string>
+    <string name="remote_sound_on_server">Hljóð á netþjóni</string>
+    <string name="left_handed_mode">Örvhentur hamur</string>
+    <string name="info_ssh_initializing_hostkey">Reynir að frumstilla SSH HostKey.</string>
+    <string name="connect_button">Tengdu</string>
+    <string name="ca_new_or_changed">Nýtt eða breytt netþjónsvottorð</string>
+    <string name="close">Loka</string>
+    <string name="master_password_verify">Staðfestu aðallykilorð</string>
+    <string name="error_no_vnc_support_yet">VNC skjágerð er ekki studd ennþá, en það er væntanlegur eiginleiki. Takk fyrir skilninginn!</string>
+    <string name="rdp_connection_settings">RDP tengingarstillingar</string>
+    <string name="immersive_mode_disable">Slökktu á Immersive Mode</string>
+    <string name="error_pve_null_data">Proxmox sýndarumhverfi skilaði núllgögnum.</string>
+    <string name="auto_x_descript_geom">Fjarstærð skrifborðs (BxH)</string>
+    <string name="enter_passphrase">Vinsamlegast sláðu inn lykilorð</string>
+    <string name="action_edit_default_settings">⚙ Breyta sjálfgefnum stillingum</string>
+    <string name="ca_spice_manage">Stjórna SPICE CA</string>
+    <string name="color_mode">Litastilling</string>
+    <string name="back_button">Farðu til baka</string>
+    <string name="rate_app">Gefðu ⭐⭐⭐⭐⭐ einkunn</string>
+    <string name="off">Slökkt</string>
+    <string name="ssh_tunnel_settings">Stillingar SSH göng</string>
+    <string name="error_pve_vmid_not_numeric">VM auðkenni ekki tölulegt. Vinsamlega sláðu inn tölulegt VM auðkenni eða skildu eftir autt til að velja VM af lista.</string>
+    <string name="cert_subject">Vottorðsefni</string>
+    <string name="rdp_descript_geom">Fjarstærð skrifborðs (BxH)</string>
+    <string name="master_password_error_wrong_password">Gat ekki auðkennt með uppgefnu aðallykilorði.</string>
+    <string name="error_pick_correct_item">Gakktu úr skugga um að þú hafir valið réttan hlut í Connection Type.</string>
+    <string name="input_method_direct_drag_pan">Beint, Haltu Pan</string>
+    <string name="auto_rotation">Skjársnúningur meðan á tengingu stendur</string>
+    <string name="master_password_verify_message">Vinsamlegast sláðu inn rétt aðallykilorð til að halda áfram.</string>
+    <string name="error_connection_interrupted">Tenging rofin.</string>
+    <string name="auto_x_descript_session">Tegund fjarfundar</string>
+    <string name="action_new_connection">✚ Ný tenging</string>
+    <string name="enter_text_title">Sláðu inn texta til að senda</string>
+    <string name="shortcut_label_rdp">RDP tenging</string>
+    <string name="spice_address_caption_hint">SPICE Server</string>
+    <string name="rdp_geom_description_hint">Miðlarinn þarf ExtendedDesktopSize stuðning</string>
+    <string name="audio_initialized">Hljóð frumstillt</string>
+    <string name="intro_text">Núverandi listi yfir bVNC eiginleika:
+&lt;br&gt;
+- Venjulegur VNC, Öruggur VNC yfir SSH, AnonTLS og VeNCrypt, og UltraVNC Windows innskráningu með valfrjálsum endurtekningu.
+&lt;br&gt;
+- AutoX ham: Í VNC yfir SSH ham, uppgötvaðu sjálfkrafa núverandi og / eða búðu til nýjar X-lotur með x11vnc! Virkar eins og NX viðskiptavinur.
+&lt;br&gt;
+- Ókeypis snúningsstuðningur. Notaðu stýrikerfi til að takmarka snúning ef þörf krefur.
+&lt;br&gt;
+- SSH Public/Private lykla-par kynslóð og útflutningur.
+&lt;br&gt;
+- Allar staðlaðar VNC kóðun, þar á meðal Tight, ZRLE og CopyRect.
+&lt;br&gt;
+- Sjálfvirk session vistun.
+&lt;br&gt;
+- Hægt að aðdrátta, passa að skjánum og stærðarstillingar einn til einn.
+&lt;br&gt;
+- Multi-snerta stjórn á fjarstýrð mús í beinni og herma snertiborðs inntaksham.
+&lt;br&gt;
+- Full einhenda stjórn yfir fjarstýrð mús í Einhendis innsláttarstillingu.
+&lt;br&gt;
+- Margsnerti músarsmellir: pikkaðu til að vinstri smella, ýttu með tveimur fingrum til að hægrismella, pikkaðu með þremur fingrum til að miðsmella.
+&lt;br&gt;
+- Margsnertiflötun: Dragðu upp/niður með tveimur fingrum og til vinstri/hægri til að fletta.
+&lt;br&gt;
+- Meta- og örvatakkar á skjánum sem hægt er að slökkva alveg á úr valmyndinni eða geyma með skjáhnappi.
+&lt;br&gt;
+- Sendir texta og handahófskenndar lyklasamsetningar þegar tengt er.
+&lt;br&gt;
+- Hjálp við að búa til tengingar (\Valmynd-&gt;Tengingarhjálp\) á tengingarskjánum.
+&lt;br&gt;
+- Hjálp við innsláttarstillingar (\Valmynd-&gt;Meira-&gt;Hjálp innsláttarstillingar\) þegar tengt er.
+&lt;br&gt;
+- Notaðu tiltækan stýrisflata sem örvar í stað þess að hreyfa músina og smelltu á stýrisflata sem Ctrl.
+&lt;br&gt;
+- Skipt yfir í andlitsmynd meðan á tengingum stendur, snúningur D-púði/stýriborði fyrir BT lyklaborð.
+&lt;br&gt;
+- Stuðningur á mörgum tungumálum, svo framarlega sem VNC netþjónninn hefur nauðsynlega tungumálaútsetningu virkt.
+&lt;br&gt;
+- Afrita/líma samþætting
+&lt;br&gt;
+- Fjarlæg breyting á upplausn vélarinnar
+&lt;br&gt;
+- Fullur stuðningur við mús á Android 4.0+ tækjum, þar á meðal hægri og miðju smelli og skrunhjóli.
+&lt;br&gt;
+&lt;br&gt;
+Þekkt vandamál:
+&lt;br&gt;</string>
+    <string name="color_greyscale">Grátónar (1 bpp)</string>
+    <string name="share_app_toast">Deildu tengli á appið með öllum vinum þínum á samfélagsmiðlum!</string>
+    <string name="force">Bitmap á ​​fullum skjá</string>
+    <string name="input_method_touchpad_description">Hermt snertiborð: Strjúktu til að færa bendilinn. Bankaðu hvar sem er með einum fingri til að vinstrismella, tveimur fingrum til að hægrismella og þremur fingrum til að miðsmella. Strjúktu með tveimur fingrum til að fletta. Pikkaðu lengi til að draga og sleppa.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nÞú getur tryggt að það sé eins og þekkt fingrafar netþjónsvottorðsins til að koma í veg fyrir mann-í-miðjuárás.</string>
+    <string name="error_no_vm_found_for_user">Engar sýndarvélar tiltækar fyrir tiltekinn notanda.</string>
+    <string name="color_black_and_white">Svart og hvítt (1 bpp)</string>
+    <string name="auto">Sjálfvirk</string>
+    <string name="pro_feature_generic">Það virðist sem þú ert að nota Pro eiginleika. Vinsamlegast styðjið verkefnið með því að kaupa Pro útgáfuna sem styður þennan eiginleika. Tengill á Pro útgáfuna er fáanlegur í upphafsglugganum.</string>
+    <string name="rdp_geom_custom">Sérsniðin</string>
+    <string name="default_input_mode">Sjálfgefin inntaksstilling</string>
+    <string name="repeater_empty_text">Enginn endurvarpar</string>
+    <string name="ad_donate_text_rdp">Open Source verkefnið þarf þinn stuðning! Gefðu okkur með því að kaupa aRDP Pro, sem styður umvísun hljóðs. Sjá hér að neðan fyrir tengla á aRDP Pro og önnur öpp okkar.</string>
+    <string name="spice_tls_port_hint">TLS höfn</string>
+    <string name="scaling">Skala</string>
+    <string name="spice_connection_settings">SPICE tengistillingar</string>
+    <string name="error_pve_failed_to_parse_json">Mistókst að flokka svar frá Proxmox sýndarumhverfi.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL handabandi bilun. Það er vandamál með SSL vottorð þjónsins. Ef þú ert að nota sjálfstætt undirritað vottorð þarftu að (endur)flytja inn vottorðsyfirvaldið þitt.</string>
+    <string name="connection_setup_user">Notandi@lén</string>
+    <string name="vnc_viewer_started">VNC Viewer byrjaði</string>
+    <string name="ca_subject">Sláðu inn heiti vottorðs hér. Ekki er víst að þörf sé á ef samheiti vottorðsins (CN) passar við hýsingarheiti þjónsins.</string>
+    <string name="port_ssh_hint">Höfn</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH þjónninn styður ekki \publickey\ auðkenningaraðferðina og við erum að reyna að nota lyklapar til að auðkenna. Vinsamlega stilltu það til að leyfa auðkenningu almenningslykils og reyndu aftur. Tiltækar heimildaraðferðir:</string>
+    <string name="username_caption">VNC notandi</string>
+    <string name="error_ssh_could_not_exec_command">Gat ekki framkvæmt fjarskipun.</string>
+    <string name="rdp_intro_text">Þakka þér fyrir að styðja aRDP og opinn hugbúnað almennt! Fyrir hjálp við notkun aRDP, sjáðu hjálparatriði í valmyndinni og lýsingu á appinu á markaðnum.
+&lt;br&gt;
+&lt;br&gt;
+Núverandi listi yfir aRDP eiginleika inniheldur:
+&lt;br&gt;
+- Venjulegur RDP, RDP göng yfir SSH.
+&lt;br&gt;
+- Ókeypis snúningsstuðningur. Notaðu stýrikerfi til að takmarka snúning ef þörf krefur.
+&lt;br&gt;
+- Stilling á fjarupplausn, innbyggðri upplausn í landslags- og andlitsmyndum.
+&lt;br&gt;
+- SSH Public/Private lykla-par kynslóð og útflutningur.
+&lt;br&gt;
+- Sjálfvirk session vistun.
+&lt;br&gt;
+- Hægt að aðdrátta, passa að skjánum og stærðarstillingar einn til einn.
+&lt;br&gt;
+- Multi-snerta stjórn á fjarstýrð mús í beinni og herma snertiborðs inntaksham.
+&lt;br&gt;
+- Full einhenda stjórn yfir fjarstýrð mús í Einhendis innsláttarstillingu.
+&lt;br&gt;
+- Margsnerti músarsmellir: pikkaðu til að vinstri smella, ýttu með tveimur fingrum til að hægrismella, pikkaðu með þremur fingrum til að miðsmella.
+&lt;br&gt;
+- Margsnertiflötun: Dragðu upp/niður með tveimur fingrum og til vinstri/hægri til að fletta.
+&lt;br&gt;
+- Meta- og örvatakkar á skjánum sem hægt er að slökkva alveg á úr valmyndinni eða geyma með skjáhnappi.
+&lt;br&gt;
+- Sendir texta og handahófskenndar lyklasamsetningar þegar tengt er.
+&lt;br&gt;
+- Hjálp við að búa til tengingar (\Valmynd-&gt;Tengingarhjálp\) á tengingarskjánum.
+&lt;br&gt;
+- Hjálp við innsláttarstillingar (\Valmynd-&gt;Meira-&gt;Hjálp innsláttarstillingar\) þegar tengt er.
+&lt;br&gt;
+- Notaðu tiltækan stýripúða sem örvar í stað þess að hreyfa músina, og smelltu á stýripúðann sem Ctrl, snúandi D-púða/reitaborð fyrir BT lyklaborð.
+&lt;br&gt;
+- Stuðningur á mörgum tungumálum, svo framarlega sem RDP þjónninn hefur nauðsynlegt tungumálaútlit virkt.
+&lt;br&gt;
+- Óaðfinnanlegar breytingar á upplausn fjarstýrðs vélar
+&lt;br&gt;
+- Fullur stuðningur við mús á Android 4.0+ tækjum, þar á meðal hægri og miðju smelli og skrunhjóli.
+&lt;br&gt;
+- Val um litastillingar
+&lt;br&gt;
+- Afrita/líma samþætting
+&lt;br&gt;
+- Flytja út stillingar
+&lt;br&gt;
+- Hljóð
+&lt;br&gt;
+&lt;br&gt;
+Þekkt vandamál:</string>
+    <string name="tap_disable">Óvirkja</string>
+    <string name="view_only">Útsýnisstilling</string>
+    <string name="save_button">Vista</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Gat ekki sent sudo lykilorð.</string>
+    <string name="landscape_force">Force Landscape Orientation</string>
+    <string name="export_settings">Útflutningur</string>
+    <string name="keyboard_type">Gerð hugbúnaðarlyklaborðs</string>
+    <string name="hide_connection_thumbnails">Fela tengingarsmámyndir</string>
+    <string name="input_method_direct_drag_pan_description">Beint, haltu pönnu: Strjúktu til að draga og sleppa. Bankaðu með einum fingri hvar sem þú vilt vinstrismella, tveimur fingrum til að hægrismella og þremur fingrum til að miðsmella. Strjúktu með tveimur fingrum til að fletta. Pikkaðu lengi til að byrja að fletta.</string>
+    <string name="panning">Skjáskjár</string>
+    <string name="remote_clipboard_integration">Virkja samþættingu fjarstýringar við staðbundið klemmuspjald</string>
+    <string name="rdp_connection_screen_help_text">Þegar þú bætir við eða breytir tengingu muntu sjá tengingarstillingarsíðu. Hér geturðu sett upp nýja RDP tengingu eða valið þá sem fyrir er. Efst er hnappur sem gerir þér kleift að vista tenginguna. Fyrir neðan það er þar sem þú stillir tenginguna þína.
+
+- Tegund tengingar: Hér velur þú RDP tengingargerð. Tiltækar tengigerðir eru:
+(a) RDP, sem tengist beint við tölvu í gegnum RDP samskiptareglur.
+(b) RDP yfir SSH, sem fyrst tengir tenginguna þína í gegnum tölvu sem keyrir SSH netþjón.
+
+- Titill: Hver tenging sem þú býrð til getur haft gælunafn til að auðkenna hana á listanum.
+
+- SSH Tunnel Settings: Fáanlegt í RDP yfir SSH ham.
+(a) SSH Server/Port: Heimilisfang og port SSH netþjónsins sem tengingin verður flutt í gegnum. Sjálfgefið er að SSH hlustar á port 22.
+(b) Notandanafn/Lykilorð: Notandanafn og lykilorð reikningsins á SSH þjóninum. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki hætt í appinu síðan þú slóst það síðast inn.
+(c) Stjórna lykli/nota lykil: Hnappur til að stjórna opinberum/einkalyklum og gátreitur sem gefur til kynna hvort nota eigi lykil frekar en lykilorð til að auðkenna. Ef þú notar hnappinn Afrita á klemmuspjald eftir að hafa búið til lyklapar ættirðu að geta límt opinbera lykilinn þegar hann er tengdur við RDP netþjóninn (klemmuspjaldið er samstillt við netþjóninn).
+
+- RDP tengingarstillingar:
+(a) RDP Server/Port: Þetta er þar sem þú slærð inn hýsilheiti eða IP tölu og tengi tölvunnar sem keyrir RDP netþjóninn sem þú vilt hafa samband við. Í RDP yfir SSH ham er þetta heimilisfang eins og sést frá SSH þjóninum. Ef SSH þjónninn og RDP þjónninn eru sama líkamlega tölvan geturðu notað localhost. RDP netþjónar hlusta venjulega á höfn 3389.
+(b) RDP notandi: Þetta er þar sem þú slærð inn Windows/UNIX notandanafnið þitt.
+(c) RDP Domain: Sláðu inn lénið sem reikningurinn þinn tilheyrir.
+(d) RDP lykilorð: Þetta er þar sem þú slærð inn Windows/UNIX reikningslykilorðið þitt. Örugg geymsla er ekki notuð fyrir lykilorð (þau eru í gagnagrunni) og lykilorðið verður aðeins geymt ef þú hakar í Keep reitinn. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki hætt í appinu síðan þú slóst það síðast inn.
+
+- Ítarlegar stillingar: Í þessum hluta finnurðu leiðir til að sérsníða upplausn skjáborðsins og ýmsar breytingar á RDP afköstum
+
+- Staðbundnar breytingar á tækjum: Þetta stillir hegðun forritsins í tækinu þínu.
+(a) Notaðu D-Pad fyrir örvar: Ef þú vilt geturðu notað D-Pad á Bluetooth lyklaborðinu þínu eða örvarnar á skjályklaborðinu þínu til að senda örvar til RDP netþjónsins.
+(b) Snúa D-Pad: Símar sem eru paraðir við Bluetooth lyklaborð gætu þurft að D-púði lyklaborðsins sé snúið rangsælis til að senda réttar leiðbeiningar til netþjónsins.
+(c) Staðbundinn músarbendill: Ef bendillinn er ósýnilegur skaltu velja þetta til að þvinga hann til að vera teiknaður af appinu.</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">Skrunastilling - strjúktu upp/niður til að fletta, lyftu fingri til að stoppa</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">Aðdráttarstilling - strjúktu upp/niður til að þysja inn/út, lyftu fingri til að stoppa</string>
+    <string name="rdp_adv_console_mode">Stjórnborðsstilling</string>
+    <string name="address_caption_hint_tunneled">VNC þjónn</string>
+    <string name="arrow_right">Hægri ör</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Texti/númer Engar tillögur (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">SPICE notendanafn</string>
+    <string name="error_rdp_connection_failed">RDP tenging mistókst! Annaðhvort var nettenging rofin, slökkt var á RDP þjóninum eða óvirkt eða fundur þinn var tekinn yfir.</string>
+    <string name="arrow_left">Vinstri ör</string>
+    <string name="connection_type_vnc_over_stunnel">Öruggur VNC yfir SSL Tunnel</string>
+    <string name="report_bug">Tilkynna villu 🐛</string>
+    <string name="warning_cert_does_not_match">VIÐVÖRUN: Vistað x509 vottorð eða samþykkt í undirskrift passar ekki við núverandi netþjónsvottorð!Þetta gæti verið mann-í-miðju árás. Ef þú ert meðvitaður um lykilbreytinguna geturðu haldið áfram.</string>
+    <string name="more_apps">Fleiri forrit 📱</string>
+    <string name="auto_x_disabled">Öryrkjar</string>
+    <string name="pro_feature_mfa">Það virðist sem þjónninn þinn sé með fjölþætta auðkenningu virka. Vinsamlegast styðjið verkefnið með því að kaupa Pro útgáfuna sem styður þennan eiginleika. Tengill á Pro útgáfuna er fáanlegur í upphafsglugganum.</string>
+    <string name="no_application_to_handle_vpn">Þessi tenging er stillt til að ræsa VPN í gegnum utanaðkomandi app. Þú þarft að setja upp app eins og Morpheusly til að ræsa það.</string>
+    <string name="port_caption_ssh">SSH höfn</string>
+    <string name="arrow_down">Ör niður</string>
+    <string name="pro_feature_spice">Það lítur út fyrir að þú hafir reynt að opna .vv skrá. Ef þú vilt vista tengingar við Proxmox eða oVirt beint inni í appinu og vilt líka opna .vv skrár skaltu íhuga að kaupa Opaque. Ef þú þarft aðeins .vv skráarstuðning geturðu fengið aSPICE Pro. Finndu tengla á bæði forritin í upphafsglugganum.</string>
+    <string name="error_vnc_unable_to_connect">Tenging við VNC netþjón mistókst af ástæðu:</string>
+    <string name="rdp_password_hint">RDP lykilorð</string>
+    <string name="custom_ca_paste">Límdu (ef þú ert ekki að flytja inn) CA hér</string>
+    <string name="cursor_mode">Bendill:</string>
+    <string name="local_device_tweaks">Staðbundin tækjabreyting</string>
+    <string name="disconnect">Aftengdu</string>
+    <string name="ad_donate_text0">Pro útgáfan hefur einnig stuðning fyrir fjölþátta SSH auðkenningu. Þar að auki styður það hið margumsótta aðallykilorð sem kemur í veg fyrir óleyfilega notkun og dulkóðar allar tengingarstillingar, þar á meðal lykilorð og SSH lykla til að verjast þjófnaði. Virkjaðu það í aðalvalmyndinni.</string>
+    <string name="info_cert_signatures_identical">\n\nÞú getur tryggt að upplýsingarnar passi við netþjónsvottorðið til að koma í veg fyrir mann-í-miðju árás.</string>
+    <string name="button_send_without_saving">Senda texta/ekki vista það</string>
+    <string name="single_right">Hægri-dragðu ham - strjúktu til að draga/velja, lyftu fingri til að stoppa</string>
+    <string name="error_ssh_pwd_auth_fail">Mistókst að auðkenna SSH netþjóni með lykilorði. Vinsamlegast athugaðu SSH notandanafnið þitt og SSH lykilorðið.</string>
+    <string name="select_vm_title">Veldu sýndarvél</string>
+    <string name="ad_donate_text_spice">Fyrir Proxmox og oVirt tengingar, vinsamlegast gefðu verkefninu með því að kaupa Opaque eða aSPICE Pro. Ókeypis útgáfan af aSPICE styður aðeins beinar tengingar við KVM sýndarvélar. Sjá hér að neðan fyrir tengla á Opaque og aSPICE Pro, sem og önnur öpp okkar.</string>
+    <string name="enter_password">Vinsamlegast sláðu inn lykilorð</string>
+    <string name="main_screen_help_text">Þegar forritið er ræst sýnir það skjá með vistuðum tengingum á honum.
+
+Ef það eru engar vistaðar tengingar er neðri hluti skjásins tómur og þú verður að ýta á plús hnappinn til að búa til nýjan.
+Þú getur líka stjórnað öðrum þáttum stillingarinnar frá þessum skjá með því að smella á aðra tækjastiku eða valmyndarvalkosti efst, fyrir
+dæmi til að breyta sjálfgefnum stillingum eða inn- og útflutningsstillingum.
+
+Þegar þú hefur vistað tengingu geturðu tengst ytri netþjóninum með því að banka einu sinni á hann. Þú munt einnig hafa val um að eyða eða breyta því með því að ýta lengi á það.
+
+Að lokum geturðu notað reitinn Leitartengingar til að finna tengingar fljótt með því að sía sýndar tengingar.</string>
+    <string name="intro_dont_show">Ekki sýna aftur</string>
+    <string name="action_export_settings">Flytja út stillingar</string>
+    <string name="error_ssh_hostkey_changed">VILLA! Hýsillykill þjónsins hefur breyst. Ef þetta er viljandi geturðu haldið áfram. Annars gæti þetta verið maður í miðjusókninni.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Gat ekki fengið ytri VNC tengi frá x11vnc. Gakktu úr skugga um að x11vnc sé uppsett. Til að vera viss skaltu prófa að keyra x11vnc handvirkt á skipanalínunni.</string>
+    <string name="error_failed_to_obtain_content">Ekki tókst að ná í skrá. Vinsamlegast hlaðið því niður aftur en í þetta sinn, opnaðu það fljótt úr niðurhalsmöppunni í skráastjóra.</string>
+    <string name="show_menu">Sýna valmynd</string>
+    <string name="auto_x_unix_auth">Staðfestu með því að nota meðfylgjandi SSH notendanafn/lykilorð sjálfkrafa (á svarta innskráningarskjáinn).</string>
+    <string name="previous_versions">Fyrri útgáfur ⍼</string>
+    <string name="auto_x_xvnc">Finndu eða búðu til með Xvnc</string>
+    <string name="auto_x_find">Aðeins finna, ekki búa til</string>
+    <string name="port_caption">VNC höfn</string>
+    <string name="delete_key">Eyða völdum lykli</string>
+    <string name="cert_issuer">Útgefandi skírteinis</string>
+    <string name="cert_fingerprint">Skírteini Fingrafar</string>
+    <string name="enter_vnc_password">Vinsamlegast sláðu inn VNC lykilorð</string>
+    <string name="port_hint">Höfn</string>
+    <string name="import_from_file">Flytja inn úr skrá</string>
+    <string name="error_rdp_unable_to_connect">Gat ekki tengst RDP netþjóni! Gakktu úr skugga um að RDP Server stillingin sé rétt, að kveikt sé á þjóninum, RDP sé virkt og að þjónninn sé á sama neti og þetta tæki.</string>
+    <string name="rdp_geom_disabled">Öryrkjar</string>
+    <string name="ad_donate_spice_text1b">Pikkaðu hér til að kaupa Pro útgáfuna og opnaðu bara .vv skrár.</string>
+    <string name="spice_ca_file_error_reading">Villa við að lesa CA skrá. Vinsamlegast tryggðu að það sé læsilegt.</string>
+    <string name="info_vm_launched_on_stand_by">VM þinn fannst slökktur og hefur verið ræstur. Vinsamlegast reyndu aftur eftir nokkrar mínútur. Ef þú reynir of snemma og færð bilun í tengingunni skaltu reyna aftur síðar.</string>
+    <string name="special_keys">Sendu lykla</string>
+    <string name="error_failed_to_download_http">Mistókst að hlaða niður skrá yfir HTTP. Kannski er ekki hægt að ná í netþjóninn þinn.</string>
+    <string name="rdp_geom_automatic">Sjálfvirk</string>
+    <string name="portrait_mode">Skiptu yfir í andlitsmynd þegar þú ert tengdur</string>
+    <string name="master_password_set_error">Lykilorð passa ekki saman, farðu varlega!</string>
+    <string name="enter_ssh_credentials">Vinsamlegast sláðu inn SSH skilríki</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">VNC Server á bak við Repeater</string>
+    <string name="prefer_sending_unicode">Unicode inntak (aðeins Windows)</string>
+    <string name="auto_x_caption">Forritið getur sjálfkrafa uppgötvað núverandi og búið til nýjar X lotur á Linux/UNIX kerfum (svipað og NX). Þú þarft x11vnc til að finna og Xvfb, Xvnc eða Xdummy til að búa til lotur. Ef þú átt í vandræðum með að tengjast skaltu prófa að velja tiltekna tegund fjarlotu í AutoX Advanced Settings.</string>
+    <string name="auto_x_confirm">Staðfesta</string>
+    <string name="position_toolbar_last_used">Endurheimta stöðu tækjastikunnar</string>
+    <string name="error_no_such_vm_found_for_user">Engin sýndarvél með uppgefnu auðkenni fannst fyrir tiltekinn notanda. Eyddu auðkenninu til að fá lista yfir VM.</string>
+    <string name="single_middle">Draga í miðju - strjúktu til að draga/velja, lyftu fingri til að stoppa</string>
+    <string name="info_encoding">kóðun,</string>
+    <string name="rdp_geom_native_portrait">Innfæddur portrett</string>
+    <string name="input_mode">Inntaksstilling</string>
+    <string name="action_delete_connection">Eyða tengingu</string>
+    <string name="keys_caption">Lyklar</string>
+    <string name="single_left">Vinstri-draga ham - strjúktu til að draga/velja, lyftu fingri til að stoppa</string>
+    <string name="vv_file_error">.vv skráin vantar eða er skemmd!</string>
+    <string name="connection_delete">Eyða</string>
+    <string name="info_progress_dialog_establishing">Stofnar handaband.\nBíddu…</string>
+    <string name="keep_password_button">Halda</string>
+    <string name="auto_x_find_login">Finndu X innskráningu (þarf sudo)</string>
+    <string name="ssh_use_x11vnc">Sjálfvirkt skjáborð</string>
+    <string name="address_caption_ssh">SSH þjónn</string>
+    <string name="spice_password_hint">SPICE Lykilorð</string>
+    <string name="cursor_force_disable">Óvirkja</string>
+    <string name="master_password_error_password_not_set">Hætt var við að setja aðallykilorð.</string>
+    <string name="info_update_color_model_to">Uppfærir litlíkan í</string>
+    <string name="rdp_adv_menu_animation">Sýna valmyndarhreyfingar</string>
+    <string name="input_method_help">Hjálp innsláttaraðferðar</string>
+    <string name="enable_recording">Virkja upptöku</string>
+    <string name="path_to_ca">Sláðu inn skráarslóð (til dæmis /sdcard/ca-cert.pem) og pikkaðu á Flytja inn til að hlaða vottorðastofnuninni þinni.</string>
+    <string name="nickname_caption_hint">Titill (valfrjálst)</string>
+    <string name="connection_caption">Tenging</string>
+    <string name="pan_follow_mouse">Pan fylgir músinni</string>
+    <string name="rdp_geom_native_landscape">Innfæddur landslag</string>
+    <string name="meta_key_title">Sendu sérstaka lykla</string>
+    <string name="move_toolbar">Færa tækjastikuna</string>
+    <string name="input_mode_fit_to_screen">Engin Pan;Trackball mús</string>
+    <string name="enable_sound">Virkja hljóð</string>
+    <string name="error_security_type">Þjónninn bauð ekki upp á studda öryggistegund.</string>
+    <string name="connection_type_text">Sýndarumhverfi (RHEV/oVirt eða Proxmox)</string>
+    <string name="connection_setup_host_name">Heimilisfang netþjóns</string>
+    <string name="vnc_server_empty_no_save">VNC Server eða gátt tóm. Ekki er hægt að vista tenginguna!</string>
+    <string name="ca_ovirt_manage">Stjórna RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">Stjórna sérsniðnum CA</string>
+    <string name="ca_file_not_found">Skrá fannst ekki. Vinsamlega sláðu inn gilt skráarnafn í textareitinn (t.d. /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">Vinsamlegast sláðu inn og leggðu á minnið aðallykilorð. Því lengur sem lykilorðið þitt er, því erfiðara er að brjóta það. Ef þú stillir lykilorðið þitt rangt eða gleymir því muntu missa allar stillingar þínar!Þú gætir viljað flytja stillingarnar þínar út núna til að taka öryggisafrit af þeim (úr valmyndinni). Geymdu þær á öruggan hátt þar sem útfluttar stillingar eru ekki dulkóðaðar.</string>
+    <string name="repeater_clear">Ekki nota</string>
+    <string name="ad_donate_text3">Ef þú vilt styðja verkefnið frekar skaltu fylgja eftirfarandi tenglum til að fá tengla á forrit viðskiptavina fyrir:</string>
+    <string name="vnc_connection_settings">VNC tengingarstillingar</string>
+    <string name="vnc_connection_screen_help_text">Þegar þú bætir við eða breytir tengingu sérðu stillingarsíðu fyrir tengingu. Þar geturðu sett upp nýja VNC tengingu eða valið fyrirliggjandi tengingu. Efst er hnappur sem gerir þér kleift að vista tenginguna. Þar fyrir neðan stillir þú tenginguna þína.  Ef þú ert að leita að skjótum afköstum skaltu prófa að stilla litastillinguna á lægra gildi. Prófaðu einnig að fjarlægja allar bakgrunnsmyndir af skjáborðinu á VNC þjóninum. Að lokum skaltu ganga úr skugga um að tækið þitt hafi góða nettengingu og forðast að hylja loftnetið og draga úr merkisstyrknum.  - Tegund tengingar: Hér velur þú VNC tengingargerðina. Tiltækar tengingargerðir eru: (a) Einfalt VNC, sem er stutt af öllum VNC þjónum en skortir dulkóðun og er viðkvæmt fyrir brute-force árásum vegna 8 stafa lykilorðstakmörkunar. (b) Öruggt VNC yfir SSH, sem tengist yfir dulkóðað SSH göng. Þú þarft SSHD þjónustu sem keyrir auk VNC þjóns. Svo lengi sem VNC-þjónninn samþykkir ekki tengingar beint af internetinu, þá þjáist þessi tengingargerð ekki af þekktum veikleikum, svo lengi sem þú staðfestir undirskrift þjónsvottorðsins þegar þú tengist fyrst. (c) UltraVNC, sem gefur þér Windows Logon og UltraVNC Repeater valkosti. Notkun Windows Logon þjáist ekki af 8 stafa takmörkun á lykilorði, en þessi stilling býður ekki upp á dulkóðun, þannig að fundurinn þinn er viðkvæmur fyrir sniffing. (d) Öruggt VNC yfir AnonTLS, sem er venjulegt VNC yfir stunnel-sambærilega tengingu. Þú þarft annað hvort að keyra stunnel eða nota VNC-þjón eins og Vino sem styður AnonTLS strax. Þessi stilling gefur þér lotu dulkóðun, en þjáist af 8 stafa takmörkun á lykilorði og kemur ekki í veg fyrir man-in-the-middle árásir. (e) Öruggt VNC yfir VeNCrypt, sem notar x509 vottorð sem og lotu dulkóðun, og getur notað notanda-/lykilorðsupplýsingar án 8 stafa takmörkunar, allt eftir stillingum þjónsins. Þessi stilling kemur í veg fyrir man-in-the-middle árásir. auk þess að veita friðhelgi fyrir lotur. Þjónar eins og x11vnc og TigerVNC styðja þennan hátt og eru jafn öruggir og VNC yfir SSH.  - Titill: Hver tenging sem þú býrð til getur haft gælunafn til að auðvelt sé að bera kennsl á hana á listanum.  - Stillingar fyrir SSH göng: Fáanlegt í VNC yfir SSH hátt.  (a) SSH netþjónn/tengi: Heimilisfang og tengi SSH netþjónsins sem tengingin verður gönguð í gegnum. Sjálfgefið er að SSH hlusta á tengi 22.  (b) Notandanafn/Lykilorð: Notandanafn og lykilorð reikningsins á SSH netþjóninum. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki lokað forritinu síðan þú slóst það síðast inn.  (c) Stjórna lykli/Nota lykil: Hnappur til að stjórna opinberum/einkalyklum og gátreitur sem gefur til kynna hvort nota eigi lykil frekar en lykilorð til að auðkenna. Ef þú notar hnappinn Afrita á klippiborð eftir að þú hefur búið til lyklapar, ættir þú að geta límt opinbera lykilinn þegar þú hefur tengst VNC netþjóninum (klippiborðið er samstillt við netþjóninn).  - Stilla AutoX: Aðeins í boði í VNC yfir SSH stillingu. Forritið getur sjálfkrafa fundið núverandi og valfrjálst búið til nýjar X lotur á UNIX kerfum (eins og NX biðlara). Þú þarft x11vnc til að finna og Xvfb, Xvnc eða Xdummy uppsett á fjarstýrða kerfinu til að búa til lotur. Þú gætir þurft að færa .dmrc skrána þína og bæta við .xinit skrá í heimamöppuna þína ef skjáborðið þitt lítur ekki rétt út eða þú færð bara xterm glugga.  - VNC tengingarstillingar: (a) VNC netþjónn/tengi: Hér slærðu inn hýsingarheitið eða IP tölu og tengi tölvunnar sem keyrir VNC netþjóninn sem þú vilt hafa samband við. Í VNC yfir SSH stillingu er þetta netfang eins og það sést frá SSH netþjóninum. Ef SSH netþjónninn og VNC netþjónninn eru sama tölvan geturðu notað localhost. VNC netþjónar hlusta venjulega frá tengi 5900 (fyrsti VNC skjárinn, skjár :0). (b) VNC notandi: Í boði í UltraVNC með Windows innskráningarstillingu eða Secure VNC yfir VeNCrypt, hér slærðu inn notandanafn Windows/UNIX reikningsins.  (c) VNC lykilorð: Ef stillingar VNC netþjónsins krefjast lykilorðs skaltu slá það inn hér. Í UltraVNC með Windows innskráningarstillingum/VeNCrypt skaltu slá inn lykilorðið þitt fyrir Windows/UNIX reikninginn hér. Örugg geymsla er ekki notuð fyrir lykilorð og lykilorðið verður aðeins geymt ef þú hakar við reitinn Geyma. Lykilorðið verður fyllt út á þessari síðu ef þú hefur ekki lokað forritinu síðan þú slóst það síðast inn.  - Litastilling: Viðskiptavinurinn styður nokkrar litastillingar. Stillingar með fleiri litum veita betri sjónræna upplifun á kostnað meiri bandbreiddar og meiri örgjörvaútreikninga á tækinu þínu. Sumir VNC netþjónar styðja ekki allar litadýptir (t.d. OS/X Remote Desktop krefst 24-bita lita). Ef þú átt í vandræðum með að tengjast skaltu prófa aðra litadýpt.  - Notið D-Pad fyrir örvar: Ef þið viljið frekar getið þið notað D-Pad Bluetooth lyklaborðsins eða örvar á skjályklaborðinu til að senda örvar á VNC netþjóninn.  - Snúið D-Pad: Símar sem eru paraðir við Bluetooth lyklaborð gætu þurft að snúa D-Pad lyklaborðsins rangsælis til að senda réttar leiðbeiningar.</string>
+    <string name="master_password_enable">🔒 Virkjaðu aðallykilorð</string>
+    <string name="new_list_button">Nýr listi</string>
+    <string name="spice_intro_text">Þakka þér fyrir að styðja aSPICE og opinn hugbúnað almennt! Fyrir hjálp við notkun aSPICE, sjáðu hjálparatriði í valmyndinni og lýsingu á appinu á markaðnum.
+&lt;br&gt;
+&lt;br&gt;
+Núverandi listi yfir aSPICE eiginleika inniheldur:
+&lt;br&gt;
+- Plain SPICE, SPICE göng yfir SSH.
+&lt;br&gt;
+- Ókeypis snúningsstuðningur. Notaðu stýrikerfi til að takmarka snúning ef þörf krefur.
+&lt;br&gt;
+- SSH Public/Private lykla-par kynslóð og útflutningur.
+&lt;br&gt;
+- Sjálfvirk session vistun.
+&lt;br&gt;
+- Hægt að aðdrátta, passa að skjánum og stærðarstillingar einn til einn.
+&lt;br&gt;
+- Multi-snerta stjórn á fjarstýrð mús í beinni og herma snertiborðs inntaksham.
+&lt;br&gt;
+- Full einhenda stjórn yfir fjarstýrð mús í Einhendis innsláttarstillingu.
+&lt;br&gt;
+- Margsnerti músarsmellir: pikkaðu til að vinstri smella, ýttu með tveimur fingrum til að hægrismella, pikkaðu með þremur fingrum til að miðsmella.
+&lt;br&gt;
+- Margsnertiflötun: Dragðu upp/niður með tveimur fingrum og til vinstri/hægri til að fletta.
+&lt;br&gt;
+- Meta- og örvatakkar á skjánum sem hægt er að slökkva alveg á úr valmyndinni eða geyma með skjáhnappi.
+&lt;br&gt;
+- Sendir texta og handahófskenndar lyklasamsetningar þegar tengt er.
+&lt;br&gt;
+- Hjálp við að búa til tengingar (\Valmynd-&gt;Tengingarhjálp\) á tengingarskjánum.
+&lt;br&gt;
+- Hjálp við innsláttarstillingar (\Valmynd-&gt;Meira-&gt;Hjálp innsláttarstillingar\) þegar tengt er.
+&lt;br&gt;
+- Notaðu tiltækan stýripúða sem örvar í stað þess að hreyfa músina, og smelltu á stýripúðann sem Ctrl, snúandi D-púða/reitaborð fyrir BT lyklaborð.
+&lt;br&gt;
+- Stuðningur á mörgum tungumálum, svo framarlega sem SPICE þjónninn hefur nauðsynlegt tungumálaútlit virkt.
+&lt;br&gt;
+- Óaðfinnanlegar breytingar á upplausn fjarstýrðs vélar
+&lt;br&gt;
+- Fullur stuðningur við mús á Android 4.0+ tækjum, þar á meðal hægri og miðju smelli og skrunhjóli.
+&lt;br&gt;
+&lt;br&gt;
+Fyrirhugaðir eiginleikar:
+&lt;br&gt;
+- Afrita/líma samþætting
+&lt;br&gt;
+- Hljóð
+&lt;br&gt;
+- Frammistöðubætur
+&lt;br&gt;
+Þekkt vandamál:
+&lt;br&gt;
+- Senda texta sendir ekki sum tákn.
+&lt;br&gt;</string>
+    <string name="info">Upplýsingar</string>
+    <string name="connection_edit_delete_prompt">Viltu breyta eða eyða tengingunni</string>
+    <string name="connection_type_caption">Tegund tengingar</string>
+    <string name="usb">USB (stinga í OTG snúru fyrst)</string>
+    <string name="connection_type_vnc_over_vencrypt">Örugg VNC yfir VeNCrypt</string>
+    <string name="log_copied">Logcat afritað á klemmuspjald. Þú getur nú límt það í tölvupósti eða á stuðningsspjallinu. Vinsamlega leitið í gegnum persónuleg gögn áður en þú birtir.</string>
+    <string name="disable_pointer_offset_correction">Slökktu á leiðréttingu bendiljöfnunar</string>
+    <string name="password_caption_hint">VNC lykilorð</string>
+    <string name="user_not_specified">Notandi ekki tilgreindur</string>
+    <string name="connection_type_vnc_over_ssl">Örugg VNC yfir AnonTLS</string>
+    <string name="pro_feature_intro">Það virðist sem þú ert að nota Pro eiginleika. Vinsamlegast styðjið verkefnið með því að kaupa Pro útgáfuna sem styður þennan eiginleika. Vinsamlegast athugaðu kynningargluggann fyrir tengla á rétta appið.</string>
+    <string name="shift_check">Shift</string>
+    <string name="error_ssh_keypair_missing">SSH lyklapar ekki búið til ennþá! Vinsamlega búðu til einn og settu (opinbera hluta hans) í authorized_keys á SSH þjóninum.</string>
+    <string name="error_connection_failed">Tenging mistókst.</string>
+    <string name="info_continue_connecting">Haltu áfram að tengjast:</string>
+    <string name="connection_type_vnc_over_ssh">Örugg VNC yfir SSH</string>
+    <string name="advanced_settings">Ítarlegar stillingar</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Aðgangsorð veitt en lykilpar ekki dulkóðuð. Vinsamlegast eyddu lykilorði.</string>
+    <string name="vnc_server_empty">VNC Server eða gátt tóm. Get ekki tengst!</string>
+    <string name="error_uri_parse_error">Ekki er hægt að þátta ásetnings-URI. Vinsamlegast athugaðu URI sniðið. Þú getur líka séð logcat tækisins fyrir frekari upplýsingar.</string>
+    <string name="username_hint_vencrypt">VNC notendanafn</string>
+    <string name="error_vv_download_timeout">Tímamörk við að hlaða niður vv skrá.</string>
+    <string name="center_mouse">Mús @</string>
+    <string name="show_keyboard">Sýna lyklaborð</string>
+    <string name="info_cert_signatures">Upplýsingar um vottorðið eru:</string>
+    <string name="rdp_username_hint">RDP notendanafn</string>
+    <string name="connection_type_vnc">Grunn VNC</string>
+    <string name="rdp_security_nla">Auðkenning netstigs</string>
+    <string name="ssh_pubkey_button">Stjórna lykli</string>
+    <string name="ca_file_error_reading">Villa við að lesa CA skrá. Vinsamlegast tryggðu að það sé læsilegt.</string>
+    <string name="master_password_error_intents_not_supported">Tengingaráætlanir eru ekki enn studdar þegar aðallykilorð er virkt.</string>
+    <string name="input_method_direct_swipe_pan">Beint, Strjúktu Pan</string>
+    <string name="update_button">Uppfærsla</string>
+    <string name="input_mode_panning">Skipunarstilling á skjáborði</string>
+    <string name="search_connections">Leitaðu að tengingum</string>
+    <string name="error_x509_could_not_generate_signature">Gat ekki búið til SHA1 eða MD5 undirskrift vottorðs. Ekkert SHA1/MD5 reiknirit fannst.</string>
+    <string name="auto_x_xdummy">Finndu eða búðu til með Xdummy</string>
+    <string name="error_not_connected_to_network">Þú virðist ekki vera tengdur við internetið. Get ekki haldið áfram án þess að vera tengdur!</string>
+    <string name="show_advanced_settings">Sýna ítarlegar stillingar</string>
+    <string name="master_password_set">Stilltu aðallykilorð</string>
+    <string name="custom_ca_import">Að öðrum kosti, sláðu inn fulla slóð að CA og pikkaðu á Flytja inn</string>
+    <string name="mouse_follow_pan">Mús fylgir pönnu</string>
+    <string name="enter_password_auth_failed">Auðkenning mistókst. Vinsamlegast sláðu inn skilríkin þín aftur.</string>
+    <string name="show">Sýna</string>
+    <string name="dpad_as_arrows">Notaðu D-Pad fyrir örvar og D-Pad smelltu fyrir Ctrl.</string>
+    <string name="tap_enable">Virkja</string>
+    <string name="ad_donate_spice_text1a">Pikkaðu hér til að kaupa Ógegnsætt og vista beinar tengingar við Proxmox og oVirt. Það styður einnig .vv skrár.</string>
+    <string name="please_grant_permission_from_prefs">Þú gætir þurft að veita forritinu leyfi í gegnum Stillingar.</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="share_app">Deildu 🔗</string>
+    <string name="remote_sound_on_device">Hljóð í tæki</string>
+    <string name="connection_setup_vm_name">Heiti sýndarvélar (valfrjálst)</string>
+    <string name="single_choose">Veldu einhendisstillingu eða hættu við</string>
+    <string name="error_no_user_hostname">Vinsamlegast sláðu inn að minnsta kosti notanda og hýsingarheiti eða IP-tölu.</string>
+    <string name="rdp_adv_redirect_sdcard">Beina SD-korti</string>
+    <string name="error_pve_api_io_error">Tenging við Proxmox sýndarumhverfi mistókst:</string>
+    <string name="username_hint_optional">VNC notendanafn (valfrjálst)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">Sérsniðin</string>
+    <string name="delete_connection">Eyða tengingu</string>
+    <string name="repeater_save">Notaðu</string>
+    <string name="get_help">Fáðu hjálp</string>
+    <string name="hide">Fela</string>
+    <string name="rdp_security_mode">Öryggisstilling</string>
+    <string name="connection_type_rdp_over_ssh">RDP yfir SSH</string>
+    <string name="auto_x_xvfb">Finndu eða búðu til með Xvfb</string>
+    <string name="address_caption">VNC þjónn</string>
+    <string name="show_only_connection_nicknames">Sýna aðeins gælunöfn tenginga</string>
+    <string name="ca_spice_use_ovirt">Notaðu RHEV/oVirt CA fyrir SPICE</string>
+    <string name="info_cert_tunnel">Viltu tengja við hýsilinn sem auðkenndur er með eftirfarandi vottorði?\n\nFingrafar: %1$s\n\nGefið út til:\n%2$s\n\nGefið út af:\n%3$s\n\nGildir frá:\n%4$s\n\nGildir þar til:\n%5$s\n\nAth.</string>
+    <string name="error_failed_to_obtain_file">Ekki tókst að finna skrá. Vinsamlegast hlaðið því niður aftur, en í þetta skiptið, reyndu að opna það frá tilkynningasvæðinu eða beint úr vafranum ef mögulegt er.</string>
+    <string name="error_pve_timeout_communicating">Tímamörk í samskiptum við Proxmox sýndarumhverfi.</string>
+    <string name="connection_type_spice_over_ssh">KRYDD yfir SSH</string>
+    <string name="rdp_adv_glyph_cache">Virkja leturstafsminni</string>
+    <string name="disable_battery_optimizations_failed">
+Gat ekki opnað stillingar fyrir fínstillingu rafhlöðunnar. Slökktu á rafhlöðu fínstillingu handvirkt í kerfisstillingum.</string>
+    <string name="disable_battery_optimizations">
+🔋Slökkva á hagræðingu rafhlöðu</string>
+    <string name="disable_battery_optimizations_already_done">
+Forritið er nú þegar undanþegið hagræðingu rafhlöðunnar.</string>
+    <string name="no_connections_title">Engar tengingar enn</string>
+    <string name="no_connections_hint">Ýttu á + hnappinn til að bæta við fyrstu fjartengingu þinni</string>
+    <string name="no_connections_hint_tv">Ýttu á + hnappinn hér að ofan til að bæta við fyrstu fjartengingu þinni</string>
+    <string name="keyboard_layout_map">Lyklaborðsskipulag</string>
+</resources>

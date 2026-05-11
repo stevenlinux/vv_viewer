@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">سيتم تهيئة الصوت في غضون 15 ثانية تقريباً، يرجى إيقاف أي تشغيل للفيديو أو الصوت قبل ذلك</string>
+    <string name="audio_initialized">تم تهيئة الصوت</string>
+    <string name="action_import_settings">استيراد الإعدادات</string>
+    <string name="action_new_connection">✚ اتصال جديد</string>
+    <string name="action_edit_default_settings">⚙ تعديل الإعدادات الافتراضية</string>
+    <string name="action_export_settings">تصدير الإعدادات</string>
+    <string name="action_delete_connection">حذف الاتصال</string>
+    <string name="action_rate_or_share_app">⭐ احصل على مساعدة، قيّم، شارك</string>
+    <string name="get_help">احصل على مساعدة</string>
+    <string name="advanced_settings">الإعدادات المتقدمة</string>
+    <string name="audio">الصوت</string>
+    <string name="auto_rotation">تدوير الشاشة أثناء الاتصال</string>
+    <string name="auto_request_new_res">مزامنة الشاشة البعيدة مع دقة العرض</string>
+    <string name="custom_ca_subject">موضوع الشهادة الاختياري. غير مطلوب إذا كان CN للشهادة يطابق اسم المضيف</string>
+    <string name="custom_ca_import">بدلاً من ذلك، أدخل المسار الكامل لـ CA الخاص بك واضغط استيراد</string>
+    <string name="custom_ca_paste">الصق (إذا لم تكن تستورد) CA هنا</string>
+    <string name="ca_ovirt_use_custom">CA مخصص لـ RHEV/oVirt</string>
+    <string name="ca_spice_use_ovirt">استخدم CA الخاص بـ RHEV/oVirt لـ SPICE</string>
+    <string name="ca_ovirt_manage">إدارة CA الخاص بـ RHEV/oVirt</string>
+    <string name="ca_spice_manage">إدارة CA الخاص بـ SPICE</string>
+    <string name="ca_file_not_found">الملف غير موجود. يرجى إدخال اسم ملف صالح في حقل النص (مثال: /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">خطأ في قراءة ملف CA. يرجى التأكد من إمكانية قراءته.</string>
+    <string name="ca_new_or_changed">شهادة خادم جديدة أو تم تغييرها</string>
+    <string name="connection_type_text">بيئة الافتراضية (RHEV/oVirt أو Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">اسم الجهاز الافتراضي (اختياري)</string>
+    <string name="connection_setup_host_name">عنوان الخادم</string>
+    <string name="connection_setup_user">المستخدم@النطاق</string>
+    <string name="connection_setup_password">كلمة المرور</string>
+    <string name="enter_password">يرجى إدخال كلمة المرور</string>
+    <string name="enter_password_auth_failed">فشل المصادقة. يرجى إعادة إدخال بيانات اعتمادك.</string>
+    <string name="enter_otp_code">يرجى إدخال رمز OTP</string>
+    <string name="hide_toolbar">إخفاء شريط الأدوات</string>
+    <string name="manage_custom_ca_title">إدارة CA المخصص</string>
+    <string name="save_button">حفظ</string>
+    <string name="select_vm_title">اختر الجهاز الافتراضي</string>
+    <string name="vv_file_not_found">لم يتم العثور على ملف .vv!</string>
+    <string name="vv_file_error">ملف .vv إما مفقود أو تالف!</string>
+    <string name="info_cert">هل تقبل شهادة المضيف الجديدة أو المتغيرة هذه؟\n\nالبصمات:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nصدرت إلى: %4$s\nصدرت من: %5$s\n\nصالحة من: %6$s\nصالحة حتى: %7$s\n</string>
+
+    <string name="toggle_keyboard">تبديل لوحة المفاتيح</string>
+    <string name="show_keyboard">إظهار لوحة المفاتيح</string>
+    <string name="scroll_wheel">عجلة التمرير</string>
+
+    <string name="input_method_help">مساعدة طريقة الإدخال</string>
+
+    <string name="ok">موافق</string>
+
+    <string name="input_methods">طريقة الإدخال</string>
+
+    <string name="error_failed_to_download_http">فشل تنزيل الملف عبر HTTP. ربما الخادم الخاص بك لا يمكن الوصول إليه.</string>
+    <string name="error_failed_to_download_https">فشل تنزيل الملف عبر HTTPS. ربما شهادة خادمك غير موثوقة (منتهية الصلاحية أو موقعة ذاتياً) أو الخادم لا يمكن الوصول إليه.</string>
+    <string name="error_failed_to_obtain_content">فشل الحصول على الملف. يرجى تنزيله مجدداً، وهذه المرة افتحه بسرعة من مجلد التنزيل في مدير الملفات.</string>
+    <string name="error_failed_to_obtain_file">فشل العثور على الملف. يرجى تنزيله مجدداً، وهذه المرة حاول فتحه من منطقة الإشعارات أو مباشرة من المتصفح إن أمكن.</string>
+
+    <string name="error_dialog_title">خطأ</string>
+    <string name="info_dialog_title">معلومات</string>
+    <string name="info_vm_launched_on_stand_by">تم العثور على جهازك الافتراضي وهو مطفأ وقد تم تشغيله. يرجى المحاولة مجدداً بعد دقيقتين. إذا حاولت بسرعة وحدث فشل في الاتصال، حاول مرة أخرى لاحقاً.</string>
+    <string name="error_no_vm_found_for_user">لا توجد أجهزة افتراضية متاحة للمستخدم المحدد.</string>
+    <string name="error_no_such_vm_found_for_user">لم يتم العثور على جهاز افتراضي بالمعرف المقدم للمستخدم المحدد. امسح المعرف للحصول على قائمة الأجهزة الافتراضية.</string>
+    <string name="error_no_vnc_support_yet">نوع عرض VNC غير مدعوم بعد، لكنه ميزة قادمة. شكراً لتفهمك!</string>
+    <string name="error_not_connected_to_network">يبدو أنك غير متصل بالإنترنت. لا يمكن المتابعة بدون اتصال!</string>
+    <string name="error_ovirt_timeout">انتهت مهلة الاتصال بجهازك الافتراضي. يرجى التحقق من أن عنوان العقدة التي تشغل جهازك الافتراضي صحيح، وأنه يمكن الوصول إليه من شبكتك الحالية، وأنه لا يوجد جدار حماية يحجب الاتصال.</string>
+    <string name="error_ovirt_auth_failure">فشل المصادقة. يرجى التحقق من المستخدم وكلمة المرور المقدمين.</string>
+    <string name="error_ovirt_ssl_handshake_failure">فشل مصافحة SSL. توجد مشكلة في شهادة SSL للخادم. إذا كنت تستخدم شهادة موقعة ذاتياً، فأنت بحاجة إلى (إعادة) استيراد سلطة الشهادة الخاصة بك.</string>
+    <string name="error_pve_failed_to_authenticate">فشل المصادقة إلى بيئة Proxmox الافتراضية. يرجى التأكد من إدخال اسم المستخدم بصيغة user@realm وأن كلمة المرور صحيحة.</string>
+    <string name="error_pve_failed_to_parse_json">فشل تحليل الاستجابة من بيئة Proxmox الافتراضية.</string>
+    <string name="error_pve_vmid_not_numeric">معرف الجهاز الافتراضي غير رقمي. يرجى إدخال معرف رقمي أو تركه فارغاً للاختيار من القائمة.</string>
+    <string name="error_pve_api_unexpected_code">استجابة غير متوقعة من بيئة Proxmox الافتراضية: </string>
+    <string name="error_pve_api_io_error">فشل الاتصال ببيئة Proxmox الافتراضية: </string>
+    <string name="error_pve_null_data">بيئة Proxmox الافتراضية أعادت بيانات فارغة.</string>
+    <string name="error_pve_timeout_communicating">انتهت مهلة التواصل مع بيئة Proxmox الافتراضية.</string>
+    <string name="error_vm_lookup_failed">لم يتم العثور على جهاز افتراضي بالاسم المحدد المعين لمستخدمك. يرجى مسح اسم الجهاز الافتراضي المحدد لرؤية قائمة الأجهزة الافتراضية المعينة للمستخدم.</string>
+    <string name="error_vv_download_timeout">انتهت مهلة تنزيل ملف vv.</string>
+    <string name="message_please_wait">يرجى الانتظار</string>
+    <string name="message_please_install_bvnc">يرجى تثبيت &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> من Google Play للاتصال بوحدة تحكم VNC الخاصة بهذا الجهاز الافتراضي.</string>
+    <string name="ssl_strict">طلب مطابقة الاسم الشائع للشهادة (موصى به)</string>
+    <string name="usb">USB (قم بتوصيل كابل OTG أولاً)</string>
+
+    <string name="ad_donate_text0">النسخة المدفوعة تدعم أيضاً المصادقة متعددة العوامل عبر SSH. بالإضافة إلى ذلك، تدعم ميزة كلمة المرور الرئيسية المطلوبة كثيراً والتي تمنع الاستخدام غير المصرح به وتشفر جميع إعدادات الاتصال بما في ذلك كلمات المرور ومفاتيح SSH للحماية من السرقة. قم بتفعيلها من القائمة الرئيسية.</string>
+    <string name="ad_donate_spice_text1a">اضغط هنا لشراء Opaque وحفظ الاتصالات المباشرة بـ Proxmox وoVirt. كما يدعم ملفات .vv.</string>
+    <string name="ad_donate_spice_text1b">اضغط هنا لشراء النسخة المدفوعة وفتح ملفات .vv فقط.</string>
+    <string name="ad_donate_text1">اضغط هنا لدعم المشروع بتبرع صغير عن طريق شراء النسخة المدفوعة.</string>
+    <string name="ad_donate_text2">النسخة المدفوعة تتيح لك تعطيل هذا الحوار وتمنحك إمكانية الوصول إلى ميزات إضافية.</string>
+    <string name="ad_donate_text3">إذا كنت ترغب في دعم المشروع أكثر، اتبع الروابط التالية لتطبيقات العملاء: </string>
+    <string name="ad_donate_text_vnc">المشروع مفتوح المصدر يحتاج دعمك! تبرع لنا بشراء bVNC Pro. انظر أدناه لروابط bVNC Pro وتطبيقاتنا الأخرى.</string>
+    <string name="ad_donate_text_rdp">المشروع مفتوح المصدر يحتاج دعمك! تبرع لنا بشراء aRDP Pro، الذي يدعم إعادة توجيه الصوت. انظر أدناه لروابط aRDP Pro وتطبيقاتنا الأخرى.</string>
+    <string name="ad_donate_text_spice">لاتصالات Proxmox وoVirt، يرجى التبرع للمشروع بشراء Opaque أو aSPICE Pro. النسخة المجانية من aSPICE تدعم فقط الاتصالات المباشرة بالأجهزة الافتراضية KVM. انظر أدناه لروابط Opaque وaSPICE Pro وتطبيقاتنا الأخرى.</string>
+
+    <string name="address_caption">خادم VNC</string>
+    <string name="address_caption_hint">خادم VNC</string>
+    <string name="address_caption_hint_tunneled">خادم VNC</string>
+    <string name="address_caption_ssh">خادم SSH</string>
+    <string name="address_caption_ssh_hint">خادم SSH</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">سهم للأسفل</string>
+    <string name="arrow_left">سهم للأيسر</string>
+    <string name="arrow_right">سهم للأيمن</string>
+    <string name="arrow_up">سهم للأعلى</string>
+
+    <string name="auto">تلقائي</string>
+    <string name="auto_x_cancel">إلغاء</string>
+    <string name="auto_x_caption">يمكن للتطبيق اكتشاف جلسات X الموجودة وإنشاء جلسات جديدة تلقائياً على أنظمة Linux/UNIX (مشابه لـ NX). تحتاج إلى x11vnc للبحث، وXvfb أو Xvnc أو Xdummy لإنشاء الجلسات. إذا واجهت مشكلة في الاتصال، جرب اختيار نوع جلسة بعيدة محددة في إعدادات AutoX المتقدمة.</string>
+    <string name="auto_x_confirm">تأكيد</string>
+    <string name="auto_x_descript_geom">حجم سطح المكتب البعيد (العرض × الارتفاع)</string>
+    <string name="auto_x_descript_session">نوع الجلسة البعيدة</string>
+    <string name="auto_x_disabled">معطل</string>
+    <string name="auto_x_disabled_selection">AutoX معطل</string>
+    <string name="auto_x_enabled">مفعّل</string>
+    <string name="auto_x_find">البحث فقط، لا إنشاء</string>
+    <string name="auto_x_find_login">البحث عن تسجيل دخول X (يحتاج sudo)</string>
+    <string name="auto_x_geom_custom">مخصص</string>
+    <string name="auto_x_geom_native">أصلي</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">تلقائي</string>
+    <string name="auto_x_session_custom">مخصص</string>
+    <string name="auto_x_title">ضبط AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">المصادقة باستخدام اسم مستخدم/كلمة مرور SSH المقدمين تلقائياً (إلى شاشة تسجيل الدخول السوداء).</string>
+    <string name="auto_x_unixpw">استخدام بيانات اعتماد UNIX بدلاً من آلية الأمان المدمجة. يجب أن يتمكن المستخدم من تشغيل /bin/su.</string>
+    <string name="auto_x_xdummy">البحث أو الإنشاء باستخدام Xdummy</string>
+    <string name="auto_x_xvfb">البحث أو الإنشاء باستخدام Xvfb</string>
+    <string name="auto_x_xvnc">البحث أو الإنشاء باستخدام Xvnc</string>
+
+    <string name="button_send_text">إرسال النص</string>
+    <string name="button_send_without_saving">إرسال النص/عدم حفظه</string>
+
+    <string name="center_mouse">الماوس @</string>
+
+    <string name="close">إغلاق</string>
+
+    <string name="color_format_caption">وضع الألوان</string>
+    <string name="color_mode">وضع الألوان</string>
+
+    <string name="connect_button">اتصال</string>
+    <string name="back_button">العودة</string>
+    <string name="update_button">تحديث</string>
+
+    <string name="connection_caption">الاتصال</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">نوع الاتصال</string>
+    <string name="connection_type_rdp_over_ssh">RDP عبر SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE عبر SSH</string>
+    <string name="connection_type_vnc">VNC أساسي</string>
+    <string name="connection_type_vnc_over_ssh">VNC آمن عبر SSH</string>
+    <string name="connection_type_vnc_over_ssl">VNC آمن عبر AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">VNC آمن عبر نفق SSL</string>
+    <string name="connection_type_vnc_over_vencrypt">VNC آمن عبر VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">هل تريد تعديل أو حذف الاتصال</string>
+    <string name="connection_edit">تعديل</string>
+    <string name="connection_delete">حذف</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">نسخ القائمة</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">وضع الإدخال الافتراضي</string>
+    <string name="delete_connection">حذف الاتصال</string>
+    <string name="delete_key">حذف المفتاح المحدد</string>
+    <string name="delete_key_list">حذف قائمة المفاتيح</string>
+
+    <string name="disconnect">قطع الاتصال</string>
+
+    <string name="dpad_as_arrows">استخدام D-Pad للأسهم والنقر على D-Pad لـ Ctrl.</string>
+
+    <string name="enable_recording">تفعيل التسجيل</string>
+    <string name="enable_sound">تفعيل الصوت</string>
+
+    <string name="enter_text">إرسال النص</string>
+    <string name="enter_text_title">أدخل النص المراد إرساله</string>
+
+    <string name="error_anon_dh_unsupported">خادم VNC يحاول استخدام شفرات Diffie Hellman المجهولة غير المدعومة على جهاز Android الخاص بك. إذا كنت تستخدم خادم VNC Vino الخاص بـ GNOME، يمكنك تعطيل AnonTLS بتشغيل الأمر التالي في الطرفية ثم إعادة التشغيل: \"gsettings set org.gnome.Vino require-encryption false\". إذا كنت تشغل x11vnc، يمكنك إضافة الخيارات التالية: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">فشل الاتصال.</string>
+    <string name="error_connection_interrupted">انقطع الاتصال.</string>
+    <string name="error_no_user_hostname">يرجى إدخال مستخدم واسم مضيف أو عنوان IP على الأقل.</string>
+    <string name="error_out_of_memory">تعذر تخصيص ذاكرة كافية لرسم الشاشة البعيدة. جرب إعادة تشغيل التطبيق، ثم أعد تشغيل جهازك. يمكنك أيضاً تقليل حجم سطح المكتب البعيد من إعدادات التطبيق.</string>
+    <string name="error_ovirt_unable_to_connect">تعذر الاتصال أو المصادقة، يرجى التحقق من عنوان الخادم والمستخدم وكلمة المرور وسلطة الشهادة والموضوع.</string>
+    <string name="error_pick_correct_item">يرجى التأكد من اختيار العنصر الصحيح في نوع الاتصال.</string>
+    <string name="error_rdp_authentication_failed">فشل مصادقة RDP! يرجى التحقق من اسم مستخدم RDP وكلمة المرور والمحاولة مجدداً.</string>
+    <string name="error_rdp_connection_failed">فشل اتصال RDP! إما أنه تمت مقاطعة اتصال الشبكة، أو أن خادم RDP تم إيقاف تشغيله أو تعطيله، أو تم الاستيلاء على جلستك.</string>
+    <string name="error_rdp_unable_to_connect">تعذر الاتصال بخادم RDP! يرجى التأكد من صحة إعداد خادم RDP، وأن الخادم مشغّل، وأن RDP مفعّل، وأن الخادم على نفس الشبكة كهذا الجهاز.</string>
+    <string name="error_security_type">لم يعرض الخادم نوع أمان مدعوماً.</string>
+    <string name="error_spice_unable_to_connect">تعذر الاتصال أو المصادقة، يرجى التحقق من عنوان الخادم والمنفذ.</string>
+    <string name="error_ssh_could_not_exec_command">تعذر تنفيذ الأمر البعيد.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">تعذر إرسال كلمة مرور sudo.</string>
+    <string name="error_ssh_hostkey_changed">خطأ! تغير مفتاح مضيف الخادم. إذا كان هذا مقصوداً، يمكنك المتابعة. وإلا، فقد يكون هذا هجوم رجل في المنتصف.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">خادم SSH لا يدعم طريقتي المصادقة \"password\" أو \"keyboard-interactive\" أو يطلب طريقة \"publickey\" أولاً. يرجى ضبطه للسماح بطريقة واحدة على الأقل من الطريقتين، أو إعادة ضبط التطبيق. طرق المصادقة المتاحة: </string>
+    <string name="error_ssh_key_auth_fail">فشل المصادقة إلى خادم SSH باستخدام زوج المفاتيح. يرجى التحقق من اسم مستخدم SSH والتأكد من أن مفتاحك العام في ملف authorized_keys على الجانب البعيد.</string>
+    <string name="error_ssh_keypair_decryption_failure">فشل فك تشفير زوج المفاتيح. يرجى التأكد من إدخال عبارة المرور بشكل صحيح في حقل \'SSH Passphrase\' في الشاشة الرئيسية.</string>
+    <string name="error_ssh_keypair_missing">لم يتم إنشاء زوج مفاتيح SSH بعد! يرجى إنشاء واحد ووضع (جزءه العام) في authorized_keys على خادم SSH.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">تم تقديم عبارة مرور لكن زوج المفاتيح غير مشفر. يرجى حذف عبارة المرور.</string>
+    <string name="error_ssh_port_forwarding_failure">تعذر إعداد إعادة توجيه المنفذ لنفق حركة مرور VNC عبر SSH. يرجى التأكد من أن خادم SSH مضبوط للسماح بإعادة توجيه المنفذ والمحاولة مجدداً.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">خادم SSH لا يدعم طريقة المصادقة \"publickey\"، ونحن نحاول استخدام زوج مفاتيح للمصادقة. يرجى ضبطه للسماح بمصادقة publickey والمحاولة مجدداً. طرق المصادقة المتاحة: </string>
+    <string name="error_ssh_pwd_auth_fail">فشل المصادقة إلى خادم SSH باستخدام كلمة المرور. يرجى التحقق من اسم مستخدم SSH وكلمة مرور SSH.</string>
+    <string name="error_ssh_unable_to_connect">فشل الاتصال بخادم SSH. يرجى التحقق من اتصال الشبكة وعنوان خادم SSH والمنفذ.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">تعذر الحصول على منفذ VNC البعيد من x11vnc. يرجى التأكد من تثبيت x11vnc. للتأكد، جرب تشغيل x11vnc يدوياً على سطر الأوامر.</string>
+    <string name="error_uri_noinfo_nosave">معلومات غير كافية محددة للاتصال.</string>
+    <string name="error_uri_parse_error">تعذر تحليل URI الخاص بـ Intent. يرجى التحقق من تنسيق URI. يمكنك أيضاً مراجعة سجل logcat للجهاز لمزيد من التفاصيل.</string>
+    <string name="error_vnc_authentication">فشل مصادقة VNC! تحقق من كلمة مرور VNC (والمستخدم إذا كان ذلك منطبقاً).</string>
+    <string name="error_vnc_unable_to_connect">"فشل الاتصال بخادم VNC بالسبب التالي: "</string>
+    <string name="error_x509_could_not_generate_encoding">تعذر إنشاء ترميز الشهادة.</string>
+    <string name="error_x509_could_not_generate_signature">تعذر إنشاء توقيع SHA1 أو MD5 للشهادة. لم يتم العثور على خوارزمية SHA1/MD5.</string>
+
+    <string name="export_settings">تصدير</string>
+
+
+    <string name="extra_keys_disable">تعطيل المفاتيح الإضافية</string>
+    <string name="extra_keys_enable">تفعيل المفاتيح الإضافية</string>
+
+    <string name="fit_to_screen">ملاءمة الشاشة</string>
+
+    <string name="force">صورة نقطية ملء الشاشة</string>
+
+    <string name="immersive_mode_disable">تعطيل وضع الانغماس</string>
+
+    <string name="import_export_settings">📦 استيراد/تصدير الإعدادات</string>
+    <string name="import_settings">استيراد</string>
+
+
+    <string name="info">معلومات</string>
+    <string name="info_cert_signatures">"معلومات الشهادة هي: "</string>
+    <string name="info_cert_signatures_identical">\n\nيمكنك التأكد من تطابق المعلومات مع شهادة الخادم لمنع هجوم رجل في المنتصف.</string>
+    <string name="info_cert_tunnel">هل تريد الاتصال بالمضيف المحدد بالشهادة التالية؟\n\nالبصمة: %1$s\n\nصدرت إلى:\n%2$s\n\nصدرت من:\n%3$s\n\nصالحة من:\n%4$s\n\nصالحة حتى:\n%5$s\n\nملاحظة: لا يقوم التطبيق بالتحقق من سلطات الشهادات أو التحقق من إلغاء الشهادة.</string>
+    <string name="info_continue_connecting">"متابعة الاتصال بـ: "</string>
+    <string name="info_encoding">" ترميز، "</string>
+    <string name="info_progress_dialog_aborted">تم إلغاء الاتصال!</string>
+    <string name="info_progress_dialog_connecting">جارٍ الاتصال…</string>
+    <string name="info_progress_dialog_downloading">جارٍ تنزيل الإطار الأول.\nيرجى الانتظار…</string>
+    <string name="info_progress_dialog_establishing">جارٍ إنشاء المصافحة.\nيرجى الانتظار…</string>
+    <string name="info_ssh_initializing_hostkey">محاولة تهيئة SSH HostKey.</string>
+    <string name="info_ssh_key_fingerprint">"بصمة مفتاح المضيف هي: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nيمكنك التأكد من أنها مطابقة للبصمة المعروفة لشهادة الخادم لمنع هجوم رجل في المنتصف.</string>
+    <string name="info_update_color_model_to">"جارٍ تحديث نموذج الألوان إلى "</string>
+
+    <string name="input_method_direct_drag_pan_description">مباشر، إمساك للتحريك: اسحب للسحب والإفلات. انقر بإصبع واحد في أي مكان تريد النقر الأيسر، إصبعان للنقر الأيمن، وثلاثة أصابع للنقر الأوسط. اسحب بإصبعين للتمرير. الضغط المطوّل لبدء التحريك.</string>
+    <string name="input_method_direct_swipe_pan_description">مباشر، سحب للتحريك: اسحب للتنقل. انقر بإصبع واحد في أي مكان تريد النقر الأيسر، إصبعان للنقر الأيمن، وثلاثة أصابع للنقر الأوسط. اسحب بإصبعين للتمرير. الضغط المطوّل للسحب والإفلات.</string>
+    <string name="input_method_single_handed_description">أحادي اليد: اسحب للتنقل. انقر بإصبع واحد في أي مكان تريد النقر الأيسر. الضغط المطوّل لاختيار وضع يسار/يمين/وسط/تمرير/تكبير. تعمل أيضاً عناصر التحكم بلمس متعدد.</string>
+    <string name="input_method_touchpad_description">لوحة لمس محاكية: اسحب لتحريك المؤشر. انقر في أي مكان بإصبع واحد للنقر الأيسر، إصبعان للنقر الأيمن، وثلاثة أصابع للنقر الأوسط. اسحب بإصبعين للتمرير. الضغط المطوّل للسحب والإفلات.</string>
+    <string name="input_mode">وضع الإدخال</string>
+
+    <string name="input_mode_fit_to_screen">بدون تحريك؛ تحكم بالماوس بكرة التتبع</string>
+    <string name="input_mode_panning">وضع تحريك سطح المكتب</string>
+    <string name="input_method_mouse">التحكم بمؤشر الماوس</string>
+
+    <string name="input_method_direct_swipe_pan">مباشر، سحب للتحريك</string>
+    <string name="input_method_direct_drag_pan">مباشر، إمساك للتحريك</string>
+    <string name="input_method_single_handed">أحادي اليد</string>
+    <string name="input_method_touchpad">لوحة لمس محاكية</string>
+
+    <string name="input_mode_help">مساعدة وضع الإدخال</string>
+    <string name="input_mode_help_text">"
+في أي وضع إدخال، انقر على أيقونة لوحة المفاتيح للحصول على لوحة المفاتيح على الشاشة. كذلك، قد يكون لجهازك إيماءته الخاصة التي تُظهر لوحة المفاتيح.
+
+استخدم أوضاع الإدخال المباشر للتحكم الأكثر سهولة على الشاشة اللمسية. استخدم وضع لوحة اللمس المحاكية للتحكم الأدق بالماوس.
+
+وضع مباشر، سحب للتحريك:
+ - التحكم بالماوس مباشرة عبر اللمس.
+ - اسحب للتنقل.
+ - النقر يجعل الماوس ينقر حيث لمست.
+ - يتم إرسال أحداث التمرير بين الإصبعين حيث بدأ السحب بإصبعين.
+
+وضع مباشر، إمساك للتحريك:
+ - التحكم بالماوس مباشرة عبر اللمس.
+ - الضغط المطوّل لبدء وضع التحريك.
+ - النقر يجعل الماوس ينقر حيث لمست.
+ - يتم إرسال أحداث التمرير بين الإصبعين حيث بدأ السحب بإصبعين.
+
+وضع لوحة اللمس المحاكية:
+ - استخدم شاشتك كلوحة لمس.
+ - اسحب لتحريك مؤشر الماوس.
+ - حرك الماوس إلى حافة الشاشة للتحريك.
+ - النقر يجعل الماوس ينقر حيث يوجد المؤشر.
+ - يتم إرسال أحداث التمرير حيث يوجد مؤشر الماوس.
+
+وضع أحادي اليد:
+ - مثل وضع مباشر، سحب للتحريك، إلا أن الضغط المطوّل يفتح قائمة بخيارات الأوضاع.
+ - بعد اختيار الوضع، تؤدي حركة الإصبع على الشاشة الإيماءة المحددة.
+ - رفع الإصبع يكمل الإيماءة.
+
+جميع أوضاع الإدخال:
+ - النقر الأيسر: اضغط مرة واحدة.
+ - النقر المزدوج: اضغط مرتين.
+ - النقر الأيمن: الضغط مع الإمساك ثم النقر بإصبع ثانٍ (في أي مكان آخر على الشاشة).
+ - النقر الأيمن البديل: استخدم زر \"العودة\" أو الإيماءة المناسبة لجهازك.
+ - النقر الأوسط: الضغط مع الإمساك ثم النقر بإصبعين إضافيين (في أي مكان آخر على الشاشة).
+ - سحب الماوس: الضغط المطوّل ثم السحب.
+ - عجلة التمرير: السحب بإصبعين لأعلى/لأسفل وللأيمن/للأيسر. السحب السريع يُمرّر بشكل أسرع.
+ - التكبير/التصغير: في وضع التحجيم القابل للتكبير، استخدم قرصة للتحكم في التحجيم.
+ - مفاتيح Ctrl/Alt: القائمة-&gt;أزرار Ctrl/Alt. لا تنسَ إيقاف تشغيلها عند الانتهاء!
+ - تركيبات المفاتيح: القائمة-&gt;المزيد-&gt;إرسال المفاتيح.
+ - إرسال النص: إما الكتابة على لوحة المفاتيح على الشاشة، أو استخدام القائمة-&gt;المزيد-&gt;إرسال النص."</string>
+
+    <string name="intro_close">إغلاق</string>
+    <string name="intro_dont_show">عدم الإظهار مجدداً</string>
+
+    <string name="intro_text">
+القائمة الحالية لميزات bVNC:
+&lt;br&gt;
+- VNC عادي، VNC آمن عبر SSH، AnonTLS، وVeNCrypt، وتسجيل دخول Windows لـ UltraVNC مع خيار Repeater.
+&lt;br&gt;
+- وضع AutoX: في وضع VNC عبر SSH، اكتشف تلقائياً الجلسات الموجودة و/أو أنشئ جلسات X جديدة باستخدام x11vnc! يعمل مثل عميل NX.
+&lt;br&gt;
+- دعم التدوير الحر. استخدم نظام التشغيل لتحديد التدوير إذا لزم الأمر.
+&lt;br&gt;
+- إنشاء وتصدير زوج مفاتيح SSH العام/الخاص.
+&lt;br&gt;
+- جميع ترميزات VNC القياسية، بما في ذلك Tight وZRLE وCopyRect.
+&lt;br&gt;
+- حفظ الجلسة التلقائي.
+&lt;br&gt;
+- أوضاع تحجيم: قابل للتكبير، ملاءمة الشاشة، وواحد لواحد.
+&lt;br&gt;
+- التحكم بالماوس البعيد بلمس متعدد في أوضاع الإدخال المباشر ولوحة اللمس المحاكية.
+&lt;br&gt;
+- تحكم كامل بيد واحدة بالماوس البعيد في وضع أحادي اليد.
+&lt;br&gt;
+- نقرات ماوس بلمس متعدد: انقر للنقر الأيسر، نقرة بإصبعين للنقر الأيمن، نقرة بثلاثة أصابع للنقر الأوسط.
+&lt;br&gt;
+- تمرير بلمس متعدد: سحب بإصبعين لأعلى/لأسفل، وللأيمن/للأيسر للتمرير.
+&lt;br&gt;
+- مفاتيح meta وأسهم على الشاشة يمكن تعطيلها كلياً من القائمة أو تخزينها بزر على الشاشة.
+&lt;br&gt;
+- إرسال النص وتركيبات مفاتيح عشوائية عند الاتصال.
+&lt;br&gt;
+- مساعدة في إنشاء الاتصالات (\"القائمة-&gt;مساعدة الاتصال\") في شاشة الاتصال.
+&lt;br&gt;
+- مساعدة في أوضاع الإدخال (\"القائمة-&gt;المزيد-&gt;مساعدة وضع الإدخال\") عند الاتصال.
+&lt;br&gt;
+- استخدام لوحة التتبع المتاحة كأسهم بدلاً من تحريك الماوس، والنقر على لوحة التتبع كـ Ctrl.
+&lt;br&gt;
+- التبديل إلى الوضع العمودي أثناء الاتصالات، وتدوير D-pad/لوحة التتبع لوحات المفاتيح BT.
+&lt;br&gt;
+- دعم متعدد اللغات، طالما أن خادم VNC لديه تخطيط اللغة الضروري مفعّلاً.
+&lt;br&gt;
+- تكامل النسخ/اللصق
+&lt;br&gt;
+- تغييرات دقة الجهاز البعيد
+&lt;br&gt;
+- دعم الماوس الكامل على أجهزة Android 4.0+، بما في ذلك النقر الأيمن والأوسط وعجلة التمرير.
+&lt;br&gt;
+&lt;br&gt;
+المشاكل المعروفة:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: عميل VNC بديهي وآمن</string>
+
+
+    <string name="keep_password_button">احتفاظ</string>
+    <string name="keep_screen_awake_enable">إبقاء الشاشة مضاءة</string>
+
+    <string name="keys_caption">المفاتيح</string>
+
+    <string name="landscape_force">إجبار الاتجاه الأفقي</string>
+
+    <string name="left_handed_mode">وضع اليد اليسرى</string>
+    <string name="disable_pointer_offset_correction">تعطيل تصحيح إزاحة المؤشر</string>
+
+    <string name="list_caption">القائمة</string>
+    <string name="list_name_caption">اسم القائمة</string>
+
+    <string name="local_mouse_check">مؤشر الماوس المحلي (اختره إذا كان المؤشر غير مرئي)</string>
+
+    <string name="main_screen_help">مساعدة الاتصال</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+عند إضافة اتصال أو تعديله، سترى صفحة ضبط الاتصال. هنا يمكنك إعداد
+اتصال VNC جديد، أو اختيار اتصال موجود مسبقاً. في الأعلى يوجد زر يتيح لك
+حفظ الاتصال. بعد ذلك تجد مكان ضبط اتصالك.
+
+إذا كنت تبحث عن تحسين سريع في الأداء، جرب ضبط وضع الألوان على قيمة أدنى. أيضاً، جرب إزالة أي صورة خلفية لسطح المكتب على خادم VNC. أخيراً، تأكد من أن جهازك لديه اتصال شبكة جيد وتجنب تغطية هوائيه وتقليل قوة الإشارة.
+
+ - نوع الاتصال: هنا تختار نوع اتصال VNC. أنواع الاتصال المتاحة هي:
+   (أ) VNC عادي، الذي يدعمه جميع خوادم VNC لكنه يفتقر إلى التشفير وعرضة لهجمات القوة الغاشمة بسبب قيد كلمة المرور بـ 8 أحرف.
+   (ب) VNC آمن عبر SSH، الذي يتصل عبر نفق SSH مشفر. تحتاج إلى خدمة SSHD قيد التشغيل بالإضافة إلى خادم VNC. طالما أن خادم VNC لا يقبل الاتصالات مباشرة من الإنترنت، هذا النوع لا يعاني من ثغرات معروفة، طالما تحقق من توقيع شهادة الخادم عند الاتصال الأول.
+   (ج) UltraVNC، الذي يمنحك خيارات تسجيل دخول Windows ومُكرِّر UltraVNC. استخدام تسجيل دخول Windows لا يعاني من قيد كلمة المرور بـ 8 أحرف، لكن هذا الوضع لا يوفر تشفيراً، مما يجعل جلستك عرضة للتجسس.
+   (د) VNC آمن عبر AnonTLS، وهو VNC عادي عبر اتصال مكافئ لـ stunnel. تحتاج إما تشغيل stunnel، أو استخدام خادم VNC مثل Vino الذي يدعم AnonTLS مباشرة. هذا الوضع يمنحك تشفير الجلسة، لكنه يعاني من قيد كلمة المرور بـ 8 أحرف ولا يمنع هجمات رجل في المنتصف.
+   (هـ) VNC آمن عبر VeNCrypt، الذي يستخدم شهادات x509 وتشفير الجلسة، ويمكنه حسب ضبط الخادم استخدام بيانات اعتماد المستخدم/كلمة المرور بدون قيد 8 أحرف. هذا الوضع يمنع هجمات رجل في المنتصف ويوفر خصوصية الجلسة. خوادم مثل x11vnc وTigerVNC تدعم هذا الوضع وهي بأمان VNC عبر SSH.
+
+ - العنوان: كل اتصال تنشئه يمكن أن يكون له لقب لتعريفه بسهولة في القائمة.
+
+ - إعدادات نفق SSH: متاحة في وضع VNC عبر SSH.
+   (أ) خادم SSH/المنفذ: عنوان ومنفذ خادم SSH الذي سيتم نفق الاتصال من خلاله. بشكل افتراضي SSH يستمع على المنفذ 22.
+   (ب) اسم المستخدم/كلمة المرور: اسم المستخدم وكلمة المرور للحساب على خادم SSH. ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+   (ج) إدارة المفتاح/استخدام المفتاح: زر لإدارة المفاتيح العامة/الخاصة، ومربع اختيار يشير إلى ما إذا كنت تريد استخدام مفتاح بدلاً من كلمة المرور للمصادقة. إذا استخدمت زر النسخ إلى الحافظة بعد إنشاء زوج المفاتيح، يجب أن تتمكن من لصق المفتاح العام عند الاتصال بخادم VNC (يتم مزامنة الحافظة مع الخادم).
+
+ - ضبط AutoX: متاح فقط في وضع VNC عبر SSH. يمكن للتطبيق اكتشاف الجلسات الموجودة وإنشاء جلسات X جديدة اختيارياً على أنظمة UNIX (مثل عميل NX). تحتاج إلى x11vnc للبحث، وXvfb أو Xvnc أو Xdummy مثبتة على النظام البعيد لإنشاء الجلسات. قد تضطر إلى نقل ملف .dmrc وإضافة ملف .xinit في مجلدك الرئيسي إذا لم يبدو سطح المكتب صحيحاً أو كنت تحصل على نافذة xterm فقط.
+
+ - إعدادات اتصال VNC:
+   (أ) خادم VNC/المنفذ: هنا تدخل اسم المضيف أو عنوان IP ومنفذ الكمبيوتر الذي يعمل عليه خادم VNC الذي تريد الاتصال به. في وضع VNC عبر SSH، هذا العنوان كما يُرى من خادم SSH. إذا كان خادم SSH وخادم VNC نفس الكمبيوتر، يمكنك استخدام localhost. عادةً ما تستمع خوادم VNC ابتداءً من المنفذ 5900 (شاشة VNC الأولى، الشاشة :0).
+   (ب) مستخدم VNC: متاح في وضع UltraVNC مع تسجيل دخول Windows، أو VNC آمن عبر VeNCrypt، هنا تدخل اسم مستخدم حسابك في Windows/UNIX.
+   (ج) كلمة مرور VNC: إذا كان ضبط خادم VNC يتطلب كلمة مرور، أدخلها هنا. في أوضاع UltraVNC مع تسجيل دخول Windows/VeNCrypt، ضع كلمة مرور حسابك في Windows/UNIX هنا. لا يُستخدم التخزين الآمن لكلمات المرور، وستُحفظ كلمة المرور فقط إذا حددت مربع "احتفاظ". ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+
+ - وضع الألوان: يدعم العميل عدة أوضاع ألوان. الأوضاع ذات الألوان الأكثر توفر تجربة بصرية أفضل على حساب النطاق الترددي الأعلى وزيادة العمليات الحسابية للمعالج على جهازك. بعض خوادم VNC لا تدعم جميع أعماق الألوان (مثلاً OS/X Remote Desktop يتطلب ألوان 24 بت). إذا واجهت مشكلة في الاتصال، جرب عمق ألوان آخر.
+
+ - استخدام D-Pad للأسهم: إذا كنت تفضل ذلك، يمكنك استخدام D-Pad لوحة المفاتيح البلوتوث أو الأسهم على لوحة المفاتيح على الشاشة لإرسال أسهم إلى خادم VNC.
+
+ - تدوير D-Pad: قد تحتاج الهواتف المقترنة بلوحة مفاتيح بلوتوث إلى تدوير D-pad للوحة المفاتيح في اتجاه عكس عقارب الساعة لإرسال اتجاهات صحيحة إلى الخادم.
+
+ - مؤشر الماوس المحلي: بعض خوادم VNC (مثلاً OS/X Remote Desktop) لن ترسم مؤشر الماوس على العميل. تحديد هذا الخيار سيجعل التطبيق يرسم مؤشر ماوس في موضع الماوس.
+
+ - تلقائي/صورة نقطية ملء الشاشة: يستخدم عميل VNC صورة نقطية لتمثيل الشاشة البعيدة. للشاشات البعيدة الكبيرة جداً، خاصة في وضع ملاءمة الشاشة، قد تواجه تشوهات بصرية غريبة في وضع ملاءمة الشاشة، بسبب قيود ذاكرة العملية. إذا حدث ذلك، جرب تحديد هذا الخيار. ضع في اعتبارك أن تحديد الخيار قد يؤدي إلى إغلاق التطبيق عند الاتصال.
+
+ - المُكرِّر: متاح فقط في وضع UltraVNC. مهم: إذا كان لديك مُكرِّر UltraVNC، أدخل عنوانه ومنفذه خارج حوار \'UltraVNC Repeater\' وأدخل عنوان ومنفذ خادم VNC الفعلي داخل حوار \'UltraVNC Repeater\'. افصل عنوان خادم VNC ومنفذه بنقطتين، مثلاً 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 تفعيل كلمة المرور الرئيسية</string>
+    <string name="master_password_error_failed_to_disable">تعذر تعطيل كلمة المرور الرئيسية. تحقق من المساحة الحرة على جهازك وحاول مجدداً.</string>
+    <string name="master_password_error_failed_to_enable">تعذر تفعيل كلمة المرور الرئيسية. تحقق من المساحة الحرة على جهازك وحاول مجدداً.</string>
+    <string name="master_password_error_intents_not_supported">نوايا الاتصال غير مدعومة بعد عند تفعيل كلمة المرور الرئيسية.</string>
+    <string name="master_password_error_password_necessary">كلمة المرور الرئيسية مطلوبة للمتابعة.</string>
+    <string name="master_password_error_password_not_set">تم إلغاء ضبط كلمة المرور الرئيسية.</string>
+    <string name="master_password_error_shortcuts_not_supported">الاختصارات غير مدعومة بعد عند تفعيل كلمة المرور الرئيسية.</string>
+    <string name="master_password_error_wrong_password">تعذرت المصادقة بكلمة المرور الرئيسية المقدمة.</string>
+    <string name="master_password_hint_once">أدخل كلمة المرور</string>
+    <string name="master_password_hint_twice">كرر كلمة المرور</string>
+    <string name="master_password_set">ضبط كلمة المرور الرئيسية</string>
+    <string name="master_password_set_error">كلمتا المرور غير متطابقتان، يرجى الانتباه!</string>
+    <string name="master_password_set_message">يرجى إدخال كلمة مرور رئيسية وحفظها في ذاكرتك. كلما كانت كلمة مرورك أطول، كلما كان من الأصعب كسرها. إذا أدخلت كلمة مرورك بشكل خاطئ أو نسيتها، ستفقد جميع إعداداتك! قد ترغب في تصدير إعداداتك الآن لنسخها احتياطياً (من القائمة). احفظها بأمان حيث أن الإعدادات المصدَّرة غير مشفرة.</string>
+    <string name="master_password_verify">التحقق من كلمة المرور الرئيسية</string>
+    <string name="master_password_verify_message">يرجى إدخال كلمة المرور الرئيسية الصحيحة للمتابعة.</string>
+
+    <string name="meta_key_title">إرسال مفاتيح خاصة</string>
+
+    <string name="mouse_follow_pan">الماوس يتبع التحريك</string>
+
+    <string name="new_connection">اتصال جديد</string>
+    <string name="new_list_button">قائمة جديدة</string>
+
+    <string name="nickname_caption">الاسم المستعار</string>
+    <string name="nickname_caption_hint">العنوان (اختياري)</string>
+
+    <string name="off">إيقاف</string>
+
+    <string name="one_to_one">واحد لواحد</string>
+
+    <string name="open_doc">الدليل/الويكي</string>
+
+    <string name="pan_follow_mouse">التحريك يتبع الماوس</string>
+
+    <string name="password_caption">مصادقة VNC</string>
+    <string name="password_caption_hint">كلمة مرور VNC</string>
+    <string name="password_caption_ssh">مصادقة SSH</string>
+    <string name="password_hint_ssh">كلمة مرور SSH</string>
+
+    <string name="port_caption">منفذ VNC</string>
+    <string name="port_caption_ssh">منفذ SSH</string>
+    <string name="port_hint">المنفذ</string>
+    <string name="port_ssh_hint">المنفذ</string>
+
+    <string name="portrait_mode">التبديل إلى الوضع العمودي عند الاتصال</string>
+    <string name="local_clipboard_integration">تفعيل تكامل الحافظة من المحلي إلى البعيد</string>
+    <string name="remote_clipboard_integration">تفعيل تكامل الحافظة من البعيد إلى المحلي</string>
+    <string name="position_toolbar_last_used">استعادة موضع شريط الأدوات</string>
+    <string name="applies_to_new_connections_only">ينطبق على الاتصالات الجديدة فقط</string>
+    <string name="pro_feature_mfa">يبدو أن خادمك يحتوي على مصادقة متعددة العوامل مفعّلة. يرجى دعم المشروع بشراء النسخة المدفوعة التي تدعم هذه الميزة. رابط النسخة المدفوعة متاح في حوار البداية.</string>
+    <string name="pro_feature_intro">يبدو أنك تستخدم ميزة من النسخة المدفوعة. يرجى دعم المشروع بشراء النسخة المدفوعة التي تدعم هذه الميزة. يرجى مراجعة حوار المقدمة لروابط التطبيق الصحيح.</string>
+    <string name="pro_feature_generic">يبدو أنك تستخدم ميزة من النسخة المدفوعة. يرجى دعم المشروع بشراء النسخة المدفوعة التي تدعم هذه الميزة. رابط النسخة المدفوعة متاح في حوار البداية.</string>
+    <string name="pro_feature_rdp">يبدو أنك حاولت فتح ملف .rdp وهي ميزة من النسخة المدفوعة. يرجى دعم المشروع بشراء aRDP Pro، الذي يدعم ملفات .rdp. رابط نسخة aRDP Pro متاح في حوار البداية.</string>
+    <string name="pro_feature_spice">يبدو أنك حاولت فتح ملف .vv. إذا أردت حفظ الاتصالات بـ Proxmox أو oVirt مباشرة في التطبيق وفتح ملفات .vv أيضاً، فكّر في شراء Opaque. إذا كنت تحتاج فقط دعم ملفات .vv، يمكنك الحصول على aSPICE Pro. اعثر على روابط كلا التطبيقين في حوار البداية.</string>
+
+    <string name="rdp_address_caption_hint">خادم RDP</string>
+    <string name="rdp_adv_console_mode">وضع وحدة التحكم</string>
+    <string name="rdp_adv_desktop_background">إظهار خلفية سطح المكتب</string>
+    <string name="rdp_adv_desktop_composition">تفعيل تركيب سطح المكتب</string>
+    <string name="rdp_adv_font_smoothing">تنعيم الخطوط</string>
+    <string name="rdp_adv_menu_animation">إظهار تأثيرات القوائم</string>
+    <string name="rdp_adv_redirect_sdcard">إعادة توجيه بطاقة SD</string>
+    <string name="rdp_adv_remotefx">تفعيل RemoteFX</string>
+    <string name="rdp_adv_visual_styles">تفعيل الأنماط المرئية</string>
+    <string name="rdp_adv_window_contents">إظهار محتويات النافذة أثناء السحب</string>
+    <string name="rdp_security_mode">وضع الأمان</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">حجم سطح المكتب البعيد (العرض × الارتفاع)</string>
+    <string name="rdp_domain_hint">نطاق RDP</string>
+    <string name="rdp_geom_automatic">تلقائي</string>
+    <string name="rdp_geom_checkbox_enable">تفعيل دقة مخصصة</string>
+    <string name="rdp_geom_custom">مخصص</string>
+    <string name="rdp_geom_description_hint">الخادم يحتاج إلى دعم ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">معطل</string>
+    <string name="rdp_geom_native_landscape">أفقي أصلي</string>
+    <string name="rdp_geom_native_portrait">عمودي أصلي</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">التفاوض التلقائي على الأمان</string>
+    <string name="rdp_security_rdp">أمان RDP</string>
+    <string name="rdp_security_tls">أمان TLS</string>
+    <string name="rdp_security_nla">مصادقة مستوى الشبكة</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+شكراً لدعمك لـ aRDP والبرمجيات مفتوحة المصدر بشكل عام! للمساعدة في استخدام aRDP، انظر عناصر المساعدة في القائمة وشرح التطبيق في المتجر.
+&lt;br&gt;
+&lt;br&gt;
+القائمة الحالية لميزات aRDP تتضمن:
+&lt;br&gt;
+- RDP عادي، RDP عبر نفق SSH.
+&lt;br&gt;
+- دعم التدوير الحر. استخدم نظام التشغيل لتحديد التدوير إذا لزم الأمر.
+&lt;br&gt;
+- ضبط الدقة البعيدة، الدقة الأصلية في الوضعين الأفقي والعمودي.
+&lt;br&gt;
+- إنشاء وتصدير زوج مفاتيح SSH العام/الخاص.
+&lt;br&gt;
+- حفظ الجلسة التلقائي.
+&lt;br&gt;
+- أوضاع تحجيم: قابل للتكبير، ملاءمة الشاشة، وواحد لواحد.
+&lt;br&gt;
+- التحكم بالماوس البعيد بلمس متعدد في أوضاع الإدخال المباشر ولوحة اللمس المحاكية.
+&lt;br&gt;
+- تحكم كامل بيد واحدة بالماوس البعيد في وضع أحادي اليد.
+&lt;br&gt;
+- نقرات ماوس بلمس متعدد: انقر للنقر الأيسر، نقرة بإصبعين للنقر الأيمن، نقرة بثلاثة أصابع للنقر الأوسط.
+&lt;br&gt;
+- تمرير بلمس متعدد: سحب بإصبعين لأعلى/لأسفل، وللأيمن/للأيسر للتمرير.
+&lt;br&gt;
+- مفاتيح meta وأسهم على الشاشة يمكن تعطيلها كلياً من القائمة أو تخزينها بزر على الشاشة.
+&lt;br&gt;
+- إرسال النص وتركيبات مفاتيح عشوائية عند الاتصال.
+&lt;br&gt;
+- مساعدة في إنشاء الاتصالات (\"القائمة-&gt;مساعدة الاتصال\") في شاشة الاتصال.
+&lt;br&gt;
+- مساعدة في أوضاع الإدخال (\"القائمة-&gt;المزيد-&gt;مساعدة وضع الإدخال\") عند الاتصال.
+&lt;br&gt;
+- استخدام لوحة التتبع المتاحة كأسهم بدلاً من تحريك الماوس، والنقر على لوحة التتبع كـ Ctrl، وتدوير D-pad/لوحة التتبع لوحات المفاتيح BT.
+&lt;br&gt;
+- دعم متعدد اللغات، طالما أن خادم RDP لديه تخطيط اللغة الضروري مفعّلاً.
+&lt;br&gt;
+- تغييرات دقة الجهاز البعيد السلسة
+&lt;br&gt;
+- دعم الماوس الكامل على أجهزة Android 4.0+، بما في ذلك النقر الأيمن والأوسط وعجلة التمرير.
+&lt;br&gt;
+- اختيار من بين أوضاع الألوان
+&lt;br&gt;
+- تكامل النسخ/اللصق
+&lt;br&gt;
+- تصدير الإعدادات
+&lt;br&gt;
+- الصوت
+&lt;br&gt;
+&lt;br&gt;
+المشاكل المعروفة:</string>
+    <string name="rdp_intro_title">aRDP: عميل RDP بديهي وآمن</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+عند إضافة اتصال أو تعديله، سترى صفحة ضبط الاتصال. هنا يمكنك إعداد اتصال RDP جديد، أو اختيار اتصال موجود مسبقاً. في الأعلى يوجد زر يتيح لك حفظ الاتصال. بعد ذلك تجد مكان ضبط اتصالك.
+
+ - نوع الاتصال: هنا تختار نوع اتصال RDP. أنواع الاتصال المتاحة هي:
+   (أ) RDP، الذي يتصل مباشرة بكمبيوتر عبر بروتوكول RDP.
+   (ب) RDP عبر SSH، الذي يمرر اتصالك أولاً عبر كمبيوتر يعمل عليه خادم SSH.
+
+ - العنوان: كل اتصال تنشئه يمكن أن يكون له لقب لتعريفه بسهولة في القائمة.
+
+ - إعدادات نفق SSH: متاحة في وضع RDP عبر SSH.
+   (أ) خادم SSH/المنفذ: عنوان ومنفذ خادم SSH الذي سيتم نفق الاتصال من خلاله. بشكل افتراضي SSH يستمع على المنفذ 22.
+   (ب) اسم المستخدم/كلمة المرور: اسم المستخدم وكلمة المرور للحساب على خادم SSH. ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+   (ج) إدارة المفتاح/استخدام المفتاح: زر لإدارة المفاتيح العامة/الخاصة، ومربع اختيار يشير إلى ما إذا كنت تريد استخدام مفتاح بدلاً من كلمة المرور للمصادقة. إذا استخدمت زر النسخ إلى الحافظة بعد إنشاء زوج المفاتيح، يجب أن تتمكن من لصق المفتاح العام عند الاتصال بخادم RDP (يتم مزامنة الحافظة مع الخادم).
+
+ - إعدادات اتصال RDP:
+   (أ) خادم RDP/المنفذ: هنا تدخل اسم المضيف أو عنوان IP ومنفذ الكمبيوتر الذي يعمل عليه خادم RDP الذي تريد الاتصال به. في وضع RDP عبر SSH، هذا العنوان كما يُرى من خادم SSH. إذا كان خادم SSH وخادم RDP نفس الكمبيوتر المادي، يمكنك استخدام localhost. عادةً ما تستمع خوادم RDP على المنفذ 3389.
+   (ب) مستخدم RDP: هنا تدخل اسم مستخدم حسابك في Windows/UNIX.
+   (ج) نطاق RDP: أدخل النطاق الذي ينتمي إليه حسابك.
+   (د) كلمة مرور RDP: هنا تدخل كلمة مرور حسابك في Windows/UNIX. لا يُستخدم التخزين الآمن لكلمات المرور (تكون في قاعدة بيانات)، وستُحفظ كلمة المرور فقط إذا حددت مربع "احتفاظ". ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+
+ - الإعدادات المتقدمة: في هذا القسم ستجد طرقاً لتخصيص دقة سطح المكتب، وتعديلات أداء RDP المختلفة.
+
+ - تعديلات الجهاز المحلي: هذه تضبط سلوك التطبيق على جهازك.
+   (أ) استخدام D-Pad للأسهم: إذا كنت تفضل ذلك، يمكنك استخدام D-Pad لوحة المفاتيح البلوتوث أو الأسهم على لوحة المفاتيح على الشاشة لإرسال أسهم إلى خادم RDP.
+   (ب) تدوير D-Pad: قد تحتاج الهواتف المقترنة بلوحة مفاتيح بلوتوث إلى تدوير D-pad للوحة المفاتيح في اتجاه عكس عقارب الساعة لإرسال اتجاهات صحيحة إلى الخادم.
+   (ج) مؤشر الماوس المحلي: إذا كان المؤشر غير مرئي، حدد هذا لإجبار التطبيق على رسمه."</string>
+    <string name="rdp_password_hint">كلمة مرور RDP</string>
+    <string name="rdp_server_empty">خادم RDP أو المنفذ فارغ. لا يمكن الاتصال!</string>
+    <string name="rdp_username_hint">اسم مستخدم RDP</string>
+
+    <string name="remote_sound_disabled">الصوت معطل</string>
+    <string name="remote_sound_on_device">الصوت على الجهاز</string>
+    <string name="remote_sound_on_server">الصوت على الخادم</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">مهم: إذا كنت تستخدم مُكرِّر UltraVNC، أدخل عنوانه ومنفذه خارج هذا الحوار. هنا، أدخل عنوان ومنفذ خادم VNC الفعلي. افصل عنوان خادم VNC ومنفذه بنقطتين، مثلاً 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">عدم الاستخدام</string>
+    <string name="repeater_dialog_title">خادم VNC خلف المُكرِّر</string>
+    <string name="repeater_empty_text">لا مُكرِّر</string>
+    <string name="repeater_save">استخدام</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt كـ ISO L3 Shift (VNC فقط)</string>
+
+    <string name="rotate_dpad">تدوير D-Pad البلوتوث أو البرمجي</string>
+
+    <string name="save_as_copy">حفظ كنسخة</string>
+
+    <string name="scaling">التحجيم</string>
+    <string name="scaling_zoomable">قابل للتكبير</string>
+
+    <string name="send_button">إرسال</string>
+    <string name="send_key_again">إرسال المفتاح مجدداً</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">اتصال VNC</string>
+    <string name="shortcut_label_rdp">اتصال RDP</string>
+    <string name="shortcut_label_spice">اتصال SPICE</string>
+
+    <string name="showkbd_label">لوحة المفاتيح</string>
+
+    <string name="single_cancel">تم إلغاء وضع أحادي اليد</string>
+    <string name="single_choose">اختر وضع أحادي اليد أو ألغِ</string>
+    <string name="single_left">وضع السحب الأيسر - اسحب للسحب/الاختيار، ارفع الإصبع للإيقاف</string>
+    <string name="single_middle">وضع السحب الأوسط - اسحب للسحب/الاختيار، ارفع الإصبع للإيقاف</string>
+    <string name="single_reposition">تمت إعادة تموضع مؤشر الماوس لوضع أحادي اليد</string>
+    <string name="single_right">وضع السحب الأيمن - اسحب للسحب/الاختيار، ارفع الإصبع للإيقاف</string>
+    <string name="single_scroll">وضع التمرير - اسحب لأعلى/لأسفل للتمرير، ارفع الإصبع للإيقاف</string>
+    <string name="single_zoom">وضع التكبير - اسحب لأعلى/لأسفل للتكبير/التصغير، ارفع الإصبع للإيقاف</string>
+
+    <string name="snap_one_to_one">تم التثبيت على تكبير 1:1</string>
+
+    <string name="special_keys">إرسال المفاتيح</string>
+
+    <string name="spice_address_caption_hint">خادم SPICE</string>
+    <string name="spice_button_import_ca">استيراد CA</string>
+    <string name="spice_ca_cert_path_hint">المسار إلى ملف سلطة الشهادة</string>
+    <string name="spice_ca_file_error_reading">خطأ في قراءة ملف CA. يرجى التأكد من إمكانية قراءته.</string>
+    <string name="spice_ca_file_not_found">الملف غير موجود. يرجى إدخال اسم ملف صالح في حقل النص (مثال: /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">موضوع الشهادة</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+شكراً لدعمك لـ aSPICE والبرمجيات مفتوحة المصدر بشكل عام! للمساعدة في استخدام aSPICE، انظر عناصر المساعدة في القائمة وشرح التطبيق في المتجر.
+&lt;br&gt;
+&lt;br&gt;
+القائمة الحالية لميزات aSPICE تتضمن:
+&lt;br&gt;
+- SPICE عادي، SPICE عبر نفق SSH.
+&lt;br&gt;
+- دعم التدوير الحر. استخدم نظام التشغيل لتحديد التدوير إذا لزم الأمر.
+&lt;br&gt;
+- إنشاء وتصدير زوج مفاتيح SSH العام/الخاص.
+&lt;br&gt;
+- حفظ الجلسة التلقائي.
+&lt;br&gt;
+- أوضاع تحجيم: قابل للتكبير، ملاءمة الشاشة، وواحد لواحد.
+&lt;br&gt;
+- التحكم بالماوس البعيد بلمس متعدد في أوضاع الإدخال المباشر ولوحة اللمس المحاكية.
+&lt;br&gt;
+- تحكم كامل بيد واحدة بالماوس البعيد في وضع أحادي اليد.
+&lt;br&gt;
+- نقرات ماوس بلمس متعدد: انقر للنقر الأيسر، نقرة بإصبعين للنقر الأيمن، نقرة بثلاثة أصابع للنقر الأوسط.
+&lt;br&gt;
+- تمرير بلمس متعدد: سحب بإصبعين لأعلى/لأسفل، وللأيمن/للأيسر للتمرير.
+&lt;br&gt;
+- مفاتيح meta وأسهم على الشاشة يمكن تعطيلها كلياً من القائمة أو تخزينها بزر على الشاشة.
+&lt;br&gt;
+- إرسال النص وتركيبات مفاتيح عشوائية عند الاتصال.
+&lt;br&gt;
+- مساعدة في إنشاء الاتصالات (\"القائمة-&gt;مساعدة الاتصال\") في شاشة الاتصال.
+&lt;br&gt;
+- مساعدة في أوضاع الإدخال (\"القائمة-&gt;المزيد-&gt;مساعدة وضع الإدخال\") عند الاتصال.
+&lt;br&gt;
+- استخدام لوحة التتبع المتاحة كأسهم بدلاً من تحريك الماوس، والنقر على لوحة التتبع كـ Ctrl، وتدوير D-pad/لوحة التتبع لوحات المفاتيح BT.
+&lt;br&gt;
+- دعم متعدد اللغات، طالما أن خادم SPICE لديه تخطيط اللغة الضروري مفعّلاً.
+&lt;br&gt;
+- تغييرات دقة الجهاز البعيد السلسة
+&lt;br&gt;
+- دعم الماوس الكامل على أجهزة Android 4.0+، بما في ذلك النقر الأيمن والأوسط وعجلة التمرير.
+&lt;br&gt;
+&lt;br&gt;
+الميزات المخططة:
+&lt;br&gt;
+- تكامل النسخ/اللصق
+&lt;br&gt;
+- الصوت
+&lt;br&gt;
+- تحسينات الأداء
+&lt;br&gt;
+المشاكل المعروفة:
+&lt;br&gt;
+- إرسال النص لا يرسل بعض الرموز.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: عميل SPICE بديهي وآمن</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+عند إضافة اتصال أو تعديله، سترى صفحة ضبط الاتصال. هنا يمكنك إعداد اتصال SPICE جديد، أو اختيار اتصال موجود مسبقاً. في الأعلى يوجد زر يتيح لك حفظ الاتصال. بعد ذلك تجد مكان ضبط اتصالك.
+
+ - نوع الاتصال: هنا تختار نوع اتصال SPICE. أنواع الاتصال المتاحة هي:
+   (أ) SPICE، الذي يتصل مباشرة بكمبيوتر عبر بروتوكول SPICE.
+   (ب) SPICE عبر SSH، الذي يمرر اتصالك أولاً عبر كمبيوتر يعمل عليه خادم SSH.
+
+ - العنوان: كل اتصال تنشئه يمكن أن يكون له لقب لتعريفه بسهولة في القائمة.
+
+ - إعدادات نفق SSH: متاحة في وضع SPICE عبر SSH.
+   (أ) خادم SSH/المنفذ: عنوان ومنفذ خادم SSH الذي سيتم نفق الاتصال من خلاله. بشكل افتراضي SSH يستمع على المنفذ 22.
+   (ب) اسم المستخدم/كلمة المرور: اسم المستخدم وكلمة المرور للحساب على خادم SSH. ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+   (ج) إدارة المفتاح/استخدام المفتاح: زر لإدارة المفاتيح العامة/الخاصة، ومربع اختيار يشير إلى ما إذا كنت تريد استخدام مفتاح بدلاً من كلمة المرور للمصادقة. إذا استخدمت زر النسخ إلى الحافظة بعد إنشاء زوج المفاتيح، يجب أن تتمكن من لصق المفتاح العام عند الاتصال بخادم SPICE (يتم مزامنة الحافظة مع الخادم).
+
+ - إعدادات اتصال SPICE:
+   (أ) خادم SPICE/المنفذ: هنا تدخل اسم المضيف أو عنوان IP ومنفذ الكمبيوتر الذي يعمل عليه خادم SPICE الذي تريد الاتصال به. في وضع SPICE عبر SSH، هذا العنوان كما يُرى من خادم SSH. إذا كان خادم SSH وخادم SPICE نفس الكمبيوتر المادي، يمكنك استخدام localhost. عادةً ما تستمع خوادم SPICE على المنفذ 5900 وما فوق.
+   (د) كلمة مرور SPICE: هنا تدخل كلمة المرور المضبوطة لحماية جلسة SPICE الخاصة بك. لا يُستخدم التخزين الآمن لكلمات المرور (تكون في قاعدة بيانات)، وستُحفظ كلمة المرور فقط إذا حددت مربع "احتفاظ". ستُملأ كلمة المرور على هذه الصفحة إذا لم تغلق التطبيق منذ آخر إدخال لها.
+
+ - الإعدادات المتقدمة: في هذا القسم ستجد أي تعديلات لأداء الجهاز المحلي أو SPICE.
+ - تعديلات الجهاز المحلي: هذه تضبط سلوك التطبيق على جهازك.
+   (أ) استخدام D-Pad للأسهم: إذا كنت تفضل ذلك، يمكنك استخدام D-Pad لوحة المفاتيح البلوتوث أو الأسهم على لوحة المفاتيح على الشاشة لإرسال أسهم إلى خادم SPICE.
+   (ب) تدوير D-Pad: قد تحتاج الهواتف المقترنة بلوحة مفاتيح بلوتوث إلى تدوير D-pad للوحة المفاتيح في اتجاه عكس عقارب الساعة لإرسال اتجاهات صحيحة إلى الخادم.
+   (ج) مؤشر الماوس المحلي: إذا كان المؤشر غير مرئي، حدد هذا لإجبار التطبيق على رسمه."</string>
+    <string name="spice_password_hint">كلمة مرور SPICE</string>
+    <string name="spice_server_empty">خادم SPICE أو المنفذ فارغ. لا يمكن الاتصال!</string>
+    <string name="spice_tls_port_hint">منفذ TLS</string>
+    <string name="spice_username_hint">اسم مستخدم SPICE</string>
+
+    <string name="ssh_passphrase_hint">عبارة مرور SSH</string>
+    <string name="ssh_pubkey_button">إدارة المفتاح</string>
+    <string name="ssh_use_pubkey">استخدام المفتاح</string>
+    <string name="ssh_use_x11vnc">سطح مكتب تلقائي</string>
+    <string name="ssh_x11vnc_customize">ضبط AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">تعطيل</string>
+    <string name="tap_enable">تفعيل</string>
+
+    <string name="username_caption">مستخدم VNC</string>
+    <string name="username_hint">اسم مستخدم UltraVNC MS Logon</string>
+    <string name="username_hint_optional">اسم مستخدم VNC (اختياري)</string>
+    <string name="username_hint_ssh">اسم مستخدم SSH</string>
+    <string name="username_hint_vencrypt">اسم مستخدم VNC</string>
+    <string name="verification_code">رمز التحقق</string>
+    <string name="verification_code_message">يرجى إدخال رمز التحقق للمصادقة متعددة العوامل</string>
+
+    <string name="view_only">وضع العرض فقط</string>
+
+    <string name="vnc_server_empty">خادم VNC أو المنفذ فارغ. لا يمكن الاتصال!</string>
+    <string name="vnc_server_empty_no_save">خادم VNC أو المنفذ فارغ. لا يمكن حفظ الاتصال!</string>
+
+    <string name="warning_cert_does_not_match">تحذير: الشهادة x509 المحفوظة أو التوقيع الممرر لا يتطابق مع شهادة الخادم الحالية! قد يكون هذا هجوم رجل في المنتصف. إذا كنت على علم بتغيير المفتاح يمكنك المتابعة. </string>
+    <string name="copy_logcat">📋 نسخ Logcat</string>
+    <string name="log_copied">تم نسخ Logcat إلى الحافظة. يمكنك الآن لصقه في بريد إلكتروني أو على منتدى الدعم. يرجى مراجعته للبيانات الشخصية قبل النشر.</string>
+    <string name="info_set_touchpad_input_mode">يُبلِّغ الخادم بعدم دعمه لإدخال الماوس في وضع العميل، ووضع إدخال الماوس الحالي لن يعمل بشكل صحيح. إذا استمر ذلك، تأكد من تثبيت أدوات spice في الجهاز الافتراضي أو التبديل إلى وضع إدخال لوحة اللمس المحاكية من القائمة.</string>
+    <string name="ssh_tunnel_settings">إعدادات نفق SSH</string>
+    <string name="vnc_connection_settings">إعدادات اتصال VNC</string>
+    <string name="show_advanced_settings">إظهار الإعدادات المتقدمة</string>
+    <string name="use_no_compression_for_local_connections">بدون ضغط (الاتصالات المحلية، ترميز Hextile)</string>
+    <string name="rdp_connection_settings">إعدادات اتصال RDP</string>
+    <string name="local_device_tweaks">تعديلات الجهاز المحلي</string>
+    <string name="spice_connection_settings">إعدادات اتصال SPICE</string>
+    <string name="ca_subject">أدخل اسم موضوع الشهادة هنا. قد لا يكون مطلوباً إذا كان الاسم الشائع (CN) للشهادة يطابق اسم المضيف للخادم.</string>
+    <string name="path_to_ca">أدخل مسار الملف (مثلاً /sdcard/ca-cert.pem) واضغط استيراد لتحميل سلطة الشهادة الخاصة بك.</string>
+    <string name="paste_ca">أدخل سلطة الشهادة هنا إذا لم تكن تستوردها كملف.</string>
+    <string name="cert_issuer">جهة إصدار الشهادة</string>
+    <string name="cert_fingerprint">بصمة الشهادة</string>
+    <string name="error">خطأ</string>
+    <string name="panning">تحريك الشاشة</string>
+    <string name="copy_of">نسخة من</string>
+    <string name="ssh_key_generated">تم إنشاء مفتاح جديد أو استيراده بنجاح. يمكنك الآن النقر على زر \'إنشاء/تصدير المفتاح\' لمشاركة المفتاح العام أو نسخه إلى الحافظة أو تصديره.</string>
+    <string name="cursor_force_local">"محلي"</string>
+    <string name="cursor_force_disable">"تعطيل"</string>
+    <string name="cursor_mode">"وضع المؤشر:"</string>
+    <string name="rendering_mode">"وضع العرض:"</string>
+    <string name="color_24_bit">"ألوان 24 بت (24 bpp)"</string>
+    <string name="color_256">"256 لون (8 bpp)"</string>
+    <string name="color_64">"64 لون (4 bpp)"</string>
+    <string name="color_8">"8 ألوان (2 bpp)"</string>
+    <string name="color_greyscale">"تدرج رمادي (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["أبيض وأسود (1 bpp)"]]></string>
+    <string name="show">"إظهار"</string>
+    <string name="hide">"إخفاء"</string>
+    <string name="search_connections">البحث في الاتصالات</string>
+    <string name="user_not_specified">المستخدم غير محدد</string>
+    <string name="enter_ssh_credentials">يرجى إدخال بيانات اعتماد SSH</string>
+    <string name="enter_vnc_credentials">يرجى إدخال بيانات اعتماد VNC</string>
+    <string name="enter_vnc_password">يرجى إدخال كلمة مرور VNC</string>
+    <string name="enter_rdp_credentials">يرجى إدخال بيانات اعتماد RDP</string>
+    <string name="enter_gateway_credentials">يرجى إدخال بيانات اعتماد البوابة</string>
+    <string name="enter_spice_password">يرجى إدخال كلمة مرور SPICE</string>
+    <string name="enter_passphrase_title">إدخال عبارة مرور المفتاح</string>
+    <string name="enter_passphrase">يرجى إدخال عبارة مرور المفتاح</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">خادمك يحتاج مصادقة بكلمة المرور بالإضافة إلى مصادقة المفتاح.</string>
+    <string name="main_screen_help_text">"
+عند تشغيل التطبيق يعرض شاشة بها الاتصالات المحفوظة.
+
+إذا لم تكن هناك اتصالات محفوظة، يكون الجزء السفلي من الشاشة فارغاً، وستحتاج إلى النقر على زر الإضافة لإنشاء اتصال جديد.
+يمكنك أيضاً التحكم في جوانب أخرى من الضبط من هذه الشاشة بالنقر على خيارات شريط الأدوات أو القائمة في الأعلى، مثلاً لتعديل الإعدادات الافتراضية أو استيراد وتصدير الإعدادات.
+
+بمجرد حفظ اتصال، يمكنك الاتصال بالخادم البعيد بالنقر عليه مرة واحدة. سيكون لديك أيضاً خيار الحذف أو التعديل بالضغط المطوّل عليه.
+
+أخيراً، يمكنك استخدام حقل البحث في الاتصالات للعثور بسرعة على الاتصالات عن طريق تصفية الاتصالات المعروضة."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+عند إضافة اتصال أو تعديله، سترى صفحة ضبط الاتصال.
+هنا يمكنك إعداد اتصال Opaque جديد أو اختيار اتصال موجود مسبقاً.
+في الأعلى يوجد زر يتيح لك حفظ الاتصال.
+بعد ذلك تجد مكان ضبط اتصالك.
+
+ - نوع الاتصال: هنا تختار بيئة الافتراضية التي تتصل بها.
+
+ - عنوان الخادم: اسم المضيف أو IP للخادم. إذا كان يستمع على منفذ غير قياسي، يمكنك إضافة منفذ مفصول بنقطتين.
+
+ - اسم الجهاز الافتراضي: يمكنك تحديد اسم الجهاز الافتراضي كما يظهر على منصة الافتراضية أو ترك هذا الحقل فارغاً للحصول على قائمة الأجهزة الافتراضية أو الحاويات للاختيار منها.
+
+ - المستخدم: أدخل اسم المستخدم للمصادقة على إطار عمل الافتراضية.
+
+ - كلمة المرور: إذا أردت حفظ كلمة المرور، أدخلها هنا أو اتركها فارغة لطلبها في كل مرة.
+
+ - الإعدادات المتقدمة: في هذا القسم ستجد أي تعديلات للجهاز المحلي والبروتوكول والأداء."
+    </string>
+    <string name="help">مساعدة ⓘ</string>
+    <string name="need_help">تحتاج مساعدة؟</string>
+    <string name="support_forum">منتدى الدعم ❓</string>
+    <string name="email_us">راسلنا بالبريد الإلكتروني 📧</string>
+    <string name="report_bug">الإبلاغ عن خطأ 🐛</string>
+    <string name="download_from_server">تنزيل من الخادم</string>
+    <string name="import_from_file">استيراد من ملف</string>
+    <string name="please_grant_permission_from_prefs">قد تحتاج إلى منح أذونات للتطبيق من خلال الإعدادات.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">المزيد من سجلات التصحيح</string>
+    <string name="prefer_sending_unicode">إدخال Unicode (Windows فقط)</string>
+    <string name="hide_connection_thumbnails">إخفاء صور الاتصالات المصغرة</string>
+    <string name="show_only_connection_nicknames">إظهار أسماء الاتصالات المستعارة فقط</string>
+    <string name="love_our_work">أحببت عملنا؟</string>
+    <string name="rate_app">قيّم ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">شارك 🔗</string>
+    <string name="share_app_toast">شارك رابط التطبيق مع جميع أصدقائك على وسائل التواصل الاجتماعي!</string>
+    <string name="donate_app">تبرع ❤</string>
+    <string name="more_apps">المزيد من التطبيقات 📱</string>
+    <string name="previous_versions">الإصدارات السابقة ⍼</string>
+    <string name="keyboard_type">نوع لوحة المفاتيح البرمجية</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">افتراضي (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">نص/أرقام بدون اقتراحات (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">نص مع اقتراحات (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">هذا الاتصال مضبوط لتشغيل VPN عبر تطبيق خارجي. تحتاج إلى تثبيت تطبيق مثل Morpheusly لتشغيله.</string>
+    <string name="vnc_viewer_started">تم تشغيل عارض VNC</string>
+    <string name="enable_gateway">تفعيل \"RDP Gateway\"</string>
+    <string name="scroll_speed">سرعة تمرير اللمس</string>
+    <string name="desktop_scale_percentage">نسبة التحجيم المخصصة</string>
+    <string name="show_menu">إظهار القائمة</string>
+    <string name="move_toolbar">تحريك شريط الأدوات</string>
+    <string name="rdp_adv_glyph_cache">تمكين ذاكرة التخزين المؤقت للحروف</string>
+
+    <string name="disable_battery_optimizations_failed">
+Could not open battery optimization settings.قم بتعطيل تحسين البطارية يدويًا في إعدادات النظام.</string>
+    <string name="disable_battery_optimizations">
+🔋تعطيل تحسينات البطارية</string>
+    <string name="disable_battery_optimizations_already_done">
+التطبيق معفى بالفعل من تحسينات البطارية.</string>
+    <string name="no_connections_title">لا توجد اتصالات بعد</string>
+    <string name="no_connections_hint">اضغط على زر + لإضافة أول اتصال عن بُعد</string>
+    <string name="no_connections_hint_tv">اضغط على زر + أعلاه لإضافة أول اتصال عن بُعد</string>
+    <string name="keyboard_layout_map">تخطيط لوحة المفاتيح</string>
+</resources>

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Lyd initialiseres om ca. 15 sekunder. Stop venligst al kørende video- eller lydafspilning inden da</string>
+    <string name="audio_initialized">Lyd initialiseret</string>
+    <string name="action_import_settings">Importer indstillinger</string>
+    <string name="action_new_connection">✚ Ny forbindelse</string>
+    <string name="action_edit_default_settings">⚙ Rediger standardindstillinger</string>
+    <string name="action_export_settings">Eksporter indstillinger</string>
+    <string name="action_delete_connection">Slet forbindelse</string>
+    <string name="action_rate_or_share_app">⭐ Få hjælp, bedøm, del</string>
+    <string name="get_help">Få hjælp</string>
+    <string name="advanced_settings">Avancerede indstillinger</string>
+    <string name="audio">Lyd</string>
+    <string name="auto_rotation">Skærmrotation under forbindelse</string>
+    <string name="auto_request_new_res">Synkroniser fjernvisning med skærmopløsning</string>
+    <string name="custom_ca_subject">Valgfrit certifikat-emne. Ikke nødvendigt, hvis certifikatets CN matcher værtsnavn</string>
+    <string name="custom_ca_import">Alternativt: indtast fuld sti til din CA og tryk Importer</string>
+    <string name="custom_ca_paste">Indsæt CA her (hvis du ikke importerer)</string>
+    <string name="ca_ovirt_use_custom">Brugerdefineret RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Brug RHEV/oVirt CA til SPICE</string>
+    <string name="ca_ovirt_manage">Administrer RHEV/oVirt CA</string>
+    <string name="ca_spice_manage">Administrer SPICE CA</string>
+    <string name="ca_file_not_found">Fil ikke fundet. Angiv venligst et gyldigt filnavn i tekstfeltet (f.eks. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Fejl ved læsning af CA-fil. Sørg for at den er læsbar.</string>
+    <string name="ca_new_or_changed">Nyt eller ændret servercertifikat</string>
+    <string name="connection_type_text">Virtualiseringsmiljø (RHEV/oVirt eller Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Navn på virtuel maskine (valgfrit)</string>
+    <string name="connection_setup_host_name">Serveradresse</string>
+    <string name="connection_setup_user">Bruger@Domæne</string>
+    <string name="connection_setup_password">Adgangskode</string>
+    <string name="enter_password">Indtast venligst adgangskode</string>
+    <string name="enter_password_auth_failed">Godkendelse mislykkedes. Angiv venligst dine legitimationsoplysninger igen.</string>
+    <string name="enter_otp_code">Indtast venligst OTP-kode</string>
+    <string name="hide_toolbar">Skjul værktøjslinje</string>
+    <string name="manage_custom_ca_title">Administrer brugerdefineret CA</string>
+    <string name="save_button">Gem</string>
+    <string name="select_vm_title">Vælg virtuel maskine</string>
+    <string name="vv_file_not_found">.vv-filen blev ikke fundet!</string>
+    <string name="vv_file_error">.vv-filen mangler eller er beskadiget!</string>
+    <string name="info_cert">Accepterer du dette nye eller ændrede værtscertifikat?\n\nFingeraftryk:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nUdstedt til: %4$s\nUdstedt af: %5$s\n\nGyldig fra: %6$s\nGyldig til: %7$s\n</string>
+
+    <string name="toggle_keyboard">Slå tastatur til/fra</string>
+    <string name="show_keyboard">Vis tastatur</string>
+    <string name="scroll_wheel">Rullehjul</string>
+
+    <string name="input_method_help">Hjælp til inputmetode</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Inputmetode</string>
+
+    <string name="error_failed_to_download_http">Det lykkedes ikke at downloade filen via HTTP. Måske er din server utilgængelig.</string>
+    <string name="error_failed_to_download_https">Det lykkedes ikke at downloade filen via HTTPS. Måske er dit servercertifikat ikke tillid til (udløbet eller selvsigneret), eller serveren er utilgængelig.</string>
+    <string name="error_failed_to_obtain_content">Det lykkedes ikke at hente filen. Download den igen, og åbn den hurtigt fra mappen Downloads i en filhåndtering.</string>
+    <string name="error_failed_to_obtain_file">Filen kunne ikke findes. Download den igen og prøv at åbne den fra meddelelsesområdet eller direkte fra browseren, hvis det er muligt.</string>
+
+    <string name="error_dialog_title">Fejl</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_vm_launched_on_stand_by">Din VM var slukket og er nu startet. Prøv igen om et par minutter. Hvis du prøver for hurtigt og får en forbindelsesfejl, så prøv igen senere.</string>
+    <string name="error_no_vm_found_for_user">Ingen tilgængelige virtuelle maskiner for den angivne bruger.</string>
+    <string name="error_no_such_vm_found_for_user">Ingen virtuel maskine med det angivne ID blev fundet for den angivne bruger. Slet ID\'et for at få en liste over VM\'er.</string>
+    <string name="error_no_vnc_support_yet">VNC-skærmtype understøttes endnu ikke, men det er en kommende funktion. Tak for din forståelse!</string>
+    <string name="error_not_connected_to_network">Du ser ikke ud til at være forbundet til internettet. Kan ikke fortsætte uden en forbindelse!</string>
+    <string name="error_ovirt_timeout">Forbindelsen til din VM fik timeout. Kontrollér at adressen på den knude, der kører din VM, er korrekt, at den er tilgængelig fra dit nuværende netværk, og at ingen firewall blokerer forbindelsen.</string>
+    <string name="error_ovirt_auth_failure">Godkendelsesfejl. Kontrollér det angivne brugernavn og adgangskode.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL-håndtryksfejl. Der er et problem med serverens SSL-certifikat. Hvis du bruger et selvsigneret certifikat, skal du (gen)importere din certifikatmyndighed.</string>
+    <string name="error_pve_failed_to_authenticate">Godkendelse til Proxmox Virtual Environment mislykkedes. Sørg for at angive dit brugernavn i formatet bruger@realm, og at adgangskoden er korrekt.</string>
+    <string name="error_pve_failed_to_parse_json">Det lykkedes ikke at analysere svaret fra Proxmox Virtual Environment.</string>
+    <string name="error_pve_vmid_not_numeric">VM-ID er ikke numerisk. Angiv et numerisk VM-ID eller lad feltet være tomt for at vælge VM fra en liste.</string>
+    <string name="error_pve_api_unexpected_code">Uventet svar fra Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Forbindelse til Proxmox Virtual Environment mislykkedes: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment returnerede tomme data.</string>
+    <string name="error_pve_timeout_communicating">Timeout ved kommunikation med Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Der blev ikke fundet en virtuel maskine med det angivne navn tildelt din bruger. Slet VM-navnet for at se en liste over VM\'er tildelt brugeren.</string>
+    <string name="error_vv_download_timeout">Timeout ved download af vv-fil.</string>
+    <string name="message_please_wait">Vent venligst</string>
+    <string name="message_please_install_bvnc">Installer venligst &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> fra Google Play for at oprette forbindelse til VNC-konsollen på denne VM.</string>
+    <string name="ssl_strict">Kræv at fælles navn matcher certifikat (anbefalet)</string>
+    <string name="usb">USB (tilslut OTG-kabel først)</string>
+
+    <string name="ad_donate_text0">Pro-versionen understøtter også multifaktor SSH-godkendelse. Derudover understøtter den den meget efterspurgte Masteradgangskode-funktion, der forhindrer uautoriseret brug og krypterer alle forbindelsesindstillinger, herunder adgangskoder og SSH-nøgler, for at beskytte mod tyveri. Aktiver den fra hovedmenuen.</string>
+    <string name="ad_donate_spice_text1a">Tryk her for at købe Opaque og gem direkte forbindelser til Proxmox og oVirt. Det understøtter også .vv-filer.</string>
+    <string name="ad_donate_spice_text1b">Tryk her for at købe Pro-versionen og åbn blot .vv-filer.</string>
+    <string name="ad_donate_text1">Tryk her for at støtte projektet med en lille donation ved at købe Pro-versionen.</string>
+    <string name="ad_donate_text2">Pro-versionen giver dig mulighed for at deaktivere denne dialog og giver adgang til yderligere funktioner.</string>
+    <string name="ad_donate_text3">Hvis du ønsker at støtte projektet yderligere, følg disse links til klientapps til: </string>
+    <string name="ad_donate_text_vnc">Open source-projektet har brug for din støtte! Donér ved at købe bVNC Pro. Se nedenfor for links til bVNC Pro og vores andre apps.</string>
+    <string name="ad_donate_text_rdp">Open source-projektet har brug for din støtte! Donér ved at købe aRDP Pro, som understøtter lydomdirigeringen. Se nedenfor for links til aRDP Pro og vores andre apps.</string>
+    <string name="ad_donate_text_spice">For Proxmox- og oVirt-forbindelser bedes du donere til projektet ved at købe Opaque eller aSPICE Pro. Gratisversionen af aSPICE understøtter kun direkte forbindelser til KVM-virtuelle maskiner. Se nedenfor for links til Opaque og aSPICE Pro samt vores andre apps.</string>
+
+    <string name="address_caption">VNC-server</string>
+    <string name="address_caption_hint">VNC-server</string>
+    <string name="address_caption_hint_tunneled">VNC-server</string>
+    <string name="address_caption_ssh">SSH-server</string>
+    <string name="address_caption_ssh_hint">SSH-server</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Pil ned</string>
+    <string name="arrow_left">Pil venstre</string>
+    <string name="arrow_right">Pil højre</string>
+    <string name="arrow_up">Pil op</string>
+
+    <string name="auto">Auto</string>
+    <string name="auto_x_cancel">Annuller</string>
+    <string name="auto_x_caption">Programmet kan automatisk opdage eksisterende og oprette nye X-sessioner på Linux/UNIX-systemer (ligesom NX). Du skal bruge x11vnc til at finde, og Xvfb, Xvnc eller Xdummy til at oprette sessioner. Hvis du har problemer med at oprette forbindelse, kan du prøve at vælge en bestemt fjernforbindelsestype i AutoX Avancerede indstillinger.</string>
+    <string name="auto_x_confirm">Bekræft</string>
+    <string name="auto_x_descript_geom">Størrelse på fjernskrivebord (BxH)</string>
+    <string name="auto_x_descript_session">Fjernforbindelsestype</string>
+    <string name="auto_x_disabled">Deaktiveret</string>
+    <string name="auto_x_disabled_selection">AutoX deaktiveret</string>
+    <string name="auto_x_enabled">Aktiveret</string>
+    <string name="auto_x_find">Find kun, opret ikke</string>
+    <string name="auto_x_find_login">Find X-login (kræver sudo)</string>
+    <string name="auto_x_geom_custom">Brugerdefineret</string>
+    <string name="auto_x_geom_native">Nativ</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Auto</string>
+    <string name="auto_x_session_custom">Brugerdefineret</string>
+    <string name="auto_x_title">Konfigurer AutoX</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Godkend automatisk med de angivne SSH-brugernavn/adgangskode (til den sorte login-skærm).</string>
+    <string name="auto_x_unixpw">Brug UNIX-legitimationsoplysninger i stedet for den indbyggede sikkerhedsmekanisme. Brugeren skal kunne køre /bin/su.</string>
+    <string name="auto_x_xdummy">Find eller opret med Xdummy</string>
+    <string name="auto_x_xvfb">Find eller opret med Xvfb</string>
+    <string name="auto_x_xvnc">Find eller opret med Xvnc</string>
+
+    <string name="button_send_text">Send tekst</string>
+    <string name="button_send_without_saving">Send tekst/gem ikke</string>
+
+    <string name="center_mouse">Mus @</string>
+
+    <string name="close">Luk</string>
+
+    <string name="color_format_caption">Farvetilstand</string>
+    <string name="color_mode">Farvetilstand</string>
+
+    <string name="connect_button">Opret forbindelse</string>
+    <string name="back_button">Gå tilbage</string>
+    <string name="update_button">Opdater</string>
+
+    <string name="connection_caption">Forbindelse</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Forbindelsestype</string>
+    <string name="connection_type_rdp_over_ssh">RDP over SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE over SSH</string>
+    <string name="connection_type_vnc">Grundlæggende VNC</string>
+    <string name="connection_type_vnc_over_ssh">Sikker VNC over SSH</string>
+    <string name="connection_type_vnc_over_ssl">Sikker VNC over AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Sikker VNC over SSL-tunnel</string>
+    <string name="connection_type_vnc_over_vencrypt">Sikker VNC over VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Vil du redigere eller slette forbindelsen</string>
+    <string name="connection_edit">Rediger</string>
+    <string name="connection_delete">Slet</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopiér liste</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Standard inputtilstand</string>
+    <string name="delete_connection">Slet forbindelse</string>
+    <string name="delete_key">Slet valgt tast</string>
+    <string name="delete_key_list">Slet tasteliste</string>
+
+    <string name="disconnect">Afbryd forbindelse</string>
+
+    <string name="dpad_as_arrows">Brug D-pad til pile og D-pad-klik til Ctrl.</string>
+
+    <string name="enable_recording">Aktiver optagelse</string>
+    <string name="enable_sound">Aktiver lyd</string>
+
+    <string name="enter_text">Send tekst</string>
+    <string name="enter_text_title">Indtast tekst til afsendelse</string>
+
+    <string name="error_anon_dh_unsupported">VNC-serveren forsøger at bruge anonyme Diffie Hellman-cifre, som ikke understøttes på din Android-enhed. Hvis du bruger GNOME\'s Vino VNC-server, kan du deaktivere AnonTLS ved at køre følgende kommando i en terminal og derefter genstarte: \"gsettings set org.gnome.Vino require-encryption false\". Hvis du kører x11vnc, kan du tilføje følgende indstillinger: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Forbindelsen mislykkedes.</string>
+    <string name="error_connection_interrupted">Forbindelsen blev afbrudt.</string>
+    <string name="error_no_user_hostname">Angiv venligst mindst et brugernavn og et værtsnavn eller en IP-adresse.</string>
+    <string name="error_out_of_memory">Kan ikke allokere tilstrækkelig hukommelse til at vise fjærnskærmen. Prøv at genstarte programmet og derefter din enhed. Du kan også forsøge at reducere størrelsen på fjernskrivebordet via appindstillingerne.</string>
+    <string name="error_ovirt_unable_to_connect">Kan ikke oprette forbindelse eller godkende. Kontrollér serveradresse, bruger, adgangskode og certifikatmyndighed og emne.</string>
+    <string name="error_pick_correct_item">Sørg for at have valgt det rigtige element under Forbindelsestype.</string>
+    <string name="error_rdp_authentication_failed">RDP-godkendelse mislykkedes! Kontrollér RDP-brugernavn og adgangskode og prøv igen.</string>
+    <string name="error_rdp_connection_failed">RDP-forbindelsen mislykkedes! Enten blev netværksforbindelsen afbrudt, RDP-serveren blev slukket eller deaktiveret, eller din session blev overtaget.</string>
+    <string name="error_rdp_unable_to_connect">Kunne ikke oprette forbindelse til RDP-serveren! Sørg for at RDP-serverindstillingen er korrekt, at serveren er tændt, at RDP er aktiveret, og at serveren er på samme netværk som denne enhed.</string>
+    <string name="error_security_type">Serveren tilbød ingen understøttet sikkerhedstype.</string>
+    <string name="error_spice_unable_to_connect">Kan ikke oprette forbindelse eller godkende. Kontrollér serveradresse og port.</string>
+    <string name="error_ssh_could_not_exec_command">Kunne ikke udføre fjernkommando.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Kunne ikke sende sudo-adgangskode.</string>
+    <string name="error_ssh_hostkey_changed">FEJL! Serverens værtsnøgle er ændret. Hvis dette er tilsigtet, kan du fortsætte. Ellers kan dette være et manden-i-midten-angreb.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH-serveren understøtter hverken \"password\"- eller \"keyboard-interactive\"-godkendelsesmetoderne, eller kræver \"publickey\"-metoden først. Konfigurér den til at tillade mindst én af de to metoder, eller rekonfigurér programmet. Tilgængelige godkendelsesmetoder: </string>
+    <string name="error_ssh_key_auth_fail">Godkendelse til SSH-serveren med nøglepar mislykkedes. Kontrollér dit SSH-brugernavn og sørg for at din offentlige nøgle er i filen authorized_keys på fjernserveren.</string>
+    <string name="error_ssh_keypair_decryption_failure">Dekryptering af nøglepar mislykkedes. Sørg for at du har indtastet din adgangsfrase korrekt i feltet \'SSH-adgangsfrase\' på hovedskærmen.</string>
+    <string name="error_ssh_keypair_missing">SSH-nøglepar er endnu ikke genereret! Generér et og placer (den offentlige del) i authorized_keys på SSH-serveren.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Adgangsfrase angivet, men nøglepar er ikke krypteret. Slet adgangsfrasen.</string>
+    <string name="error_ssh_port_forwarding_failure">Kunne ikke konfigurere portviderstilling til tunneling af VNC-trafik over SSH. Sørg for at din SSH-server er konfigureret til at tillade portviderstilling, og prøv igen.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH-serveren understøtter ikke \"publickey\"-godkendelsesmetoden, og vi forsøger at bruge et nøglepar til godkendelse. Konfigurér den til at tillade publickey-godkendelse og prøv igen. Tilgængelige godkendelsesmetoder: </string>
+    <string name="error_ssh_pwd_auth_fail">Godkendelse til SSH-serveren med adgangskode mislykkedes. Kontrollér dit SSH-brugernavn og adgangskode.</string>
+    <string name="error_ssh_unable_to_connect">Det lykkedes ikke at oprette forbindelse til SSH-serveren. Kontrollér netværksforbindelsen samt SSH-serveradressen og porten.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Kunne ikke hente fjern-VNC-port fra x11vnc. Sørg for at x11vnc er installeret. For at være sikker, prøv at køre x11vnc manuelt på kommandolinjen.</string>
+    <string name="error_uri_noinfo_nosave">Der er angivet utilstrækkelige oplysninger til at oprette forbindelse.</string>
+    <string name="error_uri_parse_error">Kan ikke analysere Intent URI. Kontrollér URI-formatet. Du kan også se enhedens logcat for flere detaljer.</string>
+    <string name="error_vnc_authentication">VNC-godkendelse mislykkedes! Kontrollér VNC-adgangskode (og bruger, hvis relevant).</string>
+    <string name="error_vnc_unable_to_connect">"Forbindelsen til VNC-serveren mislykkedes med årsagen: "</string>
+    <string name="error_x509_could_not_generate_encoding">Certifikatkodning kunne ikke genereres.</string>
+    <string name="error_x509_could_not_generate_signature">Kunne ikke generere SHA1- eller MD5-signatur for certifikatet. Ingen SHA1/MD5-algoritme fundet.</string>
+
+    <string name="export_settings">Eksporter</string>
+
+
+    <string name="extra_keys_disable">Deaktiver ekstra taster</string>
+    <string name="extra_keys_enable">Aktiver ekstra taster</string>
+
+    <string name="fit_to_screen">Tilpas til skærm</string>
+
+    <string name="force">Fuldskærmsbillede</string>
+
+    <string name="immersive_mode_disable">Deaktiver immersiv tilstand</string>
+
+    <string name="import_export_settings">📦 Importer/eksporter indstillinger</string>
+    <string name="import_settings">Importer</string>
+
+
+    <string name="info">Info</string>
+    <string name="info_cert_signatures">"Certifikatoplysningerne er: "</string>
+    <string name="info_cert_signatures_identical">\n\nDu kan sikre dig, at oplysningerne stemmer overens med servercertifikatet for at forhindre et manden-i-midten-angreb.</string>
+    <string name="info_cert_tunnel">Vil du oprette forbindelse til den vært, der er identificeret af følgende certifikat?\n\nFingeraftryk: %1$s\n\nUdstedt til:\n%2$s\n\nUdstedt af:\n%3$s\n\nGyldig fra:\n%4$s\n\nGyldig til:\n%5$s\n\nBemærk: Programmet verificerer ikke certifikatmyndigheder eller kontrollerer for certifikatspærring.</string>
+    <string name="info_continue_connecting">"Fortsæt med at oprette forbindelse til: "</string>
+    <string name="info_encoding">" kodning, "</string>
+    <string name="info_progress_dialog_aborted">Forbindelsen blev afbrudt!</string>
+    <string name="info_progress_dialog_connecting">Opretter forbindelse…</string>
+    <string name="info_progress_dialog_downloading">Downloader første billede.\nVent venligst…</string>
+    <string name="info_progress_dialog_establishing">Etablerer håndtryk.\nVent venligst…</string>
+    <string name="info_ssh_initializing_hostkey">Forsøger at initialisere SSH HostKey.</string>
+    <string name="info_ssh_key_fingerprint">"Værtsnøglens fingeraftryk er: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nDu kan sikre dig, at det er identisk med det kendte fingeraftryk for servercertifikatet for at forhindre et manden-i-midten-angreb.</string>
+    <string name="info_update_color_model_to">"Opdaterer farvemodel til "</string>
+
+    <string name="input_method_direct_drag_pan_description">Direkte, hold-panorering: Stryg for at trække og slippe. Tryk med én finger, hvor du vil venstreklikke, to fingre for højreklik og tre fingre for midterklik. Stryg med to fingre for at rulle. Langt tryk for at starte panorering.</string>
+    <string name="input_method_direct_swipe_pan_description">Direkte, stryg-panorering: Stryg for at panorere rundt. Tryk med én finger, hvor du vil venstreklikke, to fingre for højreklik og tre fingre for midterklik. Stryg med to fingre for at rulle. Langt tryk for at trække og slippe.</string>
+    <string name="input_method_single_handed_description">Enhånds: Stryg for at panorere rundt. Tryk med én finger, hvor du vil venstreklikke. Langt tryk for at vælge venstre/højre/midt-træk/rul/zoom-tilstand. Sædvanlige multiberørings-styring fungerer også.</string>
+    <string name="input_method_touchpad_description">Simuleret touchpad: Stryg for at flytte markøren. Tryk et vilkårligt sted med én finger for at venstreklikke, to fingre for at højreklikke og tre fingre for at midterklikke. Stryg med to fingre for at rulle. Langt tryk for at trække og slippe.</string>
+    <string name="input_mode">Inputtilstand</string>
+
+    <string name="input_mode_fit_to_screen">Ingen panorering; sporboldsmus</string>
+    <string name="input_mode_panning">Skrivebordspanoreringstilstand</string>
+    <string name="input_method_mouse">Muspegestyringsindstilling</string>
+
+    <string name="input_method_direct_swipe_pan">Direkte, stryg-panorering</string>
+    <string name="input_method_direct_drag_pan">Direkte, hold-panorering</string>
+    <string name="input_method_single_handed">Enhånds</string>
+    <string name="input_method_touchpad">Simuleret touchpad</string>
+
+    <string name="input_mode_help">Hjælp til inputtilstand</string>
+    <string name="input_mode_help_text">"
+I enhver inputtilstand kan du trykke på tastaturikonet for at få skærmtastaturet frem. Din enhed kan også have sin egen gestus, der åbner tastaturet.
+
+Brug de direkte inputtilstande for mere intuitiv berøringsstyring. Brug simuleret touchpad-tilstand for finere kontrol over musen.
+
+Direkte, stryg-panoreringstilstand:
+ - Styr musen direkte via berøring.
+ - Stryg for at panorere rundt.
+ - Tryk for at klikke med musen der, hvor du trykker.
+ - Rulhændelser sendes mellem de to fingre, hvor en to-fingers stryg startede.
+
+Direkte, hold-panoreringstilstand:
+ - Styr musen direkte via berøring.
+ - Langt tryk for at starte panoreringstilstand.
+ - Tryk for at klikke med musen der, hvor du trykker.
+ - Rulhændelser sendes mellem de to fingre, hvor en to-fingers stryg startede.
+
+Simuleret touchpad-tilstand:
+ - Brug din skærm som en touchpad.
+ - Stryg for at flytte musemarkøren rundt.
+ - Flyt musen ud over skærmens kant for at panorere.
+ - Tryk for at klikke med musen der, hvor markøren er.
+ - Rulhændelser sendes der, hvor musemarkøren befinder sig.
+
+Enhånds-tilstand:
+ - Samme som Direkte, stryg-panoreringstilstand, bortset fra at langt tryk åbner menu med valg af tilstande.
+ - Efter valg af tilstand udfører stryg med fingeren på skærmen den valgte gestus.
+ - Løft fingeren for at afslutte gestus.
+
+Alle inputtilstande:
+ - Venstreklik: Tryk én gang.
+ - Dobbeltklik: Dobbelttryk.
+ - Højreklik: Hold og tryk med en anden finger (et vilkårligt andet sted på skærmen).
+ - Alternativt højreklik: Brug \"Tilbage\"-knappen eller gestus for din enhed.
+ - Midterklik: Hold og tryk med to ekstra fingre (et vilkårligt andet sted på skærmen).
+ - Museræk: Hold langt og stryg.
+ - Rulhjul: To-fingers træk op/ned og venstre/højre. Hurtig træk ruller hurtigere.
+ - Zoom ind/ud: I zoombar skalering, knib-zoom for at styre skalering.
+ - Ctrl/Alt-tast: Menu-&gt;Ctrl/Alt-knapper. Glem ikke at slå fra, når du er færdig!
+ - Tastekombinationer: Menu-&gt;Mere-&gt;Send taster.
+ - Send tekst: Enten skriv på skærmtastaturet, eller brug Menu-&gt;Mere-&gt;Send tekst."</string>
+
+    <string name="intro_close">Luk</string>
+    <string name="intro_dont_show">Vis ikke igen</string>
+
+    <string name="intro_text">
+Aktuel liste over bVNC-funktioner:
+&lt;br&gt;
+- Simpel VNC, Sikker VNC over SSH, AnonTLS og VeNCrypt samt UltraVNC Windows-logon med valgfri Repeater.
+&lt;br&gt;
+- AutoX-tilstand: I VNC over SSH-tilstand, opdag automatisk eksisterende og/eller opret nye X-sessioner ved hjælp af x11vnc! Fungerer ligesom NX-klient.
+&lt;br&gt;
+- Fri rotationsunderstøttelse. Brug operativsystemet til at begrænse rotation om nødvendigt.
+&lt;br&gt;
+- Generering og eksport af SSH offentlige/private nøglepar.
+&lt;br&gt;
+- Alle standard VNC-kodninger, herunder Tight, ZRLE og CopyRect.
+&lt;br&gt;
+- Automatisk sessionsgemning.
+&lt;br&gt;
+- Zoombar, tilpas til skærm og én til én skaleringstilstande.
+&lt;br&gt;
+- Multiberøringsstyring over fjernmus i direkte og simulerede touchpad-inputtilstande.
+&lt;br&gt;
+- Fuld enhånds-styring over fjernmus i enhånds-inputtilstand.
+&lt;br&gt;
+- Multiberøringsklik: tryk for venstreklik, to-fingers tryk for højreklik, tre-fingers tryk for midterklik.
+&lt;br&gt;
+- Multiberøringsrul: to-fingers træk op/ned og venstre/højre for at rulle.
+&lt;br&gt;
+- Meta- og piletaster på skærmen, som kan deaktiveres fuldstændigt fra menu eller gemmes med knap på skærmen.
+&lt;br&gt;
+- Afsendelse af tekst og vilkårlige tastekombinationer under forbindelse.
+&lt;br&gt;
+- Hjælp til oprettelse af forbindelser ("Menu-&gt;Forbindelseshjælp") på forbindelsesskærmen.
+&lt;br&gt;
+- Hjælp til inputtilstande ("Menu-&gt;Mere-&gt;Hjælp til inputtilstand") under forbindelse.
+&lt;br&gt;
+- Brug af tilgængelig sporplade som pile i stedet for musebevægelse og sporpladeklik som Ctrl.
+&lt;br&gt;
+- Skift til portrættilstand under forbindelser, roter D-pad/sporplade til BT-tastaturer.
+&lt;br&gt;
+- Understøttelse af flere sprog, så længe VNC-serveren har det nødvendige sproglige layout aktiveret.
+&lt;br&gt;
+- Udklipsholder-integration
+&lt;br&gt;
+- Opløsningsændringer på fjernmaskine
+&lt;br&gt;
+- Fuld museunderstøttelse på Android 4.0+-enheder, herunder højre- og midterklik og rulhjul.
+&lt;br&gt;
+&lt;br&gt;
+Kendte problemer:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitiv, sikker VNC-klient</string>
+
+
+    <string name="keep_password_button">Behold</string>
+    <string name="keep_screen_awake_enable">Hold skærmen aktiv</string>
+
+    <string name="keys_caption">Taster</string>
+
+    <string name="landscape_force">Tving liggende orientering</string>
+
+    <string name="left_handed_mode">Venstrehånds-tilstand</string>
+    <string name="disable_pointer_offset_correction">Deaktiver korrektion af markørforskydning</string>
+
+    <string name="list_caption">Liste</string>
+    <string name="list_name_caption">Listenavn</string>
+
+    <string name="local_mouse_check">Lokal musemarkør (vælg, hvis markøren er usynlig)</string>
+
+    <string name="main_screen_help">Forbindelseshjælp</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Når du tilføjer eller redigerer en forbindelse, vises en forbindelseskonfigurationsside. Her kan du
+konfigurere en ny VNC-forbindelse eller vælge en eksisterende. Øverst er der en knap, der giver dig mulighed for at
+gemme forbindelsen. Nedenfor konfigurerer du din forbindelse.
+
+Hvis du søger en hurtig ydelsesforøgelse, kan du prøve at indstille farvetilstanden til en lavere værdi. Prøv også at fjerne et eventuelt skrivebordsbaggrundsbillede på VNC-serveren. Sørg endelig for at din enhed har god netværksforbindelseskvalitet og undgå at dække dens antenne og reducere signalstyrken.
+
+ - Forbindelsestype: Her vælger du VNC-forbindelsestypen. Tilgængelige forbindelsestyper er:
+   (a) Simpel VNC, som understøttes af alle VNC-servere, men mangler kryptering og er sårbar over for brute force-angreb på grund af en begrænsning på 8-tegns adgangskode.
+   (b) Sikker VNC over SSH, som forbinder via en krypteret SSH-tunnel. Du skal bruge en SSHD-tjeneste samt en VNC-server. Så længe VNC-serveren ikke accepterer forbindelser direkte fra internettet, har denne forbindelsestype ingen kendte sårbarheder, så længe du verificerer serversignaturcertifikatet ved første tilslutning.
+   (c) UltraVNC, som giver dig Windows-logon og UltraVNC Repeater-muligheder. Brug af Windows-logon lider ikke under begrænsningen på 8-tegns adgangskode, men denne tilstand tilbyder ingen kryptering, så din session er sårbar over for snooping.
+   (d) Sikker VNC over AnonTLS, som er almindelig VNC over en stunnel-ækvivalent forbindelse. Du skal enten køre stunnel, eller bruge en VNC-server som Vino, der understøtter AnonTLS out of the box. Denne tilstand giver sessionsenkryptering, men lider under begrænsningen på 8-tegns adgangskode og forhindrer ikke manden-i-midten-angreb.
+   (e) Sikker VNC over VeNCrypt, som bruger x509-certifikater samt sessionsenkryptering og afhængigt af serverkonfigurationen kan bruge bruger/adgangskode-legitimationsoplysninger uden 8-tegns begrænsning. Denne tilstand forhindrer manden-i-midten-angreb samt giver sessionsprivatliv. Servere som x11vnc og TigerVNC understøtter denne tilstand og er lige så sikre som VNC over SSH.
+
+ - Titel: Hver forbindelse du opretter kan have et kaldenavn for let at identificere den på listen.
+
+ - SSH-tunnelindstillinger: Tilgængelig i VNC over SSH-tilstand.
+   (a) SSH-server/port: Adressen og porten for SSH-serveren, som forbindelsen vil blive tunneleret igennem. Som standard lytter SSH på port 22.
+   (b) Brugernavn/adgangskode: Brugernavnet og adgangskoden til kontoen på SSH-serveren. Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet programmet siden du sidst indtastede den.
+   (c) Administrer nøgle/brug nøgle: En knap til at administrere offentlige/private nøgler og et afkrydsningsfelt, der angiver, om der skal bruges en nøgle frem for adgangskode til godkendelse. Hvis du bruger knappen Kopiér til udklipsholder efter generering af et nøglepar, bør du kunne indsætte den offentlige nøgle, når du er tilsluttet VNC-serveren (udklipsholderen er synkroniseret med serveren).
+
+ - Konfigurer AutoX: Kun tilgængelig i VNC over SSH-tilstand. Programmet kan automatisk opdage eksisterende og eventuelt oprette nye X-sessioner på UNIX-systemer (som NX-klient). Du skal bruge x11vnc til at finde og Xvfb, Xvnc eller Xdummy installeret på fjernssystemet til at oprette sessioner. Du skal måske flytte din .dmrc-fil væk og tilføje en .xinit-fil i din hjemmemappe, hvis dit skrivebord ikke ser korrekt ud, eller du bare får et xterm-vindue.
+
+ - VNC-forbindelsesindstillinger:
+   (a) VNC-server/port: Her indtaster du værtsnavn eller IP-adresse og port for computeren, der kører VNC-serveren, du ønsker at kontakte. I VNC over SSH-tilstand er denne adresse set fra SSH-serveren. Hvis SSH-serveren og VNC-serveren er den samme computer, kan du bruge localhost. VNC-servere lytter typisk fra port 5900 (første VNC-skærm, skærm :0).
+   (b) VNC-bruger: Tilgængelig i UltraVNC med Windows-logon-tilstand eller Sikker VNC over VeNCrypt, er dette stedet, du indtaster dit Windows/UNIX-kontobrugernavn.
+   (c) VNC-adgangskode: Hvis din VNC-serverkonfiguration kræver en adgangskode, indtastes denne her. I UltraVNC med Windows-logon/VeNCrypt-tilstande, angiv din Windows/UNIX-kontoadgangskode her. Sikker lagring bruges ikke til adgangskoder, og adgangskoden gemmes kun, hvis du markerer afkrydsningsfeltet "Behold". Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet programmet siden du sidst indtastede den.
+
+ - Farvetilstand: Klienten understøtter adskillige farvetilstande. Tilstande med flere farver giver en bedre visuel oplevelse på bekostning af større båndbredde og mere CPU-beregning på din enhed. Nogle VNC-servere understøtter ikke alle farvedybder (f.eks. kræver OS/X Remote Desktop 24-bit farve). Hvis du har problemer med at oprette forbindelse, prøv en anden farvedybde.
+
+ - Brug D-pad til pile: Hvis du foretrækker det, kan du bruge D-pad på dit Bluetooth-tastatur eller pile på dit skærmtastatur til at sende pile til VNC-serveren.
+
+ - Rotér D-pad: Telefoner parret med et Bluetooth-tastatur skal muligvis have tastaturets D-pad roteret mod uret for at sende korrekte retninger til serveren.
+
+ - Lokal musemarkør: Nogle VNC-servere (f.eks. OS/X Remote Desktop) tegner ikke musemarkøren på klienten. Ved at markere denne mulighed vil programmet tegne en musemarkør ved musepositionen.
+
+ - Auto/Fuldskærmsbillede: VNC-klienten bruger et bitmap til at repræsentere fjernvisningen. For meget store fjernvisninger, især i tilpas-til-skærm-tilstand, kan du opleve mærkelige visuelle artefakter, på grund af hukommelsesbegrænsninger per proces. Hvis det sker, prøv at markere denne mulighed. Husk at markering af muligheden kan medføre, at programmet lukker ved forbindelsen.
+
+ - Repeater: Kun tilgængelig i UltraVNC-tilstand. VIGTIGT: Hvis du har en UltraVNC-repeater, skal du indtaste dens adresse og port uden for \'UltraVNC Repeater\'-dialogen og indtaste adressen og porten for den faktiske VNC-server inde i \'UltraVNC Repeater\'-dialogen. Adskil VNC-serverens adresse og port med et kolon, f.eks. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Aktiver masteradgangskode</string>
+    <string name="master_password_error_failed_to_disable">Kunne ikke deaktivere masteradgangskode. Kontrollér ledig plads på din enhed og prøv igen.</string>
+    <string name="master_password_error_failed_to_enable">Kunne ikke aktivere masteradgangskode. Kontrollér ledig plads på din enhed og prøv igen.</string>
+    <string name="master_password_error_intents_not_supported">Forbindelsesintentioner understøttes endnu ikke, når masteradgangskode er aktiveret.</string>
+    <string name="master_password_error_password_necessary">Masteradgangskode er påkrævet for at fortsætte.</string>
+    <string name="master_password_error_password_not_set">Indstilling af masteradgangskode blev annulleret.</string>
+    <string name="master_password_error_shortcuts_not_supported">Genveje understøttes endnu ikke, når masteradgangskode er aktiveret.</string>
+    <string name="master_password_error_wrong_password">Kunne ikke godkende med den angivne masteradgangskode.</string>
+    <string name="master_password_hint_once">Indtast adgangskode</string>
+    <string name="master_password_hint_twice">Gentag adgangskode</string>
+    <string name="master_password_set">Indstil masteradgangskode</string>
+    <string name="master_password_set_error">Adgangskoderne stemmer ikke overens. Vær venligst omhyggelig!</string>
+    <string name="master_password_set_message">Indtast og memorer en masteradgangskode. Jo længere din adgangskode er, jo sværere er den at knække. Hvis du angiver din adgangskode forkert eller glemmer den, mister du alle dine indstillinger! Du bør overveje at eksportere dine indstillinger nu for at sikkerhedskopiere dem (fra menuen). Opbevar dem sikkert, da eksporterede indstillinger ikke er krypterede.</string>
+    <string name="master_password_verify">Verificer masteradgangskode</string>
+    <string name="master_password_verify_message">Indtast den korrekte masteradgangskode for at fortsætte.</string>
+
+    <string name="meta_key_title">Send specialtaster</string>
+
+    <string name="mouse_follow_pan">Mus følger panorering</string>
+
+    <string name="new_connection">Ny forbindelse</string>
+    <string name="new_list_button">Ny liste</string>
+
+    <string name="nickname_caption">Kaldenavn</string>
+    <string name="nickname_caption_hint">Titel (valgfrit)</string>
+
+    <string name="off">Fra</string>
+
+    <string name="one_to_one">Én til én</string>
+
+    <string name="open_doc">Manual/Wiki</string>
+
+    <string name="pan_follow_mouse">Panorering følger mus</string>
+
+    <string name="password_caption">VNC-godkend.</string>
+    <string name="password_caption_hint">VNC-adgangskode</string>
+    <string name="password_caption_ssh">SSH-godkend.</string>
+    <string name="password_hint_ssh">SSH-adgangskode</string>
+
+    <string name="port_caption">VNC-port</string>
+    <string name="port_caption_ssh">SSH-port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Skift til portrættilstand under forbindelse</string>
+    <string name="local_clipboard_integration">Aktiver integration af lokal til fjern udklipsholder</string>
+    <string name="remote_clipboard_integration">Aktiver integration af fjern til lokal udklipsholder</string>
+    <string name="position_toolbar_last_used">Gendan værktøjslinjeposition</string>
+    <string name="applies_to_new_connections_only">Gælder kun for nye forbindelser</string>
+    <string name="pro_feature_mfa">Din server ser ud til at have multifaktor-godkendelse aktiveret. Støt venligst projektet ved at købe Pro-versionen, som understøtter denne funktion. Et link til Pro-versionen findes i startdialogen.</string>
+    <string name="pro_feature_intro">Det ser ud til, at du bruger en Pro-funktion. Støt venligst projektet ved at købe Pro-versionen, som understøtter denne funktion. Se startdialogen for links til den korrekte app.</string>
+    <string name="pro_feature_generic">Det ser ud til, at du bruger en Pro-funktion. Støt venligst projektet ved at købe Pro-versionen, som understøtter denne funktion. Et link til Pro-versionen findes i startdialogen.</string>
+    <string name="pro_feature_rdp">Det ser ud til, at du forsøgte at åbne en .rdp-fil, som er en Pro-funktion. Støt venligst projektet ved at købe aRDP Pro, som understøtter .rdp-filer. Et link til aRDP Pro-versionen findes i startdialogen.</string>
+    <string name="pro_feature_spice">Det ser ud til, at du forsøgte at åbne en .vv-fil. Hvis du ønsker at gemme forbindelser til Proxmox eller oVirt direkte i appen og også vil åbne .vv-filer, kan du overveje at købe Opaque. Hvis du kun har brug for .vv-filunderstøttelse, kan du få aSPICE Pro. Find links til begge apps i startdialogen.</string>
+
+    <string name="rdp_address_caption_hint">RDP-server</string>
+    <string name="rdp_adv_console_mode">Konsolmodus</string>
+    <string name="rdp_adv_desktop_background">Vis skrivebordsbaggrund</string>
+    <string name="rdp_adv_desktop_composition">Aktiver skrivebordssammensætning</string>
+    <string name="rdp_adv_font_smoothing">Udfør skrifttyjeglattning</string>
+    <string name="rdp_adv_menu_animation">Vis menuanimationer</string>
+    <string name="rdp_adv_redirect_sdcard">Omdirigér SD-kort</string>
+    <string name="rdp_adv_remotefx">Aktiver RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Aktiver visuelle stilarter</string>
+    <string name="rdp_adv_window_contents">Vis vinduesindhold under trækning</string>
+    <string name="rdp_security_mode">Sikkerhedstilstand</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Størrelse på fjernskrivebord (BxH)</string>
+    <string name="rdp_domain_hint">RDP-domæne</string>
+    <string name="rdp_geom_automatic">Automatisk</string>
+    <string name="rdp_geom_checkbox_enable">Aktiver brugerdefineret opløsning</string>
+    <string name="rdp_geom_custom">Brugerdefineret</string>
+    <string name="rdp_geom_description_hint">Serveren kræver understøttelse af ExtendedDesktopSize</string>
+    <string name="rdp_geom_disabled">Deaktiveret</string>
+    <string name="rdp_geom_native_landscape">Nativ liggende</string>
+    <string name="rdp_geom_native_portrait">Nativ stående</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Auto-forhandl sikkerhed</string>
+    <string name="rdp_security_rdp">RDP-sikkerhed</string>
+    <string name="rdp_security_tls">TLS-sikkerhed</string>
+    <string name="rdp_security_nla">Netværksniveaugodkendelse</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Tak fordi du støtter aRDP og open source-software generelt! For hjælp til brug af aRDP, se Hjælp-elementerne i menuen og beskrivelsen af appen i butikken.
+&lt;br&gt;
+&lt;br&gt;
+Aktuel liste over aRDP-funktioner:
+&lt;br&gt;
+- Simpel RDP, RDP tunneleret over SSH.
+&lt;br&gt;
+- Fri rotationsunderstøttelse. Brug operativsystemet til at begrænse rotation om nødvendigt.
+&lt;br&gt;
+- Indstilling af fjernopløsning, nativ opløsning i liggende og stående tilstand.
+&lt;br&gt;
+- Generering og eksport af SSH offentlige/private nøglepar.
+&lt;br&gt;
+- Automatisk sessionsgemning.
+&lt;br&gt;
+- Zoombar, tilpas til skærm og én til én skaleringstilstande.
+&lt;br&gt;
+- Multiberøringsstyring over fjernmus i direkte og simulerede touchpad-inputtilstande.
+&lt;br&gt;
+- Fuld enhånds-styring over fjernmus i enhånds-inputtilstand.
+&lt;br&gt;
+- Multiberøringsklik: tryk for venstreklik, to-fingers tryk for højreklik, tre-fingers tryk for midterklik.
+&lt;br&gt;
+- Multiberøringsrul: to-fingers træk op/ned og venstre/højre for at rulle.
+&lt;br&gt;
+- Meta- og piletaster på skærmen, som kan deaktiveres fuldstændigt fra menu eller gemmes med knap på skærmen.
+&lt;br&gt;
+- Afsendelse af tekst og vilkårlige tastekombinationer under forbindelse.
+&lt;br&gt;
+- Hjælp til oprettelse af forbindelser ("Menu-&gt;Forbindelseshjælp") på forbindelsesskærmen.
+&lt;br&gt;
+- Hjælp til inputtilstande ("Menu-&gt;Mere-&gt;Hjælp til inputtilstand") under forbindelse.
+&lt;br&gt;
+- Brug af tilgængelig sporplade som pile i stedet for musebevægelse og sporpladeklik som Ctrl, roter D-pad/sporplade til BT-tastaturer.
+&lt;br&gt;
+- Understøttelse af flere sprog, så længe RDP-serveren har det nødvendige sproglige layout aktiveret.
+&lt;br&gt;
+- Problemfrie opløsningsændringer på fjernmaskine
+&lt;br&gt;
+- Fuld museunderstøttelse på Android 4.0+-enheder, herunder højre- og midterklik og rulhjul.
+&lt;br&gt;
+- Et valg af farvetilstande
+&lt;br&gt;
+- Udklipsholder-integration
+&lt;br&gt;
+- Eksport af indstillinger
+&lt;br&gt;
+- Lyd
+&lt;br&gt;
+&lt;br&gt;
+Kendte problemer:</string>
+    <string name="rdp_intro_title">aRDP: Intuitiv, sikker RDP-klient</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Når du tilføjer eller redigerer en forbindelse, vises en forbindelseskonfigurationsside. Her kan du konfigurere en ny RDP-forbindelse eller vælge en eksisterende. Øverst er der en knap, der giver dig mulighed for at gemme forbindelsen. Nedenfor konfigurerer du din forbindelse.
+
+ - Forbindelsestype: Her vælger du RDP-forbindelsestypen. Tilgængelige forbindelsestyper er:
+   (a) RDP, som forbinder direkte til en computer via RDP-protokollen.
+   (b) RDP over SSH, som først tunnelerer din forbindelse igennem en computer, der kører en SSH-server.
+
+ - Titel: Hver forbindelse du opretter kan have et kaldenavn for let at identificere den på listen.
+
+ - SSH-tunnelindstillinger: Tilgængelig i RDP over SSH-tilstand.
+   (a) SSH-server/port: Adressen og porten for SSH-serveren, som forbindelsen vil blive tunneleret igennem. Som standard lytter SSH på port 22.
+   (b) Brugernavn/adgangskode: Brugernavnet og adgangskoden til kontoen på SSH-serveren. Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet appen siden du sidst indtastede den.
+   (c) Administrer nøgle/brug nøgle: En knap til at administrere offentlige/private nøgler og et afkrydsningsfelt, der angiver, om der skal bruges en nøgle frem for adgangskode til godkendelse. Hvis du bruger knappen Kopiér til udklipsholder efter generering af et nøglepar, bør du kunne indsætte den offentlige nøgle, når du er tilsluttet RDP-serveren (udklipsholderen er synkroniseret med serveren).
+
+ - RDP-forbindelsesindstillinger:
+   (a) RDP-server/port: Her indtaster du værtsnavn eller IP-adresse og port for computeren, der kører RDP-serveren, du ønsker at kontakte. I RDP over SSH-tilstand er denne adresse set fra SSH-serveren. Hvis SSH-serveren og RDP-serveren er den samme fysiske computer, kan du bruge localhost. RDP-servere lytter typisk på port 3389.
+   (b) RDP-bruger: Her indtaster du dit Windows/UNIX-kontobrugernavn.
+   (c) RDP-domæne: Angiv det domæne, din konto tilhører.
+   (d) RDP-adgangskode: Her angiver du din Windows/UNIX-kontoadgangskode. Sikker lagring bruges ikke til adgangskoder (de er i en database), og adgangskoden gemmes kun, hvis du markerer afkrydsningsfeltet "Behold". Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet appen siden du sidst indtastede den.
+
+ - Avancerede indstillinger: I dette afsnit finder du muligheder for at tilpasse opløsningen af skrivebordet og diverse RDP-ydelsesjusteringer.
+
+ - Lokale enhedsjusteringer: Disse justerer appens adfærd på din enhed.
+   (a) Brug D-pad til pile: Hvis du foretrækker det, kan du bruge D-pad på dit Bluetooth-tastatur eller pile på dit skærmtastatur til at sende pile til RDP-serveren.
+   (b) Rotér D-pad: Telefoner parret med et Bluetooth-tastatur skal muligvis have tastaturets D-pad roteret mod uret for at sende korrekte retninger til serveren.
+   (c) Lokal musemarkør: Hvis markøren er usynlig, vælg denne for at tvinge appen til at tegne den."</string>
+    <string name="rdp_password_hint">RDP-adgangskode</string>
+    <string name="rdp_server_empty">RDP-server eller port er tom. Kan ikke oprette forbindelse!</string>
+    <string name="rdp_username_hint">RDP-brugernavn</string>
+
+    <string name="remote_sound_disabled">Lyd deaktiveret</string>
+    <string name="remote_sound_on_device">Lyd på enhed</string>
+    <string name="remote_sound_on_server">Lyd på server</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">VIGTIGT: Hvis du bruger en UltraVNC-repeater, skal du indtaste dens adresse og port uden for denne dialog. Her indtastes adressen og porten for den faktiske VNC-server. Adskil VNC-serverens adresse og port med et kolon, f.eks. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Brug ikke</string>
+    <string name="repeater_dialog_title">VNC-server bag repeater</string>
+    <string name="repeater_empty_text">Ingen repeater</string>
+    <string name="repeater_save">Brug</string>
+
+    <string name="right_alt_as_iso_l3_shift">Højre Alt som ISO L3 Shift (kun VNC)</string>
+
+    <string name="rotate_dpad">Rotér Bluetooth eller software D-pad</string>
+
+    <string name="save_as_copy">Gem som kopi</string>
+
+    <string name="scaling">Skalering</string>
+    <string name="scaling_zoomable">Zoombar</string>
+
+    <string name="send_button">Send</string>
+    <string name="send_key_again">Send tast igen</string>
+
+    <string name="shift_check">Skift</string>
+
+    <string name="shortcut_label_vnc">VNC-forbindelse</string>
+    <string name="shortcut_label_rdp">RDP-forbindelse</string>
+    <string name="shortcut_label_spice">SPICE-forbindelse</string>
+
+    <string name="showkbd_label">Tastatur</string>
+
+    <string name="single_cancel">Enhånds-tilstand annulleret</string>
+    <string name="single_choose">Vælg enhånds-tilstand eller annuller</string>
+    <string name="single_left">Venstretræk-tilstand - stryg for at trække/vælge, løft finger for at stoppe</string>
+    <string name="single_middle">Midtertræk-tilstand - stryg for at trække/vælge, løft finger for at stoppe</string>
+    <string name="single_reposition">Musemarkør omplaceret til enhånds-tilstand</string>
+    <string name="single_right">Højretræk-tilstand - stryg for at trække/vælge, løft finger for at stoppe</string>
+    <string name="single_scroll">Rultilstand - stryg op/ned for at rulle, løft finger for at stoppe</string>
+    <string name="single_zoom">Zoomtilstand - stryg op/ned for at zoome ind/ud, løft finger for at stoppe</string>
+
+    <string name="snap_one_to_one">Fastklappet til 1:1-zoom</string>
+
+    <string name="special_keys">Send taster</string>
+
+    <string name="spice_address_caption_hint">SPICE-server</string>
+    <string name="spice_button_import_ca">Importer CA</string>
+    <string name="spice_ca_cert_path_hint">Sti til certifikatmyndighedsfil</string>
+    <string name="spice_ca_file_error_reading">Fejl ved læsning af CA-fil. Sørg for at den er læsbar.</string>
+    <string name="spice_ca_file_not_found">Fil ikke fundet. Angiv venligst et gyldigt filnavn i tekstfeltet (f.eks. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Certifikatets emne</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Tak fordi du støtter aSPICE og open source-software generelt! For hjælp til brug af aSPICE, se Hjælp-elementerne i menuen og beskrivelsen af appen i butikken.
+&lt;br&gt;
+&lt;br&gt;
+Aktuel liste over aSPICE-funktioner:
+&lt;br&gt;
+- Simpel SPICE, SPICE tunneleret over SSH.
+&lt;br&gt;
+- Fri rotationsunderstøttelse. Brug operativsystemet til at begrænse rotation om nødvendigt.
+&lt;br&gt;
+- Generering og eksport af SSH offentlige/private nøglepar.
+&lt;br&gt;
+- Automatisk sessionsgemning.
+&lt;br&gt;
+- Zoombar, tilpas til skærm og én til én skaleringstilstande.
+&lt;br&gt;
+- Multiberøringsstyring over fjernmus i direkte og simulerede touchpad-inputtilstande.
+&lt;br&gt;
+- Fuld enhånds-styring over fjernmus i enhånds-inputtilstand.
+&lt;br&gt;
+- Multiberøringsklik: tryk for venstreklik, to-fingers tryk for højreklik, tre-fingers tryk for midterklik.
+&lt;br&gt;
+- Multiberøringsrul: to-fingers træk op/ned og venstre/højre for at rulle.
+&lt;br&gt;
+- Meta- og piletaster på skærmen, som kan deaktiveres fuldstændigt fra menu eller gemmes med knap på skærmen.
+&lt;br&gt;
+- Afsendelse af tekst og vilkårlige tastekombinationer under forbindelse.
+&lt;br&gt;
+- Hjælp til oprettelse af forbindelser ("Menu-&gt;Forbindelseshjælp") på forbindelsesskærmen.
+&lt;br&gt;
+- Hjælp til inputtilstande ("Menu-&gt;Mere-&gt;Hjælp til inputtilstand") under forbindelse.
+&lt;br&gt;
+- Brug af tilgængelig sporplade som pile i stedet for musebevægelse og sporpladeklik som Ctrl, roter D-pad/sporplade til BT-tastaturer.
+&lt;br&gt;
+- Understøttelse af flere sprog, så længe SPICE-serveren har det nødvendige sproglige layout aktiveret.
+&lt;br&gt;
+- Problemfrie opløsningsændringer på fjernmaskine
+&lt;br&gt;
+- Fuld museunderstøttelse på Android 4.0+-enheder, herunder højre- og midterklik og rulhjul.
+&lt;br&gt;
+&lt;br&gt;
+Planlagte funktioner:
+&lt;br&gt;
+- Udklipsholder-integration
+&lt;br&gt;
+- Lyd
+&lt;br&gt;
+- Ydelsesforbedringer
+&lt;br&gt;
+Kendte problemer:
+&lt;br&gt;
+- Send tekst sender ikke alle symboler.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitiv, sikker SPICE-klient</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Når du tilføjer eller redigerer en forbindelse, vises en forbindelseskonfigurationsside. Her kan du konfigurere en ny SPICE-forbindelse eller vælge en eksisterende. Øverst er der en knap, der giver dig mulighed for at gemme forbindelsen. Nedenfor konfigurerer du din forbindelse.
+
+ - Forbindelsestype: Her vælger du SPICE-forbindelsestypen. Tilgængelige forbindelsestyper er:
+   (a) SPICE, som forbinder direkte til en computer via SPICE-protokollen.
+   (b) SPICE over SSH, som først tunnelerer din forbindelse igennem en computer, der kører en SSH-server.
+
+ - Titel: Hver forbindelse du opretter kan have et kaldenavn for let at identificere den på listen.
+
+ - SSH-tunnelindstillinger: Tilgængelig i SPICE over SSH-tilstand.
+   (a) SSH-server/port: Adressen og porten for SSH-serveren, som forbindelsen vil blive tunneleret igennem. Som standard lytter SSH på port 22.
+   (b) Brugernavn/adgangskode: Brugernavnet og adgangskoden til kontoen på SSH-serveren. Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet appen siden du sidst indtastede den.
+   (c) Administrer nøgle/brug nøgle: En knap til at administrere offentlige/private nøgler og et afkrydsningsfelt, der angiver, om der skal bruges en nøgle frem for adgangskode til godkendelse. Hvis du bruger knappen Kopiér til udklipsholder efter generering af et nøglepar, bør du kunne indsætte den offentlige nøgle, når du er tilsluttet SPICE-serveren (udklipsholderen er synkroniseret med serveren).
+
+ - SPICE-forbindelsesindstillinger:
+   (a) SPICE-server/port: Her indtaster du værtsnavn eller IP-adresse og port for computeren, der kører SPICE-serveren, du ønsker at kontakte. I SPICE over SSH-tilstand er denne adresse set fra SSH-serveren. Hvis SSH-serveren og SPICE-serveren er den samme fysiske computer, kan du bruge localhost. SPICE-servere lytter typisk på port 5900 og opefter.
+   (b) SPICE-adgangskode: Her angiver du den adgangskode, der er sat til at beskytte din SPICE-session. Sikker lagring bruges ikke til adgangskoder (de er i en database), og adgangskoden gemmes kun, hvis du markerer afkrydsningsfeltet "Behold". Adgangskoden udfyldes på denne side, hvis du ikke har afsluttet appen siden du sidst indtastede den.
+
+ - Avancerede indstillinger: I dette afsnit finder du lokale enheds- eller SPICE-ydelsesjusteringer.
+ - Lokale enhedsjusteringer: Disse justerer appens adfærd på din enhed.
+   (a) Brug D-pad til pile: Hvis du foretrækker det, kan du bruge D-pad på dit Bluetooth-tastatur eller pile på dit skærmtastatur til at sende pile til SPICE-serveren.
+   (b) Rotér D-pad: Telefoner parret med et Bluetooth-tastatur skal muligvis have tastaturets D-pad roteret mod uret for at sende korrekte retninger til serveren.
+   (c) Lokal musemarkør: Hvis markøren er usynlig, vælg denne for at tvinge appen til at tegne den."</string>
+    <string name="spice_password_hint">SPICE-adgangskode</string>
+    <string name="spice_server_empty">SPICE-server eller port er tom. Kan ikke oprette forbindelse!</string>
+    <string name="spice_tls_port_hint">TLS-port</string>
+    <string name="spice_username_hint">SPICE-brugernavn</string>
+
+    <string name="ssh_passphrase_hint">SSH-adgangsfrase</string>
+    <string name="ssh_pubkey_button">Administrer nøgle</string>
+    <string name="ssh_use_pubkey">Brug nøgle</string>
+    <string name="ssh_use_x11vnc">Auto skrivebord</string>
+    <string name="ssh_x11vnc_customize">Konfigurer AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Deaktiver</string>
+    <string name="tap_enable">Aktiver</string>
+
+    <string name="username_caption">VNC-bruger</string>
+    <string name="username_hint">UltraVNC MS Logon-brugernavn</string>
+    <string name="username_hint_optional">VNC-brugernavn (valgfrit)</string>
+    <string name="username_hint_ssh">SSH-brugernavn</string>
+    <string name="username_hint_vencrypt">VNC-brugernavn</string>
+    <string name="verification_code">Bekræftelseskode</string>
+    <string name="verification_code_message">Indtast venligst bekræftelseskoden til multifaktorgodkendelse</string>
+
+    <string name="view_only">Kun-visnings-tilstand</string>
+
+    <string name="vnc_server_empty">VNC-server eller port er tom. Kan ikke oprette forbindelse!</string>
+    <string name="vnc_server_empty_no_save">VNC-server eller port er tom. Kan ikke gemme forbindelsen!</string>
+
+    <string name="warning_cert_does_not_match">ADVARSEL: Det gemte x509-certifikat eller den sendte signatur stemmer ikke overens med det aktuelle servercertifikat! Dette kan være et manden-i-midten-angreb. Hvis du er bekendt med nøgleændringen, kan du fortsætte. </string>
+    <string name="copy_logcat">📋 Kopiér Logcat</string>
+    <string name="log_copied">Logcat kopieret til udklipsholder. Du kan nu indsætte det i en e-mail eller på supportforummet. Kig venligst igennem for personlige data, inden du sender.</string>
+    <string name="info_set_touchpad_input_mode">Serveren rapporterer, at den ikke understøtter klienttilstand-museinput, og den aktuelle museinputtilstand fungerer ikke korrekt. Hvis dette fortsætter, skal du sørge for, at spice-tools er installeret i den virtuelle maskine, eller skifte til simuleret touchpad-inputtilstand fra menuen.</string>
+    <string name="ssh_tunnel_settings">SSH-tunnelindstillinger</string>
+    <string name="vnc_connection_settings">VNC-forbindelsesindstillinger</string>
+    <string name="show_advanced_settings">Vis avancerede indstillinger</string>
+    <string name="use_no_compression_for_local_connections">Ingen komprimering (lokale forbindelser, Hextile-kodning)</string>
+    <string name="rdp_connection_settings">RDP-forbindelsesindstillinger</string>
+    <string name="local_device_tweaks">Lokale enhedsjusteringer</string>
+    <string name="spice_connection_settings">SPICE-forbindelsesindstillinger</string>
+    <string name="ca_subject">Angiv certifikatets emnenavn her. Muligvis ikke nødvendigt, hvis certifikatets fælles navn (CN) matcher serverens værtsnavn.</string>
+    <string name="path_to_ca">Angiv en filsti (f.eks. /sdcard/ca-cert.pem) og tryk Importer for at indlæse din certifikatmyndighed.</string>
+    <string name="paste_ca">Angiv certifikatmyndigheden her, hvis du ikke importerer den som en fil.</string>
+    <string name="cert_issuer">Certifikatudsteder</string>
+    <string name="cert_fingerprint">Certifikatfingeraftryk</string>
+    <string name="error">Fejl</string>
+    <string name="panning">Panorerer skærm</string>
+    <string name="copy_of">Kopi af</string>
+    <string name="ssh_key_generated">Ny nøgle genereret eller importeret. Du kan nu trykke på knappen \'Generér/eksportér nøgle\' for at dele, kopiere til udklipsholder eller eksportere den offentlige nøgle.</string>
+    <string name="cursor_force_local">"Lokal"</string>
+    <string name="cursor_force_disable">"Deaktiver"</string>
+    <string name="cursor_mode">"Markørtilstand:"</string>
+    <string name="rendering_mode">"Gengivelsestilstand:"</string>
+    <string name="color_24_bit">"24-bit farve (24 bpp)"</string>
+    <string name="color_256">"256 farver (8 bpp)"</string>
+    <string name="color_64">"64 farver (4 bpp)"</string>
+    <string name="color_8">"8 farver (2 bpp)"</string>
+    <string name="color_greyscale">"Gråtoner (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Sort & hvid (1 bpp)"]]></string>
+    <string name="show">"Vis"</string>
+    <string name="hide">"Skjul"</string>
+    <string name="search_connections">Søg forbindelser</string>
+    <string name="user_not_specified">Bruger ikke angivet</string>
+    <string name="enter_ssh_credentials">Angiv venligst SSH-legitimationsoplysninger</string>
+    <string name="enter_vnc_credentials">Angiv venligst VNC-legitimationsoplysninger</string>
+    <string name="enter_vnc_password">Angiv venligst VNC-adgangskode</string>
+    <string name="enter_rdp_credentials">Angiv venligst RDP-legitimationsoplysninger</string>
+    <string name="enter_gateway_credentials">Angiv venligst gateway-legitimationsoplysninger</string>
+    <string name="enter_spice_password">Angiv venligst SPICE-adgangskode</string>
+    <string name="enter_passphrase_title">Angiv nøgleadgangsfrase</string>
+    <string name="enter_passphrase">Angiv venligst nøgleadgangsfrase</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Din server kræver adgangskodegodkendelse udover nøglegodkendelse.</string>
+    <string name="main_screen_help_text">"
+Når programmet startes, viser det en skærm med gemte forbindelser.
+
+Hvis der ikke er gemte forbindelser, er den nedre del af skærmen tom, og du skal trykke på plusknappen for at oprette en ny.
+Du kan også styre andre aspekter af konfigurationen fra denne skærm ved at trykke på andre værktøjslinje- eller menuindstillinger øverst,
+f.eks. for at redigere standardindstillinger eller importere og eksportere indstillinger.
+
+Når du har en gemt forbindelse, kan du oprette forbindelse til fjernserveren ved at trykke på den én gang. Du vil også have mulighed for at slette eller redigere den ved at holde nede på den.
+
+Endelig kan du bruge feltet Søg forbindelser til hurtigt at finde forbindelser ved at filtrere de viste forbindelser."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Når du tilføjer eller redigerer en forbindelse, vises en forbindelseskonfigurationsside.
+Her kan du konfigurere en ny Opaque-forbindelse eller vælge en eksisterende.
+Øverst er der en knap, der giver dig mulighed for at gemme forbindelsen.
+Nedenfor konfigurerer du din forbindelse.
+
+ - Forbindelsestype: Her vælger du det virtualiseringsmiljø, du opretter forbindelse til.
+
+ - Serveradresse: Værtsnavn eller IP-adresse for serveren. Hvis den lytter på en ikke-standard port, kan du tilføje en port adskilt af kolon.
+
+ - Navn på virtuel maskine: Du kan angive navnet på VM\'en, som det vises på din virtualiseringsplatform, eller lade dette felt være tomt for at få en liste over VM\'er eller containere at vælge fra.
+
+ - Bruger: Angiv brugernavnet til godkendelse til dit virtualiseringsrammeværk.
+
+ - Adgangskode: Hvis du ønsker at gemme adgangskoden, skal du angive den her, eller lade feltet være tomt for at blive spurgt om det hver gang.
+
+ - Avancerede indstillinger: I dette afsnit finder du lokale enheds-, protokol- og ydelsesjusteringer."
+    </string>
+    <string name="help">Hjælp ⓘ</string>
+    <string name="need_help">Har du brug for hjælp?</string>
+    <string name="support_forum">Supportforum ❓</string>
+    <string name="email_us">Send os en e-mail 📧</string>
+    <string name="report_bug">Rapportér en fejl 🐛</string>
+    <string name="download_from_server">Download fra server</string>
+    <string name="import_from_file">Importer fra fil</string>
+    <string name="please_grant_permission_from_prefs">Du skal muligvis give programmet tilladelser via Indstillinger.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Mere fejlretningslogning</string>
+    <string name="prefer_sending_unicode">Unicode-input (kun Windows)</string>
+    <string name="hide_connection_thumbnails">Skjul forbindelsesminiaturer</string>
+    <string name="show_only_connection_nicknames">Vis kun forbindelseskalenavne</string>
+    <string name="love_our_work">Kan du lide vores arbejde?</string>
+    <string name="rate_app">Bedøm ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Del 🔗</string>
+    <string name="share_app_toast">Del et link til appen med alle dine venner på sociale medier!</string>
+    <string name="donate_app">Donér ❤</string>
+    <string name="more_apps">Flere apps 📱</string>
+    <string name="previous_versions">Tidligere versioner ⍼</string>
+    <string name="keyboard_type">Type af softwaretastatur</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Standard (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Tekst/tal uden forslag (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Tekst med forslag (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Denne forbindelse er indstillet til at starte VPN via en ekstern app. Du skal installere en app som Morpheusly for at starte den.</string>
+    <string name="vnc_viewer_started">VNC-fremviser startet</string>
+    <string name="enable_gateway">Aktiver RDP Gateway</string>
+    <string name="scroll_speed">Berøringsrulhastighed</string>
+    <string name="desktop_scale_percentage">Brugerdefineret skalerings-procent</string>
+    <string name="show_menu">Vis menu</string>
+    <string name="move_toolbar">Flyt værktøjslinje</string>
+    <string name="rdp_adv_glyph_cache">Aktivér glyph-cache</string>
+
+    <string name="disable_battery_optimizations_failed">
+Batterioptimeringsindstillingerne kunne ikke åbnes. Deaktiver batterioptimering manuelt i systemindstillinger.</string>
+    <string name="disable_battery_optimizations">
+🔋Deaktiver batterioptimeringer</string>
+    <string name="disable_battery_optimizations_already_done">
+Appen er allerede fritaget for batterioptimering.</string>
+    <string name="no_connections_title">Ingen forbindelser endnu</string>
+    <string name="no_connections_hint">Tryk på +-knappen for at tilføje din første fjernforbindelse</string>
+    <string name="no_connections_hint_tv">Tryk på +-knappen ovenfor for at tilføje din første fjernforbindelse</string>
+    <string name="keyboard_layout_map">Tastaturlayout</string>
+</resources>

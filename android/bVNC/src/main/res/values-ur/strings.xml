@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">رنگ موڈ</string>
+    <string name="message_please_wait">برائے مہربانی انتظار کریں۔</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">ڈیفالٹ (TYPE_NULL)</string>
+    <string name="ad_donate_text2">پرو ورژن آپ کو اس ڈائیلاگ کو غیر فعال کرنے کی اجازت دیتا ہے اور آپ کو اضافی خصوصیات تک رسائی فراہم کرتا ہے۔</string>
+    <string name="snap_one_to_one">1:1 زوم پر اسنیپ کیا گیا۔</string>
+    <string name="spice_intro_title">اسپائس: بدیہی، محفوظ اسپائس کلائنٹ</string>
+    <string name="auto_x_title">آٹو ایکس کو ترتیب دیں۔</string>
+    <string name="error_ovirt_auth_failure">تصدیق میں ناکامی۔براہ کرم فراہم کردہ صارف اور پاس ورڈ کو چیک کریں۔</string>
+    <string name="ad_donate_text1">پرو ورژن خرید کر ایک چھوٹے سے عطیہ کے ساتھ پروجیکٹ کو سپورٹ کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="auto_x_geom_custom">حسب ضرورت</string>
+    <string name="repeater_caption_hint">الٹرا وی این سی ریپیٹر</string>
+    <string name="error_ssh_keypair_decryption_failure">کلیدی جوڑے کو ڈکرپٹ کرنے میں ناکام۔براہ کرم یقینی بنائیں کہ آپ نے مرکزی سکرین پر \'SSH پاسفریز\' فیلڈ میں اپنا پاس فریز صحیح طریقے سے درج کیا ہے۔</string>
+    <string name="master_password_hint_twice">پاس ورڈ کو دہرائیں۔</string>
+    <string name="connection_setup_password">پاس ورڈ</string>
+    <string name="support_forum">سپورٹ فورم ❓</string>
+    <string name="main_screen_help">کنکشن مدد</string>
+    <string name="spice_server_empty">SPICE سرور یا پورٹ خالی ہے۔مربوط نہیں ہو سکتا!</string>
+    <string name="arrow_up">اوپر کا تیر</string>
+    <string name="error_vm_lookup_failed">آپ کے صارف کو تفویض کردہ نام کے ساتھ ورچوئل مشین نہیں مل سکی۔براہ کرم صارف کو تفویض کردہ VMs کی فہرست دیکھنے کے لیے مخصوص کردہ VM نام کو مٹا دیں۔</string>
+    <string name="nickname_caption">عرفی نام</string>
+    <string name="auto_x_geom_native">مقامی</string>
+    <string name="new_connection">نیا کنکشن</string>
+    <string name="error_ssh_unable_to_connect">SSH سرور سے جڑنے میں ناکام۔براہ کرم نیٹ ورک کنیکٹیویٹی، اور SSH سرور کا پتہ اور پورٹ چیک کریں۔</string>
+    <string name="send_key_again">کلید دوبارہ بھیجیں۔</string>
+    <string name="input_mode_help">ان پٹ موڈ مدد</string>
+    <string name="enable_gateway">RDP Gateway کو فعال کریں۔</string>
+    <string name="message_please_install_bvnc">براہ کرم اس VM کے VNC کنسول سے منسلک ہونے کے لیے Google Play سے &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; انسٹال کریں۔</string>
+    <string name="spice_ca_cert_path_hint">سرٹیفکیٹ اتھارٹی فائل کا راستہ</string>
+    <string name="enter_spice_password">براہ کرم SPICE پاس ورڈ درج کریں۔</string>
+    <string name="rdp_adv_window_contents">گھسیٹتے وقت ونڈو کا مواد دکھائیں۔</string>
+    <string name="input_methods">ان پٹ کا طریقہ</string>
+    <string name="info_ssh_key_fingerprint">میزبان کلیدی فنگر پرنٹ ہے:</string>
+    <string name="paste_ca">اگر آپ اسے بطور فائل درآمد نہیں کر رہے ہیں تو یہاں سرٹیفکیٹ اتھارٹی درج کریں۔</string>
+    <string name="enter_otp_code">براہ کرم OTP کوڈ درج کریں۔</string>
+    <string name="spice_connection_screen_help_text">جب آپ کسی کنکشن کو جوڑتے یا اس میں ترمیم کرتے ہیں، تو آپ کو کنکشن کنفیگریشن کا صفحہ نظر آئے گا۔یہاں آپ ایک نیا SPICE کنکشن ترتیب دے سکتے ہیں، یا پہلے سے موجود کو منتخب کر سکتے ہیں۔سب سے اوپر ایک بٹن ہے جو آپ کو کنکشن کو بچانے کی اجازت دیتا ہے۔اس کے نیچے آپ اپنا کنکشن کنفیگر کرتے ہیں۔
+
+- کنکشن کی قسم: یہاں آپ SPICE کنکشن کی قسم کا انتخاب کرتے ہیں۔دستیاب کنکشن کی اقسام ہیں:
+(a) SPICE، جو SPICE پروٹوکول پر کمپیوٹر سے براہ راست جڑتا ہے۔
+(b) SPICE اوور SSH، جو سب سے پہلے SSH سرور چلانے والے کمپیوٹر کے ذریعے آپ کے کنکشن کو سرنگ کرتا ہے۔
+
+- عنوان: آپ جو بھی کنکشن بناتے ہیں اس کا لسٹ میں آسانی سے شناخت کرنے کے لیے ایک عرفی نام ہو سکتا ہے۔
+
+- SSH ٹنل کی ترتیبات: SSH موڈ پر SPICE میں دستیاب ہے۔
+(a) SSH سرور/پورٹ: SSH سرور کا پتہ اور پورٹ جس کے ذریعے کنکشن کو سرنگ کیا جائے گا۔بطور ڈیفالٹ SSH پورٹ 22 پر سنتا ہے۔
+(b) صارف کا نام/پاس ورڈ: SSH سرور پر اکاؤنٹ کا صارف نام اور پاس ورڈ۔پاس ورڈ اس صفحہ پر بھرا جائے گا اگر آپ نے ایپ کو آخری بار داخل کرنے کے بعد سے اسے چھوڑا نہیں ہے۔
+(c) کلید کا نظم کریں/کی استعمال کریں: عوامی/نجی کلیدوں کو منظم کرنے کے لیے ایک بٹن، اور ایک چیک باکس جو اس بات کی نشاندہی کرتا ہے کہ آیا تصدیق کے لیے پاس ورڈ کے بجائے کلید کا استعمال کرنا ہے۔اگر آپ کلید کا جوڑا بنانے کے بعد کاپی ٹو کلپ بورڈ بٹن استعمال کرتے ہیں، تو آپ کو اسپائس سرور سے منسلک ہونے کے بعد عوامی کلید کو پیسٹ کرنے کے قابل ہونا چاہیے (کلپ بورڈ سرور سے ہم آہنگ ہو جاتا ہے)۔
+
+- اسپائس کنکشن کی ترتیبات:
+(a) SPICE سرور/پورٹ: یہ وہ جگہ ہے جہاں آپ میزبان کا نام یا IP ایڈریس اور اسپائس سرور چلانے والے کمپیوٹر کا پورٹ درج کرتے ہیں جس سے آپ رابطہ کرنا چاہتے ہیں۔SPICE اوور SSH موڈ میں، یہ پتہ SSH سرور سے دیکھا جاتا ہے۔اگر SSH سرور اور SPICE سرور ایک ہی جسمانی کمپیوٹر ہیں، تو آپ لوکل ہوسٹ استعمال کر سکتے ہیں۔SPICE سرورز عام طور پر پورٹ 5900 اور اس سے اوپر پر سنتے ہیں۔
+(d) SPICE پاس ورڈ: یہ وہ جگہ ہے جہاں آپ اپنے SPICE سیشن کی حفاظت کے لیے سیٹ پاس ورڈ درج کرتے ہیں۔محفوظ اسٹوریج پاس ورڈز کے لیے استعمال نہیں کیا جاتا ہے (وہ ڈیٹا بیس میں ہیں)، اور پاس ورڈ صرف اس صورت میں محفوظ کیا جائے گا جب آپ Keep باکس کو چیک کریں۔پاس ورڈ اس صفحہ پر بھرا جائے گا اگر آپ نے ایپ کو آخری بار داخل کرنے کے بعد سے اسے چھوڑا نہیں ہے۔
+
+- اعلی درجے کی ترتیبات: اس سیکشن میں آپ کو کوئی مقامی ڈیوائس یا اسپائس پرفارمنس ٹویکس ملے گا۔
+- مقامی ڈیوائس ٹویکس: یہ آپ کے آلے پر ایپ کے رویے کو ایڈجسٹ کرتے ہیں۔
+(a) تیروں کے لیے D-Pad استعمال کریں: اگر آپ چاہیں تو SPICE سرور کو تیر بھیجنے کے لیے آپ اپنے بلوٹوتھ کی بورڈ کا D-Pad یا اپنے آن اسکرین کی بورڈ پر تیر استعمال کر سکتے ہیں۔
+(b) D-Pad گھمائیں: بلوٹوتھ کی بورڈ کے ساتھ جوڑا بنائے گئے فونز کو سرور کو درست سمت بھیجنے کے لیے کی بورڈ کے ڈی پیڈ کو گھڑی کی مخالف سمت میں گھمانے کی ضرورت پڑ سکتی ہے۔
+(c) مقامی ماؤس پوائنٹر: اگر پوائنٹر پوشیدہ ہے، تو اسے ایپ کے ذریعے کھینچنے پر مجبور کرنے کے لیے اسے منتخب کریں۔</string>
+    <string name="auto_x_disabled_selection">آٹو ایکس غیر فعال</string>
+    <string name="button_send_text">متن بھیجیں۔</string>
+    <string name="shortcut_label_spice">اسپائس کنکشن</string>
+    <string name="keep_screen_awake_enable">اسکرین کو بیدار رکھیں</string>
+    <string name="open_doc">دستی/ویکی</string>
+    <string name="remote_sound_disabled">آواز غیر فعال</string>
+    <string name="spice_ca_file_not_found">فائل نہیں ملی۔براہ کرم ٹیکسٹ فیلڈ میں فائل کا درست نام درج کریں (جیسے /sdcard/ca-cert.pem)۔</string>
+    <string name="rdp_intro_title">aRDP: بدیہی، محفوظ RDP کلائنٹ</string>
+    <string name="error_pve_api_unexpected_code">Proxmox ورچوئل ماحولیات سے غیر متوقع جواب:</string>
+    <string name="error_out_of_memory">ریموٹ اسکرین ڈرا کرنے کے لیے کافی میموری مختص کرنے سے قاصر ہے۔ایپلیکیشن کو دوبارہ شروع کرنے کی کوشش کریں، پھر اپنے آلے کو دوبارہ شروع کریں۔آپ ایپ کی ترتیبات کے ذریعے ریموٹ ڈیسک ٹاپ کا سائز کم کرنے کی بھی کوشش کر سکتے ہیں۔</string>
+    <string name="enter_passphrase_title">کلیدی پاسفریز درج کریں۔</string>
+    <string name="copy_of">کی کاپی</string>
+    <string name="rdp_adv_remotefx">RemoteFX کو فعال کریں۔</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="rdp_adv_desktop_background">ڈیسک ٹاپ کا پس منظر دکھائیں۔</string>
+    <string name="desktop_scale_percentage">حسب ضرورت اسکیلنگ کا فیصد</string>
+    <string name="password_caption_ssh">ایس ایس ایچ اوتھ۔</string>
+    <string name="rdp_adv_font_smoothing">فونٹ ہموار کرنا انجام دیں۔</string>
+    <string name="rdp_domain_hint">RDP ڈومین</string>
+    <string name="custom_ca_subject">اختیاری سند کا موضوع۔اگر سرٹیفکیٹ CN میزبان نام سے میل کھاتا ہے تو اس کی ضرورت نہیں ہے۔</string>
+    <string name="color_24_bit">24 بٹ رنگ (24 bpp)</string>
+    <string name="ssh_passphrase_hint">SSH پاسفریز</string>
+    <string name="username_hint">الٹرا وی این سی ایم ایس لاگ ان صارف نام</string>
+    <string name="error_failed_to_download_https">HTTPS پر فائل ڈاؤن لوڈ کرنے میں ناکام۔شاید آپ کا سرور سرٹیفکیٹ ناقابل اعتماد ہے (میعاد ختم یا خود دستخط شدہ) یا آپ کا سرور ناقابل رسائی ہے۔</string>
+    <string name="rdp_geom_checkbox_enable">حسب ضرورت ریزولوشن کو فعال کریں۔</string>
+    <string name="enter_rdp_credentials">براہ کرم RDP اسناد درج کریں۔</string>
+    <string name="error_dialog_title">خرابی</string>
+    <string name="ssl_strict">سرٹیفکیٹ سے ملنے کے لیے عام نام کی ضرورت ہے (تجویز کردہ)</string>
+    <string name="master_password_hint_once">پاس ورڈ درج کریں۔</string>
+    <string name="one_to_one">ایک سے ایک</string>
+    <string name="action_rate_or_share_app">⭐ مدد حاصل کریں، ریٹ کریں، شیئر کریں۔</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH سرور نہ تو \password\ اور نہ \keyboard-interactive\ auth طریقوں کو سپورٹ کرتا ہے یا پہلے \publickey\ طریقہ کی ضرورت ہوتی ہے۔براہ کرم اسے دو طریقوں میں سے کم از کم ایک کی اجازت دینے کے لیے ترتیب دیں، یا ایپلیکیشن کو دوبارہ ترتیب دیں۔دستیاب توثیق کے طریقے:</string>
+    <string name="import_settings">درآمد کریں۔</string>
+    <string name="hide_toolbar">ٹول بار چھپائیں۔</string>
+    <string name="verification_code_message">براہ کرم ملٹی فیکٹر توثیقی کوڈ درج کریں۔</string>
+    <string name="need_help">کچھ مدد کی ضرورت ہے؟</string>
+    <string name="rdp_security_auto">سیکیورٹی کو خود بخود گفت و شنید کریں۔</string>
+    <string name="master_password_error_failed_to_enable">ماسٹر پاس ورڈ کو فعال نہیں کیا جا سکا۔اپنے آلے پر خالی جگہ چیک کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="cert_issuer">سرٹیفکیٹ جاری کرنے والا</string>
+    <string name="error">خرابی</string>
+    <string name="error_anon_dh_unsupported">VNC سرور Anonymous Diffie Hellman ciphers کو استعمال کرنے کی کوشش کر رہا ہے جو آپ کے Android ڈیوائس پر تعاون یافتہ نہیں ہیں۔اگر GNOME کا Vino VNC سرور استعمال کر رہے ہیں، تو آپ AnonTLS کو ٹرمینل میں درج ذیل کمانڈ کو چلا کر اور پھر دوبارہ شروع کر کے غیر فعال کر سکتے ہیں: \gsettings set org.gnome.Vino require-encryption false\.اگر x11vnc چلا رہے ہیں، تو آپ درج ذیل اختیارات شامل کر سکتے ہیں: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">اسکرول وہیل</string>
+    <string name="auto_x_session_auto">آٹو</string>
+    <string name="enter_gateway_credentials">براہ کرم گیٹ وے کی اسناد درج کریں۔</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">اوپن سورس پروجیکٹ کو آپ کے تعاون کی ضرورت ہے!bVNC پرو خرید کر ہمیں عطیہ کریں۔bVNC پرو اور ہماری دوسری ایپس کے لنکس کے لیے نیچے دیکھیں۔</string>
+    <string name="input_method_mouse">ماؤس پوائنٹر کنٹرول</string>
+    <string name="pro_feature_rdp">ایسا لگتا ہے کہ آپ نے ایک .rdp فائل کھولنے کی کوشش کی ہے جو کہ ایک پرو فیچر ہے۔براہ کرم aRDP پرو خرید کر پروجیکٹ کی حمایت کریں، جو .rdp فائلوں کو سپورٹ کرتا ہے۔اے آر ڈی پی پرو ورژن کا لنک اسٹارٹ ڈائیلاگ میں دستیاب ہے۔</string>
+    <string name="opaque_connection_screen_help_text">جب آپ کسی کنکشن کو جوڑتے یا اس میں ترمیم کرتے ہیں، تو آپ کو کنکشن کنفیگریشن کا صفحہ نظر آئے گا۔
+یہاں آپ ایک نیا مبہم کنکشن ترتیب دے سکتے ہیں یا پہلے سے موجود کو منتخب کر سکتے ہیں۔
+سب سے اوپر ایک بٹن ہے جو آپ کو کنکشن کو بچانے کی اجازت دیتا ہے۔
+اس کے نیچے آپ اپنا کنکشن کنفیگر کرتے ہیں۔
+
+- کنکشن کی قسم: یہاں آپ منتخب کرتے ہیں کہ آپ کس ورچوئلائزیشن ماحول سے جڑ رہے ہیں۔
+
+- سرور کا پتہ: سرور کا میزبان نام یا IP۔اگر یہ غیر معیاری پورٹ پر سن رہا ہے، تو آپ بڑی آنت سے الگ کردہ پورٹ شامل کر سکتے ہیں۔
+
+- ورچوئل مشین کا نام: آپ VM کا نام بتا سکتے ہیں جیسا کہ یہ آپ کے ورچوئلائزیشن پلیٹ فارم پر ظاہر ہوتا ہے یا VMs یا کنٹینرز کی فہرست حاصل کرنے کے لیے اس فیلڈ کو خالی چھوڑ دیں۔
+
+- صارف: اپنے ورچوئلائزیشن فریم ورک کی توثیق کرنے کے لیے صارف کا نام درج کریں۔
+
+- پاس ورڈ: اگر آپ پاس ورڈ محفوظ کرنا چاہتے ہیں تو اسے یہاں درج کریں یا ہر بار اس کے لیے پوچھے جانے کے لیے فیلڈ کو خالی چھوڑ دیں۔
+
+- اعلی درجے کی ترتیبات: اس سیکشن میں آپ کو کوئی مقامی ڈیوائس، پروٹوکول، اور کارکردگی کے موافقت ملیں گے۔</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">تجاویز کے ساتھ متن (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">کاپی لسٹ</string>
+    <string name="master_password_error_failed_to_disable">ماسٹر پاس ورڈ کو غیر فعال نہیں کیا جا سکا۔اپنے آلے پر خالی جگہ چیک کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="use_no_compression_for_local_connections">کوئی کمپریشن نہیں (مقامی کنکشن، ہیکسٹائل انکوڈنگ)</string>
+    <string name="input_mode_help_text">کسی بھی ان پٹ موڈ میں، آن اسکرین کی بورڈ حاصل کرنے کے لیے کی بورڈ آئیکن کو تھپتھپائیں۔نیز، آپ کے آلے کا اپنا اشارہ ہو سکتا ہے جو کی بورڈ کو اوپر لاتا ہے۔
+
+مزید بدیہی ٹچ اسکرین کنٹرول کے لیے ڈائریکٹ ان پٹ موڈز استعمال کریں۔ماؤس پر بہتر کنٹرول کے لیے نقلی ٹچ پیڈ موڈ استعمال کریں۔
+
+ڈائریکٹ، سوائپ پین موڈ:
+- ماؤس کو براہ راست ٹچ کے ذریعے کنٹرول کریں۔
+- ارد گرد پین کرنے کے لئے سوائپ کریں۔
+- ٹیپ کرنے سے ماؤس کلک ہو جاتا ہے جہاں آپ نے ٹیپ کیا تھا۔
+- دو انگلیوں کے درمیان اسکرول ایونٹس بھیجے جاتے ہیں جہاں دو انگلیوں سے سوائپ شروع ہوتی ہے۔
+
+ڈائریکٹ، ہولڈ پین موڈ:
+- ماؤس کو براہ راست ٹچ کے ذریعے کنٹرول کریں۔
+- پین موڈ شروع کرنے کے لیے دیر تک تھپتھپائیں۔
+- ٹیپ کرنے سے ماؤس کلک ہو جاتا ہے جہاں آپ نے ٹیپ کیا تھا۔
+- دو انگلیوں کے درمیان اسکرول ایونٹس بھیجے جاتے ہیں جہاں دو انگلیوں سے سوائپ شروع ہوتی ہے۔
+
+نقلی ٹچ پیڈ وضع:
+- اپنی اسکرین کو ٹچ پیڈ کی طرح استعمال کریں۔
+- ماؤس پوائنٹر کو ادھر ادھر منتقل کرنے کے لیے سوائپ کریں۔
+- ماؤس کو اسکرین کے کنارے سے باہر پین میں منتقل کریں۔
+- ٹیپ کرنے سے ماؤس کلک کرتا ہے جہاں پوائنٹر ہے۔
+- اسکرول ایونٹس بھیجے جاتے ہیں جہاں ماؤس پوائنٹر واقع ہوتا ہے۔
+
+سنگل ہینڈڈ موڈ:
+- ڈائریکٹ، سوائپ پین موڈ کی طرح، سوائے لمبے تھپتھپانے کے طریقوں کے انتخاب کے ساتھ مینو کھولتا ہے۔
+- موڈ کو منتخب کرنے کے بعد، اسکرین پر انگلی سوائپ کرنے سے منتخب اشارہ ہوتا ہے۔
+- انگلی اٹھانے سے اشارہ مکمل ہوتا ہے۔
+
+تمام ان پٹ موڈز:
+- بائیں کلک کریں: ایک بار تھپتھپائیں۔
+- ڈبل کلک کریں: ڈبل ٹیپ کریں۔
+- دائیں کلک کریں: تھپتھپائیں اور دوسری انگلی سے تھپتھپائیں (اسکرین پر کہیں بھی)۔
+- متبادل دائیں کلک: اپنے آلے کے لیے \Back\ بٹن یا اشارہ استعمال کریں۔
+- درمیانی کلک: دو مزید انگلیوں سے تھپتھپائیں اور تھپتھپائیں (اسکرین پر کہیں بھی)۔
+- ماؤس ڈریگ: تھپتھپا کر لمبی اور سوائپ کریں۔
+- اسکرول وہیل: دو انگلیوں سے اوپر/نیچے اور بائیں/دائیں گھسیٹیں۔فوری ڈریگ اسکرول تیزی سے۔
+- زوم ان/آؤٹ: زوم ایبل اسکیلنگ میں، اسکیلنگ کو کنٹرول کرنے کے لیے چٹکی بھر زوم۔
+- Ctrl/Alt کلید: مینو-&gt;Ctrl/Alt بٹن۔مکمل ہونے پر ٹوگل آف کرنا نہ بھولیں!
+- کلیدی کمبوز: مینو-&gt;مزید-&gt;کیز بھیجیں۔
+- ٹیکسٹ بھیجیں: یا تو آن اسکرین کی بورڈ پر ٹائپ کریں، یا مینو-&gt;مزید-&gt; ٹیکسٹ بھیجیں۔</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt بطور ISO L3 شفٹ (صرف VNC)</string>
+    <string name="error_uri_noinfo_nosave">مربوط کرنے کے لیے مخصوص معلومات ناکافی ہے۔</string>
+    <string name="single_reposition">ماؤس پوائنٹر کو سنگل ہینڈڈ موڈ کے لیے جگہ دی گئی۔</string>
+    <string name="auto_x_cancel">منسوخ کریں۔</string>
+    <string name="vv_file_not_found">.vv فائل نہیں ملی!</string>
+    <string name="error_pve_failed_to_authenticate">Proxmox ورچوئل انوائرمنٹ سے تصدیق کرنے میں ناکام۔براہ کرم یقینی بنائیں کہ آپ user@realm فارمیٹ میں اپنا صارف نام درج کریں اور آپ کا پاس ورڈ درست ہے۔</string>
+    <string name="save_as_copy">کاپی کے طور پر محفوظ کریں۔</string>
+    <string name="info_cert">کیا آپ اس نئے یا تبدیل شدہ میزبان سرٹیفیکیٹ کو قبول کرتے ہیں؟</string>
+    <string name="more_debug_logging">مزید ڈیبگ لاگنگ</string>
+    <string name="error_ssh_key_auth_fail">کلیدی جوڑے کے ساتھ SSH سرور کی توثیق کرنے میں ناکام۔براہ کرم اپنا SSH صارف نام چیک کریں، اور یقینی بنائیں کہ آپ کی عوامی کلید ریموٹ سائیڈ پر مجاز_کیز فائل میں ہے۔</string>
+    <string name="error_vnc_authentication">VNC کی توثیق ناکام ہوگئی! VNC پاس ورڈ چیک کریں (اور اگر قابل اطلاق ہو تو صارف)۔</string>
+    <string name="toggle_keyboard">کی بورڈ ٹوگل کریں۔</string>
+    <string name="help">مدد ⓘ</string>
+    <string name="repeater_caption">اہم: اگر الٹرا وی این سی ریپیٹر استعمال کر رہے ہیں تو اس ڈائیلاگ سے باہر اس کا پتہ اور پورٹ درج کریں۔یہاں، اصل VNC سرور کا پتہ اور پورٹ درج کریں۔VNC سرور کے ایڈریس اور پورٹ کو بڑی آنت سے الگ کریں، جیسے192.168.0.100:5900۔</string>
+    <string name="color_8">8 رنگ (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">کنیکٹ یا تصدیق کرنے سے قاصر، براہ کرم سرور کا پتہ، صارف، پاس ورڈ، اور سرٹیفکیٹ اتھارٹی اور موضوع کو چیک کریں۔</string>
+    <string name="error_rdp_authentication_failed">RDP توثیق ناکام!براہ کرم RDP صارف نام اور پاس ورڈ چیک کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="delete_key_list">کلیدی فہرست کو حذف کریں۔</string>
+    <string name="input_method_direct_swipe_pan_description">ڈائریکٹ، سوائپ پین: ارد گرد پین کرنے کے لیے سوائپ کریں۔جہاں آپ بائیں کلک کرنا چاہتے ہیں وہاں ایک انگلی سے تھپتھپائیں، دائیں کلک کرنے کے لیے دو انگلیاں، اور درمیانی کلک کرنے کے لیے تین انگلیاں۔سکرول کرنے کے لیے دو انگلیوں سے سوائپ کریں۔گھسیٹنے اور چھوڑنے کے لیے لمبا تھپتھپائیں۔</string>
+    <string name="address_caption_hint">VNC سرور</string>
+    <string name="auto_x_unixpw">بلٹ ان سیکیورٹی میکانزم کے بجائے UNIX اسناد کا استعمال کریں۔صارف کو /bin/su چلانے کے قابل ہونا چاہئے۔</string>
+    <string name="input_method_touchpad">نقلی ٹچ پیڈ</string>
+    <string name="fit_to_screen">اسکرین پر فٹ کریں۔</string>
+    <string name="list_name_caption">فہرست کا نام</string>
+    <string name="copy_logcat">📋 لاگ کیٹ کاپی کریں۔</string>
+    <string name="ca_ovirt_use_custom">حسب ضرورت RHEV/oVirt CA</string>
+    <string name="info_progress_dialog_downloading">پہلا فریم ڈاؤن لوڈ کریں۔ براہ کرم انتظار کریں…</string>
+    <string name="local_mouse_check">مقامی ماؤس پوائنٹر (منتخب کریں اگر پوائنٹر پوشیدہ ہے)</string>
+    <string name="rdp_server_empty">RDP سرور یا پورٹ خالی ہے۔مربوط نہیں ہو سکتا!</string>
+    <string name="rendering_mode">رینڈرنگ موڈ:</string>
+    <string name="rdp_adv_visual_styles">بصری طرزیں فعال کریں۔</string>
+    <string name="error_ovirt_timeout">آپ کے VM سے کنکشن کا وقت ختم ہو گیا۔براہ کرم چیک کریں کہ آپ کے VM کو چلانے والے نوڈ کا پتہ درست ہے، کہ یہ آپ کے موجودہ نیٹ ورک سے قابل رسائی ہے، اور یہ کہ کوئی فائر وال کنکشن کو مسدود نہیں کر رہا ہے۔</string>
+    <string name="extra_keys_enable">اضافی چابیاں فعال کریں۔</string>
+    <string name="showkbd_label">کی بورڈ</string>
+    <string name="audio">آڈیو</string>
+    <string name="ssh_x11vnc_customize">آٹو ایکس کو ترتیب دیں۔</string>
+    <string name="address_caption_ssh_hint">SSH سرور</string>
+    <string name="info_progress_dialog_connecting">منسلک ہو رہا ہے…</string>
+    <string name="donate_app">عطیہ کریں ❤</string>
+    <string name="rdp_security_rdp">آر ڈی پی سیکیورٹی</string>
+    <string name="applies_to_new_connections_only">صرف نئے کنکشنز پر لاگو ہوتا ہے۔</string>
+    <string name="spice_button_import_ca">CA درآمد کریں۔</string>
+    <string name="scaling_zoomable">زوم ایبل</string>
+    <string name="error_ssh_port_forwarding_failure">SSH پر VNC ٹریفک کو سرنگ کرنے کے لیے پورٹ فارورڈنگ کو ترتیب نہیں دیا جا سکا۔براہ کرم یقینی بنائیں کہ آپ کا SSH سرور پورٹ فارورڈنگ کی اجازت دینے کے لیے ترتیب دیا گیا ہے اور دوبارہ کوشش کریں۔</string>
+    <string name="rdp_adv_desktop_composition">ڈیسک ٹاپ کمپوزیشن کو فعال کریں۔</string>
+    <string name="scroll_speed">اسکرول اسپیڈ کو ٹچ کریں۔</string>
+    <string name="rdp_address_caption_hint">آر ڈی پی سرور</string>
+    <string name="send_button">بھیجیں۔</string>
+    <string name="love_our_work">ہمارا کام پسند ہے؟</string>
+    <string name="download_from_server">سرور سے ڈاؤن لوڈ کریں۔</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">آپ کے سرور کو کلیدی توثیق کے علاوہ پاس ورڈ کی توثیق کی ضرورت ہے۔</string>
+    <string name="input_method_single_handed">سنگل ہینڈڈ</string>
+    <string name="username_hint_ssh">SSH صارف نام</string>
+    <string name="auto_x_enabled">فعال</string>
+    <string name="password_hint_ssh">SSH پاس ورڈ</string>
+    <string name="audio_will_be_initialized">آڈیو تقریباً 15 سیکنڈ میں شروع ہو جائے گا، براہ کرم اس سے پہلے چلنے والی کسی بھی ویڈیو یا آڈیو پلے بیک کو روک دیں۔</string>
+    <string name="shortcut_label_vnc">VNC کنکشن</string>
+    <string name="auto_request_new_res">ریزولوشن ڈسپلے کرنے کے لیے ریموٹ کو سنک کریں۔</string>
+    <string name="color_256">256 رنگ (8 bpp)</string>
+    <string name="intro_title">bVNC: بدیہی، محفوظ VNC کلائنٹ</string>
+    <string name="error_x509_could_not_generate_encoding">سرٹیفکیٹ انکوڈنگ نہیں بن سکی۔</string>
+    <string name="rdp_security_tls">TLS سیکیورٹی</string>
+    <string name="action_import_settings">ترتیبات درآمد کریں۔</string>
+    <string name="single_cancel">سنگل ہینڈڈ موڈ منسوخ کر دیا گیا۔</string>
+    <string name="info_set_touchpad_input_mode">سرور رپورٹ کرتا ہے کہ یہ کلائنٹ موڈ ماؤس ان پٹ کو سپورٹ نہیں کرتا ہے، اور موجودہ ماؤس ان پٹ موڈ صحیح طریقے سے کام نہیں کرے گا۔اگر یہ برقرار رہتا ہے تو یقینی بنائیں کہ ورچوئل مشین میں اسپائس ٹولز انسٹال ہیں یا مینو سے نقلی ٹچ پیڈ ان پٹ موڈ پر جائیں۔</string>
+    <string name="email_us">ہمیں ای میل کریں 📧</string>
+    <string name="color_64">64 رنگ (4 bpp)</string>
+    <string name="ssh_key_generated">نئی کلید کامیابی کے ساتھ تیار یا درآمد کی گئی۔اب آپ اشتراک کرنے، کلپ بورڈ پر کاپی کرنے، یا عوامی کلید کو برآمد کرنے کے لیے \'کی پیدا/برآمد کریں\' بٹن پر ٹیپ کر سکتے ہیں۔</string>
+    <string name="repeater_button">الٹرا وی این سی ریپیٹر</string>
+    <string name="info_dialog_title">معلومات</string>
+    <string name="local_clipboard_integration">مقامی سے ریموٹ کلپ بورڈ انٹیگریشن کو فعال کریں۔</string>
+    <string name="cursor_force_local">مقامی</string>
+    <string name="list_caption">فہرست</string>
+    <string name="master_password_error_password_necessary">جاری رکھنے کے لیے ماسٹر پاس ورڈ درکار ہے۔</string>
+    <string name="ssh_use_pubkey">کلید استعمال کریں۔</string>
+    <string name="super_check">سپر</string>
+    <string name="enter_text">متن بھیجیں۔</string>
+    <string name="import_export_settings">📦 درآمد/برآمد کی ترتیبات</string>
+    <string name="info_progress_dialog_aborted">کنکشن ختم ہو گیا!</string>
+    <string name="input_method_single_handed_description">سنگل ہینڈڈ: ارد گرد پین کرنے کے لیے سوائپ کریں۔جہاں آپ بائیں کلک کرنا چاہتے ہیں وہاں ایک انگلی سے تھپتھپائیں۔بائیں/دائیں/درمیانی ڈریگ/اسکرول/زوم موڈ کو منتخب کرنے کے لیے لمبا تھپتھپائیں۔عام ملٹی ٹچ کنٹرولز بھی کام کرتے ہیں۔</string>
+    <string name="verification_code">تصدیقی کوڈ</string>
+    <string name="extra_keys_disable">اضافی چابیاں غیر فعال کریں۔</string>
+    <string name="rotate_dpad">بلوٹوتھ یا سافٹ ویئر ڈی پیڈ کو گھمائیں۔</string>
+    <string name="intro_close">بند</string>
+    <string name="master_password_error_shortcuts_not_supported">ماسٹر پاس ورڈ فعال ہونے پر شارٹ کٹس ابھی تک تعاون یافتہ نہیں ہیں۔</string>
+    <string name="enter_vnc_credentials">براہ کرم VNC کی اسناد درج کریں۔</string>
+    <string name="connection_edit">ترمیم کریں۔</string>
+    <string name="error_spice_unable_to_connect">مربوط یا تصدیق کرنے سے قاصر، براہ کرم سرور کا پتہ اور پورٹ چیک کریں۔</string>
+    <string name="remote_sound_on_server">ساؤنڈ آن سرور</string>
+    <string name="left_handed_mode">بائیں ہاتھ والا موڈ</string>
+    <string name="info_ssh_initializing_hostkey">SSH HostKey کو شروع کرنے کی کوشش کی جا رہی ہے۔</string>
+    <string name="connect_button">جڑیں۔</string>
+    <string name="ca_new_or_changed">نیا یا تبدیل شدہ سرور سرٹیفکیٹ</string>
+    <string name="close">بند</string>
+    <string name="master_password_verify">ماسٹر پاس ورڈ کی تصدیق کریں۔</string>
+    <string name="error_no_vnc_support_yet">VNC ڈسپلے کی قسم ابھی تک تعاون یافتہ نہیں ہے، لیکن یہ ایک آنے والی خصوصیت ہے۔آپ کی سمجھ کے لئے شکریہ!</string>
+    <string name="rdp_connection_settings">آر ڈی پی کنکشن کی ترتیبات</string>
+    <string name="immersive_mode_disable">عمیق موڈ کو غیر فعال کریں۔</string>
+    <string name="error_pve_null_data">Proxmox ورچوئل انوائرمنٹ نے null ڈیٹا واپس کیا۔</string>
+    <string name="auto_x_descript_geom">ریموٹ ڈیسک ٹاپ سائز (WxH)</string>
+    <string name="enter_passphrase">براہ کرم کلیدی پاسفریز درج کریں۔</string>
+    <string name="action_edit_default_settings">⚙ پہلے سے طے شدہ ترتیبات میں ترمیم کریں۔</string>
+    <string name="ca_spice_manage">SPICE CA کا نظم کریں۔</string>
+    <string name="color_mode">رنگ موڈ</string>
+    <string name="back_button">واپس جاؤ</string>
+    <string name="rate_app">شرح ⭐⭐⭐⭐⭐</string>
+    <string name="off">آف</string>
+    <string name="ssh_tunnel_settings">SSH ٹنل کی ترتیبات</string>
+    <string name="error_pve_vmid_not_numeric">VM ID عددی نہیں ہے۔براہ کرم ایک عددی VM ID درج کریں یا فہرست سے VM کو منتخب کرنے کے لیے خالی چھوڑ دیں۔</string>
+    <string name="cert_subject">سرٹیفکیٹ کا موضوع</string>
+    <string name="rdp_descript_geom">ریموٹ ڈیسک ٹاپ سائز (WxH)</string>
+    <string name="master_password_error_wrong_password">فراہم کردہ ماسٹر پاس ورڈ سے تصدیق نہیں ہو سکی۔</string>
+    <string name="error_pick_correct_item">براہ کرم یقینی بنائیں کہ آپ نے کنکشن کی قسم میں صحیح آئٹم کا انتخاب کیا ہے۔</string>
+    <string name="input_method_direct_drag_pan">براہ راست، پین کو پکڑو</string>
+    <string name="auto_rotation">منسلک ہونے کے دوران اسکرین کی گردش</string>
+    <string name="master_password_verify_message">جاری رکھنے کے لیے براہ کرم درست ماسٹر پاس ورڈ درج کریں۔</string>
+    <string name="error_connection_interrupted">رابطہ منقطع ہوگیا۔</string>
+    <string name="auto_x_descript_session">ریموٹ سیشن کی قسم</string>
+    <string name="action_new_connection">✚ نیا کنکشن</string>
+    <string name="enter_text_title">بھیجنے کے لیے متن درج کریں۔</string>
+    <string name="shortcut_label_rdp">آر ڈی پی کنکشن</string>
+    <string name="spice_address_caption_hint">اسپائس سرور</string>
+    <string name="rdp_geom_description_hint">سرور کو ExtendedDesktopSize سپورٹ کی ضرورت ہے۔</string>
+    <string name="audio_initialized">آڈیو شروع کر دیا گیا۔</string>
+    <string name="intro_text">bVNC خصوصیات کی موجودہ فہرست:
+&lt;br&gt;
+- سادہ VNC، SSH، AnonTLS، اور VeNCrypt پر محفوظ VNC، اور اختیاری ریپیٹر کے ساتھ الٹرا وی این سی ونڈوز لاگ ان۔
+&lt;br&gt;
+- آٹو ایکس موڈ: وی این سی اوور ایس ایس ایچ موڈ میں، خود بخود موجودہ دریافت کریں اور/یا x11vnc کا استعمال کرتے ہوئے نئے ایکس سیشن بنائیں! NX کلائنٹ کی طرح کام کرتا ہے۔
+&lt;br&gt;
+- مفت گردش کی حمایت۔اگر ضرورت ہو تو گردش کو محدود کرنے کے لیے آپریٹنگ سسٹم کا استعمال کریں۔
+&lt;br&gt;
+- SSH پبلک/پرائیویٹ کلیدی جوڑی کی پیداوار اور برآمد۔
+&lt;br&gt;
+- تمام معیاری VNC انکوڈنگز، بشمول Tight، ZRLE، اور CopyRect۔
+&lt;br&gt;
+- خودکار سیشن کی بچت۔
+&lt;br&gt;
+- زوم ایبل، اسکرین پر فٹ، اور ایک سے ایک اسکیلنگ موڈز۔
+&lt;br&gt;
+- براہ راست اور نقلی ٹچ پیڈ ان پٹ طریقوں میں ریموٹ ماؤس پر ملٹی ٹچ کنٹرول۔
+&lt;br&gt;
+- سنگل ہینڈڈ ان پٹ موڈ میں ریموٹ ماؤس پر مکمل سنگل ہینڈڈ کنٹرول۔
+&lt;br&gt;
+- ملٹی ٹچ ماؤس کلکس: بائیں کلک کرنے کے لیے تھپتھپائیں، دائیں کلک کرنے کے لیے دو انگلیوں سے تھپتھپائیں، درمیانی کلک کے لیے تین انگلیوں سے تھپتھپائیں۔
+&lt;br&gt;
+- ملٹی ٹچ اسکرولنگ: دو انگلیوں سے اوپر/نیچے، اور بائیں/دائیں سکرول کرنے کے لیے۔
+&lt;br&gt;
+- آن اسکرین میٹا اور ایرو کیز جو مینو سے مکمل طور پر غیر فعال یا آن اسکرین بٹن کے ساتھ رکھی جاسکتی ہیں۔
+&lt;br&gt;
+- منسلک ہونے پر متن اور صوابدیدی کلیدی امتزاج بھیجنا۔
+&lt;br&gt;
+- کنکشن اسکرین میں کنکشن بنانے میں مدد (\Menu-&gt;Connection Help\)۔
+&lt;br&gt;
+- منسلک ہونے پر ان پٹ موڈز (\Menu-&gt;More-&gt;Input Mode Help\) میں مدد کریں۔
+&lt;br&gt;
+- ماؤس کو حرکت دینے کے بجائے ایرو کے طور پر دستیاب ٹریک پیڈ کا استعمال کریں، اور ٹریک پیڈ کو Ctrl کے بطور کلک کریں۔
+&lt;br&gt;
+- کنکشن کے دوران پورٹریٹ موڈ پر سوئچ کرنا، BT کی بورڈز کے لیے D-pad/Trackpad کو گھومنا۔
+&lt;br&gt;
+- ملٹی لینگویج سپورٹ، جب تک کہ VNC سرور میں ضروری زبان کی ترتیب فعال ہو۔
+&lt;br&gt;
+- کاپی/پیسٹ انضمام
+&lt;br&gt;
+- ریموٹ مشین ریزولوشن تبدیلیاں
+&lt;br&gt;
+- Android 4.0+ آلات پر مکمل ماؤس سپورٹ، بشمول دائیں اور درمیانی کلک اور اسکرول وہیل۔
+&lt;br&gt;
+&lt;br&gt;
+معلوم مسائل:
+&lt;br&gt;</string>
+    <string name="color_greyscale">گرے اسکیل (1 bpp)</string>
+    <string name="share_app_toast">سوشل میڈیا پر اپنے تمام دوستوں کے ساتھ ایپ کا لنک شیئر کریں!</string>
+    <string name="force">فل سکرین بٹ میپ</string>
+    <string name="input_method_touchpad_description">نقلی ٹچ پیڈ: پوائنٹر کو منتقل کرنے کے لیے سوائپ کریں۔بائیں کلک کرنے کے لیے ایک انگلی سے، دائیں کلک کرنے کے لیے دو انگلیوں، اور درمیانی کلک کرنے کے لیے تین انگلیوں سے کہیں بھی تھپتھپائیں۔سکرول کرنے کے لیے دو انگلیوں سے سوائپ کریں۔گھسیٹنے اور چھوڑنے کے لیے لمبا تھپتھپائیں۔</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nآپ اس بات کو یقینی بنا سکتے ہیں کہ یہ سرور کے سرٹیفکیٹ کے معلوم فنگر پرنٹ سے مماثل ہے تاکہ درمیان میں ہونے والے حملے کو روکا جا سکے۔</string>
+    <string name="error_no_vm_found_for_user">دیئے گئے صارف کے لیے کوئی مجازی مشینیں دستیاب نہیں ہیں۔</string>
+    <string name="color_black_and_white">سیاہ اور سفید (1 bpp)</string>
+    <string name="auto">آٹو</string>
+    <string name="pro_feature_generic">ایسا لگتا ہے کہ آپ پرو فیچر استعمال کر رہے ہیں۔براہ کرم پرو ورژن خرید کر پروجیکٹ کی حمایت کریں جس میں اس خصوصیت کی حمایت ہے۔پرو ورژن کا لنک اسٹارٹ ڈائیلاگ میں دستیاب ہے۔</string>
+    <string name="rdp_geom_custom">حسب ضرورت</string>
+    <string name="default_input_mode">ڈیفالٹ ان پٹ موڈ</string>
+    <string name="repeater_empty_text">کوئی ریپیٹر نہیں۔</string>
+    <string name="ad_donate_text_rdp">اوپن سورس پروجیکٹ کو آپ کے تعاون کی ضرورت ہے!اے آر ڈی پی پرو خرید کر ہمیں عطیہ کریں، جو ساؤنڈ ری ڈائریکشن کو سپورٹ کرتا ہے۔aRDP پرو اور ہماری دوسری ایپس کے لنکس کے لیے نیچے دیکھیں۔</string>
+    <string name="spice_tls_port_hint">TLS پورٹ</string>
+    <string name="scaling">پیمانہ کاری</string>
+    <string name="spice_connection_settings">اسپائس کنکشن کی ترتیبات</string>
+    <string name="error_pve_failed_to_parse_json">Proxmox ورچوئل انوائرمنٹ سے جواب کو پارس کرنے میں ناکام۔</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL مصافحہ کی ناکامی۔سرور SSL سرٹیفکیٹ کے ساتھ ایک مسئلہ ہے۔اگر آپ خود دستخط شدہ سرٹیفکیٹ استعمال کر رہے ہیں، تو آپ کو اپنا سرٹیفکیٹ اتھارٹی (دوبارہ) درآمد کرنے کی ضرورت ہے۔</string>
+    <string name="connection_setup_user">User@Domain</string>
+    <string name="vnc_viewer_started">VNC Viewer شروع ہو گیا۔</string>
+    <string name="ca_subject">سرٹیفکیٹ کے مضمون کا نام یہاں درج کریں۔اگر سرٹیفکیٹ کامن نام (CN) سرور کے میزبان نام سے مماثل ہو تو اس کی ضرورت نہ ہو۔</string>
+    <string name="port_ssh_hint">بندرگاہ</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH سرور \publickey\ auth طریقہ کو سپورٹ نہیں کرتا ہے، اور ہم تصدیق کرنے کے لیے کلیدی جوڑا استعمال کرنے کی کوشش کر رہے ہیں۔براہ کرم اسے عوامی کلید کی تصدیق کی اجازت دینے کے لیے ترتیب دیں اور دوبارہ کوشش کریں۔دستیاب توثیق کے طریقے:</string>
+    <string name="username_caption">VNC صارف</string>
+    <string name="error_ssh_could_not_exec_command">ریموٹ کمانڈ پر عمل نہیں ہو سکا۔</string>
+    <string name="rdp_intro_text">عام طور پر aRDP اور اوپن سورس سافٹ ویئر کی حمایت کرنے کا شکریہ!اے آر ڈی پی استعمال کرنے میں مدد کے لیے، مینو میں ہیلپ آئٹمز اور مارکیٹ میں ایپ کی تفصیل دیکھیں۔
+&lt;br&gt;
+&lt;br&gt;
+اے آر ڈی پی خصوصیات کی موجودہ فہرست میں شامل ہیں:
+&lt;br&gt;
+- سادہ آر ڈی پی، آر ڈی پی ایس ایس ایچ پر سرنگ۔
+&lt;br&gt;
+- مفت گردش کی حمایت۔اگر ضرورت ہو تو گردش کو محدود کرنے کے لیے آپریٹنگ سسٹم کا استعمال کریں۔
+&lt;br&gt;
+- ریموٹ ریزولوشن کی ترتیب، لینڈ سکیپ اور پورٹریٹ موڈز میں مقامی ریزولوشن۔
+&lt;br&gt;
+- SSH پبلک/پرائیویٹ کلیدی جوڑی کی پیداوار اور برآمد۔
+&lt;br&gt;
+- خودکار سیشن کی بچت۔
+&lt;br&gt;
+- زوم ایبل، اسکرین پر فٹ، اور ایک سے ایک اسکیلنگ موڈز۔
+&lt;br&gt;
+- براہ راست اور نقلی ٹچ پیڈ ان پٹ طریقوں میں ریموٹ ماؤس پر ملٹی ٹچ کنٹرول۔
+&lt;br&gt;
+- سنگل ہینڈڈ ان پٹ موڈ میں ریموٹ ماؤس پر مکمل سنگل ہینڈڈ کنٹرول۔
+&lt;br&gt;
+- ملٹی ٹچ ماؤس کلکس: بائیں کلک کرنے کے لیے تھپتھپائیں، دائیں کلک کرنے کے لیے دو انگلیوں سے تھپتھپائیں، درمیانی کلک کے لیے تین انگلیوں سے تھپتھپائیں۔
+&lt;br&gt;
+- ملٹی ٹچ اسکرولنگ: دو انگلیوں سے اوپر/نیچے، اور بائیں/دائیں سکرول کرنے کے لیے۔
+&lt;br&gt;
+- آن اسکرین میٹا اور ایرو کیز جو مینو سے مکمل طور پر غیر فعال یا آن اسکرین بٹن کے ساتھ رکھی جاسکتی ہیں۔
+&lt;br&gt;
+- منسلک ہونے پر متن اور صوابدیدی کلیدی امتزاج بھیجنا۔
+&lt;br&gt;
+- کنکشن اسکرین میں کنکشن بنانے میں مدد (\Menu-&gt;Connection Help\)۔
+&lt;br&gt;
+- منسلک ہونے پر ان پٹ موڈز (\Menu-&gt;More-&gt;Input Mode Help\) میں مدد کریں۔
+&lt;br&gt;
+- ماؤس کو حرکت دینے کے بجائے تیر کے طور پر دستیاب ٹریک پیڈ کا استعمال کریں، اور ٹریک پیڈ کو Ctrl کے طور پر کلک کریں، BT کی بورڈز کے لیے D-pad/trackpad کو گھمائیں۔
+&lt;br&gt;
+- ملٹی لینگویج سپورٹ، جب تک کہ RDP سرور میں ضروری زبان کی ترتیب فعال ہو۔
+&lt;br&gt;
+- سیملیس ریموٹ مشین ریزولوشن تبدیلیاں
+&lt;br&gt;
+- Android 4.0+ آلات پر مکمل ماؤس سپورٹ، بشمول دائیں اور درمیانی کلک اور اسکرول وہیل۔
+&lt;br&gt;
+- رنگ کے طریقوں کا انتخاب
+&lt;br&gt;
+- کاپی/پیسٹ انضمام
+&lt;br&gt;
+- ترتیبات برآمد کرنا
+&lt;br&gt;
+--.آواز
+&lt;br&gt;
+&lt;br&gt;
+معلوم مسائل:</string>
+    <string name="tap_disable">غیر فعال کریں۔</string>
+    <string name="view_only">صرف دیکھنے کا موڈ</string>
+    <string name="save_button">محفوظ کریں۔</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">sudo پاس ورڈ نہیں بھیج سکا۔</string>
+    <string name="landscape_force">زمین کی تزئین کی واقفیت کو مجبور کریں۔</string>
+    <string name="export_settings">برآمد کریں۔</string>
+    <string name="keyboard_type">سافٹ ویئر کی بورڈ کی قسم</string>
+    <string name="hide_connection_thumbnails">کنکشن تھمب نیلز چھپائیں۔</string>
+    <string name="input_method_direct_drag_pan_description">ڈائریکٹ، ہولڈ پین: ڈریگ اور ڈراپ کرنے کے لیے سوائپ کریں۔جہاں آپ بائیں کلک کرنا چاہتے ہیں وہاں ایک انگلی سے تھپتھپائیں، دائیں کلک کرنے کے لیے دو انگلیاں، اور درمیانی کلک کرنے کے لیے تین انگلیاں۔سکرول کرنے کے لیے دو انگلیوں سے سوائپ کریں۔پیننگ شروع کرنے کے لیے لمبا تھپتھپائیں۔</string>
+    <string name="panning">پیننگ اسکرین</string>
+    <string name="remote_clipboard_integration">ریموٹ سے مقامی کلپ بورڈ انٹیگریشن کو فعال کریں۔</string>
+    <string name="rdp_connection_screen_help_text">جب آپ کسی کنکشن کو جوڑتے یا اس میں ترمیم کرتے ہیں، تو آپ کو کنکشن کنفیگریشن کا صفحہ نظر آئے گا۔یہاں آپ ایک نیا RDP کنکشن ترتیب دے سکتے ہیں، یا پہلے سے موجود کو منتخب کر سکتے ہیں۔سب سے اوپر ایک بٹن ہے جو آپ کو کنکشن کو بچانے کی اجازت دیتا ہے۔اس کے نیچے آپ اپنا کنکشن کنفیگر کرتے ہیں۔
+
+- کنکشن کی قسم: یہاں آپ RDP کنکشن کی قسم کا انتخاب کرتے ہیں۔دستیاب کنکشن کی اقسام ہیں:
+(a) RDP، جو RDP پروٹوکول پر کمپیوٹر سے براہ راست جڑتا ہے۔
+(b) SSH پر RDP، جو پہلے SSH سرور چلانے والے کمپیوٹر کے ذریعے آپ کے کنکشن کو سرنگ کرتا ہے۔
+
+- عنوان: آپ جو بھی کنکشن بناتے ہیں اس کا لسٹ میں آسانی سے شناخت کرنے کے لیے ایک عرفی نام ہو سکتا ہے۔
+
+- SSH ٹنل کی ترتیبات: SSH موڈ پر RDP میں دستیاب ہے۔
+(a) SSH سرور/پورٹ: SSH سرور کا پتہ اور پورٹ جس کے ذریعے کنکشن کو سرنگ کیا جائے گا۔بطور ڈیفالٹ SSH پورٹ 22 پر سنتا ہے۔
+(b) صارف کا نام/پاس ورڈ: SSH سرور پر اکاؤنٹ کا صارف نام اور پاس ورڈ۔پاس ورڈ اس صفحہ پر بھرا جائے گا اگر آپ نے ایپ کو آخری بار داخل کرنے کے بعد سے اسے چھوڑا نہیں ہے۔
+(c) کلید کا نظم کریں/کی استعمال کریں: عوامی/نجی کلیدوں کو منظم کرنے کے لیے ایک بٹن، اور ایک چیک باکس جو اس بات کی نشاندہی کرتا ہے کہ آیا تصدیق کے لیے پاس ورڈ کے بجائے کلید کا استعمال کرنا ہے۔اگر آپ کلیدی جوڑا بنانے کے بعد کاپی ٹو کلپ بورڈ بٹن استعمال کرتے ہیں، تو آپ کو RDP سرور سے منسلک ہونے کے بعد عوامی کلید کو پیسٹ کرنے کے قابل ہونا چاہیے (کلپ بورڈ سرور کے ساتھ مطابقت پذیر ہے)۔
+
+- آر ڈی پی کنکشن کی ترتیبات:
+(a) RDP سرور/پورٹ: یہ وہ جگہ ہے جہاں آپ RDP سرور چلانے والے کمپیوٹر کا میزبان نام یا IP پتہ اور پورٹ درج کرتے ہیں جس سے آپ رابطہ کرنا چاہتے ہیں۔RDP اوور SSH موڈ میں، یہ پتہ SSH سرور سے دیکھا جاتا ہے۔اگر SSH سرور اور RDP سرور ایک ہی جسمانی کمپیوٹر ہیں، تو آپ لوکل ہوسٹ استعمال کر سکتے ہیں۔RDP سرور عام طور پر پورٹ 3389 پر سنتے ہیں۔
+(b) RDP صارف: یہ وہ جگہ ہے جہاں آپ اپنے Windows/UNIX اکاؤنٹ کا صارف نام درج کرتے ہیں۔
+(c) RDP ڈومین: وہ ڈومین درج کریں جس سے آپ کا اکاؤنٹ ہے۔
+(d) RDP پاس ورڈ: یہ وہ جگہ ہے جہاں آپ اپنے Windows/UNIX اکاؤنٹ کا پاس ورڈ درج کرتے ہیں۔محفوظ اسٹوریج پاس ورڈز کے لیے استعمال نہیں کیا جاتا ہے (وہ ڈیٹا بیس میں ہیں)، اور پاس ورڈ صرف اس صورت میں محفوظ کیا جائے گا جب آپ Keep باکس کو چیک کریں۔پاس ورڈ اس صفحہ پر بھرا جائے گا اگر آپ نے ایپ کو آخری بار داخل کرنے کے بعد سے اسے چھوڑا نہیں ہے۔
+
+- اعلی درجے کی ترتیبات: اس سیکشن میں آپ کو ڈیسک ٹاپ کی ریزولوشن کو اپنی مرضی کے مطابق بنانے کے طریقے اور RDP کی کارکردگی کے مختلف طریقے ملیں گے۔
+
+- مقامی ڈیوائس ٹویکس: یہ آپ کے آلے پر ایپ کے رویے کو ایڈجسٹ کرتے ہیں۔
+(a) تیروں کے لیے D-Pad استعمال کریں: اگر آپ چاہیں تو RDP سرور کو تیر بھیجنے کے لیے آپ اپنے بلوٹوتھ کی بورڈ کا D-Pad یا اپنے آن اسکرین کی بورڈ پر تیر استعمال کر سکتے ہیں۔
+(b) D-Pad گھمائیں: بلوٹوتھ کی بورڈ کے ساتھ جوڑا بنائے گئے فونز کو سرور کو درست سمت بھیجنے کے لیے کی بورڈ کے ڈی پیڈ کو گھڑی کی مخالف سمت میں گھمانے کی ضرورت پڑ سکتی ہے۔
+(c) مقامی ماؤس پوائنٹر: اگر پوائنٹر پوشیدہ ہے، تو اسے ایپ کے ذریعے کھینچنے پر مجبور کرنے کے لیے اسے منتخب کریں۔</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">اسکرول موڈ - اسکرول کرنے کے لیے اوپر/نیچے سوائپ کریں، رکنے کے لیے انگلی اٹھائیں۔</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">زوم موڈ - زوم ان/آؤٹ کرنے کے لیے اوپر/نیچے سوائپ کریں، رکنے کے لیے انگلی اٹھائیں۔</string>
+    <string name="rdp_adv_console_mode">کنسول موڈ</string>
+    <string name="address_caption_hint_tunneled">VNC سرور</string>
+    <string name="arrow_right">دایاں تیر</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">متن/نمبر کوئی تجویز نہیں (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">SPICE صارف نام</string>
+    <string name="error_rdp_connection_failed">RDP کنکشن ناکام ہو گیا!یا تو نیٹ ورک کنیکٹیویٹی میں خلل پڑا تھا، RDP سرور کو آف یا غیر فعال کر دیا گیا تھا، یا آپ کا سیشن سنبھال لیا گیا تھا۔</string>
+    <string name="arrow_left">بائیں تیر</string>
+    <string name="connection_type_vnc_over_stunnel">SSL ٹنل پر VNC کو محفوظ کریں۔</string>
+    <string name="report_bug">ایک بگ کی اطلاع دیں 🐛</string>
+    <string name="warning_cert_does_not_match">انتباہ: محفوظ کردہ x509 سرٹیفکیٹ یا دستخط میں پاس کردہ موجودہ سرور سرٹیفکیٹ سے میل نہیں کھاتا!یہ درمیانی حملہ ہو سکتا ہے۔اگر آپ کلیدی تبدیلی سے واقف ہیں تو آپ آگے بڑھ سکتے ہیں۔</string>
+    <string name="more_apps">مزید ایپس 📱</string>
+    <string name="auto_x_disabled">معذور</string>
+    <string name="pro_feature_mfa">ایسا لگتا ہے کہ آپ کے سرور پر ملٹی فیکٹر توثیق فعال ہے۔براہ کرم پرو ورژن خرید کر پروجیکٹ کی حمایت کریں جس میں اس خصوصیت کی حمایت ہے۔پرو ورژن کا لنک اسٹارٹ ڈائیلاگ میں دستیاب ہے۔</string>
+    <string name="no_application_to_handle_vpn">یہ کنکشن ایک بیرونی ایپ کے ذریعے VPN لانچ کرنے کے لیے سیٹ کیا گیا ہے۔اسے لانچ کرنے کے لیے آپ کو Morpheusly جیسی ایپ انسٹال کرنے کی ضرورت ہے۔</string>
+    <string name="port_caption_ssh">ایس ایس ایچ پورٹ</string>
+    <string name="arrow_down">نیچے کا تیر</string>
+    <string name="pro_feature_spice">ایسا لگتا ہے کہ آپ نے ایک .vv فائل کھولنے کی کوشش کی ہے۔اگر آپ Proxmox یا oVirt کے کنکشنز کو ایپ کے اندر ہی محفوظ کرنا چاہتے ہیں اور .vv فائلیں بھی کھولنا چاہتے ہیں تو اوپیک خریدنے پر غور کریں۔اگر آپ کو صرف .vv فائل سپورٹ کی ضرورت ہے، تو آپ اسپیس پرو حاصل کر سکتے ہیں۔اسٹارٹ ڈائیلاگ میں دونوں ایپس کے لنکس تلاش کریں۔</string>
+    <string name="error_vnc_unable_to_connect">VNC سرور سے کنکشن اس وجہ سے ناکام ہو گیا:</string>
+    <string name="rdp_password_hint">آر ڈی پی پاس ورڈ</string>
+    <string name="custom_ca_paste">CA یہاں چسپاں کریں (اگر درآمد نہیں کررہے ہیں)</string>
+    <string name="cursor_mode">کرسر موڈ:</string>
+    <string name="local_device_tweaks">مقامی ڈیوائس ٹویکس</string>
+    <string name="disconnect">منقطع کرنا</string>
+    <string name="ad_donate_text0">پرو ورژن میں ملٹی فیکٹر ایس ایس ایچ کی توثیق کے لیے بھی سپورٹ ہے۔اس کے علاوہ، یہ بہت زیادہ مطلوبہ ماسٹر پاس ورڈ کی خصوصیت کو سپورٹ کرتا ہے جو غیر مجاز استعمال کو روکتا ہے اور چوری سے بچنے کے لیے پاس ورڈز اور SSH کلیدوں سمیت تمام کنکشن سیٹنگز کو انکرپٹ کرتا ہے۔مین مینو سے اسے فعال کریں۔</string>
+    <string name="info_cert_signatures_identical">\n\nآپ اس بات کو یقینی بنا سکتے ہیں کہ معلومات سرور کے سرٹیفکیٹ سے مماثل ہے تاکہ درمیان میں ہونے والے حملے کو روکا جا سکے۔</string>
+    <string name="button_send_without_saving">متن بھیجیں/ اسے محفوظ نہ کریں۔</string>
+    <string name="single_right">دائیں ڈریگ موڈ - گھسیٹنے/منتخب کرنے کے لیے سوائپ کریں، رکنے کے لیے انگلی اٹھائیں</string>
+    <string name="error_ssh_pwd_auth_fail">پاس ورڈ کے ساتھ SSH سرور سے تصدیق کرنے میں ناکام۔براہ کرم اپنا SSH صارف نام، اور SSH پاس ورڈ چیک کریں۔</string>
+    <string name="select_vm_title">ورچوئل مشین منتخب کریں۔</string>
+    <string name="ad_donate_text_spice">Proxmox اور oVirt کنکشنز کے لیے، براہ کرم Opaque یا aSPICE Pro خرید کر پروجیکٹ کو عطیہ کریں۔ASPICE کا مفت ورژن صرف KVM ورچوئل مشینوں سے براہ راست رابطوں کی حمایت کرتا ہے۔Opaque اور aSPICE Pro کے ساتھ ساتھ ہماری دیگر ایپس کے لنکس کے لیے نیچے دیکھیں۔</string>
+    <string name="enter_password">براہ کرم پاس ورڈ درج کریں۔</string>
+    <string name="main_screen_help_text">جب ایپلیکیشن لانچ ہوتی ہے تو یہ ایک اسکرین دکھاتی ہے جس میں محفوظ کردہ کنکشن ہوتے ہیں۔
+
+اگر کوئی محفوظ شدہ کنکشن نہیں ہے تو، اسکرین کا نچلا حصہ خالی ہے، اور آپ کو نیا بنانے کے لیے پلس بٹن کو دبانا ہوگا۔
+آپ اس اسکرین سے کنفیگریشن کے دیگر پہلوؤں کو بھی اوپر سے دوسرے ٹول بار یا مینو کے اختیارات پر ٹیپ کر کے کنٹرول کر سکتے ہیں۔
+مثال کے طور پر پہلے سے طے شدہ ترتیبات میں ترمیم کرنا، یا درآمد اور برآمد کی ترتیبات۔
+
+ایک بار جب آپ کا کنکشن محفوظ ہوجاتا ہے، تو آپ اسے ایک بار تھپتھپا کر ریموٹ سرور سے جڑ سکتے ہیں۔آپ کے پاس اسے دیر تک تھپتھپا کر حذف کرنے یا ترمیم کرنے کا انتخاب بھی ہوگا۔
+
+آخر میں، آپ دکھائے گئے کنکشنز کو فلٹر کرکے تیزی سے کنکشن تلاش کرنے کے لیے سرچ کنکشنز فیلڈ کا استعمال کرسکتے ہیں۔</string>
+    <string name="intro_dont_show">دوبارہ مت دکھائیں۔</string>
+    <string name="action_export_settings">ترتیبات برآمد کریں۔</string>
+    <string name="error_ssh_hostkey_changed">غلطی!سرور کی میزبان کلید بدل گئی ہے۔اگر یہ جان بوجھ کر ہے، تو آپ جاری رکھ سکتے ہیں۔دوسری صورت میں، یہ درمیانی حملے میں ایک آدمی ہو سکتا ہے.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">x11vnc سے ریموٹ VNC پورٹ حاصل نہیں کیا جا سکا۔براہ کرم یقینی بنائیں کہ x11vnc انسٹال ہے۔یقینی بنانے کے لیے، کمانڈ لائن پر ہاتھ سے x11vnc چلانے کی کوشش کریں۔</string>
+    <string name="error_failed_to_obtain_content">فائل حاصل کرنے میں ناکام۔براہ کرم اسے دوبارہ ڈاؤن لوڈ کریں لیکن اس بار اسے فائل مینیجر میں ڈاؤن لوڈ فولڈر سے جلدی سے کھولیں۔</string>
+    <string name="show_menu">مینو دکھائیں۔</string>
+    <string name="auto_x_unix_auth">فراہم کردہ SSH صارف نام/پاس ورڈ کا استعمال کرتے ہوئے خود بخود تصدیق کریں (بلیک لاگ ان اسکرین پر)۔</string>
+    <string name="previous_versions">پچھلے ورژن ⍼</string>
+    <string name="auto_x_xvnc">تلاش کریں یا Xvnc کے ساتھ تخلیق کریں۔</string>
+    <string name="auto_x_find">صرف تلاش کریں، تخلیق نہ کریں۔</string>
+    <string name="port_caption">VNC پورٹ</string>
+    <string name="delete_key">منتخب کلید کو حذف کریں۔</string>
+    <string name="cert_fingerprint">سرٹیفکیٹ فنگر پرنٹ</string>
+    <string name="enter_vnc_password">براہ کرم VNC پاس ورڈ درج کریں۔</string>
+    <string name="port_hint">بندرگاہ</string>
+    <string name="import_from_file">فائل سے درآمد کریں۔</string>
+    <string name="error_rdp_unable_to_connect">RDP سرور سے منسلک نہیں ہو سکا!براہ کرم یقینی بنائیں کہ RDP سرور کی ترتیب درست ہے، سرور آن ہے، RDP فعال ہے، اور یہ کہ سرور اسی نیٹ ورک پر ہے جس پر یہ آلہ ہے۔</string>
+    <string name="rdp_geom_disabled">معذور</string>
+    <string name="ad_donate_spice_text1b">پرو ورژن خریدنے کے لیے یہاں تھپتھپائیں اور صرف .vv فائلیں کھولیں۔</string>
+    <string name="spice_ca_file_error_reading">CA فائل کو پڑھنے میں خرابی۔براہ کرم یقینی بنائیں کہ یہ پڑھنے کے قابل ہے۔</string>
+    <string name="info_vm_launched_on_stand_by">آپ کا VM بند پایا گیا اور اسے شروع کر دیا گیا ہے۔براہ کرم چند منٹ میں دوبارہ کوشش کریں۔اگر آپ بہت جلد کوشش کرتے ہیں اور کنکشن فیل ہو جاتے ہیں، تو بعد میں دوبارہ کوشش کریں۔</string>
+    <string name="special_keys">چابیاں بھیجیں۔</string>
+    <string name="error_failed_to_download_http">HTTP پر فائل ڈاؤن لوڈ کرنے میں ناکام۔شاید آپ کا سرور ناقابل رسائی ہے۔</string>
+    <string name="rdp_geom_automatic">خودکار</string>
+    <string name="portrait_mode">منسلک ہونے پر پورٹریٹ موڈ پر سوئچ کریں۔</string>
+    <string name="master_password_set_error">پاس ورڈز مماثل نہیں ہیں، براہ کرم ہوشیار رہیں!</string>
+    <string name="enter_ssh_credentials">براہ کرم SSH اسناد درج کریں۔</string>
+    <string name="rdp_adv_gfx">آر ڈی پی جی ایف ایکس</string>
+    <string name="repeater_dialog_title">ریپیٹر کے پیچھے VNC سرور</string>
+    <string name="prefer_sending_unicode">یونیکوڈ ان پٹ (صرف ونڈوز)</string>
+    <string name="auto_x_caption">ایپلیکیشن خود بخود موجودہ کو دریافت کر سکتی ہے اور Linux/UNIX سسٹم (NX کی طرح) پر نئے X سیشن بنا سکتی ہے۔آپ کو تلاش کرنے کے لیے x11vnc، اور سیشن بنانے کے لیے Xvfb، Xvnc، یا Xdummy کی ضرورت ہے۔اگر آپ کو جڑنے میں دشواری ہو رہی ہے تو، آٹو ایکس ایڈوانسڈ سیٹنگز میں ایک مخصوص ریموٹ سیشن کی قسم کو منتخب کرنے کی کوشش کریں۔</string>
+    <string name="auto_x_confirm">تصدیق کریں۔</string>
+    <string name="position_toolbar_last_used">ٹول بار کی پوزیشن کو بحال کریں۔</string>
+    <string name="error_no_such_vm_found_for_user">دیے گئے صارف کے لیے فراہم کردہ ID کے ساتھ کوئی ورچوئل مشین نہیں ملی۔VMs کی فہرست حاصل کرنے کے لیے ID کو مٹا دیں۔</string>
+    <string name="single_middle">درمیانی ڈریگ موڈ - ڈریگ/منتخب کرنے کے لیے سوائپ کریں، رکنے کے لیے انگلی اٹھائیں</string>
+    <string name="info_encoding">انکوڈنگ،</string>
+    <string name="rdp_geom_native_portrait">مقامی پورٹریٹ</string>
+    <string name="input_mode">ان پٹ موڈ</string>
+    <string name="action_delete_connection">کنکشن حذف کریں۔</string>
+    <string name="keys_caption">چابیاں</string>
+    <string name="single_left">بائیں گھسیٹنے کا موڈ - گھسیٹنے/منتخب کرنے کے لیے سوائپ کریں، رکنے کے لیے انگلی اٹھائیں</string>
+    <string name="vv_file_error">.vv فائل یا تو غائب ہے یا کرپٹ ہے!</string>
+    <string name="connection_delete">حذف کریں۔</string>
+    <string name="info_progress_dialog_establishing">مصافحہ قائم کیا جا رہا ہے۔\nبراہ کرم انتظار کریں…</string>
+    <string name="keep_password_button">رکھو</string>
+    <string name="auto_x_find_login">ایکس لاگ ان تلاش کریں (سوڈو کی ضرورت ہے)</string>
+    <string name="ssh_use_x11vnc">آٹو ڈیسک ٹاپ</string>
+    <string name="address_caption_ssh">SSH سرور</string>
+    <string name="spice_password_hint">اسپائس پاس ورڈ</string>
+    <string name="cursor_force_disable">غیر فعال کریں۔</string>
+    <string name="master_password_error_password_not_set">ماسٹر پاس ورڈ کی ترتیب منسوخ کر دی گئی۔</string>
+    <string name="info_update_color_model_to">رنگین ماڈل کو اپ ڈیٹ کر رہا ہے۔</string>
+    <string name="rdp_adv_menu_animation">مینو متحرک تصاویر دکھائیں۔</string>
+    <string name="input_method_help">ان پٹ طریقہ مدد</string>
+    <string name="enable_recording">ریکارڈنگ کو فعال کریں۔</string>
+    <string name="path_to_ca">فائل کا راستہ درج کریں (مثال کے طور پر /sdcard/ca-cert.pem) اور اپنے سرٹیفکیٹ اتھارٹی کو لوڈ کرنے کے لیے امپورٹ کو تھپتھپائیں۔</string>
+    <string name="nickname_caption_hint">عنوان (اختیاری)</string>
+    <string name="connection_caption">کنکشن</string>
+    <string name="pan_follow_mouse">پین ماؤس کی پیروی کرتا ہے۔</string>
+    <string name="rdp_geom_native_landscape">مقامی لینڈ سکیپ</string>
+    <string name="meta_key_title">خصوصی چابیاں بھیجیں۔</string>
+    <string name="move_toolbar">ٹول بار کو منتقل کریں۔</string>
+    <string name="input_mode_fit_to_screen">کوئی پین نہیں؛ٹریک بال ماؤس</string>
+    <string name="enable_sound">آواز کو فعال کریں۔</string>
+    <string name="error_security_type">سرور نے تعاون یافتہ سیکورٹی قسم کی پیشکش نہیں کی۔</string>
+    <string name="connection_type_text">ورچوئلائزیشن ماحولیات (RHEV/oVirt یا Proxmox)</string>
+    <string name="connection_setup_host_name">سرور کا پتہ</string>
+    <string name="vnc_server_empty_no_save">VNC سرور یا پورٹ خالی۔کنکشن محفوظ نہیں کیا جا سکتا!</string>
+    <string name="ca_ovirt_manage">RHEV/oVirt CA کا نظم کریں۔</string>
+    <string name="manage_custom_ca_title">حسب ضرورت CA کا نظم کریں۔</string>
+    <string name="ca_file_not_found">فائل نہیں ملی۔براہ کرم ٹیکسٹ فیلڈ میں فائل کا درست نام درج کریں (جیسے /sdcard/ca.crt)۔</string>
+    <string name="master_password_set_message">براہ کرم ایک ماسٹر پاس ورڈ درج کریں اور حفظ کریں۔آپ کا پاس ورڈ جتنا لمبا ہوگا، اسے کریک کرنا اتنا ہی مشکل ہوگا۔اگر آپ اپنا پاس ورڈ غلط سیٹ کرتے ہیں یا بھول جاتے ہیں، تو آپ اپنی تمام ترتیبات کھو دیں گے!ہو سکتا ہے کہ آپ اپنی سیٹنگز کا بیک اپ لینے کے لیے ابھی ایکسپورٹ کرنا چاہیں (مینو سے)۔انہیں محفوظ طریقے سے اسٹور کریں کیونکہ برآمد شدہ ترتیبات کو خفیہ نہیں کیا گیا ہے۔</string>
+    <string name="repeater_clear">استعمال نہ کریں۔</string>
+    <string name="ad_donate_text3">اگر آپ اس پروجیکٹ کو مزید سپورٹ کرنا چاہتے ہیں، تو کلائنٹ ایپس کے لنکس کے لیے درج ذیل لنکس پر عمل کریں:</string>
+    <string name="vnc_connection_settings">VNC کنکشن کی ترتیبات</string>
+    <string name="vnc_connection_screen_help_text">سرور پر آئنز۔   - مقامی ماؤس پوائنٹر: کچھ VNC سرورز (جیسے OS/X ریموٹ ڈیسک ٹاپ) کلائنٹ پر ماؤس پوائنٹر نہیں کھینچیں گے۔ اس آپشن کو چیک کرنے سے ایپلیکیشن ماؤس کی پوزیشن پر ماؤس پوائنٹر کھینچ لے گی۔   - آٹو/فُل اسکرین بٹ میپ: VNC کلائنٹ ریموٹ ڈسپلے کی نمائندگی کرنے کے لیے بٹ میپ استعمال کرتا ہے۔ بہت بڑے ریموٹ ڈسپلے کے لیے، خاص طور پر فٹ ٹو اسکرین موڈ میں، فی پروسیس میموری کی حدود کی وجہ سے، جب آپ فٹ ٹو اسکرین موڈ میں ہوتے ہیں تو آپ کو عجیب بصری نمونے کا سامنا کرنا پڑ سکتا ہے۔ اگر ایسا ہوتا ہے تو، اس اختیار کو چیک کرنے کی کوشش کریں۔ ذہن میں رکھیں کہ آپشن کو چیک کرنے سے ایپلیکیشن کنکشن پر بند ہو سکتی ہے۔   - ریپیٹر: صرف الٹرا وی این سی موڈ میں دستیاب ہے۔ اہم: اگر آپ کے پاس الٹرا وی این سی ریپیٹر ہے، تو اس کا پتہ اور پورٹ \\\'الٹرا وی این سی ریپیٹر\\\' ڈائیلاگ کے باہر درج کریں اور \\\'الٹرا وی این سی ریپیٹر\\\' ڈائیلاگ کے اندر اصل VNC سرور کا پتہ اور پورٹ درج کریں۔ VNC سرور کے ایڈریس اور پورٹ کو بڑی آنت کے ساتھ الگ کریں، جیسے 192.168.0.100:5900۔</string>
+    <string name="master_password_enable">🔒 ماسٹر پاس ورڈ کو فعال کریں۔</string>
+    <string name="new_list_button">نئی فہرست</string>
+    <string name="spice_intro_text">عام طور پر aSPICE اور اوپن سورس سافٹ ویئر کی حمایت کرنے کا شکریہ! ASPICE استعمال کرنے میں مدد کے لیے، مینو میں ہیلپ آئٹمز اور مارکیٹ میں ایپ کی تفصیل دیکھیں۔
+&lt;br&gt;
+&lt;br&gt;
+ASPICE خصوصیات کی موجودہ فہرست میں شامل ہیں:
+&lt;br&gt;
+- سادہ اسپائس، اسپائس کو SSH پر سرنگ کیا گیا۔
+&lt;br&gt;
+- مفت گردش کی حمایت۔اگر ضرورت ہو تو گردش کو محدود کرنے کے لیے آپریٹنگ سسٹم کا استعمال کریں۔
+&lt;br&gt;
+- SSH پبلک/پرائیویٹ کلیدی جوڑی کی پیداوار اور برآمد۔
+&lt;br&gt;
+- خودکار سیشن کی بچت۔
+&lt;br&gt;
+- زوم ایبل، اسکرین پر فٹ، اور ایک سے ایک اسکیلنگ موڈز۔
+&lt;br&gt;
+- براہ راست اور نقلی ٹچ پیڈ ان پٹ طریقوں میں ریموٹ ماؤس پر ملٹی ٹچ کنٹرول۔
+&lt;br&gt;
+- سنگل ہینڈڈ ان پٹ موڈ میں ریموٹ ماؤس پر مکمل سنگل ہینڈڈ کنٹرول۔
+&lt;br&gt;
+- ملٹی ٹچ ماؤس کلکس: بائیں کلک کرنے کے لیے تھپتھپائیں، دائیں کلک کرنے کے لیے دو انگلیوں سے تھپتھپائیں، درمیانی کلک کے لیے تین انگلیوں سے تھپتھپائیں۔
+&lt;br&gt;
+- ملٹی ٹچ اسکرولنگ: دو انگلیوں سے اوپر/نیچے، اور بائیں/دائیں سکرول کرنے کے لیے۔
+&lt;br&gt;
+- آن اسکرین میٹا اور ایرو کیز جو مینو سے مکمل طور پر غیر فعال یا آن اسکرین بٹن کے ساتھ رکھی جاسکتی ہیں۔
+&lt;br&gt;
+- منسلک ہونے پر متن اور صوابدیدی کلیدی امتزاج بھیجنا۔
+&lt;br&gt;
+- کنکشن اسکرین میں کنکشن بنانے میں مدد (\Menu-&gt;Connection Help\)۔
+&lt;br&gt;
+- منسلک ہونے پر ان پٹ موڈز (\Menu-&gt;More-&gt;Input Mode Help\) میں مدد کریں۔
+&lt;br&gt;
+- ماؤس کو حرکت دینے کے بجائے تیر کے طور پر دستیاب ٹریک پیڈ کا استعمال کریں، اور ٹریک پیڈ کو Ctrl کے طور پر کلک کریں، BT کی بورڈز کے لیے D-pad/trackpad کو گھمائیں۔
+&lt;br&gt;
+- ملٹی لینگویج سپورٹ، جب تک کہ SPICE سرور میں ضروری زبان کی ترتیب فعال ہو۔
+&lt;br&gt;
+- سیملیس ریموٹ مشین ریزولوشن تبدیلیاں
+&lt;br&gt;
+- Android 4.0+ آلات پر مکمل ماؤس سپورٹ، بشمول دائیں اور درمیانی کلک اور اسکرول وہیل۔
+&lt;br&gt;
+&lt;br&gt;
+منصوبہ بند خصوصیات:
+&lt;br&gt;
+- کاپی/پیسٹ انضمام
+&lt;br&gt;
+--.آواز
+&lt;br&gt;
+- کارکردگی میں بہتری
+&lt;br&gt;
+معلوم مسائل:
+&lt;br&gt;
+- متن بھیجیں کچھ علامتیں نہیں بھیجتی ہیں۔
+&lt;br&gt;</string>
+    <string name="info">معلومات</string>
+    <string name="connection_edit_delete_prompt">کیا آپ کنکشن میں ترمیم یا حذف کرنا چاہتے ہیں؟</string>
+    <string name="connection_type_caption">کنکشن کی قسم</string>
+    <string name="usb">USB (او ٹی جی کیبل پہلے پلگ ان کریں)</string>
+    <string name="connection_type_vnc_over_vencrypt">VeNCrypt پر VNC کو محفوظ کریں۔</string>
+    <string name="log_copied">Logcat کو کلپ بورڈ پر کاپی کیا گیا۔اب آپ اسے ای میل یا سپورٹ فورم پر چسپاں کر سکتے ہیں۔براہ کرم پوسٹ کرنے سے پہلے کسی بھی ذاتی ڈیٹا کو دیکھیں۔</string>
+    <string name="disable_pointer_offset_correction">پوائنٹر آفسیٹ اصلاح کو غیر فعال کریں۔</string>
+    <string name="password_caption_hint">VNC پاس ورڈ</string>
+    <string name="user_not_specified">صارف کی وضاحت نہیں کی گئی ہے۔</string>
+    <string name="connection_type_vnc_over_ssl">AnonTLS پر VNC کو محفوظ کریں۔</string>
+    <string name="pro_feature_intro">ایسا لگتا ہے کہ آپ پرو فیچر استعمال کر رہے ہیں۔براہ کرم پرو ورژن خرید کر پروجیکٹ کی حمایت کریں جس میں اس خصوصیت کی حمایت ہے۔براہ کرم درست ایپ کے لنکس کے لیے انٹرو ڈائیلاگ چیک کریں۔</string>
+    <string name="shift_check">شفٹ</string>
+    <string name="error_ssh_keypair_missing">SSH کلیدی جوڑا ابھی تک تیار نہیں ہوا!براہ کرم ایک بنائیں اور (اس کا عوامی حصہ) SSH سرور پر مجاز_کیز میں ڈالیں۔</string>
+    <string name="error_connection_failed">کنکشن ناکام ہو گیا۔</string>
+    <string name="info_cert_tunnel">کیا آپ مندرجہ ذیل سرٹیفکیٹ کے ذریعہ شناخت شدہ میزبان سے رابطہ قائم کرنا چاہتے ہیں؟  فنگر پرنٹ: %1$s  جاری کردہ: %2$s  جاری کردہ: %3$s  سے درست: %4$s  تک درست ہے: %5$s  نوٹ: درخواست سرٹیفکیٹ حکام کی تصدیق نہیں کرتی ہے یا سرٹیفکیٹ کی منسوخی کی جانچ نہیں کرتی ہے۔</string>
+    <string name="info_continue_connecting">اس سے جڑنا جاری رکھیں:</string>
+    <string name="connection_type_vnc_over_ssh">SSH پر VNC کو محفوظ کریں۔</string>
+    <string name="advanced_settings">اعلی درجے کی ترتیبات</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">پاسفریز فراہم کیا گیا ہے لیکن کلیدی جوڑا مرموز نہیں ہے۔براہ کرم پاس فریز حذف کریں۔</string>
+    <string name="vnc_server_empty">VNC سرور یا پورٹ خالی۔مربوط نہیں ہو سکتا!</string>
+    <string name="error_uri_parse_error">Intent URI کو پارس کرنے سے قاصر۔براہ کرم URI فارمیٹ چیک کریں۔مزید تفصیلات کے لیے آپ ڈیوائس لاگ کیٹ بھی دیکھ سکتے ہیں۔</string>
+    <string name="username_hint_vencrypt">VNC صارف نام</string>
+    <string name="error_vv_download_timeout">وی وی فائل کو ڈاؤن لوڈ کرنے کا ٹائم آؤٹ۔</string>
+    <string name="center_mouse">ماؤس @</string>
+    <string name="show_keyboard">کی بورڈ دکھائیں۔</string>
+    <string name="info_cert_signatures">سرٹیفکیٹ کی معلومات یہ ہے:</string>
+    <string name="rdp_username_hint">RDP صارف نام</string>
+    <string name="connection_type_vnc">بنیادی VNC</string>
+    <string name="rdp_security_nla">نیٹ ورک کی سطح کی توثیق</string>
+    <string name="ssh_pubkey_button">کلید کا نظم کریں۔</string>
+    <string name="ca_file_error_reading">CA فائل کو پڑھنے میں خرابی۔براہ کرم یقینی بنائیں کہ یہ پڑھنے کے قابل ہے۔</string>
+    <string name="master_password_error_intents_not_supported">ماسٹر پاس ورڈ کے فعال ہونے پر کنکشن کے ارادے ابھی تک تعاون یافتہ نہیں ہیں۔</string>
+    <string name="input_method_direct_swipe_pan">ڈائریکٹ، سوائپ پین</string>
+    <string name="update_button">اپڈیٹ کریں۔</string>
+    <string name="input_mode_panning">ڈیسک ٹاپ پیننگ موڈ</string>
+    <string name="search_connections">کنکشن تلاش کریں۔</string>
+    <string name="error_x509_could_not_generate_signature">سرٹیفکیٹ کے SHA1 یا MD5 دستخط تیار نہیں کر سکے۔کوئی SHA1/MD5 الگورتھم نہیں ملا۔</string>
+    <string name="auto_x_xdummy">Xdummy کے ساتھ تلاش کریں یا تخلیق کریں۔</string>
+    <string name="error_not_connected_to_network">ایسا لگتا ہے کہ آپ انٹرنیٹ سے منسلک نہیں ہیں۔منسلک ہوئے بغیر جاری نہیں رہ سکتا!</string>
+    <string name="show_advanced_settings">اعلی درجے کی ترتیبات دکھائیں۔</string>
+    <string name="master_password_set">ماسٹر پاس ورڈ سیٹ کریں۔</string>
+    <string name="custom_ca_import">متبادل طور پر، اپنے CA کا پورا راستہ داخل کریں اور امپورٹ پر ٹیپ کریں۔</string>
+    <string name="mouse_follow_pan">ماؤس پین کی پیروی کرتا ہے۔</string>
+    <string name="enter_password_auth_failed">تصدیق ناکام ہوگئی۔براہ کرم اپنی اسناد دوبارہ درج کریں۔</string>
+    <string name="show">دکھائیں۔</string>
+    <string name="dpad_as_arrows">تیر کے لیے D-Pad اور Ctrl کے لیے D-Pad کلک کا استعمال کریں۔</string>
+    <string name="tap_enable">فعال کریں۔</string>
+    <string name="ad_donate_spice_text1a">Opaque خریدنے کے لیے یہاں تھپتھپائیں اور Proxmox اور oVirt سے براہ راست کنکشن محفوظ کریں۔یہ .vv فائلوں کو بھی سپورٹ کرتا ہے۔</string>
+    <string name="please_grant_permission_from_prefs">آپ کو ترتیبات کے ذریعے درخواست کی اجازت دینے کی ضرورت پڑ سکتی ہے۔</string>
+    <string name="password_caption">VNC Auth.</string>
+    <string name="share_app">شیئر کریں 🔗</string>
+    <string name="remote_sound_on_device">ڈیوائس پر آواز</string>
+    <string name="connection_setup_vm_name">ورچوئل مشین کا نام (اختیاری)</string>
+    <string name="single_choose">سنگل ہینڈڈ موڈ کا انتخاب کریں یا منسوخ کریں۔</string>
+    <string name="error_no_user_hostname">براہ کرم کم از کم ایک صارف اور میزبان نام یا IP پتہ درج کریں۔</string>
+    <string name="rdp_adv_redirect_sdcard">ایس ڈی کارڈ کو ری ڈائریکٹ کریں۔</string>
+    <string name="error_pve_api_io_error">Proxmox ورچوئل انوائرمنٹ سے کنکشن ناکام ہو گیا:</string>
+    <string name="username_hint_optional">VNC صارف نام (اختیاری)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">حسب ضرورت</string>
+    <string name="delete_connection">کنکشن حذف کریں۔</string>
+    <string name="repeater_save">استعمال کریں۔</string>
+    <string name="get_help">مدد حاصل کریں۔</string>
+    <string name="hide">چھپائیں</string>
+    <string name="rdp_security_mode">سیکیورٹی موڈ</string>
+    <string name="connection_type_rdp_over_ssh">SSH پر RDP</string>
+    <string name="auto_x_xvfb">تلاش کریں یا Xvfb کے ساتھ تخلیق کریں۔</string>
+    <string name="address_caption">VNC سرور</string>
+    <string name="show_only_connection_nicknames">صرف کنکشن عرفی نام دکھائیں۔</string>
+    <string name="ca_spice_use_ovirt">اسپائس کے لیے RHEV/oVirt CA استعمال کریں۔</string>
+    <string name="error_failed_to_obtain_file">فائل تلاش کرنے میں ناکام۔براہ کرم اسے دوبارہ ڈاؤن لوڈ کریں، لیکن اس بار، اسے نوٹیفیکیشن ایریا سے کھولنے کی کوشش کریں یا اگر ممکن ہو تو براہ راست براؤزر سے۔</string>
+    <string name="error_pve_timeout_communicating">Proxmox ورچوئل ماحولیات کے ساتھ بات چیت کا ٹائم آؤٹ۔</string>
+    <string name="connection_type_spice_over_ssh">SSH پر مسالا</string>
+    <string name="rdp_adv_glyph_cache">گلیف کیشے کو فعال کریں</string>
+    <string name="disable_battery_optimizations_failed">
+بیٹری کی اصلاح کی ترتیبات کو نہیں کھولا جا سکا۔سسٹم کی ترتیبات میں دستی طور پر بیٹری کی اصلاح کو غیر فعال کریں۔</string>
+    <string name="disable_battery_optimizations">
+🔋 بیٹری کی اصلاح کو غیر فعال کریں۔</string>
+    <string name="disable_battery_optimizations_already_done">
+ایپ پہلے ہی بیٹری کی اصلاح سے مستثنیٰ ہے۔</string>
+    <string name="no_connections_title">ابھی تک کوئی کنکشن نہیں</string>
+    <string name="no_connections_hint">اپنا پہلا ریموٹ کنکشن شامل کرنے کے لیے + بٹن تھپتھپائیں</string>
+    <string name="no_connections_hint_tv">اپنا پہلا ریموٹ کنکشن شامل کرنے کے لیے اوپر + بٹن دبائیں</string>
+    <string name="keyboard_layout_map">کی بورڈ لے آؤٹ</string>
+</resources>

@@ -1,0 +1,265 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778479824320,
+  "projectRoot": "/Volumes/ext-data/ClaudeProjects/vv_viewer",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "lib",
+      "scripts",
+      "test"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "android": {
+      "path": "android",
+      "purpose": null,
+      "fileCount": 9,
+      "lastAccessed": 1778479824306,
+      "keyFiles": [
+        "build.gradle.kts",
+        "gradle.properties",
+        "gradlew",
+        "gradlew.bat",
+        "java_pid2358.hprof"
+      ]
+    },
+    "build": {
+      "path": "build",
+      "purpose": "Build output",
+      "fileCount": 0,
+      "lastAccessed": 1778479824307,
+      "keyFiles": []
+    },
+    "coverage": {
+      "path": "coverage",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778479824309,
+      "keyFiles": [
+        "lcov.info"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 9,
+      "lastAccessed": 1778479824311,
+      "keyFiles": [
+        "ARCHITECTURE.md",
+        "DEVELOPMENT_PRACTICE.md",
+        "EMBEDDED_SPICE.md",
+        "INTEGRATION.md",
+        "MODIFICATION_GUIDE.md"
+      ]
+    },
+    "ios": {
+      "path": "ios",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1778479824311,
+      "keyFiles": [
+        "Podfile",
+        "Podfile.lock"
+      ]
+    },
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 2,
+      "lastAccessed": 1778479824311,
+      "keyFiles": [
+        "main.dart",
+        "providers.dart"
+      ]
+    },
+    "linux": {
+      "path": "linux",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1778479824312,
+      "keyFiles": [
+        "CMakeLists.txt"
+      ]
+    },
+    "macos": {
+      "path": "macos",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1778479824313,
+      "keyFiles": [
+        "Podfile",
+        "Podfile.lock"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1778479824313,
+      "keyFiles": [
+        "install_hooks.sh"
+      ]
+    },
+    "test": {
+      "path": "test",
+      "purpose": "Test files",
+      "fileCount": 2,
+      "lastAccessed": 1778479824314,
+      "keyFiles": [
+        "main_test.dart",
+        "widget_test.dart"
+      ]
+    },
+    "web": {
+      "path": "web",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1778479824314,
+      "keyFiles": [
+        "favicon.png",
+        "index.html",
+        "manifest.json"
+      ]
+    },
+    "windows": {
+      "path": "windows",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1778479824315,
+      "keyFiles": [
+        "CMakeLists.txt"
+      ]
+    },
+    "android/app": {
+      "path": "android/app",
+      "purpose": "Application code",
+      "fileCount": 2,
+      "lastAccessed": 1778479824318,
+      "keyFiles": [
+        "build.gradle.kts",
+        "proguard-rules.pro"
+      ]
+    },
+    "android/build": {
+      "path": "android/build",
+      "purpose": "Build output",
+      "fileCount": 0,
+      "lastAccessed": 1778479824318,
+      "keyFiles": []
+    },
+    "lib/models": {
+      "path": "lib/models",
+      "purpose": "Data models",
+      "fileCount": 3,
+      "lastAccessed": 1778479824319,
+      "keyFiles": [
+        "connection_type.dart",
+        "spice_launch_result.dart",
+        "vv_connection.dart"
+      ]
+    },
+    "lib/services": {
+      "path": "lib/services",
+      "purpose": "Business logic services",
+      "fileCount": 4,
+      "lastAccessed": 1778479824319,
+      "keyFiles": [
+        "app_logger.dart",
+        "file_opened_observer.dart",
+        "spice_launcher_service.dart"
+      ]
+    },
+    "lib/utils": {
+      "path": "lib/utils",
+      "purpose": "Utility functions",
+      "fileCount": 0,
+      "lastAccessed": 1778479824319,
+      "keyFiles": []
+    },
+    "test/models": {
+      "path": "test/models",
+      "purpose": "Data models",
+      "fileCount": 3,
+      "lastAccessed": 1778479824320,
+      "keyFiles": [
+        "connection_type_test.dart",
+        "spice_launch_result_test.dart",
+        "vv_connection_test.dart"
+      ]
+    },
+    "test/services": {
+      "path": "test/services",
+      "purpose": "Business logic services",
+      "fileCount": 4,
+      "lastAccessed": 1778479824320,
+      "keyFiles": [
+        "app_logger_test.dart",
+        "file_opened_observer_test.dart",
+        "spice_launcher_service_test.dart"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "example.vv",
+      "accessCount": 2,
+      "lastAccessed": 1778480126194,
+      "type": "file"
+    },
+    {
+      "path": "analysis_options.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1778480024442,
+      "type": "file"
+    },
+    {
+      "path": "lib/main.dart",
+      "accessCount": 1,
+      "lastAccessed": 1778480030399,
+      "type": "file"
+    },
+    {
+      "path": "pubspec.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1778480034801,
+      "type": "file"
+    },
+    {
+      "path": "lib/services/spice_launcher_service.dart",
+      "accessCount": 1,
+      "lastAccessed": 1778480044567,
+      "type": "file"
+    },
+    {
+      "path": "LICENSE",
+      "accessCount": 1,
+      "lastAccessed": 1778482397923,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">Hali ya Rangi</string>
+    <string name="message_please_wait">Tafadhali subiri</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Chaguomsingi (TYPE_NULL)</string>
+    <string name="ad_donate_text2">Toleo la Pro hukuruhusu kuzima kidirisha hiki na kukupa ufikiaji wa vipengele vya ziada.</string>
+    <string name="snap_one_to_one">Imepunguzwa hadi kukuza 1:1</string>
+    <string name="spice_intro_title">aSPICE: Intuitive, mteja salama wa SPICE</string>
+    <string name="auto_x_title">Sanidi AutoX</string>
+    <string name="error_ovirt_auth_failure">Kushindwa kwa uthibitishaji. Tafadhali angalia mtumiaji na nenosiri ulilopewa.</string>
+    <string name="ad_donate_text1">Gusa hapa ili kusaidia mradi kwa mchango mdogo kwa kununua toleo la Pro.</string>
+    <string name="auto_x_geom_custom">Desturi</string>
+    <string name="repeater_caption_hint">Repeater ya UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">Imeshindwa kusimbua funguo-jozi. Tafadhali hakikisha kuwa umeingiza kaulisiri yako ipasavyo katika sehemu ya \'Kaulisiri ya SSH\' kwenye skrini kuu.</string>
+    <string name="master_password_hint_twice">Rudia Nenosiri</string>
+    <string name="connection_setup_password">Nenosiri</string>
+    <string name="support_forum">Mijadala ya Usaidizi ❓</string>
+    <string name="main_screen_help">Usaidizi wa Kuunganisha</string>
+    <string name="spice_server_empty">Seva ya SPICE au mlango tupu. Haiwezi kuunganisha!</string>
+    <string name="arrow_up">Mshale wa Juu</string>
+    <string name="error_vm_lookup_failed">Haikuweza kupata mashine pepe iliyo na jina lililobainishwa kwa mtumiaji wako. Tafadhali futa jina la VM lililobainishwa ili kuona orodha ya VM iliyotolewa kwa mtumiaji.</string>
+    <string name="nickname_caption">Jina la utani</string>
+    <string name="auto_x_geom_native">Asili</string>
+    <string name="new_connection">Muunganisho Mpya</string>
+    <string name="error_ssh_unable_to_connect">Imeshindwa kuunganisha kwa Seva ya SSH. Tafadhali angalia muunganisho wa mtandao, na anwani ya Seva ya SSH na mlango.</string>
+    <string name="send_key_again">Tuma Ufunguo Tena</string>
+    <string name="input_mode_help">Usaidizi wa Hali ya Kuingiza</string>
+    <string name="enable_gateway">Washa RDP Gateway</string>
+    <string name="message_please_install_bvnc">Tafadhali sakinisha &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; kutoka Google Play ili kuunganisha kwenye dashibodi ya VNC ya VM hii.</string>
+    <string name="spice_ca_cert_path_hint">Njia ya faili ya mamlaka ya cert</string>
+    <string name="enter_spice_password">Tafadhali weka nenosiri la SPICE</string>
+    <string name="rdp_adv_window_contents">Onyesha yaliyomo kwenye dirisha unapoburuta</string>
+    <string name="input_methods">Mbinu ya Kuingiza</string>
+    <string name="info_ssh_key_fingerprint">Alama ya vidole ya ufunguo wa mwenyeji ni:</string>
+    <string name="paste_ca">Ingiza Mamlaka ya Cheti hapa ikiwa huiletei kama faili.</string>
+    <string name="enter_otp_code">Tafadhali weka msimbo wa OTP</string>
+    <string name="spice_connection_screen_help_text">Unapoongeza au kuhariri muunganisho, utaona ukurasa wa usanidi wa muunganisho. Hapa unaweza kusanidi muunganisho mpya wa SPICE, au uchague uliopo. Juu ni kifungo kinachokuwezesha kuhifadhi muunganisho. Hapo chini ndipo unaposanidi muunganisho wako.
+
+- Aina ya Muunganisho: Hapa unachagua aina ya unganisho la SPICE. Aina za uunganisho zinazopatikana ni:
+(a) SPICE, ambayo inaunganisha moja kwa moja kwenye kompyuta kupitia itifaki ya SPICE.
+(b) SPICE juu ya SSH, ambayo kwanza hupitisha muunganisho wako kupitia kompyuta inayoendesha seva ya SSH.
+
+- Kichwa: Kila muunganisho unaounda unaweza kuwa na jina la utani ili kulitambulisha kwa urahisi kwenye orodha.
+
+- Mipangilio ya Tunnel ya SSH: Inapatikana katika SPICE juu ya hali ya SSH.
+(a) Seva/Mlango wa SSH: Anwani na mlango wa seva ya SSH ambao muunganisho utapitishwa. Kwa chaguo-msingi SSH husikiza kwenye bandari 22.
+(b) Jina la mtumiaji/Nenosiri: Jina la mtumiaji na nenosiri la akaunti kwenye seva ya SSH. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha kutumia programu tangu ulipoiingiza mara ya mwisho.
+(c) Dhibiti Ufunguo/Tumia: Kitufe cha kudhibiti funguo za umma/faragha, na kisanduku cha kuteua kinachoonyesha ikiwa utatumia ufunguo badala ya nenosiri ili kuthibitisha. Ukitumia kitufe cha Nakili kwenye Ubao wa kunakili baada ya kutengeneza jozi ya vitufe, unapaswa kuweza kubandika ufunguo wa umma mara tu umeunganishwa kwenye seva ya SPICE (ubao wa kunakili umelandanishwa kwenye seva).
+
+- Mipangilio ya Muunganisho wa SPICE:
+(a) Seva/Mlango wa SPICE: Hapa ndipo unapoingiza jina la seva pangishi au anwani ya IP na mlango wa kompyuta inayoendesha seva ya SPICE ambayo ungependa kuwasiliana nayo. Katika hali ya SPICE juu ya SSH, anwani hii inaonekana kutoka kwa Seva ya SSH. Ikiwa Seva ya SSH na seva ya SPICE ni kompyuta halisi, unaweza kutumia localhost. Seva za SPICE kwa kawaida husikiliza kwenye port 5900 na juu.
+(d) Nenosiri la SPICE: Hapa ndipo unapoweka nenosiri lililowekwa ili kulinda kipindi chako cha SPICE. Hifadhi salama haitumiki kwa manenosiri (yako kwenye hifadhidata), na nenosiri litahifadhiwa tu ikiwa utachagua kisanduku cha Hifadhi. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha kutumia programu tangu ulipoiingiza mara ya mwisho.
+
+- Mipangilio ya kina: Katika sehemu hii utapata kifaa chochote cha ndani au marekebisho ya utendaji ya SPICE
+- Marekebisho ya Kifaa cha Karibu: Hizi hurekebisha tabia ya programu kwenye kifaa chako.
+(a) Tumia D-Pad kwa vishale: Ukipenda, unaweza kutumia D-Pad ya kibodi yako ya Bluetooth au mishale kwenye kibodi yako ya skrini kutuma mishale kwa seva ya SPICE.
+(b) Zungusha D-Pad: Simu zilizooanishwa na kibodi ya Bluetooth huenda zikahitaji D-pad ya kibodi kuzungushwa kinyume na saa ili kutuma maelekezo sahihi kwa seva.
+(c) Kielekezi cha kipanya cha ndani: Ikiwa kielekezi hakionekani, chagua hiki ili kukilazimisha ichorwe na programu.</string>
+    <string name="auto_x_disabled_selection">AutoX Imezimwa</string>
+    <string name="button_send_text">Tuma Maandishi</string>
+    <string name="shortcut_label_spice">Uunganisho wa SPICE</string>
+    <string name="keep_screen_awake_enable">Weka Skrini Imeamka</string>
+    <string name="open_doc">Mwongozo/Wiki</string>
+    <string name="remote_sound_disabled">Sauti Imezimwa</string>
+    <string name="spice_ca_file_not_found">Faili haijapatikana. Tafadhali weka jina sahihi la faili katika sehemu ya maandishi (k.m. /sdcard/ca-cert.pem).</string>
+    <string name="rdp_intro_title">aRDP: Intuitive, mteja salama wa RDP</string>
+    <string name="error_pve_api_unexpected_code">Jibu lisilotarajiwa kutoka kwa Mazingira ya Proxmox Virtual:</string>
+    <string name="error_out_of_memory">Haiwezi kutenga kumbukumbu ya kutosha kuchora skrini ya mbali. Jaribu kuanzisha upya programu, kisha uanze upya kifaa chako. Unaweza pia kujaribu kupunguza ukubwa wa eneo-kazi la mbali kupitia mipangilio ya programu.</string>
+    <string name="enter_passphrase_title">Weka Nenosiri Muhimu</string>
+    <string name="copy_of">Nakala ya</string>
+    <string name="rdp_adv_remotefx">Washa RemoteFX</string>
+    <string name="ok">Sawa</string>
+    <string name="rdp_adv_desktop_background">Onyesha mandharinyuma ya eneo-kazi</string>
+    <string name="desktop_scale_percentage">Asilimia Maalum ya Kuongeza</string>
+    <string name="password_caption_ssh">SSH Auth.</string>
+    <string name="rdp_adv_font_smoothing">Fanya urekebishaji wa fonti</string>
+    <string name="rdp_domain_hint">Kikoa cha RDP</string>
+    <string name="custom_ca_subject">Mada ya Cheti cha Hiari. Haihitajiki ikiwa cert CN inalingana na jina la mwenyeji</string>
+    <string name="color_24_bit">rangi ya biti 24 (bpp 24)</string>
+    <string name="ssh_passphrase_hint">Nenosiri la SSH</string>
+    <string name="username_hint">Jina la mtumiaji la Logon ya UltraVNC MS</string>
+    <string name="error_failed_to_download_https">Imeshindwa kupakua faili kupitia HTTPS. Labda cheti cha seva yako hakiaminiki (muda wake umeisha au umejiandikisha) au seva yako haiwezi kufikiwa.</string>
+    <string name="rdp_geom_checkbox_enable">Washa utatuzi maalum</string>
+    <string name="enter_rdp_credentials">Tafadhali weka kitambulisho cha RDP</string>
+    <string name="error_dialog_title">Hitilafu</string>
+    <string name="ssl_strict">Inahitaji jina la kawaida ili kulingana na cert (inapendekezwa)</string>
+    <string name="master_password_hint_once">Weka Nenosiri</string>
+    <string name="one_to_one">Moja kwa Moja</string>
+    <string name="action_rate_or_share_app">⭐ Pata Usaidizi, Kadiria, Shiriki</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Seva ya SSH haitumii mbinu za kushiriki nenosiri au kibodi au inahitaji mbinu ya ufunguo wa umma kwanza. Tafadhali isanidi ili kuruhusu angalau moja ya njia hizi mbili, au kusakinisha upya programu. Mbinu zinazopatikana za uthibitishaji:</string>
+    <string name="import_settings">Ingiza</string>
+    <string name="hide_toolbar">Ficha upau wa vidhibiti</string>
+    <string name="verification_code_message">Tafadhali weka Msimbo wa Uthibitishaji wa vipengele vingi</string>
+    <string name="need_help">Je, unahitaji usaidizi?</string>
+    <string name="rdp_security_auto">Otomatiki kujadili Usalama</string>
+    <string name="master_password_error_failed_to_enable">Haikuweza kuwezesha nenosiri kuu. Angalia nafasi kwenye kifaa chako na ujaribu tena.</string>
+    <string name="cert_issuer">Mtoa Cheti</string>
+    <string name="error">Hitilafu</string>
+    <string name="error_anon_dh_unsupported">Seva ya VNC inajaribu kutumia misimbo isiyojulikana ya Diffie Hellman ambayo haitumiki kwenye kifaa chako cha Android. Ikiwa unatumia seva ya Vino VNC ya GNOME, unaweza kuzima AnonTLS kwa kutekeleza amri ifuatayo kwenye terminal na kisha kuwasha upya: \gsettings set org.gnome.Vino require-encryption false\. Ikiwa unatumia x11vnc, unaweza kuongeza chaguo zifuatazo: \-vencrypt nodh:only -ssl\.</string>
+    <string name="scroll_wheel">Gurudumu la Kutembeza</string>
+    <string name="auto_x_session_auto">Otomatiki</string>
+    <string name="enter_gateway_credentials">Tafadhali weka kitambulisho cha Gateway</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">Mradi wa Open Source unahitaji usaidizi wako! Tuchangie kwa kununua bVNC Pro. Tazama hapa chini kwa viungo vya bVNC Pro na programu zetu zingine.</string>
+    <string name="input_method_mouse">Udhibiti wa Kiashiria cha Panya</string>
+    <string name="pro_feature_rdp">Inaonekana ulijaribu kufungua faili ya .rdp ambayo ni kipengele cha Pro. Tafadhali saidia mradi kwa kununua aRDP Pro, ambayo inatumia faili za .rdp. Kiungo cha toleo la aRDP Pro kinapatikana kwenye kidirisha cha kuanza.</string>
+    <string name="opaque_connection_screen_help_text">Unapoongeza au kuhariri muunganisho, utaona ukurasa wa usanidi wa muunganisho.
+Hapa unaweza kusanidi muunganisho mpya wa Opaque au uchague uliokuwepo awali.
+Juu ni kifungo kinachokuwezesha kuhifadhi muunganisho.
+Hapo chini ndipo unaposanidi muunganisho wako.
+
+- Aina ya Muunganisho: Hapa unachagua Mazingira ya Uboreshaji unayounganisha.
+
+- Anwani ya Seva: Jina la mwenyeji au IP ya seva. Ikiwa inasikiza kwenye mlango usio wa kawaida, unaweza kuongeza mlango uliotenganishwa na koloni.
+
+- Jina la mashine pepe: Unaweza kubainisha jina la VM jinsi linavyoonekana kwenye jukwaa lako la Uboreshaji au uache sehemu hii tupu ili kupata orodha ya VM au vyombo vya kuchagua.
+
+- Mtumiaji: Ingiza jina la mtumiaji ili kudhibitisha kwa mfumo wako wa uboreshaji.
+
+- Nenosiri: Ikiwa ungependa kuhifadhi nenosiri, liweke hapa au uache uga tupu ili uulizwe kila wakati.
+
+- Mipangilio ya kina: Katika sehemu hii utapata kifaa chochote cha ndani, itifaki, na marekebisho ya utendaji.</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Maandishi yenye Mapendekezo (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">Orodha ya Nakili</string>
+    <string name="master_password_error_failed_to_disable">Haikuweza kuzima nenosiri kuu. Angalia nafasi kwenye kifaa chako na ujaribu tena.</string>
+    <string name="use_no_compression_for_local_connections">Hakuna mbano (miunganisho ya ndani, usimbaji wa Hextile)</string>
+    <string name="input_mode_help_text">Katika Hali yoyote ya Kuingiza Data, gusa aikoni ya kibodi ili kupata kibodi iliyo kwenye skrini. Pia, kifaa chako kinaweza kuwa na ishara yake ambayo italeta kibodi.
+
+Tumia modi za ingizo za Moja kwa moja kwa udhibiti angavu zaidi wa skrini ya kugusa. Tumia Hali Iliyoigizwa ya Padi ya Kugusa kwa udhibiti bora zaidi wa kipanya.
+
+Moja kwa moja, Swipe Pan Mode:
+- Kudhibiti panya moja kwa moja kwa njia ya kugusa.
+- Telezesha kidole ili kuzunguka.
+- Kugonga hufanya kipanya kubofya mahali ulipogonga.
+- Matukio ya kusogeza hutumwa kati ya vidole viwili ambapo kutelezesha kwa vidole viwili kulianza.
+
+Moja kwa moja, Shikilia Njia ya Kusonga:
+- Kudhibiti panya moja kwa moja kwa njia ya kugusa.
+- Gusa kwa muda mrefu ili kuanza modi ya sufuria.
+- Kugonga hufanya kipanya kubofya mahali ulipogonga.
+- Matukio ya kusogeza hutumwa kati ya vidole viwili ambapo kutelezesha kwa vidole viwili kulianza.
+
+Hali ya Padi ya Kugusa Inayoiga:
+- Tumia skrini yako kama touchpad.
+- Telezesha kidole ili kusogeza kiashiria cha kipanya kote.
+- Sogeza kipanya zaidi ya ukingo wa skrini ili kugeuza.
+- Kugonga hufanya kipanya kubofya mahali kielekezi kipo.
+- Matukio ya kusogeza yanatumwa ambapo kiashiria cha kipanya kinapatikana.
+
+Hali ya Mkono Mmoja:
+- Sawa na Njia ya Moja kwa moja, Swipe Pan, isipokuwa kwa kugonga kwa muda mrefu kufungua menyu na chaguo la aina.
+- Baada ya kuchagua hali, kutelezesha kidole kwenye skrini hufanya ishara iliyochaguliwa.
+- Kuinua kidole kunakamilisha ishara.
+
+Mbinu Zote za Kuingiza:
+- Bofya-kushoto: Gonga mara moja.
+- Bofya mara mbili: Gonga mara mbili.
+- Bofya kulia: Gusa-shikilia na uguse kwa kidole cha pili (mahali popote kwenye skrini).
+- Bofya-kulia mbadala: Tumia kitufe cha \Nyuma\ au ishara kwa kifaa chako.
+- Bofya katikati: Gusa-shikilia na uguse kwa vidole viwili zaidi (mahali popote kwenye skrini).
+- Kuburuta kwa kipanya: Gusa-shikilia-kwa muda mrefu na utelezeshe kidole.
+- Gurudumu la kusogeza: Kokota kwa vidole viwili juu/chini na kushoto/kulia. Uburutaji wa haraka unasonga haraka.
+- Kuza ndani/nje: Katika kuongeza ukubwa unaoweza Kusogezwa, bana-kuza ili kudhibiti kuongeza.
+- Kitufe cha Ctrl/Alt: Menyu-&gt;Vitufe vya Ctrl/Alt. Usisahau kuzima ukimaliza!
+- Mchanganyiko muhimu: Menyu-&gt; Zaidi-&gt; Vifunguo vya Tuma.
+- Tuma maandishi: Andika kwenye kibodi ya skrini, au tumia Menyu-&gt; Zaidi-&gt; Tuma Maandishi.</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt kama ISO L3 Shift (VNC pekee)</string>
+    <string name="error_uri_noinfo_nosave">Maelezo mahususi ya kutosha ya kuunganisha.</string>
+    <string name="single_reposition">Kiashiria cha kipanya kimewekwa upya kwa hali ya mkono mmoja</string>
+    <string name="auto_x_cancel">Ghairi</string>
+    <string name="vv_file_not_found">Faili ya .vv haikupatikana!</string>
+    <string name="error_pve_failed_to_authenticate">Imeshindwa kuthibitisha kwa Proxmox Virtual Environment. Tafadhali hakikisha umeingiza jina lako la mtumiaji katika umbizo la user@realm na kwamba nenosiri lako ni sahihi.</string>
+    <string name="save_as_copy">Hifadhi kama Nakala</string>
+    <string name="info_cert">Je, unakubali cheti hiki kipya au kilichobadilishwa cha mpangishi?\n\nAlama za vidole:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nImetolewa kwa: %4$s\nImetolewa na: %5$s\n\nItatumika kuanzia: %6$s hadi %$d:\nHali</string>
+    <string name="more_debug_logging">Uwekaji Magogo zaidi wa Utatuzi</string>
+    <string name="error_ssh_key_auth_fail">Imeshindwa kuthibitisha kwa seva ya SSH na jozi ya vitufe. Tafadhali angalia jina lako la mtumiaji la SSH, na uhakikishe kuwa ufunguo wako wa umma uko kwenye authorized_keys faili kwenye upande wa mbali.</string>
+    <string name="error_vnc_authentication">Uthibitishaji wa VNC umeshindwa! Angalia nenosiri la VNC (na mtumiaji ikiwa inafaa).</string>
+    <string name="toggle_keyboard">Geuza Kibodi</string>
+    <string name="help">Msaada ⓘ</string>
+    <string name="repeater_caption">MUHIMU: Ikiwa unatumia kirudia cha UltraVNC, weka anwani na mlango wake nje ya mazungumzo haya. Hapa, ingiza anwani na bandari ya seva halisi ya VNC. Tenganisha anwani na mlango wa seva ya VNC kwa koloni, k.m.192.168.0.100:5900.</string>
+    <string name="color_8">rangi 8 (bpp 2)</string>
+    <string name="error_ovirt_unable_to_connect">Haiwezi kuunganisha au kuthibitisha, tafadhali angalia anwani ya seva, mtumiaji, nenosiri, na mamlaka ya cert na mada.</string>
+    <string name="error_rdp_authentication_failed">Uthibitishaji wa RDP umeshindwa! Tafadhali angalia jina la mtumiaji na nenosiri la RDP na ujaribu tena.</string>
+    <string name="delete_key_list">Futa Orodha muhimu</string>
+    <string name="input_method_direct_swipe_pan_description">Moja kwa moja, Kipande cha Kutelezesha kidole: Telezesha kidole ili kuzunguka. Gusa kwa kidole kimoja popote unapotaka kubofya kushoto, vidole viwili ili kubofya kulia, na vidole vitatu kubofya katikati. Telezesha kidole kwa vidole viwili ili kusogeza. Gusa kwa muda mrefu ili kuburuta na kuangusha.</string>
+    <string name="address_caption_hint">Seva ya VNC</string>
+    <string name="auto_x_unixpw">Tumia vitambulisho vya UNIX badala ya utaratibu wa usalama uliojengwa. Mtumiaji lazima aweze kuendesha /bin/su.</string>
+    <string name="input_method_touchpad">Padi ya Kugusa Inayoiga</string>
+    <string name="fit_to_screen">Inafaa kwa Skrini</string>
+    <string name="list_name_caption">Jina la Orodha</string>
+    <string name="copy_logcat">📋 Nakili Logcat</string>
+    <string name="ca_ovirt_use_custom">RHEV/oVirt CA Maalum</string>
+    <string name="info_progress_dialog_downloading">Pakua fremu ya kwanza.\Tafadhali subiri...</string>
+    <string name="local_mouse_check">Kielekezi cha panya cha ndani (chagua ikiwa kielekezi hakionekani)</string>
+    <string name="rdp_server_empty">Seva ya RDP au mlango tupu. Haiwezi kuunganisha!</string>
+    <string name="rendering_mode">Hali ya Utoaji:</string>
+    <string name="rdp_adv_visual_styles">Washa Mitindo ya Kuonekana</string>
+    <string name="error_ovirt_timeout">Muunganisho kwenye VM yako umekwisha. Tafadhali hakikisha kwamba anwani ya nodi inayoendesha VM yako ni sahihi, kwamba inaweza kufikiwa kutoka kwa mtandao wako wa sasa, na kwamba hakuna ngome inayozuia muunganisho.</string>
+    <string name="extra_keys_enable">Washa Funguo za Ziada</string>
+    <string name="showkbd_label">Kibodi</string>
+    <string name="audio">Sauti</string>
+    <string name="ssh_x11vnc_customize">Sanidi AutoX</string>
+    <string name="address_caption_ssh_hint">Seva ya SSH</string>
+    <string name="info_progress_dialog_connecting">Inaunganisha...</string>
+    <string name="donate_app">Changia ❤</string>
+    <string name="rdp_security_rdp">Usalama wa RDP</string>
+    <string name="applies_to_new_connections_only">Inatumika kwa Viunganisho Vipya Pekee</string>
+    <string name="spice_button_import_ca">Ingiza CA</string>
+    <string name="scaling_zoomable">Inaweza kukuza</string>
+    <string name="error_ssh_port_forwarding_failure">Haikuweza kusanidi usambazaji wa mlango kwa ajili ya kuelekeza trafiki ya VNC juu ya SSH. Tafadhali hakikisha seva yako ya SSH imesanidiwa ili kuruhusu usambazaji wa mlango na ujaribu tena.</string>
+    <string name="rdp_adv_desktop_composition">Washa Utungaji wa Eneo-kazi</string>
+    <string name="scroll_speed">Gusa Kasi ya Kusogeza</string>
+    <string name="rdp_address_caption_hint">Seva ya RDP</string>
+    <string name="send_button">Tuma</string>
+    <string name="love_our_work">Unapenda kazi yetu?</string>
+    <string name="download_from_server">Pakua kutoka kwa Seva</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Seva yako inahitaji uthibitishaji wa nenosiri pamoja na uthibitishaji wa ufunguo.</string>
+    <string name="input_method_single_handed">Mkono Mmoja</string>
+    <string name="username_hint_ssh">Jina la mtumiaji la SSH</string>
+    <string name="auto_x_enabled">Imewashwa</string>
+    <string name="password_hint_ssh">Nenosiri la SSH</string>
+    <string name="audio_will_be_initialized">Sauti itaanzishwa baada ya sekunde 15, tafadhali acha uchezaji wowote wa video au sauti kabla ya wakati huo</string>
+    <string name="shortcut_label_vnc">Uunganisho wa VNC</string>
+    <string name="auto_request_new_res">Sawazisha kidhibiti mbali ili kuonyesha ubora</string>
+    <string name="color_256">rangi 256 (bpp 8)</string>
+    <string name="intro_title">bVNC: Intuitive, mteja salama wa VNC</string>
+    <string name="error_x509_could_not_generate_encoding">Usimbaji wa cheti haukuweza kuzalishwa.</string>
+    <string name="rdp_security_tls">Usalama wa TLS</string>
+    <string name="action_import_settings">Ingiza Mipangilio</string>
+    <string name="single_cancel">Hali ya kutumia mkono mmoja imeghairiwa</string>
+    <string name="info_set_touchpad_input_mode">Seva inaripoti kwamba haiauni Uingizaji wa Kipanya wa Modi ya Mteja, na modi ya sasa ya ingizo ya kipanya haitafanya kazi ipasavyo. Hili likiendelea, hakikisha kuwa zana za viungo zimesakinishwa kwenye mashine pepe au ubadilishe hadi Hali ya Ingizo ya Padi ya Kugusa kutoka kwenye Menyu.</string>
+    <string name="email_us">Tutumie Barua Pepe 📧</string>
+    <string name="color_64">rangi 64 (bpp 4)</string>
+    <string name="ssh_key_generated">Ufunguo mpya umetolewa au kuletwa kwa ufanisi. Sasa unaweza kugonga kitufe cha \'Tengeneza/Hamisha Ufunguo\' ili kushiriki, kunakili kwenye ubao wa kunakili, au kuhamisha ufunguo wa umma.</string>
+    <string name="repeater_button">Repeater ya UltraVNC</string>
+    <string name="info_dialog_title">Habari</string>
+    <string name="local_clipboard_integration">Washa Muunganisho wa Ubao wa Klipu wa Ndani hadi Mbali</string>
+    <string name="cursor_force_local">Ndani</string>
+    <string name="list_caption">Orodha</string>
+    <string name="master_password_error_password_necessary">Nenosiri Kuu linahitajika ili kuendelea.</string>
+    <string name="ssh_use_pubkey">Tumia Ufunguo</string>
+    <string name="super_check">Super</string>
+    <string name="enter_text">Tuma Maandishi</string>
+    <string name="import_export_settings">📦 Mipangilio ya Leta/Hamisha</string>
+    <string name="info_progress_dialog_aborted">Muunganisho umesitishwa!</string>
+    <string name="input_method_single_handed_description">Mkono Mmoja: Telezesha kidole ili kuzunguka. Gusa kwa kidole kimoja popote unapotaka kubofya kushoto. Gusa kwa muda mrefu ili kuchagua modi ya kushoto/kulia/katikati ya kuvuta/kutembeza/kuza. Vidhibiti vya kawaida vya miguso mingi pia hufanya kazi.</string>
+    <string name="verification_code">Nambari ya Uthibitishaji</string>
+    <string name="extra_keys_disable">Zima Vifunguo vya Ziada</string>
+    <string name="rotate_dpad">Zungusha Bluetooth au programu ya D-Pad</string>
+    <string name="intro_close">Funga</string>
+    <string name="master_password_error_shortcuts_not_supported">Njia za mkato bado hazitumiki wakati Nenosiri Kuu limewashwa.</string>
+    <string name="enter_vnc_credentials">Tafadhali weka kitambulisho cha VNC</string>
+    <string name="connection_edit">Hariri</string>
+    <string name="error_spice_unable_to_connect">Haiwezi kuunganisha au kuthibitisha, tafadhali angalia anwani ya seva na mlango.</string>
+    <string name="remote_sound_on_server">Sauti kwenye Seva</string>
+    <string name="left_handed_mode">Hali ya Mkono wa Kushoto</string>
+    <string name="info_ssh_initializing_hostkey">Inajaribu kuanzisha SSH HostKey.</string>
+    <string name="connect_button">Unganisha</string>
+    <string name="ca_new_or_changed">Cheti kipya au kilichobadilishwa cha seva</string>
+    <string name="close">Funga</string>
+    <string name="master_password_verify">Thibitisha Nenosiri Kuu</string>
+    <string name="error_no_vnc_support_yet">Aina ya onyesho la VNC bado haijatumika, lakini ni kipengele kinachokuja. Asante kwa ufahamu wako!</string>
+    <string name="rdp_connection_settings">Mipangilio ya Muunganisho wa RDP</string>
+    <string name="immersive_mode_disable">Zima Hali ya Kuzama</string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment ilirudisha data batili.</string>
+    <string name="auto_x_descript_geom">Ukubwa wa Eneo-kazi la Mbali (WxH)</string>
+    <string name="enter_passphrase">Tafadhali weka Nenosiri Muhimu</string>
+    <string name="action_edit_default_settings">⚙ Badilisha Mipangilio Chaguomsingi</string>
+    <string name="ca_spice_manage">Simamia SPICE CA</string>
+    <string name="color_mode">Hali ya Rangi</string>
+    <string name="back_button">Rudi Nyuma</string>
+    <string name="rate_app">Kadiria ⭐⭐⭐⭐⭐</string>
+    <string name="off">Imezimwa</string>
+    <string name="ssh_tunnel_settings">Mipangilio ya Tunu ya SSH</string>
+    <string name="error_pve_vmid_not_numeric">Kitambulisho cha VM sio nambari. Tafadhali weka kitambulisho cha nambari cha VM au uache tupu ili kuchagua VM kutoka kwenye orodha.</string>
+    <string name="cert_subject">Mada ya Cheti</string>
+    <string name="rdp_descript_geom">Ukubwa wa Eneo-kazi la Mbali (WxH)</string>
+    <string name="master_password_error_wrong_password">Haikuweza kuthibitisha kwa Nenosiri Kuu lililotolewa.</string>
+    <string name="error_pick_correct_item">Tafadhali hakikisha kuwa umechagua kipengee sahihi katika Aina ya Muunganisho.</string>
+    <string name="input_method_direct_drag_pan">Moja kwa moja, Shikilia Pan</string>
+    <string name="auto_rotation">Mzunguko wa skrini wakati umeunganishwa</string>
+    <string name="master_password_verify_message">Tafadhali weka Nenosiri Kuu sahihi ili kuendelea.</string>
+    <string name="error_connection_interrupted">Muunganisho umekatizwa.</string>
+    <string name="auto_x_descript_session">Aina ya Kipindi cha Mbali</string>
+    <string name="action_new_connection">✚ Muunganisho Mpya</string>
+    <string name="enter_text_title">Ingiza Maandishi ya Kutuma</string>
+    <string name="shortcut_label_rdp">Muunganisho wa RDP</string>
+    <string name="spice_address_caption_hint">Seva ya SPICE</string>
+    <string name="rdp_geom_description_hint">Seva inahitaji usaidizi wa ExtendedDesktopSize</string>
+    <string name="audio_initialized">Sauti imeanzishwa</string>
+    <string name="intro_text">Orodha ya sasa ya vipengele vya bVNC:
+&lt;br&gt;
+- VNC isiyo na maana, Salama VNC kupitia SSH, AnonTLS, na VeNCrypt, na Logon ya Windows ya UltraVNC yenye Kirudishi cha hiari.
+&lt;br&gt;
+- Hali ya AutoX: Katika VNC juu ya modi ya SSH, gundua kiotomatiki zilizopo na/au unda vipindi vipya vya X kwa kutumia x11vnc! Inafanya kazi kama mteja wa NX.
+&lt;br&gt;
+- Msaada wa mzunguko wa bure. Tumia Mfumo wa Uendeshaji ili kupunguza mzunguko ikiwa inahitajika.
+&lt;br&gt;
+- Uzalishaji na usafirishaji wa ufunguo wa SSH Umma/Binafsi.
+&lt;br&gt;
+- Usimbaji wote wa kawaida wa VNC, pamoja na Tight, ZRLE, na CopyRect.
+&lt;br&gt;
+- Uhifadhi wa Kikao otomatiki.
+&lt;br&gt;
+- Inayoweza Kukuza, Inafaa kwa Skrini, na aina za kuongeza moja hadi Moja.
+&lt;br&gt;
+- Udhibiti wa miguso mingi juu ya kipanya cha mbali katika modi za ingizo za Padi ya Kugusa ya Moja kwa moja na Inayoiga.
+&lt;br&gt;
+- Udhibiti kamili wa mkono mmoja juu ya kipanya cha mbali katika modi ya ingizo ya Mkono Mmoja.
+&lt;br&gt;
+- Mibofyo ya vipanya vingi vya kugusa: gusa ili kubofya Kushoto, gusa kwa vidole viwili ili kubofya kulia, gusa kwa vidole vitatu hadi ubofye katikati.
+&lt;br&gt;
+- Kusogeza kwa miguso mingi: buruta vidole viwili Juu/Chini, na Kushoto/Kulia ili kusogeza.
+&lt;br&gt;
+- Vitufe vya meta na vishale kwenye skrini ambavyo vinaweza kuzimwa kabisa kwenye menyu au kuwekwa kwa kitufe cha skrini.
+&lt;br&gt;
+- Kutuma maandishi na mchanganyiko wa Vifunguo vya kiholela wakati umeunganishwa.
+&lt;br&gt;
+- Usaidizi wa kuunda miunganisho (\Menyu-&gt; Usaidizi wa Muunganisho\) kwenye skrini ya muunganisho.
+&lt;br&gt;
+- Usaidizi wa modi za ingizo (\Menyu-&gt;Zaidi-&gt; Usaidizi wa Njia ya Kuingiza\) wakati imeunganishwa.
+&lt;br&gt;
+- Kutumia trackpadi inayopatikana kama Vishale badala ya kusogeza kipanya, na ubofye trackpad kama Ctrl.
+&lt;br&gt;
+- Kubadilisha hadi modi ya picha wakati wa miunganisho, kuzungusha D-pad/trackpad kwa kibodi za BT.
+&lt;br&gt;
+- Usaidizi wa lugha nyingi, mradi tu seva ya VNC iwe na mpangilio wa lugha unaohitajika.
+&lt;br&gt;
+- Copy/Bandika ushirikiano
+&lt;br&gt;
+- Mabadiliko ya azimio la mashine ya mbali
+&lt;br&gt;
+- Usaidizi kamili wa kipanya kwenye vifaa vya Android 4.0+, ikiwa ni pamoja na kubofya kulia na katikati na gurudumu la kusogeza.
+&lt;br&gt;
+&lt;br&gt;
+Masuala yanayojulikana:
+&lt;br&gt;</string>
+    <string name="color_greyscale">Kijivu (bpp 1)</string>
+    <string name="share_app_toast">Shiriki kiunga cha programu na marafiki zako wote kwenye media ya kijamii!</string>
+    <string name="force">Bitmap ya skrini nzima</string>
+    <string name="input_method_touchpad_description">Padi ya Kugusa Inayoiga: Telezesha kidole ili kusogeza kielekezi. Gusa popote kwa kidole kimoja ili kubofya kushoto, vidole viwili ili kubofya kulia, na vidole vitatu kubofya katikati. Telezesha kidole kwa vidole viwili ili kusogeza. Gusa kwa muda mrefu ili kuburuta na kuangusha.</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nUnaweza kuhakikisha kuwa inafanana na alama ya vidole inayojulikana ya cheti cha seva ili kuzuia shambulio la mtu katikati.</string>
+    <string name="error_no_vm_found_for_user">Hakuna Mashine pepe zinazopatikana kwa mtumiaji aliyepewa.</string>
+    <string name="color_black_and_white">Nyeusi na Nyeupe (bpp 1)</string>
+    <string name="auto">Otomatiki</string>
+    <string name="pro_feature_generic">Inaonekana unatumia kipengele cha Pro. Tafadhali saidia mradi kwa kununua toleo la Pro ambalo linaweza kutumika kwa kipengele hiki. Kiungo cha toleo la Pro kinapatikana kwenye kidirisha cha kuanza.</string>
+    <string name="rdp_geom_custom">Desturi</string>
+    <string name="default_input_mode">Hali Chaguomsingi ya Kuingiza</string>
+    <string name="repeater_empty_text">Hakuna anayerudia</string>
+    <string name="ad_donate_text_rdp">Mradi wa Open Source unahitaji usaidizi wako! Tuchangie kwa kununua aRDP Pro, ambayo inasaidia uelekezaji kwingine wa sauti. Tazama hapa chini kwa viungo vya aRDP Pro na programu zetu zingine.</string>
+    <string name="spice_tls_port_hint">Bandari ya TLS</string>
+    <string name="scaling">Kuongeza</string>
+    <string name="spice_connection_settings">Mipangilio ya Muunganisho wa SPICE</string>
+    <string name="error_pve_failed_to_parse_json">Imeshindwa kuchanganua jibu kutoka kwa Mazingira Pepe ya Proxmox.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Kushindwa kwa kupeana mkono kwa SSL. Kuna tatizo na cheti cha SSL cha seva. Ikiwa unatumia cheti cha kujiandikisha, unahitaji (re) kuagiza mamlaka ya cheti chako.</string>
+    <string name="connection_setup_user">Mtumiaji @ Kikoa</string>
+    <string name="vnc_viewer_started">Kitazamaji cha VNC kimeanza</string>
+    <string name="ca_subject">Weka jina la mada ya cheti hapa. Huenda isihitajike ikiwa cert common name (CN) inalingana na jina la mpangishi wa seva.</string>
+    <string name="port_ssh_hint">Bandari</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Seva ya SSH haitumii uidhinishaji wa ufunguo wa umma, na tunajaribu kutumia jozi ya ufunguo kwa uthibitishaji. Tafadhali isanidi ili kuruhusu uthibitishaji wa ufunguo wa umma na ujaribu tena. Mbinu za uthibitishaji zinazopatikana:</string>
+    <string name="username_caption">Mtumiaji wa VNC</string>
+    <string name="error_ssh_could_not_exec_command">Haikuweza kutekeleza amri ya mbali.</string>
+    <string name="rdp_intro_text">Asante kwa kusaidia aRDP na programu huria kwa ujumla! Kwa usaidizi wa kutumia aRDP, angalia Vipengee vya Usaidizi kwenye Menyu, na maelezo ya programu kwenye soko.
+&lt;br&gt;
+&lt;br&gt;
+Orodha ya sasa ya vipengele vya aRDP inajumuisha:
+&lt;br&gt;
+- RDP isiyo na maana, RDP imewekwa juu ya SSH.
+&lt;br&gt;
+- Msaada wa mzunguko wa bure. Tumia Mfumo wa Uendeshaji ili kupunguza mzunguko ikiwa inahitajika.
+&lt;br&gt;
+- Mpangilio wa azimio la mbali, azimio la asili katika hali ya mazingira na picha.
+&lt;br&gt;
+- Uzalishaji na usafirishaji wa ufunguo wa SSH Umma/Binafsi.
+&lt;br&gt;
+- Uhifadhi wa Kikao otomatiki.
+&lt;br&gt;
+- Inayoweza Kukuza, Inafaa kwa Skrini, na aina za kuongeza moja hadi Moja.
+&lt;br&gt;
+- Udhibiti wa miguso mingi juu ya kipanya cha mbali katika modi za ingizo za Padi ya Kugusa ya Moja kwa moja na Inayoiga.
+&lt;br&gt;
+- Udhibiti kamili wa mkono mmoja juu ya kipanya cha mbali katika modi ya ingizo ya Mkono Mmoja.
+&lt;br&gt;
+- Mibofyo ya vipanya vingi vya kugusa: gusa ili kubofya Kushoto, gusa kwa vidole viwili ili kubofya kulia, gusa kwa vidole vitatu hadi ubofye katikati.
+&lt;br&gt;
+- Kusogeza kwa miguso mingi: buruta vidole viwili Juu/Chini, na Kushoto/Kulia ili kusogeza.
+&lt;br&gt;
+- Vitufe vya meta na vishale kwenye skrini ambavyo vinaweza kuzimwa kabisa kwenye menyu au kuwekwa kwa kitufe cha skrini.
+&lt;br&gt;
+- Kutuma maandishi na mchanganyiko wa Vifunguo vya kiholela wakati umeunganishwa.
+&lt;br&gt;
+- Usaidizi wa kuunda miunganisho (\Menyu-&gt; Usaidizi wa Muunganisho\) kwenye skrini ya muunganisho.
+&lt;br&gt;
+- Usaidizi wa modi za ingizo (\Menyu-&gt;Zaidi-&gt; Usaidizi wa Njia ya Kuingiza\) wakati imeunganishwa.
+&lt;br&gt;
+- Kutumia trackpadi inayopatikana kama Vishale badala ya kusogeza kipanya, na ubofye padi ya kufuatilia kama Ctrl, ukizungusha D-pad/trackpad kwa kibodi za BT.
+&lt;br&gt;
+- Usaidizi wa lugha nyingi, mradi tu seva ya RDP iwe na mpangilio wa lugha unaohitajika.
+&lt;br&gt;
+- Mabadiliko ya azimio la mashine ya mbali bila mshono
+&lt;br&gt;
+- Usaidizi kamili wa kipanya kwenye vifaa vya Android 4.0+, ikiwa ni pamoja na kubofya kulia na katikati na gurudumu la kusogeza.
+&lt;br&gt;
+- Chaguo la njia za rangi
+&lt;br&gt;
+- Copy/Bandika ushirikiano
+&lt;br&gt;
+- Mipangilio ya kuuza nje
+&lt;br&gt;
+- Sauti
+&lt;br&gt;
+&lt;br&gt;
+Masuala yanayojulikana:</string>
+    <string name="tap_disable">Zima</string>
+    <string name="view_only">Hali ya kutazama pekee</string>
+    <string name="save_button">Hifadhi</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Haikuweza kutuma nenosiri la sudo.</string>
+    <string name="landscape_force">Lazimisha Mwelekeo wa Mandhari</string>
+    <string name="export_settings">Hamisha</string>
+    <string name="keyboard_type">Aina ya Kibodi ya Programu</string>
+    <string name="hide_connection_thumbnails">Ficha Vijipicha vya Muunganisho</string>
+    <string name="input_method_direct_drag_pan_description">Moja kwa moja, Shikilia Pan: Telezesha kidole ili kuburuta na kudondosha. Gusa kwa kidole kimoja popote unapotaka kubofya kushoto, vidole viwili ili kubofya kulia, na vidole vitatu kubofya katikati. Telezesha kidole kwa vidole viwili ili kusogeza. Gusa kwa muda mrefu ili kuanza kugeuza.</string>
+    <string name="panning">Kuvinjari Skrini</string>
+    <string name="remote_clipboard_integration">Washa Muunganisho wa Ubao wa Kunakili wa Mbali hadi Karibu Nawe</string>
+    <string name="rdp_connection_screen_help_text">Unapoongeza au kuhariri muunganisho, utaona ukurasa wa usanidi wa muunganisho. Hapa unaweza kusanidi muunganisho mpya wa RDP, au uchague uliopo. Juu ni kifungo kinachokuwezesha kuhifadhi muunganisho. Hapo chini ndipo unaposanidi muunganisho wako.
+
+- Aina ya Muunganisho: Hapa unachagua aina ya unganisho la RDP. Aina za uunganisho zinazopatikana ni:
+(a) RDP, ambayo inaunganisha moja kwa moja kwenye kompyuta kupitia itifaki ya RDP.
+(b) RDP juu ya SSH, ambayo kwanza hupitisha muunganisho wako kupitia kompyuta inayoendesha seva ya SSH.
+
+- Kichwa: Kila muunganisho unaounda unaweza kuwa na jina la utani ili kulitambulisha kwa urahisi kwenye orodha.
+
+- Mipangilio ya Tunnel ya SSH: Inapatikana katika RDP kupitia modi ya SSH.
+(a) Seva/Mlango wa SSH: Anwani na mlango wa seva ya SSH ambao muunganisho utapitishwa. Kwa chaguo-msingi SSH husikiza kwenye bandari 22.
+(b) Jina la mtumiaji/Nenosiri: Jina la mtumiaji na nenosiri la akaunti kwenye seva ya SSH. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha kutumia programu tangu ulipoiingiza mara ya mwisho.
+(c) Dhibiti Ufunguo/Tumia: Kitufe cha kudhibiti funguo za umma/faragha, na kisanduku cha kuteua kinachoonyesha ikiwa utatumia ufunguo badala ya nenosiri ili kuthibitisha. Ukitumia kitufe cha Nakili kwenye Ubao wa kunakili baada ya kutengeneza jozi ya vitufe, unapaswa kuweza kubandika ufunguo wa umma mara tu umeunganishwa kwenye seva ya RDP (ubao wa kunakili umelandanishwa kwenye seva).
+
+- Mipangilio ya Muunganisho wa RDP:
+(a) Seva/Bandari ya RDP: Hapa ndipo unapoingiza jina la seva pangishi au anwani ya IP na mlango wa kompyuta inayoendesha seva ya RDP ambayo ungependa kuwasiliana nayo. Katika RDP juu ya hali ya SSH, anwani hii inaonekana kutoka kwa Seva ya SSH. Ikiwa Seva ya SSH na seva ya RDP ni kompyuta halisi, unaweza kutumia localhost. Seva za RDP kwa kawaida husikiliza kwenye bandari 3389.
+(b) Mtumiaji wa RDP: Hapa ndipo unapoingiza jina la mtumiaji la akaunti yako ya Windows/UNIX.
+(c) Kikoa cha RDP: Ingiza kikoa ambacho akaunti yako ni ya.
+(d) Nenosiri la RDP: Hapa ndipo unapoweka nenosiri lako la akaunti ya Windows/UNIX. Hifadhi salama haitumiki kwa manenosiri (yako kwenye hifadhidata), na nenosiri litahifadhiwa tu ikiwa utachagua kisanduku cha Hifadhi. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha kutumia programu tangu ulipoiingiza mara ya mwisho.
+
+- Mipangilio ya hali ya juu: Katika sehemu hii utapata njia za kubinafsisha azimio la eneo-kazi, na marekebisho mbalimbali ya utendaji wa RDP.
+
+- Marekebisho ya Kifaa cha Karibu: Hizi hurekebisha tabia ya programu kwenye kifaa chako.
+(a) Tumia D-Pad kwa mishale: Ukipenda, unaweza kutumia D-Pad ya kibodi yako ya Bluetooth au mishale kwenye kibodi yako ya skrini kutuma mishale kwenye seva ya RDP.
+(b) Zungusha D-Pad: Simu zilizooanishwa na kibodi ya Bluetooth huenda zikahitaji D-pad ya kibodi kuzungushwa kinyume na saa ili kutuma maelekezo sahihi kwa seva.
+(c) Kielekezi cha kipanya cha ndani: Ikiwa kielekezi hakionekani, chagua hiki ili kukilazimisha ichorwe na programu.</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">Hali ya kusogeza - telezesha kidole juu/chini ili kusogeza, inua kidole ili kusimamisha</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">Hali ya kukuza - telezesha kidole juu/chini ili kuvuta/nje, inua kidole ili usimame</string>
+    <string name="rdp_adv_console_mode">Hali ya Console</string>
+    <string name="address_caption_hint_tunneled">Seva ya VNC</string>
+    <string name="arrow_right">Mshale wa Kulia</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Maandishi/Namba Hakuna Mapendekezo (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">Jina la mtumiaji la SPICE</string>
+    <string name="error_rdp_connection_failed">Muunganisho wa RDP umeshindwa! Muunganisho wa mtandao ulikatizwa, seva ya RDP ilizimwa au kuzimwa, au kipindi chako kilichukuliwa.</string>
+    <string name="arrow_left">Mshale wa Kushoto</string>
+    <string name="connection_type_vnc_over_stunnel">Salama VNC juu ya SSL Tunnel</string>
+    <string name="report_bug">Ripoti Mdudu 🐛</string>
+    <string name="warning_cert_does_not_match">ONYO: Cheti kilichohifadhiwa cha x509 au sahihi iliyopitishwa hailingani na cheti cha sasa cha seva! Hii inaweza kuwa shambulio la mtu wa kati. Ikiwa unafahamu mabadiliko muhimu unaweza kuendelea.</string>
+    <string name="more_apps">Programu Zaidi 📱</string>
+    <string name="auto_x_disabled">Imezimwa</string>
+    <string name="pro_feature_mfa">Inaonekana seva yako imewezeshwa uthibitishaji wa vipengele vingi. Tafadhali saidia mradi kwa kununua toleo la Pro ambalo linaweza kutumika kwa kipengele hiki. Kiungo cha toleo la Pro kinapatikana kwenye kidirisha cha kuanza.</string>
+    <string name="no_application_to_handle_vpn">Muunganisho huu umewekwa ili kuzindua VPN kupitia programu ya nje. Unahitaji kusakinisha programu kama Morpheusly ili kuizindua.</string>
+    <string name="port_caption_ssh">Mlango wa SSH</string>
+    <string name="arrow_down">Mshale wa Chini</string>
+    <string name="pro_feature_spice">Inaonekana ulijaribu kufungua faili ya .vv. Ikiwa ungependa kuhifadhi miunganisho kwenye Proxmox au oVirt moja kwa moja ndani ya programu na pia unataka kufungua faili za .vv, zingatia kununua Opaque. Ikiwa unahitaji tu usaidizi wa faili ya .vv, unaweza kupata aSPICE Pro. Pata viungo vya programu zote mbili kwenye kidirisha cha kuanza.</string>
+    <string name="error_vnc_unable_to_connect">Muunganisho kwa seva ya VNC umeshindwa kwa sababu:</string>
+    <string name="rdp_password_hint">Nenosiri la RDP</string>
+    <string name="custom_ca_paste">Bandika (ikiwa hauingii) CA hapa</string>
+    <string name="cursor_mode">Hali ya Mshale:</string>
+    <string name="local_device_tweaks">Marekebisho ya Kifaa cha Karibu</string>
+    <string name="disconnect">Tenganisha</string>
+    <string name="ad_donate_text0">Toleo la Pro pia lina msaada kwa uthibitishaji wa SSH wa sababu nyingi. Kwa kuongezea, inaauni kipengele cha Nenosiri Kuu kilichoombwa sana ambacho huzuia matumizi yasiyoidhinishwa na kusimba kwa njia fiche mipangilio yote ya muunganisho ikijumuisha manenosiri na vitufe vya SSH ili kujilinda dhidi ya wizi. Iwashe kutoka kwa Menyu kuu.</string>
+    <string name="info_cert_signatures_identical">\n\nUnaweza kuhakikisha kuwa maelezo yanalingana na cheti cha seva ili kuzuia shambulio la mtu wa kati.</string>
+    <string name="button_send_without_saving">Tuma Maandishi/Usiihifadhi</string>
+    <string name="single_right">Hali ya kuburuta kulia - telezesha kidole ili kuburuta/kuchagua, inua kidole ili kuacha</string>
+    <string name="error_ssh_pwd_auth_fail">Imeshindwa kuthibitisha kwa seva ya SSH kwa nenosiri. Tafadhali angalia jina lako la mtumiaji la SSH, na nenosiri la SSH.</string>
+    <string name="select_vm_title">Chagua Mashine ya Kweli</string>
+    <string name="ad_donate_text_spice">Kwa miunganisho ya Proxmox na oVirt, tafadhali changia mradi kwa kununua Opaque au aSPICE Pro. Toleo la Bila malipo la aSPICE linaauni miunganisho ya moja kwa moja kwa mashine pepe za KVM pekee. Tazama hapa chini kwa viungo vya Opaque na aSPICE Pro, pamoja na programu zetu zingine.</string>
+    <string name="enter_password">Tafadhali weka nenosiri</string>
+    <string name="main_screen_help_text">Programu inapozinduliwa inaonyesha skrini iliyo na miunganisho iliyohifadhiwa juu yake.
+
+Ikiwa hakuna miunganisho iliyohifadhiwa, sehemu ya chini ya skrini haina tupu, na itabidi ubonyeze kitufe cha kuongeza ili kuunda mpya.
+Unaweza pia kudhibiti vipengele vingine vya usanidi kutoka skrini hii kwa kugonga kwenye upau wa vidhibiti au chaguo za menyu hapo juu, kwa
+mfano kuhariri mipangilio chaguomsingi, au kuagiza na kuhamisha mipangilio.
+
+Mara tu muunganisho umehifadhiwa, unaweza kuunganisha kwenye seva ya mbali kwa kuigonga mara moja. Pia utakuwa na chaguo la kuifuta au kuihariri kwa kuigonga kwa muda mrefu.
+
+Hatimaye, unaweza kutumia sehemu ya Viunganishi vya Utafutaji ili kupata miunganisho kwa haraka kwa miunganisho iliyoonyeshwa kichujio.</string>
+    <string name="intro_dont_show">Usionyeshe tena</string>
+    <string name="action_export_settings">Hamisha Mipangilio</string>
+    <string name="error_ssh_hostkey_changed">HITILAFU! Ufunguo wa seva pangishi umebadilika. Ikiwa hii ni kwa makusudi, unaweza kuendelea. Vinginevyo, hii inaweza kuwa mtu katika mashambulizi ya kati.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Haikuweza kupata mlango wa mbali wa VNC kutoka kwa x11vnc. Tafadhali hakikisha x11vnc imesakinishwa. Ili kuwa na uhakika, jaribu kuendesha x11vnc kwa mkono kwenye mstari wa amri.</string>
+    <string name="error_failed_to_obtain_content">Imeshindwa kupata faili. Tafadhali ipakue tena lakini wakati huu, ifungue haraka kutoka kwa folda ya Upakuaji katika Kidhibiti Faili.</string>
+    <string name="show_menu">Onyesha Menyu</string>
+    <string name="auto_x_unix_auth">Thibitisha kwa kutumia Jina la Mtumiaji/Nenosiri la SSH lililotolewa kiotomatiki (kwenye skrini nyeusi ya kuingia).</string>
+    <string name="previous_versions">Matoleo ya awali ⍼</string>
+    <string name="auto_x_xvnc">Tafuta au Unda ukitumia Xvnc</string>
+    <string name="auto_x_find">Tafuta Pekee, Usiunde</string>
+    <string name="port_caption">Bandari ya VNC</string>
+    <string name="delete_key">Futa Ufunguo Uliochaguliwa</string>
+    <string name="cert_fingerprint">Alama ya vidole ya Cheti</string>
+    <string name="enter_vnc_password">Tafadhali weka nenosiri la VNC</string>
+    <string name="port_hint">Bandari</string>
+    <string name="import_from_file">Ingiza kutoka kwa Faili</string>
+    <string name="error_rdp_unable_to_connect">Haikuweza kuunganisha kwenye seva ya RDP! Tafadhali hakikisha mpangilio wa Seva ya RDP ni sahihi, seva imewashwa, RDP imewashwa, na kwamba seva iko kwenye mtandao sawa na kifaa hiki.</string>
+    <string name="rdp_geom_disabled">Imezimwa</string>
+    <string name="ad_donate_spice_text1b">Gusa hapa ili kununua toleo la Pro na ufungue faili za .vv.</string>
+    <string name="spice_ca_file_error_reading">Hitilafu katika kusoma faili ya CA. Tafadhali hakikisha kuwa inasomeka.</string>
+    <string name="info_vm_launched_on_stand_by">VM yako ilipatikana ikiwa imezimwa na imeanzishwa. Tafadhali jaribu tena baada ya dakika chache. Ukijaribu hivi karibuni na kupata hitilafu ya muunganisho, jaribu tena baadaye.</string>
+    <string name="special_keys">Tuma Funguo</string>
+    <string name="error_failed_to_download_http">Imeshindwa kupakua faili kupitia HTTP. Labda seva yako haipatikani.</string>
+    <string name="rdp_geom_automatic">Otomatiki</string>
+    <string name="portrait_mode">Badili hadi modi ya wima wakati umeunganishwa</string>
+    <string name="master_password_set_error">Nenosiri hazilingani, tafadhali kuwa mwangalifu!</string>
+    <string name="enter_ssh_credentials">Tafadhali weka kitambulisho cha SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">Seva ya VNC Nyuma ya Repeater</string>
+    <string name="prefer_sending_unicode">Ingizo la Unicode (Windows pekee)</string>
+    <string name="auto_x_caption">Programu inaweza kugundua kiotomatiki zilizopo na kuunda vipindi vipya vya X kwenye mifumo ya Linux/UNIX (sawa na NX). Unahitaji x11vnc kupata, na Xvfb, Xvnc, au Xdummy ili kuunda vipindi. Ikiwa unatatizika kuunganisha, jaribu kuchagua Aina maalum ya Kipindi cha Mbali katika Mipangilio ya Kina ya AutoX.</string>
+    <string name="auto_x_confirm">Thibitisha</string>
+    <string name="position_toolbar_last_used">Rejesha Nafasi ya Upauzana</string>
+    <string name="error_no_such_vm_found_for_user">Hakuna Mashine Pembeni yenye kitambulisho kilichotolewa ilipatikana kwa mtumiaji huyo. Futa kitambulisho ili kupata orodha ya VM.</string>
+    <string name="single_middle">Hali ya kuvuta katikati - telezesha kidole ili kuburuta/kuchagua, inua kidole ili kuacha</string>
+    <string name="info_encoding">usimbaji,</string>
+    <string name="rdp_geom_native_portrait">Picha ya Asili</string>
+    <string name="input_mode">Hali ya Kuingiza</string>
+    <string name="action_delete_connection">Futa Muunganisho</string>
+    <string name="keys_caption">Funguo</string>
+    <string name="single_left">Hali ya kuburuta kushoto - telezesha kidole ili kuburuta/kuchagua, inua kidole ili kuacha</string>
+    <string name="vv_file_error">Faili ya .vv haipo au imeharibika!</string>
+    <string name="connection_delete">Futa</string>
+    <string name="info_progress_dialog_establishing">Inaanzisha kupeana mkono.\nTafadhali subiri...</string>
+    <string name="keep_password_button">Weka</string>
+    <string name="auto_x_find_login">Pata Kuingia kwa X (inahitaji sudo)</string>
+    <string name="ssh_use_x11vnc">Eneo-kazi otomatiki</string>
+    <string name="address_caption_ssh">Seva ya SSH</string>
+    <string name="spice_password_hint">Nenosiri la SPICE</string>
+    <string name="cursor_force_disable">Zima</string>
+    <string name="master_password_error_password_not_set">Kuweka Nenosiri Kuu lilighairiwa.</string>
+    <string name="info_update_color_model_to">Inasasisha Muundo wa Rangi hadi</string>
+    <string name="rdp_adv_menu_animation">Onyesha Uhuishaji wa Menyu</string>
+    <string name="input_method_help">Msaada wa Mbinu ya Kuingiza</string>
+    <string name="enable_recording">Washa Kurekodi</string>
+    <string name="path_to_ca">Ingiza njia ya faili (kwa mfano /sdcard/ca-cert.pem) na uguse Leta ili kupakia Mamlaka ya Cheti chako.</string>
+    <string name="nickname_caption_hint">Kichwa (si lazima)</string>
+    <string name="connection_caption">Muunganisho</string>
+    <string name="pan_follow_mouse">Sufuria hufuata panya</string>
+    <string name="rdp_geom_native_landscape">Mazingira ya Asili</string>
+    <string name="meta_key_title">Tuma Funguo Maalum</string>
+    <string name="move_toolbar">Sogeza Upauzana</string>
+    <string name="input_mode_fit_to_screen">Hakuna Pan;Trackball Mouse</string>
+    <string name="enable_sound">Washa Sauti</string>
+    <string name="error_security_type">Seva haikutoa aina ya usalama inayotumika.</string>
+    <string name="connection_type_text">Mazingira ya Uaminifu (RHEV/oVirt au Proxmox)</string>
+    <string name="connection_setup_host_name">Anwani ya Seva</string>
+    <string name="vnc_server_empty_no_save">Seva ya VNC au mlango tupu. Haiwezi kuhifadhi muunganisho!</string>
+    <string name="ca_ovirt_manage">Dhibiti RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">Dhibiti CA maalum</string>
+    <string name="ca_file_not_found">Faili haijapatikana. Tafadhali weka jina halali la faili katika sehemu ya maandishi (k.m. /sdcard/ca.crt).</string>
+    <string name="master_password_set_message">Tafadhali ingiza na ukariri Nenosiri Kuu. Kadiri nenosiri lako linavyozidi kuwa ndefu, ndivyo inavyokuwa vigumu kupasuka. Ukiweka nenosiri lako vibaya au kulisahau, utapoteza mipangilio yako yote! Unaweza kutaka kuhamisha mipangilio yako sasa ili kucheleza (kutoka Menyu). Zihifadhi kwa usalama kwani mipangilio iliyotumwa haijasimbwa kwa njia fiche.</string>
+    <string name="repeater_clear">Usitumie</string>
+    <string name="ad_donate_text3">Ikiwa ungependa kusaidia mradi zaidi, fuata viungo vifuatavyo kwa viungo vya programu za mteja kwa:</string>
+    <string name="vnc_connection_settings">Mipangilio ya Muunganisho wa VNC</string>
+    <string name="master_password_enable">🔒 Washa Nenosiri Kuu</string>
+    <string name="new_list_button">Orodha Mpya</string>
+    <string name="spice_intro_text">Asante kwa kusaidia aSPICE na programu huria kwa ujumla! Kwa usaidizi wa kutumia aSPICE, angalia Vipengee vya Usaidizi kwenye Menyu, na maelezo ya programu kwenye soko.
+&lt;br&gt;
+&lt;br&gt;
+Orodha ya sasa ya vipengele vya aSPICE inajumuisha:
+&lt;br&gt;
+- Spice isiyo na maana, SPICE imetundikwa juu ya SSH.
+&lt;br&gt;
+- Msaada wa mzunguko wa bure. Tumia Mfumo wa Uendeshaji ili kupunguza mzunguko ikiwa inahitajika.
+&lt;br&gt;
+- Uzalishaji na usafirishaji wa ufunguo wa SSH Umma/Binafsi.
+&lt;br&gt;
+- Uhifadhi wa Kikao otomatiki.
+&lt;br&gt;
+- Inayoweza Kukuza, Inafaa kwa Skrini, na aina za kuongeza moja hadi Moja.
+&lt;br&gt;
+- Udhibiti wa miguso mingi juu ya kipanya cha mbali katika modi za ingizo za Padi ya Kugusa ya Moja kwa moja na Inayoiga.
+&lt;br&gt;
+- Udhibiti kamili wa mkono mmoja juu ya kipanya cha mbali katika modi ya ingizo ya Mkono Mmoja.
+&lt;br&gt;
+- Mibofyo ya vipanya vingi vya kugusa: gusa ili kubofya Kushoto, gusa kwa vidole viwili ili kubofya kulia, gusa kwa vidole vitatu hadi ubofye katikati.
+&lt;br&gt;
+- Kusogeza kwa miguso mingi: buruta vidole viwili Juu/Chini, na Kushoto/Kulia ili kusogeza.
+&lt;br&gt;
+- Vitufe vya meta na vishale kwenye skrini ambavyo vinaweza kuzimwa kabisa kwenye menyu au kuwekwa kwa kitufe cha skrini.
+&lt;br&gt;
+- Kutuma maandishi na mchanganyiko wa Vifunguo vya kiholela wakati umeunganishwa.
+&lt;br&gt;
+- Usaidizi wa kuunda miunganisho (\Menyu-&gt; Usaidizi wa Muunganisho\) kwenye skrini ya muunganisho.
+&lt;br&gt;
+- Usaidizi wa modi za ingizo (\Menyu-&gt;Zaidi-&gt; Usaidizi wa Njia ya Kuingiza\) wakati imeunganishwa.
+&lt;br&gt;
+- Kutumia trackpadi inayopatikana kama Vishale badala ya kusogeza kipanya, na ubofye padi ya kufuatilia kama Ctrl, ukizungusha D-pad/trackpad kwa kibodi za BT.
+&lt;br&gt;
+- Usaidizi wa lugha nyingi, mradi tu seva ya SPICE iwe na mpangilio wa lugha unaohitajika.
+&lt;br&gt;
+- Mabadiliko ya azimio la mashine ya mbali bila mshono
+&lt;br&gt;
+- Usaidizi kamili wa kipanya kwenye vifaa vya Android 4.0+, ikiwa ni pamoja na kubofya kulia na katikati na gurudumu la kusogeza.
+&lt;br&gt;
+&lt;br&gt;
+Vipengele vilivyopangwa:
+&lt;br&gt;
+- Copy/Bandika ushirikiano
+&lt;br&gt;
+- Sauti
+&lt;br&gt;
+- Maboresho ya utendaji
+&lt;br&gt;
+Masuala yanayojulikana:
+&lt;br&gt;
+- Tuma maandishi haitumi alama fulani.
+&lt;br&gt;</string>
+    <string name="info">Habari</string>
+    <string name="connection_edit_delete_prompt">Je, ungependa kuhariri au kufuta muunganisho</string>
+    <string name="connection_type_caption">Aina ya Muunganisho</string>
+    <string name="usb">USB (chomeka kebo ya OTG kwanza)</string>
+    <string name="connection_type_vnc_over_vencrypt">Salama VNC juu ya VeNCrypt</string>
+    <string name="log_copied">Logcat imenakiliwa kwenye ubao wa kunakili. Sasa unaweza kuibandika kwenye barua pepe au kwenye jukwaa la usaidizi. Tafadhali tafuta data yoyote ya kibinafsi kabla ya kuchapisha.</string>
+    <string name="disable_pointer_offset_correction">Zima urekebishaji wa kukabiliana na kiashiria</string>
+    <string name="password_caption_hint">Nenosiri la VNC</string>
+    <string name="user_not_specified">Mtumiaji hajabainishwa</string>
+    <string name="connection_type_vnc_over_ssl">Salama VNC kupitia AnonTLS</string>
+    <string name="pro_feature_intro">Inaonekana unatumia kipengele cha Pro. Tafadhali saidia mradi kwa kununua toleo la Pro ambalo linaweza kutumika kwa kipengele hiki. Tafadhali angalia kidirisha cha utangulizi kwa viungo vya programu sahihi.</string>
+    <string name="shift_check">Shift</string>
+    <string name="error_ssh_keypair_missing">Jozi ya vitufe vya SSH bado haijatolewa! Tafadhali tengeneza moja na uweke (sehemu yake ya umma) katika funguo_ zilizoidhinishwa kwenye seva ya SSH.</string>
+    <string name="error_connection_failed">Muunganisho haukufaulu.</string>
+    <string name="info_continue_connecting">Endelea kuunganisha kwa:</string>
+    <string name="connection_type_vnc_over_ssh">Salama VNC kupitia SSH</string>
+    <string name="advanced_settings">Mipangilio ya Kina</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Nenosiri limetolewa lakini jozi ya vitufe haijasimbwa kwa njia fiche. Tafadhali futa neno la siri.</string>
+    <string name="vnc_server_empty">Seva ya VNC au mlango tupu. Haiwezi kuunganisha!</string>
+    <string name="error_uri_parse_error">Imeshindwa kuchanganua URI ya Kusudi. Tafadhali angalia umbizo la URI. Unaweza pia kuona logcat ya kifaa kwa maelezo zaidi.</string>
+    <string name="username_hint_vencrypt">Jina la mtumiaji la VNC</string>
+    <string name="error_vv_download_timeout">Muda umeisha kupakua faili ya vv.</string>
+    <string name="center_mouse">Kipanya @</string>
+    <string name="show_keyboard">Onyesha Kibodi</string>
+    <string name="info_cert_signatures">Taarifa ya cheti ni:</string>
+    <string name="rdp_username_hint">Jina la mtumiaji la RDP</string>
+    <string name="connection_type_vnc">VNC ya msingi</string>
+    <string name="rdp_security_nla">Uthibitishaji wa Kiwango cha Mtandao</string>
+    <string name="ssh_pubkey_button">Dhibiti Ufunguo</string>
+    <string name="ca_file_error_reading">Hitilafu katika kusoma faili ya CA. Tafadhali hakikisha kuwa inasomeka.</string>
+    <string name="master_password_error_intents_not_supported">Madhumuni ya muunganisho bado hayatumiki wakati Nenosiri Kuu limewashwa.</string>
+    <string name="input_method_direct_swipe_pan">Moja kwa moja, Swipe Pan</string>
+    <string name="update_button">Sasisha</string>
+    <string name="input_mode_panning">Hali ya Kuchanganua Eneo-kazi</string>
+    <string name="search_connections">Tafuta Viunganisho</string>
+    <string name="error_x509_could_not_generate_signature">Haikuweza kuzalisha SHA1 au saini ya MD5 ya cheti. Hakuna algoriti ya SHA1/MD5 iliyopatikana.</string>
+    <string name="auto_x_xdummy">Tafuta au Unda na Xdummy</string>
+    <string name="error_not_connected_to_network">Huonekani kuwa umeunganishwa kwenye Mtandao. Haiwezi kuendelea bila kuunganishwa!</string>
+    <string name="show_advanced_settings">Onyesha Mipangilio ya Kina</string>
+    <string name="master_password_set">Weka Nenosiri Kuu</string>
+    <string name="custom_ca_import">Vinginevyo, weka njia kamili ya CA yako na uguse Leta</string>
+    <string name="mouse_follow_pan">Panya hufuata sufuria</string>
+    <string name="enter_password_auth_failed">Uthibitishaji umeshindwa. Tafadhali weka upya kitambulisho chako.</string>
+    <string name="show">Onyesha</string>
+    <string name="dpad_as_arrows">Tumia D-Pad kwa mishale na bonyeza D-Pad kwa Ctrl.</string>
+    <string name="tap_enable">Wezesha</string>
+    <string name="ad_donate_spice_text1a">Gusa hapa ili kununua Opaque na uhifadhi miunganisho ya moja kwa moja kwenye Proxmox na oVirt. Pia inasaidia faili za .vv.</string>
+    <string name="please_grant_permission_from_prefs">Huenda ukahitaji kutoa ruhusa kwa programu kupitia Mipangilio.</string>
+    <string name="password_caption">Uandishi wa VNC.</string>
+    <string name="share_app">Shiriki 🔗</string>
+    <string name="remote_sound_on_device">Sauti Kwenye Kifaa</string>
+    <string name="connection_setup_vm_name">Jina la mashine pepe (si lazima)</string>
+    <string name="single_choose">Chagua hali ya kutumia mkono mmoja au ughairi</string>
+    <string name="error_no_user_hostname">Tafadhali weka angalau mtumiaji na jina la mpangishaji au anwani ya IP.</string>
+    <string name="rdp_adv_redirect_sdcard">Elekeza upya Kadi ya SD</string>
+    <string name="error_pve_api_io_error">Muunganisho kwa Mazingira Pembeni ya Proxmox umeshindwa:</string>
+    <string name="username_hint_optional">Jina la mtumiaji la VNC (si lazima)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">Desturi</string>
+    <string name="delete_connection">Futa Muunganisho</string>
+    <string name="repeater_save">Tumia</string>
+    <string name="get_help">Pata Msaada</string>
+    <string name="hide">Ficha</string>
+    <string name="rdp_security_mode">Hali ya Usalama</string>
+    <string name="connection_type_rdp_over_ssh">RDP kwa SSH</string>
+    <string name="auto_x_xvfb">Tafuta au Unda ukitumia Xvfb</string>
+    <string name="address_caption">Seva ya VNC</string>
+    <string name="show_only_connection_nicknames">Onyesha Majina ya Utani ya Muunganisho Pekee</string>
+    <string name="ca_spice_use_ovirt">Tumia RHEV/oVirt CA kwa SPICE</string>
+    <string name="info_cert_tunnel">Je, ungependa kuunganisha kwa seva pangishi iliyotambuliwa na cheti kifuatacho?\n\nAlama ya vidole: %1$s\n\nImetolewa kwa:\n%2$s\n\nImetolewa na:\n%3$s\n\nHalali kutoka:\n%4$s\n\nItatumika hadi:\n%5$s\n\n\nKumbuka:\n%5$s\n\nKumbuka:</string>
+    <string name="error_failed_to_obtain_file">Imeshindwa kupata faili. Tafadhali ipakue tena, lakini wakati huu, jaribu kuifungua kutoka eneo la Arifa au moja kwa moja kutoka kwa Kivinjari ikiwezekana.</string>
+    <string name="error_pve_timeout_communicating">Muda umeisha kuwasiliana na Proxmox Virtual Environment.</string>
+    <string name="connection_type_spice_over_ssh">SPICE juu ya SSH</string>
+    <string name="vnc_connection_screen_help_text">
+Unapoongeza au kuhariri muunganisho, utaona ukurasa wa usanidi wa muunganisho. Hapa unaweza kusanidi muunganisho mpya wa VNC, au uchague moja iliyopo. Juu ni kifungo kinachokuwezesha kuhifadhi muunganisho. Hapo chini ndipo unaposanidi muunganisho wako.
+
+Ikiwa unatafuta nyongeza ya haraka ya utendakazi, jaribu kuweka modi ya Rangi kwa thamani ya chini. Pia, jaribu kuondoa picha yoyote ya mandharinyuma ya eneo-kazi kwenye seva ya VNC. Hatimaye, hakikisha kuwa kifaa chako kina muunganisho mzuri wa mtandao na uepuke kufunika antena yake na kupunguza nguvu ya mawimbi.
+
+- Aina ya Muunganisho: Hapa unachagua aina ya unganisho la VNC. Aina za uunganisho zinazopatikana ni:
+(a) VNC isiyo na maana, ambayo inatumika na seva zote za VNC lakini haina usimbaji fiche na inaweza kushambuliwa kwa nguvu kwa sababu ya kizuizi cha nenosiri cha herufi 8.
+(b) Linda VNC kupitia SSH, ambayo inaunganisha juu ya njia fiche ya SSH. Unahitaji huduma ya SSHD inayoendesha pamoja na seva ya VNC. Mradi seva ya VNC haikubali miunganisho moja kwa moja kutoka kwa Mtandao, aina hii ya muunganisho haina udhaifu wowote unaojulikana, mradi tu uthibitishe sahihi ya cheti cha seva unapounganisha mara ya kwanza.
+(c) UltraVNC, ambayo hukupa Windows Logon na chaguzi za Repeater za UltraVNC. Kutumia Logon ya Windows hakukabiliani na kizuizi cha nenosiri cha herufi 8, lakini hali hii haitoi usimbaji fiche, kwa hivyo kipindi chako kinaweza kunusa.
+(d) Linda VNC kupitia AnonTLS, ambayo ni VNC ya kawaida kwenye muunganisho unaolingana na mshindo. Labda unahitaji kuendesha stunnel, au tumia seva ya VNC kama Vino ambayo inasaidia AnonTLS nje ya boksi. Hali hii hukupa usimbaji fiche wa kipindi, lakini inakabiliwa na kizuizi cha nenosiri la herufi 8 na haizuii mashambulizi ya mtu katikati.
+(e) Linda VNC kupitia VeNCrypt, ambayo hutumia vyeti vya x509 na vile vile usimbaji fiche wa kipindi, na kulingana na usanidi wa seva inaweza kutumia kitambulisho cha mtumiaji/nenosiri bila kizuizi cha herufi 8. Hali hii huzuia mashambulizi ya mtu katikati.pamoja na kutoa faragha ya kikao. Seva kama vile x11vnc na TigerVNC zinatumia hali hii na ziko salama kama VNC kupitia SSH.
+
+- Kichwa: Kila muunganisho unaounda unaweza kuwa na jina la utani ili kulitambulisha kwa urahisi kwenye orodha.
+
+- Mipangilio ya Tunnel ya SSH: Inapatikana katika VNC kupitia hali ya SSH.
+(a) Seva/Mlango wa SSH: Anwani na mlango wa seva ya SSH ambao muunganisho utapitishwa. Kwa chaguo-msingi SSH husikiza kwenye bandari 22.
+(b) Jina la mtumiaji/Nenosiri: Jina la mtumiaji na nenosiri la akaunti kwenye seva ya SSH. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha programu tangu ulipoiingiza mara ya mwisho.
+(c) Dhibiti Ufunguo/Tumia: Kitufe cha kudhibiti funguo za umma/faragha, na kisanduku cha kuteua kinachoonyesha ikiwa utatumia ufunguo badala ya nenosiri ili kuthibitisha. Ukitumia kitufe cha Nakili kwenye Ubao wa kunakili baada ya kutengeneza jozi ya vitufe, unapaswa kuweza kubandika ufunguo wa umma mara tu umeunganishwa kwenye seva ya VNC (ubao wa kunakili umelandanishwa kwa seva).
+
+- Sanidi AutoX: Inapatikana tu katika VNC juu ya hali ya SSH. Programu inaweza kugundua kiotomatiki zilizopo na kwa hiari kuunda vipindi vipya vya X kwenye mifumo ya UNIX (kama vile mteja wa NX). Unahitaji x11vnc kupata, na Xvfb, Xvnc, au Xdummy imewekwa kwenye mfumo wa mbali ili kuunda vipindi. Huenda ukalazimika kuhamisha faili yako ya .dmrc na kuongeza faili ya .xinit katika saraka yako ya nyumbani ikiwa eneo-kazi lako halionekani sawa au unapata dirisha la xterm tu.
+
+- Mipangilio ya Muunganisho wa VNC:
+(a) Seva/Bandari ya VNC: Hapa ndipo unapoingiza jina la seva pangishi au anwani ya IP na mlango wa kompyuta inayoendesha seva ya VNC ambayo ungependa kuwasiliana nayo. Katika VNC juu ya hali ya SSH, anwani hii inaonekana kutoka kwa Seva ya SSH. Ikiwa Seva ya SSH na seva ya VNC ni kompyuta sawa, unaweza kutumia localhost. Seva za VNC kwa kawaida husikiliza kuanzia bandari 5900 (skrini ya kwanza ya VNC, skrini :0).
+(b) Mtumiaji wa VNC: Inapatikana katika UltraVNC yenye modi ya Logon ya Windows, au Salama VNC kupitia VeNCrypt, hapa ndipo unapoingiza jina la mtumiaji la akaunti yako ya Windows/UNIX.
+(c) Nenosiri la VNC: Ikiwa usanidi wa seva yako ya VNC unahitaji nenosiri, ingiza nenosiri hilo hapa. Katika UltraVNC iliyo na modi za Windows Logon/VeNCrypt, weka nenosiri lako la akaunti ya Windows/UNIX hapa. Hifadhi salama haitumiki kwa manenosiri, na nenosiri litahifadhiwa tu ikiwa utachagua kisanduku cha Hifadhi. Nenosiri litajazwa kwenye ukurasa huu ikiwa hujaacha programu tangu ulipoiingiza mara ya mwisho.
+- Njia ya Rangi: Mteja anaauni aina kadhaa za rangi. Hali zilizo na rangi nyingi hutoa hali bora ya kuona kwa gharama ya kipimo data kikubwa na ukokotoaji zaidi wa CPU kwenye kifaa chako. Baadhi ya seva za VNC haziauni rangi zote za kina (k.m. Kompyuta ya Mbali ya OS/X inahitaji rangi ya biti 24). Ikiwa unatatizika kuunganisha, jaribu kina kingine cha rangi.
+
+- Tumia D-Pad kwa mishale: Ukipenda, unaweza kutumia D-Pad ya kibodi yako ya Bluetooth au mishale kwenye kibodi yako ya skrini kutuma mishale kwenye seva ya VNC.
+
+- Zungusha D-Pad: Simu zilizooanishwa na kibodi ya Bluetooth huenda zikahitaji D-pedi ya kibodi ili kuzungushwa kinyume na saa ili kutuma maelekezo sahihi kwa seva.
+
+- Kielekezi cha kipanya cha ndani: Baadhi ya seva za VNC (k.m. Eneo-kazi la Mbali la OS/X) hazitachora kiashiria cha kipanya kwenye kiteja. Kuangalia chaguo hili kutasababisha programu kuchora kiashiria cha kipanya kwenye nafasi ya kipanya.
+
+- Ramani ya Bitma ya Skrini Otomatiki: Kiteja cha VNC hutumia ramani-bit ili kuwakilisha onyesho la mbali. Kwa maonyesho makubwa sana ya mbali, hasa katika hali ya kufaa-kwa-skrini, unaweza kupata vizalia vya programu vya ajabu vya kuonekana ukiwa katika hali ya kufaa-kwa-skrini, kutokana na mapungufu ya kumbukumbu kwa kila mchakato. Ikiwa hii itatokea, jaribu kuangalia chaguo hili. Kumbuka kwamba kuangalia chaguo kunaweza kusababisha programu kuacha kwenye muunganisho.
+
+- Repeater: Inapatikana tu katika hali ya UltraVNC. MUHIMU: Ikiwa una kirudia cha UltraVNC, weka anwani na mlango wake nje ya kidirisha cha \'UltraVNC Repeater\' na uweke anwani na mlango wa seva halisi ya VNC ndani ya Kidirisha cha \'UltraVNC Repeater\'. Tenganisha anwani na mlango wa seva ya VNC kwa koloni, k.m.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Washa Hifadhi ya Glyph</string>
+    <string name="disable_battery_optimizations_failed">
+Haikuweza kufungua mipangilio ya uboreshaji wa betri. Zima uboreshaji wa betri mwenyewe katika mipangilio ya mfumo.</string>
+    <string name="disable_battery_optimizations">
+🔋Zima Uboreshaji wa Betri</string>
+    <string name="disable_battery_optimizations_already_done">
+Programu tayari imeondolewa kwenye uboreshaji wa betri.</string>
+    <string name="no_connections_title">Hakuna miunganiko bado</string>
+    <string name="no_connections_hint">Gonga kitufe cha + kuongeza muunganiko wako wa kwanza wa mbali</string>
+    <string name="no_connections_hint_tv">Bonyeza kitufe cha + hapo juu kuongeza muunganiko wako wa kwanza wa mbali</string>
+    <string name="keyboard_layout_map">Mpangilio wa Kibodi</string>
+</resources>

@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">A hang körülbelül 15 másodpercen belül inicializálódik, kérjük, állítson le minden futó videó- vagy hanglejátszást addig</string>
+    <string name="audio_initialized">Hang inicializálva</string>
+    <string name="action_import_settings">Beállítások importálása</string>
+    <string name="action_new_connection">✚ Új kapcsolat</string>
+    <string name="action_edit_default_settings">⚙ Alapértelmezett beállítások szerkesztése</string>
+    <string name="action_export_settings">Beállítások exportálása</string>
+    <string name="action_delete_connection">Kapcsolat törlése</string>
+    <string name="action_rate_or_share_app">⭐ Segítség, értékelés, megosztás</string>
+    <string name="get_help">Segítség</string>
+    <string name="advanced_settings">Speciális beállítások</string>
+    <string name="audio">Hang</string>
+    <string name="auto_rotation">Képernyő elforgatása csatlakoztatva</string>
+    <string name="auto_request_new_res">Távoli képernyő szinkronizálása a kijelző felbontásával</string>
+    <string name="custom_ca_subject">Opcionális tanúsítvány alany. Nem szükséges, ha a tanúsítvány CN-je megegyezik az állomásnévvel</string>
+    <string name="custom_ca_import">Alternatívaként adja meg a CA teljes elérési útját, majd koppintson az Importálás gombra</string>
+    <string name="custom_ca_paste">Illessze be a CA-t ide (ha nem importálja fájlként)</string>
+    <string name="ca_ovirt_use_custom">Egyéni RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">RHEV/oVirt CA használata SPICE-hoz</string>
+    <string name="ca_ovirt_manage">RHEV/oVirt CA kezelése</string>
+    <string name="ca_spice_manage">SPICE CA kezelése</string>
+    <string name="ca_file_not_found">A fájl nem található. Kérjük, adjon meg egy érvényes fájlnevet a szövegmezőben (pl. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Hiba a CA fájl olvasásakor. Kérjük, győződjön meg arról, hogy olvasható.</string>
+    <string name="ca_new_or_changed">Új vagy megváltozott kiszolgálói tanúsítvány</string>
+    <string name="connection_type_text">Virtualizációs környezet (RHEV/oVirt vagy Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Virtuális gép neve (opcionális)</string>
+    <string name="connection_setup_host_name">Kiszolgáló címe</string>
+    <string name="connection_setup_user">Felhasználó@Tartomány</string>
+    <string name="connection_setup_password">Jelszó</string>
+    <string name="enter_password">Kérjük, adja meg a jelszót</string>
+    <string name="enter_password_auth_failed">A hitelesítés sikertelen. Kérjük, adja meg újra a hitelesítő adatait.</string>
+    <string name="enter_otp_code">Kérjük, adja meg az OTP kódot</string>
+    <string name="hide_toolbar">Eszköztár elrejtése</string>
+    <string name="manage_custom_ca_title">Egyéni CA kezelése</string>
+    <string name="save_button">Mentés</string>
+    <string name="select_vm_title">Virtuális gép kiválasztása</string>
+    <string name="vv_file_not_found">A .vv fájl nem található!</string>
+    <string name="vv_file_error">A .vv fájl hiányzik vagy sérült!</string>
+    <string name="info_cert">Elfogadja ezt az új vagy megváltozott állomástanúsítványt?\n\nUjjlenyomatok:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nKiállítva: %4$s\nKiállító: %5$s\n\nÉrvényes: %6$s\nÉrvényes: %7$s\n</string>
+
+    <string name="toggle_keyboard">Billentyűzet be-/kikapcsolása</string>
+    <string name="show_keyboard">Billentyűzet megjelenítése</string>
+    <string name="scroll_wheel">Görgetőkerék</string>
+
+    <string name="input_method_help">Beviteli módszer súgója</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Beviteli módszer</string>
+
+    <string name="error_failed_to_download_http">Nem sikerült letölteni a fájlt HTTP-n keresztül. Lehet, hogy a kiszolgáló nem érhető el.</string>
+    <string name="error_failed_to_download_https">Nem sikerült letölteni a fájlt HTTPS-en keresztül. Lehet, hogy a kiszolgáló tanúsítványa nem megbízható (lejárt vagy önaláírt), vagy a kiszolgáló nem érhető el.</string>
+    <string name="error_failed_to_obtain_content">Nem sikerült beszerezni a fájlt. Kérjük, töltse le újra, de ezúttal nyissa meg gyorsan a Letöltések mappából egy Fájlkezelővel.</string>
+    <string name="error_failed_to_obtain_file">Nem sikerült megtalálni a fájlt. Kérjük, töltse le újra, de ezúttal próbálja meg megnyitni az Értesítési területről vagy közvetlenül a Böngészőből, ha lehetséges.</string>
+
+    <string name="error_dialog_title">Hiba</string>
+    <string name="info_dialog_title">Információ</string>
+    <string name="info_vm_launched_on_stand_by">A VM kikapcsolt állapotban volt és el lett indítva. Kérjük, próbálja újra néhány perc múlva. Ha túl korán próbálkozik és kapcsolódási hibát kap, próbálja meg később.</string>
+    <string name="error_no_vm_found_for_user">Nincs elérhető virtuális gép a megadott felhasználóhoz.</string>
+    <string name="error_no_such_vm_found_for_user">Nem található a megadott azonosítójú virtuális gép a felhasználóhoz. Törölje az azonosítót a VM-ek listájának megtekintéséhez.</string>
+    <string name="error_no_vnc_support_yet">A VNC megjelenítési típus még nem támogatott, de hamarosan elérhető funkció lesz. Köszönjük a megértését!</string>
+    <string name="error_not_connected_to_network">Úgy tűnik, nincs internetkapcsolata. Kapcsolat nélkül nem lehet folytatni!</string>
+    <string name="error_ovirt_timeout">A VM-hez való kapcsolódás időtúllépett. Kérjük, ellenőrizze, hogy a VM-et futtató csomópont címe helyes-e, elérhető-e az aktuális hálózatából, és hogy nem tiltja-e tűzfal a kapcsolatot.</string>
+    <string name="error_ovirt_auth_failure">Hitelesítési hiba. Kérjük, ellenőrizze a megadott felhasználónevet és jelszót.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL kézfogási hiba. Probléma van a kiszolgáló SSL tanúsítványával. Ha önaláírt tanúsítványt használ, újra kell importálnia a tanúsítványa hatóságát.</string>
+    <string name="error_pve_failed_to_authenticate">Nem sikerült hitelesíteni a Proxmox virtuális környezetben. Kérjük, győződjön meg arról, hogy a felhasználónevet felhasználó@realm formátumban adja meg, és hogy a jelszó helyes.</string>
+    <string name="error_pve_failed_to_parse_json">Nem sikerült feldolgozni a Proxmox virtuális környezet válaszát.</string>
+    <string name="error_pve_vmid_not_numeric">A VM azonosító nem numerikus. Kérjük, adjon meg egy numerikus VM azonosítót, vagy hagyja üresen a VM listából való kiválasztáshoz.</string>
+    <string name="error_pve_api_unexpected_code">Váratlan válasz a Proxmox virtuális környezettől: </string>
+    <string name="error_pve_api_io_error">Kapcsolódás a Proxmox virtuális környezethez sikertelen: </string>
+    <string name="error_pve_null_data">A Proxmox virtuális környezet null adatot adott vissza.</string>
+    <string name="error_pve_timeout_communicating">Időtúllépés a Proxmox virtuális környezettel való kommunikáció során.</string>
+    <string name="error_vm_lookup_failed">Nem található a megadott nevű, a felhasználóhoz rendelt virtuális gép. Törölje a VM nevét a felhasználóhoz rendelt VM-ek listájának megtekintéséhez.</string>
+    <string name="error_vv_download_timeout">Időtúllépés a vv fájl letöltésekor.</string>
+    <string name="message_please_wait">Kérjük, várjon</string>
+    <string name="message_please_install_bvnc">Kérjük, telepítse a &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> alkalmazást a Google Play-ről a VM VNC konzoljához való csatlakozáshoz.</string>
+    <string name="ssl_strict">Kötelező egyező köznév a tanúsítványban (ajánlott)</string>
+    <string name="usb">USB (először csatlakoztassa az OTG kábelt)</string>
+
+    <string name="ad_donate_text0">A Pro verzió többfaktoros SSH hitelesítést is támogat. Emellett támogatja a sokat kért Főjelszó funkciót, amely megakadályozza az illetéktelen hozzáférést, és titkosítja az összes kapcsolati beállítást, beleértve a jelszavakat és SSH kulcsokat a lopás ellen. Engedélyezze a főmenüből.</string>
+    <string name="ad_donate_spice_text1a">Koppintson ide az Opaque megvásárlásához és a közvetlen Proxmox és oVirt kapcsolatok mentéséhez. Támogatja a .vv fájlokat is.</string>
+    <string name="ad_donate_spice_text1b">Koppintson ide a Pro verzió megvásárlásához és a .vv fájlok megnyitásához.</string>
+    <string name="ad_donate_text1">Koppintson ide a projekt támogatásához kis adománnyal a Pro verzió megvásárlásával.</string>
+    <string name="ad_donate_text2">A Pro verzióval letilthatja ezt a párbeszédpanelt, és hozzáférhet további funkciókhoz.</string>
+    <string name="ad_donate_text3">Ha szeretné tovább támogatni a projektet, kövesse az alábbi hivatkozásokat a kliens alkalmazásokhoz: </string>
+    <string name="ad_donate_text_vnc">A nyílt forráskódú projektnek szüksége van a támogatására! Adományozzon nekünk a bVNC Pro megvásárlásával. Az alábbiakban találja a bVNC Pro és más alkalmazásaink hivatkozásait.</string>
+    <string name="ad_donate_text_rdp">A nyílt forráskódú projektnek szüksége van a támogatására! Adományozzon nekünk az aRDP Pro megvásárlásával, amely hangátirányítást is támogat. Az alábbiakban találja az aRDP Pro és más alkalmazásaink hivatkozásait.</string>
+    <string name="ad_donate_text_spice">Proxmox és oVirt kapcsolatokhoz kérjük, adományozzon a projektnek az Opaque vagy az aSPICE Pro megvásárlásával. Az aSPICE ingyenes verziója csak KVM virtuális gépekhez való közvetlen kapcsolatokat támogat. Az alábbiakban találja az Opaque és az aSPICE Pro, valamint más alkalmazásaink hivatkozásait.</string>
+
+    <string name="address_caption">VNC kiszolgáló</string>
+    <string name="address_caption_hint">VNC kiszolgáló</string>
+    <string name="address_caption_hint_tunneled">VNC kiszolgáló</string>
+    <string name="address_caption_ssh">SSH kiszolgáló</string>
+    <string name="address_caption_ssh_hint">SSH kiszolgáló</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Le nyíl</string>
+    <string name="arrow_left">Bal nyíl</string>
+    <string name="arrow_right">Jobb nyíl</string>
+    <string name="arrow_up">Fel nyíl</string>
+
+    <string name="auto">Automatikus</string>
+    <string name="auto_x_cancel">Mégse</string>
+    <string name="auto_x_caption">Az alkalmazás automatikusan felfedezheti a meglévő és létrehozhat új X munkameneteket Linux/UNIX rendszereken (hasonlóan az NX-hez). Az x11vnc szükséges a kereséshez, az Xvfb, Xvnc vagy Xdummy a munkamenetek létrehozásához. Ha csatlakozási problémái vannak, próbáljon meg egy konkrét Távoli munkamenet típust választani az AutoX Speciális beállításaiban.</string>
+    <string name="auto_x_confirm">Megerősítés</string>
+    <string name="auto_x_descript_geom">Távoli asztal mérete (SzxM)</string>
+    <string name="auto_x_descript_session">Távoli munkamenet típusa</string>
+    <string name="auto_x_disabled">Letiltva</string>
+    <string name="auto_x_disabled_selection">AutoX letiltva</string>
+    <string name="auto_x_enabled">Engedélyezve</string>
+    <string name="auto_x_find">Csak keresés, ne hozzon létre</string>
+    <string name="auto_x_find_login">X bejelentkezés keresése (sudo szükséges)</string>
+    <string name="auto_x_geom_custom">Egyéni</string>
+    <string name="auto_x_geom_native">Natív</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Automatikus</string>
+    <string name="auto_x_session_custom">Egyéni</string>
+    <string name="auto_x_title">AutoX konfigurálása</string>
+    <string-array name="auto_x_type">
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Automatikus hitelesítés a megadott SSH felhasználónévvel/jelszóval (a fekete bejelentkezési képernyőn).</string>
+    <string name="auto_x_unixpw">UNIX hitelesítő adatok használata a beépített biztonsági mechanizmus helyett. A felhasználónak képesnek kell lennie futtatni a /bin/su parancsot.</string>
+    <string name="auto_x_xdummy">Keresés vagy létrehozás Xdummy-val</string>
+    <string name="auto_x_xvfb">Keresés vagy létrehozás Xvfb-vel</string>
+    <string name="auto_x_xvnc">Keresés vagy létrehozás Xvnc-vel</string>
+
+    <string name="button_send_text">Szöveg küldése</string>
+    <string name="button_send_without_saving">Szöveg küldése/nem mentés</string>
+
+    <string name="center_mouse">Egér @</string>
+
+    <string name="close">Bezárás</string>
+
+    <string name="color_format_caption">Színmód</string>
+    <string name="color_mode">Színmód</string>
+
+    <string name="connect_button">Kapcsolódás</string>
+    <string name="back_button">Vissza</string>
+    <string name="update_button">Frissítés</string>
+
+    <string name="connection_caption">Kapcsolat</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Kapcsolat típusa</string>
+    <string name="connection_type_rdp_over_ssh">RDP SSH-n keresztül</string>
+    <string name="connection_type_spice_over_ssh">SPICE SSH-n keresztül</string>
+    <string name="connection_type_vnc">Alap VNC</string>
+    <string name="connection_type_vnc_over_ssh">Biztonságos VNC SSH-n keresztül</string>
+    <string name="connection_type_vnc_over_ssl">Biztonságos VNC AnonTLS-en keresztül</string>
+    <string name="connection_type_vnc_over_stunnel">Biztonságos VNC SSL alagúton keresztül</string>
+    <string name="connection_type_vnc_over_vencrypt">Biztonságos VNC VeNCrypt-en keresztül</string>
+    <string name="connection_edit_delete_prompt">Szerkeszteni vagy törölni szeretné a kapcsolatot</string>
+    <string name="connection_edit">Szerkesztés</string>
+    <string name="connection_delete">Törlés</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Lista másolása</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Alapértelmezett beviteli mód</string>
+    <string name="delete_connection">Kapcsolat törlése</string>
+    <string name="delete_key">Kiválasztott billentyű törlése</string>
+    <string name="delete_key_list">Billentyűlista törlése</string>
+
+    <string name="disconnect">Kapcsolat bontása</string>
+
+    <string name="dpad_as_arrows">D-pad használata nyilakhoz, D-pad kattintás Ctrl-ként.</string>
+
+    <string name="enable_recording">Rögzítés engedélyezése</string>
+    <string name="enable_sound">Hang engedélyezése</string>
+
+    <string name="enter_text">Szöveg küldése</string>
+    <string name="enter_text_title">Küldendő szöveg megadása</string>
+
+    <string name="error_anon_dh_unsupported">A VNC kiszolgáló névtelen Diffie-Hellman titkosítást próbál használni, amelyet az Android eszköze nem támogat. Ha a GNOME Vino VNC kiszolgálóját használja, az AnonTLS-t letilthatja a következő parancs futtatásával egy terminálban, majd újraindítással: \"gsettings set org.gnome.Vino require-encryption false\". Ha x11vnc-t használ, hozzáadhatja a következő beállításokat: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">A kapcsolat sikertelen.</string>
+    <string name="error_connection_interrupted">A kapcsolat megszakadt.</string>
+    <string name="error_no_user_hostname">Kérjük, adjon meg legalább egy felhasználónevet és egy állomásnevet vagy IP-címet.</string>
+    <string name="error_out_of_memory">Nem sikerült elegendő memóriát lefoglalni a távoli képernyő megjelenítéséhez. Próbálja meg újraindítani az alkalmazást, majd indítsa újra az eszközt. Megpróbálhatja csökkenteni a távoli asztal méretét az alkalmazás beállításaiban is.</string>
+    <string name="error_ovirt_unable_to_connect">Nem sikerült csatlakozni vagy hitelesíteni, kérjük, ellenőrizze a kiszolgáló címét, a felhasználót, a jelszót, a tanúsítványa hatóságát és az alanyt.</string>
+    <string name="error_pick_correct_item">Kérjük, győződjön meg arról, hogy a megfelelő elemet választotta a Kapcsolat típusa mezőben.</string>
+    <string name="error_rdp_authentication_failed">RDP hitelesítés sikertelen! Kérjük, ellenőrizze az RDP felhasználónevet és jelszót, majd próbálja újra.</string>
+    <string name="error_rdp_connection_failed">RDP kapcsolat sikertelen! A hálózati kapcsolat megszakadt, az RDP kiszolgáló ki lett kapcsolva vagy letiltva, vagy a munkamenetét átvette valaki.</string>
+    <string name="error_rdp_unable_to_connect">Nem sikerült csatlakozni az RDP kiszolgálóhoz! Kérjük, ellenőrizze, hogy az RDP kiszolgáló beállítása helyes-e, be van-e kapcsolva, az RDP engedélyezve van-e, és hogy a kiszolgáló ugyanazon a hálózaton van-e, mint ez az eszköz.</string>
+    <string name="error_security_type">A kiszolgáló nem kínált támogatott biztonsági típust.</string>
+    <string name="error_spice_unable_to_connect">Nem sikerült csatlakozni vagy hitelesíteni, kérjük, ellenőrizze a kiszolgáló címét és portját.</string>
+    <string name="error_ssh_could_not_exec_command">Nem sikerült végrehajtani a távoli parancsot.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Nem sikerült elküldeni a sudo jelszót.</string>
+    <string name="error_ssh_hostkey_changed">HIBA! A kiszolgáló gazdagépkulcsa megváltozott. Ha ez szándékos, folytathatja. Egyéb esetben ez ember-a-közepén támadás lehet.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Az SSH kiszolgáló sem a \"jelszó\", sem a \"billentyűzet-interaktív\" hitelesítési módszert nem támogatja, vagy először a \"nyilvános kulcs\" módszert igényli. Kérjük, konfigurálja úgy, hogy legalább az egyik módszert engedélyezze, vagy konfigurálja újra az alkalmazást. Elérhető hitelesítési módszerek: </string>
+    <string name="error_ssh_key_auth_fail">Nem sikerült hitelesíteni az SSH kiszolgálón kulcspárral. Kérjük, ellenőrizze az SSH felhasználónevét, és győződjön meg arról, hogy a nyilvános kulcsa benne van az authorized_keys fájlban a távoli oldalon.</string>
+    <string name="error_ssh_keypair_decryption_failure">Nem sikerült visszafejteni a kulcspárt. Kérjük, győződjön meg arról, hogy helyesen adta meg a jelszavát az \'SSH jelmondat\' mezőben a főképernyőn.</string>
+    <string name="error_ssh_keypair_missing">SSH kulcspár még nem lett generálva! Kérjük, generáljon egyet, és tegye (annak nyilvános részét) az authorized_keys fájlba az SSH kiszolgálón.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Jelmondat meg van adva, de a kulcspár nincs titkosítva. Kérjük, törölje a jelmondatot.</string>
+    <string name="error_ssh_port_forwarding_failure">Nem sikerült beállítani a portátirányítást a VNC forgalom SSH-n keresztüli alagútba irányításához. Kérjük, győződjön meg arról, hogy az SSH kiszolgáló portátirányítás engedélyezésére van konfigurálva, majd próbálja újra.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Az SSH kiszolgáló nem támogatja a \"nyilvános kulcs\" hitelesítési módszert, és kulcspárral próbálunk hitelesíteni. Kérjük, konfigurálja a nyilvános kulcsos hitelesítés engedélyezéséhez, majd próbálja újra. Elérhető hitelesítési módszerek: </string>
+    <string name="error_ssh_pwd_auth_fail">Nem sikerült hitelesíteni az SSH kiszolgálón jelszóval. Kérjük, ellenőrizze az SSH felhasználónevét és SSH jelszavát.</string>
+    <string name="error_ssh_unable_to_connect">Nem sikerült csatlakozni az SSH kiszolgálóhoz. Kérjük, ellenőrizze a hálózati kapcsolatot, az SSH kiszolgáló címét és portját.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nem sikerült lekérni a távoli VNC portot az x11vnc-től. Kérjük, győződjön meg arról, hogy az x11vnc telepítve van. Biztosság kedvéért próbálja manuálisan futtatni az x11vnc-t a parancssorban.</string>
+    <string name="error_uri_noinfo_nosave">Nem elegendő információ a csatlakozáshoz.</string>
+    <string name="error_uri_parse_error">Nem sikerült elemezni az Intent URI-t. Kérjük, ellenőrizze az URI formátumát. A részletekért megtekintheti az eszköz logcat naplóját is.</string>
+    <string name="error_vnc_authentication">VNC hitelesítés sikertelen! Ellenőrizze a VNC jelszót (és a felhasználót, ha alkalmazható).</string>
+    <string name="error_vnc_unable_to_connect">"A VNC kiszolgálóhoz való kapcsolódás sikertelen, ok: "</string>
+    <string name="error_x509_could_not_generate_encoding">Nem sikerült létrehozni a tanúsítvány kódolást.</string>
+    <string name="error_x509_could_not_generate_signature">Nem sikerült létrehozni a tanúsítvány SHA1 vagy MD5 aláírását. Nem található SHA1/MD5 algoritmus.</string>
+
+    <string name="export_settings">Exportálás</string>
+
+
+    <string name="extra_keys_disable">Extra billentyűk letiltása</string>
+    <string name="extra_keys_enable">Extra billentyűk engedélyezése</string>
+
+    <string name="fit_to_screen">Képernyőre illesztés</string>
+
+    <string name="force">Teljes képernyős bittérkép</string>
+
+    <string name="immersive_mode_disable">Teljes képernyős mód letiltása</string>
+
+    <string name="import_export_settings">📦 Beállítások importálása/exportálása</string>
+    <string name="import_settings">Importálás</string>
+
+
+    <string name="info">Infó</string>
+    <string name="info_cert_signatures">"A tanúsítvány adatai: "</string>
+    <string name="info_cert_signatures_identical">\n\nEllenőrizheti, hogy az adatok megegyeznek-e a kiszolgálói tanúsítvánnyal az ember-a-közepén támadások megelőzéséhez.</string>
+    <string name="info_cert_tunnel">Szeretne csatlakozni az alábbi tanúsítvánnyal azonosított gazdagéphez?\n\nUjjlenyomat: %1$s\n\nKiállítva:\n%2$s\n\nKiállító:\n%3$s\n\nÉrvényes:\n%4$s\n\nÉrvényes eddig:\n%5$s\n\nMegjegyzés: Az alkalmazás nem ellenőrzi a tanúsítványa hatóságait és nem vizsgálja a visszavont tanúsítványokat.</string>
+    <string name="info_continue_connecting">"Folytatás a csatlakozással: "</string>
+    <string name="info_encoding">" kódolás, "</string>
+    <string name="info_progress_dialog_aborted">Kapcsolat megszakítva!</string>
+    <string name="info_progress_dialog_connecting">Csatlakozás…</string>
+    <string name="info_progress_dialog_downloading">Az első képkocka letöltése.\nKérjük, várjon…</string>
+    <string name="info_progress_dialog_establishing">Kézfogás kialakítása.\nKérjük, várjon…</string>
+    <string name="info_ssh_initializing_hostkey">SSH gazdagépkulcs inicializálásának kísérlete.</string>
+    <string name="info_ssh_key_fingerprint">"A gazdagépkulcs ujjlenyomata: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nEllenőrizheti, hogy megegyezik-e a kiszolgálói tanúsítvány ismert ujjlenyomatával az ember-a-közepén támadások megelőzéséhez.</string>
+    <string name="info_update_color_model_to">"Színmodell frissítése: "</string>
+
+    <string name="input_method_direct_drag_pan_description">Közvetlen, tartott pásztázás: Húzáshoz csúsztassa az ujját. Koppintson egy ujjal a bal egérkattintáshoz, két ujjal a jobb egérkattintáshoz, három ujjal a középső egérkattintáshoz. Görgetéshez csúsztassa két ujját. Hosszú koppintással indítsa a pásztázást.</string>
+    <string name="input_method_direct_swipe_pan_description">Közvetlen, csúsztatásos pásztázás: Csúsztassa a képernyőn a pásztázáshoz. Koppintson egy ujjal a bal egérkattintáshoz, két ujjal a jobb egérkattintáshoz, három ujjal a középső egérkattintáshoz. Görgetéshez csúsztassa két ujját. Hosszú koppintással végezhet húzást és ejtést.</string>
+    <string name="input_method_single_handed_description">Egykezes: Csúsztassa a képernyőn a pásztázáshoz. Koppintson egy ujjal a bal egérkattintáshoz. Hosszú koppintással válasszon bal/jobb/középső húzás/görgetés/nagyítás módot. A szokásos többujjas vezérlés is működik.</string>
+    <string name="input_method_touchpad_description">Szimulált érintőpad: Csúsztassa a mutató mozgatásához. Koppintson bárhol egy ujjal a bal egérkattintáshoz, két ujjal a jobb egérkattintáshoz, három ujjal a középső egérkattintáshoz. Görgetéshez csúsztassa két ujját. Hosszú koppintással végezhet húzást és ejtést.</string>
+    <string name="input_mode">Beviteli mód</string>
+
+    <string name="input_mode_fit_to_screen">Nincs pásztázás; trackball egér</string>
+    <string name="input_mode_panning">Asztali pásztázási mód</string>
+    <string name="input_method_mouse">Egérmutató-vezérlés</string>
+
+    <string name="input_method_direct_swipe_pan">Közvetlen, csúsztatásos pásztázás</string>
+    <string name="input_method_direct_drag_pan">Közvetlen, tartott pásztázás</string>
+    <string name="input_method_single_handed">Egykezes</string>
+    <string name="input_method_touchpad">Szimulált érintőpad</string>
+
+    <string name="input_mode_help">Beviteli mód súgója</string>
+    <string name="input_mode_help_text">"
+Bármely beviteli módban koppintson a billentyűzet ikonra a képernyőn megjelenő billentyűzet előhívásához. Emellett az eszköznek lehet saját gesztusa, amellyel előhívható a billentyűzet.
+
+Használja a közvetlen beviteli módokat intuitívabb érintőképernyős vezérléshez. Használja a szimulált érintőpad módot az egér finomabb vezérléséhez.
+
+Közvetlen, csúsztatásos pásztázás mód:
+ - Az egér közvetlen vezérlése érintéssel.
+ - Csúsztatással pásztázhat.
+ - A koppintás az egérkattintást hajtja végre ott, ahol koppintott.
+ - A görgetési eseményeket a két ujj között küldi, ahol a kétujjas csúsztatás elkezdődött.
+
+Közvetlen, tartott pásztázás mód:
+ - Az egér közvetlen vezérlése érintéssel.
+ - Hosszú koppintással indítja a pásztázási módot.
+ - A koppintás az egérkattintást hajtja végre ott, ahol koppintott.
+ - A görgetési eseményeket a két ujj között küldi, ahol a kétujjas csúsztatás elkezdődött.
+
+Szimulált érintőpad mód:
+ - Használja a képernyőt érintőpadként.
+ - Csúsztatással mozgatja az egérmutatót.
+ - Az egér mozgatása a képernyő széle felé pásztáz.
+ - A koppintás az egérkattintást hajtja végre ott, ahol a mutató van.
+ - A görgetési eseményeket az egérmutató helyzetébe küldi.
+
+Egykezes mód:
+ - Ugyanaz, mint a közvetlen, csúsztatásos pásztázás mód, kivéve, hogy a hosszú koppintás módválasztó menüt nyit meg.
+ - A mód kiválasztása után a képernyőn csúsztatva végrehajtja a kiválasztott gesztust.
+ - Az ujj felemelése befejezi a gesztust.
+
+Összes beviteli mód:
+ - Bal kattintás: Egyszeres koppintás.
+ - Dupla kattintás: Dupla koppintás.
+ - Jobb kattintás: Tartott koppintás, majd koppintás egy második ujjal (bárhol máshol a képernyőn).
+ - Alternatív jobb kattintás: A \"Vissza\" gomb vagy az eszköz gesztusa.
+ - Középső kattintás: Tartott koppintás, majd koppintás két további ujjal (bárhol máshol a képernyőn).
+ - Egér húzás: Tartott hosszú koppintás, majd csúsztatás.
+ - Görgetőkerék: Kétujjas csúsztatás fel/le és bal/jobbra. Gyors csúsztatás gyorsabban görget.
+ - Nagyítás/kicsinyítés: Zoomolható méretezésnél csípő gesztussal vezérelhető a méretezés.
+ - Ctrl/Alt billentyű: Menü-&gt;Ctrl/Alt gombok. Ne felejtse el kikapcsolni, ha kész!
+ - Billentyűkombinációk: Menü-&gt;Tovább-&gt;Billentyűk küldése.
+ - Szöveg küldése: Gépeljen a képernyőn megjelenő billentyűzeten, vagy használja a Menü-&gt;Tovább-&gt;Szöveg küldése lehetőséget."</string>
+
+    <string name="intro_close">Bezárás</string>
+    <string name="intro_dont_show">Ne jelenjen meg újra</string>
+
+    <string name="intro_text">
+A bVNC jelenlegi funkciói:
+&lt;br&gt;
+- Alap VNC, biztonságos VNC SSH-n keresztül, AnonTLS, VeNCrypt és UltraVNC Windows bejelentkezés opcionális átjátszóval.
+&lt;br&gt;
+- AutoX mód: VNC SSH-n keresztül módban automatikusan felfedezheti a meglévő és/vagy létrehozhat új X munkameneteket x11vnc segítségével! Az NX klienshez hasonlóan működik.
+&lt;br&gt;
+- Szabad forgatás támogatás. Az elforgatás korlátozásához használja az operációs rendszert, ha szükséges.
+&lt;br&gt;
+- SSH nyilvános/privát kulcspár generálás és exportálás.
+&lt;br&gt;
+- Minden szabványos VNC kódolás, beleértve a Tight, ZRLE és CopyRect kódolásokat.
+&lt;br&gt;
+- Automatikus munkamenet mentés.
+&lt;br&gt;
+- Zoomolható, képernyőre illesztő és egy-az-egyhez méretezési módok.
+&lt;br&gt;
+- Többujjas vezérlés a távoli egér felett közvetlen és szimulált érintőpad beviteli módokban.
+&lt;br&gt;
+- Teljes egykezes vezérlés a távoli egér felett egykezes beviteli módban.
+&lt;br&gt;
+- Többujjas egérkattintások: koppintás a bal kattintáshoz, kétujjas koppintás a jobb kattintáshoz, háromujjas koppintás a középső kattintáshoz.
+&lt;br&gt;
+- Többujjas görgetés: kétujjas csúsztatás fel/le és bal/jobbra a görgetéshez.
+&lt;br&gt;
+- Képernyőn megjelenő meta és nyílbillentyűk, amelyek teljesen letilthatók a menüből vagy eltárolhatók a képernyőn megjelenő gombbal.
+&lt;br&gt;
+- Szöveg és tetszőleges billentyűkombinációk küldése csatlakoztatva.
+&lt;br&gt;
+- Segítség a kapcsolatok létrehozásához (\"Menü-&gt;Kapcsolat súgó\") a kapcsolati képernyőn.
+&lt;br&gt;
+- Segítség a beviteli módokhoz (\"Menü-&gt;Tovább-&gt;Beviteli mód súgója\") csatlakoztatva.
+&lt;br&gt;
+- Elérhető trackpad használata nyilakként az egér mozgatása helyett, és trackpad kattintás Ctrl-ként.
+&lt;br&gt;
+- Váltás álló módba kapcsolódás közben, D-pad/trackpad elforgatása BT billentyűzetekhez.
+&lt;br&gt;
+- Többnyelvű támogatás, amennyiben a VNC kiszolgáló rendelkezik a szükséges nyelvi elrendezéssel.
+&lt;br&gt;
+- Vágólap-integráció
+&lt;br&gt;
+- Távoli gép felbontásváltozásai
+&lt;br&gt;
+- Teljes egértámogatás Android 4.0+ eszközökön, beleértve a jobb és középső kattintást és a görgetőkereket.
+&lt;br&gt;
+&lt;br&gt;
+Ismert problémák:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitív, biztonságos VNC kliens</string>
+
+
+    <string name="keep_password_button">Megőrzés</string>
+    <string name="keep_screen_awake_enable">Képernyő ébren tartása</string>
+
+    <string name="keys_caption">Billentyűk</string>
+
+    <string name="landscape_force">Fekvő tájolás kényszerítése</string>
+
+    <string name="left_handed_mode">Bal kezes mód</string>
+    <string name="disable_pointer_offset_correction">Mutató eltolás-korrekció letiltása</string>
+
+    <string name="list_caption">Lista</string>
+    <string name="list_name_caption">Lista neve</string>
+
+    <string name="local_mouse_check">Helyi egérmutató (jelölje be, ha a mutató láthatatlan)</string>
+
+    <string name="main_screen_help">Kapcsolat súgó</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Amikor kapcsolatot ad hozzá vagy szerkeszt, megjelenik a kapcsolat konfigurációs oldala. Itt beállíthat egy új VNC kapcsolatot, vagy kiválaszthat egy meglévőt. Az oldal tetején egy gomb van, amely lehetővé teszi a kapcsolat mentését. Alatta konfigurálhatja a kapcsolatát.
+
+Ha gyors teljesítménynövelést keres, próbálja beállítani a Szín módot alacsonyabb értékre. Próbálja eltávolítani az asztali háttérképet a VNC kiszolgálón. Végül győződjön meg arról, hogy az eszköze jó hálózati kapcsolattal rendelkezik, és kerülje az antenna takarását, ami csökkentheti a jelerősséget.
+
+ - Kapcsolat típusa: Itt választja ki a VNC kapcsolat típusát. Az elérhető kapcsolattípusok:
+   (a) Alap VNC, amelyet minden VNC kiszolgáló támogat, de titkosítás nélküli, és sebezhetős a brute-force támadásokkal szemben a 8 karakteres jelszókorlát miatt.
+   (b) Biztonságos VNC SSH-n keresztül, amely titkosított SSH alagúton keresztül csatlakozik. Szüksége van egy SSHD szolgáltatásra és egy VNC kiszolgálóra. Amennyiben a VNC kiszolgáló nem fogad közvetlen internetkapcsolatokat, ez a kapcsolattípus nem rendelkezik ismert sebezhetőségekkel, feltéve, hogy ellenőrzi a kiszolgálói tanúsítvány aláírását az első csatlakozáskor.
+   (c) UltraVNC, amely Windows bejelentkezési és UltraVNC átjátszó lehetőségeket kínál. A Windows bejelentkezés használata nem szenved a 8 karakteres jelszókorlát miatt, de ez a mód nem kínál titkosítást, így a munkamenet sebezhetős a lehallgatással szemben.
+   (d) Biztonságos VNC AnonTLS-en keresztül, amely normál VNC titkosított stunnel-egyenértékű kapcsolaton keresztül. Szüksége van stunnel futtatására, vagy olyan VNC kiszolgálóra mint a Vino, amely alapból támogatja az AnonTLS-t. Ez a mód munkamenet titkosítást biztosít, de szenved a 8 karakteres jelszókorlát miatt, és nem véd az ember-a-közepén támadásokkal szemben.
+   (e) Biztonságos VNC VeNCrypt-en keresztül, amely x509 tanúsítványokat és munkamenet titkosítást használ, és a kiszolgáló konfigurációjától függően felhasználói/jelszavas hitelesítést is használhat 8 karakteres korlát nélkül. Ez a mód véd az ember-a-közepén támadások ellen, és biztosítja a munkamenet titkosságát. Az x11vnc és TigerVNC kiszolgálók támogatják ezt a módot, és olyan biztonságosak, mint a VNC SSH-n keresztül.
+
+ - Cím: Minden egyes létrehozott kapcsolatnak adhat egy becenevet a listán való könnyű azonosításhoz.
+
+ - SSH alagút beállítások: VNC SSH-n keresztül módban érhető el.
+   (a) SSH kiszolgáló/port: A SSH kiszolgáló címe és portja, amelyen a kapcsolat áthalad. Az SSH alapértelmezetten a 22-es porton hallgat.
+   (b) Felhasználónév/jelszó: Az SSH kiszolgálón lévő fiók felhasználóneve és jelszava. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+   (c) Kulcs kezelése/Kulcs használata: Egy gomb a nyilvános/privát kulcsok kezeléséhez, és egy jelölőnégyzet, amely jelzi, hogy kulcsot használjon jelszó helyett a hitelesítéshez. Ha a Vágólapra másolás gombot használja a kulcspár generálása után, beillesztheti a nyilvános kulcsot a VNC kiszolgálóra csatlakozás után (a vágólap szinkronizálva van a kiszolgálóval).
+
+ - AutoX konfigurálása: Csak VNC SSH-n keresztül módban érhető el. Az alkalmazás automatikusan felfedezheti a meglévő, és opcionálisan létrehozhat új X munkameneteket UNIX rendszereken (mint az NX kliens). Az x11vnc szükséges a kereséshez, az Xvfb, Xvnc vagy Xdummy telepítve kell lennie a távoli rendszeren a munkamenetek létrehozásához. Előfordulhat, hogy el kell távolítania a .dmrc fájlját és hozzá kell adnia egy .xinit fájlt a saját könyvtárához, ha az asztal nem néz ki megfelelően, vagy csak egy xterm ablakot kap.
+
+ - VNC kapcsolati beállítások:
+   (a) VNC kiszolgáló/port: Itt adja meg annak a számítógépnek az állomásnevét vagy IP-címét és portját, amelyen a VNC kiszolgáló fut. VNC SSH-n keresztül módban ez a cím az SSH kiszolgálóról látott cím. Ha az SSH kiszolgáló és a VNC kiszolgáló ugyanaz a számítógép, használhatja a localhost-ot. A VNC kiszolgálók általában az 5900-as porton hallgatnak (az első VNC képernyő, :0 képernyő).
+   (b) VNC felhasználó: UltraVNC Windows bejelentkezési módban, vagy Biztonságos VNC VeNCrypt-en keresztül módban érhető el, itt adja meg a Windows/UNIX fiókjának felhasználónevét.
+   (c) VNC jelszó: Ha a VNC kiszolgáló konfigurációja jelszót igényel, adja meg itt. UltraVNC Windows bejelentkezéssel/VeNCrypt módokban a Windows/UNIX fiók jelszavát adja meg ide. A biztonságos tárolás nem használt jelszavakhoz, és a jelszó csak akkor tárolódik, ha bejelöli a \"Megőrzés\" jelölőnégyzetet. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+
+ - Szín mód: A kliens több színmódot támogat. A több színnel rendelkező módok jobb vizuális élményt nyújtanak nagyobb sávszélesség és több CPU számítás árán az eszközön. Egyes VNC kiszolgálók nem támogatnak minden színmélységet (pl. OS/X Távoli asztal 24 bites színt igényel). Ha csatlakozási problémái vannak, próbáljon másik színmélységet.
+
+ - D-pad használata nyilakhoz: Ha jobban szereti, használhatja a Bluetooth billentyűzet D-padját vagy a képernyőn megjelenő billentyűzet nyilait a VNC kiszolgálóra küldött nyilakhoz.
+
+ - D-pad forgatása: A Bluetooth billentyűzettel párosított telefonoknak szükségük lehet a billentyűzet D-padjának óramutató járásával ellentétes irányú elforgatására a helyes irányok kiszolgálóra küldéséhez.
+
+ - Helyi egérmutató: Egyes VNC kiszolgálók (pl. OS/X Távoli asztal) nem rajzolják meg az egérmutatót a kliensen. Ennek az opciónak a bejelölésével az alkalmazás egérmutatót rajzol az egér pozíciójánál.
+
+ - Automatikus/teljes képernyős bittérkép: A VNC kliens bittérképet használ a távoli megjelenítő ábrázolásához. Nagyon nagy távoli megjelenítők esetén, különösen képernyőre illesztő módban, furcsa vizuális műtermékeket tapasztalhat a képernyőre illesztő módban a folyamatonkénti memóriakorlátok miatt. Ha ez megtörténik, próbálja bejelölni ezt az opciót. Vegye figyelembe, hogy az opció bejelölése okozhatja az alkalmazás bezárását csatlakozáskor.
+
+ - Átjátszó: Csak UltraVNC módban érhető el. FONTOS: Ha UltraVNC átjátszója van, adja meg annak címét és portját az \'UltraVNC átjátszó\' párbeszédpanelen kívül, és adja meg a tényleges VNC kiszolgáló címét és portját az \'UltraVNC átjátszó\' párbeszédpanelen belül. A VNC kiszolgáló címét és portját kettősponttal válassza el, pl. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Főjelszó engedélyezése</string>
+    <string name="master_password_error_failed_to_disable">Nem sikerült letiltani a főjelszót. Ellenőrizze az eszközön lévő szabad helyet, majd próbálja újra.</string>
+    <string name="master_password_error_failed_to_enable">Nem sikerült engedélyezni a főjelszót. Ellenőrizze az eszközön lévő szabad helyet, majd próbálja újra.</string>
+    <string name="master_password_error_intents_not_supported">A kapcsolati szándékok még nem támogatottak, ha a főjelszó engedélyezve van.</string>
+    <string name="master_password_error_password_necessary">A folytatáshoz főjelszó szükséges.</string>
+    <string name="master_password_error_password_not_set">A főjelszó beállítása megszakítva.</string>
+    <string name="master_password_error_shortcuts_not_supported">A parancsikonok még nem támogatottak, ha a főjelszó engedélyezve van.</string>
+    <string name="master_password_error_wrong_password">Nem sikerült hitelesíteni a megadott főjelszóval.</string>
+    <string name="master_password_hint_once">Jelszó megadása</string>
+    <string name="master_password_hint_twice">Jelszó megismétlése</string>
+    <string name="master_password_set">Főjelszó beállítása</string>
+    <string name="master_password_set_error">A jelszavak nem egyeznek, kérjük, legyen gondos!</string>
+    <string name="master_password_set_message">Kérjük, adjon meg és jegyezzen meg egy főjelszót. Minél hosszabb a jelszó, annál nehezebb feltörni. Ha rosszul adja meg a jelszót, vagy elfelejti, elveszíti az összes beállítását! Érdemes lehet exportálni a beállításait most a biztonsági mentéshez (a Menüből). Tárolja biztonságosan, mivel az exportált beállítások nincsenek titkosítva.</string>
+    <string name="master_password_verify">Főjelszó ellenőrzése</string>
+    <string name="master_password_verify_message">A folytatáshoz kérjük, adja meg a helyes főjelszót.</string>
+
+    <string name="meta_key_title">Speciális billentyűk küldése</string>
+
+    <string name="mouse_follow_pan">Az egér követi a pásztázást</string>
+
+    <string name="new_connection">Új kapcsolat</string>
+    <string name="new_list_button">Új lista</string>
+
+    <string name="nickname_caption">Becenév</string>
+    <string name="nickname_caption_hint">Cím (opcionális)</string>
+
+    <string name="off">Ki</string>
+
+    <string name="one_to_one">Egy az egyhez</string>
+
+    <string name="open_doc">Kézikönyv/Wiki</string>
+
+    <string name="pan_follow_mouse">A pásztázás követi az egeret</string>
+
+    <string name="password_caption">VNC hitelesítés</string>
+    <string name="password_caption_hint">VNC jelszó</string>
+    <string name="password_caption_ssh">SSH hitelesítés</string>
+    <string name="password_hint_ssh">SSH jelszó</string>
+
+    <string name="port_caption">VNC port</string>
+    <string name="port_caption_ssh">SSH port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Váltás álló módba csatlakoztatva</string>
+    <string name="local_clipboard_integration">Helyi-távoli vágólap integráció engedélyezése</string>
+    <string name="remote_clipboard_integration">Távoli-helyi vágólap integráció engedélyezése</string>
+    <string name="position_toolbar_last_used">Eszköztár pozíciójának visszaállítása</string>
+    <string name="applies_to_new_connections_only">Csak új kapcsolatokra vonatkozik</string>
+    <string name="pro_feature_mfa">Úgy tűnik, a kiszolgálója többfaktoros hitelesítéssel rendelkezik. Kérjük, támogassa a projektet a Pro verzió megvásárlásával, amely támogatja ezt a funkciót. A Pro verzió hivatkozása megtalálható az induló párbeszédpanelen.</string>
+    <string name="pro_feature_intro">Úgy tűnik, Pro funkciót használ. Kérjük, támogassa a projektet a Pro verzió megvásárlásával, amely támogatja ezt a funkciót. Kérjük, ellenőrizze az induló párbeszédpanelt a megfelelő alkalmazás hivatkozásáért.</string>
+    <string name="pro_feature_generic">Úgy tűnik, Pro funkciót használ. Kérjük, támogassa a projektet a Pro verzió megvásárlásával, amely támogatja ezt a funkciót. A Pro verzió hivatkozása megtalálható az induló párbeszédpanelen.</string>
+    <string name="pro_feature_rdp">Úgy tűnik, .rdp fájlt próbált megnyitni, ami Pro funkció. Kérjük, támogassa a projektet az aRDP Pro megvásárlásával, amely támogatja a .rdp fájlokat. Az aRDP Pro hivatkozása megtalálható az induló párbeszédpanelen.</string>
+    <string name="pro_feature_spice">Úgy tűnik, .vv fájlt próbált megnyitni. Ha szeretne Proxmox vagy oVirt kapcsolatokat menteni közvetlenül az alkalmazásban, és .vv fájlokat is megnyitni, fontolja meg az Opaque megvásárlását. Ha csak .vv fájl támogatásra van szüksége, megveheti az aSPICE Pro-t. Mindkét alkalmazás hivatkozása megtalálható az induló párbeszédpanelen.</string>
+
+    <string name="rdp_address_caption_hint">RDP kiszolgáló</string>
+    <string name="rdp_adv_console_mode">Konzol mód</string>
+    <string name="rdp_adv_desktop_background">Asztali háttér megjelenítése</string>
+    <string name="rdp_adv_desktop_composition">Asztali kompozíció engedélyezése</string>
+    <string name="rdp_adv_font_smoothing">Betűtípus simítás végrehajtása</string>
+    <string name="rdp_adv_menu_animation">Menüanimációk megjelenítése</string>
+    <string name="rdp_adv_redirect_sdcard">SD kártya átirányítása</string>
+    <string name="rdp_adv_remotefx">RemoteFX engedélyezése</string>
+    <string name="rdp_adv_visual_styles">Vizuális stílusok engedélyezése</string>
+    <string name="rdp_adv_window_contents">Ablaktartalom megjelenítése húzás közben</string>
+    <string name="rdp_security_mode">Biztonsági mód</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Távoli asztal mérete (SzxM)</string>
+    <string name="rdp_domain_hint">RDP tartomány</string>
+    <string name="rdp_geom_automatic">Automatikus</string>
+    <string name="rdp_geom_checkbox_enable">Egyéni felbontás engedélyezése</string>
+    <string name="rdp_geom_custom">Egyéni</string>
+    <string name="rdp_geom_description_hint">A kiszolgálónak ExtendedDesktopSize támogatásra van szüksége</string>
+    <string name="rdp_geom_disabled">Letiltva</string>
+    <string name="rdp_geom_native_landscape">Natív fekvő</string>
+    <string name="rdp_geom_native_portrait">Natív álló</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Biztonság automatikus egyeztetése</string>
+    <string name="rdp_security_rdp">RDP biztonság</string>
+    <string name="rdp_security_tls">TLS biztonság</string>
+    <string name="rdp_security_nla">Hálózati szintű hitelesítés</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Köszönjük, hogy támogatja az aRDP-t és az általános nyílt forráskódú szoftvereket! Az aRDP használatával kapcsolatos segítségért tekintse meg a Menü Súgó elemeit, valamint az alkalmazás piaci leírását.
+&lt;br&gt;
+&lt;br&gt;
+Az aRDP jelenlegi funkciói:
+&lt;br&gt;
+- Alap RDP, RDP SSH-n keresztül alagútban.
+&lt;br&gt;
+- Szabad forgatás támogatás. Az elforgatás korlátozásához használja az operációs rendszert, ha szükséges.
+&lt;br&gt;
+- Távoli felbontás beállítása, natív felbontás fekvő és álló módokban.
+&lt;br&gt;
+- SSH nyilvános/privát kulcspár generálás és exportálás.
+&lt;br&gt;
+- Automatikus munkamenet mentés.
+&lt;br&gt;
+- Zoomolható, képernyőre illesztő és egy-az-egyhez méretezési módok.
+&lt;br&gt;
+- Többujjas vezérlés a távoli egér felett közvetlen és szimulált érintőpad beviteli módokban.
+&lt;br&gt;
+- Teljes egykezes vezérlés a távoli egér felett egykezes beviteli módban.
+&lt;br&gt;
+- Többujjas egérkattintások: koppintás a bal kattintáshoz, kétujjas koppintás a jobb kattintáshoz, háromujjas koppintás a középső kattintáshoz.
+&lt;br&gt;
+- Többujjas görgetés: kétujjas csúsztatás fel/le és bal/jobbra a görgetéshez.
+&lt;br&gt;
+- Képernyőn megjelenő meta és nyílbillentyűk, amelyek teljesen letilthatók a menüből vagy eltárolhatók a képernyőn megjelenő gombbal.
+&lt;br&gt;
+- Szöveg és tetszőleges billentyűkombinációk küldése csatlakoztatva.
+&lt;br&gt;
+- Segítség a kapcsolatok létrehozásához (\"Menü-&gt;Kapcsolat súgó\") a kapcsolati képernyőn.
+&lt;br&gt;
+- Segítség a beviteli módokhoz (\"Menü-&gt;Tovább-&gt;Beviteli mód súgója\") csatlakoztatva.
+&lt;br&gt;
+- Elérhető trackpad használata nyilakként az egér mozgatása helyett, és trackpad kattintás Ctrl-ként, D-pad/trackpad forgatása BT billentyűzetekhez.
+&lt;br&gt;
+- Többnyelvű támogatás, amennyiben az RDP kiszolgáló rendelkezik a szükséges nyelvi elrendezéssel.
+&lt;br&gt;
+- Zökkenőmentes távoli gép felbontásváltozásai
+&lt;br&gt;
+- Teljes egértámogatás Android 4.0+ eszközökön, beleértve a jobb és középső kattintást és a görgetőkereket.
+&lt;br&gt;
+- Színmódok közötti választás
+&lt;br&gt;
+- Vágólap-integráció
+&lt;br&gt;
+- Beállítások exportálása
+&lt;br&gt;
+- Hang
+&lt;br&gt;
+&lt;br&gt;
+Ismert problémák:</string>
+    <string name="rdp_intro_title">aRDP: Intuitív, biztonságos RDP kliens</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Amikor kapcsolatot ad hozzá vagy szerkeszt, megjelenik a kapcsolat konfigurációs oldala. Itt beállíthat egy új RDP kapcsolatot, vagy kiválaszthat egy meglévőt. Az oldal tetején egy gomb van, amely lehetővé teszi a kapcsolat mentését. Alatta konfigurálhatja a kapcsolatát.
+
+ - Kapcsolat típusa: Itt választja ki az RDP kapcsolat típusát. Az elérhető kapcsolattípusok:
+   (a) RDP, amely közvetlenül csatlakozik egy számítógéphez RDP protokollon keresztül.
+   (b) RDP SSH-n keresztül, amely először alagútba irányítja a kapcsolatot egy SSH kiszolgálót futtató számítógépen keresztül.
+
+ - Cím: Minden egyes létrehozott kapcsolatnak adhat egy becenevet a listán való könnyű azonosításhoz.
+
+ - SSH alagút beállítások: RDP SSH-n keresztül módban érhető el.
+   (a) SSH kiszolgáló/port: A SSH kiszolgáló címe és portja, amelyen a kapcsolat áthalad. Az SSH alapértelmezetten a 22-es porton hallgat.
+   (b) Felhasználónév/jelszó: Az SSH kiszolgálón lévő fiók felhasználóneve és jelszava. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+   (c) Kulcs kezelése/Kulcs használata: Egy gomb a nyilvános/privát kulcsok kezeléséhez, és egy jelölőnégyzet, amely jelzi, hogy kulcsot használjon jelszó helyett a hitelesítéshez. Ha a Vágólapra másolás gombot használja a kulcspár generálása után, beillesztheti a nyilvános kulcsot az RDP kiszolgálóra csatlakozás után (a vágólap szinkronizálva van a kiszolgálóval).
+
+ - RDP kapcsolati beállítások:
+   (a) RDP kiszolgáló/port: Itt adja meg annak a számítógépnek az állomásnevét vagy IP-címét és portját, amelyen az RDP kiszolgáló fut. RDP SSH-n keresztül módban ez a cím az SSH kiszolgálóról látott cím. Ha az SSH kiszolgáló és az RDP kiszolgáló ugyanaz a fizikai számítógép, használhatja a localhost-ot. Az RDP kiszolgálók általában a 3389-es porton hallgatnak.
+   (b) RDP felhasználó: Itt adja meg a Windows/UNIX fiókjának felhasználónevét.
+   (c) RDP tartomány: Adja meg azt a tartományt, amelyhez a fiókja tartozik.
+   (d) RDP jelszó: Itt adja meg a Windows/UNIX fiókjának jelszavát. A biztonságos tárolás nem használt jelszavakhoz (adatbázisban vannak), és a jelszó csak akkor tárolódik, ha bejelöli a \"Megőrzés\" jelölőnégyzetet. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+
+ - Speciális beállítások: Ebben a részben módokat talál az asztal felbontásának testreszabásához és különféle RDP teljesítményhangolásokhoz.
+
+ - Helyi eszköz beállítások: Ezek az alkalmazás viselkedését módosítják az eszközön.
+   (a) D-pad használata nyilakhoz: Ha jobban szereti, használhatja a Bluetooth billentyűzet D-padját vagy a képernyőn megjelenő billentyűzet nyilait az RDP kiszolgálóra küldött nyilakhoz.
+   (b) D-pad forgatása: A Bluetooth billentyűzettel párosított telefonoknak szükségük lehet a billentyűzet D-padjának óramutató járásával ellentétes irányú elforgatására a helyes irányok kiszolgálóra küldéséhez.
+   (c) Helyi egérmutató: Ha a mutató láthatatlan, jelölje be ezt az opciót az alkalmazás általi megjelenítés kényszerítéséhez."</string>
+    <string name="rdp_password_hint">RDP jelszó</string>
+    <string name="rdp_server_empty">Az RDP kiszolgáló vagy port üres. Nem lehet csatlakozni!</string>
+    <string name="rdp_username_hint">RDP felhasználónév</string>
+
+    <string name="remote_sound_disabled">Hang letiltva</string>
+    <string name="remote_sound_on_device">Hang az eszközön</string>
+    <string name="remote_sound_on_server">Hang a kiszolgálón</string>
+
+    <string name="repeater_button">UltraVNC átjátszó</string>
+    <string name="repeater_caption">FONTOS: Ha UltraVNC átjátszót használ, adja meg annak címét és portját ezen a párbeszédpanelen kívül. Itt adja meg a tényleges VNC kiszolgáló címét és portját. A VNC kiszolgáló címét és portját kettősponttal válassza el, pl. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC átjátszó</string>
+    <string name="repeater_clear">Ne használja</string>
+    <string name="repeater_dialog_title">VNC kiszolgáló átjátszó mögött</string>
+    <string name="repeater_empty_text">Nincs átjátszó</string>
+    <string name="repeater_save">Használat</string>
+
+    <string name="right_alt_as_iso_l3_shift">Jobb Alt mint ISO L3 Shift (csak VNC)</string>
+
+    <string name="rotate_dpad">Bluetooth vagy szoftveres D-pad forgatása</string>
+
+    <string name="save_as_copy">Mentés másolatként</string>
+
+    <string name="scaling">Méretezés</string>
+    <string name="scaling_zoomable">Zoomolható</string>
+
+    <string name="send_button">Küldés</string>
+    <string name="send_key_again">Billentyű újraküldése</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC kapcsolat</string>
+    <string name="shortcut_label_rdp">RDP kapcsolat</string>
+    <string name="shortcut_label_spice">SPICE kapcsolat</string>
+
+    <string name="showkbd_label">Billentyűzet</string>
+
+    <string name="single_cancel">Egykezes mód megszakítva</string>
+    <string name="single_choose">Válasszon egykezes módot vagy mondja le</string>
+    <string name="single_left">Bal húzás mód – csúsztassa a húzáshoz/kiválasztáshoz, emelje fel az ujját a leállításhoz</string>
+    <string name="single_middle">Középső húzás mód – csúsztassa a húzáshoz/kiválasztáshoz, emelje fel az ujját a leállításhoz</string>
+    <string name="single_reposition">Egérmutató újrapozicionálva egykezes módhoz</string>
+    <string name="single_right">Jobb húzás mód – csúsztassa a húzáshoz/kiválasztáshoz, emelje fel az ujját a leállításhoz</string>
+    <string name="single_scroll">Görgetési mód – csúsztassa fel/le a görgetéshez, emelje fel az ujját a leállításhoz</string>
+    <string name="single_zoom">Nagyítási mód – csúsztassa fel/le a nagyításhoz/kicsinyítéshez, emelje fel az ujját a leállításhoz</string>
+
+    <string name="snap_one_to_one">1:1 zoomra rögzítve</string>
+
+    <string name="special_keys">Billentyűk küldése</string>
+
+    <string name="spice_address_caption_hint">SPICE kiszolgáló</string>
+    <string name="spice_button_import_ca">CA importálása</string>
+    <string name="spice_ca_cert_path_hint">Tanúsítványa hatóság fájljának elérési útja</string>
+    <string name="spice_ca_file_error_reading">Hiba a CA fájl olvasásakor. Kérjük, győződjön meg arról, hogy olvasható.</string>
+    <string name="spice_ca_file_not_found">A fájl nem található. Kérjük, adjon meg egy érvényes fájlnevet a szövegmezőben (pl. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Tanúsítvány alanya</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Köszönjük, hogy támogatja az aSPICE-t és az általános nyílt forráskódú szoftvereket! Az aSPICE használatával kapcsolatos segítségért tekintse meg a Menü Súgó elemeit, valamint az alkalmazás piaci leírását.
+&lt;br&gt;
+&lt;br&gt;
+Az aSPICE jelenlegi funkciói:
+&lt;br&gt;
+- Alap SPICE, SPICE SSH-n keresztül alagútban.
+&lt;br&gt;
+- Szabad forgatás támogatás. Az elforgatás korlátozásához használja az operációs rendszert, ha szükséges.
+&lt;br&gt;
+- SSH nyilvános/privát kulcspár generálás és exportálás.
+&lt;br&gt;
+- Automatikus munkamenet mentés.
+&lt;br&gt;
+- Zoomolható, képernyőre illesztő és egy-az-egyhez méretezési módok.
+&lt;br&gt;
+- Többujjas vezérlés a távoli egér felett közvetlen és szimulált érintőpad beviteli módokban.
+&lt;br&gt;
+- Teljes egykezes vezérlés a távoli egér felett egykezes beviteli módban.
+&lt;br&gt;
+- Többujjas egérkattintások: koppintás a bal kattintáshoz, kétujjas koppintás a jobb kattintáshoz, háromujjas koppintás a középső kattintáshoz.
+&lt;br&gt;
+- Többujjas görgetés: kétujjas csúsztatás fel/le és bal/jobbra a görgetéshez.
+&lt;br&gt;
+- Képernyőn megjelenő meta és nyílbillentyűk, amelyek teljesen letilthatók a menüből vagy eltárolhatók a képernyőn megjelenő gombbal.
+&lt;br&gt;
+- Szöveg és tetszőleges billentyűkombinációk küldése csatlakoztatva.
+&lt;br&gt;
+- Segítség a kapcsolatok létrehozásához (\"Menü-&gt;Kapcsolat súgó\") a kapcsolati képernyőn.
+&lt;br&gt;
+- Segítség a beviteli módokhoz (\"Menü-&gt;Tovább-&gt;Beviteli mód súgója\") csatlakoztatva.
+&lt;br&gt;
+- Elérhető trackpad használata nyilakként az egér mozgatása helyett, és trackpad kattintás Ctrl-ként, D-pad/trackpad forgatása BT billentyűzetekhez.
+&lt;br&gt;
+- Többnyelvű támogatás, amennyiben a SPICE kiszolgáló rendelkezik a szükséges nyelvi elrendezéssel.
+&lt;br&gt;
+- Zökkenőmentes távoli gép felbontásváltozásai
+&lt;br&gt;
+- Teljes egértámogatás Android 4.0+ eszközökön, beleértve a jobb és középső kattintást és a görgetőkereket.
+&lt;br&gt;
+&lt;br&gt;
+Tervezett funkciók:
+&lt;br&gt;
+- Vágólap-integráció
+&lt;br&gt;
+- Hang
+&lt;br&gt;
+- Teljesítményjavítások
+&lt;br&gt;
+Ismert problémák:
+&lt;br&gt;
+- A szöveg küldése nem küld egyes szimbólumokat.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitív, biztonságos SPICE kliens</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Amikor kapcsolatot ad hozzá vagy szerkeszt, megjelenik a kapcsolat konfigurációs oldala. Itt beállíthat egy új SPICE kapcsolatot, vagy kiválaszthat egy meglévőt. Az oldal tetején egy gomb van, amely lehetővé teszi a kapcsolat mentését. Alatta konfigurálhatja a kapcsolatát.
+
+ - Kapcsolat típusa: Itt választja ki a SPICE kapcsolat típusát. Az elérhető kapcsolattípusok:
+   (a) SPICE, amely közvetlenül csatlakozik egy számítógéphez SPICE protokollon keresztül.
+   (b) SPICE SSH-n keresztül, amely először alagútba irányítja a kapcsolatot egy SSH kiszolgálót futtató számítógépen keresztül.
+
+ - Cím: Minden egyes létrehozott kapcsolatnak adhat egy becenevet a listán való könnyű azonosításhoz.
+
+ - SSH alagút beállítások: SPICE SSH-n keresztül módban érhető el.
+   (a) SSH kiszolgáló/port: A SSH kiszolgáló címe és portja, amelyen a kapcsolat áthalad. Az SSH alapértelmezetten a 22-es porton hallgat.
+   (b) Felhasználónév/jelszó: Az SSH kiszolgálón lévő fiók felhasználóneve és jelszava. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+   (c) Kulcs kezelése/Kulcs használata: Egy gomb a nyilvános/privát kulcsok kezeléséhez, és egy jelölőnégyzet, amely jelzi, hogy kulcsot használjon jelszó helyett a hitelesítéshez. Ha a Vágólapra másolás gombot használja a kulcspár generálása után, beillesztheti a nyilvános kulcsot a SPICE kiszolgálóra csatlakozás után (a vágólap szinkronizálva van a kiszolgálóval).
+
+ - SPICE kapcsolati beállítások:
+   (a) SPICE kiszolgáló/port: Itt adja meg annak a számítógépnek az állomásnevét vagy IP-címét és portját, amelyen a SPICE kiszolgáló fut. SPICE SSH-n keresztül módban ez a cím az SSH kiszolgálóról látott cím. Ha az SSH kiszolgáló és a SPICE kiszolgáló ugyanaz a fizikai számítógép, használhatja a localhost-ot. A SPICE kiszolgálók általában az 5900-as és afölötti portokon hallgatnak.
+   (b) SPICE jelszó: Itt adja meg a SPICE munkamenet védelmére beállított jelszót. A biztonságos tárolás nem használt jelszavakhoz (adatbázisban vannak), és a jelszó csak akkor tárolódik, ha bejelöli a \"Megőrzés\" jelölőnégyzetet. A jelszó kitöltésre kerül ezen az oldalon, ha nem lépett ki az alkalmazásból az utolsó megadás óta.
+
+ - Speciális beállítások: Ebben a részben helyi eszköz- vagy SPICE teljesítményhangolásokat talál.
+ - Helyi eszköz beállítások: Ezek az alkalmazás viselkedését módosítják az eszközön.
+   (a) D-pad használata nyilakhoz: Ha jobban szereti, használhatja a Bluetooth billentyűzet D-padját vagy a képernyőn megjelenő billentyűzet nyilait a SPICE kiszolgálóra küldött nyilakhoz.
+   (b) D-pad forgatása: A Bluetooth billentyűzettel párosított telefonoknak szükségük lehet a billentyűzet D-padjának óramutató járásával ellentétes irányú elforgatására a helyes irányok kiszolgálóra küldéséhez.
+   (c) Helyi egérmutató: Ha a mutató láthatatlan, jelölje be ezt az opciót az alkalmazás általi megjelenítés kényszerítéséhez."</string>
+    <string name="spice_password_hint">SPICE jelszó</string>
+    <string name="spice_server_empty">A SPICE kiszolgáló vagy port üres. Nem lehet csatlakozni!</string>
+    <string name="spice_tls_port_hint">TLS port</string>
+    <string name="spice_username_hint">SPICE felhasználónév</string>
+
+    <string name="ssh_passphrase_hint">SSH jelmondat</string>
+    <string name="ssh_pubkey_button">Kulcs kezelése</string>
+    <string name="ssh_use_pubkey">Kulcs használata</string>
+    <string name="ssh_use_x11vnc">Automatikus asztal</string>
+    <string name="ssh_x11vnc_customize">AutoX konfigurálása</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Letiltás</string>
+    <string name="tap_enable">Engedélyezés</string>
+
+    <string name="username_caption">VNC felhasználó</string>
+    <string name="username_hint">UltraVNC MS bejelentkezési felhasználónév</string>
+    <string name="username_hint_optional">VNC felhasználónév (opcionális)</string>
+    <string name="username_hint_ssh">SSH felhasználónév</string>
+    <string name="username_hint_vencrypt">VNC felhasználónév</string>
+    <string name="verification_code">Ellenőrző kód</string>
+    <string name="verification_code_message">Kérjük, adja meg a többfaktoros hitelesítési ellenőrző kódot</string>
+
+    <string name="view_only">Csak megtekintési mód</string>
+
+    <string name="vnc_server_empty">A VNC kiszolgáló vagy port üres. Nem lehet csatlakozni!</string>
+    <string name="vnc_server_empty_no_save">A VNC kiszolgáló vagy port üres. Nem lehet menteni a kapcsolatot!</string>
+
+    <string name="warning_cert_does_not_match">FIGYELMEZTETÉS: A mentett x509 tanúsítvány vagy az átadott aláírás nem egyezik az aktuális kiszolgálói tanúsítvánnyal! Ez ember-a-közepén támadás lehet. Ha tisztában van a kulcsváltozással, folytathatja. </string>
+    <string name="copy_logcat">📋 Logcat másolása</string>
+    <string name="log_copied">A Logcat másolva a vágólapra. Most beillesztheti egy e-mailbe vagy a támogatói fórumra. Kérjük, nézze át személyes adatok keresésére, mielőtt közzéteszi.</string>
+    <string name="info_set_touchpad_input_mode">A kiszolgáló jelzi, hogy nem támogatja a kliens módú egérbemenetet, és az aktuális egérbeviteli mód nem fog megfelelően működni. Ha ez ismétlődik, győződjön meg arról, hogy a spice tools telepítve van a virtuális gépen, vagy váltson szimulált érintőpad beviteli módra a Menüből.</string>
+    <string name="ssh_tunnel_settings">SSH alagút beállítások</string>
+    <string name="vnc_connection_settings">VNC kapcsolati beállítások</string>
+    <string name="show_advanced_settings">Speciális beállítások megjelenítése</string>
+    <string name="use_no_compression_for_local_connections">Nincs tömörítés (helyi kapcsolatok, Hextile kódolás)</string>
+    <string name="rdp_connection_settings">RDP kapcsolati beállítások</string>
+    <string name="local_device_tweaks">Helyi eszköz beállítások</string>
+    <string name="spice_connection_settings">SPICE kapcsolati beállítások</string>
+    <string name="ca_subject">Adja meg itt a tanúsítvány alanyának nevét. Lehet, hogy nem szükséges, ha a tanúsítvány közneve (CN) megegyezik a kiszolgáló állomásnevével.</string>
+    <string name="path_to_ca">Adjon meg egy fájl elérési utat (például /sdcard/ca-cert.pem), majd koppintson az Importálás gombra a tanúsítványa hatóságának betöltéséhez.</string>
+    <string name="paste_ca">Ha nem importálja fájlként, ide írja be a tanúsítványa hatóságát.</string>
+    <string name="cert_issuer">Tanúsítvány kiállítója</string>
+    <string name="cert_fingerprint">Tanúsítvány ujjlenyomata</string>
+    <string name="error">Hiba</string>
+    <string name="panning">Pásztázási képernyő</string>
+    <string name="copy_of">Másolat:</string>
+    <string name="ssh_key_generated">Az új kulcs sikeresen létrehozva vagy importálva. Most a \'Kulcs generálása/exportálása\' gombra koppintva megoszthatja, vágólapra másolhatja vagy exportálhatja a nyilvános kulcsot.</string>
+    <string name="cursor_force_local">"Helyi"</string>
+    <string name="cursor_force_disable">"Letiltás"</string>
+    <string name="cursor_mode">"Kurzor mód:"</string>
+    <string name="rendering_mode">"Megjelenítési mód:"</string>
+    <string name="color_24_bit">"24 bites szín (24 bpp)"</string>
+    <string name="color_256">"256 szín (8 bpp)"</string>
+    <string name="color_64">"64 szín (4 bpp)"</string>
+    <string name="color_8">"8 szín (2 bpp)"</string>
+    <string name="color_greyscale">"Szürkeárnyalatos (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Fekete-fehér (1 bpp)"]]></string>
+    <string name="show">"Megjelenítés"</string>
+    <string name="hide">"Elrejtés"</string>
+    <string name="search_connections">Kapcsolatok keresése</string>
+    <string name="user_not_specified">Felhasználó nincs megadva</string>
+    <string name="enter_ssh_credentials">Kérjük, adja meg az SSH hitelesítő adatokat</string>
+    <string name="enter_vnc_credentials">Kérjük, adja meg a VNC hitelesítő adatokat</string>
+    <string name="enter_vnc_password">Kérjük, adja meg a VNC jelszót</string>
+    <string name="enter_rdp_credentials">Kérjük, adja meg az RDP hitelesítő adatokat</string>
+    <string name="enter_gateway_credentials">Kérjük, adja meg az átjáró hitelesítő adatait</string>
+    <string name="enter_spice_password">Kérjük, adja meg a SPICE jelszót</string>
+    <string name="enter_passphrase_title">Kulcs jelmondat megadása</string>
+    <string name="enter_passphrase">Kérjük, adja meg a kulcs jelmondatát</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">A kiszolgáló jelszavas hitelesítést igényel a kulcsos hitelesítés mellett.</string>
+    <string name="main_screen_help_text">"
+Az alkalmazás indításakor megjelenik a mentett kapcsolatok képernyője.
+
+Ha nincsenek mentett kapcsolatok, a képernyő alsó része üres, és a plusz gombbal kell létrehozni egyet.
+A képernyőn más konfigurációs szempontokat is vezérelhet az eszköztár vagy menü egyéb opcióinak megérintésével a tetején,
+például az alapértelmezett beállítások szerkesztéséhez, vagy a beállítások importálásához és exportálásához.
+
+Ha van mentett kapcsolata, csatlakozhat a távoli kiszolgálóhoz egy koppintással. Hosszú koppintással törölheti vagy szerkesztheti is.
+
+Végül a Kapcsolatok keresése mezővel gyorsan megtalálhatja a kapcsolatokat szűrő megjelenítésével."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Amikor kapcsolatot ad hozzá vagy szerkeszt, megjelenik a kapcsolat konfigurációs oldala.
+Itt beállíthat egy új Opaque kapcsolatot, vagy kiválaszthat egy meglévőt.
+Az oldal tetején egy gomb van, amely lehetővé teszi a kapcsolat mentését.
+Alatta konfigurálhatja a kapcsolatát.
+
+ - Kapcsolat típusa: Itt választja ki, melyik virtualizációs környezethez csatlakozik.
+
+ - Kiszolgáló címe: A kiszolgáló állomásneve vagy IP-je. Ha nem szabványos porton hallgat, hozzáadhat egy portot kettősponttal elválasztva.
+
+ - Virtuális gép neve: Megadhatja a VM nevét, ahogy a virtualizációs platformon megjelenik, vagy hagyja üresen a mezőt a VM-ek vagy konténerek listájának megjelenítéséhez kiválasztáshoz.
+
+ - Felhasználó: Adja meg a felhasználónevet a virtualizációs keretrendszerhez való hitelesítéshez.
+
+ - Jelszó: Ha szeretné menteni a jelszót, adja meg itt, vagy hagyja a mezőt üresen, hogy minden alkalommal kérdezzük meg.
+
+ - Speciális beállítások: Ebben a részben helyi eszköz-, protokoll- és teljesítményhangolásokat talál."
+    </string>
+    <string name="help">Súgó ⓘ</string>
+    <string name="need_help">Segítségre van szüksége?</string>
+    <string name="support_forum">Támogatói fórum ❓</string>
+    <string name="email_us">Írjon nekünk 📧</string>
+    <string name="report_bug">Hiba bejelentése 🐛</string>
+    <string name="download_from_server">Letöltés kiszolgálóról</string>
+    <string name="import_from_file">Importálás fájlból</string>
+    <string name="please_grant_permission_from_prefs">Előfordulhat, hogy engedélyeket kell adnia az alkalmazásnak a Beállításokon keresztül.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Részletes hibakeresési naplózás</string>
+    <string name="prefer_sending_unicode">Unicode bemenet (csak Windows)</string>
+    <string name="hide_connection_thumbnails">Kapcsolat miniatűrök elrejtése</string>
+    <string name="show_only_connection_nicknames">Csak kapcsolat becenévek megjelenítése</string>
+    <string name="love_our_work">Tetszik a munkánk?</string>
+    <string name="rate_app">Értékelés ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Megosztás 🔗</string>
+    <string name="share_app_toast">Ossza meg az alkalmazás hivatkozását minden barátjával a közösségi médiában!</string>
+    <string name="donate_app">Adományozás ❤</string>
+    <string name="more_apps">Több alkalmazás 📱</string>
+    <string name="previous_versions">Korábbi verziók ⍼</string>
+    <string name="keyboard_type">Szoftveres billentyűzet típusa</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Alapértelmezett (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Szöveg/Számok javaslatok nélkül (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Szöveg javaslatokkal (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Ez a kapcsolat VPN indítására van beállítva egy külső alkalmazáson keresztül. Telepítenie kell egy alkalmazást, például a Morpheusly-t az indításhoz.</string>
+    <string name="vnc_viewer_started">VNC Viewer elindult</string>
+    <string name="enable_gateway">RDP Gateway engedélyezése</string>
+    <string name="scroll_speed">Érintéses görgetés sebessége</string>
+    <string name="desktop_scale_percentage">Egyéni méretezési százalék</string>
+    <string name="show_menu">Menü megjelenítése</string>
+    <string name="move_toolbar">Eszköztár áthelyezése</string>
+    <string name="rdp_adv_glyph_cache">Glifgyorsítótár engedélyezése</string>
+
+    <string name="disable_battery_optimizations_failed">
+Nem sikerült megnyitni az akkumulátor-optimalizálási beállításokat. Az akkumulátor optimalizálás manuális letiltása a rendszerbeállításokban.</string>
+    <string name="disable_battery_optimizations">
+🔋 Az akkumulátor optimalizálás letiltása</string>
+    <string name="disable_battery_optimizations_already_done">
+Az alkalmazás már mentesül az akkumulátoroptimalizálás alól.</string>
+    <string name="no_connections_title">Még nincsenek kapcsolatok</string>
+    <string name="no_connections_hint">Az első távoli kapcsolat hozzáadásához érintse meg a + gombot</string>
+    <string name="no_connections_hint_tv">Az első távoli kapcsolat hozzáadásához nyomja meg a fenti + gombot</string>
+    <string name="keyboard_layout_map">Billentyűzet-kiosztás</string>
+</resources>

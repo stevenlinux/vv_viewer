@@ -1,0 +1,11 @@
+[virt-viewer]
+type=spice
+host=192.168.1.100
+port=5900
+tls-port=5901
+password=YOUR_PASSWORD_HERE
+title=PVE Virtual Machine
+fullscreen=0
+enable-usbredir=1
+enable-smartcard=0
+enable-audio=1

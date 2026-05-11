@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="color_format_caption">โหมดสี</string>
+    <string name="message_please_wait">โปรดรอ</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">ค่าเริ่มต้น (TYPE_NULL)</string>
+    <string name="ad_donate_text2">เวอร์ชัน Pro อนุญาตให้คุณปิดการใช้งานกล่องโต้ตอบนี้และให้คุณเข้าถึงคุณสมบัติเพิ่มเติมได้</string>
+    <string name="snap_one_to_one">ซูมไปที่ 1:1</string>
+    <string name="spice_intro_title">aSPICE: ไคลเอนต์ SPICE ที่ใช้งานง่ายและปลอดภัย</string>
+    <string name="auto_x_title">กำหนดค่า AutoX</string>
+    <string name="error_ovirt_auth_failure">การรับรองความถูกต้องล้มเหลวกรุณาตรวจสอบชื่อผู้ใช้และรหัสผ่านที่ให้มา</string>
+    <string name="ad_donate_text1">แตะที่นี่เพื่อสนับสนุนโครงการด้วยการบริจาคเล็กน้อยโดยการซื้อเวอร์ชัน Pro</string>
+    <string name="auto_x_geom_custom">กำหนดเอง</string>
+    <string name="repeater_caption_hint">เครื่องทวนสัญญาณ UltraVNC</string>
+    <string name="error_ssh_keypair_decryption_failure">ไม่สามารถถอดรหัสคู่คีย์ได้โปรดตรวจสอบให้แน่ใจว่าคุณได้ป้อนข้อความรหัสผ่านของคุณอย่างถูกต้องในช่อง \'ข้อความรหัสผ่าน SSH\' บนหน้าจอหลัก</string>
+    <string name="master_password_hint_twice">ทำซ้ำรหัสผ่าน</string>
+    <string name="connection_setup_password">รหัสผ่าน</string>
+    <string name="support_forum">ฟอรั่มการสนับสนุน ❓</string>
+    <string name="main_screen_help">ความช่วยเหลือในการเชื่อมต่อ</string>
+    <string name="spice_server_empty">เซิร์ฟเวอร์ SPICE หรือพอร์ตว่างเปล่าเชื่อมต่อไม่ได้!</string>
+    <string name="arrow_up">ลูกศรขึ้น</string>
+    <string name="error_vm_lookup_failed">ไม่พบเครื่องเสมือนที่มีชื่อที่ระบุให้กับผู้ใช้ของคุณโปรดลบชื่อ VM ที่ระบุเพื่อดูรายการ VM ที่กำหนดให้กับผู้ใช้</string>
+    <string name="nickname_caption">ชื่อเล่น</string>
+    <string name="auto_x_geom_native">พื้นเมือง</string>
+    <string name="new_connection">การเชื่อมต่อใหม่</string>
+    <string name="error_ssh_unable_to_connect">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ SSHโปรดตรวจสอบการเชื่อมต่อเครือข่าย รวมถึงที่อยู่และพอร์ตเซิร์ฟเวอร์ SSH</string>
+    <string name="send_key_again">ส่งคีย์อีกครั้ง</string>
+    <string name="input_mode_help">วิธีใช้โหมดอินพุต</string>
+    <string name="enable_gateway">เปิดใช้งาน RDP Gateway</string>
+    <string name="message_please_install_bvnc">โปรดติดตั้ง &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; จาก Google Play เพื่อเชื่อมต่อกับคอนโซล VNC ของ VM นี้</string>
+    <string name="spice_ca_cert_path_hint">พาธไปยังไฟล์ผู้ออกใบรับรอง</string>
+    <string name="enter_spice_password">กรุณากรอกรหัสผ่าน SPICE</string>
+    <string name="rdp_adv_window_contents">แสดงเนื้อหาหน้าต่างขณะลาก</string>
+    <string name="input_methods">วิธีการป้อนข้อมูล</string>
+    <string name="info_ssh_key_fingerprint">ลายนิ้วมือคีย์โฮสต์คือ:</string>
+    <string name="paste_ca">ป้อนผู้ออกใบรับรองที่นี่ หากคุณไม่ได้นำเข้าเป็นไฟล์</string>
+    <string name="enter_otp_code">กรุณากรอกรหัส OTP</string>
+    <string name="spice_connection_screen_help_text">เมื่อคุณเพิ่มหรือแก้ไขการเชื่อมต่อ คุณจะเห็นหน้าการกำหนดค่าการเชื่อมต่อที่นี่คุณสามารถตั้งค่าการเชื่อมต่อ SPICE ใหม่หรือเลือกการเชื่อมต่อที่มีอยู่แล้วที่ด้านบนมีปุ่มให้คุณบันทึกการเชื่อมต่อด้านล่างนี้เป็นที่ที่คุณกำหนดค่าการเชื่อมต่อของคุณ
+
+- ประเภทการเชื่อมต่อ: ที่นี่คุณเลือกประเภทการเชื่อมต่อ SPICEประเภทการเชื่อมต่อที่ใช้ได้คือ:
+(ก) SPICE ซึ่งเชื่อมต่อโดยตรงกับคอมพิวเตอร์ผ่านโปรโตคอล SPICE
+(b) SPICE บน SSH ซึ่งจะส่งสัญญาณการเชื่อมต่อของคุณผ่านคอมพิวเตอร์ที่ใช้เซิร์ฟเวอร์ SSH ก่อน
+
+- หัวข้อ: แต่ละการเชื่อมต่อที่คุณสร้างสามารถมีชื่อเล่นเพื่อให้ระบุได้ง่ายในรายการ
+
+- การตั้งค่าอุโมงค์ SSH: มีให้ใน SPICE เหนือโหมด SSH
+(a) เซิร์ฟเวอร์/พอร์ต SSH: ที่อยู่และพอร์ตของเซิร์ฟเวอร์ SSH ที่การเชื่อมต่อจะถูกอุโมงค์ผ่านตามค่าเริ่มต้น SSH จะฟังบนพอร์ต 22
+(b) ชื่อผู้ใช้/รหัสผ่าน: ชื่อผู้ใช้และรหัสผ่านของบัญชีบนเซิร์ฟเวอร์ SSHรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปตั้งแต่คุณป้อนครั้งล่าสุด
+(c) จัดการคีย์/ใช้คีย์: ปุ่มสำหรับจัดการคีย์สาธารณะ/ส่วนตัว และช่องทำเครื่องหมายระบุว่าจะใช้คีย์แทนรหัสผ่านในการตรวจสอบสิทธิ์หรือไม่หากคุณใช้ปุ่มคัดลอกไปยังคลิปบอร์ดหลังจากสร้างคู่คีย์ คุณควรจะสามารถวางคีย์สาธารณะได้เมื่อเชื่อมต่อกับเซิร์ฟเวอร์ SPICE (คลิปบอร์ดจะซิงโครไนซ์กับเซิร์ฟเวอร์)
+
+- การตั้งค่าการเชื่อมต่อ SPICE:
+(ก) เซิร์ฟเวอร์/พอร์ต SPICE: นี่คือที่ที่คุณป้อนชื่อโฮสต์หรือที่อยู่ IP และพอร์ตของคอมพิวเตอร์ที่ใช้งานเซิร์ฟเวอร์ SPICE ที่คุณต้องการติดต่อในโหมด SPICE เหนือ SSH ที่อยู่นี้จะเหมือนกับที่เห็นจากเซิร์ฟเวอร์ SSHหากเซิร์ฟเวอร์ SSH และเซิร์ฟเวอร์ SPICE เป็นคอมพิวเตอร์เครื่องเดียวกัน คุณสามารถใช้ localhost ได้โดยทั่วไปเซิร์ฟเวอร์ SPICE จะรับฟังพอร์ต 5900 ขึ้นไป
+(d) รหัสผ่าน SPICE: นี่คือที่ที่คุณป้อนรหัสผ่านที่ตั้งไว้เพื่อปกป้องเซสชัน SPICE ของคุณที่เก็บข้อมูลที่ปลอดภัยไม่ได้ใช้สำหรับรหัสผ่าน (อยู่ในฐานข้อมูล) และรหัสผ่านจะถูกจัดเก็บเฉพาะเมื่อคุณทำเครื่องหมายที่ช่อง Keepรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปตั้งแต่คุณป้อนครั้งล่าสุด
+
+- การตั้งค่าขั้นสูง: ในส่วนนี้คุณจะพบกับการปรับแต่งประสิทธิภาพของอุปกรณ์ในเครื่องหรือ SPICE
+- การปรับแต่งอุปกรณ์ภายในเครื่อง: สิ่งเหล่านี้จะปรับพฤติกรรมของแอพบนอุปกรณ์ของคุณ
+(a) ใช้ D-Pad สำหรับลูกศร: หากต้องการ คุณสามารถใช้ D-Pad ของแป้นพิมพ์ Bluetooth หรือลูกศรบนแป้นพิมพ์บนหน้าจอเพื่อส่งลูกศรไปยังเซิร์ฟเวอร์ SPICE
+(b) หมุน D-Pad: โทรศัพท์ที่จับคู่กับแป้นพิมพ์ Bluetooth อาจจำเป็นต้องหมุน D-pad ของแป้นพิมพ์ทวนเข็มนาฬิกาเพื่อส่งทิศทางที่ถูกต้องไปยังเซิร์ฟเวอร์
+(c) ตัวชี้เมาส์ในเครื่อง: หากมองไม่เห็นตัวชี้ ให้เลือกตัวเลือกนี้เพื่อบังคับให้แอปวาด</string>
+    <string name="auto_x_disabled_selection">ปิดการใช้งาน AutoX</string>
+    <string name="button_send_text">ส่งข้อความ</string>
+    <string name="shortcut_label_spice">การเชื่อมต่อเครื่องเทศ</string>
+    <string name="keep_screen_awake_enable">ให้หน้าจอตื่น</string>
+    <string name="open_doc">คู่มือ/วิกิ</string>
+    <string name="remote_sound_disabled">ปิดการใช้งานเสียง</string>
+    <string name="spice_ca_file_not_found">ไม่พบไฟล์.โปรดป้อนชื่อไฟล์ที่ถูกต้องในช่องข้อความ (เช่น /sdcard/ca-cert.pem)</string>
+    <string name="rdp_intro_title">aARDP: ไคลเอนต์ RDP ที่ใช้งานง่ายและปลอดภัย</string>
+    <string name="error_pve_api_unexpected_code">การตอบสนองที่ไม่คาดคิดจาก Proxmox Virtual Environment:</string>
+    <string name="error_out_of_memory">ไม่สามารถจัดสรรหน่วยความจำเพียงพอสำหรับวาดหน้าจอระยะไกลลองรีสตาร์ทแอปพลิเคชัน จากนั้นรีสตาร์ทอุปกรณ์ของคุณคุณยังสามารถลองลดขนาดของเดสก์ท็อประยะไกลผ่านการตั้งค่าแอปได้</string>
+    <string name="enter_passphrase_title">ป้อนข้อความรหัสผ่านที่สำคัญ</string>
+    <string name="copy_of">สำเนาของ</string>
+    <string name="rdp_adv_remotefx">เปิดใช้งาน RemoteFX</string>
+    <string name="ok">ตกลง</string>
+    <string name="rdp_adv_desktop_background">แสดงพื้นหลังเดสก์ท็อป</string>
+    <string name="desktop_scale_percentage">เปอร์เซ็นต์การปรับขนาดแบบกำหนดเอง</string>
+    <string name="password_caption_ssh">การรับรองความถูกต้อง SSH</string>
+    <string name="rdp_adv_font_smoothing">ดำเนินการปรับแบบอักษรให้เรียบ</string>
+    <string name="rdp_domain_hint">โดเมน RDP</string>
+    <string name="custom_ca_subject">หัวข้อใบรับรองเพิ่มเติมไม่จำเป็นหากใบรับรอง CN ตรงกับชื่อโฮสต์</string>
+    <string name="color_24_bit">สี 24 บิต (24 bpp)</string>
+    <string name="ssh_passphrase_hint">รหัสผ่าน SSH</string>
+    <string name="username_hint">ชื่อผู้ใช้เข้าสู่ระบบ UltraVNC MS</string>
+    <string name="error_failed_to_download_https">ดาวน์โหลดไฟล์ผ่าน HTTPS ไม่สำเร็จบางทีใบรับรองเซิร์ฟเวอร์ของคุณอาจไม่น่าเชื่อถือ (หมดอายุหรือลงนามด้วยตนเอง) หรือเซิร์ฟเวอร์ของคุณไม่สามารถเข้าถึงได้</string>
+    <string name="rdp_geom_checkbox_enable">เปิดใช้งานความละเอียดที่กำหนดเอง</string>
+    <string name="enter_rdp_credentials">กรุณาป้อนข้อมูลรับรอง RDP</string>
+    <string name="error_dialog_title">ข้อผิดพลาด</string>
+    <string name="ssl_strict">ต้องมีชื่อสามัญเพื่อให้ตรงกับใบรับรอง (แนะนำ)</string>
+    <string name="master_password_hint_once">ใส่รหัสผ่าน</string>
+    <string name="one_to_one">หนึ่งต่อหนึ่ง</string>
+    <string name="action_rate_or_share_app">⭐ รับความช่วยเหลือ ให้คะแนน แบ่งปัน</string>
+    <string name="error_ssh_kbd_auth_method_unavail">เซิร์ฟเวอร์ SSH ไม่รองรับวิธี \password\ หรือ \keyboard-interactive\ auth หรือต้องใช้วิธี \publickey\ ก่อนโปรดกำหนดค่าให้อนุญาตอย่างน้อยหนึ่งในสองวิธี หรือกำหนดค่าแอปพลิเคชันใหม่วิธีการรับรองความถูกต้องที่ใช้ได้:</string>
+    <string name="import_settings">นำเข้า</string>
+    <string name="hide_toolbar">ซ่อนแถบเครื่องมือ</string>
+    <string name="verification_code_message">กรุณากรอกรหัสยืนยันการรับรองความถูกต้องแบบหลายปัจจัย</string>
+    <string name="need_help">ต้องการความช่วยเหลือบ้างไหม?</string>
+    <string name="rdp_security_auto">เจรจาความปลอดภัยอัตโนมัติ</string>
+    <string name="master_password_error_failed_to_enable">ไม่สามารถเปิดใช้งานรหัสผ่านหลักได้ตรวจสอบพื้นที่ว่างบนอุปกรณ์ของคุณแล้วลองอีกครั้ง</string>
+    <string name="cert_issuer">ผู้ออกใบรับรอง</string>
+    <string name="error">ข้อผิดพลาด</string>
+    <string name="error_anon_dh_unsupported">เซิร์ฟเวอร์ VNC กำลังพยายามใช้รหัส Anonymous Diffie Hellman ซึ่งไม่รองรับบนอุปกรณ์ Android ของคุณหากใช้เซิร์ฟเวอร์ Vino VNC ของ GNOME คุณสามารถปิดการใช้งาน AnonTLS ได้โดยการรันคำสั่งต่อไปนี้ในเทอร์มินัลแล้วรีสตาร์ท: \gsettings set org.gnome.Vino need-encryption false\หากใช้ x11vnc คุณสามารถเพิ่มตัวเลือกต่อไปนี้: \-vencrypt nodh:only -ssl\</string>
+    <string name="scroll_wheel">ล้อเลื่อน</string>
+    <string name="auto_x_session_auto">อัตโนมัติ</string>
+    <string name="enter_gateway_credentials">กรุณาป้อนข้อมูลรับรองเกตเวย์</string>
+    <string name="control_check">Ctrl</string>
+    <string name="ad_donate_text_vnc">โครงการ Open Source ต้องการการสนับสนุนจากคุณ!บริจาคให้เราโดยซื้อ bVNC Proดูด้านล่างสำหรับลิงก์ไปยัง bVNC Pro และแอปอื่นๆ ของเรา</string>
+    <string name="input_method_mouse">การควบคุมตัวชี้เมาส์</string>
+    <string name="pro_feature_rdp">ดูเหมือนว่าคุณพยายามเปิดไฟล์ .rdp ซึ่งเป็นฟีเจอร์ Proโปรดสนับสนุนโครงการโดยการซื้อ aRDP Pro ซึ่งรองรับไฟล์ .rdpลิงก์ไปยังเวอร์ชัน aRDP Pro มีอยู่ในกล่องโต้ตอบเริ่มต้น</string>
+    <string name="opaque_connection_screen_help_text">เมื่อคุณเพิ่มหรือแก้ไขการเชื่อมต่อ คุณจะเห็นหน้าการกำหนดค่าการเชื่อมต่อ
+ที่นี่คุณสามารถตั้งค่าการเชื่อมต่อแบบทึบใหม่หรือเลือกการเชื่อมต่อที่มีอยู่แล้วได้
+ที่ด้านบนมีปุ่มให้คุณบันทึกการเชื่อมต่อ
+ด้านล่างนี้เป็นที่ที่คุณกำหนดค่าการเชื่อมต่อของคุณ
+
+- ประเภทการเชื่อมต่อ: ที่นี่คุณสามารถเลือกสภาพแวดล้อมการจำลองเสมือนที่คุณกำลังเชื่อมต่อได้
+
+- ที่อยู่เซิร์ฟเวอร์: ชื่อโฮสต์หรือ IP ของเซิร์ฟเวอร์หากกำลังฟังบนพอร์ตที่ไม่ได้มาตรฐาน คุณสามารถเพิ่มพอร์ตที่คั่นด้วยเครื่องหมายทวิภาคได้
+
+- ชื่อเครื่องเสมือน: คุณสามารถระบุชื่อของ VM ตามที่ปรากฏบนแพลตฟอร์ม Virtualization ของคุณ หรือปล่อยฟิลด์นี้ว่างไว้เพื่อรับรายการ VM หรือคอนเทนเนอร์เพื่อเลือก
+
+- ผู้ใช้: ป้อนชื่อผู้ใช้เพื่อตรวจสอบความถูกต้องของกรอบงานการจำลองเสมือนของคุณ
+
+- รหัสผ่าน: หากคุณต้องการบันทึกรหัสผ่าน ให้ป้อนที่นี่หรือเว้นว่างไว้เพื่อให้ระบบสอบถามทุกครั้ง
+
+- การตั้งค่าขั้นสูง: ในส่วนนี้คุณจะพบกับการปรับแต่งอุปกรณ์ โปรโตคอล และประสิทธิภาพในเครื่อง</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">ข้อความพร้อมคำแนะนำ (TYPE_CLASS_TEXT)</string>
+    <string name="copy_list_button">คัดลอกรายการ</string>
+    <string name="master_password_error_failed_to_disable">ไม่สามารถปิดใช้งานรหัสผ่านหลักได้ตรวจสอบพื้นที่ว่างบนอุปกรณ์ของคุณแล้วลองอีกครั้ง</string>
+    <string name="use_no_compression_for_local_connections">ไม่มีการบีบอัด (การเชื่อมต่อภายในเครื่อง, การเข้ารหัส Hextile)</string>
+    <string name="input_mode_help_text">ในโหมดป้อนข้อมูลใดๆ ให้แตะไอคอนแป้นพิมพ์เพื่อรับแป้นพิมพ์บนหน้าจอนอกจากนี้อุปกรณ์ของคุณอาจมีท่าทางของตัวเองซึ่งจะแสดงคีย์บอร์ดขึ้นมา
+
+ใช้โหมดอินพุตโดยตรงเพื่อการควบคุมหน้าจอสัมผัสที่ใช้งานง่ายยิ่งขึ้นใช้โหมดทัชแพดจำลองเพื่อการควบคุมเมาส์ที่ละเอียดยิ่งขึ้น
+
+โดยตรง โหมดเลื่อนแบบปัด:
+- ควบคุมเมาส์ได้โดยตรงผ่านการสัมผัส
+- ปัดเพื่อเลื่อนไปรอบๆ
+- การแตะทำให้เมาส์คลิกตรงตำแหน่งที่คุณแตะ
+- กิจกรรมการเลื่อนจะถูกส่งระหว่างสองนิ้วโดยเริ่มต้นการปัดด้วยสองนิ้ว
+
+โดยตรง, โหมดแพนค้างไว้:
+- ควบคุมเมาส์ได้โดยตรงผ่านการสัมผัส
+- แตะยาวเพื่อเริ่มโหมดแพน
+- การแตะทำให้เมาส์คลิกตรงตำแหน่งที่คุณแตะ
+- กิจกรรมการเลื่อนจะถูกส่งระหว่างสองนิ้วโดยเริ่มต้นการปัดด้วยสองนิ้ว
+
+โหมดทัชแพดจำลอง:
+- ใช้หน้าจอของคุณเหมือนทัชแพด
+- ปัดเพื่อเลื่อนตัวชี้เมาส์ไปรอบๆ
+- เลื่อนเมาส์ไปเกินขอบหน้าจอเพื่อเลื่อน
+- การแตะทำให้เมาส์คลิกตรงตำแหน่งที่ตัวชี้อยู่
+- เหตุการณ์การเลื่อนจะถูกส่งไปในตำแหน่งที่มีตัวชี้เมาส์อยู่
+
+โหมดมือเดียว:
+- เช่นเดียวกับโหมด Direct, Swipe Pan ยกเว้นเมนูที่เปิดด้วยการแตะยาวพร้อมตัวเลือกโหมด
+- หลังจากเลือกโหมดแล้ว การปัดนิ้วบนหน้าจอจะแสดงท่าทางที่เลือก
+- การยกนิ้วถือเป็นการสิ้นสุดท่าทาง
+
+โหมดอินพุตทั้งหมด:
+- คลิกซ้าย: แตะหนึ่งครั้ง
+- ดับเบิลคลิก: แตะสองครั้ง
+- คลิกขวา: แตะค้างไว้แล้วแตะด้วยนิ้วที่สอง (ที่ใดก็ได้บนหน้าจอ)
+- คลิกขวาสำรอง: ใช้ปุ่ม \Back\ หรือท่าทางสำหรับอุปกรณ์ของคุณ
+- คลิกกลาง: แตะค้างไว้แล้วแตะด้วยสองนิ้วเพิ่มเติม (ที่ใดก็ได้บนหน้าจอ)
+- ลากเมาส์: แตะค้างไว้แล้วปัดนิ้ว
+- ล้อเลื่อน: ใช้สองนิ้วลากขึ้น/ลงและซ้าย/ขวาการลากด่วนจะเลื่อนเร็วขึ้น
+- ซูมเข้า/ออก: ในการปรับขนาด Zoomable ให้บีบนิ้วเพื่อควบคุมการปรับขนาด
+- ปุ่ม Ctrl/Alt: เมนู -&gt; ปุ่ม Ctrl/Altเมื่อเสร็จแล้วอย่าลืมปิด!
+- คีย์คอมโบ: เมนู -&gt; เพิ่มเติม -&gt; ส่งคีย์
+- ส่งข้อความ: พิมพ์บนแป้นพิมพ์บนหน้าจอหรือใช้เมนู -&gt; เพิ่มเติม -&gt; ส่งข้อความ</string>
+    <string name="right_alt_as_iso_l3_shift">R-Alt เป็น ISO L3 Shift (VNC เท่านั้น)</string>
+    <string name="error_uri_noinfo_nosave">ข้อมูลเฉพาะไม่เพียงพอที่จะเชื่อมต่อ</string>
+    <string name="single_reposition">ตัวชี้เมาส์ถูกเปลี่ยนตำแหน่งสำหรับโหมดมือเดียว</string>
+    <string name="auto_x_cancel">ยกเลิก</string>
+    <string name="vv_file_not_found">ไม่พบไฟล์ .vv!</string>
+    <string name="error_pve_failed_to_authenticate">ไม่สามารถรับรองความถูกต้องกับ Proxmox Virtual Environmentโปรดตรวจสอบให้แน่ใจว่าคุณป้อนชื่อผู้ใช้ของคุณในรูปแบบ user@realm และรหัสผ่านของคุณถูกต้อง</string>
+    <string name="save_as_copy">บันทึกเป็นสำเนา</string>
+    <string name="info_cert">คุณยอมรับใบรับรองโฮสต์ใหม่หรือที่เปลี่ยนแปลงนี้หรือไม่\n\nลายนิ้วมือ:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nออกเมื่อ: %4$s\nออกโดย: %5$s\n\nใช้ได้ตั้งแต่: %6$s\nใช้ได้ถึง: %7$s\n</string>
+    <string name="more_debug_logging">การบันทึกการแก้ไขข้อบกพร่องเพิ่มเติม</string>
+    <string name="error_ssh_key_auth_fail">ไม่สามารถตรวจสอบสิทธิ์เซิร์ฟเวอร์ SSH ด้วยคู่คีย์ได้โปรดตรวจสอบชื่อผู้ใช้ SSH ของคุณและตรวจสอบให้แน่ใจว่ารหัสสาธารณะของคุณอยู่ในไฟล์authorized_keysทางระยะไกล</string>
+    <string name="error_vnc_authentication">การรับรองความถูกต้อง VNC ล้มเหลว!ตรวจสอบรหัสผ่าน VNC (และผู้ใช้ ถ้ามี)</string>
+    <string name="toggle_keyboard">สลับแป้นพิมพ์</string>
+    <string name="help">ช่วยด้วยⓘ</string>
+    <string name="repeater_caption">สิ่งสำคัญ: หากใช้เครื่องทวนสัญญาณ UltraVNC ให้ป้อนที่อยู่และพอร์ตนอกกล่องโต้ตอบนี้ที่นี่ ป้อนที่อยู่และพอร์ตของเซิร์ฟเวอร์ VNC จริงแยกที่อยู่และพอร์ตของเซิร์ฟเวอร์ VNC ด้วยเครื่องหมายโคลอน เช่น192.168.0.100:5900.</string>
+    <string name="color_8">8 สี (2 bpp)</string>
+    <string name="error_ovirt_unable_to_connect">ไม่สามารถเชื่อมต่อหรือรับรองความถูกต้องได้ โปรดตรวจสอบที่อยู่เซิร์ฟเวอร์ ผู้ใช้ รหัสผ่าน และผู้ออกใบรับรองและหัวเรื่อง</string>
+    <string name="error_rdp_authentication_failed">การรับรองความถูกต้อง RDP ล้มเหลว!โปรดตรวจสอบชื่อผู้ใช้และรหัสผ่าน RDP แล้วลองอีกครั้ง</string>
+    <string name="delete_key_list">ลบรายการคีย์</string>
+    <string name="input_method_direct_swipe_pan_description">โดยตรง ปัดแพน: ปัดเพื่อเลื่อนไปรอบๆแตะด้วยนิ้วเดียวทุกที่ที่คุณต้องการคลิกซ้าย ใช้สองนิ้วเพื่อคลิกขวา และสามนิ้วเพื่อคลิกกลางปัดด้วยสองนิ้วเพื่อเลื่อนแตะยาวเพื่อลากและวาง</string>
+    <string name="address_caption_hint">เซิร์ฟเวอร์ VNC</string>
+    <string name="auto_x_unixpw">ใช้ข้อมูลรับรอง UNIX แทนกลไกการรักษาความปลอดภัยในตัวผู้ใช้จะต้องสามารถรัน /bin/su ได้</string>
+    <string name="input_method_touchpad">ทัชแพดจำลอง</string>
+    <string name="fit_to_screen">พอดีกับหน้าจอ</string>
+    <string name="list_name_caption">ชื่อรายการ</string>
+    <string name="copy_logcat">📋 คัดลอก Logcat</string>
+    <string name="ca_ovirt_use_custom">กำหนดเอง RHEV/oVirt CA</string>
+    <string name="info_progress_dialog_downloading">ดาวน์โหลดเฟรมแรก\กรุณารอสักครู่...</string>
+    <string name="local_mouse_check">ตัวชี้เมาส์ในเครื่อง (เลือกหากมองไม่เห็นตัวชี้)</string>
+    <string name="rdp_server_empty">เซิร์ฟเวอร์ RDP หรือพอร์ตว่างเปล่าเชื่อมต่อไม่ได้!</string>
+    <string name="rendering_mode">โหมดการเรนเดอร์:</string>
+    <string name="rdp_adv_visual_styles">เปิดใช้งานสไตล์ภาพ</string>
+    <string name="error_ovirt_timeout">การเชื่อมต่อกับ VM ของคุณหมดเวลาโปรดตรวจสอบว่าที่อยู่ของโหนดที่ใช้ VM ของคุณถูกต้อง สามารถเข้าถึงได้จากเครือข่ายปัจจุบันของคุณ และไม่มีไฟร์วอลล์ใดบล็อกการเชื่อมต่อ</string>
+    <string name="extra_keys_enable">เปิดใช้งานคีย์พิเศษ</string>
+    <string name="showkbd_label">คีย์บอร์ด</string>
+    <string name="audio">เสียง</string>
+    <string name="ssh_x11vnc_customize">กำหนดค่า AutoX</string>
+    <string name="address_caption_ssh_hint">เซิร์ฟเวอร์ SSH</string>
+    <string name="info_progress_dialog_connecting">กำลังเชื่อมต่อ...</string>
+    <string name="donate_app">บริจาค ❤</string>
+    <string name="rdp_security_rdp">การรักษาความปลอดภัย RDP</string>
+    <string name="applies_to_new_connections_only">ใช้กับการเชื่อมต่อใหม่เท่านั้น</string>
+    <string name="spice_button_import_ca">นำเข้าแคลิฟอร์เนีย</string>
+    <string name="scaling_zoomable">ซูมได้</string>
+    <string name="error_ssh_port_forwarding_failure">ไม่สามารถตั้งค่าการส่งต่อพอร์ตสำหรับการรับส่งข้อมูล VNC ผ่าน SSHโปรดตรวจสอบให้แน่ใจว่าเซิร์ฟเวอร์ SSH ของคุณได้รับการกำหนดค่าให้อนุญาตการส่งต่อพอร์ตแล้วลองอีกครั้ง</string>
+    <string name="rdp_adv_desktop_composition">เปิดใช้งานองค์ประกอบเดสก์ท็อป</string>
+    <string name="scroll_speed">แตะความเร็วการเลื่อน</string>
+    <string name="rdp_address_caption_hint">เซิร์ฟเวอร์ RDP</string>
+    <string name="send_button">ส่ง</string>
+    <string name="love_our_work">รักงานของเรา?</string>
+    <string name="download_from_server">ดาวน์โหลดจากเซิร์ฟเวอร์</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">เซิร์ฟเวอร์ของคุณจำเป็นต้องมีการรับรองความถูกต้องของรหัสผ่านนอกเหนือจากการตรวจสอบความถูกต้องของคีย์</string>
+    <string name="input_method_single_handed">มือเดียว</string>
+    <string name="username_hint_ssh">ชื่อผู้ใช้ SSH</string>
+    <string name="auto_x_enabled">เปิดใช้งานแล้ว</string>
+    <string name="password_hint_ssh">รหัสผ่าน SSH</string>
+    <string name="audio_will_be_initialized">เสียงจะเริ่มต้นได้ภายในเวลาประมาณ 15 วินาที โปรดหยุดการเล่นวิดีโอหรือเสียงที่ทำงานอยู่ก่อนหน้านั้น</string>
+    <string name="shortcut_label_vnc">การเชื่อมต่อ VNC</string>
+    <string name="auto_request_new_res">ซิงค์ระยะไกลเพื่อแสดงความละเอียด</string>
+    <string name="color_256">256 สี (8 bpp)</string>
+    <string name="intro_title">bVNC: ไคลเอนต์ VNC ที่ใช้งานง่ายและปลอดภัย</string>
+    <string name="error_x509_could_not_generate_encoding">ไม่สามารถสร้างการเข้ารหัสใบรับรองได้</string>
+    <string name="rdp_security_tls">การรักษาความปลอดภัย ทีแอลเอส</string>
+    <string name="action_import_settings">นำเข้าการตั้งค่า</string>
+    <string name="single_cancel">โหมดมือเดียวถูกยกเลิก</string>
+    <string name="info_set_touchpad_input_mode">เซิร์ฟเวอร์รายงานว่าไม่รองรับการป้อนข้อมูลด้วยเมาส์ในโหมดไคลเอนต์ และโหมดการป้อนข้อมูลด้วยเมาส์ในปัจจุบันจะทำงานไม่ถูกต้องหากยังคงมีอยู่ ตรวจสอบให้แน่ใจว่าได้ติดตั้งเครื่องมือเครื่องเทศในเครื่องเสมือนหรือสลับไปที่โหมดอินพุตทัชแพดจำลองจากเมนู</string>
+    <string name="email_us">ส่งอีเมลถึงเรา 📧</string>
+    <string name="color_64">64 สี (4 bpp)</string>
+    <string name="ssh_key_generated">สร้างหรือนำเข้าคีย์ใหม่สำเร็จแล้วตอนนี้คุณสามารถแตะปุ่ม \'สร้าง/ส่งออกคีย์\' เพื่อแชร์ คัดลอกไปยังคลิปบอร์ด หรือส่งออกคีย์สาธารณะได้</string>
+    <string name="repeater_button">เครื่องทวนสัญญาณ UltraVNC</string>
+    <string name="info_dialog_title">ข้อมูล</string>
+    <string name="local_clipboard_integration">เปิดใช้งานการรวมคลิปบอร์ดภายในกับระยะไกล</string>
+    <string name="cursor_force_local">ท้องถิ่น</string>
+    <string name="list_caption">รายการ</string>
+    <string name="master_password_error_password_necessary">ต้องใช้รหัสผ่านหลักเพื่อดำเนินการต่อ</string>
+    <string name="ssh_use_pubkey">ใช้คีย์</string>
+    <string name="super_check">สุด ๆ</string>
+    <string name="enter_text">ส่งข้อความ</string>
+    <string name="import_export_settings">📦 การตั้งค่าการนำเข้า/ส่งออก</string>
+    <string name="info_progress_dialog_aborted">การเชื่อมต่อถูกยกเลิก!</string>
+    <string name="input_method_single_handed_description">มือเดียว: ปัดเพื่อเลื่อนไปรอบๆแตะด้วยนิ้วเดียวทุกที่ที่คุณต้องการคลิกซ้ายแตะยาวเพื่อเลือกโหมดลาก / เลื่อน / ซูมซ้าย / ขวา / กลางการควบคุมแบบมัลติทัชแบบปกติก็ใช้งานได้เช่นกัน</string>
+    <string name="verification_code">รหัสยืนยัน</string>
+    <string name="extra_keys_disable">ปิดการใช้งานคีย์พิเศษ</string>
+    <string name="rotate_dpad">หมุนบลูทูธหรือซอฟต์แวร์ D-Pad</string>
+    <string name="intro_close">ปิด</string>
+    <string name="master_password_error_shortcuts_not_supported">ยังไม่รองรับทางลัดเมื่อเปิดใช้งานรหัสผ่านหลัก</string>
+    <string name="enter_vnc_credentials">กรุณาป้อนข้อมูลรับรอง VNC</string>
+    <string name="connection_edit">แก้ไข</string>
+    <string name="error_spice_unable_to_connect">ไม่สามารถเชื่อมต่อหรือตรวจสอบสิทธิ์ได้ โปรดตรวจสอบที่อยู่เซิร์ฟเวอร์และพอร์ต</string>
+    <string name="remote_sound_on_server">เสียงบนเซิร์ฟเวอร์</string>
+    <string name="left_handed_mode">โหมดคนถนัดซ้าย</string>
+    <string name="info_ssh_initializing_hostkey">กำลังพยายามเริ่มต้น SSH HostKey</string>
+    <string name="connect_button">เชื่อมต่อ</string>
+    <string name="ca_new_or_changed">ใบรับรองเซิร์ฟเวอร์ใหม่หรือที่เปลี่ยนแปลง</string>
+    <string name="close">ปิด</string>
+    <string name="master_password_verify">ตรวจสอบรหัสผ่านหลัก</string>
+    <string name="error_no_vnc_support_yet">ประเภทการแสดงผล VNC ยังไม่รองรับ แต่เป็นคุณสมบัติที่กำลังจะเกิดขึ้นขอบคุณสำหรับความเข้าใจของคุณ!</string>
+    <string name="rdp_connection_settings">การตั้งค่าการเชื่อมต่อ RDP</string>
+    <string name="immersive_mode_disable">ปิดการใช้งานโหมดดื่มด่ำ</string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment ส่งคืนข้อมูล null</string>
+    <string name="auto_x_descript_geom">ขนาดเดสก์ท็อประยะไกล (WxH)</string>
+    <string name="enter_passphrase">กรุณากรอกรหัสรหัสผ่าน</string>
+    <string name="action_edit_default_settings">⚙ แก้ไขการตั้งค่าเริ่มต้น</string>
+    <string name="ca_spice_manage">จัดการ SPICE CA</string>
+    <string name="color_mode">โหมดสี</string>
+    <string name="back_button">กลับไป</string>
+    <string name="rate_app">ให้คะแนน ⭐⭐⭐⭐⭐</string>
+    <string name="off">ปิด</string>
+    <string name="ssh_tunnel_settings">การตั้งค่าอุโมงค์ SSH</string>
+    <string name="error_pve_vmid_not_numeric">รหัส VM ไม่ใช่ตัวเลขโปรดป้อนรหัส VM ที่เป็นตัวเลขหรือเว้นว่างไว้เพื่อเลือก VM จากรายการ</string>
+    <string name="cert_subject">เรื่องใบรับรอง</string>
+    <string name="rdp_descript_geom">ขนาดเดสก์ท็อประยะไกล (WxH)</string>
+    <string name="master_password_error_wrong_password">ไม่สามารถตรวจสอบสิทธิ์ด้วยรหัสผ่านหลักที่ให้มาได้</string>
+    <string name="error_pick_correct_item">โปรดตรวจสอบให้แน่ใจว่าคุณได้เลือกรายการที่ถูกต้องในประเภทการเชื่อมต่อ</string>
+    <string name="input_method_direct_drag_pan">โดยตรง ถือแพน</string>
+    <string name="auto_rotation">การหมุนหน้าจอขณะเชื่อมต่อ</string>
+    <string name="master_password_verify_message">กรุณากรอกรหัสผ่านหลักให้ถูกต้องเพื่อดำเนินการต่อ</string>
+    <string name="error_connection_interrupted">การเชื่อมต่อถูกขัดจังหวะ</string>
+    <string name="auto_x_descript_session">ประเภทเซสชันระยะไกล</string>
+    <string name="action_new_connection">✚ การเชื่อมต่อใหม่</string>
+    <string name="enter_text_title">ป้อนข้อความที่จะส่ง</string>
+    <string name="shortcut_label_rdp">การเชื่อมต่อ RDP</string>
+    <string name="spice_address_caption_hint">เซิร์ฟเวอร์เครื่องเทศ</string>
+    <string name="rdp_geom_description_hint">เซิร์ฟเวอร์ต้องการการสนับสนุน ExtendedDesktopSize</string>
+    <string name="audio_initialized">เริ่มต้นเสียงแล้ว</string>
+    <string name="intro_text">รายการคุณสมบัติ bVNC ปัจจุบัน:
+&lt;br&gt;
+- VNC ธรรมดา, VNC ที่ปลอดภัยผ่าน SSH, AnonTLS และ VeNCrypt และการเข้าสู่ระบบ Windows UltraVNC พร้อม Repeater เสริม
+&lt;br&gt;
+- โหมด AutoX: ในโหมด VNC เหนือ SSH ค้นหาที่มีอยู่และ/หรือสร้าง X-sessions ใหม่โดยอัตโนมัติโดยใช้ x11vnc!ทำงานเหมือนไคลเอนต์ NX
+&lt;br&gt;
+- รองรับการหมุนฟรีใช้ระบบปฏิบัติการเพื่อจำกัดการหมุนหากจำเป็น
+&lt;br&gt;
+- การสร้างและส่งออกคู่คีย์สาธารณะ/ส่วนตัว SSH
+&lt;br&gt;
+- การเข้ารหัส VNC มาตรฐานทั้งหมด รวมถึง Tight, ZRLE และ CopyRect
+&lt;br&gt;
+- บันทึกเซสชันอัตโนมัติ
+&lt;br&gt;
+- โหมดซูมได้, พอดีกับหน้าจอและปรับขนาดแบบหนึ่งต่อหนึ่ง
+&lt;br&gt;
+- การควบคุมแบบมัลติทัชผ่านเมาส์ระยะไกลในโหมดอินพุตทัชแพดโดยตรงและจำลอง
+&lt;br&gt;
+- ควบคุมเมาส์ระยะไกลได้ด้วยมือเดียวในโหมดป้อนข้อมูลด้วยมือเดียว
+&lt;br&gt;
+- การคลิกเมาส์แบบมัลติทัช: แตะเพื่อคลิกซ้าย แตะสองนิ้วเพื่อคลิกขวา แตะสามนิ้วเพื่อคลิกกลาง
+&lt;br&gt;
+- การเลื่อนแบบมัลติทัช: ใช้สองนิ้วลากขึ้น/ลง และซ้าย/ขวาเพื่อเลื่อน
+&lt;br&gt;
+- ปุ่มเมตาและลูกศรบนหน้าจอซึ่งสามารถปิดใช้งานได้อย่างสมบูรณ์จากเมนูหรือเก็บไว้ด้วยปุ่มบนหน้าจอ
+&lt;br&gt;
+- การส่งข้อความและการรวมคีย์โดยพลการเมื่อเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือในการสร้างการเชื่อมต่อ (\เมนู-&gt;วิธีใช้การเชื่อมต่อ\) ในหน้าจอการเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือเกี่ยวกับโหมดอินพุต (\Menu-&gt;More-&gt;Input Mode Help\) เมื่อเชื่อมต่อ
+&lt;br&gt;
+- การใช้แทร็กแพดที่มีอยู่เป็นลูกศรแทนการเลื่อนเมาส์ และคลิกแทร็กแพดเป็น Ctrl
+&lt;br&gt;
+- สลับไปที่โหมดแนวตั้งระหว่างการเชื่อมต่อ หมุน D-pad/แทร็กแพดสำหรับคีย์บอร์ด BT
+&lt;br&gt;
+- รองรับหลายภาษา ตราบใดที่เซิร์ฟเวอร์ VNC เปิดใช้งานรูปแบบภาษาที่จำเป็น
+&lt;br&gt;
+- บูรณาการคัดลอก / วาง
+&lt;br&gt;
+- การเปลี่ยนแปลงความละเอียดของเครื่องระยะไกล
+&lt;br&gt;
+- รองรับเมาส์เต็มรูปแบบบนอุปกรณ์ Android 4.0 ขึ้นไป รวมถึงการคลิกขวาและกลาง และล้อเลื่อน
+&lt;br&gt;
+&lt;br&gt;
+ปัญหาที่ทราบ:
+&lt;br&gt;</string>
+    <string name="color_greyscale">ระดับสีเทา (1 bpp)</string>
+    <string name="share_app_toast">แชร์ลิงก์ไปยังแอปกับเพื่อน ๆ ทุกคนบนโซเชียลมีเดีย!</string>
+    <string name="force">บิตแมปแบบเต็มหน้าจอ</string>
+    <string name="input_method_touchpad_description">ทัชแพดจำลอง: ปัดเพื่อย้ายตัวชี้แตะที่ใดก็ได้ด้วยนิ้วเดียวเพื่อคลิกซ้าย สองนิ้วเพื่อคลิกขวา และสามนิ้วเพื่อคลิกกลางปัดด้วยสองนิ้วเพื่อเลื่อนแตะยาวเพื่อลากและวาง</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nคุณสามารถมั่นใจได้ว่าจะเหมือนกับลายนิ้วมือที่รู้จักของใบรับรองเซิร์ฟเวอร์ เพื่อป้องกันการโจมตีจากคนกลาง</string>
+    <string name="error_no_vm_found_for_user">ไม่มีเครื่องเสมือนสำหรับผู้ใช้ที่กำหนด</string>
+    <string name="color_black_and_white">ขาวดำ (1 bpp)</string>
+    <string name="auto">อัตโนมัติ</string>
+    <string name="pro_feature_generic">ดูเหมือนว่าคุณกำลังใช้คุณสมบัติ Proโปรดสนับสนุนโครงการโดยการซื้อเวอร์ชัน Pro ที่รองรับฟีเจอร์นี้ลิงก์ไปยังเวอร์ชัน Pro มีอยู่ในกล่องโต้ตอบเริ่มต้น</string>
+    <string name="rdp_geom_custom">กำหนดเอง</string>
+    <string name="default_input_mode">โหมดอินพุตเริ่มต้น</string>
+    <string name="repeater_empty_text">ไม่มีทวน</string>
+    <string name="ad_donate_text_rdp">โครงการ Open Source ต้องการการสนับสนุนจากคุณ!บริจาคให้เราโดยการซื้อ aRDP Pro ซึ่งรองรับการเปลี่ยนเส้นทางเสียงดูด้านล่างสำหรับลิงก์ไปยัง aRDP Pro และแอปอื่นๆ ของเรา</string>
+    <string name="spice_tls_port_hint">พอร์ต ทีแอลเอส</string>
+    <string name="scaling">การปรับขนาด</string>
+    <string name="spice_connection_settings">การตั้งค่าการเชื่อมต่อ SPICE</string>
+    <string name="error_pve_failed_to_parse_json">ไม่สามารถแยกวิเคราะห์การตอบสนองจาก Proxmox Virtual Environment</string>
+    <string name="error_ovirt_ssl_handshake_failure">การจับมือ SSL ล้มเหลวมีปัญหากับใบรับรอง SSL ของเซิร์ฟเวอร์หากคุณใช้ใบรับรองที่ลงนามด้วยตนเอง คุณจะต้อง (อีกครั้ง) นำเข้าผู้ออกใบรับรองของคุณ</string>
+    <string name="connection_setup_user">ผู้ใช้@โดเมน</string>
+    <string name="vnc_viewer_started">เริ่ม VNC Viewer แล้ว</string>
+    <string name="ca_subject">ป้อนชื่อเรื่องใบรับรองที่นี่อาจไม่จำเป็นหากชื่อทั่วไปของใบรับรอง (CN) ตรงกับชื่อโฮสต์ของเซิร์ฟเวอร์</string>
+    <string name="port_ssh_hint">ท่าเรือ</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">เซิร์ฟเวอร์ SSH ไม่รองรับวิธี \publickey\ auth และเรากำลังพยายามใช้คู่คีย์ในการตรวจสอบสิทธิ์โปรดกำหนดค่าให้อนุญาตการตรวจสอบสิทธิ์กุญแจสาธารณะแล้วลองอีกครั้งวิธีการรับรองความถูกต้องที่ใช้ได้:</string>
+    <string name="username_caption">ผู้ใช้ VNC</string>
+    <string name="error_ssh_could_not_exec_command">ไม่สามารถดำเนินการคำสั่งระยะไกลได้</string>
+    <string name="rdp_intro_text">ขอขอบคุณที่สนับสนุน aRDP และซอฟต์แวร์โอเพ่นซอร์สโดยทั่วไป!หากต้องการความช่วยเหลือในการใช้ aRDP โปรดดูรายการความช่วยเหลือในเมนู และคำอธิบายของแอปในตลาด
+&lt;br&gt;
+&lt;br&gt;
+รายการคุณสมบัติ aRDP ปัจจุบันประกอบด้วย:
+&lt;br&gt;
+- RDP ธรรมดา, RDP อุโมงค์ผ่าน SSH
+&lt;br&gt;
+- รองรับการหมุนฟรีใช้ระบบปฏิบัติการเพื่อจำกัดการหมุนหากจำเป็น
+&lt;br&gt;
+- การตั้งค่าความละเอียดระยะไกล ความละเอียดดั้งเดิมในโหมดแนวนอนและแนวตั้ง
+&lt;br&gt;
+- การสร้างและส่งออกคู่คีย์สาธารณะ/ส่วนตัว SSH
+&lt;br&gt;
+- บันทึกเซสชันอัตโนมัติ
+&lt;br&gt;
+- โหมดซูมได้, พอดีกับหน้าจอและปรับขนาดแบบหนึ่งต่อหนึ่ง
+&lt;br&gt;
+- การควบคุมแบบมัลติทัชผ่านเมาส์ระยะไกลในโหมดอินพุตทัชแพดโดยตรงและจำลอง
+&lt;br&gt;
+- ควบคุมเมาส์ระยะไกลได้ด้วยมือเดียวในโหมดป้อนข้อมูลด้วยมือเดียว
+&lt;br&gt;
+- การคลิกเมาส์แบบมัลติทัช: แตะเพื่อคลิกซ้าย แตะสองนิ้วเพื่อคลิกขวา แตะสามนิ้วเพื่อคลิกกลาง
+&lt;br&gt;
+- การเลื่อนแบบมัลติทัช: ใช้สองนิ้วลากขึ้น/ลง และซ้าย/ขวาเพื่อเลื่อน
+&lt;br&gt;
+- ปุ่มเมตาและลูกศรบนหน้าจอซึ่งสามารถปิดใช้งานได้อย่างสมบูรณ์จากเมนูหรือเก็บไว้ด้วยปุ่มบนหน้าจอ
+&lt;br&gt;
+- การส่งข้อความและการรวมคีย์โดยพลการเมื่อเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือในการสร้างการเชื่อมต่อ (\เมนู-&gt;วิธีใช้การเชื่อมต่อ\) ในหน้าจอการเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือเกี่ยวกับโหมดอินพุต (\Menu-&gt;More-&gt;Input Mode Help\) เมื่อเชื่อมต่อ
+&lt;br&gt;
+- การใช้แทร็กแพดที่มีอยู่เป็นลูกศรแทนการเลื่อนเมาส์ และคลิกแทร็กแพดเป็น Ctrl หมุน D-pad/แทร็กแพดสำหรับคีย์บอร์ด BT
+&lt;br&gt;
+- รองรับหลายภาษา ตราบใดที่เซิร์ฟเวอร์ RDP เปิดใช้งานรูปแบบภาษาที่จำเป็น
+&lt;br&gt;
+- การเปลี่ยนแปลงความละเอียดของเครื่องระยะไกลอย่างราบรื่น
+&lt;br&gt;
+- รองรับเมาส์เต็มรูปแบบบนอุปกรณ์ Android 4.0 ขึ้นไป รวมถึงการคลิกขวาและกลาง และล้อเลื่อน
+&lt;br&gt;
+- ตัวเลือกโหมดสี
+&lt;br&gt;
+- บูรณาการคัดลอก / วาง
+&lt;br&gt;
+- การส่งออกการตั้งค่า
+&lt;br&gt;
+- เสียง
+&lt;br&gt;
+&lt;br&gt;
+ปัญหาที่ทราบ:</string>
+    <string name="tap_disable">ปิดการใช้งาน</string>
+    <string name="view_only">โหมดดูอย่างเดียว</string>
+    <string name="save_button">บันทึก</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">ไม่สามารถส่งรหัสผ่าน sudo</string>
+    <string name="landscape_force">บังคับทิศทางแนวนอน</string>
+    <string name="export_settings">ส่งออก</string>
+    <string name="keyboard_type">ซอฟต์แวร์ประเภทคีย์บอร์ด</string>
+    <string name="hide_connection_thumbnails">ซ่อนภาพขนาดย่อของการเชื่อมต่อ</string>
+    <string name="input_method_direct_drag_pan_description">โดยตรง แพนค้างไว้: ปัดเพื่อลากและวางแตะด้วยนิ้วเดียวทุกที่ที่คุณต้องการคลิกซ้าย ใช้สองนิ้วเพื่อคลิกขวา และสามนิ้วเพื่อคลิกกลางปัดด้วยสองนิ้วเพื่อเลื่อนแตะยาวเพื่อเริ่มการแพน</string>
+    <string name="panning">หน้าจอการแพน</string>
+    <string name="remote_clipboard_integration">เปิดใช้งานการรวมคลิปบอร์ดจากระยะไกลไปยังท้องถิ่น</string>
+    <string name="rdp_connection_screen_help_text">เมื่อคุณเพิ่มหรือแก้ไขการเชื่อมต่อ คุณจะเห็นหน้าการกำหนดค่าการเชื่อมต่อที่นี่คุณสามารถตั้งค่าการเชื่อมต่อ RDP ใหม่หรือเลือกการเชื่อมต่อที่มีอยู่แล้วที่ด้านบนมีปุ่มให้คุณบันทึกการเชื่อมต่อด้านล่างนี้เป็นที่ที่คุณกำหนดค่าการเชื่อมต่อของคุณ
+
+- ประเภทการเชื่อมต่อ: ที่นี่คุณเลือกประเภทการเชื่อมต่อ RDPประเภทการเชื่อมต่อที่ใช้ได้คือ:
+(ก) RDP ซึ่งเชื่อมต่อโดยตรงกับคอมพิวเตอร์ผ่านโปรโตคอล RDP
+(b) RDP บน SSH ซึ่งจะส่งสัญญาณการเชื่อมต่อของคุณผ่านคอมพิวเตอร์ที่ใช้เซิร์ฟเวอร์ SSH ก่อน
+
+- หัวข้อ: แต่ละการเชื่อมต่อที่คุณสร้างสามารถมีชื่อเล่นเพื่อให้ระบุได้ง่ายในรายการ
+
+- การตั้งค่าอุโมงค์ SSH: มีให้ใน RDP เหนือโหมด SSH
+(a) เซิร์ฟเวอร์/พอร์ต SSH: ที่อยู่และพอร์ตของเซิร์ฟเวอร์ SSH ที่การเชื่อมต่อจะถูกอุโมงค์ผ่านตามค่าเริ่มต้น SSH จะฟังบนพอร์ต 22
+(b) ชื่อผู้ใช้/รหัสผ่าน: ชื่อผู้ใช้และรหัสผ่านของบัญชีบนเซิร์ฟเวอร์ SSHรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปตั้งแต่คุณป้อนครั้งล่าสุด
+(c) จัดการคีย์/ใช้คีย์: ปุ่มสำหรับจัดการคีย์สาธารณะ/ส่วนตัว และช่องทำเครื่องหมายระบุว่าจะใช้คีย์แทนรหัสผ่านในการตรวจสอบสิทธิ์หรือไม่หากคุณใช้ปุ่มคัดลอกไปยังคลิปบอร์ดหลังจากสร้างคู่คีย์แล้ว คุณควรจะสามารถวางคีย์สาธารณะได้เมื่อเชื่อมต่อกับเซิร์ฟเวอร์ RDP (คลิปบอร์ดจะซิงโครไนซ์กับเซิร์ฟเวอร์)
+
+- การตั้งค่าการเชื่อมต่อ RDP:
+(ก) เซิร์ฟเวอร์/พอร์ต RDP: นี่คือที่ที่คุณป้อนชื่อโฮสต์หรือที่อยู่ IP และพอร์ตของคอมพิวเตอร์ที่ใช้งานเซิร์ฟเวอร์ RDP ที่คุณต้องการติดต่อในโหมด RDP ผ่าน SSH ที่อยู่นี้จะเห็นได้จากเซิร์ฟเวอร์ SSHหากเซิร์ฟเวอร์ SSH และเซิร์ฟเวอร์ RDP เป็นคอมพิวเตอร์เครื่องเดียวกัน คุณสามารถใช้ localhost ได้โดยทั่วไปเซิร์ฟเวอร์ RDP จะรับฟังพอร์ต 3389
+(b) ผู้ใช้ RDP: นี่คือที่ที่คุณป้อนชื่อผู้ใช้บัญชี Windows/UNIX ของคุณ
+(c) โดเมน RDP: ป้อนโดเมนที่บัญชีของคุณเป็นสมาชิก
+(d) รหัสผ่าน RDP: นี่คือที่ที่คุณป้อนรหัสผ่านบัญชี Windows/UNIX ของคุณที่เก็บข้อมูลที่ปลอดภัยไม่ได้ใช้สำหรับรหัสผ่าน (อยู่ในฐานข้อมูล) และรหัสผ่านจะถูกจัดเก็บเฉพาะเมื่อคุณทำเครื่องหมายที่ช่อง Keepรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปตั้งแต่คุณป้อนครั้งล่าสุด
+
+- การตั้งค่าขั้นสูง: ในส่วนนี้คุณจะพบวิธีปรับแต่งความละเอียดของเดสก์ท็อป และการปรับแต่งประสิทธิภาพ RDP ต่างๆ
+
+- การปรับแต่งอุปกรณ์ภายในเครื่อง: สิ่งเหล่านี้จะปรับพฤติกรรมของแอพบนอุปกรณ์ของคุณ
+(a) ใช้ D-Pad สำหรับลูกศร: หากคุณต้องการ คุณสามารถใช้ D-Pad ของแป้นพิมพ์ Bluetooth หรือลูกศรบนแป้นพิมพ์บนหน้าจอเพื่อส่งลูกศรไปยังเซิร์ฟเวอร์ RDP
+(b) หมุน D-Pad: โทรศัพท์ที่จับคู่กับแป้นพิมพ์ Bluetooth อาจจำเป็นต้องหมุน D-pad ของแป้นพิมพ์ทวนเข็มนาฬิกาเพื่อส่งทิศทางที่ถูกต้องไปยังเซิร์ฟเวอร์
+(c) ตัวชี้เมาส์ในเครื่อง: หากมองไม่เห็นตัวชี้ ให้เลือกตัวเลือกนี้เพื่อบังคับให้แอปวาด</string>
+    <string name="alt_check">Alt</string>
+    <string name="single_scroll">โหมดเลื่อน - ปัดขึ้น/ลงเพื่อเลื่อน ยกนิ้วขึ้นเพื่อหยุด</string>
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+    <string name="single_zoom">โหมดซูม - ปัดขึ้น/ลงเพื่อซูมเข้า/ออก ยกนิ้วขึ้นเพื่อหยุด</string>
+    <string name="rdp_adv_console_mode">โหมดคอนโซล</string>
+    <string name="address_caption_hint_tunneled">เซิร์ฟเวอร์ VNC</string>
+    <string name="arrow_right">ลูกศรขวา</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">ข้อความ/ตัวเลข ไม่มีข้อเสนอแนะ (VISIBLE_PASSWORD)</string>
+    <string name="spice_username_hint">ชื่อผู้ใช้ SPICE</string>
+    <string name="error_rdp_connection_failed">การเชื่อมต่อ RDP ล้มเหลว!การเชื่อมต่อเครือข่ายถูกขัดจังหวะ เซิร์ฟเวอร์ RDP ถูกปิดหรือปิดใช้งาน หรือเซสชันของคุณถูกยึดครอง</string>
+    <string name="arrow_left">ลูกศรซ้าย</string>
+    <string name="connection_type_vnc_over_stunnel">รักษาความปลอดภัย VNC ผ่านอุโมงค์ SSL</string>
+    <string name="report_bug">รายงานข้อผิดพลาด 🐛</string>
+    <string name="warning_cert_does_not_match">คำเตือน: ใบรับรอง x509 ที่บันทึกไว้หรือส่งผ่านลายเซ็นไม่ตรงกับใบรับรองเซิร์ฟเวอร์ปัจจุบัน!นี่อาจเป็นการโจมตีแบบคนกลางหากคุณทราบถึงการเปลี่ยนแปลงที่สำคัญ คุณสามารถดำเนินการต่อได้</string>
+    <string name="more_apps">แอพเพิ่มเติม 📱</string>
+    <string name="auto_x_disabled">พิการ</string>
+    <string name="pro_feature_mfa">ดูเหมือนว่าเซิร์ฟเวอร์ของคุณเปิดใช้งานการรับรองความถูกต้องแบบหลายปัจจัยแล้วโปรดสนับสนุนโครงการโดยการซื้อเวอร์ชัน Pro ที่รองรับฟีเจอร์นี้ลิงก์ไปยังเวอร์ชัน Pro มีอยู่ในกล่องโต้ตอบเริ่มต้น</string>
+    <string name="no_application_to_handle_vpn">การเชื่อมต่อนี้ได้รับการตั้งค่าให้เปิด VPN ผ่านแอปภายนอกคุณต้องติดตั้งแอปเช่น Morpheusly เพื่อเปิดใช้งาน</string>
+    <string name="port_caption_ssh">เอสเอสเอชพอร์ต</string>
+    <string name="arrow_down">ลูกศรลง</string>
+    <string name="pro_feature_spice">ดูเหมือนว่าคุณพยายามเปิดไฟล์ .vvหากคุณต้องการบันทึกการเชื่อมต่อกับ Proxmox หรือ oVirt ภายในแอปโดยตรงและต้องการเปิดไฟล์ .vv ด้วย ให้พิจารณาซื้อ Opaqueหากคุณต้องการเพียงการรองรับไฟล์ .vv คุณสามารถดาวน์โหลด aSPICE Pro ได้ค้นหาลิงก์ไปยังทั้งสองแอปในกล่องโต้ตอบเริ่มต้น</string>
+    <string name="error_vnc_unable_to_connect">การเชื่อมต่อกับเซิร์ฟเวอร์ VNC ล้มเหลวด้วยเหตุผล:</string>
+    <string name="rdp_password_hint">รหัสผ่าน RDP</string>
+    <string name="custom_ca_paste">วาง (หากไม่ได้นำเข้า) CA ที่นี่</string>
+    <string name="cursor_mode">โหมดเคอร์เซอร์:</string>
+    <string name="local_device_tweaks">ปรับแต่งอุปกรณ์ท้องถิ่น</string>
+    <string name="disconnect">ตัดการเชื่อมต่อ</string>
+    <string name="ad_donate_text0">รุ่น Pro ยังรองรับการตรวจสอบสิทธิ์ SSH แบบหลายปัจจัยด้วยนอกจากนี้ ยังรองรับคุณสมบัติรหัสผ่านหลักที่ได้รับการร้องขออย่างมาก ซึ่งป้องกันการใช้งานโดยไม่ได้รับอนุญาตและเข้ารหัสการตั้งค่าการเชื่อมต่อทั้งหมด รวมถึงรหัสผ่านและคีย์ SSH เพื่อป้องกันการโจรกรรมเปิดใช้งานได้จากเมนูหลัก</string>
+    <string name="info_cert_signatures_identical">\n\nคุณสามารถมั่นใจได้ว่าข้อมูลตรงกับใบรับรองเซิร์ฟเวอร์เพื่อป้องกันการโจมตีจากคนกลาง</string>
+    <string name="button_send_without_saving">ส่งข้อความ/อย่าบันทึก</string>
+    <string name="single_right">โหมดลากขวา - ปัดเพื่อลาก/เลือก ยกนิ้วขึ้นเพื่อหยุด</string>
+    <string name="error_ssh_pwd_auth_fail">ไม่สามารถตรวจสอบสิทธิ์เซิร์ฟเวอร์ SSH ด้วยรหัสผ่านได้โปรดตรวจสอบชื่อผู้ใช้ SSH และรหัสผ่าน SSH ของคุณ</string>
+    <string name="select_vm_title">เลือกเครื่องเสมือน</string>
+    <string name="ad_donate_text_spice">สำหรับการเชื่อมต่อ Proxmox และ oVirt โปรดบริจาคให้กับโครงการโดยการซื้อ Opaque หรือ aSPICE ProaSPICE เวอร์ชันฟรีรองรับการเชื่อมต่อโดยตรงกับเครื่องเสมือน KVM เท่านั้นดูด้านล่างสำหรับลิงก์ไปยัง Opaque และ aSPICE Pro รวมถึงแอปอื่นๆ ของเรา</string>
+    <string name="enter_password">กรุณากรอกรหัสผ่าน</string>
+    <string name="main_screen_help_text">เมื่อเปิดแอปพลิเคชัน จะแสดงหน้าจอพร้อมการเชื่อมต่อที่บันทึกไว้
+
+หากไม่มีการเชื่อมต่อที่บันทึกไว้ ส่วนล่างของหน้าจอจะว่างเปล่า และคุณจะต้องกดปุ่มบวกเพื่อสร้างการเชื่อมต่อใหม่
+คุณยังสามารถควบคุมส่วนอื่นๆ ของการกำหนดค่าได้จากหน้าจอนี้โดยการแตะที่แถบเครื่องมือหรือตัวเลือกเมนูอื่นๆ ที่ด้านบน
+อินสแตนซ์เพื่อแก้ไขการตั้งค่าเริ่มต้น หรือนำเข้าและส่งออกการตั้งค่า
+
+เมื่อคุณบันทึกการเชื่อมต่อแล้ว คุณสามารถเชื่อมต่อกับเซิร์ฟเวอร์ระยะไกลได้โดยการแตะหนึ่งครั้งคุณจะมีทางเลือกในการลบหรือแก้ไขด้วยการแตะค้างไว้
+
+สุดท้ายนี้ คุณสามารถใช้ฟิลด์ค้นหาการเชื่อมต่อเพื่อค้นหาการเชื่อมต่อได้อย่างรวดเร็วโดยกรองการเชื่อมต่อที่แสดง</string>
+    <string name="intro_dont_show">อย่าแสดงอีก</string>
+    <string name="action_export_settings">การตั้งค่าการส่งออก</string>
+    <string name="error_ssh_hostkey_changed">ข้อผิดพลาด!รหัสโฮสต์ของเซิร์ฟเวอร์มีการเปลี่ยนแปลงหากนี่เป็นการจงใจคุณสามารถดำเนินการต่อได้ไม่เช่นนั้นอาจเป็นชายที่อยู่ตรงกลางโจมตีได้</string>
+    <string name="error_ssh_x11vnc_no_port_failure">ไม่สามารถรับพอร์ต VNC ระยะไกลจาก x11vncโปรดตรวจสอบให้แน่ใจว่าได้ติดตั้ง x11vnc แล้วเพื่อความแน่ใจ ให้ลองใช้ x11vnc ด้วยมือบนบรรทัดคำสั่ง</string>
+    <string name="error_failed_to_obtain_content">ไม่สามารถรับไฟล์.โปรดดาวน์โหลดอีกครั้ง แต่คราวนี้ ให้เปิดอย่างรวดเร็วจากโฟลเดอร์ดาวน์โหลดในตัวจัดการไฟล์</string>
+    <string name="show_menu">แสดงเมนู</string>
+    <string name="auto_x_unix_auth">ตรวจสอบความถูกต้องโดยใช้ชื่อผู้ใช้/รหัสผ่าน SSH ที่ให้มาโดยอัตโนมัติ (ไปยังหน้าจอเข้าสู่ระบบสีดำ)</string>
+    <string name="previous_versions">เวอร์ชันก่อนหน้า ⍼</string>
+    <string name="auto_x_xvnc">ค้นหาหรือสร้างด้วย Xvnc</string>
+    <string name="auto_x_find">ค้นหาเท่านั้น อย่าสร้าง</string>
+    <string name="port_caption">พอร์ตวีเอ็นซี</string>
+    <string name="delete_key">ลบคีย์ที่เลือก</string>
+    <string name="cert_fingerprint">ลายนิ้วมือใบรับรอง</string>
+    <string name="enter_vnc_password">กรุณากรอกรหัสผ่าน VNC</string>
+    <string name="port_hint">ท่าเรือ</string>
+    <string name="import_from_file">นำเข้าจากไฟล์</string>
+    <string name="error_rdp_unable_to_connect">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ RDP ได้!โปรดตรวจสอบให้แน่ใจว่าการตั้งค่าเซิร์ฟเวอร์ RDP ถูกต้อง เซิร์ฟเวอร์เปิดอยู่ เปิดใช้งาน RDP แล้ว และเซิร์ฟเวอร์อยู่ในเครือข่ายเดียวกันกับอุปกรณ์นี้</string>
+    <string name="rdp_geom_disabled">พิการ</string>
+    <string name="ad_donate_spice_text1b">แตะที่นี่เพื่อซื้อเวอร์ชัน Pro และเพียงแค่เปิดไฟล์ .vv</string>
+    <string name="spice_ca_file_error_reading">เกิดข้อผิดพลาดในการอ่านไฟล์ CAโปรดตรวจสอบให้แน่ใจว่าสามารถอ่านได้</string>
+    <string name="info_vm_launched_on_stand_by">พบว่า VM ของคุณปิดอยู่และเริ่มทำงานแล้วโปรดลองอีกครั้งในอีกสักครู่หากคุณลองเร็วเกินไปและเกิดความล้มเหลวในการเชื่อมต่อ โปรดลองอีกครั้งในภายหลัง</string>
+    <string name="special_keys">ส่งกุญแจ</string>
+    <string name="error_failed_to_download_http">ดาวน์โหลดไฟล์ผ่าน HTTP ไม่สำเร็จบางทีเซิร์ฟเวอร์ของคุณอาจไม่สามารถเข้าถึงได้</string>
+    <string name="rdp_geom_automatic">อัตโนมัติ</string>
+    <string name="portrait_mode">สลับไปที่โหมดแนวตั้งเมื่อเชื่อมต่อ</string>
+    <string name="master_password_set_error">รหัสผ่านไม่ตรงกัน โปรดระวัง!</string>
+    <string name="enter_ssh_credentials">กรุณาป้อนข้อมูลรับรอง SSH</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="repeater_dialog_title">เซิร์ฟเวอร์ VNC ที่อยู่เบื้องหลัง Repeater</string>
+    <string name="prefer_sending_unicode">อินพุต Unicode (Windows เท่านั้น)</string>
+    <string name="auto_x_caption">แอปพลิเคชันสามารถค้นหาเซสชัน X ที่มีอยู่และสร้างเซสชัน X ใหม่บนระบบ Linux/UNIX ได้โดยอัตโนมัติ (คล้ายกับ NX)คุณต้องใช้ x11vnc เพื่อค้นหา และ Xvfb, Xvnc หรือ Xdummy เพื่อสร้างเซสชันหากคุณมีปัญหาในการเชื่อมต่อ ให้ลองเลือกประเภทเซสชันระยะไกลเฉพาะในการตั้งค่าขั้นสูงของ AutoX</string>
+    <string name="auto_x_confirm">ยืนยัน</string>
+    <string name="position_toolbar_last_used">คืนค่าตำแหน่งแถบเครื่องมือ</string>
+    <string name="error_no_such_vm_found_for_user">ไม่พบเครื่องเสมือนที่มี ID ที่ระบุสำหรับผู้ใช้ที่ระบุลบ ID เพื่อรับรายการ VM</string>
+    <string name="single_middle">โหมดลากตรงกลาง - ปัดเพื่อลาก/เลือก ยกนิ้วขึ้นเพื่อหยุด</string>
+    <string name="info_encoding">การเข้ารหัส,</string>
+    <string name="rdp_geom_native_portrait">ภาพเหมือนพื้นเมือง</string>
+    <string name="input_mode">โหมดอินพุต</string>
+    <string name="action_delete_connection">ลบการเชื่อมต่อ</string>
+    <string name="keys_caption">กุญแจ</string>
+    <string name="single_left">โหมดลากซ้าย - ปัดเพื่อลาก/เลือก ยกนิ้วขึ้นเพื่อหยุด</string>
+    <string name="vv_file_error">ไฟล์ .vv สูญหายหรือเสียหาย!</string>
+    <string name="connection_delete">ลบ</string>
+    <string name="info_progress_dialog_establishing">กำลังเริ่มการจับมือกัน\nโปรดรอสักครู่...</string>
+    <string name="keep_password_button">เก็บ</string>
+    <string name="auto_x_find_login">ค้นหา X เข้าสู่ระบบ (ต้องการ sudo)</string>
+    <string name="ssh_use_x11vnc">เดสก์ท็อปอัตโนมัติ</string>
+    <string name="address_caption_ssh">เซิร์ฟเวอร์ SSH</string>
+    <string name="spice_password_hint">รหัสผ่านเครื่องเทศ</string>
+    <string name="cursor_force_disable">ปิดการใช้งาน</string>
+    <string name="master_password_error_password_not_set">การตั้งรหัสผ่านหลักถูกยกเลิก</string>
+    <string name="info_update_color_model_to">กำลังอัปเดตโมเดลสีเป็น</string>
+    <string name="rdp_adv_menu_animation">แสดงภาพเคลื่อนไหวของเมนู</string>
+    <string name="input_method_help">วิธีใช้วิธีป้อนข้อมูล</string>
+    <string name="enable_recording">เปิดใช้งานการบันทึก</string>
+    <string name="path_to_ca">ป้อนเส้นทางของไฟล์ (เช่น /sdcard/ca-cert.pem) แล้วแตะนำเข้าเพื่อโหลดผู้ออกใบรับรองของคุณ</string>
+    <string name="nickname_caption_hint">ชื่อเรื่อง (ไม่บังคับ)</string>
+    <string name="connection_caption">การเชื่อมต่อ</string>
+    <string name="pan_follow_mouse">แพนตามเมาส์ไป</string>
+    <string name="rdp_geom_native_landscape">ภูมิทัศน์พื้นเมือง</string>
+    <string name="meta_key_title">ส่งกุญแจพิเศษ</string>
+    <string name="move_toolbar">ย้ายแถบเครื่องมือ</string>
+    <string name="input_mode_fit_to_screen">ไม่มีแพน;เมาส์แทร็กบอล</string>
+    <string name="enable_sound">เปิดใช้งานเสียง</string>
+    <string name="error_security_type">เซิร์ฟเวอร์ไม่มีประเภทความปลอดภัยที่รองรับ</string>
+    <string name="connection_type_text">สภาพแวดล้อมการจำลองเสมือน (RHEV/oVirt หรือ Proxmox)</string>
+    <string name="connection_setup_host_name">ที่อยู่เซิร์ฟเวอร์</string>
+    <string name="vnc_server_empty_no_save">เซิร์ฟเวอร์ VNC หรือพอร์ตว่างเปล่าไม่สามารถบันทึกการเชื่อมต่อได้!</string>
+    <string name="ca_ovirt_manage">จัดการ RHEV/oVirt CA</string>
+    <string name="manage_custom_ca_title">จัดการ CA ที่กำหนดเอง</string>
+    <string name="ca_file_not_found">ไม่พบไฟล์.โปรดป้อนชื่อไฟล์ที่ถูกต้องในช่องข้อความ (เช่น /sdcard/ca.crt)</string>
+    <string name="master_password_set_message">กรุณากรอกและจดจำรหัสผ่านหลักยิ่งรหัสผ่านของคุณยาวเท่าไรก็ยิ่งถอดรหัสได้ยากขึ้นเท่านั้นหากคุณตั้งรหัสผ่านผิดหรือลืม คุณจะสูญเสียการตั้งค่าทั้งหมด!คุณอาจต้องการส่งออกการตั้งค่าของคุณทันทีเพื่อสำรองข้อมูล (จากเมนู)เก็บไว้อย่างปลอดภัยเนื่องจากการตั้งค่าที่ส่งออกไม่ได้รับการเข้ารหัส</string>
+    <string name="repeater_clear">อย่าใช้</string>
+    <string name="ad_donate_text3">หากคุณต้องการสนับสนุนโครงการเพิ่มเติม โปรดไปที่ลิงก์ต่อไปนี้เพื่อดูลิงก์ไปยังแอปไคลเอ็นต์สำหรับ:</string>
+    <string name="vnc_connection_settings">การตั้งค่าการเชื่อมต่อ VNC</string>
+    <string name="master_password_enable">🔒 เปิดใช้งานรหัสผ่านหลัก</string>
+    <string name="new_list_button">รายการใหม่</string>
+    <string name="spice_intro_text">ขอบคุณสำหรับการสนับสนุน aSPICE และซอฟต์แวร์โอเพ่นซอร์สโดยทั่วไป!หากต้องการความช่วยเหลือในการใช้ aSPICE โปรดดูรายการความช่วยเหลือในเมนู และคำอธิบายของแอปในตลาด
+&lt;br&gt;
+&lt;br&gt;
+รายการคุณสมบัติของ aSPICE ปัจจุบันประกอบด้วย:
+&lt;br&gt;
+- SPICE ธรรมดา SPICE เจาะอุโมงค์ผ่าน SSH
+&lt;br&gt;
+- รองรับการหมุนฟรีใช้ระบบปฏิบัติการเพื่อจำกัดการหมุนหากจำเป็น
+&lt;br&gt;
+- การสร้างและส่งออกคู่คีย์สาธารณะ/ส่วนตัว SSH
+&lt;br&gt;
+- บันทึกเซสชันอัตโนมัติ
+&lt;br&gt;
+- โหมดซูมได้, พอดีกับหน้าจอและปรับขนาดแบบหนึ่งต่อหนึ่ง
+&lt;br&gt;
+- การควบคุมแบบมัลติทัชผ่านเมาส์ระยะไกลในโหมดอินพุตทัชแพดโดยตรงและจำลอง
+&lt;br&gt;
+- ควบคุมเมาส์ระยะไกลได้ด้วยมือเดียวในโหมดป้อนข้อมูลด้วยมือเดียว
+&lt;br&gt;
+- การคลิกเมาส์แบบมัลติทัช: แตะเพื่อคลิกซ้าย แตะสองนิ้วเพื่อคลิกขวา แตะสามนิ้วเพื่อคลิกกลาง
+&lt;br&gt;
+- การเลื่อนแบบมัลติทัช: ใช้สองนิ้วลากขึ้น/ลง และซ้าย/ขวาเพื่อเลื่อน
+&lt;br&gt;
+- ปุ่มเมตาและลูกศรบนหน้าจอซึ่งสามารถปิดใช้งานได้อย่างสมบูรณ์จากเมนูหรือเก็บไว้ด้วยปุ่มบนหน้าจอ
+&lt;br&gt;
+- การส่งข้อความและการรวมคีย์โดยพลการเมื่อเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือในการสร้างการเชื่อมต่อ (\เมนู-&gt;วิธีใช้การเชื่อมต่อ\) ในหน้าจอการเชื่อมต่อ
+&lt;br&gt;
+- ความช่วยเหลือเกี่ยวกับโหมดอินพุต (\Menu-&gt;More-&gt;Input Mode Help\) เมื่อเชื่อมต่อ
+&lt;br&gt;
+- การใช้แทร็กแพดที่มีอยู่เป็นลูกศรแทนการเลื่อนเมาส์ และคลิกแทร็กแพดเป็น Ctrl หมุน D-pad/แทร็กแพดสำหรับคีย์บอร์ด BT
+&lt;br&gt;
+- รองรับหลายภาษา ตราบใดที่เซิร์ฟเวอร์ SPICE เปิดใช้งานรูปแบบภาษาที่จำเป็น
+&lt;br&gt;
+- การเปลี่ยนแปลงความละเอียดของเครื่องระยะไกลอย่างราบรื่น
+&lt;br&gt;
+- รองรับเมาส์เต็มรูปแบบบนอุปกรณ์ Android 4.0 ขึ้นไป รวมถึงการคลิกขวาและกลาง และล้อเลื่อน
+&lt;br&gt;
+&lt;br&gt;
+คุณสมบัติที่วางแผนไว้:
+&lt;br&gt;
+- บูรณาการคัดลอก / วาง
+&lt;br&gt;
+- เสียง
+&lt;br&gt;
+- การปรับปรุงประสิทธิภาพ
+&lt;br&gt;
+ปัญหาที่ทราบ:
+&lt;br&gt;
+- ส่งข้อความไม่ส่งสัญลักษณ์บางอย่าง
+&lt;br&gt;</string>
+    <string name="info">ข้อมูล</string>
+    <string name="connection_edit_delete_prompt">คุณต้องการแก้ไขหรือลบการเชื่อมต่อ</string>
+    <string name="connection_type_caption">ประเภทการเชื่อมต่อ</string>
+    <string name="usb">USB (เสียบสาย OTG ก่อน)</string>
+    <string name="connection_type_vnc_over_vencrypt">รักษาความปลอดภัย VNC ผ่าน VeNCrypt</string>
+    <string name="log_copied">Logcat คัดลอกไปยังคลิปบอร์ดแล้วตอนนี้คุณสามารถวางลงในอีเมลหรือในฟอรัมการสนับสนุนโปรดตรวจสอบข้อมูลส่วนตัวก่อนโพสต์</string>
+    <string name="disable_pointer_offset_correction">ปิดใช้งานการแก้ไขการชดเชยตัวชี้</string>
+    <string name="password_caption_hint">รหัสผ่าน VNC</string>
+    <string name="user_not_specified">ไม่ได้ระบุผู้ใช้</string>
+    <string name="connection_type_vnc_over_ssl">รักษาความปลอดภัย VNC ผ่าน AnonTLS</string>
+    <string name="pro_feature_intro">ดูเหมือนว่าคุณกำลังใช้คุณสมบัติ Proโปรดสนับสนุนโครงการโดยการซื้อเวอร์ชัน Pro ที่รองรับฟีเจอร์นี้โปรดตรวจสอบกล่องโต้ตอบแนะนำเพื่อดูลิงก์ไปยังแอปที่ถูกต้อง</string>
+    <string name="shift_check">กะ</string>
+    <string name="error_ssh_keypair_missing">ยังไม่ได้สร้างคู่คีย์ SSH!โปรดสร้างหนึ่งรายการและใส่ (ส่วนสาธารณะ) ในauthorized_keysบนเซิร์ฟเวอร์ SSH</string>
+    <string name="error_connection_failed">การเชื่อมต่อล้มเหลว</string>
+    <string name="info_continue_connecting">เชื่อมต่อกับ:</string>
+    <string name="connection_type_vnc_over_ssh">รักษาความปลอดภัย VNC ผ่าน SSH</string>
+    <string name="advanced_settings">การตั้งค่าขั้นสูง</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">มีรหัสผ่านให้แต่คู่คีย์ไม่ได้เข้ารหัสกรุณาลบข้อความรหัสผ่าน</string>
+    <string name="vnc_server_empty">เซิร์ฟเวอร์ VNC หรือพอร์ตว่างเปล่าเชื่อมต่อไม่ได้!</string>
+    <string name="error_uri_parse_error">ไม่สามารถแยกวิเคราะห์ Intent URIโปรดตรวจสอบรูปแบบ URIคุณยังสามารถดู logcat ของอุปกรณ์เพื่อดูรายละเอียดเพิ่มเติม</string>
+    <string name="username_hint_vencrypt">ชื่อผู้ใช้ VNC</string>
+    <string name="error_vv_download_timeout">หมดเวลาดาวน์โหลดไฟล์ vv</string>
+    <string name="center_mouse">หนู @</string>
+    <string name="show_keyboard">แสดงคีย์บอร์ด</string>
+    <string name="info_cert_signatures">ข้อมูลใบรับรองคือ:</string>
+    <string name="rdp_username_hint">ชื่อผู้ใช้ RDP</string>
+    <string name="connection_type_vnc">VNC พื้นฐาน</string>
+    <string name="rdp_security_nla">การรับรองความถูกต้องระดับเครือข่าย</string>
+    <string name="ssh_pubkey_button">จัดการคีย์</string>
+    <string name="ca_file_error_reading">เกิดข้อผิดพลาดในการอ่านไฟล์ CAโปรดตรวจสอบให้แน่ใจว่าสามารถอ่านได้</string>
+    <string name="master_password_error_intents_not_supported">จุดประสงค์ในการเชื่อมต่อยังไม่รองรับเมื่อเปิดใช้งานรหัสผ่านหลัก</string>
+    <string name="input_method_direct_swipe_pan">โดยตรง ปัดแพน</string>
+    <string name="update_button">อัปเดต</string>
+    <string name="input_mode_panning">โหมดการแพนเดสก์ท็อป</string>
+    <string name="search_connections">ค้นหาการเชื่อมต่อ</string>
+    <string name="error_x509_could_not_generate_signature">ไม่สามารถสร้างลายเซ็น SHA1 หรือ MD5 ของใบรับรองได้ไม่พบอัลกอริทึม SHA1/MD5</string>
+    <string name="auto_x_xdummy">ค้นหาหรือสร้างด้วย Xdummy</string>
+    <string name="error_not_connected_to_network">ดูเหมือนว่าคุณไม่ได้เชื่อมต่อกับอินเทอร์เน็ตไม่สามารถดำเนินการต่อได้โดยไม่ต้องเชื่อมต่อ!</string>
+    <string name="show_advanced_settings">แสดงการตั้งค่าขั้นสูง</string>
+    <string name="master_password_set">ตั้งรหัสผ่านหลัก</string>
+    <string name="custom_ca_import">หรือป้อนเส้นทางแบบเต็มไปยัง CA ของคุณแล้วแตะนำเข้า</string>
+    <string name="mouse_follow_pan">เมาส์ตามกระทะ</string>
+    <string name="enter_password_auth_failed">การตรวจสอบสิทธิ์ล้มเหลวกรุณาป้อนข้อมูลประจำตัวของคุณอีกครั้ง</string>
+    <string name="show">แสดง</string>
+    <string name="dpad_as_arrows">ใช้ D-Pad สำหรับลูกศร และ D-Pad คลิกเพื่อ Ctrl</string>
+    <string name="tap_enable">เปิดใช้งาน</string>
+    <string name="ad_donate_spice_text1a">แตะที่นี่เพื่อซื้อ Opaque และบันทึกการเชื่อมต่อโดยตรงกับ Proxmox และ oVirtนอกจากนี้ยังรองรับไฟล์ .vv</string>
+    <string name="please_grant_permission_from_prefs">คุณอาจต้องให้สิทธิ์แก่แอปพลิเคชันผ่านการตั้งค่า</string>
+    <string name="password_caption">การตรวจสอบสิทธิ์ VNC</string>
+    <string name="share_app">แชร์🔗</string>
+    <string name="remote_sound_on_device">เสียงบนอุปกรณ์</string>
+    <string name="connection_setup_vm_name">ชื่อเครื่องเสมือน (ไม่บังคับ)</string>
+    <string name="single_choose">เลือกโหมดมือเดียวหรือยกเลิก</string>
+    <string name="error_no_user_hostname">โปรดป้อนผู้ใช้และชื่อโฮสต์หรือที่อยู่ IP เป็นอย่างน้อย</string>
+    <string name="rdp_adv_redirect_sdcard">เปลี่ยนเส้นทางการ์ด SD</string>
+    <string name="error_pve_api_io_error">การเชื่อมต่อกับสภาพแวดล้อมเสมือน Proxmox ล้มเหลว:</string>
+    <string name="username_hint_optional">ชื่อผู้ใช้ VNC (ไม่บังคับ)</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="auto_x_session_custom">กำหนดเอง</string>
+    <string name="delete_connection">ลบการเชื่อมต่อ</string>
+    <string name="repeater_save">ใช้</string>
+    <string name="get_help">รับความช่วยเหลือ</string>
+    <string name="hide">ซ่อน</string>
+    <string name="rdp_security_mode">โหมดความปลอดภัย</string>
+    <string name="connection_type_rdp_over_ssh">RDP บน SSH</string>
+    <string name="auto_x_xvfb">ค้นหาหรือสร้างด้วย Xvfb</string>
+    <string name="address_caption">เซิร์ฟเวอร์ VNC</string>
+    <string name="show_only_connection_nicknames">แสดงเฉพาะชื่อเล่นการเชื่อมต่อ</string>
+    <string name="ca_spice_use_ovirt">ใช้ RHEV/oVirt CA สำหรับ SPICE</string>
+    <string name="info_cert_tunnel">คุณต้องการเชื่อมต่อกับโฮสต์ที่ระบุโดยใบรับรองต่อไปนี้หรือไม่\n\nลายนิ้วมือ: %1$s\n\nออกให้กับ:\n%2$s\n\nออกโดย:\n%3$s\n\nValid from:\n%4$s\n\nValid until:\n%5$s\n\nหมายเหตุ: แอปพลิเคชันไม่ได้ตรวจสอบผู้ออกใบรับรองหรือตรวจสอบการเพิกถอนใบรับรอง</string>
+    <string name="error_failed_to_obtain_file">การค้นหาไฟล์ล้มเหลวโปรดดาวน์โหลดอีกครั้ง แต่คราวนี้ลองเปิดจากพื้นที่แจ้งเตือนหรือจากเบราว์เซอร์โดยตรงถ้าเป็นไปได้</string>
+    <string name="error_pve_timeout_communicating">หมดเวลาสื่อสารกับ Proxmox Virtual Environment</string>
+    <string name="connection_type_spice_over_ssh">เครื่องเทศมากกว่า SSH</string>
+    <string name="vnc_connection_screen_help_text">
+เมื่อคุณเพิ่มหรือแก้ไขการเชื่อมต่อ คุณจะเห็นหน้าการกำหนดค่าการเชื่อมต่อที่นี่คุณสามารถตั้งค่าการเชื่อมต่อ VNC ใหม่หรือเลือกการเชื่อมต่อที่มีอยู่แล้วที่ด้านบนมีปุ่มให้คุณบันทึกการเชื่อมต่อด้านล่างนี้เป็นที่ที่คุณกำหนดค่าการเชื่อมต่อของคุณ
+
+หากคุณกำลังมองหาการเพิ่มประสิทธิภาพอย่างรวดเร็ว ให้ลองตั้งค่าโหมดสีเป็นค่าที่ต่ำลงนอกจากนี้ ให้ลองลบภาพพื้นหลังเดสก์ท็อปใดๆ บนเซิร์ฟเวอร์ VNCสุดท้ายนี้ ตรวจสอบให้แน่ใจว่าอุปกรณ์ของคุณมีการเชื่อมต่อเครือข่ายที่ดีและหลีกเลี่ยงการบังเสาอากาศและลดความแรงของสัญญาณ
+
+- ประเภทการเชื่อมต่อ: ที่นี่คุณเลือกประเภทการเชื่อมต่อ VNCประเภทการเชื่อมต่อที่ใช้ได้คือ:
+(a) VNC แบบธรรมดา ซึ่งได้รับการสนับสนุนโดยเซิร์ฟเวอร์ VNC ทั้งหมด แต่ไม่มีการเข้ารหัส และเสี่ยงต่อการโจมตีแบบ brute-force เนื่องจากข้อจำกัดของรหัสผ่าน 8 ตัวอักษร
+(b) รักษาความปลอดภัย VNC ผ่าน SSH ซึ่งเชื่อมต่อผ่านอุโมงค์ SSH ที่เข้ารหัสคุณต้องใช้บริการ SSHD ที่ทำงานเช่นเดียวกับเซิร์ฟเวอร์ VNCตราบใดที่เซิร์ฟเวอร์ VNC ไม่ยอมรับการเชื่อมต่อโดยตรงจากอินเทอร์เน็ต การเชื่อมต่อประเภทนี้จะไม่ประสบกับช่องโหว่ที่ทราบ ตราบใดที่คุณตรวจสอบลายเซ็นใบรับรองเซิร์ฟเวอร์เมื่อทำการเชื่อมต่อครั้งแรก
+(c) UltraVNC ซึ่งให้ตัวเลือก Windows Logon และ UltraVNC Repeater แก่คุณการใช้ Windows Logon ไม่มีการจำกัดรหัสผ่าน 8 ตัวอักษร แต่โหมดนี้ไม่มีการเข้ารหัส ดังนั้นเซสชันของคุณจึงเสี่ยงต่อการถูกดักฟัง
+(d) รักษาความปลอดภัย VNC ผ่าน AnonTLS ซึ่งเป็น VNC ปกติผ่านการเชื่อมต่อที่เทียบเท่ากับ Stunnelคุณต้องเรียกใช้ stunnel หรือใช้เซิร์ฟเวอร์ VNC เช่น Vino ซึ่งรองรับ AnonTLS ทันทีโหมดนี้ให้การเข้ารหัสเซสชั่นแก่คุณ แต่มีข้อจำกัดด้านรหัสผ่าน 8 ตัวอักษร และไม่ได้ป้องกันการโจมตีแบบแทรกกลาง
+(e) รักษาความปลอดภัย VNC บน VeNCrypt ซึ่งใช้ใบรับรอง x509 เช่นเดียวกับการเข้ารหัสเซสชัน และขึ้นอยู่กับการกำหนดค่าเซิร์ฟเวอร์ สามารถใช้ข้อมูลรับรองผู้ใช้/รหัสผ่านโดยไม่มีข้อจำกัด 8 ตัวอักษรโหมดนี้จะป้องกันการโจมตีจากคนกลางพร้อมทั้งให้ความเป็นส่วนตัวของเซสชั่นเซิร์ฟเวอร์อย่าง x11vnc และ TigerVNC รองรับโหมดนี้และปลอดภัยเท่ากับ VNC บน SSH
+
+- หัวข้อ: แต่ละการเชื่อมต่อที่คุณสร้างสามารถมีชื่อเล่นเพื่อให้ระบุได้ง่ายในรายการ
+
+- การตั้งค่าอุโมงค์ SSH: มีให้ใน VNC ผ่านโหมด SSH
+(a) เซิร์ฟเวอร์/พอร์ต SSH: ที่อยู่และพอร์ตของเซิร์ฟเวอร์ SSH ที่การเชื่อมต่อจะถูกอุโมงค์ผ่านตามค่าเริ่มต้น SSH จะฟังบนพอร์ต 22
+(b) ชื่อผู้ใช้/รหัสผ่าน: ชื่อผู้ใช้และรหัสผ่านของบัญชีบนเซิร์ฟเวอร์ SSHรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปพลิเคชันตั้งแต่คุณป้อนครั้งล่าสุด
+(c) จัดการคีย์/ใช้คีย์: ปุ่มสำหรับจัดการคีย์สาธารณะ/ส่วนตัว และช่องทำเครื่องหมายระบุว่าจะใช้คีย์แทนรหัสผ่านในการตรวจสอบสิทธิ์หรือไม่หากคุณใช้ปุ่มคัดลอกไปยังคลิปบอร์ดหลังจากสร้างคู่คีย์ คุณควรจะสามารถวางคีย์สาธารณะได้เมื่อเชื่อมต่อกับเซิร์ฟเวอร์ VNC (คลิปบอร์ดจะซิงโครไนซ์กับเซิร์ฟเวอร์)
+
+- กำหนดค่า AutoX: ใช้ได้เฉพาะใน VNC ผ่านโหมด SSH เท่านั้นแอปพลิเคชันสามารถค้นหาเซสชัน X ที่มีอยู่โดยอัตโนมัติและสร้างทางเลือกใหม่บนระบบ UNIX (เช่นไคลเอนต์ NX)คุณต้องใช้ x11vnc ในการค้นหา และติดตั้ง Xvfb, Xvnc หรือ Xdummy บนระบบระยะไกลเพื่อสร้างเซสชันคุณอาจต้องย้ายไฟล์ .dmrc ออกไป และเพิ่มไฟล์ .xinit ในโฮมไดเร็กตอรี่ของคุณ หากเดสก์ท็อปของคุณดูไม่เหมาะสมหรือคุณได้รับเพียงหน้าต่าง xterm
+
+- การตั้งค่าการเชื่อมต่อ VNC:
+(ก) เซิร์ฟเวอร์/พอร์ต VNC: นี่คือที่ที่คุณป้อนชื่อโฮสต์หรือที่อยู่ IP และพอร์ตของคอมพิวเตอร์ที่ใช้เซิร์ฟเวอร์ VNC ที่คุณต้องการติดต่อในโหมด VNC ผ่าน SSH ที่อยู่นี้จะเห็นได้จากเซิร์ฟเวอร์ SSHหากเซิร์ฟเวอร์ SSH และเซิร์ฟเวอร์ VNC เป็นคอมพิวเตอร์เครื่องเดียวกัน คุณสามารถใช้ localhost ได้โดยทั่วไปเซิร์ฟเวอร์ VNC จะรับฟังเริ่มต้นที่พอร์ต 5900 (หน้าจอ VNC แรก หน้าจอ :0)
+(b) ผู้ใช้ VNC: ใช้งานได้ใน UltraVNC พร้อมโหมด Windows Logon หรือ Secure VNC บน VeNCrypt ที่นี่คือที่ที่คุณป้อนชื่อผู้ใช้บัญชี Windows/UNIX ของคุณ
+(c) รหัสผ่าน VNC: หากการกำหนดค่าเซิร์ฟเวอร์ VNC ของคุณต้องใช้รหัสผ่าน ให้ป้อนรหัสผ่านนั้นที่นี่ใน UltraVNC ที่มีโหมด Windows Logon/VeNCrypt ให้ใส่รหัสผ่านบัญชี Windows/UNIX ของคุณที่นี่พื้นที่เก็บข้อมูลที่ปลอดภัยไม่ได้ใช้สำหรับรหัสผ่าน และรหัสผ่านจะถูกจัดเก็บเฉพาะเมื่อคุณทำเครื่องหมายในช่อง Keepรหัสผ่านจะถูกกรอกในหน้านี้หากคุณไม่ได้ออกจากแอปพลิเคชันตั้งแต่คุณป้อนครั้งล่าสุด
+- โหมดสี: ไคลเอนต์รองรับโหมดสีหลายสีโหมดที่มีสีมากขึ้นจะให้ประสบการณ์การรับชมภาพที่ดีขึ้น โดยเสียแบนด์วิธที่มากขึ้นและการประมวลผล CPU บนอุปกรณ์ของคุณที่มากขึ้นเซิร์ฟเวอร์ VNC บางตัวไม่รองรับความลึกของสีทั้งหมด (เช่น OS/X Remote Desktop ต้องใช้สี 24 บิต)หากคุณประสบปัญหาในการเชื่อมต่อ ให้ลองใช้ความลึกของสีอื่น
+
+- ใช้ D-Pad สำหรับลูกศร: หากต้องการ คุณสามารถใช้ D-Pad ของแป้นพิมพ์ Bluetooth หรือลูกศรบนแป้นพิมพ์บนหน้าจอเพื่อส่งลูกศรไปยังเซิร์ฟเวอร์ VNC
+
+- หมุน D-Pad: โทรศัพท์ที่จับคู่กับแป้นพิมพ์ Bluetooth อาจต้องหมุน D-pad ของแป้นพิมพ์ทวนเข็มนาฬิกาเพื่อส่งทิศทางที่ถูกต้องไปยังเซิร์ฟเวอร์
+
+- ตัวชี้เมาส์ในเครื่อง: เซิร์ฟเวอร์ VNC บางตัว (เช่น OS/X Remote Desktop) จะไม่วาดตัวชี้เมาส์บนไคลเอนต์การเลือกตัวเลือกนี้จะทำให้แอปพลิเคชันวาดตัวชี้เมาส์ที่ตำแหน่งเมาส์
+
+- บิตแมปอัตโนมัติ/เต็มหน้าจอ: ไคลเอนต์ VNC ใช้บิตแมปเพื่อแสดงการแสดงผลระยะไกลสำหรับจอแสดงผลระยะไกลขนาดใหญ่มาก โดยเฉพาะอย่างยิ่งในโหมดพอดีกับหน้าจอ คุณอาจพบปัญหาด้านภาพแปลกๆ เมื่ออยู่ในโหมดพอดีกับหน้าจอ เนื่องจากข้อจำกัดของหน่วยความจำต่อกระบวนการหากเป็นเช่นนั้น ให้ลองตรวจสอบตัวเลือกนี้โปรดทราบว่าการเลือกตัวเลือกอาจทำให้แอปพลิเคชันปิดเมื่อมีการเชื่อมต่อ
+
+- Repeater: มีเฉพาะในโหมด UltraVNC เท่านั้นสิ่งสำคัญ: หากคุณมี UltraVNC Repeater ให้ป้อนที่อยู่และพอร์ตนอกกล่องโต้ตอบ \'UltraVNC Repeater\' แล้วป้อนที่อยู่และพอร์ตของเซิร์ฟเวอร์ VNC จริงภายในกล่องโต้ตอบ \'UltraVNC Repeater\'แยกที่อยู่และพอร์ตของเซิร์ฟเวอร์ VNC ด้วยเครื่องหมายโคลอน เช่น192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">เปิดใช้งานแคชอักขระ</string>
+    <string name="disable_battery_optimizations_failed">
+ไม่สามารถเปิดการตั้งค่าการเพิ่มประสิทธิภาพแบตเตอรี่ได้ปิดใช้งานการเพิ่มประสิทธิภาพแบตเตอรี่ด้วยตนเองในการตั้งค่าระบบ</string>
+    <string name="disable_battery_optimizations">
+🔋 ปิดการใช้งานการเพิ่มประสิทธิภาพแบตเตอรี่</string>
+    <string name="disable_battery_optimizations_already_done">
+แอปได้รับการยกเว้นจากการเพิ่มประสิทธิภาพแบตเตอรี่แล้ว</string>
+    <string name="no_connections_title">ยังไม่มีการเชื่อมต่อ</string>
+    <string name="no_connections_hint">แตะปุ่ม + เพื่อเพิ่มการเชื่อมต่อระยะไกลครั้งแรกของคุณ</string>
+    <string name="no_connections_hint_tv">กดปุ่ม + ด้านบนเพื่อเพิ่มการเชื่อมต่อระยะไกลครั้งแรกของคุณ</string>
+    <string name="keyboard_layout_map">รูปแบบแป้นพิมพ์</string>
+</resources>

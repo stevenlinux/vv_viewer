@@ -1,0 +1,13 @@
+diff --git a/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/services/LibFreeRDP.java b/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/services/LibFreeRDP.java
+index a4c215737..639383c7f 100644
+--- a/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/services/LibFreeRDP.java
++++ b/client/Android/Studio/freeRDPCore/src/main/java/com/freerdp/freerdpcore/services/LibFreeRDP.java
+@@ -319,7 +319,7 @@ public class LibFreeRDP
+ 		args.add(addFlag("themes", flags.getTheming()));
+ 		args.add(addFlag("fonts", flags.getFontSmoothing()));
+ 		args.add(addFlag("aero", flags.getDesktopComposition()));
+-		args.add(addFlag("glyph-cache", false));
++		args.add(addFlag("glyph-cache", flags.isGlyphCache()));
+ 		args.add(addFlag("relax-order-checks", true));
+ 
+ 		if (!advanced.getRemoteProgram().isEmpty())

@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Oudio sal oor ongeveer 15 sekondes geïnisialiseer word. Stop enige lopende video- of oudioterugspeling voor daardie tyd</string>
+    <string name="audio_initialized">Oudio geïnisialiseer</string>
+    <string name="action_import_settings">Voer instellings in</string>
+    <string name="action_new_connection">✚ Nuwe verbinding</string>
+    <string name="action_edit_default_settings">⚙ Wysig versteksinstellings</string>
+    <string name="action_export_settings">Voer instellings uit</string>
+    <string name="action_delete_connection">Verwyder verbinding</string>
+    <string name="action_rate_or_share_app">⭐ Kry hulp, beoordeel, deel</string>
+    <string name="get_help">Kry hulp</string>
+    <string name="advanced_settings">Gevorderde instellings</string>
+    <string name="audio">Oudio</string>
+    <string name="auto_rotation">Skermrotasie tydens verbinding</string>
+    <string name="auto_request_new_res">Sinkroniseer afstand met skermresolusie</string>
+    <string name="custom_ca_subject">Opsionele sertifikaatonderwerp. Nie nodig as die sertifikaat-CN ooreenstem met die gasheernaam nie</string>
+    <string name="custom_ca_import">Voer alternatiewelik die volledige pad na u CA in en tik Invoer</string>
+    <string name="custom_ca_paste">Plak (indien nie invoer nie) die CA hier</string>
+    <string name="ca_ovirt_use_custom">Pasgemaakte RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Gebruik RHEV/oVirt CA vir SPICE</string>
+    <string name="ca_ovirt_manage">Bestuur RHEV/oVirt CA</string>
+    <string name="ca_spice_manage">Bestuur SPICE CA</string>
+    <string name="ca_file_not_found">Lêer nie gevind nie. Voer asseblief \'n geldige lêernaam in die teksveld in (bv. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Fout by lees van CA-lêer. Verseker dat dit leesbaar is.</string>
+    <string name="ca_new_or_changed">Nuwe of gewysigde bediener-sertifikaat</string>
+    <string name="connection_type_text">Virtualiseringsomgewing (RHEV/oVirt of Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Virtuele masjiennaam (opsioneel)</string>
+    <string name="connection_setup_host_name">Bedieneradres</string>
+    <string name="connection_setup_user">Gebruiker@Domein</string>
+    <string name="connection_setup_password">Wagwoord</string>
+    <string name="enter_password">Voer asseblief wagwoord in</string>
+    <string name="enter_password_auth_failed">Verifikasie misluk. Voer asseblief u geloofsbriewe weer in.</string>
+    <string name="enter_otp_code">Voer asseblief OTP-kode in</string>
+    <string name="hide_toolbar">Verberg nutsbalk</string>
+    <string name="manage_custom_ca_title">Bestuur pasgemaakte CA</string>
+    <string name="save_button">Stoor</string>
+    <string name="select_vm_title">Kies virtuele masjien</string>
+    <string name="vv_file_not_found">Die .vv-lêer is nie gevind nie!</string>
+    <string name="vv_file_error">Die .vv-lêer ontbreek of is beskadig!</string>
+    <string name="info_cert">Aanvaar u hierdie nuwe of gewysigde gasheersertifikaat?\n\nVingerafdrukke:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nUitgereik aan: %4$s\nUitgereik deur: %5$s\n\nGeldig vanaf: %6$s\nGeldig tot: %7$s\n</string>
+
+    <string name="toggle_keyboard">Wissel sleutelbord</string>
+    <string name="show_keyboard">Wys sleutelbord</string>
+    <string name="scroll_wheel">Rolwiel</string>
+
+    <string name="input_method_help">Invoermetode-hulp</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="input_methods">Invoermetode</string>
+
+    <string name="error_failed_to_download_http">Kon nie lêer oor HTTP aflaai nie. Miskien is u bediener onbereikbaar.</string>
+    <string name="error_failed_to_download_https">Kon nie lêer oor HTTPS aflaai nie. Miskien is u bediener se sertifikaat onbetroubaar (verval of self-onderteken) of u bediener is onbereikbaar.</string>
+    <string name="error_failed_to_obtain_content">Kon nie lêer bekom nie. Laai dit asseblief weer af, maar maak dit hierdie keer vinnig oop vanuit die Aflaai-gids in \'n lêerbestuurder.</string>
+    <string name="error_failed_to_obtain_file">Kon nie lêer vind nie. Laai dit asseblief weer af, maar probeer hierdie keer om dit oop te maak vanuit die kennisgewing-area of direk vanuit die blaaier indien moontlik.</string>
+
+    <string name="error_dialog_title">Fout</string>
+    <string name="info_dialog_title">Inligting</string>
+    <string name="info_vm_launched_on_stand_by">U VM is gevind terwyl dit afgeskakel was en is begin. Probeer asseblief weer oor \'n paar minute. As u te gou probeer en \'n verbindingsfout kry, probeer later weer.</string>
+    <string name="error_no_vm_found_for_user">Geen beskikbare virtuele masjiene vir die gegewe gebruiker nie.</string>
+    <string name="error_no_such_vm_found_for_user">Geen virtuele masjien met die opgegee ID is gevind vir die gegewe gebruiker nie. Vee die ID uit om \'n lys van VM\'s te kry.</string>
+    <string name="error_no_vnc_support_yet">VNC-vertooitipe word nog nie ondersteun nie, maar dit is \'n toekomstige funksie. Dankie vir u begrip!</string>
+    <string name="error_not_connected_to_network">Dit lyk of u nie aan die internet gekoppel is nie. Kan nie voortgaan sonder \'n verbinding nie!</string>
+    <string name="error_ovirt_timeout">Die verbinding na u VM het verval. Kontroleer asseblief dat die adres van die knoop wat u VM laat loop korrek is, dat dit toeganklik is vanaf u huidige netwerk, en dat geen firewall die verbinding blokkeer nie.</string>
+    <string name="error_ovirt_auth_failure">Verifikasie misluk. Kontroleer asseblief die opgegee gebruiker en wagwoord.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL-handdruk misluk. Daar is \'n probleem met die bediener se SSL-sertifikaat. As u \'n self-ondertekende sertifikaat gebruik, moet u u sertifikaat-owerheid (her)invoer.</string>
+    <string name="error_pve_failed_to_authenticate">Kon nie by Proxmox Virtual Environment verifieer nie. Verseker asseblief dat u u gebruikersnaam in gebruiker@ryk-formaat invoer en dat u wagwoord korrek is.</string>
+    <string name="error_pve_failed_to_parse_json">Kon nie respons van Proxmox Virtual Environment ontleed nie.</string>
+    <string name="error_pve_vmid_not_numeric">VM-ID is nie numeries nie. Voer asseblief \'n numeriese VM-ID in of laat leeg om die VM uit \'n lys te kies.</string>
+    <string name="error_pve_api_unexpected_code">Onverwagte respons van Proxmox Virtual Environment: </string>
+    <string name="error_pve_api_io_error">Verbinding na Proxmox Virtual Environment misluk: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment het nuldata teruggestuur.</string>
+    <string name="error_pve_timeout_communicating">Verbindingstyd verstreke met Proxmox Virtual Environment.</string>
+    <string name="error_vm_lookup_failed">Kon nie \'n virtuele masjien vind met die naam wat gespesifiseer is en aan u gebruiker toegewys is nie. Vee asseblief die VM-naam uit om \'n lys van VM\'s te sien wat aan die gebruiker toegewys is.</string>
+    <string name="error_vv_download_timeout">Verbindingstyd verstreke tydens aflaai van vv-lêer.</string>
+    <string name="message_please_wait">Wag asseblief</string>
+    <string name="message_please_install_bvnc">Installeer asseblief &lt;a href="market://details?id=com.iiordanov.bVNC"&gt;bVNC&lt;/a&gt; van Google Play om aan die VNC-konsole van hierdie VM te koppel.</string>
+    <string name="ssl_strict">Vereis dat die algemene naam met die sertifikaat ooreenstem (aanbeveel)</string>
+    <string name="usb">USB (koppel eers OTG-kabel aan)</string>
+
+    <string name="ad_donate_text0">Die Pro-weergawe het ook ondersteuning vir multi-faktor SSH-verifikasie. Boonop ondersteun dit die baie-gevraagde Hoofd-wagwoord-funksie wat ongemagtigde gebruik verhoed en alle verbindingsinstellings insluitend wagwoorde en SSH-sleutels versleutel om teen diefstal te beskerm. Aktiveer dit vanuit die hoofkieslys.</string>
+    <string name="ad_donate_spice_text1a">Tik hier om Opaque te koop en direkte verbindings na Proxmox en oVirt te stoor. Dit ondersteun ook .vv-lêers.</string>
+    <string name="ad_donate_spice_text1b">Tik hier om die Pro-weergawe te koop en net .vv-lêers oop te maak.</string>
+    <string name="ad_donate_text1">Tik hier om die projek met \'n klein skenking te ondersteun deur die Pro-weergawe te koop.</string>
+    <string name="ad_donate_text2">Die Pro-weergawe laat u toe om hierdie dialoog te deaktiveer en gee u toegang tot addisionele funksies.</string>
+    <string name="ad_donate_text3">As u die projek verder wil ondersteun, volg die volgende skakels na kliëntprogramme vir: </string>
+    <string name="ad_donate_text_vnc">Die oopbron-projek het u ondersteuning nodig! Skenk aan ons deur bVNC Pro te koop. Sien hieronder vir skakels na bVNC Pro en ons ander programme.</string>
+    <string name="ad_donate_text_rdp">Die oopbron-projek het u ondersteuning nodig! Skenk aan ons deur aRDP Pro te koop, wat klankomleiding ondersteun. Sien hieronder vir skakels na aRDP Pro en ons ander programme.</string>
+    <string name="ad_donate_text_spice">Vir Proxmox- en oVirt-verbindings, skenk asseblief aan die projek deur Opaque of aSPICE Pro te koop. Die gratis weergawe van aSPICE ondersteun slegs direkte verbindings na KVM-virtuele masjiene. Sien hieronder vir skakels na Opaque en aSPICE Pro, asook ons ander programme.</string>
+
+    <string name="address_caption">VNC-bediener</string>
+    <string name="address_caption_hint">VNC-bediener</string>
+    <string name="address_caption_hint_tunneled">VNC-bediener</string>
+    <string name="address_caption_ssh">SSH-bediener</string>
+    <string name="address_caption_ssh_hint">SSH-bediener</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Pyltjie af</string>
+    <string name="arrow_left">Pyltjie links</string>
+    <string name="arrow_right">Pyltjie regs</string>
+    <string name="arrow_up">Pyltjie op</string>
+
+    <string name="auto">Outomaties</string>
+    <string name="auto_x_cancel">Kanselleer</string>
+    <string name="auto_x_caption">Die program kan outomaties bestaande X-sessies op Linux/UNIX-stelsels ontdek en nuwe skep (soortgelyk aan NX). U benodig x11vnc om te vind, en Xvfb, Xvnc, of Xdummy om sessies te skep. As u probleme het om te koppel, probeer om \'n spesifieke Afstandsessietipe te kies in die AutoX Gevorderde instellings.</string>
+    <string name="auto_x_confirm">Bevestig</string>
+    <string name="auto_x_descript_geom">Afstandskerm-grootte (BxH)</string>
+    <string name="auto_x_descript_session">Afstandsessietipe</string>
+    <string name="auto_x_disabled">Gedeaktiveer</string>
+    <string name="auto_x_disabled_selection">AutoX gedeaktiveer</string>
+    <string name="auto_x_enabled">Geaktiveer</string>
+    <string name="auto_x_find">Vind slegs, moenie skep nie</string>
+    <string name="auto_x_find_login">Vind X-aanmelding (benodig sudo)</string>
+    <string name="auto_x_geom_custom">Pasgemaak</string>
+    <string name="auto_x_geom_native">Inherent</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Outomaties</string>
+    <string name="auto_x_session_custom">Pasgemaak</string>
+    <string name="auto_x_title">Stel AutoX op</string>
+    <string-array name="auto_x_type">
+        
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Verifieer outomaties met die opgegee SSH-gebruikersnaam/wagwoord (na die swart aanmeldskerm).</string>
+    <string name="auto_x_unixpw">Gebruik UNIX-geloofsbriewe in plaas van die ingeboude sekuriteitsmeganisme. Gebruiker moet /bin/su kan uitvoer.</string>
+    <string name="auto_x_xdummy">Vind of skep met Xdummy</string>
+    <string name="auto_x_xvfb">Vind of skep met Xvfb</string>
+    <string name="auto_x_xvnc">Vind of skep met Xvnc</string>
+
+    <string name="button_send_text">Stuur teks</string>
+    <string name="button_send_without_saving">Stuur teks/moenie dit stoor nie</string>
+
+    <string name="center_mouse">Muis @</string>
+
+    <string name="close">Sluit</string>
+
+    <string name="color_format_caption">Kleurmodus</string>
+    <string name="color_mode">Kleurmodus</string>
+
+    <string name="connect_button">Koppel</string>
+    <string name="back_button">Gaan terug</string>
+    <string name="update_button">Opdateer</string>
+
+    <string name="connection_caption">Verbinding</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Verbindingstipe</string>
+    <string name="connection_type_rdp_over_ssh">RDP oor SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE oor SSH</string>
+    <string name="connection_type_vnc">Basiese VNC</string>
+    <string name="connection_type_vnc_over_ssh">Veilige VNC oor SSH</string>
+    <string name="connection_type_vnc_over_ssl">Veilige VNC oor AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Veilige VNC oor SSL-tonnel</string>
+    <string name="connection_type_vnc_over_vencrypt">Veilige VNC oor VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Wil u die verbinding wysig of verwyder</string>
+    <string name="connection_edit">Wysig</string>
+    <string name="connection_delete">Verwyder</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopieer lys</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Verstek invoermodus</string>
+    <string name="delete_connection">Verwyder verbinding</string>
+    <string name="delete_key">Verwyder geselekteerde sleutel</string>
+    <string name="delete_key_list">Verwyder sleutellys</string>
+
+    <string name="disconnect">Ontkoppel</string>
+
+    <string name="dpad_as_arrows">Gebruik D-pad vir pyltjies en D-pad-klik vir Ctrl.</string>
+
+    <string name="enable_recording">Aktiveer opname</string>
+    <string name="enable_sound">Aktiveer klank</string>
+
+    <string name="enter_text">Stuur teks</string>
+    <string name="enter_text_title">Voer teks in om te stuur</string>
+
+    <string name="error_anon_dh_unsupported">Die VNC-bediener probeer Anonymous Diffie Hellman-syfers gebruik wat nie op u Android-toestel ondersteun word nie. As u GNOME se Vino VNC-bediener gebruik, kan u AnonTLS deaktiveer deur die volgende opdrag in \'n terminaal uit te voer en dan te herbegin: \"gsettings set org.gnome.Vino require-encryption false\". As u x11vnc gebruik, kan u die volgende opsies byvoeg: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Verbinding misluk.</string>
+    <string name="error_connection_interrupted">Verbinding onderbreek.</string>
+    <string name="error_no_user_hostname">Voer asseblief ten minste \'n gebruiker en \'n gasheernaam of IP-adres in.</string>
+    <string name="error_out_of_memory">Kon nie voldoende geheue toewys om die afgeleë skerm te teken nie. Probeer om die program te herbegin, dan herbegin u toestel. U kan ook probeer om die grootte van die afgeleë werkskerm te verminder via die programinstellings.</string>
+    <string name="error_ovirt_unable_to_connect">Kan nie koppel of verifieer nie. Kontroleer asseblief die bedieneradres, gebruiker, wagwoord, en sertifikaat-owerheid en -onderwerp.</string>
+    <string name="error_pick_correct_item">Verseker asseblief dat u die regte item in Verbindingstipe gekies het.</string>
+    <string name="error_rdp_authentication_failed">RDP-verifikasie misluk! Kontroleer asseblief die RDP-gebruikersnaam en -wagwoord en probeer weer.</string>
+    <string name="error_rdp_connection_failed">RDP-verbinding misluk! Óf die netwerkkonneksie is onderbreek, die RDP-bediener is afgeskakel of gedeaktiveer, óf u sessie is oorgeneem.</string>
+    <string name="error_rdp_unable_to_connect">Kon nie aan RDP-bediener koppel nie! Verseker asseblief dat die RDP-bediener-instelling korrek is, die bediener aangeskakel is, RDP geaktiveer is, en dat die bediener op dieselfde netwerk as hierdie toestel is.</string>
+    <string name="error_security_type">Bediener het geen ondersteunde sekuriteitstype aangebied nie.</string>
+    <string name="error_spice_unable_to_connect">Kan nie koppel of verifieer nie. Kontroleer asseblief die bedieneradres en poort.</string>
+    <string name="error_ssh_could_not_exec_command">Kon nie afgeleë opdrag uitvoer nie.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Kon nie sudo-wagwoord stuur nie.</string>
+    <string name="error_ssh_hostkey_changed">FOUT! Die bediener-gasheuersleutel het verander. As dit opsetlik is, kan u voortgaan. Anders kan dit \'n man-in-die-middel-aanval wees.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Die SSH-bediener ondersteun nóg \"wagwoord\" nóg \"sleutelbord-interaktief\" verifikasiemetodes, of vereis eers die \"publiekesleutel\"-metode. Stel dit asseblief in om ten minste een van die twee metodes toe te laat, of hersstel die program. Beskikbare verifikasiemetodes: </string>
+    <string name="error_ssh_key_auth_fail">Kon nie by SSH-bediener verifieer met \'n sleutelpaar nie. Kontroleer asseblief u SSH-gebruikersnaam en verseker dat u publieke sleutel in die authorized_keys-lêer op die afgeleë kant is.</string>
+    <string name="error_ssh_keypair_decryption_failure">Kon nie sleutelpaar ontsyfer nie. Verseker asseblief dat u u wagsin korrek ingevoer het in die \'SSH-wagsin\'-veld op die hoofskerm.</string>
+    <string name="error_ssh_keypair_missing">SSH-sleutelpaar nog nie gegenereer nie! Genereer asseblief een en plaas (die publieke deel daarvan) in authorized_keys op die SSH-bediener.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Wagsin opgegee maar sleutelpaar is nie versleutel nie. Verwyder asseblief die wagsin.</string>
+    <string name="error_ssh_port_forwarding_failure">Kon nie die poortdeurstuur opstel vir die tonneling van VNC-verkeer oor SSH nie. Verseker asseblief dat u SSH-bediener ingestel is om poortdeurstuur toe te laat en probeer weer.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Die SSH-bediener ondersteun nie die \"publiekesleutel\"-verifikasiemetode nie, en ons probeer \'n sleutelpaar gebruik om te verifieer. Stel dit asseblief in om publiekesleutelverifikasie toe te laat en probeer weer. Beskikbare verifikasiemetodes: </string>
+    <string name="error_ssh_pwd_auth_fail">Kon nie by SSH-bediener verifieer met \'n wagwoord nie. Kontroleer asseblief u SSH-gebruikersnaam en SSH-wagwoord.</string>
+    <string name="error_ssh_unable_to_connect">Kon nie aan SSH-bediener koppel nie. Kontroleer asseblief netwerkkonneksie, en SSH-bedieneradres en -poort.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Kon nie afgeleë VNC-poort van x11vnc bekom nie. Verseker asseblief dat x11vnc geïnstalleer is. Probeer om x11vnc met die hand op die opdragreël uit te voer om seker te wees.</string>
+    <string name="error_uri_noinfo_nosave">Onvoldoende inligting gespesifiseer om te koppel.</string>
+    <string name="error_uri_parse_error">Kan nie Intent-URI ontleed nie. Kontroleer asseblief die URI-formaat. U kan ook die toestel-logcat raadpleeg vir meer besonderhede.</string>
+    <string name="error_vnc_authentication">VNC-verifikasie misluk! Kontroleer die VNC-wagwoord (en gebruiker indien van toepassing).</string>
+    <string name="error_vnc_unable_to_connect">"Verbinding na VNC-bediener misluk met rede: "</string>
+    <string name="error_x509_could_not_generate_encoding">Sertifikaat-kodering kon nie gegenereer word nie.</string>
+    <string name="error_x509_could_not_generate_signature">Kon nie SHA1- of MD5-handtekening van sertifikaat genereer nie. Geen SHA1/MD5-algoritme gevind nie.</string>
+
+    <string name="export_settings">Uitvoer</string>
+
+
+    <string name="extra_keys_disable">Deaktiveer ekstra sleutels</string>
+    <string name="extra_keys_enable">Aktiveer ekstra sleutels</string>
+
+    <string name="fit_to_screen">Pas in skerm</string>
+
+    <string name="force">Volskerm-bitmap</string>
+
+    <string name="immersive_mode_disable">Deaktiveer immersiemodus</string>
+
+    <string name="import_export_settings">📦 Voer instellings in/uit</string>
+    <string name="import_settings">Invoer</string>
+
+
+    <string name="info">Inligting</string>
+    <string name="info_cert_signatures">"Die sertifikaatinligting is: "</string>
+    <string name="info_cert_signatures_identical">\n\nU kan verseker dat die inligting ooreenstem met die bediener-sertifikaat om \'n man-in-die-middel-aanval te voorkom.</string>
+    <string name="info_cert_tunnel">Wil u koppel aan die gasheer wat geïdentifiseer word deur die volgende sertifikaat?\n\nVingerafdruk: %1$s\n\nUitgereik aan:\n%2$s\n\nUitgereik deur:\n%3$s\n\nGeldig vanaf:\n%4$s\n\nGeldig tot:\n%5$s\n\nLet wel: Die program verifieer nie sertifikaat-owerhede nie en kontroleer nie sertifikaatherroeping nie.</string>
+    <string name="info_continue_connecting">"Gaan voort met koppeling na: "</string>
+    <string name="info_encoding">" kodering, "</string>
+    <string name="info_progress_dialog_aborted">Verbinding afgekanselleer!</string>
+    <string name="info_progress_dialog_connecting">Besig om te koppel…</string>
+    <string name="info_progress_dialog_downloading">Laai eerste raam af.\nWag asseblief…</string>
+    <string name="info_progress_dialog_establishing">Vestig handdruk.\nWag asseblief…</string>
+    <string name="info_ssh_initializing_hostkey">Probeer om SSH-gasheuersleutel te inisialiseer.</string>
+    <string name="info_ssh_key_fingerprint">"Die gasheuersleutel-vingerafdruk is: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nU kan verseker dat dit identies is aan die bekende vingerafdruk van die bediener-sertifikaat om \'n man-in-die-middel-aanval te voorkom.</string>
+    <string name="info_update_color_model_to">"Opdatering van kleurmodel na "</string>
+
+    <string name="input_method_direct_drag_pan_description">Direk, Hou pan: Vee om te sleep en te laat val. Tik met een vinger waar u links wil klik, twee vingers vir regs-klik, en drie vingers vir middelklik. Vee met twee vingers om te rol. Lang tik om te begin pan.</string>
+    <string name="input_method_direct_swipe_pan_description">Direk, Vee pan: Vee om rond te pan. Tik met een vinger waar u links wil klik, twee vingers vir regs-klik, en drie vingers vir middelklik. Vee met twee vingers om te rol. Lang tik om te sleep en te laat val.</string>
+    <string name="input_method_single_handed_description">Eenhandig: Vee om rond te pan. Tik met een vinger waar u links wil klik. Lang tik om links/regs/middel sleep/rol/zoom-modus te kies. Normale multi-touch-beheer werk ook.</string>
+    <string name="input_method_touchpad_description">Gesimuleerde aanraakblad: Vee om aanwyser te beweeg. Tik enige plek met een vinger vir linksKlik, twee vingers vir regsKlik, en drie vingers vir middelKlik. Vee met twee vingers om te rol. Lang tik om te sleep en te laat val.</string>
+    <string name="input_mode">Invoermodus</string>
+
+    <string name="input_mode_fit_to_screen">Geen pan; Spoorbal-muis</string>
+    <string name="input_mode_panning">Werkskerm-panmodus</string>
+    <string name="input_method_mouse">Muisaanwyser-beheer</string>
+
+    <string name="input_method_direct_swipe_pan">Direk, Vee pan</string>
+    <string name="input_method_direct_drag_pan">Direk, Hou pan</string>
+    <string name="input_method_single_handed">Eenhandig</string>
+    <string name="input_method_touchpad">Gesimuleerde aanraakblad</string>
+
+    <string name="input_mode_help">Invoermodus-hulp</string>
+    <string name="input_mode_help_text">"
+In enige invoermodus, tik die sleutelbord-ikoon om die skermsleutelbord te kry. U toestel mag ook sy eie gebaar hê wat die sleutelbord oproep.
+
+Gebruik die direkte invoermodusus vir meer intuïtiewe aanraakskerm-beheer. Gebruik gesimuleerde aanraakbladmodus vir fyner beheer oor die muis.
+
+Direk, Vee pan-modus:
+ - Beheer die muis direk deur aanraking.
+ - Vee om rond te pan.
+ - Tikking laat die muis klik waar u getik het.
+ - Rolgeleenthede word gestuur tussen die twee vingers waar \'n twee-vinger-veeg begin het.
+
+Direk, Hou pan-modus:
+ - Beheer die muis direk deur aanraking.
+ - Lang tik om panmodus te begin.
+ - Tikking laat die muis klik waar u getik het.
+ - Rolgeleenthede word gestuur tussen die twee vingers waar \'n twee-vinger-veeg begin het.
+
+Gesimuleerde aanraakbladmodus:
+ - Gebruik u skerm soos \'n aanraakblad.
+ - Vee om die muisaanwyser te beweeg.
+ - Beweeg muis verby skermrand om te pan.
+ - Tikking laat die muis klik waar die aanwyser is.
+ - Rolgeleenthede word gestuur waar die muisaanwyser geleë is.
+
+Eenhandige modus:
+ - Dieselfde as Direk, Vee pan-modus, behalwe dat lang tik \'n kieslys met keuse van modi oopmaak.
+ - Na die kies van \'n modus, voer die sweefvinger op die skerm die gekose gebaar uit.
+ - Lig van vinger voltooi die gebaar.
+
+Alle invoermodusus:
+ - Linksklik: Tik eenmaal.
+ - Dubbelklik: Dubbel-tik.
+ - Regsкlik: Tik-hou en tik met \'n tweede vinger (enige plek anders op die skerm).
+ - Alternatiewe regsкlik: Gebruik die \"Terug\"-knoppie of gebaar vir u toestel.
+ - Middelklik: Tik-hou en tik met twee meer vingers (enige plek anders op die skerm).
+ - Muis-sleep: Tik-hou-lank en vee.
+ - Rolwiel: Twee-vinger-sleep op/af en links/regs. Vinnige sleep rol vinniger.
+ - Zoom in/uit: In Zoombare skaling, knyp-zoom om skaling te beheer.
+ - Ctrl/Alt-sleutel: Kieslys-&gt;Ctrl/Alt-knoppies. Moenie vergeet om af te skakel as u klaar is nie!
+ - Sleutelkombinasies: Kieslys-&gt;Meer-&gt;Stuur sleutels.
+ - Stuur teks: Tik óf op die skermsleutelbord, óf gebruik Kieslys-&gt;Meer-&gt;Stuur teks."</string>
+
+    <string name="intro_close">Sluit</string>
+    <string name="intro_dont_show">Moenie weer wys nie</string>
+
+    <string name="intro_text">
+Huidige lys van bVNC-funksies:
+&lt;br&gt;
+- Gewone VNC, Veilige VNC oor SSH, AnonTLS, en VeNCrypt, en UltraVNC Windows-aanmelding met opsionele herhaler.
+&lt;br&gt;
+- AutoX-modus: In VNC oor SSH-modus, ontdek outomaties bestaande en/of skep nuwe X-sessies met x11vnc! Werk soos NX-kliënt.
+&lt;br&gt;
+- Gratis rotasie-ondersteuning. Gebruik bedryfstelsel om rotasie te beperk indien nodig.
+&lt;br&gt;
+- SSH publieke/private sleutelpaar-generering en -uitvoer.
+&lt;br&gt;
+- Alle standaard VNC-koderings, insluitend Tight, ZRLE, en CopyRect.
+&lt;br&gt;
+- Outomatiese sessie-stoor.
+&lt;br&gt;
+- Zoombaar, Pas in skerm, en Een-op-een-skaalmodusus.
+&lt;br&gt;
+- Multi-touch-beheer oor afgeleë muis in direkte en gesimuleerde aanraakblad-invoermodusus.
+&lt;br&gt;
+- Volledige eenhandige beheer oor afgeleë muis in eenhandige invoermodus.
+&lt;br&gt;
+- Multi-touch-muisklikke: tik vir linksKlik, twee-vinger-tik vir regsKlik, drie-vinger-tik vir middelKlik.
+&lt;br&gt;
+- Multi-touch-rol: twee-vinger-sleep op/af, en links/regs om te rol.
+&lt;br&gt;
+- Skerm-meta- en pyltjie-sleutels wat volledig gedeaktiveer kan word via kieslys of weggebêre met skermknoppie.
+&lt;br&gt;
+- Stuur teks en willekeurige sleutelkombinasies wanneer gekoppel.
+&lt;br&gt;
+- Hulp met die skep van verbindings (\"Kieslys-&gt;Verbindingshulp\") in die verbindingskerm.
+&lt;br&gt;
+- Hulp met invoermodusus (\"Kieslys-&gt;Meer-&gt;Invoermodus-hulp\") wanneer gekoppel.
+&lt;br&gt;
+- Gebruik \'n beskikbare spoorblad as pyltjies in plaas van die muis te beweeg, en spoorblad-klik as Ctrl.
+&lt;br&gt;
+- Skakel na portretmodus tydens verbindings, roteer D-pad/spoorblad vir BT-sleutelborde.
+&lt;br&gt;
+- Multi-taalondersteuning, solank as wat die VNC-bediener die nodige taaluitleg geaktiveer het.
+&lt;br&gt;
+- Kopieer/plak-integrasie
+&lt;br&gt;
+- Afgeleë masjienresolusie-veranderinge
+&lt;br&gt;
+- Volledige muis-ondersteuning op Android 4.0+-toestelle, insluitend regs- en middelklik en rolwiel.
+&lt;br&gt;
+&lt;br&gt;
+Bekende probleme:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuïtiewe, veilige VNC-kliënt</string>
+
+
+    <string name="keep_password_button">Behou</string>
+    <string name="keep_screen_awake_enable">Hou skerm wakker</string>
+
+    <string name="keys_caption">Sleutels</string>
+
+    <string name="landscape_force">Forseer landskaportasie</string>
+
+    <string name="left_handed_mode">Linkshandige modus</string>
+    <string name="disable_pointer_offset_correction">Deaktiveer aanwyser-offsetkorreksie</string>
+
+    <string name="list_caption">Lys</string>
+    <string name="list_name_caption">Lysnaam</string>
+
+    <string name="local_mouse_check">Plaaslike muisaanwyser (kies as aanwyser onsigbaar is)</string>
+
+    <string name="main_screen_help">Verbindingshulp</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Wanneer u \'n verbinding byvoeg of wysig, sal u \'n verbindingskonfigurasie-bladsy sien. Hier kan u
+\'n nuwe VNC-verbinding opstel of \'n bestaande een kies. Bo-aan is \'n knoppie wat u toelaat om
+die verbinding te stoor. Daaronder is waar u u verbinding instel.
+
+As u na \'n vinnige prestasie-hupstoot soek, probeer om die Kleurmodus na \'n laer waarde in te stel. Probeer ook om enige werkskermagtergrondprent op die VNC-bediener te verwyder. Verseker laastens dat u toestel goeie netwerkkonneksie het en vermy om sy antenna te bedek wat die seinsterkte verminder.
+
+ - Verbindingstipe: Hier kies u die VNC-verbindingstipe. Beskikbare verbindingstipes is:
+   (a) Gewone VNC, wat deur alle VNC-bedieners ondersteun word maar versleuteling ontbreek en kwesbaar is vir brute-krag-aanvalle as gevolg van \'n 8-karakter-wagwoordbeperking.
+   (b) Veilige VNC oor SSH, wat koppel oor \'n versleutelde SSH-tonnel. U benodig \'n SSHD-diens asook \'n VNC-bediener. Solank as wat die VNC-bediener nie verbindings direk van die internet aanvaar nie, het hierdie verbindingstipe geen bekende kwesbaarhede nie, solank u die bediener-sertifikaathandtekening verifieer tydens die eerste verbinding.
+   (c) UltraVNC, wat u Windows-aanmelding en UltraVNC Herhaler-opsies gee. Die gebruik van Windows-aanmelding ly nie aan die 8-karakter-wagwoordbeperking nie, maar hierdie modus bied geen versleuteling nie, dus is u sessie kwesbaar vir afluistering.
+   (d) Veilige VNC oor AnonTLS, wat gewone VNC oor \'n stunnel-ekwivalente verbinding is. U moet óf stunnel laat loop óf \'n VNC-bediener soos Vino gebruik wat AnonTLS out of the box ondersteun. Hierdie modus gee u sessie-versleuteling, maar ly aan die 8-karakter-wagwoordbeperking en verhoed nie man-in-die-middel-aanvalle nie.
+   (e) Veilige VNC oor VeNCrypt, wat x509-sertifikate asook sessie-versleuteling gebruik, en afhangende van die bedienerkonfigurasie gebruiker/wagwoord-geloofsbriewe kan gebruik sonder 8-karakter-beperking. Hierdie modus verhoed man-in-die-middel-aanvalle sowel as die verskaffing van sessie-privaatheid. Bedieners soos x11vnc en TigerVNC ondersteun hierdie modus en is net so veilig soos VNC oor SSH.
+
+ - Titel: Elke verbinding wat u skep kan \'n bynaam hê om dit maklik op die lys te identifiseer.
+
+ - SSH-tonnelinstelling: Beskikbaar in VNC oor SSH-modus.
+   (a) SSH-bediener/poort: Die adres en poort van die SSH-bediener waardeur die verbinding getunnel sal word. By verstek luister SSH op poort 22.
+   (b) Gebruikersnaam/wagwoord: Die gebruikersnaam en wagwoord van die rekening op die SSH-bediener. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+   (c) Bestuur sleutel/gebruik sleutel: \'n Knoppie om publieke/private sleutels te bestuur, en \'n merkblokkie wat aandui of \'n sleutel eerder as \'n wagwoord gebruik moet word om te verifieer. As u die kopieer-na-knipbord-knoppie gebruik nadat u \'n sleutelpaar gegenereer het, behoort u die publieke sleutel te kan plak sodra u aan die VNC-bediener gekoppel is (die knipbord word met die bediener gesinkroniseer).
+
+ - Stel AutoX op: Slegs beskikbaar in VNC oor SSH-modus. Die program kan outomaties bestaande X-sessies op UNIX-stelsels ontdek en opsioneel nuwe skep (soos NX-kliënt). U benodig x11vnc om te vind, en Xvfb, Xvnc, of Xdummy wat op die afgeleë stelsel geïnstalleer is om sessies te skep. U moet moontlik u .dmrc-lêer wegskuif en \'n .xinit-lêer in u tuisgids byvoeg as u werkskerm nie behoorlik lyk nie of u net \'n xterm-venster kry.
+
+ - VNC-verbindingsinstellings:
+   (a) VNC-bediener/poort: Dit is waar u die gasheernaam of IP-adres en poort van die rekenaar wat die VNC-bediener laat loop invoer. In VNC oor SSH-modus word hierdie adres gesien vanaf die SSH-bediener. As die SSH-bediener en VNC-bediener dieselfde rekenaar is, kan u localhost gebruik. VNC-bedieners luister tipies begin by poort 5900 (die eerste VNC-skerm, skerm :0).
+   (b) VNC-gebruiker: Beskikbaar in UltraVNC met Windows-aanmelding-modus, of Veilige VNC oor VeNCrypt, dit is waar u u Windows/UNIX-rekening-gebruikersnaam invoer.
+   (c) VNC-wagwoord: As u VNC-bedienerkonfigurasie \'n wagwoord vereis, voer dit hier in. In UltraVNC met Windows-aanmelding/VeNCrypt-modusus, plaas u Windows/UNIX-rekeningwagwoord hier. Veilige berging word nie vir wagwoorde gebruik nie, en die wagwoord sal slegs gestoor word as u die \"Behou\"-blokkie merk. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+
+ - Kleurmodus: Die kliënt ondersteun verskeie kleurmodusus. Modusus met meer kleure bied \'n beter visuele ondervinding ten koste van groter bandwydte en meer SVE-berekening op u toestel. Sommige VNC-bedieners ondersteun nie alle kleurdieptes nie (bv. OS/X Remote Desktop vereis 24-bis-kleur). As u probleme het om te koppel, probeer \'n ander kleurdiepte.
+
+ - Gebruik D-pad vir pyltjies: As u verkies, kan u die D-pad van u Bluetooth-sleutelbord of pyltjies op u skermsleutelbord gebruik om pyltjies na die VNC-bediener te stuur.
+
+ - Roteer D-pad: Fone wat met \'n Bluetooth-sleutelbord gepaar is, moet moontlik die sleutelbord se D-pad teen die son draai om korrekte rigtings na die bediener te stuur.
+
+ - Plaaslike muisaanwyser: Sommige VNC-bedieners (bv. OS/X Remote Desktop) sal nie die muisaanwyser op die kliënt teken nie. Hierdie opsie te merk sal veroorsaak dat die program \'n muisaanwyser by die muisposisie teken.
+
+ - Outomaties/Volskerm-bitmap: Die VNC-kliënt gebruik \'n bitmap om die afgeleë skerm voor te stel. Vir baie groot afgeleë skerms, veral in pas-in-skerm-modus, kan u vreemde visuele artefakte ondervind in pas-in-skerm-modus, as gevolg van per-proses-geheuebeperkings. As dit gebeur, probeer hierdie opsie te merk. Hou in gedagte dat die merk van die opsie kan veroorsaak dat die program by koppeling sluit.
+
+ - Herhaler: Slegs beskikbaar in UltraVNC-modus. BELANGRIK: As u \'n UltraVNC-herhaler het, voer sy adres en poort buite die \'UltraVNC Herhaler\'-dialoog in en voer die adres en poort van die werklike VNC-bediener binne die \'UltraVNC Herhaler\'-dialoog in. Skei die VNC-bediener se adres en poort met \'n dubbelpunt, bv. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Aktiveer hoofd-wagwoord</string>
+    <string name="master_password_error_failed_to_disable">Kon nie hoofd-wagwoord deaktiveer nie. Kontroleer vrye spasie op u toestel en probeer weer.</string>
+    <string name="master_password_error_failed_to_enable">Kon nie hoofd-wagwoord aktiveer nie. Kontroleer vrye spasie op u toestel en probeer weer.</string>
+    <string name="master_password_error_intents_not_supported">Verbindings-intents word nog nie ondersteun wanneer hoofd-wagwoord geaktiveer is nie.</string>
+    <string name="master_password_error_password_necessary">Hoofd-wagwoord is vereis om voort te gaan.</string>
+    <string name="master_password_error_password_not_set">Die instel van hoofd-wagwoord is gekanselleer.</string>
+    <string name="master_password_error_shortcuts_not_supported">Kortpaaie word nog nie ondersteun wanneer hoofd-wagwoord geaktiveer is nie.</string>
+    <string name="master_password_error_wrong_password">Kon nie verifieer met die opgegee hoofd-wagwoord nie.</string>
+    <string name="master_password_hint_once">Voer wagwoord in</string>
+    <string name="master_password_hint_twice">Herhaal wagwoord</string>
+    <string name="master_password_set">Stel hoofd-wagwoord</string>
+    <string name="master_password_set_error">Wagwoorde stem nie ooreen nie, wees asseblief versigtig!</string>
+    <string name="master_password_set_message">Voer asseblief \'n hoofd-wagwoord in en memoriseer dit. Hoe langer u wagwoord, hoe moeiliker is dit om te kraak. As u u wagwoord verkeerd instel of dit vergeet, verloor u alle u instellings! U wil dalk nou u instellings uitvoer om dit te rugsteun (vanuit die Kieslys). Stoor dit veilig aangesien uitgevoerde instellings nie versleutel is nie.</string>
+    <string name="master_password_verify">Verifieer hoofd-wagwoord</string>
+    <string name="master_password_verify_message">Voer asseblief die korrekte hoofd-wagwoord in om voort te gaan.</string>
+
+    <string name="meta_key_title">Stuur spesiale sleutels</string>
+
+    <string name="mouse_follow_pan">Muis volg pan</string>
+
+    <string name="new_connection">Nuwe verbinding</string>
+    <string name="new_list_button">Nuwe lys</string>
+
+    <string name="nickname_caption">Bynaam</string>
+    <string name="nickname_caption_hint">Titel (opsioneel)</string>
+
+    <string name="off">Af</string>
+
+    <string name="one_to_one">Een-op-een</string>
+
+    <string name="open_doc">Handleiding/Wiki</string>
+
+    <string name="pan_follow_mouse">Pan volg muis</string>
+
+    <string name="password_caption">VNC-verifikasie</string>
+    <string name="password_caption_hint">VNC-wagwoord</string>
+    <string name="password_caption_ssh">SSH-verifikasie</string>
+    <string name="password_hint_ssh">SSH-wagwoord</string>
+
+    <string name="port_caption">VNC-poort</string>
+    <string name="port_caption_ssh">SSH-poort</string>
+    <string name="port_hint">Poort</string>
+    <string name="port_ssh_hint">Poort</string>
+
+    <string name="portrait_mode">Skakel na portretmodus wanneer gekoppel</string>
+    <string name="local_clipboard_integration">Aktiveer plaaslike na afgeleë knipbord-integrasie</string>
+    <string name="remote_clipboard_integration">Aktiveer afgeleë na plaaslike knipbord-integrasie</string>
+    <string name="position_toolbar_last_used">Herstel nutsbalk-posisie</string>
+    <string name="applies_to_new_connections_only">Geld slegs vir nuwe verbindings</string>
+    <string name="pro_feature_mfa">Dit lyk asof u bediener multi-faktor-verifikasie geaktiveer het. Ondersteun asseblief die projek deur die Pro-weergawe te koop wat ondersteuning vir hierdie funksie het. \'n Skakel na die Pro-weergawe is beskikbaar in die aanvangsdialoog.</string>
+    <string name="pro_feature_intro">Dit lyk asof u \'n Pro-funksie gebruik. Ondersteun asseblief die projek deur die Pro-weergawe te koop wat ondersteuning vir hierdie funksie het. Kontroleer die intro-dialoog vir skakels na die korrekte program.</string>
+    <string name="pro_feature_generic">Dit lyk asof u \'n Pro-funksie gebruik. Ondersteun asseblief die projek deur die Pro-weergawe te koop wat ondersteuning vir hierdie funksie het. \'n Skakel na die Pro-weergawe is beskikbaar in die aanvangsdialoog.</string>
+    <string name="pro_feature_rdp">Dit lyk asof u probeer het om \'n .rdp-lêer oop te maak wat \'n Pro-funksie is. Ondersteun asseblief die projek deur aRDP Pro te koop, wat .rdp-lêers ondersteun. \'n Skakel na die aRDP Pro-weergawe is beskikbaar in die aanvangsdialoog.</string>
+    <string name="pro_feature_spice">Dit lyk asof u probeer het om \'n .vv-lêer oop te maak. As u verbindings na Proxmox of oVirt direk in die program wil stoor en ook .vv-lêers wil oopmaak, oorweeg om Opaque te koop. As u slegs .vv-lêer-ondersteuning benodig, kan u aSPICE Pro kry. Vind skakels na beide programme in die aanvangsdialoog.</string>
+
+    <string name="rdp_address_caption_hint">RDP-bediener</string>
+    <string name="rdp_adv_console_mode">Konsole-modus</string>
+    <string name="rdp_adv_desktop_background">Wys werkskerm-agtergrond</string>
+    <string name="rdp_adv_desktop_composition">Aktiveer werkskremsamestellling</string>
+    <string name="rdp_adv_font_smoothing">Voer lettertipe-gladstryking uit</string>
+    <string name="rdp_adv_menu_animation">Wys kieslys-animasies</string>
+    <string name="rdp_adv_redirect_sdcard">Herlei SD-kaart</string>
+    <string name="rdp_adv_remotefx">Aktiveer RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Aktiveer visuele style</string>
+    <string name="rdp_adv_window_contents">Wys vensterinhoud tydens sleep</string>
+    <string name="rdp_security_mode">Sekuriteitmodus</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Afgeleë werkskerm-grootte (BxH)</string>
+    <string name="rdp_domain_hint">RDP-domein</string>
+    <string name="rdp_geom_automatic">Outomaties</string>
+    <string name="rdp_geom_checkbox_enable">Aktiveer pasgemaakte resolusie</string>
+    <string name="rdp_geom_custom">Pasgemaak</string>
+    <string name="rdp_geom_description_hint">Die bediener benodig ExtendedDesktopSize-ondersteuning</string>
+    <string name="rdp_geom_disabled">Gedeaktiveer</string>
+    <string name="rdp_geom_native_landscape">Inherente landskap</string>
+    <string name="rdp_geom_native_portrait">Inherente portret</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Outomatiese sekuriteitonderhandeling</string>
+    <string name="rdp_security_rdp">RDP-sekuriteit</string>
+    <string name="rdp_security_tls">TLS-sekuriteit</string>
+    <string name="rdp_security_nla">Netwerkvlak-verifikasie</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Dankie dat u aRDP en oopbron-sagteware in die algemeen ondersteun! Vir hulp met die gebruik van aRDP, sien die Hulp-items in die Kieslys, en die beskrywing van die program in die mark.
+&lt;br&gt;
+&lt;br&gt;
+Huidige lys van aRDP-funksies sluit in:
+&lt;br&gt;
+- Gewone RDP, RDP getunnel oor SSH.
+&lt;br&gt;
+- Gratis rotasie-ondersteuning. Gebruik bedryfstelsel om rotasie te beperk indien nodig.
+&lt;br&gt;
+- Instelling van afgeleë resolusie, inherente resolusie in landskap- en portretmodusus.
+&lt;br&gt;
+- SSH publieke/private sleutelpaar-generering en -uitvoer.
+&lt;br&gt;
+- Outomatiese sessie-stoor.
+&lt;br&gt;
+- Zoombaar, Pas in skerm, en Een-op-een-skaalmodusus.
+&lt;br&gt;
+- Multi-touch-beheer oor afgeleë muis in direkte en gesimuleerde aanraakblad-invoermodusus.
+&lt;br&gt;
+- Volledige eenhandige beheer oor afgeleë muis in eenhandige invoermodus.
+&lt;br&gt;
+- Multi-touch-muisklikke: tik vir linksKlik, twee-vinger-tik vir regsKlik, drie-vinger-tik vir middelKlik.
+&lt;br&gt;
+- Multi-touch-rol: twee-vinger-sleep op/af, en links/regs om te rol.
+&lt;br&gt;
+- Skerm-meta- en pyltjie-sleutels wat volledig gedeaktiveer kan word via kieslys of weggebêre met skermknoppie.
+&lt;br&gt;
+- Stuur teks en willekeurige sleutelkombinasies wanneer gekoppel.
+&lt;br&gt;
+- Hulp met die skep van verbindings (\"Kieslys-&gt;Verbindingshulp\") in die verbindingskerm.
+&lt;br&gt;
+- Hulp met invoermodusus (\"Kieslys-&gt;Meer-&gt;Invoermodus-hulp\") wanneer gekoppel.
+&lt;br&gt;
+- Gebruik \'n beskikbare spoorblad as pyltjies in plaas van die muis te beweeg, en spoorblad-klik as Ctrl, roteer D-pad/spoorblad vir BT-sleutelborde.
+&lt;br&gt;
+- Multi-taalondersteuning, solank as wat die RDP-bediener die nodige taaluitleg geaktiveer het.
+&lt;br&gt;
+- Naatlose afgeleë masjienresolusie-veranderinge
+&lt;br&gt;
+- Volledige muis-ondersteuning op Android 4.0+-toestelle, insluitend regs- en middelklik en rolwiel.
+&lt;br&gt;
+- \'n Keuse van kleurmodusus
+&lt;br&gt;
+- Kopieer/plak-integrasie
+&lt;br&gt;
+- Uitvoer van instellings
+&lt;br&gt;
+- Klank
+&lt;br&gt;
+&lt;br&gt;
+Bekende probleme:</string>
+    <string name="rdp_intro_title">aRDP: Intuïtiewe, veilige RDP-kliënt</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Wanneer u \'n verbinding byvoeg of wysig, sal u \'n verbindingskonfigurasie-bladsy sien. Hier kan u \'n nuwe RDP-verbinding opstel of \'n bestaande een kies. Bo-aan is \'n knoppie wat u toelaat om die verbinding te stoor. Daaronder is waar u u verbinding instel.
+
+ - Verbindingstipe: Hier kies u die RDP-verbindingstipe. Beskikbare verbindingstipes is:
+   (a) RDP, wat direk aan \'n rekenaar koppel oor die RDP-protokol.
+   (b) RDP oor SSH, wat eers u verbinding deur \'n rekenaar wat \'n SSH-bediener laat loop, tonnel.
+
+ - Titel: Elke verbinding wat u skep kan \'n bynaam hê om dit maklik op die lys te identifiseer.
+
+ - SSH-tonnelinstelling: Beskikbaar in RDP oor SSH-modus.
+   (a) SSH-bediener/poort: Die adres en poort van die SSH-bediener waardeur die verbinding getunnel sal word. By verstek luister SSH op poort 22.
+   (b) Gebruikersnaam/wagwoord: Die gebruikersnaam en wagwoord van die rekening op die SSH-bediener. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+   (c) Bestuur sleutel/gebruik sleutel: \'n Knoppie om publieke/private sleutels te bestuur, en \'n merkblokkie wat aandui of \'n sleutel eerder as \'n wagwoord gebruik moet word om te verifieer. As u die kopieer-na-knipbord-knoppie gebruik nadat u \'n sleutelpaar gegenereer het, behoort u die publieke sleutel te kan plak sodra u aan die RDP-bediener gekoppel is (die knipbord word met die bediener gesinkroniseer).
+
+ - RDP-verbindingsinstellings:
+   (a) RDP-bediener/poort: Dit is waar u die gasheernaam of IP-adres en poort van die rekenaar wat die RDP-bediener laat loop invoer. In RDP oor SSH-modus word hierdie adres gesien vanaf die SSH-bediener. As die SSH-bediener en RDP-bediener dieselfde fisiese rekenaar is, kan u localhost gebruik. RDP-bedieners luister tipies op poort 3389.
+   (b) RDP-gebruiker: Dit is waar u u Windows/UNIX-rekeninggebruikersnaam invoer.
+   (c) RDP-domein: Voer die domein in waaraan u rekening behoort.
+   (d) RDP-wagwoord: Dit is waar u u Windows/UNIX-rekeningwagwoord invoer. Veilige berging word nie vir wagwoorde gebruik nie (hulle is in \'n databasis), en die wagwoord sal slegs gestoor word as u die \"Behou\"-blokkie merk. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+
+ - Gevorderde instellings: In hierdie afdeling sal u maniere vind om die resolusie van die werkskerm aan te pas, en verskeie RDP-prestasieverstellings
+
+ - Plaaslike toestelverstellings: Hierdie pas die gedrag van die program op u toestel aan.
+   (a) Gebruik D-pad vir pyltjies: As u verkies, kan u die D-pad van u Bluetooth-sleutelbord of pyltjies op u skermsleutelbord gebruik om pyltjies na die RDP-bediener te stuur.
+   (b) Roteer D-pad: Fone wat met \'n Bluetooth-sleutelbord gepaar is, moet moontlik die sleutelbord se D-pad teen die son draai om korrekte rigtings na die bediener te stuur.
+   (c) Plaaslike muisaanwyser: As die aanwyser onsigbaar is, kies dit om te forseer dat dit deur die program geteken word."</string>
+    <string name="rdp_password_hint">RDP-wagwoord</string>
+    <string name="rdp_server_empty">RDP-bediener of poort leeg. Kan nie koppel nie!</string>
+    <string name="rdp_username_hint">RDP-gebruikersnaam</string>
+
+    <string name="remote_sound_disabled">Klank gedeaktiveer</string>
+    <string name="remote_sound_on_device">Klank op toestel</string>
+    <string name="remote_sound_on_server">Klank op bediener</string>
+
+    <string name="repeater_button">UltraVNC-herhaler</string>
+    <string name="repeater_caption">BELANGRIK: As u \'n UltraVNC-herhaler gebruik, voer sy adres en poort buite hierdie dialoog in. Hier, voer die adres en poort van die werklike VNC-bediener in. Skei die VNC-bediener se adres en poort met \'n dubbelpunt, bv. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC-herhaler</string>
+    <string name="repeater_clear">Moenie gebruik nie</string>
+    <string name="repeater_dialog_title">VNC-bediener agter herhaler</string>
+    <string name="repeater_empty_text">Geen herhaler</string>
+    <string name="repeater_save">Gebruik</string>
+
+    <string name="right_alt_as_iso_l3_shift">R-Alt as ISO L3-skuif (slegs VNC)</string>
+
+    <string name="rotate_dpad">Roteer Bluetooth- of sagteware-D-pad</string>
+
+    <string name="save_as_copy">Stoor as kopie</string>
+
+    <string name="scaling">Skaling</string>
+    <string name="scaling_zoomable">Zoombaar</string>
+
+    
+    <string name="send_button">Stuur</string>
+    <string name="send_key_again">Stuur sleutel weer</string>
+
+    <string name="shift_check">Skuif</string>
+
+    <string name="shortcut_label_vnc">VNC-verbinding</string>
+    <string name="shortcut_label_rdp">RDP-verbinding</string>
+    <string name="shortcut_label_spice">SPICE-verbinding</string>
+
+    <string name="showkbd_label">Sleutelbord</string>
+
+    <string name="single_cancel">Eenhandige modus gekanselleer</string>
+    <string name="single_choose">Kies eenhandige modus of kanselleer</string>
+    <string name="single_left">Links-sleep-modus - vee om te sleep/te kies, lig vinger om te stop</string>
+    <string name="single_middle">Middel-sleep-modus - vee om te sleep/te kies, lig vinger om te stop</string>
+    <string name="single_reposition">Muisaanwyser herposisioneer vir eenhandige modus</string>
+    <string name="single_right">Regs-sleep-modus - vee om te sleep/te kies, lig vinger om te stop</string>
+    <string name="single_scroll">Rol-modus - vee op/af om te rol, lig vinger om te stop</string>
+    <string name="single_zoom">Zoom-modus - vee op/af om in/uit te zoom, lig vinger om te stop</string>
+
+    <string name="snap_one_to_one">Ingeklik op 1:1 zoom</string>
+
+    <string name="special_keys">Stuur sleutels</string>
+
+    <string name="spice_address_caption_hint">SPICE-bediener</string>
+    <string name="spice_button_import_ca">Voer CA in</string>
+    <string name="spice_ca_cert_path_hint">Pad na sertifikaat-owerheid-lêer</string>
+    <string name="spice_ca_file_error_reading">Fout by lees van CA-lêer. Verseker dat dit leesbaar is.</string>
+    <string name="spice_ca_file_not_found">Lêer nie gevind nie. Voer asseblief \'n geldige lêernaam in die teksveld in (bv. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Sertifikaat-onderwerp</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Dankie dat u aSPICE en oopbron-sagteware in die algemeen ondersteun! Vir hulp met die gebruik van aSPICE, sien die Hulp-items in die Kieslys, en die beskrywing van die program in die mark.
+&lt;br&gt;
+&lt;br&gt;
+Huidige lys van aSPICE-funksies sluit in:
+&lt;br&gt;
+- Gewone SPICE, SPICE getunnel oor SSH.
+&lt;br&gt;
+- Gratis rotasie-ondersteuning. Gebruik bedryfstelsel om rotasie te beperk indien nodig.
+&lt;br&gt;
+- SSH publieke/private sleutelpaar-generering en -uitvoer.
+&lt;br&gt;
+- Outomatiese sessie-stoor.
+&lt;br&gt;
+- Zoombaar, Pas in skerm, en Een-op-een-skaalmodusus.
+&lt;br&gt;
+- Multi-touch-beheer oor afgeleë muis in direkte en gesimuleerde aanraakblad-invoermodusus.
+&lt;br&gt;
+- Volledige eenhandige beheer oor afgeleë muis in eenhandige invoermodus.
+&lt;br&gt;
+- Multi-touch-muisklikke: tik vir linksKlik, twee-vinger-tik vir regsKlik, drie-vinger-tik vir middelKlik.
+&lt;br&gt;
+- Multi-touch-rol: twee-vinger-sleep op/af, en links/regs om te rol.
+&lt;br&gt;
+- Skerm-meta- en pyltjie-sleutels wat volledig gedeaktiveer kan word via kieslys of weggebêre met skermknoppie.
+&lt;br&gt;
+- Stuur teks en willekeurige sleutelkombinasies wanneer gekoppel.
+&lt;br&gt;
+- Hulp met die skep van verbindings (\"Kieslys-&gt;Verbindingshulp\") in die verbindingskerm.
+&lt;br&gt;
+- Hulp met invoermodusus (\"Kieslys-&gt;Meer-&gt;Invoermodus-hulp\") wanneer gekoppel.
+&lt;br&gt;
+- Gebruik \'n beskikbare spoorblad as pyltjies in plaas van die muis te beweeg, en spoorblad-klik as Ctrl, roteer D-pad/spoorblad vir BT-sleutelborde.
+&lt;br&gt;
+- Multi-taalondersteuning, solank as wat die SPICE-bediener die nodige taaluitleg geaktiveer het.
+&lt;br&gt;
+- Naatlose afgeleë masjienresolusie-veranderinge
+&lt;br&gt;
+- Volledige muis-ondersteuning op Android 4.0+-toestelle, insluitend regs- en middelklik en rolwiel.
+&lt;br&gt;
+&lt;br&gt;
+Beplande funksies:
+&lt;br&gt;
+- Kopieer/plak-integrasie
+&lt;br&gt;
+- Klank
+&lt;br&gt;
+- Prestasiverbeteringe
+&lt;br&gt;
+Bekende probleme:
+&lt;br&gt;
+- Stuur teks stuur nie sommige simbole nie.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuïtiewe, veilige SPICE-kliënt</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Wanneer u \'n verbinding byvoeg of wysig, sal u \'n verbindingskonfigurasie-bladsy sien. Hier kan u \'n nuwe SPICE-verbinding opstel of \'n bestaande een kies. Bo-aan is \'n knoppie wat u toelaat om die verbinding te stoor. Daaronder is waar u u verbinding instel.
+
+ - Verbindingstipe: Hier kies u die SPICE-verbindingstipe. Beskikbare verbindingstipes is:
+   (a) SPICE, wat direk aan \'n rekenaar koppel oor die SPICE-protokol.
+   (b) SPICE oor SSH, wat eers u verbinding deur \'n rekenaar wat \'n SSH-bediener laat loop, tonnel.
+
+ - Titel: Elke verbinding wat u skep kan \'n bynaam hê om dit maklik op die lys te identifiseer.
+
+ - SSH-tonnelinstelling: Beskikbaar in SPICE oor SSH-modus.
+   (a) SSH-bediener/poort: Die adres en poort van die SSH-bediener waardeur die verbinding getunnel sal word. By verstek luister SSH op poort 22.
+   (b) Gebruikersnaam/wagwoord: Die gebruikersnaam en wagwoord van die rekening op die SSH-bediener. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+   (c) Bestuur sleutel/gebruik sleutel: \'n Knoppie om publieke/private sleutels te bestuur, en \'n merkblokkie wat aandui of \'n sleutel eerder as \'n wagwoord gebruik moet word om te verifieer. As u die kopieer-na-knipbord-knoppie gebruik nadat u \'n sleutelpaar gegenereer het, behoort u die publieke sleutel te kan plak sodra u aan die SPICE-bediener gekoppel is (die knipbord word met die bediener gesinkroniseer).
+
+ - SPICE-verbindingsinstellings:
+   (a) SPICE-bediener/poort: Dit is waar u die gasheernaam of IP-adres en poort van die rekenaar wat die SPICE-bediener laat loop invoer. In SPICE oor SSH-modus word hierdie adres gesien vanaf die SSH-bediener. As die SSH-bediener en SPICE-bediener dieselfde fisiese rekenaar is, kan u localhost gebruik. SPICE-bedieners luister tipies op poort 5900 en hoër.
+   (b) SPICE-wagwoord: Dit is waar u die wagwoord invoer wat ingestel is om u SPICE-sessie te beskerm. Veilige berging word nie vir wagwoorde gebruik nie (hulle is in \'n databasis), en die wagwoord sal slegs gestoor word as u die \"Behou\"-blokkie merk. Die wagwoord sal op hierdie bladsy ingevul word as u nie die program verlaat het sedert u dit laas ingevoer het nie.
+
+ - Gevorderde instellings: In hierdie afdeling sal u enige plaaslike toestel- of SPICE-prestasieverstellings vind
+ - Plaaslike toestelverstellings: Hierdie pas die gedrag van die program op u toestel aan.
+   (a) Gebruik D-pad vir pyltjies: As u verkies, kan u die D-pad van u Bluetooth-sleutelbord of pyltjies op u skermsleutelbord gebruik om pyltjies na die SPICE-bediener te stuur.
+   (b) Roteer D-pad: Fone wat met \'n Bluetooth-sleutelbord gepaar is, moet moontlik die sleutelbord se D-pad teen die son draai om korrekte rigtings na die bediener te stuur.
+   (c) Plaaslike muisaanwyser: As die aanwyser onsigbaar is, kies dit om te forseer dat dit deur die program geteken word."</string>
+    <string name="spice_password_hint">SPICE-wagwoord</string>
+    <string name="spice_server_empty">SPICE-bediener of poort leeg. Kan nie koppel nie!</string>
+    <string name="spice_tls_port_hint">TLS-poort</string>
+    <string name="spice_username_hint">SPICE-gebruikersnaam</string>
+
+    <string name="ssh_passphrase_hint">SSH-wagsin</string>
+    <string name="ssh_pubkey_button">Bestuur sleutel</string>
+    <string name="ssh_use_pubkey">Gebruik sleutel</string>
+    <string name="ssh_use_x11vnc">Outo-werkskerm</string>
+    <string name="ssh_x11vnc_customize">Stel AutoX op</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Deaktiveer</string>
+    <string name="tap_enable">Aktiveer</string>
+
+    <string name="username_caption">VNC-gebruiker</string>
+    <string name="username_hint">UltraVNC MS-aanmelding-gebruikersnaam</string>
+    <string name="username_hint_optional">VNC-gebruikersnaam (opsioneel)</string>
+    <string name="username_hint_ssh">SSH-gebruikersnaam</string>
+    <string name="username_hint_vencrypt">VNC-gebruikersnaam</string>
+    <string name="verification_code">Verifikasiekode</string>
+    <string name="verification_code_message">Voer asseblief die multi-faktor-verifikasie-verifikasiekode in</string>
+
+    <string name="view_only">Slegs-bekyk-modus</string>
+
+    <string name="vnc_server_empty">VNC-bediener of poort leeg. Kan nie koppel nie!</string>
+    <string name="vnc_server_empty_no_save">VNC-bediener of poort leeg. Kan nie verbinding stoor nie!</string>
+
+    <string name="warning_cert_does_not_match">WAARSKUWING: Die gestoorde x509-sertifikaat of ingevoerde handtekening stem nie ooreen met die huidige bediener-sertifikaat nie! Dit kan \'n man-in-die-middel-aanval wees. As u bewus is van die sleutelverandering, kan u voortgaan. </string>
+    <string name="copy_logcat">📋 Kopieer Logcat</string>
+    <string name="log_copied">Logcat na knipbord gekopieer. U kan dit nou plak in \'n e-pos of op die ondersteuningsforum. Kyk asseblief deur vir enige persoonlike data voor plasing.</string>
+    <string name="info_set_touchpad_input_mode">Die bediener rapporteer dat dit nie kliëntmodus-muis-invoer ondersteun nie, en die huidige muis-invoermodus sal nie korrek werk nie. As dit voortduur, maak seker dat spice-gereedskap in die virtuele masjien geïnstalleer is of skakel na Gesimuleerde Aanraakblad-invoermodus vanuit die Kieslys.</string>
+    <string name="ssh_tunnel_settings">SSH-tonnelinstelling</string>
+    <string name="vnc_connection_settings">VNC-verbindingsinstellings</string>
+    <string name="show_advanced_settings">Wys gevorderde instellings</string>
+    <string name="use_no_compression_for_local_connections">Geen kompressie (plaaslike verbindings, Hextile-kodering)</string>
+    <string name="rdp_connection_settings">RDP-verbindingsinstellings</string>
+    <string name="local_device_tweaks">Plaaslike toestelverstellings</string>
+    <string name="spice_connection_settings">SPICE-verbindingsinstellings</string>
+    <string name="ca_subject">Voer sertifikaat-onderwerknaam hier in. Mag nie nodig wees as die sertifikaat-algemene naam (CN) ooreenstem met die bediener-gasheernaam nie.</string>
+    <string name="path_to_ca">Voer \'n lêerpad in (byvoorbeeld /sdcard/ca-cert.pem) en tik Invoer om u sertifikaat-owerheid te laai.</string>
+    <string name="paste_ca">Voer die sertifikaat-owerheid hier in as u dit nie as \'n lêer invoer nie.</string>
+    <string name="cert_issuer">Sertifikaat-uitgewer</string>
+    <string name="cert_fingerprint">Sertifikaat-vingerafdruk</string>
+    <string name="error">Fout</string>
+    <string name="panning">Skerm-pan</string>
+    <string name="copy_of">Kopie van</string>
+    <string name="ssh_key_generated">Nuwe sleutel suksesvol gegenereer of ingevoer. U kan nou die \'Genereer/Voer sleutel uit\'-knoppie tik om die publieke sleutel te deel, na die knipbord te kopieer, of uit te voer.</string>
+    <string name="cursor_force_local">"Plaaslik"</string>
+    <string name="cursor_force_disable">"Deaktiveer"</string>
+    <string name="cursor_mode">"Aanwyser-modus:"</string>
+    <string name="rendering_mode">"Weergawe-modus:"</string>
+    <string name="color_24_bit">"24-bis kleur (24 bpp)"</string>
+    <string name="color_256">"256 kleure (8 bpp)"</string>
+    <string name="color_64">"64 kleure (4 bpp)"</string>
+    <string name="color_8">"8 kleure (2 bpp)"</string>
+    <string name="color_greyscale">"Grysskaal (1 bpp)"</string>
+    <string name="color_black_and_white">"Swart &amp; Wit (1 bpp)"</string>
+    <string name="show">"Wys"</string>
+    <string name="hide">"Verberg"</string>
+    <string name="search_connections">Soek verbindings</string>
+    <string name="user_not_specified">Gebruiker nie gespesifiseer nie</string>
+    <string name="enter_ssh_credentials">Voer asseblief SSH-geloofsbriewe in</string>
+    <string name="enter_vnc_credentials">Voer asseblief VNC-geloofsbriewe in</string>
+    <string name="enter_vnc_password">Voer asseblief VNC-wagwoord in</string>
+    <string name="enter_rdp_credentials">Voer asseblief RDP-geloofsbriewe in</string>
+    <string name="enter_gateway_credentials">Voer asseblief poort-geloofsbriewe in</string>
+    <string name="enter_spice_password">Voer asseblief SPICE-wagwoord in</string>
+    <string name="enter_passphrase_title">Voer sleutel-wagsin in</string>
+    <string name="enter_passphrase">Voer asseblief sleutel-wagsin in</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">U bediener benodig wagwoordverifikasie benewens sleutelverifikasie.</string>
+    <string name="main_screen_help_text">"
+Wanneer die program geloods word, wys dit \'n skerm met gestoorde verbindings daarop.
+
+As daar geen gestoorde verbindings is nie, is die onderste deel van die skerm leeg, en u sal die plusknoppie moet tik om \'n nuwe een te skep.
+U kan ook ander aspekte van die konfigurasie vanaf hierdie skerm beheer deur op ander nutsbalk- of kieslys-opsies bo-aan te tik, byvoorbeeld
+om verstek-instellings te wysig, of instellings in- en uit te voer.
+
+Sodra u \'n verbinding gestoor het, kan u aan die afgeleë bediener koppel deur daarop eenmaal te tik. U sal ook \'n keuse hê om dit te verwyder of te wysig deur lank daarop te tik.
+
+Laastens, kan u die Soek verbindings-veld gebruik om vinnig verbindings te vind deur die getoonde verbindings te filter."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Wanneer u \'n verbinding byvoeg of wysig, sal u \'n verbindingskonfigurasie-bladsy sien.
+Hier kan u \'n nuwe Opaque-verbinding opstel of \'n bestaande een kies.
+Bo-aan is \'n knoppie wat u toelaat om die verbinding te stoor.
+Daaronder is waar u u verbinding instel.
+
+ - Verbindingstipe: Hier kies u watter virtualiseringsomgewing u mee koppel.
+
+ - Bedieneradres: Die gasheernaam of IP van die bediener. As dit op \'n nie-standaard poort luister, kan u \'n poort geskei deur \'n dubbelpunt byvoeg.
+
+ - Virtuele masjiennaam: U kan die naam van die VM spesifiseer soos dit op u virtualiseringsplatform verskyn of hierdie veld leeg laat om \'n lys van VM\'s of houers te kry om uit te kies.
+
+ - Gebruiker: Voer die gebruikersnaam in om by u virtualiseringsraamwerk te verifieer.
+
+ - Wagwoord: As u die wagwoord wil stoor, voer dit hier in of laat die veld leeg om elke keer daarvoor gevra te word.
+
+ - Gevorderde instellings: In hierdie afdeling sal u enige plaaslike toestel-, protokol- en prestasieverstellings vind."
+    </string>
+    <string name="help">Hulp ⓘ</string>
+    <string name="need_help">Hulp nodig?</string>
+    <string name="support_forum">Ondersteuningsforum ❓</string>
+    <string name="email_us">Stuur ons \'n e-pos 📧</string>
+    <string name="report_bug">Rapporteer \'n fout 🐛</string>
+    <string name="download_from_server">Laai af van bediener</string>
+    <string name="import_from_file">Invoer vanuit lêer</string>
+    <string name="please_grant_permission_from_prefs">U moet moontlik toestemmings aan die program verleen via Instellings.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Meer foutopsporing-logging</string>
+    <string name="prefer_sending_unicode">Unicode-invoer (slegs Windows)</string>
+    <string name="hide_connection_thumbnails">Verberg verbinding-duimnaels</string>
+    <string name="show_only_connection_nicknames">Wys slegs verbinding-byname</string>
+    <string name="love_our_work">Hou u van ons werk?</string>
+    <string name="rate_app">Beoordeel ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Deel 🔗</string>
+    <string name="share_app_toast">Deel \'n skakel na die program met al u vriende op sosiale media!</string>
+    <string name="donate_app">Skenk ❤</string>
+    <string name="more_apps">Meer programme 📱</string>
+    <string name="previous_versions">Vorige weergawes ⍼</string>
+    <string name="keyboard_type">Sagteware-sleutelbordtipe</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Verstek (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Teks/syfers sonder voorstelle (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Teks met voorstelle (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Hierdie verbinding is ingestel om VPN via \'n eksterne program te loods. U moet \'n program soos Morpheusly installeer om dit te loods.</string>
+    <string name="vnc_viewer_started">VNC-kyker begin</string>
+    <string name="enable_gateway">Aktiveer RDP Gateway</string>
+    <string name="scroll_speed">Aanraking-rolspoed</string>
+    <string name="desktop_scale_percentage">Pasgemaakte skaalpersentasie</string>
+    <string name="show_menu">Wys kieslys</string>
+    <string name="move_toolbar">Beweeg nutsbalk</string>
+    <string name="rdp_adv_glyph_cache">Aktiveer Glyph-kas</string>
+    <string name="disable_battery_optimizations_failed">
+Kon nie batteryoptimering-instellings oopmaak nie. Deaktiveer batteryoptimalisering handmatig in stelselinstellings.</string>
+    <string name="disable_battery_optimizations">
+🔋Deaktiveer batteryoptimalisering</string>
+    <string name="disable_battery_optimizations_already_done">
+Die toepassing is reeds vrygestel van batteryoptimalisering.</string>
+    <string name="no_connections_title">Nog geen verbindings nie</string>
+    <string name="no_connections_hint">Tik die +-knoppie om jou eerste afstandverbinding by te voeg</string>
+    <string name="no_connections_hint_tv">Druk die +-knoppie hierbo om jou eerste afstandverbinding by te voeg</string>
+    <string name="keyboard_layout_map">Sleutelborduitleg</string>
+</resources>
