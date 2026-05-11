@@ -4,9 +4,20 @@ import FlutterMacOS
 @main
 class AppDelegate: FlutterAppDelegate {
   private var pendingFilePath: String?
+  private var flutterViewController: FlutterViewController?
 
   override func applicationDidFinishLaunching(_ notification: Notification) {
-    // Handle any pending file that was passed at launch
+    // Store reference to FlutterViewController when window becomes available
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(flutterWindowReady),
+      name: NSWindow.didBecomeKeyNotification,
+      object: mainFlutterWindow
+    )
+  }
+
+  @objc private func flutterWindowReady() {
+    NotificationCenter.default.removeObserver(self, name: NSWindow.didBecomeKeyNotification, object: mainFlutterWindow)
     if let filePath = pendingFilePath {
       sendFileToFlutter(filePath)
       pendingFilePath = nil
